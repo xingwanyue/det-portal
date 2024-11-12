@@ -98,7 +98,8 @@ const getBlob = async () => {
     query: { ...args },
     headers: { locale: locale.value },
   })) as any;
-  Blog.value = [...blogsjk.value?.data, { name: showmorefont, path: 'blog' }].map((item: any) => {
+  console.log(blogsjk.value);
+  Blog.value = [...(blogsjk.value?.data || []), { name: showmorefont, path: 'blog' }].map((item: any) => {
     return {
       name: item.name,
       url: `${item.path}`,
