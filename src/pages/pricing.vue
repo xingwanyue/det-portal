@@ -459,7 +459,7 @@ const changeBuyCorrectTimes = () => {
                   <div v-if="item.speak === 1 && item.write === 1" class="save_tag">
                     {{
                       $t('pricing.pagefont.save', {
-                        num: 50,
+                        num: (item.price / item.originalPrice) * 100,
                       })
                     }}
                   </div>

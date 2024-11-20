@@ -319,9 +319,9 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
     </div>
 
     <div v-if="cookieShow" class="cookie_out">
-      <div class="cookie_header">
+      <!-- <div class="cookie_header">
         <img :src="`/img/footer/close_icon.svg`" :alt="$t('footer.close_icon_alt')" @click="closeCookie" />
-      </div>
+      </div> -->
       <div class="cookie_contenr">
         {{ $t('footer.cookie_contenr') }}
         <NuxtLink :to="localePath(`/cookie`)" title="Cookie Policy" class="see_cookei">Cookie Policy</NuxtLink>
@@ -507,6 +507,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
     bottom: 17px;
     left: 16px;
     padding: 12px;
+    padding-top: 18px;
     width: 320px;
     box-sizing: border-box;
     background: #ffffff;
