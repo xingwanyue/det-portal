@@ -558,9 +558,8 @@ const changeBuyCorrectTimes = () => {
       :before-close="handleCloseCoursrBuyed"
       class="pay_result_dialog"
     >
-      <span class="no_wrap"
-        >You have successfully purchased the course, you only need to purchase it once, please visit
-        <span class="yellow">https://www.detpractice.com/courses</span> to view and download your course information.
+      <span class="no_wrap">
+        You have successfully purchased the course. Each course only needs to be purchased once.
       </span>
       <template #footer>
         <div class="footer_wrapp"><div class="close_btn" @click="handleCloseCoursrBuyed">I get it</div></div>
@@ -1582,7 +1581,7 @@ const changeBuyCorrectTimes = () => {
 
   .no_wrap {
     word-break: normal;
-    line-height: 1.2;
+    line-height: 20px;
     .yellow {
       color: #f66442;
     }
