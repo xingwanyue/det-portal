@@ -6,8 +6,8 @@ import { staticUrlGet, domain, cdn, getToken } from '@/utils';
 import { getVipdataWithToken, getVipdataNoToken } from '@/api';
 import Vtwocourse from '../components/courseBottom.vue';
 import Vcoursezh from '../components/courseZonghe.vue';
-const guide1 = `${cdn}/store/portal/guid/kouyu.png`;
-const guide2 = `${cdn}/store/portal/guid/xiezuo.png`;
+const guide1 = `${cdn}/store/portal/guid/kouyu.webp`;
+const guide2 = `${cdn}/store/portal/guid/xiezuo.webp`;
 useSeoMeta({
   title: t('courses.seometa.title'),
   description: t('courses.seometa.description'),
@@ -174,7 +174,6 @@ const changePageData = (zongheDataarg: any, speakData: any, writeData: any) => {
   } else {
     buystatus.value = 0;
   }
-
   if (buystatus.value === 0) {
     zongheData.value = {
       img: '/img/courses/courses_group.webp',
@@ -263,7 +262,7 @@ const changePageData = (zongheDataarg: any, speakData: any, writeData: any) => {
     ];
   } else if (buystatus.value === 3) {
     zongheData.value = {
-      img: guide1,
+      img: '/img/courses/courses_group.webp',
       price: 123456,
       priceid: 123456,
       vipPrice: 123456,
