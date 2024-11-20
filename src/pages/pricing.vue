@@ -450,23 +450,12 @@ const changeBuyCorrectTimes = () => {
               <div v-else class="height_hack_222"></div>
 
               <div :class="[!isVip ? 'card_price_part4 min_heighthack' : 'card_price_part4 min_heighthack2']">
-                <div v-if="!isVip && item.day !== 7" class="your_price">{{ $t('pricing.pagefont.your_price') }}</div>
+                <div v-if="item.day !== 7" class="your_price">{{ $t('pricing.pagefont.your_price') }}</div>
                 <div class="off_price">
-                  <span class="small">{{ $t('pricing.pagefont.do') }}</span>
-                  {{ (item.price / 100).toFixed(2) }}
-                </div>
-                <!-- <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div> -->
-                <div class="no_member_font" v-if="item.day !== 7">{{ $t('pricing.pagefont.Non_member') }}</div>
-              </div>
-              <div class="card_price_part3">
-                <div class="your_price" v-if="isVip && item.day !== 7">
-                  <span>{{ $t('pricing.pagefont.your_price') }}</span>
-                </div>
-                <div class="member_price">
-                  <span v-if="item.vipPrice !== item.price">
-                    <span class="small">{{ $t('pricing.pagefont.do') }}</span>
-                    {{ (item.vipPrice / 100).toFixed(2) }}
-                  </span>
+                  <div>
+                    <span class="small">{{ $t('pricing.pagefont.do') }}</span> {{ (item.price / 100).toFixed(2) }}
+                  </div>
+
                   <div v-if="item.speak === 1 && item.write === 1" class="save_tag">
                     {{
                       $t('pricing.pagefont.save', {
@@ -475,11 +464,7 @@ const changeBuyCorrectTimes = () => {
                     }}
                   </div>
                 </div>
-                <div class="member_font">
-                  <span v-if="item.vipPrice !== item.price">
-                    {{ $t('pricing.pagefont.mp') }}
-                  </span>
-                </div>
+                <!-- <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div> -->
               </div>
 
               <div v-if="user.id">
@@ -1078,14 +1063,6 @@ const changeBuyCorrectTimes = () => {
                 .small {
                   font-size: 20px;
                 }
-                .save_tag {
-                  padding: 4px 10px;
-                  background: #ffe1bc;
-                  border-radius: 16px;
-                  font-weight: 500;
-                  font-size: 14px;
-                  color: #4c2929;
-                }
               }
 
               .member_font {
@@ -1102,8 +1079,20 @@ const changeBuyCorrectTimes = () => {
                 font-weight: 600;
                 font-size: 32px;
                 color: #201515;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                grid-gap: 8px;
                 .small {
                   font-size: 20px;
+                }
+                .save_tag {
+                  padding: 4px 10px;
+                  background: #ffe1bc;
+                  border-radius: 16px;
+                  font-weight: 500;
+                  font-size: 14px;
+                  color: #4c2929;
                 }
               }
 
