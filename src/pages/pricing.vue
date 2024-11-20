@@ -466,7 +466,7 @@ const changeBuyCorrectTimes = () => {
                 </div>
                 <!-- <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div> -->
               </div>
-
+              <div class="height_hack"></div>
               <div v-if="user.id">
                 <template v-if="item.disabled">
                   <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
@@ -594,6 +594,9 @@ const changeBuyCorrectTimes = () => {
     to {
       margin-left: 100%;
     }
+  }
+  .height_hack {
+    min-height: 97px;
   }
 }
 </style>
