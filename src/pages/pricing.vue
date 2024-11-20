@@ -456,13 +456,13 @@ const changeBuyCorrectTimes = () => {
                     <span class="small">{{ $t('pricing.pagefont.do') }}</span> {{ (item.price / 100).toFixed(2) }}
                   </div>
 
-                  <div v-if="item.speak === 1 && item.write === 1" class="save_tag">
+                  <!-- <div v-if="item.speak === 1 && item.write === 1" class="save_tag">
                     {{
                       $t('pricing.pagefont.save', {
                         num: (item.price / item.originalPrice) * 100,
                       })
                     }}
-                  </div>
+                  </div> -->
                 </div>
                 <!-- <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div> -->
               </div>
