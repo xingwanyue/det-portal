@@ -560,10 +560,12 @@ const iconHover = (index: number) => {
   flex-direction: column;
   margin-top: 48px;
   margin-bottom: 48px;
+  grid-gap: 16px;
   .inthis {
     font-weight: 500;
     font-size: 22px;
     color: #201515;
+    margin-bottom: 16px;
   }
   .h2-point {
     font-weight: 400;
@@ -571,6 +573,7 @@ const iconHover = (index: number) => {
     color: #201515;
     line-height: 32px;
     cursor: pointer;
+    // margin-bottom: 16px;
     &:hover {
       font-weight: 500;
       font-size: 22px;
