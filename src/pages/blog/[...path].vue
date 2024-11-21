@@ -180,6 +180,9 @@ const handleCurrentChange = async (val: number) => {
     margin-top: 100px;
     max-width: 1200px;
     margin-bottom: 100px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 50px;
+    }
 
     @media (max-width: 450px) {
       padding: 0px 15px;
