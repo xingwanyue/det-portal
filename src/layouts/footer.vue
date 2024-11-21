@@ -201,7 +201,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         <div
           v-for="(itemin, indexin) in Learn"
           :key="indexin"
-          :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
+          :class="`one_link_list_detail ${Learn.length - 1 === indexin ? 'show_more' : ''}`"
         >
           <template v-if="itemin.url === '/learn'">
             <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
@@ -216,7 +216,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         <div
           v-for="(itemin, indexin) in Blog"
           :key="indexin"
-          :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
+          :class="`one_link_list_detail ${Blog.length - 1 === indexin ? 'show_more' : ''}`"
         >
           <NuxtLink :to="localePath(`/${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
         </div>
