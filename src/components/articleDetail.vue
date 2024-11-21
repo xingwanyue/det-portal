@@ -565,7 +565,6 @@ const iconHover = (index: number) => {
     font-weight: 500;
     font-size: 22px;
     color: #201515;
-    margin-bottom: 16px;
   }
   .h2-point {
     font-weight: 400;
