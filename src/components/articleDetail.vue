@@ -3,10 +3,11 @@ import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 import dayjs from 'dayjs';
 import { reactive } from 'vue';
+import { useStore } from '@/store';
 import find from 'lodash/find';
 import head from 'lodash/head';
 import { ElMessage } from 'element-plus';
-import { rateAdd, saveStorage, getStorage, articleCategoryGet } from '@/utils';
+import { rateAdd, saveStorage, getStorage, articleCategoryGet, getToken } from '@/utils';
 import subscribe from '@/components/subscribe.vue';
 
 const props = defineProps({
@@ -25,6 +26,15 @@ const state = reactive({
   selectName: '',
   averageScore: 0,
   iconHoverIndex: -1,
+});
+const haveCookie = ref(false);
+const store = useStore();
+const user = computed(() => store.user);
+onMounted(async () => {
+  const token = await getToken();
+  if (token) {
+    haveCookie.value = true;
+  }
 });
 state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
 
@@ -187,12 +197,22 @@ const iconHover = (index: number) => {
           </div>
         </div>
         <div class="right_list">
-          <div class="article_img">
+          <NuxtLink
+            v-if="!user.id && !haveCookie"
+            class="article_img"
+            :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
+          >
             <div class="article_img_top">{{ $t('articleDetail.getHiger') }}</div>
             <div class="article_img_bottom">
               <img src="/img/blog/article_small_img.png" :alt="props.article.name" />
             </div>
-          </div>
+          </NuxtLink>
+          <NuxtLink :href="urlGet('/home')" v-else class="article_img">
+            <div class="article_img_top">{{ $t('articleDetail.getHiger') }}</div>
+            <div class="article_img_bottom">
+              <img src="/img/blog/article_small_img.png" :alt="props.article.name" />
+            </div>
+          </NuxtLink>
           <div v-if="props.article.relatedArticles.length" class="article-title-list article-title-list1">
             <div class="title title1">{{ $t('articleDetail.Related_Articles') }}</div>
             <div v-for="(val, key) in props.article.relatedArticles" :key="key">
@@ -371,6 +391,7 @@ const iconHover = (index: number) => {
       display: none;
     }
     .article_img {
+      display: block;
       margin-bottom: 24px;
       background: linear-gradient(0, #ffc2b3 0%, #fa7758 100%);
       border-radius: 8px;
