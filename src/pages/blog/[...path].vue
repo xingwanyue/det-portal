@@ -125,9 +125,6 @@ const handleCurrentChange = async (val: number) => {
             </div>
             <div class="bottom">
               <div class="date">{{ dayjs(item.createTime).format('YYYY-MM-DD') }}&nbsp;|&nbsp;{{ item.category }}</div>
-              <div class="right_arrow">
-                <el-image src="/img/blog/right_arrow.svg" alt="Right Arrow"></el-image>
-              </div>
             </div>
           </NuxtLink>
         </div>
@@ -236,25 +233,16 @@ const handleCurrentChange = async (val: number) => {
       .bolgs_content {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 40px;
+        // grid-gap: 40px;
         .one_blog {
           padding: 40px;
-          padding-top: 39px;
-          padding-bottom: 48px;
+          padding-left: 0px;
           border-top: 1px solid #e9e9e9;
-          // border: 1px red solid;
           cursor: pointer;
           display: block;
-          position: relative;
-
           &:hover {
             .title {
               color: #f66442;
-            }
-            .bottom {
-              .right_arrow {
-                display: block;
-              }
             }
           }
           .title {
@@ -282,25 +270,6 @@ const handleCurrentChange = async (val: number) => {
           }
           .bottom {
             margin-top: 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 24px;
-            position: absolute;
-            bottom: 12px;
-            // border:1px red solid;
-            width: calc(100% - 48px);
-
-            .date {
-              font-weight: 400;
-              font-size: 16px;
-              color: rgba(64, 63, 62, 0.6);
-            }
-            .right_arrow {
-              width: 24px;
-              height: 24px;
-              display: none;
-            }
           }
         }
       }

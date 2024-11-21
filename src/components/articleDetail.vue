@@ -94,12 +94,8 @@ const iconHover = (index: number) => {
       <div class="top">
         <nuxt-link :to="localePath('/')" class="hoverGiveBorder">{{ $t('articleDetail.Home') }}</nuxt-link>
         >
-        <nuxt-link v-if="props.type === '2'" :to="localePath('/learn')" class="hoverGiveBorder">{{
-          $t('articleDetail.Learn')
-        }}</nuxt-link>
-        <nuxt-link v-if="props.type === '1'" :to="localePath('/blog')" class="">{{
-          $t('articleDetail.Blog')
-        }}</nuxt-link>
+
+        <nuxt-link :to="localePath('/blog')" class="">{{ $t('articleDetail.Blog') }}</nuxt-link>
         > {{ state.selectName }}
       </div>
 
@@ -534,6 +530,7 @@ const iconHover = (index: number) => {
   display: flex;
   flex-direction: column;
   margin-top: 48px;
+  margin-bottom: 48px;
   .inthis {
     font-weight: 500;
     font-size: 22px;
