@@ -396,6 +396,9 @@ const iconHover = (index: number) => {
         }
       }
       .article-con1 {
+        ::v-deep(img) {
+          max-width: 100%;
+        }
         .one_duan {
           margin-top: 48px;
           .one_duan_title {
