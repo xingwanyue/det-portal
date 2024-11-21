@@ -51,22 +51,8 @@
     "LearnTitle": "订阅资源",
     "BlogTitle": "博客",
     "CompanyTitle": "公司",
-    "Products": [
-      "DET刷题",
-      "AI写作批改",
-      "AI口语评测",
-      "全真模考",
-      "DET课程"
-    ],
-    "Company": [
-      "关于我们",
-      "联系我们",
-      "服务条款",
-      "隐私政策",
-      "网站地图",
-      "合作计划",
-      "退款说明"
-    ],
+    "Products": ["DET刷题", "AI写作批改", "AI口语评测", "全真模考", "DET课程"],
+    "Company": ["关于我们", "联系我们", "服务条款", "隐私政策", "网站地图", "合作计划", "退款说明"],
     "show_more": "展开更多",
     "alt": "DET 实践:最好的 Duolingo English Test 实践平台",
     "cookie_contenr": "DET Practice 使用 cookies 根据您的浏览器设置改进内容。欲了解更多详情，请参阅",
@@ -95,12 +81,7 @@
     "power_by": "AI驱动",
     "h1Mobile": "轻松获得多邻国考试高分使用：",
     "h1PC": "轻松获得多邻国考试高分使用：",
-    "one_small_title": [
-      "DET 练习",
-      "AI纠正",
-      "全长模拟",
-      "DET 课程"
-    ],
+    "one_small_title": ["DET 练习", "AI纠正", "全长模拟", "DET 课程"],
     "Start_free_with_Google": "Google登录免费开始使用",
     "Start_free_with_email": "Email注册免费开始使用",
     "Start_for_free": "免费开始",
@@ -191,7 +172,7 @@
   },
   "pricing": {
     "seometa": {
-      "title": "Duolingo English Test备考定价 | 实惠的DET备考方案",
+      "title": "Duolingo English Test备考定价 {'|'} 实惠的DET备考方案",
       "description": "Duolingo English Test备考价格方案。我们提供灵活实惠的备考计划，助你轻松扎实备考多邻国英语测试。立即选择适合你的方案，开启学习之旅！",
       "keywords": "Duolingo English Test备考价格, 多邻国英语测试备考方案, Duolingo English Test备考, DET定价, 英语水平测试价格, 多邻国英语考试备考方案"
     },
@@ -421,7 +402,7 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "联系 DET Practice | 支持与客户服务",
+      "title": "联系 DET Practice {'|'} 支持与客户服务",
       "description": "联系 DET Practice 支持团队，获取问题解答、反馈或协助。为 Duolingo English Test 准备提供专 业帮助。",
       "keywords": "DET practice 联系, 联系 DET practice支持, DET 考试帮助, Duolingo English Test 支持, DET practice 客服, DET 模考协助"
     },
@@ -524,7 +505,7 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET多邻国英语考试备考指南 | 专业系统的口语写作备考课程",
+      "title": "DET多邻国英语考试备考指南 {'|'} 专业系统的口语写作备考课程",
       "description": "多邻国英语考试（DET）备考系统课程，由资深考试专家精心打造。内容涵盖听说读写全方位技能提升、模拟练习、应试策略等，助您高效备考，轻松达到理想分数。",
       "keywords": "DET备考教程, 多邻国英语测试 DET考试技巧, 多邻国考试备考, DET在线课程, 多邻国英语提分, DET考试攻略, 线上英语备考"
     },
@@ -672,7 +653,7 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "多邻国英语测试（DET）模拟考试 | 专业完整版模拟测试，由 DET Practice 提供",
+      "title": "多邻国英语测试（DET）模拟考试 {'|'} 专业完整版模拟测试，由 DET Practice 提供",
       "description": "参加专业的多邻国英语模拟考试，体验最真实的 DET 考试环境。数分钟即可获得详细的成绩报告和分析。题库包含 18,000+ 道优质试题，采用智能自适应算法，配备 AI 口语和写作评估系统。立即开启你的 DET 备考之路。",
       "keywords": "duolingo english mock test, duolingo english practice test, DET 模拟考试, duolingo 备考资源, duolingo english test 在线模考, DET practice test, duolingo 真题练习, 在线 duolingo 模拟, DET 备考指南, duolingo english test 题库, duolingo 成绩评估, DET 能力测评"
     },
@@ -706,7 +687,7 @@
   },
   "practice": {
     "seometa": {
-      "title": "多邻国英语考试（DET）练习题库 | 18000+题目模拟",
+      "title": "多邻国英语考试（DET）练习题库 {'|'} 18000+题目模拟",
       "description": "备考多邻国英语考试？我们的智能题库收录超过18000道练习题，配备AI智能反馈和学习进度跟 踪。已有超40万考生选择，助你高效备考，提升DET成绩。",
       "keywords": "多邻国英语考试, DET备考, DET真题, DET模拟题, DET考试技巧, DET口语练习, DET写作训练, DET在 线练习, DET备考资料, AI口语评分"
     },
@@ -742,7 +723,7 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "多邻国英语测试AI口语评测 | DET口语智能评分系统",
+      "title": "多邻国英语测试AI口语评测 {'|'} DET口语智能评分系统",
       "description": "运用尖端AI技术，为您的多邻国英语口语考试备考保驾护航。系统提供实时评分反馈、深度分析报告和专业指导建议，帮助您完美应对DET口语考试。提供丰富的在线练习资源，严格遵循官方评分标准，让您的口语水平快速提升。",
       "keywords": "多邻国英语口语考试练习, DET考试备考, 多邻国英语口语评测, DET智能反馈, 口语在线评分, DET考试技巧, 多邻国英语测试模拟练习, 口语考试准备, AI口语评测, DET考试辅导"
     },
@@ -821,7 +802,7 @@
   },
   "refundPolicy": {
     "seometa": {
-      "title": "退款政策 - DET Practice | 透明公平的条款说明",
+      "title": "退款政策 - DET Practice {'|'} 透明公平的条款说明",
       "description": "了解 DET Practice 所有服务的明确透明的退款政策。我们致力于为用户提供最佳体验，制定公平直观的退款条款。立即了解详情。",
       "keywords": "退款政策，DET 练习退款，DET 练习政策，退款流程，退款资格"
     },
@@ -913,7 +894,7 @@
   },
   "tos": {
     "seometa": {
-      "title": "服务条款 | DET Practice –多邻国英语测试备考平台",
+      "title": "服务条款 {'|'} DET Practice –多邻国英语测试备考平台",
       "description": "了解 DET Practice 的服务条款，掌握使用我们平台备考 Duolingo 英语测试的相关指南和政策，包括用户责任、权利以及使用条款。",
       "keywords": "服务条款, DET Practice, 多邻国英语测试, 测试备考平台, 用户协议, 服务条款, 在线备考, EPT 政策"
     },
@@ -972,7 +953,7 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "联盟计划 - DET Practice | 通过多邻国英语测试备考赚取佣金",
+      "title": "联盟计划 - DET Practice {'|'} 通过多邻国英语测试备考赚取佣金",
       "description": "加入DET Practice联盟计划，通过推广我们的DET考试备考服务开始赚钱。获取高转化率的推广材料，并为每笔销售赚取佣金。了解如何立即开始",
       "keywords": "联盟计划, DET考试备考联盟, 与DET Practice一起赚取佣金, 在线考试备考联盟, 联盟营销, DET Practice合作伙伴, 赚取佣金"
     },

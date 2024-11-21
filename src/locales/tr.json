@@ -96,12 +96,7 @@
     "power_by": "Yapay Zeka Destekli",
     "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
     "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
-    "one_small_title": [
-      "DET Uygulama",
-      "AI Düzeltme",
-      "Tam Uzunlukta Deneme",
-      "DET Kurslar"
-    ],
+    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "e-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
@@ -192,7 +187,7 @@
   },
   "pricing": {
     "seometa": {
-      "title": "Duolingo English Test Hazırlık Fiyatları | Uygun DET Hazırlık Planları",
+      "title": "Duolingo English Test Hazırlık Fiyatları {'|'} Uygun DET Hazırlık Planları",
       "description": "DET Practice'de Duolingo English Test hazırlık fiyat seçeneklerini keşfedin. Duolingo Test hazırlığınızda başarılı olmanıza yardımcı olmak için tasarlanmış esnek ve uygun fiyatlı planlar arasından seçim yapın. Size uygun planla öğrenme yolculuğunuza bugün başlayın!",
       "keywords": "Duolingo English Test hazırlık fiyatları, Duolingo Test hazırlık planları, uygun DET pratik, Duolingo English Test hazırlık, DET fiyatlandırma, İngilizce yeterlilik sınavı fiyatları, test hazırlık planları"
     },
@@ -388,7 +383,7 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "DET Practice | Duolingo İngilizce Testi (DET) için Hepsi Bir Arada Hazırlık Platformu",
+      "title": "DET Practice {'|'} Duolingo İngilizce Testi (DET) için Hepsi Bir Arada Hazırlık Platformu",
       "description": "DET Practice - Profesyonel Duolingo hazırlık platformu, 18.000'den fazla gerçek soru pratiği,yapay zeka destekli değerlendirme ve tam simülasyon sınav deneyimi sunar. Duolingo İngilizce Testi'ne verimli bir şekilde hazırlanmanıza yardımcı olur, ideal puanınızı kolayca elde edin.",
       "keywords": "Duolingo İngilizce Testi, DET Simülasyon Sınavı, DET Soru Bankası, DET Akıllı Değerlendirme, DET Konuşma Pratiği, DET Yazma Pratiği, DET Online Kurslar, DET Öğrenme Platformu, Duolingo Sınav Hazırlığı, DET Sınav Teknikleri, DET Hazırlık Materyalleri"
     },
@@ -422,7 +417,7 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "DET Practice ile İletişim | Destek ve Müşteri Hizmetleri",
+      "title": "DET Practice ile İletişim {'|'} Destek ve Müşteri Hizmetleri",
       "description": "Sorularınızı yanıtlamak, geri bildirim almak veya destek sağlamak için DET Practice destek ekibi ile iletişime geçin. Duolingo English Test hazırlığınızda profesyonel yardım alın.",
       "keywords": "DET Practice iletişim, DET Practice destek ile iletişim, DET sınav desteği, Duolingo English Test destek, DET Practice müşteri hizmetleri, DET deneme sınavı desteği"
     },
@@ -486,7 +481,7 @@
   },
   "correction": {
     "seometa": {
-      "title": "Duolingo English Test Writing AI | DET Yazma Skor Kontrolörü by DET Practice",
+      "title": "Duolingo English Test Writing AI {'|'} DET Yazma Skor Kontrolörü by DET Practice",
       "description": "Yapay zeka teknolojisiyle DET yazma becerinizi geliştirin. Gerçek sınav formatında yazılarınızı analiz edin, anında puan ve detaylı geri bildirim alın. Profesyonel düzeyde önerilerle yazma kalitenizi yükseltin ve DET'e tam hazırlıklı olun.",
       "keywords": "duolingo yazma sınavı, det yazı hazırlık, yazma değerlendirmesi, duolingo puan hesaplama, det yazı örnekleri, yazma alıştırmaları, yapay zeka analizi, det yazı teknikleri, yazma püf noktaları, örnek yazılar, sınav hazırlığı, online pratik"
     },
@@ -525,7 +520,7 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET Hazırlık Kursları | Duolingo English Test için Profesyonel Eğitim",
+      "title": "DET Hazırlık Kursları {'|'} Duolingo English Test için Profesyonel Eğitim",
       "description": "Profesyonel DET hazırlık kurslarımızla başarıya ulaşın. Okuma, yazma, konuşma ve dinleme becerilerinizi uzman eğitmenler eşliğinde geliştirin. Sınava hazırlığınıza hemen başlayın!",
       "keywords": "DET hazırlık, Duolingo sınav eğitimi, DET kursları, İngilizce sınav hazırlığı, Duolingo sertifikası, DET özel ders, online İngilizce kursu, DET eğitim materyali"
     },
@@ -707,7 +702,7 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET Hazırlık Platformu | Yapay Zeka Destekli Duolingo Sınav Bankası",
+      "title": "DET Hazırlık Platformu {'|'} Yapay Zeka Destekli Duolingo Sınav Bankası",
       "description": "Duolingo İngilizce Testi için en kapsamlı hazırlık platformu! 18.000'den fazla soru, yapay zeka geri bildirimi ve akıllı ilerleme takibi ile DET puanınızı yükseltin. 400.000'den fazla öğrencinin tercih ettiği sınav hazırlık sistemi.",
       "keywords": "DET hazırlık, Duolingo sınav soruları, DET örnek sorular, Duolingo test çalışması, DET soru bankası, DET konuşma pratiği, DET yazma alıştırmaları, online İngilizce test çalışması, DET çalışma materyalleri, yapay zeka değerlendirmesi"
     },
@@ -743,7 +738,7 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Duolingo English Test Konuşma Becerileri - Yapay Zeka Destekli Değerlendirme | DET Hazırlık",
+      "title": "Duolingo English Test Konuşma Becerileri - Yapay Zeka Destekli Değerlendirme {'|'} DET Hazırlık",
       "description": "Duolingo English Test konuşma bölümünü artık yapay zeka desteğiyle çok daha kolay halledebilirsiniz. Anlık geri bildirimler, kapsamlı analizler ve uzman tavsiyeleri ile DET konuşma becerilerinizi geliştirin. Sınırsız pratik yapın ve DET resmi kriterleri doğrultusunda anında değerlendirme alın.",
       "keywords": "DET konuşma pratiği, Duolingo sınav hazırlığı, DET konuşma teknikleri, yapay zeka değerlendirmesi, DET konuşma örnekleri, Duolingo speaking tüyoları, DET online hazırlık, İngilizce konuşma pratiği, DET sınav stratejileri, Duolingo konuşma egzersizleri"
     },
@@ -822,7 +817,7 @@
   },
   "refundPolicy": {
     "seometa": {
-      "title": "İade Politikası - DET Practice | Şeffaf ve Adil Koşullar",
+      "title": "İade Politikası - DET Practice {'|'} Şeffaf ve Adil Koşullar",
       "description": "DET Practice tarafından sunulan tüm hizmetler için net ve şeffaf İade Politikamızı okuyun. Adil ve anlaşılır iade koşullarıyla kullanıcılarımıza en iyi deneyimi sunmaya çalışıyoruz. Bugün daha fazlasını öğrenin.",
       "keywords": "İade Politikası, DET Uygulama İadesi, DET Uygulama Politikası, İade Süreci, İade İçin Eligibility"
     },
@@ -914,7 +909,7 @@
   },
   "tos": {
     "seometa": {
-      "title": "Terms of Service | DET Practice – Duolingo English Test Preparation",
+      "title": "Terms of Service {'|'} DET Practice – Duolingo English Test Preparation",
       "description": "DET Practice'in Hizmet Şartları'nı inceleyin. Duolingo English Test'e hazırlanmak için platformumuzu kullanırken uyulması gereken kuralları, politikaları, kullanıcı sorumluluklarını, haklarını ve kullanım şartlarını öğrenin.",
       "keywords": "Hizmet Şartları, DET Practice, Duolingo English Test, sınav hazırlık platformu, kullanıcı sözleşmesi, hizmet koşulları, çevrimiçi sınav hazırlığı, EPT politikaları"
     },
@@ -973,7 +968,7 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "İş Ortaklığı Programı - DET Practice | Duolingo Test Hazırlığı ile Kazanın",
+      "title": "İş Ortaklığı Programı - DET Practice {'|'} Duolingo Test Hazırlığı ile Kazanın",
       "description": "DET Practice İş Ortaklığı Programı'na katılın ve Duolingo test hazırlık hizmetlerimizi tanıtarak kazanmaya başlayın. Yüksek dönüşüm sağlayan materyallere erişin ve her satıştan komisyon kazanın. Bugün nasıl başlayacağınızı öğrenin.",
       "keywords": "iş ortaklığı programı, Duolingo test hazırlığı ortaklığı, DET Practice ile kazanç, online test hazırlığı ortaklığı, satış ortaklığı, DET Practice ortakları, komisyon kazanma"
     },

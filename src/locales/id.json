@@ -51,13 +51,7 @@
     "LearnTitle": "Sumber Daya Persiapan",
     "BlogTitle": "Blog",
     "CompanyTitle": "Perusahaan",
-    "Products": [
-      "Latihan Soal DET",
-      "Koreksi Writing AI",
-      "Penilaian Speaking AI",
-      "Simulasi Ujian",
-      "Kursus DET"
-    ],
+    "Products": ["Latihan Soal DET", "Koreksi Writing AI", "Penilaian Speaking AI", "Simulasi Ujian", "Kursus DET"],
     "Company": [
       "Tentang Kami",
       "Hubungi Kami",
@@ -96,12 +90,7 @@
     "power_by": "Didukung oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
-    "one_small_title": [
-      "DET Latihan",
-      "Koreksi AI",
-      "Ujian Palsu Lengkap",
-      "DET Kursus"
-    ],
+    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -192,7 +181,7 @@
   },
   "pricing": {
     "seometa": {
-      "title": "Harga Persiapan Duolingo English Test | Paket Persiapan DET Terjangkau",
+      "title": "Harga Persiapan Duolingo English Test {'|'} Paket Persiapan DET Terjangkau",
       "description": "Temukan pilihan harga persiapan Duolingo English Test di DET Practice. Pilih dari paket fleksibel dan terjangkau yang dirancang untuk membantu Anda sukses dalam persiapan Duolingo Test. Mulai perjalanan Anda dengan paket yang tepat hari ini!",
       "keywords": "harga persiapan Duolingo English Test, paket persiapan Duolingo Test, latihan DET terjangkau, persiapan Duolingo English Test, harga DET, harga tes kemampuan bahasa Inggris, paket persiapan tes"
     },
@@ -388,7 +377,7 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "DET Practice | Platform All-in-One Persiapan Duolingo English Test (DET)",
+      "title": "DET Practice {'|'} Platform All-in-One Persiapan Duolingo English Test (DET)",
       "description": "DET Practice - Platform persiapan Duolingo profesional yang menyediakan lebih dari 18.000 latihan soal asli, koreksi cerdas AI, dan pengalaman simulasi ujian autentik. Membantu Anda mempersiapkan Duolingo English Test secara efisien, meraih skor ideal dengan mudah.",
       "keywords": "Duolingo English Test, Simulasi Ujian DET, Bank Soal DET, Koreksi Cerdas DET, Latihan Speaking DET, Latihan Writing DET, Kursus Online DET, Platform Pembelajaran DET, Persiapan Ujian Duolingo, Tips Ujian DET, Materi Persiapan DET"
     },
@@ -422,7 +411,7 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "Hubungi DET Practice | Dukungan dan Layanan Pelanggan",
+      "title": "Hubungi DET Practice {'|'} Dukungan dan Layanan Pelanggan",
       "description": "Hubungi tim dukungan DET Practice untuk mendapatkan jawaban, umpan balik, atau bantuan. Kami menyediakan bantuan profesional untuk persiapan Duolingo English Test Anda.",
       "keywords": "Kontak DET Practice, hubungi dukungan DET Practice, bantuan ujian DET, dukungan Duolingo English Test, layanan pelanggan DET Practice, bantuan simulasi DET"
     },
@@ -486,7 +475,7 @@
   },
   "correction": {
     "seometa": {
-      "title": "Duolingo English Test Writing AI | Pemeriksa Skor Menulis DET dengan AI",
+      "title": "Duolingo English Test Writing AI {'|'} Pemeriksa Skor Menulis DET dengan AI",
       "description": "Dapatkan penilaian tulisan instan menggunakan AI untuk persiapan Duolingo English Test Anda. Sistem kami memberikan skor akurat, masukan detail, dan saran perbaikan hanya dalam hitungan menit. Tingkatkan kemampuan menulis Anda dengan soal-soal DET asli dan analisis profesional.",
       "keywords": "duolingo english test writing, latihan menulis DET, koreksi tulisan DET, penilaian skor DET, feedback menulis DET, tips menulis DET, evaluasi tulisan dengan AI, persiapan tes DET, contoh tulisan DET, bank soal DET, latihan menulis online, cara mendapat skor tinggi DET"
     },
@@ -525,7 +514,7 @@
   },
   "courses": {
     "seometa": {
-      "title": "Kursus Persiapan Duolingo English Test | Pelatihan DET Lengkap di DET Practice",
+      "title": "Kursus Persiapan Duolingo English Test {'|'} Pelatihan DET Lengkap di DET Practice",
       "description": "Raih skor DET terbaik bersama para ahli berpengalaman kami. Dari latihan soal hingga teknik ujian, tingkatkan kemampuan membaca, menulis, berbicara, dan mendengarkan Anda melalui program yang dirancang khusus. Mulai persiapan DET Anda sekarang!",
       "keywords": "Kursus DET, Persiapan Duolingo Test, Belajar DET, Les Bahasa Inggris DET, Latihan Soal DET, Panduan Duolingo Test, Persiapan Ujian Inggris, Kursus DET Online"
     },
@@ -673,7 +662,7 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Duolingo English Mock Test | Simulasi DET Lengkap dari DET Practice",
+      "title": "Duolingo English Mock Test {'|'} Simulasi DET Lengkap dari DET Practice",
       "description": "Ikuti simulasi DET lengkap yang menyerupai ujian resmi Duolingo English. Dalam waktu 30 menit, Anda akan mendapatkan nilai dan laporan detail. Dilengkapi dengan bank soal 18.000+ pertanyaan, sistem ujian adaptif, serta penilaian speaking & writing berbasis AI. Persiapkan DET Anda mulai sekarang.",
       "keywords": "duolingo english mock test, duolingo english practice test, simulasi DET lengkap, persiapan duolingo test, latihan duolingo english test, tryout DET, soal duolingo, latihan duolingo online, persiapan DET, bank soal duolingo english test, simulasi nilai duolingo, evaluasi kemampuan DET"
     },
@@ -707,7 +696,7 @@
   },
   "practice": {
     "seometa": {
-      "title": "Latihan DET | Bank Soal Duolingo English Test dengan AI Pintar",
+      "title": "Latihan DET {'|'} Bank Soal Duolingo English Test dengan AI Pintar",
       "description": "Sedang persiapan Duolingo English Test? Akses lebih dari 18.000 soal lengkap dengan feedback AI dan sistem tracking otomatis. Bergabung bersama 400.000+ pelajar yang sudah berhasil meningkatkan skor DET mereka.",
       "keywords": "atihan DET, soal Duolingo test, contoh soal DET, persiapan Duolingo, bank soal DET, latihan speaking DET, latihan writing DET, latihan tes Inggris online, materi belajar DET, evaluasi berbicara AI"
     },
@@ -743,7 +732,7 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Umpan Balik AI untuk Speaking Duolingo English Test | Latihan DET",
+      "title": "Umpan Balik AI untuk Speaking Duolingo English Test {'|'} Latihan DET",
       "description": "Berlatih Speaking Duolingo English Test menjadi lebih mudah dengan bantuan AI mutakhir! Dapatkan umpan balik instan, analisis terperinci, dan saran ahli untuk menguasai Speaking DET. Latih kemampuan berbicara Anda dengan soal-soal tidak terbatas dan terima skor langsung sesuai standar resmi DET.",
       "keywords": "Latihan Speaking DET, Persiapan Duolingo Test, Soal Speaking DET, AI Feedback DET, Koreksi Speaking Duolingo, Contoh Soal Speaking DET, Tips Speaking Duolingo Test, Latihan Speaking Duolingo, Penilaian Speaking DET, Cara Persiapan Speaking DET"
     },
@@ -822,7 +811,7 @@
   },
   "refundPolicy": {
     "seometa": {
-      "title": "Kebijakan Pengembalian Dana - DET Practice | Ketentuan yang Transparan dan Adil",
+      "title": "Kebijakan Pengembalian Dana - DET Practice {'|'} Ketentuan yang Transparan dan Adil",
       "description": "Baca Kebijakan Pengembalian Dana kami yang jelas dan transparan untuk semua layanan yang ditawarkan oleh DET Practice. Kami berusaha memberikan pengalaman terbaik bagi pengguna kami dengan ketentuan pengembalian dana yang adil dan mudah dipahami. Pelajari lebih lanjut hari ini.",
       "keywords": "Kebijakan Pengembalian Dana, DET Praktik Pengembalian Dana, DET Kebijakan Praktik, Proses Pengembalian Dana, Kelayakan untuk Pengembalian Dana"
     },
@@ -914,7 +903,7 @@
   },
   "tos": {
     "seometa": {
-      "title": "Terms of Service | DET Practice – Duolingo English Test Preparation",
+      "title": "Terms of Service {'|'} DET Practice – Duolingo English Test Preparation",
       "description": "Jelajahi Ketentuan Layanan untuk DET Practice. Pahami pedoman dan kebijakan penggunaan platform kami untuk persiapan Duolingo English Test, termasuk tanggung jawab pengguna, hak-hak, dan ketentuan penggunaan.",
       "keywords": "Ketentuan Layanan, DET Practice, Duolingo English Test, platform persiapan tes, perjanjian pengguna, syarat layanan, persiapan tes online, kebijakan EPT"
     },
@@ -973,7 +962,7 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "Program Afiliasi - DET Practice | Dapatkan Penghasilan dengan Persiapan Duolingo Test",
+      "title": "Program Afiliasi - DET Practice {'|'} Dapatkan Penghasilan dengan Persiapan Duolingo Test",
       "description": "Bergabunglah dengan Program Afiliasi DET Practice dan mulai dapatkan penghasilan dengan mempromosikan layanan persiapan Duolingo test kami. Dapatkan akses ke materi dengan tingkat konversi tinggi dan terima komisi untuk setiap penjualan. Pelajari cara memulai hari ini.",
       "keywords": "program afiliasi, afiliasi persiapan Duolingo test, penghasilan dengan DET Practice, afiliasi persiapan tes online, pemasaran afiliasi, mitra DET Practice, dapatkan komisi"
     },

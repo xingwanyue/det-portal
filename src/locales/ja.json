@@ -51,13 +51,7 @@
     "LearnTitle": "学習リソース",
     "BlogTitle": "ブログ",
     "CompanyTitle": "会社概要",
-    "Products": [
-      "DET演習",
-      "AIライティング添削",
-      "AIスピーキング評価",
-      "模擬試験",
-      "総合対策コース"
-    ],
+    "Products": ["DET演習", "AIライティング添削", "AIスピーキング評価", "模擬試験", "総合対策コース"],
     "Company": [
       "会社概要",
       "お問い合わせ",
@@ -95,12 +89,7 @@
     "power_by": "AI搭載",
     "h1Mobile": "Duolingo English Testで簡単にスコアを上げましょう",
     "h1PC": "Duolingo English Testで簡単にスコアを上げましょう",
-    "one_small_title": [
-      "DET 練習",
-      "AI修正",
-      "フルレングスモック",
-      "DET コース"
-    ],
+    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
@@ -191,7 +180,7 @@
   },
   "pricing": {
     "seometa": {
-      "title": "Duolingo English Test対策料金 | お手頃なDET対策プラン",
+      "title": "Duolingo English Test対策料金 {'|'} お手頃なDET対策プラン",
       "description": "DET Practiceで最適なDuolingo English Test対策プランをご覧ください。柔軟で手頃な料金プランで、Duolingo Testの対策をサポートします。今すぐ最適なプランで学習を始めましょう！",
       "keywords": "Duolingo English Test対策料金, Duolingo Test対策プラン, お手頃なDET練習, Duolingo English Test対策, DET料金, 英語能力試験料金, テスト対策プラン"
     },
@@ -524,7 +513,7 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET対策講座 | Duolingo英語テスト完全攻略",
+      "title": "DET対策講座 {'|'} Duolingo英語テスト完全攻略",
       "description": "プロフェッショナルが作成したDuolingoテスト対策コースで確実な合格を目指しましょう。模擬テストから合格戦略まで、技能を徹底的に強化する体系的なレッスンをご用意。すぐに始められる効率的な学習プログラムです。",
       "keywords": "DET対策講座, Duolingo英語テスト, DET学習法, デュオリンゴ試験対策, DETオンライン講座, デュオリンゴ合格対策, DET攻略法, 英語試験準備"
     },
@@ -672,7 +661,7 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Duolingo English Mock Test | DET Practice提供の実践的DET模擬テスト",
+      "title": "Duolingo English Mock Test {'|'} DET Practice提供の実践的DET模擬テスト",
       "description": "本番レベルのDuolingo English模擬テストで、実践的なDET体験ができます。受験後30分以内にスコアと詳細なレポートを受け取れます。18,000問以上の問題、AIによる適応型アルゴリズム、スピーキング・ライティング評価システムを搭載。DET対策を今すぐ始めましょう。",
       "keywords": "duolingo english mock test, duolingo english practice test, DET模擬テスト, duolingo試験対策, duolingo english test演習, DET practice test, duolingo問題集, オンラインduolingo対策, DET準備講座, duolingo english test問題バンク, duolingoスコア診断, DET実力診断"
     },
@@ -742,7 +731,7 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "DETスピーキング AI採点システム | Duolingo英語テスト対策",
+      "title": "DETスピーキング AI採点システム {'|'} Duolingo英語テスト対策",
       "description": "最新のAI技術で、Duolingo English Testのスピーキング対策が変わります。リアルタイムフィードバック、詳細な分析、専門家監修のアドバイスで、確実なスコアアップを実現。DET公式基準に準拠した採点システムで、効率的な練習が可能です。",
       "keywords": "DETスピーキング練習, Duolingo英語テスト対策, DET音声採点, AIフィードバック, スピーキング模擬テスト, DET対策アプリ, デュオリンゴ試験準備, オンライン英語練習, DET必勝法, 英語スピーキング上達"
     },
@@ -821,7 +810,7 @@
   },
   "refundPolicy": {
     "seometa": {
-      "title": "返金ポリシー - DET Practice | 透明性と公平性のある利用規約",
+      "title": "返金ポリシー - DET Practice {'|'} 透明性と公平性のある利用規約",
       "description": "DET Practice が提供する全てのサービスについての明確で透明性のある返金ポリシーをご確認ください。公平でわかりやすい返金条件で、ユーザー様に最高の体験を提供することを目指しています。詳細は以下をご覧ください",
       "keywords": "返金ポリシー、DET練習の返金、DET練習ポリシー、返金プロセス、返金の対象条件"
     },
@@ -913,7 +902,7 @@
   },
   "tos": {
     "seometa": {
-      "title": "サービス利用規約 | DET Practice – Duolingo 英語テスト準備",
+      "title": "サービス利用規約 {'|'} DET Practice – Duolingo 英語テスト準備",
       "description": "DET Practiceのサービス利用規約を確認してください。Duolingo 英語テストの準備のために当プラットフォームを使用するためのガイドラインとポリシーを理解し、ユーザーの責任、権利、利用規約について学びましょう。",
       "keywords": "サービス利用規約, DET Practice, Duolingo 英語テスト, テスト準備プラットフォーム, ユーザー契約, サービス利用規約, オンラインテスト準備, EPT ポリシー"
     },
@@ -972,7 +961,7 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "アフィリエイトプログラム - DET Practice | Duolingo テスト対策で収益を得よう",
+      "title": "アフィリエイトプログラム - DET Practice {'|'} Duolingo テスト対策で収益を得よう",
       "description": "DET Practiceのアフィリエイトプログラムに参加して、Duolingoテスト対策サービスを紹介することで収益を得ましょう。高いコンバージョン率を誇る教材へのアクセスと、売上ごとの報酬を獲得できます。今すぐ始める方法をご覧ください。",
       "keywords": "DET Duolingo, DET テスト, Duolingo DET, Duolingo テスト, Duolingo オンラインテスト, Duolingo 英語試験, Duolingo 英語テスト, Duolingo 語学能力試験"
     },
