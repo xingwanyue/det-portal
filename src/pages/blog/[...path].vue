@@ -179,6 +179,7 @@ const handleCurrentChange = async (val: number) => {
     padding: 0px 30px;
     margin-top: 100px;
     max-width: 1200px;
+    margin-bottom: 100px;
 
     @media (max-width: 450px) {
       padding: 0px 15px;
@@ -191,10 +192,10 @@ const handleCurrentChange = async (val: number) => {
     grid-template-columns: 0.32fr 1fr;
     grid-template-areas: 'left_list right_list';
 
-    grid-gap: 48px;
+    grid-column-gap: 48px;
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
-      grid-gap: 0px;
+      grid-row-gap: 48px;
       grid-template-areas:
         'right_list'
         'left_list';
@@ -230,6 +231,9 @@ const handleCurrentChange = async (val: number) => {
     }
     .blog_right_list {
       grid-area: right_list;
+      // border: 1px red solid;
+      padding-bottom: 156px;
+      position: relative;
       .bolgs_content {
         display: grid;
         grid-template-columns: 1fr;
@@ -278,11 +282,14 @@ const handleCurrentChange = async (val: number) => {
       }
       .pagination_out {
         margin: 0 auto;
-        // border: 1px red solid;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
         display: flex;
         justify-content: center;
         margin-top: 56px;
-        margin-bottom: 100px;
+        // margin-bottom: 100px;
         :deep(.el-pagination.is-background .el-pager li.is-active) {
           background-color: #201515 !important;
         }
