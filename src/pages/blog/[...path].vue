@@ -114,7 +114,7 @@ const handleCurrentChange = async (val: number) => {
           <NuxtLink
             v-for="(item, index) in blogs"
             :key="index"
-            class="one_blog"
+            :class="index === 0 ? 'one_blog border_top' : 'one_blog'"
             data-aos="fade-up"
             data-aos-duration="1000"
             :to="localePath(`/${item.path}`)"
@@ -237,7 +237,7 @@ const handleCurrentChange = async (val: number) => {
         .one_blog {
           padding: 40px;
           padding-left: 0px;
-          border-top: 1px solid #e9e9e9;
+          border-bottom: 1px solid #e9e9e9;
           cursor: pointer;
           display: block;
           &:hover {
@@ -271,6 +271,9 @@ const handleCurrentChange = async (val: number) => {
           .bottom {
             margin-top: 24px;
           }
+        }
+        .border_top {
+          border-top: 1px solid #e9e9e9;
         }
       }
       .pagination_out {
