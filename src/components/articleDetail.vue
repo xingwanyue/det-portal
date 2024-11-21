@@ -193,7 +193,7 @@ const iconHover = (index: number) => {
               <img src="/img/blog/article_small_img.png" :alt="props.article.name" />
             </div>
           </div>
-          <div class="article-title-list article-title-list1">
+          <div v-if="props.article.relatedArticles.length" class="article-title-list article-title-list1">
             <div class="title title1">{{ $t('articleDetail.Related_Articles') }}</div>
             <div v-for="(val, key) in props.article.relatedArticles" :key="key">
               <nuxt-link :to="localePath(`/${val.path}`)" class="">
