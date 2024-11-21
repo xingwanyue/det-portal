@@ -95,7 +95,7 @@ const iconHover = (index: number) => {
         <nuxt-link :to="localePath('/')" class="hoverGiveBorder">{{ $t('articleDetail.Home') }}</nuxt-link>
         >
 
-        <nuxt-link :to="localePath('/blog')" class="">{{ $t('articleDetail.Blog') }}</nuxt-link>
+        <nuxt-link :to="localePath('/blog')" class="hoverGiveBorder">{{ $t('articleDetail.Blog') }}</nuxt-link>
         > {{ state.selectName }}
       </div>
 
