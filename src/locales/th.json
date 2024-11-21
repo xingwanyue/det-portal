@@ -47,10 +47,10 @@
   },
   "footer": {
     "inc": "เว็บไซต์นี้ไม่ได้เกี่ยวข้องกับ Duolingo, Inc. แต่อย่างใด",
-    "ProductsTitle": "บริการ",
-    "LearnTitle": "คลังความรู้",
+    "ProductsTitle": "ผลิตภัณฑ์",
+    "LearnTitle": "ทรัพยากรการเตรียมสอบ",
     "BlogTitle": "บล็อก",
-    "CompanyTitle": "เกี่ยวกับเรา",
+    "CompanyTitle": "บริษัท",
     "Products": [
       "แบบฝึกหัด DET",
       "AI ตรวจ Writing",

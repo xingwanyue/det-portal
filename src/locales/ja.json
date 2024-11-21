@@ -47,10 +47,10 @@
   },
   "footer": {
     "inc": "本サービスは、Duolingo社（Duolingo, Inc.）とは一切関係のない、独立した学習支援サービスです。",
-    "ProductsTitle": "サービス",
-    "LearnTitle": "学習コンテンツ",
+    "ProductsTitle": "製品",
+    "LearnTitle": "学習リソース",
     "BlogTitle": "ブログ",
-    "CompanyTitle": "企業情報",
+    "CompanyTitle": "会社概要",
     "Products": [
       "DET演習",
       "AIライティング添削",

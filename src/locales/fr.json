@@ -47,8 +47,8 @@
   },
   "footer": {
     "inc": "Cette plateforme est un service indépendant et n'est pas affiliée à Duolingo, Inc.",
-    "ProductsTitle": "Services",
-    "LearnTitle": "Ressources",
+    "ProductsTitle": "Produits",
+    "LearnTitle": "Ressources de préparation",
     "BlogTitle": "Blog",
     "CompanyTitle": "Entreprise",
     "Products": [
@@ -95,7 +95,12 @@
     "power_by": "Propulsé par l'IA",
     "h1Mobile": "Obtenez facilement un meilleur score au Duolingo English Test",
     "h1PC": "Obtenez facilement un meilleur score au Duolingo English Test",
-    "one_small_title": ["DET Pratique", "Correction de l'IA", "Simulation complète", "DET Cours"],
+    "one_small_title": [
+      "DET Pratique",
+      "Correction de l'IA",
+      "Simulation complète",
+      "DET Cours"
+    ],
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencez gratuitement par email",
     "Start_for_free": "Commencez gratuitement",

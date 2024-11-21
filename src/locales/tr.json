@@ -47,10 +47,10 @@
   },
   "footer": {
     "inc": "Bu platform Duolingo, Inc. ile bağlantılı değildir ve bağımsız bir eğitim hizmetidir.",
-    "ProductsTitle": "Hizmetler",
-    "LearnTitle": "Kaynaklar",
+    "ProductsTitle": "Ürünler",
+    "LearnTitle": "Hazırlık Kaynakları",
     "BlogTitle": "Blog",
-    "CompanyTitle": "Kurumsal",
+    "CompanyTitle": "Şirket",
     "Products": [
       "DET Alıştırmaları",
       "YZ Yazma Desteği",

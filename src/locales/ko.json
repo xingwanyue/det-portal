@@ -47,10 +47,10 @@
   },
   "footer": {
     "inc": "본 서비스는 Duolingo, Inc.와 무관하며, 모든 서비스는 제3자에 의해 독립적으로 제공됩니다.",
-    "ProductsTitle": "제품·서비스",
-    "LearnTitle": "Материалы",
+    "ProductsTitle": "제품",
+    "LearnTitle": "준비 자료",
     "BlogTitle": "블로그",
-    "CompanyTitle": "회사 소개",
+    "CompanyTitle": "회사",
     "Products": [
       "문제 풀이",
       "AI 작문 첨삭",

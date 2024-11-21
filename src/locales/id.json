@@ -47,10 +47,10 @@
   },
   "footer": {
     "inc": "Platform ini tidak memiliki afiliasi dengan Duolingo, Inc. Seluruh layanan disediakan dan dikelola secara independen oleh pihak ketiga.",
-    "ProductsTitle": "Produk & Layanan",
-    "LearnTitle": "Materi Belajar",
+    "ProductsTitle": "Produk",
+    "LearnTitle": "Sumber Daya Persiapan",
     "BlogTitle": "Blog",
-    "CompanyTitle": "Tentang Kami",
+    "CompanyTitle": "Perusahaan",
     "Products": [
       "Latihan Soal DET",
       "Koreksi Writing AI",

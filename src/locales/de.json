@@ -47,11 +47,17 @@
   },
   "footer": {
     "inc": "Diese Plattform ist ein unabhängiges Angebot und steht in keiner Verbindung zu Duolingo,Inc.",
-    "ProductsTitle": "Leistungen",
-    "LearnTitle": "Lernmaterialien",
+    "ProductsTitle": "Produkte",
+    "LearnTitle": "Vorbereitungsressourcen",
     "BlogTitle": "Blog",
-    "CompanyTitle": "Über uns",
-    "Products": ["DET-Übungen", "KI-Schreibtraining", "KI-Sprechtraining", "Prüfungssimulation", "DET-Kurse"],
+    "CompanyTitle": "Unternehmen",
+    "Products": [
+      "DET-Übungen",
+      "KI-Schreibtraining",
+      "KI-Sprechtraining",
+      "Prüfungssimulation",
+      "DET-Kurse"
+    ],
     "Company": [
       "Über uns",
       "Kontakt",
@@ -89,7 +95,12 @@
     "power_by": "KI-basiert",
     "h1Mobile": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
     "h1PC": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
-    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
+    "one_small_title": [
+      "DET Übung",
+      "KI-Korrektur",
+      "Ganzlängen-Mock",
+      "DET Kurse"
+    ],
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos starten mit E-Mail",
     "Start_for_free": "Kostenlos starten",
