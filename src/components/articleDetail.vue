@@ -245,6 +245,40 @@ const iconHover = (index: number) => {
   .el-rate__text {
     font-size: 16px;
   }
+
+  h2 {
+    // border: 1px red solid;
+    font-weight: 600 !important;
+    font-size: 32px !important;
+    color: #201515 !important;
+    margin: 0;
+    padding: 0;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    line-height: 40px !important;
+    span {
+      font-weight: 600 !important;
+      font-size: 32px !important;
+      color: #201515 !important;
+      line-height: 40px;
+    }
+  }
+  // css选择第一个h2出现的h2
+  h2:first-of-type {
+    font-weight: 600 !important;
+    color: #201515 !important;
+    line-height: 48px !important;
+    margin: 0;
+    padding: 0;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    span {
+      font-weight: 600 !important;
+      font-size: 40px !important;
+      color: #201515 !important;
+      line-height: 48px !important;
+    }
+  }
 }
 </style>
 <style lang="scss" scoped>
