@@ -51,7 +51,13 @@
     "LearnTitle": "学習リソース",
     "BlogTitle": "ブログ",
     "CompanyTitle": "会社概要",
-    "Products": ["DET演習", "AIライティング添削", "AIスピーキング評価", "模擬試験", "総合対策コース"],
+    "Products": [
+      "DET演習",
+      "AIライティング添削",
+      "AIスピーキング評価",
+      "模擬試験",
+      "総合対策コース"
+    ],
     "Company": [
       "会社概要",
       "お問い合わせ",
@@ -89,7 +95,12 @@
     "power_by": "AI搭載",
     "h1Mobile": "Duolingo English Testで簡単にスコアを上げましょう",
     "h1PC": "Duolingo English Testで簡単にスコアを上げましょう",
-    "one_small_title": ["DET 練習", "AI修正", "フルレングスモック", "DET コース"],
+    "one_small_title": [
+      "DET 練習",
+      "AI修正",
+      "フルレングスモック",
+      "DET コース"
+    ],
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料で始める",
     "Start_for_free": "無料で始める",
@@ -347,7 +358,9 @@
     "Blog": "ブログ",
     "Related_Articles": "関連記事",
     "Thanks_for_voting": "投票してくれてありがとう！",
-    "Rate_this_article": "この記事を評価する"
+    "Rate_this_article": "この記事を評価する",
+    "share": "この記事をシェアする",
+    "getHiger": "DET で簡単に高スコアを獲得"
   },
   "easyexam": {
     "snfeep": "効率的な試験対策を、今すぐ始めましょう。",

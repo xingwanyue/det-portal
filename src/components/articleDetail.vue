@@ -132,10 +132,63 @@ const iconHover = (index: number) => {
               </div>
             </div>
           </div>
+          <div class="rate-con">
+            <div class="rate-con-left">
+              <div v-if="state.averageScore">
+                <el-rate
+                  v-model="state.rate"
+                  :disabled="Boolean(state.rate)"
+                  allow-half
+                  show-score
+                  text-color="#201515"
+                  :score-template="`{value}/5（${
+                    props.article.rateNum ? `Rating:${Number(state.averageScore).toFixed(1)} ·` : ''
+                  }   ${props.article.rateNum || 0} votes）`"
+                  @change="rateChange"
+                />
+              </div>
+              <div v-else>
+                <el-rate
+                  v-model="state.rate"
+                  :disabled="Boolean(state.rate)"
+                  allow-half
+                  show-score
+                  text-color="#201515"
+                  :score-template="`{value}/5（${
+                    props.article.rateNum ? `Rating:${props.article.rate.toFixed(1)} ·` : ''
+                  }   ${props.article.rateNum || 0} votes）`"
+                  @change="rateChange"
+                />
+              </div>
+              <div>
+                {{
+                  state.rate ? `${$t('articleDetail.Thanks_for_voting')}` : `${$t('articleDetail.Rate_this_article')}`
+                }}
+              </div>
+            </div>
+            <div class="rate-con-right">
+              <div class="top_icon_group">
+                <div class="one_share_icon" @mouseover="iconHover(1)" @mouseleave="iconHover(-1)" @click="shareToX">
+                  <img v-show="state.iconHoverIndex !== 1" src="/img/footer/x_logo.svg" />
+                  <img v-show="state.iconHoverIndex === 1" src="/img/footer/x_logo_active.svg" />
+                </div>
+                <div
+                  class="one_share_icon"
+                  @mouseover="iconHover(2)"
+                  @mouseleave="iconHover(-1)"
+                  @click="shareToFacebook"
+                >
+                  <img v-show="state.iconHoverIndex !== 2" src="/img/footer/facebook_logo.svg" />
+                  <img v-show="state.iconHoverIndex === 2" src="/img/footer/facebook_logo_active.svg" />
+                </div>
+              </div>
+              <div class="bottom_font">{{ $t('articleDetail.share') }}</div>
+            </div>
+          </div>
         </div>
         <div class="right_list">
           <div class="article_img">
-            <div class="article_img_top">Get a Higher Score Easily on the DET</div>
+            <div class="article_img_top">{{ $t('articleDetail.getHiger') }}</div>
             <div class="article_img_bottom">
               <img src="/img/blog/article_small_img.png" :alt="props.article.name" />
             </div>
@@ -152,52 +205,7 @@ const iconHover = (index: number) => {
           </div>
         </div>
       </div>
-      <div class="rate-con">
-        <div class="rate-con-left">
-          <div v-if="state.averageScore">
-            <el-rate
-              v-model="state.rate"
-              :disabled="Boolean(state.rate)"
-              allow-half
-              show-score
-              text-color="#201515"
-              :score-template="`{value}/5（${
-                props.article.rateNum ? `Rating:${Number(state.averageScore).toFixed(1)} ·` : ''
-              }   ${props.article.rateNum || 0} votes）`"
-              @change="rateChange"
-            />
-          </div>
-          <div v-else>
-            <el-rate
-              v-model="state.rate"
-              :disabled="Boolean(state.rate)"
-              allow-half
-              show-score
-              text-color="#201515"
-              :score-template="`{value}/5（${
-                props.article.rateNum ? `Rating:${props.article.rate.toFixed(1)} ·` : ''
-              }   ${props.article.rateNum || 0} votes）`"
-              @change="rateChange"
-            />
-          </div>
-          <div>
-            {{ state.rate ? `${$t('articleDetail.Thanks_for_voting')}` : `${$t('articleDetail.Rate_this_article')}` }}
-          </div>
-        </div>
-        <div class="rate-con-right">
-          <div class="top_icon_group">
-            <div class="one_share_icon" @mouseover="iconHover(1)" @mouseleave="iconHover(-1)" @click="shareToX">
-              <img v-show="state.iconHoverIndex !== 1" src="/img/footer/x_logo.svg" />
-              <img v-show="state.iconHoverIndex === 1" src="/img/footer/x_logo_active.svg" />
-            </div>
-            <div class="one_share_icon" @mouseover="iconHover(2)" @mouseleave="iconHover(-1)" @click="shareToFacebook">
-              <img v-show="state.iconHoverIndex !== 2" src="/img/footer/facebook_logo.svg" />
-              <img v-show="state.iconHoverIndex === 2" src="/img/footer/facebook_logo_active.svg" />
-            </div>
-          </div>
-          <div class="bottom_font">Share this article</div>
-        </div>
-      </div>
+
       <div class="article-title-list article-title-list2">
         <div class="title title1">{{ $t('articleDetail.Related_Articles') }}</div>
         <div v-for="(val, key) in props.article.relatedArticles" :key="key">

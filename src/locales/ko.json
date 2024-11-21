@@ -51,8 +51,22 @@
     "LearnTitle": "준비 자료",
     "BlogTitle": "블로그",
     "CompanyTitle": "회사",
-    "Products": ["문제 풀이", "AI 작문 첨삭", "AI 스피킹 평가", "실전 모의고사", "DET 학습 과정"],
-    "Company": ["회사 소개", "고객센터", "이용약관", "개인정보처리방침", "사이트맵", "제휴 안내", "환불규정"],
+    "Products": [
+      "문제 풀이",
+      "AI 작문 첨삭",
+      "AI 스피킹 평가",
+      "실전 모의고사",
+      "DET 학습 과정"
+    ],
+    "Company": [
+      "회사 소개",
+      "고객센터",
+      "이용약관",
+      "개인정보처리방침",
+      "사이트맵",
+      "제휴 안내",
+      "환불규정"
+    ],
     "show_more": "더 보기",
     "alt": "DET 연습:최고의 Duolingo English Test 연습 플랫폼",
     "cookie_contenr": "DET Practice는 사용자의 브라우저 설정에 따라 콘텐츠를 개선하기 위해 쿠키를 사용합니다. 자세한 내용은 참조하십시오",
@@ -82,7 +96,12 @@
     "power_by": "AI로 구동되는",
     "h1Mobile": "Duolingo English Test에서 쉽게 더 높은 점수를 얻으세요",
     "h1PC": "Duolingo English Test에서 쉽게 더 높은 점수를 얻으세요",
-    "one_small_title": ["DET 연습", "AI 수정", "풀-길이 모의 시험", "DET 코스"],
+    "one_small_title": [
+      "DET 연습",
+      "AI 수정",
+      "풀-길이 모의 시험",
+      "DET 코스"
+    ],
     "Start_free_with_Google": "Google로 무료 시작",
     "Start_free_with_email": "이메일로 무료 시작",
     "Start_for_free": "무료로 시작하기",
@@ -340,7 +359,9 @@
     "Blog": "블로그",
     "Related_Articles": "관련 기사",
     "Thanks_for_voting": "투표해 주셔서 감사합니다!",
-    "Rate_this_article": "이 기사 평가하기"
+    "Rate_this_article": "이 기사 평가하기",
+    "share": "이 기사를 공유하세요",
+    "getHiger": "DET에서 쉽게 더 높은 점수를 받으세요"
   },
   "easyexam": {
     "snfeep": "지금 바로 시험 준비를 시작하세요.",

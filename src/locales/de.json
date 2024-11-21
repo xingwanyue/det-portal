@@ -51,7 +51,13 @@
     "LearnTitle": "Vorbereitungsressourcen",
     "BlogTitle": "Blog",
     "CompanyTitle": "Unternehmen",
-    "Products": ["DET-Übungen", "KI-Schreibtraining", "KI-Sprechtraining", "Prüfungssimulation", "DET-Kurse"],
+    "Products": [
+      "DET-Übungen",
+      "KI-Schreibtraining",
+      "KI-Sprechtraining",
+      "Prüfungssimulation",
+      "DET-Kurse"
+    ],
     "Company": [
       "Über uns",
       "Kontakt",
@@ -89,7 +95,12 @@
     "power_by": "KI-basiert",
     "h1Mobile": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
     "h1PC": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
-    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
+    "one_small_title": [
+      "DET Übung",
+      "KI-Korrektur",
+      "Ganzlängen-Mock",
+      "DET Kurse"
+    ],
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos starten mit E-Mail",
     "Start_for_free": "Kostenlos starten",
@@ -347,7 +358,9 @@
     "Blog": "Blog",
     "Related_Articles": "Verwandte Artikel",
     "Thanks_for_voting": "Danke für Ihre Stimme!",
-    "Rate_this_article": "Bewerten Sie diesen Artikel"
+    "Rate_this_article": "Bewerten Sie diesen Artikel",
+    "share": "Teilen Sie diesen Artikel",
+    "getHiger": "Erzielen Sie ganz einfach eine höhere Punktzahl beim DET"
   },
   "easyexam": {
     "snfeep": "Effektive Prüfungsvorbereitung leicht gemacht.",

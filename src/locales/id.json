@@ -51,7 +51,13 @@
     "LearnTitle": "Sumber Daya Persiapan",
     "BlogTitle": "Blog",
     "CompanyTitle": "Perusahaan",
-    "Products": ["Latihan Soal DET", "Koreksi Writing AI", "Penilaian Speaking AI", "Simulasi Ujian", "Kursus DET"],
+    "Products": [
+      "Latihan Soal DET",
+      "Koreksi Writing AI",
+      "Penilaian Speaking AI",
+      "Simulasi Ujian",
+      "Kursus DET"
+    ],
     "Company": [
       "Tentang Kami",
       "Hubungi Kami",
@@ -90,7 +96,12 @@
     "power_by": "Didukung oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
-    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
+    "one_small_title": [
+      "DET Latihan",
+      "Koreksi AI",
+      "Ujian Palsu Lengkap",
+      "DET Kursus"
+    ],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -348,7 +359,9 @@
     "Blog": "Blog",
     "Related_Articles": "Artikel Terkait",
     "Thanks_for_voting": "Terima kasih atas suaranya!",
-    "Rate_this_article": "Beri nilai artikel ini"
+    "Rate_this_article": "Beri nilai artikel ini",
+    "share": "Bagikan artikel ini",
+    "getHiger": "Dapatkan Skor Lebih Tinggi dengan Mudah di DET"
   },
   "easyexam": {
     "snfeep": "Mulai Persiapan DET dengan Mudah",
