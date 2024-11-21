@@ -54,11 +54,11 @@ const prod = computed(() => {
 
 const Learn = computed(() => {
   return [
-    {
-      id: '0',
-      url: '/learn',
-      name: t('footer.resourcesNew[7]'),
-    },
+    // {
+    //   id: '0',
+    //   url: '/learn',
+    //   name: t('footer.resourcesNew[7]'),
+    // },
     {
       id: '1',
       url: 'https://prep.detpractice.com/category/det-reading/',
