@@ -75,6 +75,7 @@ const buyMembership = (id: number) => {
 <style lang="scss" scoped>
 .zonghe_out {
   padding: 100px 0;
+  padding-bottom: 0px;
   display: grid;
   grid-template-columns: 0.42fr 1fr;
   grid-gap: 56px;

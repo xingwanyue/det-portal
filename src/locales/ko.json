@@ -47,10 +47,10 @@
   },
   "footer": {
     "inc": "본 서비스는 Duolingo, Inc.와 무관하며, 모든 서비스는 제3자에 의해 독립적으로 제공됩니다.",
-    "ProductsTitle": "제품·서비스",
-    "LearnTitle": "Материалы",
+    "ProductsTitle": "제품",
+    "LearnTitle": "준비 자료",
     "BlogTitle": "블로그",
-    "CompanyTitle": "회사 소개",
+    "CompanyTitle": "회사",
     "Products": [
       "문제 풀이",
       "AI 작문 첨삭",
@@ -192,7 +192,7 @@
   },
   "pricing": {
     "seometa": {
-      "title": "Duolingo English Test 준비 가격 | 합리적인 DET 준비 플랜",
+      "title": "Duolingo English Test 준비 가격 {'|'} 합리적인 DET 준비 플랜",
       "description": "DET Practice에서 Duolingo English Test 준비 가격 옵션을 확인하세요. Duolingo Test 준비를 위해 설계된 유연하고 합리적인 플랜 중에서 선택하세요. 지금 바로 적합한 플랜으로 학습을 시작하세요!",
       "keywords": "Duolingo English Test 준비 가격, Duolingo Test 준비 플랜, 합리적인 DET 연습, Duolingo English Test 준비, DET 가격, 영어 능력 시험 가격, 시험 준비 플랜"
     },
@@ -359,7 +359,9 @@
     "Blog": "블로그",
     "Related_Articles": "관련 기사",
     "Thanks_for_voting": "투표해 주셔서 감사합니다!",
-    "Rate_this_article": "이 기사 평가하기"
+    "Rate_this_article": "이 기사 평가하기",
+    "share": "이 기사를 공유하세요",
+    "getHiger": "DET에서 쉽게 더 높은 점수를 받으세요"
   },
   "easyexam": {
     "snfeep": "지금 바로 시험 준비를 시작하세요.",
@@ -388,7 +390,7 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "DET Practice | Duolingo English Test (DET) 원스톱 대비 플랫폼",
+      "title": "DET Practice {'|'} Duolingo English Test (DET) 원스톱 대비 플랫폼",
       "description": "DET Practice - 전문적인 Duolingo 대비 플랫폼으로, 18,000개 이상의 실제 문제 연습, AI 스마트첨삭, 그리고 실제 시험과 같은 모의 경험을 제공합니다.효율적으로 Duolingo English Test를 준 비하여 이상적인 점수를 쉽게 얻을 수 있도록 도와드립니다.",
       "keywords": "Duolingo English Test, DET 모의시험, DET 문제은행, DET 스마트 첨삭, DET 말하기 연습, DET 쓰기 연습, DET 온라인 코스, DET 학습 플랫폼, Duolingo 시험 대비, DET 시험 전략, DET 대비 자료"
     },
@@ -422,7 +424,7 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "DET Practice 문의하기 | 지원 및 고객 서비스",
+      "title": "DET Practice 문의하기 {'|'} 지원 및 고객 서비스",
       "description": "DET Practice 지원팀에 문의하여 질문, 피드백 또는 도움이 필요하시면 연락하세요. Duolingo English Test 준비를 위한 전문적인 도움을 제공합니다.",
       "keywords": "DET Practice 문의, DET Practice 지원 문의, DET 시험 지원, Duolingo English Test 지원, DET Practice 고객 서비스, DET 모의고사 지원"
     },
@@ -486,7 +488,7 @@
   },
   "correction": {
     "seometa": {
-      "title": "Duolingo English Test Writing AI | DET Writing Score Checker by DET Practice",
+      "title": "Duolingo English Test Writing AI {'|'} DET Writing Score Checker by DET Practice",
       "description": "AI 기술로 듀오링고 영어테스트 글쓰기를 완벽하게 준비하세요. 실제 시험과 동일한 기준으로 채점되며, 맞춤형 피드백과 개선방안을 즉시 받아보실 수 있습니다. 실전 문제로 연습하고 전문가 수준의 분석을 통해 글쓰기 실력을 향상시키세요.",
       "keywords": "듀오링고 영어테스트 글쓰기, DET 글쓰기 연습하기, DET 글쓰기 첨삭, 듀오링고 점수 분석, DET 글쓰기 팁, 듀오링고 글쓰기 공부법, AI 글쓰기 평가, DET 합격 후기, DET 글쓰기 예시, 듀오링고 시험 준비, 온라인 글쓰기 교정"
     },
@@ -525,7 +527,7 @@
   },
   "courses": {
     "seometa": {
-      "title": "듀오링고 영어 시험(DET) 강좌 | DET Practice의 종합적인 시험 준비 과정",
+      "title": "듀오링고 영어 시험(DET) 강좌 {'|'} DET Practice의 종합적인 시험 준비 과정",
       "description": "전문가와 함께하는 듀오링고 영어 시험 준비 과정으로 목표 점수를 달성하세요. 체계적인 연습 문제와 실전 전략을 통해 읽기, 쓰기, 말하기, 듣기 실력을 효과적으로 향상시킬 수 있습니다. 지금 시작하세요!",
       "keywords": "듀오링고 영어 시험 강좌, DET 시험 준비, 듀오링고 시험 대비, 영어 실력 향상 과정, DET 실전 연습, 듀오링고 학습 가이드, 영어 시험 대비반, 온라인 DET 강의"
     },
@@ -673,7 +675,7 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Duolingo English Mock Test | DET 실전 모의고사",
+      "title": "Duolingo English Mock Test {'|'} DET 실전 모의고사",
       "description": "실제 DET와 동일한 환경에서 진행되는 모의고사를 통해 시험을 미리 경험해 보세요. 30분 이내 점수 확인이 가능하며, 상세한 분석 리포트를 제공해 드립니다. 18,000여 개의 문제 은행과 적응형 테스트 알고리즘, AI 기반 말하기/쓰기 평가 시스템을 갖추고 있습니다. 지금 바로 DET 준비를 시작하세요.",
       "keywords": "duolingo english mock test, duolingo english practice test, DET 모의고사, duolingo 시험 대비, duolingo english test 실전 연습, DET 모의고사, duolingo 기출문제, 온라인 duolingo 학습, DET 시험 준비, duolingo english test 기출, duolingo 예상 점수, DET 자가 진단"
     },
@@ -707,7 +709,7 @@
   },
   "practice": {
     "seometa": {
-      "title": "듀오링고 영어테스트 준비 | AI 기반 DET 문제은행",
+      "title": "듀오링고 영어테스트 준비 {'|'} AI 기반 DET 문제은행",
       "description": "DET 시험 준비하시나요? 18,000개 이상의 문제와 AI 피드백, 학습 진도 관리 시스템으로 효과적인 점수 향상을 경험하세요. 이미 40만 명 이상의 수험생이 선택한 검증된 학습 플랫폼입니다",
       "keywords": "듀오링고 시험 준비, DET 기출문제, DET 모의고사, 듀오링고 테스트 대비, DET 문제집, DET 스피 킹 연습, DET 라이팅 연습, 온라인 영어시험 준비, DET 학습자료, AI 말하기 평가"
     },
@@ -743,7 +745,7 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "듀오링고 영어 테스트 AI 말하기 피드백 | DET 학습",
+      "title": "듀오링고 영어 테스트 AI 말하기 피드백 {'|'} DET 학습",
       "description": "최첨단 AI 첨삭 시스템으로 듀오링고 영어 테스트의 말하기 영역을 더욱 쉽게 준비하세요! 실시간 피드백과 심층 분석, 전문가의 조언을 통해 DET 말하기를 완벽하게 마스터할 수 있습니다. 무제한 말하기 문제 연습과 함께 공식 DET 기준에 따른 즉각적인 채점을 경험해 보세요.",
       "keywords": "듀오링고 영어 테스트 말하기 연습, 듀오링고 영어 테스트 대비, DET 말하기 문제, DET AI 첨삭, 듀오링고 말하기 교정, DET 말하기 예시, 듀오링고 테스트 말하기 꿀팁, DET 스피킹 연습, 듀오링고 말하기 평가, DET 스피킹 준비"
     },
@@ -822,7 +824,7 @@
   },
   "refundPolicy": {
     "seometa": {
-      "title": "환불 정책 - DET Practice | 투명하고 공정한 약관",
+      "title": "환불 정책 - DET Practice {'|'} 투명하고 공정한 약관",
       "description": "DET Practice가 제공하는 모든 서비스에 대한 명확하고 투명한 환불 정책을 확인하세요. 공정하고 명확한 환불 조건으로 사용자에게 최상의 경험을 제공하기 위해 노력하고 있습니다. 지금 자세히 알아보세요.",
       "keywords": "환불 정책, DET 연습 환불, DET 연습 정책, 환불 과정, 환불 자격"
     },
@@ -914,7 +916,7 @@
   },
   "tos": {
     "seometa": {
-      "title": "이용약관 | DET Practice – Duolingo English Test 준비",
+      "title": "이용약관 {'|'} DET Practice – Duolingo English Test 준비",
       "description": "DET Practice의 이용약관을 살펴보세요. Duolingo English Test 준비를 위한 플랫폼 사용에 관한 지침과 정책을 이해하고, 사용자의 책임, 권리 및 이용 조건을 확인하세요.",
       "keywords": "이용약관, DET Practice, Duolingo English Test, 시험 준비 플랫폼, 사용자 계약, 서비스 조건, 온라인 시험 준비, EPT 정책"
     },
@@ -973,7 +975,7 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "제휴 프로그램 - DET Practice | Duolingo 시험 준비로 수익 창출하기",
+      "title": "제휴 프로그램 - DET Practice {'|'} Duolingo 시험 준비로 수익 창출하기",
       "description": "DET Practice 제휴 프로그램에 참여하여 Duolingo 시험 준비 서비스를 홍보하고 수익을 창출하세요. 높은 전환율을 자랑하는 자료에 접근하고 모든 판매에 대한 수수료를 받아보세요. 지금 시작하는 방법을 알아보세요.",
       "keywords": "제휴 프로그램, Duolingo 시험 준비 제휴, DET Practice로 수익 창출, 온라인 시험 준비 제휴, 제휴 마케팅, DET Practice 파트너, 수수료 수익"
     },

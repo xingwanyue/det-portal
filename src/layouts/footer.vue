@@ -54,11 +54,11 @@ const prod = computed(() => {
 
 const Learn = computed(() => {
   return [
-    {
-      id: '0',
-      url: '/learn',
-      name: t('footer.resourcesNew[7]'),
-    },
+    // {
+    //   id: '0',
+    //   url: '/learn',
+    //   name: t('footer.resourcesNew[7]'),
+    // },
     {
       id: '1',
       url: 'https://prep.detpractice.com/category/det-reading/',
@@ -201,7 +201,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         <div
           v-for="(itemin, indexin) in Learn"
           :key="indexin"
-          :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
+          :class="`one_link_list_detail ${Learn.length - 1 === indexin ? 'show_more' : ''}`"
         >
           <template v-if="itemin.url === '/learn'">
             <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
@@ -216,7 +216,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         <div
           v-for="(itemin, indexin) in Blog"
           :key="indexin"
-          :class="`one_link_list_detail ${itemin.name === 'show more' ? 'show_more' : ''}`"
+          :class="`one_link_list_detail ${Blog.length - 1 === indexin ? 'show_more' : ''}`"
         >
           <NuxtLink :to="localePath(`/${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
         </div>
@@ -319,9 +319,9 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
     </div>
 
     <div v-if="cookieShow" class="cookie_out">
-      <div class="cookie_header">
+      <!-- <div class="cookie_header">
         <img :src="`/img/footer/close_icon.svg`" :alt="$t('footer.close_icon_alt')" @click="closeCookie" />
-      </div>
+      </div> -->
       <div class="cookie_contenr">
         {{ $t('footer.cookie_contenr') }}
         <NuxtLink :to="localePath(`/cookie`)" title="Cookie Policy" class="see_cookei">Cookie Policy</NuxtLink>
@@ -507,6 +507,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
     bottom: 17px;
     left: 16px;
     padding: 12px;
+    padding-top: 18px;
     width: 320px;
     box-sizing: border-box;
     background: #ffffff;

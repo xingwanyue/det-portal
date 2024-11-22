@@ -114,7 +114,7 @@ const handleCurrentChange = async (val: number) => {
           <NuxtLink
             v-for="(item, index) in blogs"
             :key="index"
-            class="one_blog"
+            :class="index === 0 ? 'one_blog border_top' : 'one_blog'"
             data-aos="fade-up"
             data-aos-duration="1000"
             :to="localePath(`/${item.path}`)"
@@ -125,9 +125,6 @@ const handleCurrentChange = async (val: number) => {
             </div>
             <div class="bottom">
               <div class="date">{{ dayjs(item.createTime).format('YYYY-MM-DD') }}&nbsp;|&nbsp;{{ item.category }}</div>
-              <div class="right_arrow">
-                <el-image src="/img/blog/right_arrow.svg" alt="Right Arrow"></el-image>
-              </div>
             </div>
           </NuxtLink>
         </div>
@@ -182,6 +179,10 @@ const handleCurrentChange = async (val: number) => {
     padding: 0px 30px;
     margin-top: 100px;
     max-width: 1200px;
+    margin-bottom: 100px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 50px;
+    }
 
     @media (max-width: 450px) {
       padding: 0px 15px;
@@ -194,10 +195,10 @@ const handleCurrentChange = async (val: number) => {
     grid-template-columns: 0.32fr 1fr;
     grid-template-areas: 'left_list right_list';
 
-    grid-gap: 48px;
+    grid-column-gap: 48px;
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
-      grid-gap: 0px;
+      grid-row-gap: 48px;
       grid-template-areas:
         'right_list'
         'left_list';
@@ -233,28 +234,22 @@ const handleCurrentChange = async (val: number) => {
     }
     .blog_right_list {
       grid-area: right_list;
+      // border: 1px red solid;
+      padding-bottom: 156px;
+      position: relative;
       .bolgs_content {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 40px;
+        // grid-gap: 40px;
         .one_blog {
           padding: 40px;
-          padding-top: 39px;
-          padding-bottom: 48px;
-          border-top: 1px solid #e9e9e9;
-          // border: 1px red solid;
+          padding-left: 0px;
+          border-bottom: 1px solid #e9e9e9;
           cursor: pointer;
           display: block;
-          position: relative;
-
           &:hover {
             .title {
               color: #f66442;
-            }
-            .bottom {
-              .right_arrow {
-                display: block;
-              }
             }
           }
           .title {
@@ -282,35 +277,22 @@ const handleCurrentChange = async (val: number) => {
           }
           .bottom {
             margin-top: 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 24px;
-            position: absolute;
-            bottom: 12px;
-            // border:1px red solid;
-            width: calc(100% - 48px);
-
-            .date {
-              font-weight: 400;
-              font-size: 16px;
-              color: rgba(64, 63, 62, 0.6);
-            }
-            .right_arrow {
-              width: 24px;
-              height: 24px;
-              display: none;
-            }
           }
+        }
+        .border_top {
+          border-top: 1px solid #e9e9e9;
         }
       }
       .pagination_out {
         margin: 0 auto;
-        // border: 1px red solid;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
         display: flex;
         justify-content: center;
         margin-top: 56px;
-        margin-bottom: 100px;
+        // margin-bottom: 100px;
         :deep(.el-pagination.is-background .el-pager li.is-active) {
           background-color: #201515 !important;
         }

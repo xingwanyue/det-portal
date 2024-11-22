@@ -3,10 +3,11 @@ import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 import dayjs from 'dayjs';
 import { reactive } from 'vue';
+import { useStore } from '@/store';
 import find from 'lodash/find';
 import head from 'lodash/head';
 import { ElMessage } from 'element-plus';
-import { rateAdd, saveStorage, getStorage, articleCategoryGet } from '@/utils';
+import { rateAdd, saveStorage, getStorage, articleCategoryGet, getToken } from '@/utils';
 import subscribe from '@/components/subscribe.vue';
 
 const props = defineProps({
@@ -25,6 +26,15 @@ const state = reactive({
   selectName: '',
   averageScore: 0,
   iconHoverIndex: -1,
+});
+const haveCookie = ref(false);
+const store = useStore();
+const user = computed(() => store.user);
+onMounted(async () => {
+  const token = await getToken();
+  if (token) {
+    haveCookie.value = true;
+  }
 });
 state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
 
@@ -94,12 +104,8 @@ const iconHover = (index: number) => {
       <div class="top">
         <nuxt-link :to="localePath('/')" class="hoverGiveBorder">{{ $t('articleDetail.Home') }}</nuxt-link>
         >
-        <nuxt-link v-if="props.type === '2'" :to="localePath('/learn')" class="hoverGiveBorder">{{
-          $t('articleDetail.Learn')
-        }}</nuxt-link>
-        <nuxt-link v-if="props.type === '1'" :to="localePath('/blog')" class="">{{
-          $t('articleDetail.Blog')
-        }}</nuxt-link>
+
+        <nuxt-link :to="localePath('/blog')" class="hoverGiveBorder">{{ $t('articleDetail.Blog') }}</nuxt-link>
         > {{ state.selectName }}
       </div>
 
@@ -136,15 +142,78 @@ const iconHover = (index: number) => {
               </div>
             </div>
           </div>
+          <div class="rate-con">
+            <div class="rate-con-left">
+              <div v-if="state.averageScore">
+                <el-rate
+                  v-model="state.rate"
+                  :disabled="Boolean(state.rate)"
+                  allow-half
+                  show-score
+                  text-color="#201515"
+                  :score-template="`{value}/5（${
+                    props.article.rateNum ? `Rating:${Number(state.averageScore).toFixed(1)} ·` : ''
+                  }   ${props.article.rateNum || 0} votes）`"
+                  @change="rateChange"
+                />
+              </div>
+              <div v-else>
+                <el-rate
+                  v-model="state.rate"
+                  :disabled="Boolean(state.rate)"
+                  allow-half
+                  show-score
+                  text-color="#201515"
+                  :score-template="`{value}/5（${
+                    props.article.rateNum ? `Rating:${props.article.rate.toFixed(1)} ·` : ''
+                  }   ${props.article.rateNum || 0} votes）`"
+                  @change="rateChange"
+                />
+              </div>
+              <div>
+                {{
+                  state.rate ? `${$t('articleDetail.Thanks_for_voting')}` : `${$t('articleDetail.Rate_this_article')}`
+                }}
+              </div>
+            </div>
+            <div class="rate-con-right">
+              <div class="top_icon_group">
+                <div class="one_share_icon" @mouseover="iconHover(1)" @mouseleave="iconHover(-1)" @click="shareToX">
+                  <img v-show="state.iconHoverIndex !== 1" src="/img/footer/x_logo.svg" />
+                  <img v-show="state.iconHoverIndex === 1" src="/img/footer/x_logo_active.svg" />
+                </div>
+                <div
+                  class="one_share_icon"
+                  @mouseover="iconHover(2)"
+                  @mouseleave="iconHover(-1)"
+                  @click="shareToFacebook"
+                >
+                  <img v-show="state.iconHoverIndex !== 2" src="/img/footer/facebook_logo.svg" />
+                  <img v-show="state.iconHoverIndex === 2" src="/img/footer/facebook_logo_active.svg" />
+                </div>
+              </div>
+              <div class="bottom_font">{{ $t('articleDetail.share') }}</div>
+            </div>
+          </div>
         </div>
         <div class="right_list">
-          <div class="article_img">
-            <div class="article_img_top">Get a Higher Score Easily on the DET</div>
+          <NuxtLink
+            v-if="!user.id && !haveCookie"
+            class="article_img"
+            :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
+          >
+            <div class="article_img_top">{{ $t('articleDetail.getHiger') }}</div>
             <div class="article_img_bottom">
               <img src="/img/blog/article_small_img.png" :alt="props.article.name" />
             </div>
-          </div>
-          <div class="article-title-list article-title-list1">
+          </NuxtLink>
+          <NuxtLink :href="urlGet('/home')" v-else class="article_img">
+            <div class="article_img_top">{{ $t('articleDetail.getHiger') }}</div>
+            <div class="article_img_bottom">
+              <img src="/img/blog/article_small_img.png" :alt="props.article.name" />
+            </div>
+          </NuxtLink>
+          <div v-if="props.article.relatedArticles.length" class="article-title-list article-title-list1">
             <div class="title title1">{{ $t('articleDetail.Related_Articles') }}</div>
             <div v-for="(val, key) in props.article.relatedArticles" :key="key">
               <nuxt-link :to="localePath(`/${val.path}`)" class="">
@@ -156,52 +225,7 @@ const iconHover = (index: number) => {
           </div>
         </div>
       </div>
-      <div class="rate-con">
-        <div class="rate-con-left">
-          <div v-if="state.averageScore">
-            <el-rate
-              v-model="state.rate"
-              :disabled="Boolean(state.rate)"
-              allow-half
-              show-score
-              text-color="#201515"
-              :score-template="`{value}/5（${
-                props.article.rateNum ? `Rating:${Number(state.averageScore).toFixed(1)} ·` : ''
-              }   ${props.article.rateNum || 0} votes）`"
-              @change="rateChange"
-            />
-          </div>
-          <div v-else>
-            <el-rate
-              v-model="state.rate"
-              :disabled="Boolean(state.rate)"
-              allow-half
-              show-score
-              text-color="#201515"
-              :score-template="`{value}/5（${
-                props.article.rateNum ? `Rating:${props.article.rate.toFixed(1)} ·` : ''
-              }   ${props.article.rateNum || 0} votes）`"
-              @change="rateChange"
-            />
-          </div>
-          <div>
-            {{ state.rate ? `${$t('articleDetail.Thanks_for_voting')}` : `${$t('articleDetail.Rate_this_article')}` }}
-          </div>
-        </div>
-        <div class="rate-con-right">
-          <div class="top_icon_group">
-            <div class="one_share_icon" @mouseover="iconHover(1)" @mouseleave="iconHover(-1)" @click="shareToX">
-              <img v-show="state.iconHoverIndex !== 1" src="/img/footer/x_logo.svg" />
-              <img v-show="state.iconHoverIndex === 1" src="/img/footer/x_logo_active.svg" />
-            </div>
-            <div class="one_share_icon" @mouseover="iconHover(2)" @mouseleave="iconHover(-1)" @click="shareToFacebook">
-              <img v-show="state.iconHoverIndex !== 2" src="/img/footer/facebook_logo.svg" />
-              <img v-show="state.iconHoverIndex === 2" src="/img/footer/facebook_logo_active.svg" />
-            </div>
-          </div>
-          <div class="bottom_font">Share this article</div>
-        </div>
-      </div>
+
       <div class="article-title-list article-title-list2">
         <div class="title title1">{{ $t('articleDetail.Related_Articles') }}</div>
         <div v-for="(val, key) in props.article.relatedArticles" :key="key">
@@ -220,6 +244,40 @@ const iconHover = (index: number) => {
 .learndetail {
   .el-rate__text {
     font-size: 16px;
+  }
+
+  h2 {
+    // border: 1px red solid;
+    font-weight: 600 !important;
+    font-size: 32px !important;
+    color: #201515 !important;
+    margin: 0;
+    padding: 0;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    line-height: 40px !important;
+    span {
+      font-weight: 600 !important;
+      font-size: 32px !important;
+      color: #201515 !important;
+      line-height: 40px;
+    }
+  }
+  // css选择第一个h2出现的h2
+  h2:first-of-type {
+    font-weight: 600 !important;
+    color: #201515 !important;
+    line-height: 48px !important;
+    margin: 0;
+    padding: 0;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    span {
+      font-weight: 600 !important;
+      font-size: 40px !important;
+      color: #201515 !important;
+      line-height: 48px !important;
+    }
   }
 }
 </style>
@@ -338,6 +396,9 @@ const iconHover = (index: number) => {
         }
       }
       .article-con1 {
+        ::v-deep(img) {
+          max-width: 100%;
+        }
         .one_duan {
           margin-top: 48px;
           .one_duan_title {
@@ -367,6 +428,7 @@ const iconHover = (index: number) => {
       display: none;
     }
     .article_img {
+      display: block;
       margin-bottom: 24px;
       background: linear-gradient(0, #ffc2b3 0%, #fa7758 100%);
       border-radius: 8px;
@@ -534,6 +596,8 @@ const iconHover = (index: number) => {
   display: flex;
   flex-direction: column;
   margin-top: 48px;
+  margin-bottom: 48px;
+  grid-gap: 16px;
   .inthis {
     font-weight: 500;
     font-size: 22px;
@@ -545,6 +609,7 @@ const iconHover = (index: number) => {
     color: #201515;
     line-height: 32px;
     cursor: pointer;
+    // margin-bottom: 16px;
     &:hover {
       font-weight: 500;
       font-size: 22px;

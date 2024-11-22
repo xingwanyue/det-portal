@@ -47,8 +47,8 @@
   },
   "footer": {
     "inc": "Plataforma independiente no afiliada a Duolingo, Inc.",
-    "ProductsTitle": "Servicios",
-    "LearnTitle": "Recursos",
+    "ProductsTitle": "Productos",
+    "LearnTitle": "Recursos de preparación",
     "BlogTitle": "Blog",
     "CompanyTitle": "Empresa",
     "Products": [
@@ -192,7 +192,7 @@
   },
   "pricing": {
     "seometa": {
-      "title": "Precios de Preparación para el Duolingo English Test | Planes Económicos de Preparación DET",
+      "title": "Precios de Preparación para el Duolingo English Test {'|'} Planes Económicos de Preparación DET",
       "description": "Descubra las opciones de precios para la preparación del Duolingo English Test en DET Practice. Elija entre planes flexibles y asequibles diseñados para ayudarle a tener éxito en su preparación del Duolingo Test. ¡Comience su viaje con el plan adecuado hoy!",
       "keywords": "precios preparación Duolingo English Test, planes preparación Duolingo Test, práctica DET económica, preparación Duolingo English Test, precios DET, precios prueba de inglés, planes de preparación para exámenes"
     },
@@ -359,7 +359,9 @@
     "Blog": "Blog",
     "Related_Articles": "Artículos Relacionados",
     "Thanks_for_voting": "¡Gracias por votar!",
-    "Rate_this_article": "Califica este artículo"
+    "Rate_this_article": "Califica este artículo",
+    "share": "Comparte este artículo",
+    "getHiger": "Obtenga una puntuación más alta fácilmente en el DET"
   },
   "easyexam": {
     "snfeep": "Preparación eficaz a un clic de distancia.",
@@ -388,7 +390,7 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "DET Practice | Plataforma integral para la preparación del Duolingo English Test (DET)",
+      "title": "DET Practice {'|'} Plataforma integral para la preparación del Duolingo English Test (DET)",
       "description": "DET Practice - Plataforma profesional de preparación para Duolingo que ofrece más de 18.000 ejercicios basados en preguntas reales, corrección inteligente con IA y simulaciones completas del examen. Le ayuda a prepararse eficazmente para el Duolingo English Test y a obtener fácilmente su puntuación ideal.",
       "keywords": "Duolingo English Test, Simulacro de examen DET, Banco de preguntas DET, Corrección inteligente DET, Práctica oral DET, Práctica de escritura DET, Cursos en línea DET, Plataforma de aprendizaje DET, Preparación para el examen Duolingo, Técnicas de examen DET, Materiales de preparación DET"
     },
@@ -422,7 +424,7 @@
   },
   "contactUs": {
     "seometa": {
-      "title": "Contacta con DET Practice | Soporte y Atención al Cliente",
+      "title": "Contacta con DET Practice {'|'} Soporte y Atención al Cliente",
       "description": "Contacta con el equipo de soporte de DET Practice para resolver tus dudas, obtener retroalimentación o asistencia. Ofrecemos apoyo profesional para la preparación del Duolingo English Test.",
       "keywords": "contacto DET Practice, contactar soporte DET Practice, ayuda examen DET, soporte Duolingo English Test, atención al cliente DET Practice, apoyo simulación DET"
     },
@@ -486,7 +488,7 @@
   },
   "correction": {
     "seometa": {
-      "title": "Evaluación AI para el Duolingo English Test | DET Writing Score Checker by DET Practice",
+      "title": "Evaluación AI para el Duolingo English Test {'|'} DET Writing Score Checker by DET Practice",
       "description": "Mejora tu preparación para el Duolingo English Test con nuestra avanzada inteligencia artificial. Obtén evaluaciones profesionales, retroalimentación personalizada y consejos prácticos en cuestión de minutos. Practica con ejercicios auténticos del DET y perfecciona tu escritura.",
       "keywords": "duolingo english test preparación, ejercicios DET, corrector DET, evaluación escritura duolingo, análisis AI escritura, simulador DET, preparación examen, tips escritura DET, ejemplos DET, práctica online"
     },
@@ -525,7 +527,7 @@
   },
   "courses": {
     "seometa": {
-      "title": "Preparación para el DET | Tu Curso Completo del Duolingo English Test",
+      "title": "Preparación para el DET {'|'} Tu Curso Completo del Duolingo English Test",
       "description": "Alcanza el éxito en el DET con nuestros cursos especializados impartidos por expertos certificados. Desarrolla tus competencias en lectura, escritura, expresión oral y comprensión auditiva mediante clases personalizadas. ¡Inicia tu camino hacia el DET ahora!",
       "keywords": "preparación DET, curso Duolingo Test, examen DET, certificación inglés, clases DET, curso inglés, formación online DET, material DET"
     },
@@ -673,7 +675,7 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Simulador Oficial DET | Examen Completo de Preparación - DET Practice",
+      "title": "Simulador Oficial DET {'|'} Examen Completo de Preparación - DET Practice",
       "description": "Prepárate con simulaciones exactas del Duolingo English Test. Obtén tu calificación y análisis detallado en tan solo 30 minutos. Accede a más de 18.000 ejercicios, sistema adaptativo inteligente y evaluación automática de speaking y writing mediante IA. Inicia tu camino al DET hoy mismo.",
       "keywords": "simulador duolingo english test, práctica DET, examen de prueba duolingo, preparación duolingo, simulación oficial DET, ejercicios duolingo test, entrenamiento DET, práctica en línea duolingo, preparación certificación, ejercicios duolingo english, evaluación previa, simulacro DET"
     },
@@ -707,7 +709,7 @@
   },
   "practice": {
     "seometa": {
-      "title": "Preparación DET | Banco de Preguntas Duolingo con IA Integrada",
+      "title": "Preparación DET {'|'} Banco de Preguntas Duolingo con IA Integrada",
       "description": "¿Buscas prepararte para el Duolingo English Test? Accede a más de 18.000 ejercicios con retroalimentación por inteligencia artificial y seguimiento personalizado. Únete a más de 400.000 estudiantes que ya mejoraron su puntuación en el DET.",
       "keywords": "preparación DET, ejercicios Duolingo, práctica examen DET, banco preguntas Duolingo, simulador DET, ejercicios speaking DET, práctica writing DET, preparación inglés online, materiales estudio DET, evaluación IA inglés"
     },
@@ -743,7 +745,7 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Entrenamiento de Speaking con IA para el Duolingo English Test | Preparación DET",
+      "title": "Entrenamiento de Speaking con IA para el Duolingo English Test {'|'} Preparación DET",
       "description": "Mejora tu expresión oral en el Duolingo English Test con nuestra avanzada tecnología de Inteligencia Artificial. Obtén retroalimentación instantánea, análisis exhaustivos y asesoramiento experto. Practica sin límites y recibe evaluaciones inmediatas basadas en los criterios oficiales del DET.",
       "keywords": "entrenamiento speaking DET, preparación Duolingo Test, ejercicios speaking inglés, evaluación IA Duolingo, práctica oral DET, simulador speaking test, técnicas speaking Duolingo, preparación examen DET, ejercicios pronunciación inglés, estrategias speaking"
     },
@@ -822,7 +824,7 @@
   },
   "refundPolicy": {
     "seometa": {
-      "title": "Política de Reembolso - DET Practice | Términos Transparentes y Justos",
+      "title": "Política de Reembolso - DET Practice {'|'} Términos Transparentes y Justos",
       "description": "Lee nuestra Política de Reembolso clara y transparente para todos los servicios ofrecidos por DET Practice. Nos esforzamos por brindar la mejor experiencia a nuestros usuarios con términos de reembolso justos y sencillos. Conoce más hoy.",
       "keywords": "Política de reembolso, DET Reembolso de práctica, DET Política de prácticas, Proceso de reembolso, Elegibilidad para el reembolso."
     },
@@ -914,7 +916,7 @@
   },
   "tos": {
     "seometa": {
-      "title": "Términos de Servicio | DET Practice – Preparación para el Duolingo English Test",
+      "title": "Términos de Servicio {'|'} DET Practice – Preparación para el Duolingo English Test",
       "description": "Explora los Términos de Servicio de DET Practice. Comprende las pautas y políticas para utilizar nuestra plataforma de preparación para el Duolingo English Test, incluyendo las responsabilidades del usuario, derechos y condiciones de uso.",
       "keywords": "Términos de Servicio, DET Practice, Duolingo English Test, plataforma de preparación para exámenes, acuerdo del usuario, condiciones del servicio, preparación de exámenes en línea, políticas EPT"
     },
@@ -973,7 +975,7 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "Programa de Afiliados - DET Practice | Gana con la Preparación del Duolingo Test",
+      "title": "Programa de Afiliados - DET Practice {'|'} Gana con la Preparación del Duolingo Test",
       "description": "Únete al Programa de Afiliados de DET Practice y comienza a ganar promocionando nuestros servicios de preparación para el Duolingo test. Accede a materiales de alta conversión y gana comisiones por cada venta. Aprende cómo empezar hoy.",
       "keywords": "programa de afiliados, afiliado preparación Duolingo test, ganar con DET Practice, afiliado preparación test online, marketing de afiliados, socios DET Practice, ganar comisiones"
     },
