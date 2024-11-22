@@ -596,7 +596,7 @@ const changeBuyCorrectTimes = () => {
     }
   }
   .height_hack {
-    min-height: 97px;
+    min-height: 77px;
   }
 }
 </style>
