@@ -1,11 +1,13 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
+import dayjs from 'dayjs';
 import { reactive } from 'vue';
+import { useStore } from '@/store';
 import find from 'lodash/find';
 import head from 'lodash/head';
 import { ElMessage } from 'element-plus';
-import { rateAdd, saveStorage, getStorage, articleCategoryGet } from '@/utils';
+import { rateAdd, saveStorage, getStorage, articleCategoryGet, getToken } from '@/utils';
 import subscribe from '@/components/subscribe.vue';
 
 const props = defineProps({
@@ -13,6 +15,7 @@ const props = defineProps({
   categoryId: Number,
   article: Object,
   type: String,
+  allData: Object,
 }) as any;
 const localePath = useLocalePath();
 const state = reactive({
@@ -22,6 +25,16 @@ const state = reactive({
   rateArr: [] as any,
   selectName: '',
   averageScore: 0,
+  iconHoverIndex: -1,
+});
+const haveCookie = ref(false);
+const store = useStore();
+const user = computed(() => store.user);
+onMounted(async () => {
+  const token = await getToken();
+  if (token) {
+    haveCookie.value = true;
+  }
 });
 state.rateArr = JSON.parse(getStorage('det_rate') || '[]');
 
@@ -62,70 +75,157 @@ const rateChange = async () => {
     ElMessage({ type: 'success', message: t('articleDetail.Submitted_successfully') });
   }
 };
+const scrollToArticle = (index: any) => {
+  const element = document.getElementById('article' + index);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+    window.scrollBy(0, -100);
+  }
+};
+// 分享到 Facebook
+const shareToFacebook = () => {
+  const url = window.location.href; // 获取当前页面的 URL
+  const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+  window.open(facebookShareUrl, '_blank');
+};
+// 分享到x
+const shareToX = () => {
+  const url = window.location.href; // 获取当前页面的 URL
+  const xShareUrl = `https://www.x.com/intent/post/?text=${props.article.name}&url=${encodeURIComponent(url)}`;
+  window.open(xShareUrl, '_blank');
+};
+const iconHover = (index: number) => {
+  state.iconHoverIndex = index;
+};
 </script>
 <template>
   <div class="learndetail">
     <div class="learndetail-content">
       <div class="top">
-        <nuxt-link :to="localePath('/')" class="">{{ $t('articleDetail.Home') }}</nuxt-link>
+        <nuxt-link :to="localePath('/')" class="hoverGiveBorder">{{ $t('articleDetail.Home') }}</nuxt-link>
         >
-        <nuxt-link v-if="props.type === '2'" :to="localePath('/learn')" class="">{{
-          $t('articleDetail.Learn')
-        }}</nuxt-link>
-        <nuxt-link v-if="props.type === '1'" :to="localePath('/blog')" class="">{{
-          $t('articleDetail.Blog')
-        }}</nuxt-link>
+
+        <nuxt-link :to="localePath('/blog')" class="hoverGiveBorder">{{ $t('articleDetail.Blog') }}</nuxt-link>
         > {{ state.selectName }}
       </div>
+
       <div class="content">
         <div class="article-con">
           <div class="title">
             <h1>{{ props.article.name }}</h1>
           </div>
-          <div id="content" class="article-con1" v-html="props.article.content"></div>
-        </div>
-        <div class="article-title-list article-title-list1">
-          <div class="title title1">{{ $t('articleDetail.Related_Articles') }}</div>
-          <div v-for="(val, key) in props.article.relatedArticles" :key="key">
-            <nuxt-link :to="localePath(`/${val.path}`)" class="">
-              <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">
-                {{ val.name }}
+          <div class="user_out" @click="shareToX">
+            <div class="user_name_icon" v-if="props.allData.author">{{ props.allData.author.slice(0, 1) }}</div>
+            <div class="user_right">
+              <div class="user_name">{{ props.allData.author }}</div>
+              <div class="user_up_time">
+                {{ dayjs(props.allData.updateTime).format('MM-DD-YYYY') }}
               </div>
-            </nuxt-link>
+            </div>
+          </div>
+          <!-- <div class="zhengwen" v-html="JSON.parse(props.article.content)[0][1]"></div>
+          <div v-if="JSON.parse(props.article.content).length > 1" class="mulu_dom">
+            <div class="inthis">In this article</div>
+            <div class="article_group_out">
+              <div v-for="(item, index) in JSON.parse(props.article.content)" :key="`title${index}`">
+                <div @click="scrollToArticle(index)" v-if="index > 0 && item[0]" class="one_article_title">
+                  {{ index }} {{ item[0] }}
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div id="content" class="article-con1">
+            <div>
+              <div class="one_duan">
+                <div class="one_duan_content" v-html="props.article.content" />
+              </div>
+            </div>
+          </div>
+          <div class="rate-con">
+            <div class="rate-con-left">
+              <div v-if="state.averageScore">
+                <el-rate
+                  v-model="state.rate"
+                  :disabled="Boolean(state.rate)"
+                  allow-half
+                  show-score
+                  text-color="#201515"
+                  :score-template="`{value}/5（${
+                    props.article.rateNum ? `Rating:${Number(state.averageScore).toFixed(1)} ·` : ''
+                  }   ${props.article.rateNum || 0} votes）`"
+                  @change="rateChange"
+                />
+              </div>
+              <div v-else>
+                <el-rate
+                  v-model="state.rate"
+                  :disabled="Boolean(state.rate)"
+                  allow-half
+                  show-score
+                  text-color="#201515"
+                  :score-template="`{value}/5（${
+                    props.article.rateNum ? `Rating:${props.article.rate.toFixed(1)} ·` : ''
+                  }   ${props.article.rateNum || 0} votes）`"
+                  @change="rateChange"
+                />
+              </div>
+              <div>
+                {{
+                  state.rate ? `${$t('articleDetail.Thanks_for_voting')}` : `${$t('articleDetail.Rate_this_article')}`
+                }}
+              </div>
+            </div>
+            <div class="rate-con-right">
+              <div class="top_icon_group">
+                <div class="one_share_icon" @mouseover="iconHover(1)" @mouseleave="iconHover(-1)" @click="shareToX">
+                  <img v-show="state.iconHoverIndex !== 1" src="/img/footer/x_logo.svg" />
+                  <img v-show="state.iconHoverIndex === 1" src="/img/footer/x_logo_active.svg" />
+                </div>
+                <div
+                  class="one_share_icon"
+                  @mouseover="iconHover(2)"
+                  @mouseleave="iconHover(-1)"
+                  @click="shareToFacebook"
+                >
+                  <img v-show="state.iconHoverIndex !== 2" src="/img/footer/facebook_logo.svg" />
+                  <img v-show="state.iconHoverIndex === 2" src="/img/footer/facebook_logo_active.svg" />
+                </div>
+              </div>
+              <div class="bottom_font">{{ $t('articleDetail.share') }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="right_list">
+          <NuxtLink
+            v-if="!user.id && !haveCookie"
+            class="article_img"
+            :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
+          >
+            <div class="article_img_top">{{ $t('articleDetail.getHiger') }}</div>
+            <div class="article_img_bottom">
+              <img src="/img/blog/article_small_img.png" :alt="props.article.name" />
+            </div>
+          </NuxtLink>
+          <NuxtLink :href="urlGet('/home')" v-else class="article_img">
+            <div class="article_img_top">{{ $t('articleDetail.getHiger') }}</div>
+            <div class="article_img_bottom">
+              <img src="/img/blog/article_small_img.png" :alt="props.article.name" />
+            </div>
+          </NuxtLink>
+          <div v-if="props.article.relatedArticles.length" class="article-title-list article-title-list1">
+            <div class="title title1">{{ $t('articleDetail.Related_Articles') }}</div>
+            <div v-for="(val, key) in props.article.relatedArticles" :key="key">
+              <nuxt-link :to="localePath(`/${val.path}`)" class="">
+                <div :class="`title ${state.checkId === val.id ? 'title-checked' : ''}`">
+                  {{ val.name }}
+                </div>
+              </nuxt-link>
+            </div>
           </div>
         </div>
       </div>
-      <div class="rate-con">
-        <div v-if="state.averageScore">
-          <el-rate
-            v-model="state.rate"
-            :disabled="Boolean(state.rate)"
-            allow-half
-            show-score
-            text-color="#201515"
-            :score-template="`{value}/5（${
-              props.article.rateNum ? `Rating:${Number(state.averageScore).toFixed(1)} ·` : ''
-            }   ${props.article.rateNum || 0} votes）`"
-            @change="rateChange"
-          />
-        </div>
-        <div v-else>
-          <el-rate
-            v-model="state.rate"
-            :disabled="Boolean(state.rate)"
-            allow-half
-            show-score
-            text-color="#201515"
-            :score-template="`{value}/5（${
-              props.article.rateNum ? `Rating:${props.article.rate.toFixed(1)} ·` : ''
-            }   ${props.article.rateNum || 0} votes）`"
-            @change="rateChange"
-          />
-        </div>
-        <div>
-          {{ state.rate ? `${$t('articleDetail.Thanks_for_voting')}` : `${$t('articleDetail.Rate_this_article')}` }}
-        </div>
-      </div>
+
       <div class="article-title-list article-title-list2">
         <div class="title title1">{{ $t('articleDetail.Related_Articles') }}</div>
         <div v-for="(val, key) in props.article.relatedArticles" :key="key">
@@ -145,6 +245,40 @@ const rateChange = async () => {
   .el-rate__text {
     font-size: 16px;
   }
+
+  h2 {
+    // border: 1px red solid;
+    font-weight: 600 !important;
+    font-size: 32px !important;
+    color: #201515 !important;
+    margin: 0;
+    padding: 0;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    line-height: 40px !important;
+    span {
+      font-weight: 600 !important;
+      font-size: 32px !important;
+      color: #201515 !important;
+      line-height: 40px;
+    }
+  }
+  // css选择第一个h2出现的h2
+  h2:first-of-type {
+    font-weight: 600 !important;
+    color: #201515 !important;
+    line-height: 48px !important;
+    margin: 0;
+    padding: 0;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    span {
+      font-weight: 600 !important;
+      font-size: 40px !important;
+      color: #201515 !important;
+      line-height: 48px !important;
+    }
+  }
 }
 </style>
 <style lang="scss" scoped>
@@ -161,16 +295,24 @@ const rateChange = async () => {
     color: #201515;
     line-height: 22px;
     margin-top: 32px;
+    .hoverGiveBorder {
+      &:hover {
+        color: #f66442;
+        text-decoration: underline;
+      }
+    }
   }
+
   .content {
     max-width: 1200px;
     display: flex;
     margin-top: 64px;
     box-sizing: border-box;
+    grid-gap: 48px;
 
     .article-con {
       width: 100%;
-      margin-right: 24px;
+
       overflow: hidden;
       :deep(iframe) {
         width: 100%;
@@ -181,17 +323,123 @@ const rateChange = async () => {
           margin: 0;
           padding: 0;
           font-weight: 600;
-          font-size: 56px;
+          font-size: 48px;
           color: #201515;
-          line-height: 72px;
+          line-height: 64px;
         }
       }
-      .article-con1 {
+      .user_out {
+        margin-top: 40px;
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        grid-gap: 16px;
+        .user_name_icon {
+          width: 48px;
+          height: 48px;
+          background: #f66442;
+          font-weight: 400;
+          font-size: 18px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 48px;
+          border-radius: 50%;
+        }
+        .user_right {
+          .user_name {
+            font-weight: 500;
+            font-size: 16px;
+            color: #403f3e;
+          }
+          .user_up_time {
+            font-weight: 400;
+            font-size: 16px;
+            color: #666666;
+          }
+        }
+      }
+      .zhengwen {
         font-weight: 400;
         font-size: 20px;
         color: #201515;
         line-height: 28px;
-        margin-top: 32px;
+      }
+      .mulu_dom {
+        background: #fff4f1;
+        border-radius: 8px;
+        padding: 24px;
+        .inthis {
+          font-weight: 500;
+          font-size: 22px;
+          color: #201515;
+          // margin-bottom: 16px;
+        }
+        .article_group_out {
+          display: flex;
+          flex-direction: column;
+          grid-gap: 16px;
+          .one_article_title {
+            font-weight: 400;
+            font-size: 22px;
+            color: #201515;
+            line-height: 32px;
+            cursor: pointer;
+            &:hover {
+              font-weight: 500;
+              font-size: 22px;
+              color: #f66442;
+              line-height: 32px;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .article-con1 {
+        ::v-deep(img) {
+          max-width: 100%;
+        }
+        .one_duan {
+          margin-top: 48px;
+          .one_duan_title {
+            font-weight: 600;
+            font-size: 40px;
+            color: #201515;
+            line-height: 48px;
+          }
+          .one_duan_content {
+            font-weight: 400;
+            font-size: 20px;
+            color: #201515;
+            line-height: 28px;
+            margin-top: 32px;
+            ::v-deep(p) {
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right_list {
+    max-width: 352px;
+    @media (max-width: 800px) {
+      display: none;
+    }
+    .article_img {
+      display: block;
+      margin-bottom: 24px;
+      background: linear-gradient(0, #ffc2b3 0%, #fa7758 100%);
+      border-radius: 8px;
+      .article_img_top {
+        box-sizing: border-box;
+        padding: 32px 29px;
+        font-weight: 600;
+        font-size: 32px;
+        color: #ffffff;
+        line-height: 46px;
+        text-align: center;
       }
     }
   }
@@ -231,13 +479,40 @@ const rateChange = async () => {
     display: block;
     max-height: calc(100vh - 180px);
     overflow-y: auto;
+    width: 100%;
   }
   .article-title-list2 {
     display: none;
   }
   .rate-con {
-    margin-top: 56px;
-    // padding: 0px 30px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+
+    .rate-con-left {
+    }
+    .rate-con-right {
+      margin-left: auto;
+      .top_icon_group {
+        display: flex;
+        grid-gap: 8px;
+        justify-content: flex-end;
+        align-items: center;
+        .one_share_icon {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .bottom_font {
+        font-weight: 500;
+        font-size: 20px;
+        color: #201515;
+        margin-top: 8px;
+      }
+    }
   }
   .subs {
     margin-top: 78px;
@@ -309,6 +584,38 @@ const rateChange = async () => {
     }
     .subs {
       margin-top: 28px;
+    }
+  }
+}
+</style>
+<style lang="scss">
+.blogNav {
+  background: #fff4f1;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  grid-gap: 16px;
+  .inthis {
+    font-weight: 500;
+    font-size: 22px;
+    color: #201515;
+  }
+  .h2-point {
+    font-weight: 400;
+    font-size: 22px;
+    color: #201515;
+    line-height: 32px;
+    cursor: pointer;
+    // margin-bottom: 16px;
+    &:hover {
+      font-weight: 500;
+      font-size: 22px;
+      color: #f66442;
+      line-height: 32px;
+      text-decoration: underline;
     }
   }
 }

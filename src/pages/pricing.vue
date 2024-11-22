@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { formatCash } from '@/utils';
+import { formatCash, getToken } from '@/utils';
 const { t } = useI18n();
+import { getVipdataNoToken, getVipdataWithToken } from '@/api';
 import vMembershipprice from '../components/membershipprice.vue';
 import { staticUrlGet, domain, host, cdn } from '@/utils';
 import { useStore } from '@/store';
@@ -21,7 +22,11 @@ useHead({
 const circle_check_icon = `${cdn}/store/portal/pricing/circle_check_icon.svg`;
 const store = useStore();
 const user = computed(() => store.user);
+const userChangeFlag = ref(() => store.user);
 const isVip = computed(() => store.isVip);
+
+const onlycorrectTimesid = ref(0);
+const onlycorrectTimesprice = ref(0);
 
 const aqList = ref([
   {
@@ -60,17 +65,19 @@ const aqList = ref([
     open: false,
   },
 ]) as any;
+const vipsData = ref({}) as any;
 
-const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
-  server: false,
-  lazy: true,
-  transform: ({ freeNum, correct, exam, speak, write, data: vips }: any) => {
+const getData = async () => {
+  if (!user.value.id) {
+    const {
+      data: { data },
+    } = await getVipdataNoToken();
     const membershipArr = [] as any;
     const moreServiceArr = [] as any;
 
-    const correctSelectBuyTimes = vips.filter((item: any) => item.type === '3');
-    const mockSelectBuyTimes = vips.filter((item: any) => item.type === '4');
-    vips.forEach((item: any) => {
+    const correctSelectBuyTimes = data.filter((item: any) => item.type === '3');
+    const mockSelectBuyTimes = data.filter((item: any) => item.type === '4');
+    data.forEach((item: any) => {
       if (item.type === '1') {
         item.correctTimesid = correctSelectBuyTimes[1].id;
         onlycorrectTimesid.value = correctSelectBuyTimes[1].id;
@@ -79,12 +86,62 @@ const { data: vipsData } = (await useFetch(`${api}/common/vips`, {
         item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
         membershipArr.push(item);
       } else if (item.type === '2') {
-        moreServiceArr.push(item);
+        if (item.write === 1 && item.speak === 1 && item.disabled) {
+          console.log('1');
+          moreServiceArr.push(item);
+        } else {
+          moreServiceArr.push(item);
+        }
       }
     });
-    return { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
+    vipsData.value = { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
+  } else {
+    const token = await getToken();
+    const {
+      data: { data },
+    } = await getVipdataWithToken(token);
+    const membershipArr = [] as any;
+    const moreServiceArr = [] as any;
+
+    const correctSelectBuyTimes = data.filter((item: any) => item.type === '3');
+    const mockSelectBuyTimes = data.filter((item: any) => item.type === '4');
+    data.forEach((item: any) => {
+      if (item.type === '1') {
+        item.correctTimesid = correctSelectBuyTimes[1].id;
+        onlycorrectTimesid.value = correctSelectBuyTimes[1].id;
+        onlycorrectTimesprice.value = correctSelectBuyTimes[1].price;
+        item.correctPrice = correctSelectBuyTimes[1].price;
+        item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
+        membershipArr.push(item);
+      } else if (item.type === '2') {
+        if (item.write === 1 && item.speak === 1 && item.disabled) {
+          console.log('1');
+          moreServiceArr.push(item);
+        } else {
+          moreServiceArr.push(item);
+        }
+      }
+    });
+    vipsData.value = { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
+  }
+};
+
+onMounted(async () => {
+  getData();
+});
+
+watch(
+  () => user.value.write,
+  () => {
+    getData();
   },
-})) as any;
+);
+watch(
+  () => user.value.speak,
+  () => {
+    getData();
+  },
+);
 
 const switchType = ref('1');
 const changeSwitchType = (type: string) => {
@@ -237,8 +294,6 @@ const correctServiceQuanYi = ref([
   },
 ]);
 
-const onlycorrectTimesid = ref(0);
-const onlycorrectTimesprice = ref(0);
 const buyCorrectNum = () => {
   if (!isVip.value) {
     ElMessageBox.alert(
@@ -249,7 +304,7 @@ const buyCorrectNum = () => {
         cancelButtonText: 'Cancel',
         cancelButtonClass: 'cancel_btn',
         showCancelButton: true,
-        callback: (action) => {
+        callback: (action: string) => {
           if (action === 'confirm') {
             store.stripePay({ vipId: onlycorrectTimesid.value });
           }
@@ -272,9 +327,7 @@ const changeBuyCorrectTimes = () => {
         <div class="title1">
           <h1>{{ $t('pricing.pagefont.h1') }}</h1>
         </div>
-        <!-- <div class="title2">
-          <h4>{{ $t('pricing.pagefont.h4') }}</h4>
-        </div> -->
+
         <div class="switch_out">
           <div @click="changeSwitchType('1')" :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']">
             {{ $t('pricing.pagefont.switch1') }}
@@ -339,7 +392,7 @@ const changeBuyCorrectTimes = () => {
                     <div class="select_out">
                       <el-select v-model="onlycorrectTimesid" placeholder="Select" @change="changeBuyCorrectTimes()">
                         <el-option
-                          v-for="itemTimes in vipsData?.correctSelectBuyTimes?.filter((item) => item.price !== 0) || []"
+                          v-for="itemTimes in vipsData?.correctSelectBuyTimes?.filter((item: any) => item.price !== 0) || []"
                           :key="itemTimes.id"
                           :label="`${itemTimes.correctNum} ${$t('pricing.pagefont.times')}`"
                           :value="itemTimes.id"
@@ -385,72 +438,42 @@ const changeBuyCorrectTimes = () => {
           <div
             v-for="(item, index) in vipsData?.moreServiceArr || []"
             :key="index"
-            :class="[item.id === CurrentMembershipId ? 'one_price' : 'one_price ']"
+            :class="[item.speak === 1 && item.write === 1 ? 'one_price one_price_bundle' : 'one_price ']"
             @click="changeCurrentMembershipId(item.id)"
           >
             <div class="title">{{ $t('pricing.pagefont.mpc') }}</div>
             <div class="card_price">
               <div class="card_price_part1">{{ item.tag }}</div>
-              <div class="card_price_part2">
+              <div v-if="item.description" class="card_price_part2">
                 {{ item.description }}
               </div>
+              <div v-else class="height_hack_222"></div>
 
               <div :class="[!isVip ? 'card_price_part4 min_heighthack' : 'card_price_part4 min_heighthack2']">
-                <div v-if="!isVip && item.day !== 7" class="your_price">{{ $t('pricing.pagefont.your_price') }}</div>
+                <div v-if="item.day !== 7" class="your_price">{{ $t('pricing.pagefont.your_price') }}</div>
                 <div class="off_price">
-                  <span class="small">{{ $t('pricing.pagefont.do') }}</span
-                  >{{ (item.price / 100).toFixed(2) }}
+                  <div>
+                    <span class="small">{{ $t('pricing.pagefont.do') }}</span> {{ (item.price / 100).toFixed(2) }}
+                  </div>
+
+                  <!-- <div v-if="item.speak === 1 && item.write === 1" class="save_tag">
+                    {{
+                      $t('pricing.pagefont.save', {
+                        num: (item.price / item.originalPrice) * 100,
+                      })
+                    }}
+                  </div> -->
                 </div>
                 <!-- <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div> -->
-                <div class="no_member_font" v-if="item.day !== 7">{{ $t('pricing.pagefont.Non_member') }}</div>
               </div>
-              <div class="card_price_part3">
-                <div class="your_price" v-if="isVip && item.day !== 7">
-                  <span>{{ $t('pricing.pagefont.your_price') }}</span>
-                </div>
-                <div class="member_price">
-                  <span v-if="item.vipPrice !== item.price"
-                    ><span class="small">{{ $t('pricing.pagefont.do') }}</span
-                    >{{ (item.vipPrice / 100).toFixed(2) }}
-                  </span>
-                </div>
-                <div class="member_font">
-                  <span v-if="item.vipPrice !== item.price">
-                    {{ $t('pricing.pagefont.mp') }}
-                  </span>
-                </div>
-              </div>
-
+              <div class="height_hack"></div>
               <div v-if="user.id">
-                <template v-if="item.write === 1">
-                  <template v-if="user.write">
-                    <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
-                      {{ $t('pricing.pagefont.Buy_Now') }}
-                      <!-- <div class="scroll-line"></div> -->
-                    </div>
-                  </template>
-                  <template v-else>
-                    <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
-                      {{ $t('pricing.pagefont.Buy_Now') }}
-                      <div class="scroll-line"></div>
-                    </div>
-                  </template>
+                <template v-if="item.disabled">
+                  <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
+                    {{ $t('pricing.pagefont.Buy_Now') }}
+                  </div>
                 </template>
-                <template v-if="item.speak === 1">
-                  <template v-if="user.speak">
-                    <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
-                      {{ $t('pricing.pagefont.Buy_Now') }}
-                      <!-- <div class="scroll-line"></div> -->
-                    </div>
-                  </template>
-                  <template v-else>
-                    <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
-                      {{ $t('pricing.pagefont.Buy_Now') }}
-                      <div class="scroll-line"></div>
-                    </div>
-                  </template>
-                </template>
-                <template v-if="item.speak !== 1 && item.write !== 1">
+                <template v-else>
                   <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
                     {{ $t('pricing.pagefont.Buy_Now') }}
                     <div class="scroll-line"></div>
@@ -535,9 +558,8 @@ const changeBuyCorrectTimes = () => {
       :before-close="handleCloseCoursrBuyed"
       class="pay_result_dialog"
     >
-      <span class="no_wrap"
-        >You have successfully purchased the course, you only need to purchase it once, please visit
-        <span class="yellow">https://www.detpractice.com/courses</span> to view and download your course information.
+      <span class="no_wrap">
+        You have successfully purchased the course. Each course only needs to be purchased once.
       </span>
       <template #footer>
         <div class="footer_wrapp"><div class="close_btn" @click="handleCloseCoursrBuyed">I get it</div></div>
@@ -572,6 +594,9 @@ const changeBuyCorrectTimes = () => {
     to {
       margin-left: 100%;
     }
+  }
+  .height_hack {
+    min-height: 97px;
   }
 }
 </style>
@@ -930,6 +955,7 @@ const changeBuyCorrectTimes = () => {
             }
           }
         }
+
         .box_shadow {
           &:hover {
             box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
@@ -995,6 +1021,9 @@ const changeBuyCorrectTimes = () => {
               margin-top: 11px;
               min-height: 68px;
             }
+            .height_hack_222 {
+              min-height: 46px;
+            }
 
             .card_price_part3 {
               // height: 84px;
@@ -1028,6 +1057,10 @@ const changeBuyCorrectTimes = () => {
                 font-weight: 600;
                 font-size: 32px;
                 color: #f66442;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                grid-gap: 8px;
                 // margin-top: 24px;
                 .small {
                   font-size: 20px;
@@ -1048,8 +1081,20 @@ const changeBuyCorrectTimes = () => {
                 font-weight: 600;
                 font-size: 32px;
                 color: #201515;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                grid-gap: 8px;
                 .small {
                   font-size: 20px;
+                }
+                .save_tag {
+                  padding: 4px 10px;
+                  background: #ffe1bc;
+                  border-radius: 16px;
+                  font-weight: 500;
+                  font-size: 14px;
+                  color: #4c2929;
                 }
               }
 
@@ -1137,6 +1182,40 @@ const changeBuyCorrectTimes = () => {
                   }
                 }
               }
+            }
+          }
+        }
+        .one_price_bundle {
+          // border: 1px red solid;
+          .card_price {
+            background: #4c2929;
+            border: 1px solid #e9e9e9;
+            .card_price_part1 {
+              color: #ffffff;
+            }
+            .card_price_part2 {
+              min-height: 34px !important;
+            }
+            .your_price {
+              background: rgba(255, 225, 188, 0.1) !important;
+              color: #ffe1bc !important;
+            }
+            .off_price {
+              color: #ffffff !important;
+            }
+            .no_member_font {
+              color: rgba(255, 255, 255, 0.65) !important;
+            }
+            .member_price {
+              color: #ffe1bc !important;
+            }
+            .member_font {
+              color: #ffe1bc !important;
+            }
+            .card_price_buy_btn {
+              background: #ffe1bc !important;
+              color: #4c2929 !important;
+              overflow: hidden;
             }
           }
         }
@@ -1505,7 +1584,7 @@ const changeBuyCorrectTimes = () => {
 
   .no_wrap {
     word-break: normal;
-    line-height: 1.2;
+    line-height: 20px;
     .yellow {
       color: #f66442;
     }

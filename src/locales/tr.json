@@ -1,10 +1,10 @@
 {
   "test": "Deneme için",
   "Home": "Ana Sayfa",
-  "Products": "Ürünler",
-  "Learn": "Öğrenmek",
-  "Pricing": "Fiyatlandırma",
-  "Blog": "Blog",
+  "Products": "Hizmetlerimiz",
+  "Learn": "Eğitim Materyalleri",
+  "Pricing": "Ücretler",
+  "Blog": "Başarı Kılavuzu",
   "header": {
     "home_logo_title": "DET Alıştırma",
     "path_practice_title": "Duolingo İngilizce Pratik Testi Online",
@@ -13,7 +13,7 @@
     "path_course_title": "Duolingo English Test Kurs Çevrimiçi",
     "commonAlt": "DET Pratik: En iyi Duolingo English Test Pratik platformu",
     "Get_started": "Başlayın",
-    "Try_for_free": "Ücretsiz dene",
+    "Try_for_free": "Ücretsiz Dene",
     "prod1": {
       "title": "Duolingo English Test Uygulama",
       "alt": "Duolingo English Test Uygulama",
@@ -46,28 +46,28 @@
     }
   },
   "footer": {
-    "inc": "Ürünümüzün Duolingo,Inc ile hiçbir bağlantısı yoktur",
+    "inc": "Bu platform Duolingo, Inc. ile bağlantılı değildir ve bağımsız bir eğitim hizmetidir.",
     "ProductsTitle": "Ürünler",
     "LearnTitle": "Hazırlık Kaynakları",
     "BlogTitle": "Blog",
     "CompanyTitle": "Şirket",
     "Products": [
-      "DET Pratik",
-      "DET Yazma AI Düzeltme",
-      "DET Konuşma AI Düzeltme",
-      "DET Sahte",
-      "Duolingo English Test Kurs"
+      "DET Alıştırmaları",
+      "YZ Yazma Desteği",
+      "YZ Konuşma Desteği",
+      "Deneme Sınavları",
+      "Tam Hazırlık Paketi"
     ],
     "Company": [
       "Hakkımızda",
-      "Bize ulaşın",
-      "Şartlar ve Koşullar",
-      "Gizlilik Politikası",
+      "İletişim",
+      "Kullanım Koşulları",
+      "Gizlilik",
       "Site Haritası",
-      "Ortaklık Programı",
-      "İade Politikası"
+      "İş Ortaklığı",
+      "İade Koşulları"
     ],
-    "show_more": "daha fazla göster",
+    "show_more": "Devamını Gör",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "cookie_contenr": "DET Uygulama, tarayıcı Ayarlarınıza göre içeriği iyileştirmek için çerezler kullanır. Daha fazla bilgi için bkz",
     "newAlt": "DET Uygulama",
@@ -81,73 +81,80 @@
       "DET Kelime Bilgisi",
       "DET Hazırlık İpuçları",
       "DET Öğrenmek"
-    ]
+    ],
+    "Products[0]": "DET Alıştırmaları ",
+    "igetit": "Tamam, anladım"
   },
   "index": {
     "seometa": {
-      "title": "DET Pratik Yapın - Duolingo English Test'yi Başarın",
-      "description": "DET Uygulama, Duolingo English Test Pratik için en iyi platformdur. En büyük test bankamız, tam uzunluklu deneme sınavı, düzeltme servisi ve DET kurslarına sahibiz.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı, Duolingo İngilizce Yeterlilik Sınavı, Duolingo İngilizce Yeterlilik Sınavı, İngilizce Yeterlilik Testi Duolingo, Duolingo Yeterlilik Testi, Duolingo İngilizce Yeterlilik Testi, Duolingo English Test, İngilizce Duolingo Test"
+      "title": "DET Practice - Duolingo İngilizce Testi için Kapsamlı Hazırlık Platformu",
+      "description": "DET Practice, Duolingo İngilizce Testi hazırlığı için en iyi platformdur. Geniş soru bankası, birebir tam kapsamlı deneme sınavı, konuşma ve yazma için yapay zeka destekli düzeltme hizmeti ve DET kursları sunuyoruz.",
+      "keywords": "Duolingo İngilizce Testi, DET Duolingo, DET Testi, Duolingo Sınavı, Duolingo Online Test, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo İngilizce Yeterlilik Testi, İngilizce Yeterlilik Sınavı Duolingo, Duolingo İngilizce Testi"
     },
     "bigtitle1": "Yüksek Puan Alanların Sayısı (130+ Puan)：10000+",
-    "bigtitle2": "850 Üzerinden İncelemelerden 4.8/5 Olağanüstü Puan!",
-    "power_by": "AI Tarafından Desteklenmektedir",
-    "h1Mobile": "Daha Yüksek Puan Alın<br />Duolingo <br />İngilizce Testinde<span class=\"seo_hack\">DET Pratik</span> ile",
-    "h1PC": "Daha Yüksek Bir Puan Alın <br />Duolingo English Test <span class=\"seo_hack\">DET Uygulama</span> ile",
-    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
+    "bigtitle2": "850'den fazla değerlendirme ile 4,8/5 mükemmel derecelendirme!",
+    "power_by": "Yapay Zeka Destekli",
+    "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
+    "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
+    "one_small_title": [
+      "DET Uygulama",
+      "AI Düzeltme",
+      "Tam Uzunlukta Deneme",
+      "DET Kurslar"
+    ],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
-    "Start_free_with_email": "E-posta ile ücretsiz başlayın",
+    "Start_free_with_email": "e-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
-    "trustedByWorldwide": "Dünya çapında {path} öğrenci tarafından 1 aylık Duolingo English Test puan artışı için güvenildi.",
-    "The_Best_Platform": "En İyi Platform Duolingo English Test Puanlarınızı Artırmak İçin",
+    "trustedByWorldwide": "Duolingo English Test'te 1 ay içinde puan artırmak için dünya çapında {path}'den fazla öğrenci tarafından güvenilmektedir.",
+    "The_Best_Platform": "Duolingo English Test Puanlarınızı Artırmak İçin En İyi Platform",
     "Tu": "Toplam Kullanıcılar",
     "questions": "Sorular",
-    "mockTest": "Deneme Sınavı",
+    "mockTest": "Deneme Sınavları",
     "yellow_check_icon_alt": "sarı_onay_ikonu",
     "Leverage_Our": "Hızlı Puan Artışı İçin Kapsamlı Kaynaklarımızı Kullanın",
     "article1": {
-      "title": "Duolingo English Test Uygulama",
-      "tips1": "En <span class='yellow'>Büyük</span> Soru Bankası, {number} Alıştırma Sorusu",
-      "tips2": "Sürekli <span class='yellow'>her gün güncellenen</span>",
-      "tips3": "Yüksek puanlı cevaplar ve detaylı açıklamalar sağlayın",
-      "tips4": "Sesli Okuma için AI Puanlama",
-      "btn_font": "Daha Fazlasını Keşfet",
+      "title": "Duolingo English Test Alıştırması",
+      "tips1": "En Geniş Soru Bankası, {number}'den Fazla Alıştırma Sorusu",
+      "tips2": "Her gün sürekli güncellenir",
+      "tips3": "Örnek yanıtlar ve ayrıntılı açıklamalar sağlar",
+      "tips4": "\"Read Aloud\" için Yapay Zeka Skorlaması",
+      "btn_font": "Daha fazla keşfet",
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "article2": {
       "title": "DET Tam Uzunlukta Deneme Sınavı",
-      "tips1": "En <span class='yellow'>Güçlü</span> Deneme Sınavı, <span class='yellow'>Gerçek DET Sınavına</span> Yakın",
-      "tips2": "Uyarlamalı Sınavlar ve Yapay Zeka Değerlendirmesi",
-      "tips3": "Doğru Değerlendirme Puanları, Detaylı Değerlendirme Raporu",
-      "tips4": "Sonuçlar <span class='yellow'>5-30 dakika</span> içinde hazır olacaktır",
+      "tips1": "En Kapsamlı Deneme Sınavı, Gerçek DET Sınavına Yakın",
+      "tips2": "Uyarlanabilir Sınavlar ve Yapay Zeka Skorlaması",
+      "tips3": "Doğru Değerlendirme Puanları, Ayrıntılı Değerlendirme Raporu",
+      "tips4": "Sonuçlar <span class='yellow'>5-30</span> dakika içinde hazır olacaktır",
       "btn_font": "Daha fazlasını öğrenin",
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "article3": {
-      "title": "DET Yazı AI Düzeltmesi",
-      "tips1": "Destek \"Fotoğraf Hakkında Yaz\",\"Etkileşimli Yazma\",\"Yazı Örneği\"",
-      "tips2": "Yapay Zeka Puanlama, Yapay Zeka Düzeltme, Öğretmen Rehberliği",
-      "tips3": "Doğru Değerlendirme Puanları, Detaylı Değerlendirme Raporu",
-      "tips4": "Sonuçlar <span class='yellow'>1-5 dakika</span> içinde mevcut olacaktır.",
-      "btn_font": "Daha fazla bilgi edin",
+      "title": "DET Tam Uzunlukta Deneme Sınavı",
+      "tips1": "\"Write about the Photo\", \"Interactive Writing\", \"Writing Sample\" desteklenir",
+      "tips2": "Yapay Zeka Skorlaması, Yapay Zeka Düzeltme, Öğretmen Rehberliği",
+      "tips3": "Doğru Değerlendirme Puanları, Ayrıntılı Değerlendirme Raporu",
+      "tips4": "Sonuçlar <span class='yellow'>1-5</span> dakika içinde hazır olacaktır",
+      "btn_font": "Daha fazlasını öğrenin",
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "article4": {
-      "title": "DET Konuşma AI Düzeltme",
-      "tips1": "Destek \"Dinle, Sonra Konuş\", \"Fotoğraf Hakkında Konuş\", \"Oku, sonra Konuş\", \"Konuşma Örneği\"",
+      "title": "DET Konuşma Yapay Zeka Düzeltme",
+      "tips1": "\"Listen, Then Speak\", \"Speak About the Photo\", \"Read, Then Speak\", \"Speaking Sample\" desteklenir",
       "tips2": "AI Puanlama, AI Değerlendirme Sonuçları, Öğretmen Rehberliği",
       "tips3": "Doğru Değerlendirme Puanları, Ayrıntılı Değerlendirme Raporu",
-      "tips4": "Sonuçlar <span class='yellow'>1-5 dakika</span> içinde mevcut olacak",
-      "btn_font": "Daha fazla bilgi edin",
+      "tips4": "Sonuçlar <span class='yellow'>1-5</span>dakika içinde hazır olacaktır",
+      "btn_font": "Daha fazlasını öğrenin",
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "article5": {
-      "title": "Duolingo English Test Kurs",
-      "tips1": "Kapsamlı rehberlerimizle konuşma ve yazma bölümlerinin <span class='yellow'>derinlemesine bir anlayışını</span> geliştirin DET",
-      "tips2": "Kapsamlı Ustalık Sağlayın",
+      "title": "DET Konuşma Yapay Zeka Düzeltme",
+      "tips1": "DET konuşma ve yazma bölümlerini derinlemesine anlamak için ayrıntılı kılavuzlarımızla öğrenin",
+      "tips2": "Kapsamlı Bir Uzmanlık Kazanın",
       "tips3": "ESL Uzmanlarından Öğrenin",
-      "tips4": "Haberdar Olun ve Önde Kalın",
-      "btn_font": "Daha fazlasını keşfedin",
+      "tips4": "Bilgili ve Önde Kalın",
+      "btn_font": "Daha fazla keşfedin",
       "btn_img_alt": "Sarı Ok Sağ"
     },
     "thousand": "k",
@@ -157,7 +164,7 @@
     "Join_Them": "Onlara Katıl"
   },
   "slogen": {
-    "title": "<div class='font1'>En Yüksek Puanlara Giden Yolunuza Başlayın</div><div class='font2'>Duolingo English Test !</div>",
+    "title": "<div class='font1'>Duolingo English Test'te En Yüksek Skorları Elde Etme Yolunuza Başlayın!</div>",
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "E-posta ile ücretsiz başla",
     "Start_for_free": "Ücretsiz başla"
@@ -185,32 +192,32 @@
   },
   "pricing": {
     "seometa": {
-      "title": "DET Uygulama - Duolingo Test Hazırlık Üyelik ve Hizmet Fiyatları",
-      "description": "Kişiselleştirilmiş pratik, uzman incelemeleri ve tam ölçekli deneme sınavları için uygun fiyatlı fiyat seçenekleriyle hazırlığınız için doğru planı seçin.",
-      "keywords": "keyDET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavıwords"
+      "title": "Duolingo English Test Hazırlık Fiyatları {'|'} Uygun DET Hazırlık Planları",
+      "description": "DET Practice'de Duolingo English Test hazırlık fiyat seçeneklerini keşfedin. Duolingo Test hazırlığınızda başarılı olmanıza yardımcı olmak için tasarlanmış esnek ve uygun fiyatlı planlar arasından seçim yapın. Size uygun planla öğrenme yolculuğunuza bugün başlayın!",
+      "keywords": "Duolingo English Test hazırlık fiyatları, Duolingo Test hazırlık planları, uygun DET pratik, Duolingo English Test hazırlık, DET fiyatlandırma, İngilizce yeterlilik sınavı fiyatları, test hazırlık planları"
     },
     "pagefont": {
       "h1": "Size Uygun Planı Seçin",
       "h4": "Güvenli ödeme! Herhangi bir zamanda iptal edin! Şimdi DET'yi ustalaşın!",
       "switch1": "Hizmet",
       "switch2": "Kurslar",
-      "sep": "Güvenli ödeme",
-      "ca": "İstediğiniz zaman iptal edin",
-      "atde": "Şimdi DET'yi kazanın",
+      "sep": "Güvenli Ödeme",
+      "ca": "İstediğiniz Zaman İptal",
+      "atde": "DET'i Şimdi Başarın",
       "circle_check_icon": "daire_kontrol_ikonu",
       "apcs1": "Yapay Zeka Düzeltme Servisi",
       "Most_Popular_Choice": "En Popüler Seçim",
       "off": "{off}% indirim",
       "do": "$",
       "mp": "Üyenin fiyatı",
-      "Buy_Now": "Şimdi Satın Al",
+      "Buy_Now": "Hemen Satın Al",
       "tf": "Ücretsiz dene",
       "mpc": "En Popüler Seçim",
       "your_price": "fiyatınız",
       "Non_member": "Üye olmayan",
       "purchased": "satın alındı",
       "Secure_Payment": "Güvenli Ödeme:",
-      "faq": "Sıkça Sorulan Sorular",
+      "faq": "Sık Sorulan Sorular",
       "Contact_Us": "Bize Ulaşın",
       "alt": "DET Uygulama:En iyi Duolingo English Test Uygulama platformu",
       "check_icon": "Kontrol Et",
@@ -218,8 +225,8 @@
       "green_check": "Yeşil Onay İşareti",
       "arrow_down": "Aşağı Ok",
       "free_font": "Ücretsiz",
-      "free_tips": "20 soruyu ücretsiz olarak görüntüleyebilirsiniz, platformumuzu deneyin ve ihtiyaçlarınıza uygun olup olmadığını görün.",
-      "tff": "Ücretsiz dene",
+      "free_tips": "Platformumuzu denemek ve ihtiyaçlarınıza uygun olup olmadığını görmek için 20 soruya ücretsiz erişebilirsiniz.",
+      "tff": "Ücretsiz Deneyin",
       "save": "{num}% tasarruf et",
       "week": "/hafta",
       "month": "/ay",
@@ -232,32 +239,32 @@
     },
     "aqList": [
       {
-        "name": "DETPractice’in planları ve fiyatlandırması nasıl çalışır?",
-        "content": "Kullanıcılarımıza şeffaf planlar ve fiyatlandırma sunuyoruz, gizli ücretler olmadan. Ayrıca, ihtiyaçlarınıza göre hizmetleri seçebilmeniz için ek abonelik paketleri sunuyoruz."
+        "name": "DET Practice'in planları ve fiyatlandırması nasıl çalışır?",
+        "content": "Kullanıcılarımıza gizli ücret olmayan şeffaf planlar ve fiyatlar sunuyoruz. Ayrıca, ihtiyaçlarınıza göre hizmet seçebilmeniz için ek abonelik paketleri sunuyoruz."
       },
       {
-        "name": "Ücretsiz deneme süresi var mı?",
-        "content": "Evet! 20 soruyu ücretsiz olarak görüntüleyebilirsiniz. Daha fazla hizmet satın almadan önce bizi anlamanıza yardımcı olur."
+        "name": "Ücretsiz deneme var mı?",
+        "content": "Evet! 20 soruyu ücretsiz görebilirsiniz. Daha fazla hizmet satın almadan önce bizi tanımanıza yardımcı olur."
       },
       {
         "name": "Herhangi bir indirim sunuyor musunuz?",
         "content": "Evet! Her hizmet için özel indirimler sunuyoruz. Ancak, 30 günlük hizmeti tercih ettiğinizde diğer hizmetlere kıyasla daha büyük bir indirim alacaksınız. Daha fazla bilgi için lütfen yukarıdaki fiyat detaylarına bakın."
       },
       {
-        "name": "Ödemem başarılı oldu, ancak yükseltme başarısız oldu.",
-        "content": "Lütfen bizimle chat veya e-posta yoluyla iletişime geçin: <span class='email_address'>support{'@'}detpractice.com</span>. Bu, endişelerinizi gidermenin en basit ve hızlı yoludur."
+        "name": "Ödemem başarılı oldu ama yükseltme başarısız oldu.",
+        "content": "Lütfen sohbet veya e-posta yoluyla bizimle iletişime geçin: <span class='email_address'>support{'@'}detpractice.com</span>. Bu, sorununuzu çözmenin en basit ve hızlı yoludur."
       },
       {
-        "name": "Kursu satın aldım ama görüntüleyemiyorum?",
-        "content": "Kursu başarıyla satın aldıktan sonra, kurs bilgilerini görüntülemek ve indirmek için kurs tanım sayfasına <span class='email_address'>https://www.detpractice.com/courses</span> gidebilirsiniz. Kurs bilgilerini bulamazsanız, lütfen sohbet veya e-posta yoluyla bizimle iletişime geçin: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "Kursu satın aldım ama görüntüleyemiyorum, neden?",
+        "content": "Kursu başarıyla satın aldıktan sonra, kurs açıklama sayfası https://www.detpractice.com/courses adresinden kurs bilgilerini görüntüleyebilir ve indirebilirsiniz. Kurs bilgilerini bulamazsanız, lütfen sohbet veya e-posta yoluyla bizimle iletişime geçin: <span class='email_address'>support{'@'}detpractice.com</span>."
       },
       {
-        "name": "Geri bildirimi nereye gönderebilirim?",
-        "content": "Geri bildirimi sağ alt köşedeki destek sohbeti aracılığıyla gönderebilir veya bize <span class='email_address'>support{'@'}detpractice.com</span> adresinden e-posta yoluyla ulaşabilirsiniz. Alternatif olarak, doğrudan \"Bize Ulaşın\" bölümüne bir mesaj bırakabilirsiniz."
+        "name": "Geri bildirimimi nereye gönderebilirim?",
+        "content": "Sağ alt köşedeki destek sohbeti aracılığıyla veya <span class='email_address'>support{'@'}detpractice.com</span> adresine e-posta göndererek geri bildirim sağlayabilirsiniz. Alternatif olarak, \"Bize Ulaşın\" bölümünden doğrudan mesaj bırakabilirsiniz."
       },
       {
-        "name": "İade politikası nedir?",
-        "content1": "Geri ödeme almak için bilgi ve talimatlar için, sayfanın altındaki \"Geri Ödeme Politikası\" bağlantısına öncelikli olarak başvurabilir veya <span class='email_address'>support{'@'}detpractice.com</span> adresinden bize ulaşabilirsiniz."
+        "name": "İade politikanız nedir?",
+        "content1": "İade bilgileri ve talimatları için öncelikle sayfanın altındaki \"İade Politikası\" bağlantısına bakabilir veya <span class='email_address'>support{'@'}detpractice.com</span> adresinden bizimle iletişime geçebilirsiniz."
       }
     ],
     "qlList": {
@@ -300,36 +307,36 @@
     ],
     "contaceUsList": {
       "type1": {
-        "font": "Çevrimiçi Müşteri Hizmetleri",
-        "tip": "Mevcut Pazartesi-Cuma, 10:00 - 19:00",
-        "btn": "Canlı Sohbet Edin"
+        "font": "Online Müşteri Hizmetleri",
+        "tip": "Pazartesi-Cuma, 10:00 - 19:00 saatleri arası",
+        "btn": "Hemen Sohbet Edin"
       },
       "type2": {
-        "font": "Bize E-posta Gönderin",
-        "tip": "1 iş günü içinde yanıt alın."
+        "font": "E-posta Gönderin",
+        "tip": "1 iş günü içinde yanıt"
       },
       "type3": {
-        "font": "Mesaj bırakın",
-        "tip": "Size bir iş günü içinde cevap vereceğiz.",
-        "btn": "Şimdi bir mesaj bırakın"
+        "font": "Mesaj Bırakın",
+        "tip": "1 iş günü içinde size yanıt vereceğiz",
+        "btn": "Hemen Mesaj Bırakın"
       }
     },
     "leftQuanYiList": [
-      "<span class='strongfont'>Sınırsız</span> Uygulama Seansları için",
-      "Erişim <span class='strongfont'>18000+</span> Uygulama Sorusu",
-      "Yüksek <span class='strongfont'>Puanlı</span> Örnek Cevapları İnceleyin",
-      "<span class='strongfont'>Derinlemesine</span> Soru Analizi",
-      "Yüksek Frekanslı Sınav <span class='strongfont'>Kelime Kitabı</span>",
-      "Kişiselleştirilmiş <span class='strongfont'>Çalışma Planı</span> ve Akıllı Soru Seçimi",
+      "Alıştırma Oturumları Sınırsız",
+      "18.000+ Alıştırma Sorusuna Erişim",
+      "Yüksek Puanlı Örnek Cevapları İnceleyin",
+      "Detaylı Soru Analizi",
+      "Sık Kullanılan Sınav Kelimeleri Kitapçığı",
+      "Akıllı Soru Seçimi ile Kişiselleştirilmiş Çalışma Planı",
       "Yapay Zeka Destekli Konuşma Değerlendirmeleri"
     ],
     "mockQuanYiList": [
-      "<span class='strongfont'>Tam Uzunlukta</span> deneme sınavları",
-      "Her zaman test et",
-      "Gerçek <span class='strongfont'>DET sınavına</span> yakın",
-      "Doğru değerlendirme puanları",
-      "Detaylı değerlendirme raporu",
-      "Sonuçlar <span class='strongfont'>5-30 dakika</span> içinde mevcut olacak"
+      "Tam Uzunlukta Deneme Sınavları",
+      "İstediğiniz Zaman Test Olun",
+      "Gerçek DET Sınavına Yakın",
+      "Hassas Değerlendirme Puanları",
+      "Detaylı Değerlendirme Raporu",
+      "Sonuçlar 5-30 dakika içinde hazır"
     ]
   },
   "blog": {
@@ -352,11 +359,13 @@
     "Blog": "Blog",
     "Related_Articles": "İlgili Makaleler",
     "Thanks_for_voting": "Oy verdiğiniz için teşekkürler!",
-    "Rate_this_article": "Bu makaleyi oyla"
+    "Rate_this_article": "Bu makaleyi oyla",
+    "share": "Bu makaleyi paylaş",
+    "getHiger": "DET'te Kolayca Daha Yüksek Puan Alın"
   },
   "easyexam": {
-    "snfeep": "Şimdi Başlayın Kolay Sınav Hazırlığı İçin.",
-    "Start_Now": "Başlayın"
+    "snfeep": "Etkili hazırlık için ilk adımı atın.",
+    "Start_Now": "Başla"
   },
   "highscorewriting": {
     "font1": "Hızla İlerleyin",
@@ -364,14 +373,14 @@
     "Start_Now": "Şimdi Başla"
   },
   "highscorespeaking": {
-    "font1": "Derhal yolculuğunuza başlayın",
-    "font2": "Yüksek Puanlı Konuşma!",
+    "font1": "Yüksek puana giden yolculuğunuz başlıyor!",
+    "font2": " ",
     "Start_Now": "Şimdi Başla"
   },
   "highscorewritingnew": {
-    "font1": "Hemen yolculuğunuza başlayın",
-    "font2": "Yüksek Skorlu Yazı!",
-    "Start_Now": "Şimdi Başla"
+    "font1": "Hedef Puanınıza Ulaşın!",
+    "font2": " ",
+    "Start_Now": "Başlayın"
   },
   "path": {
     "seometa": {
@@ -381,42 +390,43 @@
   },
   "aboutUs": {
     "seometa": {
-      "title": "Hakkımızda - DET Pratik",
-      "description": ""
+      "title": "DET Practice {'|'} Duolingo İngilizce Testi (DET) için Hepsi Bir Arada Hazırlık Platformu",
+      "description": "DET Practice - Profesyonel Duolingo hazırlık platformu, 18.000'den fazla gerçek soru pratiği,yapay zeka destekli değerlendirme ve tam simülasyon sınav deneyimi sunar. Duolingo İngilizce Testi'ne verimli bir şekilde hazırlanmanıza yardımcı olur, ideal puanınızı kolayca elde edin.",
+      "keywords": "Duolingo İngilizce Testi, DET Simülasyon Sınavı, DET Soru Bankası, DET Akıllı Değerlendirme, DET Konuşma Pratiği, DET Yazma Pratiği, DET Online Kurslar, DET Öğrenme Platformu, Duolingo Sınav Hazırlığı, DET Sınav Teknikleri, DET Hazırlık Materyalleri"
     },
-    "title": "Hakkında DET Pratik",
-    "title_desc": "DETPractice.com, Pratik Yapmak ve Öğrenmek için en iyi platformdur.",
+    "title": "DET Practice Nedir?",
+    "title_desc": "DET Practice, Duolingo İngilizce Testi (DET) için özel olarak tasarlanmış bir hazırlık platformudur. Hedef puanınıza etkili ve hızlı bir şekilde ulaşmanızı sağlar.",
     "check_out": {
-      "h2": "Neler Yapabileceğimizi İnceleyin",
+      "h2": "Neden DET Practice?",
       "qbt": "DET Soru Bankası",
-      "qbtdesc": "En büyük soru bankasına sahibiz ve her gün güncelliyoruz. Soruları çözerek Duolingo English Test puanınızı hızla artırabilirsiniz.",
-      "flm": "DET Tam Uzunlukta Deneme",
-      "flmdesc": "En güçlü DET deneme testine sahibiz, bu sayede test sonuçlarınızı daha düşük bir maliyetle doğru bir şekilde değerlendirebilirsiniz.",
-      "acs": "DET AI Düzeltme Hizmeti",
-      "acsdesc": "Sunmuş olduğumuz yapay zeka düzeltme araçlarını kullanarak konuşma ve yazma puanlarınızı hızlı bir şekilde artırabilirsiniz.",
-      "dc": "DET Dersler",
-      "dedesc": "En son DET test özelliklerine dayalı olarak test hazırlık materyalleri ve kursları geliştirmeye devam edeceğiz."
+      "qbtdesc": "Her gün güncellenen özgün sorular ve çalışma materyalleri ile sınav başarınızı garantileyin. DET formatına uygun binlerce soru ile pratik yapın.",
+      "flm": "Birebir Sınav Deneyimi",
+      "flmdesc": "Gerçek DET sınavının tıpatıp aynısı olan deneme sınavlarıyla kendinizi test edin. Detaylı performans analizleriyle eksiklerinizi görün.",
+      "acs": "Yapay Zeka Değerlendirmesi",
+      "acsdesc": "İleri teknoloji yapay zeka sistemiyle konuşma ve yazma becerileriniz anında değerlendirilir. Kişisel gelişim önerileriyle sürekli ilerleme kaydedin.",
+      "dc": "Sistemli Eğitim Programı",
+      "dedesc": "Güncel sınav içeriğine göre hazırlanmış, adım adım ilerleyen eğitim programı. Başarıya giden yolda size rehberlik eder."
     },
     "three_our_our": {
-      "h2": "Genç Ama Güçlü",
-      "ov": "Vizyonumuz",
-      "me": "Yapay Zeka ile eğitimi daha iyi hale getirmek",
-      "om": "Misyonumuz",
-      "omdesc": "Yapay genel <br />zekanın tüm öğrencilere fayda sağladığından emin olun.",
-      "ovs": "Değerlerimiz",
-      "ovsdesc": "Dürüstlük, iş birliği ve karşılıklı<br /> fayda"
+      "h2": "Uzman Kadro ve Hedeflerimiz",
+      "ov": "Amacımız",
+      "me": "Teknoloji ve yapay zeka ile eğitimde yeni ufuklar açmak",
+      "om": "Hedefimiz",
+      "omdesc": "Kaliteli eğitimi herkes için ulaşılabilir kılmak",
+      "ovs": "İlkelerimiz",
+      "ovsdesc": "Yenilikçilik {'|'} Teknoloji {'|'} Erişilebilirlik"
     },
     "get_in_touch": {
-      "h2": "İletişime Geçin",
+      "h2": "İletişim",
       "goytb": "YouTube'a git",
-      "getmore": "DETPractice'tan YouTube'da daha fazlasını alın"
+      "getmore": "YouTube Kanalımız: Başarıya ulaştıran ücretsiz eğitim içerikleri"
     }
   },
   "contactUs": {
     "seometa": {
-      "title": "Bize Ulaşın - DET Uygulama",
-      "description": "",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Çevrimiçi, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
+      "title": "DET Practice ile İletişim {'|'} Destek ve Müşteri Hizmetleri",
+      "description": "Sorularınızı yanıtlamak, geri bildirim almak veya destek sağlamak için DET Practice destek ekibi ile iletişime geçin. Duolingo English Test hazırlığınızda profesyonel yardım alın.",
+      "keywords": "DET Practice iletişim, DET Practice destek ile iletişim, DET sınav desteği, Duolingo English Test destek, DET Practice müşteri hizmetleri, DET deneme sınavı desteği"
     },
     "checkEmail": "E-posta geçerli bir e-posta adresi olmalıdır.",
     "enterName": "Lütfen adınızı giriniz.",
@@ -424,14 +434,15 @@
     "entermessage": "Lütfen mesajınızı giriniz.",
     "subsuccess": "Başarıyla gönderildi",
     "Contact_Us": "Bize Ulaşın",
-    "Questions": "Sorular, hata raporları, geri bildirim - size yardımcı olmak için buradayız!",
+    "Questions": "Sorularınız, önerileriniz veya geri bildiriminiz mi var? Size her zaman yardımcı olmaya hazırız!",
     "fill_in": "Formu doldurun",
-    "thank": "Bizimle iletişime geçmeyi seçtiğiniz için teşekkür ederiz. Lütfen bize bir e-posta gönderin; personelimiz sorularınızı yanıtlamak için en kısa sürede sizinle iletişime geçecektir.",
+    "thank": "Bizimle iletişime geçtiğiniz için teşekkür ederiz. Lütfen talebinizi e-posta yoluyla bize iletin; 24 saat içinde size yanıt vererek DET hazırlığınız için kişisel destek sunacağız.",
     "email": "E-posta",
     "Name": "Ad",
     "Email_Address": "E-posta Adresi",
     "Message": "Mesaj",
-    "SUBMIT": "GÖNDER"
+    "SUBMIT": "GÖNDER",
+    "send": "Gönder"
   },
   "cookie": {
     "seometa": {
@@ -477,37 +488,37 @@
   },
   "correction": {
     "seometa": {
-      "title": "DET Practice - Duolingo İngilizce Testiniz için Yapay Zeka Yazım Düzeltme Hizmeti",
-      "description": "Yapay zeka tarafından sağlanan DET Yazma Yapay Zeka Düzeltme hizmeti, profesyonel öğretmenlerle karşılaştırılabilir. \nMakaleniz DET puanlama kurallarına göre düzeltilecek ve 1-5 dakika içinde ayrıntılı geri bildirim alacaksınız.",
-      "keywords": "需要提供"
+      "title": "Duolingo English Test Writing AI {'|'} DET Yazma Skor Kontrolörü by DET Practice",
+      "description": "Yapay zeka teknolojisiyle DET yazma becerinizi geliştirin. Gerçek sınav formatında yazılarınızı analiz edin, anında puan ve detaylı geri bildirim alın. Profesyonel düzeyde önerilerle yazma kalitenizi yükseltin ve DET'e tam hazırlıklı olun.",
+      "keywords": "duolingo yazma sınavı, det yazı hazırlık, yazma değerlendirmesi, duolingo puan hesaplama, det yazı örnekleri, yazma alıştırmaları, yapay zeka analizi, det yazı teknikleri, yazma püf noktaları, örnek yazılar, sınav hazırlığı, online pratik"
     },
-    "h1": "DET Yapay Zeka Düzeltme Yazma",
-    "desc": "DET Profesyonel öğretmenlerle karşılaştırılabilir AI tarafından sağlanan Yazma AI Düzeltme hizmeti. Makaleniz DET puanlama kurallarına göre düzeltilecek ve 1-5 dakika içinde ayrıntılı geri bildirim alacaksınız.",
+    "h1": "Yapay Zeka Destekli Yazı Analizi",
+    "desc": "Uzman öğretmen kalitesinde yapay zeka değerlendirmesi. DET kriterlerine göre 5 dakika içinde kapsamlı analiz.",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "useralt": "Kullanıcı Simgesi",
     "white_arrow_right": "beyaz_ok_sağa",
     "yellow_arrow_right": "sarı_ok_sağa",
-    "learners_have": "{number} kişi DET Yazı AI Düzeltme hizmetini kullandı.",
-    "Review_Now": "Başlayın",
-    "Correct_Now": "Deneyimlemeye başla",
+    "learners_have": "{number}'den fazla öğrencinin tercihi.",
+    "Review_Now": "Hemen Dene",
+    "Correct_Now": "Şimdi Başla",
     "Get_Scored_Now": "Deneyimlemeye başlayın",
     "Enhance_Now": "Şimdi Geliştir",
     "Begin_Polishing": "Cilalamayı Başlat",
     "h2_1": {
-      "h2": "Doğru skor",
-      "right_desc": "Soru bankasından makalenizi gönderin ve 1-5 dakika içinde net ve ayrıntılı bir rapor ve puan alabilirsiniz."
+      "h2": "Hassas Puanlama",
+      "right_desc": "Soru havuzundan seçtiğiniz konuda yazın, dakikalar içinde detaylı değerlendirme alın."
     },
     "h2_2": {
-      "h2": "Yazı düzeltme",
-      "right_desc": "Kelime dağarcığınızla ilgili hataları, dilbilgisi hatalarını hemen görebilir ve bunlardan nasıl kaçınacağınızı öğrenebilirsiniz."
+      "h2": "Anlık Düzeltme",
+      "right_desc": "Dil ve anlatım hatalarınızı anında tespit edip, çözüm önerileri sunuyoruz."
     },
     "h2_3": {
-      "h2": "Profesyonel rehberlik",
-      "right_desc": "DET puanlama unsurlarına göre, makalenizdeki zayıf noktaları belirlemenize yardımcı olmak ve mükemmel hale getirmek için profesyonel rehberlik sağlıyoruz."
+      "h2": "Uzman Desteği",
+      "right_desc": "DET değerlendirme ölçütlerine göre eksiksiz analiz ve yönlendirme."
     },
     "h2_4": {
-      "h2": "Deneme cilalama",
-      "right_desc": "Her kelimeyi ve cümleyi doğru bir şekilde değiştir, paragraf yapısını makul bir şekilde ayarla ve yazı tarzını canlandırarak kompozisyonunu daha da geliştir ve yüksek puan alan birine dönüştür."
+      "h2": "İfade Geliştirme",
+      "right_desc": "Kelime seçiminden paragraf düzenine kadar tüm yazınızı mükemmelleştirin."
     },
     "h2_5": {
       "h2": "Orijinal Metin Parlatma",
@@ -516,38 +527,39 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET Uygulama - Duolingo English Test Kılavuz ile Konuşma ve Yazma Becerilerini Geliştirin",
-      "description": "Potansiyelinizi açığa çıkarın Duolingo English Test Rehberimiz ile. Kapsamlı stratejiler, uzman ipuçları ve güncel DET Pratik ile konuşma ve yazmada mükemmelliğe dalın."
+      "title": "DET Hazırlık Kursları {'|'} Duolingo English Test için Profesyonel Eğitim",
+      "description": "Profesyonel DET hazırlık kurslarımızla başarıya ulaşın. Okuma, yazma, konuşma ve dinleme becerilerinizi uzman eğitmenler eşliğinde geliştirin. Sınava hazırlığınıza hemen başlayın!",
+      "keywords": "DET hazırlık, Duolingo sınav eğitimi, DET kursları, İngilizce sınav hazırlığı, Duolingo sertifikası, DET özel ders, online İngilizce kursu, DET eğitim materyali"
     },
     "article1": {
       "title": "DET Konuşma Sınavı Mükemmelliğinin Ana Özellikleri:",
       "list": [
         {
-          "content": "• Tüm DET konuşma görev türlerinin derinlemesine keşfi"
+          "content": "• Tüm konuşma görevlerinin ayrıntılı analizi"
         },
         {
-          "content": "• Her bir konuşma görevi için pratik stratejiler"
+          "content": "• Her soru tipi için kanıtlanmış çözüm teknikleri"
         },
         {
-          "content": "• Konuşma netliğini, akıcılığını ve güvenini artırmak için interaktif alıştırmalar"
+          "content": "• Telaffuz ve akıcılık geliştirme alıştırmaları"
         },
         {
-          "content": "• Telaffuz, ton ve genel performans konusunda uzman rehberliği"
+          "content": "• Vurgu ve sunum için uzman tavsiyeleri"
         },
         {
-          "content": "• Başarılı stratejileri gösteren gerçek hayattan konuşma örnekleri ve analizler"
+          "content": "• Gerçek sınav örnekleri ve çözümleri"
         },
         {
-          "content": "• Sesli demo yanıtları, etkili yanıt örneklerini net bir şekilde sağlamak için"
+          "content": "• Örnek ses kayıtları"
         },
         {
-          "content": "• Farklı yeterlilik düzeyleri için kişiselleştirilmiş öğrenme yaklaşımları"
+          "content": "• Seviyenize uygun öğrenme planı"
         },
         {
-          "content": "• Etkili iletişim için temel kelime bilgisi ve dilbilgisine odaklanın"
+          "content": "• Temel kelime ve dilbilgisi çalışması"
         },
         {
-          "content": "• En son değişiklikleri DET konuşma formatına dahil etmek için güncellendi"
+          "content": "• Güncel sınav formatına uygun içerik"
         }
       ]
     },
@@ -555,48 +567,48 @@
       "title": "DET Yazı Sınavı Mükemmelliğinin Ana Özellikleri:",
       "list": [
         {
-          "content": "• Analiz ve örneklerle kapsamlı DET yazma görevleri"
+          "content": "• Tüm yazma görevlerinin sistematik açıklaması"
         },
         {
-          "content": "• Olağanüstü makaleler planlama ve yazma için adım adım kılavuzlar"
+          "content": "• Etkili kompozisyon yazma teknikleri"
         },
         {
-          "content": "• DET-spesifik yazma becerilerini geliştirmek için hedeflenmiş egzersizler"
+          "content": "• Sınava yönelik yazma alıştırmaları"
         },
         {
-          "content": "• Açıklık, tutarlılık ve sofistikeliği artırmak için uzman ipuçları"
+          "content": "• Açık ve ikna edici yazım için ipuçları"
         },
         {
-          "content": "• Etkili stratejiler ve yaygın tuzakları gösteren açıklamalı örnek denemeler"
+          "content": "• Açıklamalı örnek yazılar"
         },
         {
-          "content": "• Çeşitli yeterlilik seviyeleri için uyarlanabilir öğrenme yolları"
+          "content": "• Her seviyeye uygun çalışma modülleri"
         },
         {
-          "content": "• DET başarı için temel dilbilgisi ve kelime bilgisine vurgu"
+          "content": "• Temel dilbilgisi ve kelime çalışmaları"
         },
         {
-          "content": "• En son DET yazı formatı trendlerini yansıtacak şekilde güncellendi"
+          "content": "• En son sınav formatına göre hazırlanmış içerik"
         }
       ]
     },
     "contaceUsList": [
       {
-        "font": "Rehberinizi Seçin",
-        "tip": "Konuşma veya Yazma Kılavuzunu hedeflenen sınav hazırlığı için seçin.",
-        "btn": "Konuşma Kılavuzu Satın Al",
-        "btn1": "Yazma Kılavuzu Satın Al"
+        "font": "Paketinizi Seçin",
+        "tip": "Konuşma veya yazma eğitiminden birini tercih edin",
+        "btn": "Konuşma Eğitimi Al",
+        "btn1": "Yazma Eğitimi Al"
       },
       {
-        "font": "Anında İndirme",
-        "tip": "Satın aldıktan hemen sonra rehbere erişim kazanın.",
-        "btn": "Konuşma Kılavuzunu İndir",
-        "btn1": "Yazma Kılavuzunu İndir"
+        "font": "Anında Erişim",
+        "tip": "Ödemeniz sonrası hemen erişim sağlayın",
+        "btn": "Konuşma Eğitimini İndir",
+        "btn1": "Yazma Eğitimini İndir"
       },
       {
-        "font": "Konuşma Ses Örnekleri",
-        "tip": "Ek konuşma sesli demo cevaplarını keşfedin.",
-        "btn1": "Ses Örneklerine Erişim"
+        "font": "Dinleme Materyalleri",
+        "tip": "Ek çalışma örnekleri ve ses kayıtları",
+        "btn1": "Ses Kayıtlarına Eriş"
       }
     ],
     "pagefont": {
@@ -607,13 +619,28 @@
       "white_arrow_right": "Beyaz Ok Sağa",
       "Double_Right_Arrow": "Çift Sağ Ok",
       "DET_Writing": "DET Yazma Sınavı Mükemmelliği: Kapsamlı Bir Rehber",
-      "How_to": "Rehberi nasıl alabilirim?",
+      "How_to": "Eğitim Materyallerine Erişim",
       "spa": "Konuşma pratiği ses kaydı",
-      "tips": "Konuşma/Yazma Rehberimize olan ilginiz için teşekkür ederiz! Lütfen bunun sanal bir ürün olduğunu unutmayın. Satın alındıktan ve indirildikten sonra, ürün teslimatı tamamlanmış sayılır ve genellikle geri ödemesi mümkün değildir. Lütfen satın almadan önce onaylayın.",
-      "orange_title": "Seçkin Dil Eğitimcileri",
-      "team_desc": "Saygın öğretmen ekibimiz, TESOL ve diğer öğretim Sertifikaları gibi saygın niteliklere sahip olup, öğrencilere TOEFL, IELTS ve Duolingo English Test (DET) gibi önemli İngilizce sınavlarına hazırlamada zengin bir deneyim sunar. Etkileyici dil becerileri, kişiselleştirilmiş öğretim yaklaşımları ve yenilikçi yöntemleri ile tanınan ekibimiz, her öğrencinin İngilizce yeterliliğinde en yüksek potansiyeline ulaşmasına yardımcı olmaya kararlıdır.",
+      "tips": "Önemli Not: Bu dijital bir üründür. İndirme işlemi tamamlandıktan sonra iade kabul edilmemektedir. Lütfen satın almadan önce şartları dikkatle okuyunuz.",
+      "orange_title": "Uzman Eğitim Kadromuz",
+      "team_desc": "TESOL sertifikalı deneyimli eğitmenlerimiz, TOEFL, IELTS ve DET gibi uluslararası sınavlarda uzmanlaşmıştır. Modern öğretim yöntemleri ve kişiye özel yaklaşımlarıyla sınav başarınız için yanınızdayız.",
       "Elite_Language_Educators": "Seçkin Dil Eğitimcileri"
-    }
+    },
+    "sas": "Konuşma Sesi Örnekleri",
+    "zhonghe": {
+      "title": "DET Ultimate Sınav Ustalık Paketi",
+      "desc": "Kurs paketi, <span class=\"yellow\">DET Konuşma Sınavı Mükemmelliği</span> ve <span class=\"yellow\">DET Yazma Sınavı Mükemmelliği</span>'ni içerir.  Abone olduğunuzda, kılavuzları istediğiniz zaman indirebilecek ve bunları istediğiniz zaman, istediğiniz yerde kolaylıkla çalışabileceksiniz.  Şimdi Satın Al Aboneliği hemen yürürlüğe girer.  Öğrenmeye başlamak için sayfayı yukarı kaydırın, görüntüleyin ve tıklayın."
+    },
+    "speaking": {
+      "title": "DET Konuşma Bölümü için Tam Kapsamlı Rehber"
+    },
+    "writing": {
+      "title": "DET Yazma Bölümü için Tam Kapsamlı Rehber"
+    },
+    "downloadguide": "Kılavuzu İndir",
+    "dandumai": "Ayrıca bunları ayrı olarak da satın alabilirsiniz:",
+    "writing5": "DET Writing Exam Excellence'ı 5$'a satın alabilirsiniz:",
+    "speaking5": "DET Konuşma Sınavı Mükemmeliyetini 5$'a satın alabilirsiniz:"
   },
   "forget": {
     "Please_enter": "Lütfen e-posta adresinizi girin",
@@ -648,100 +675,102 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Pratik - DET Hazırlığı için Tam Uzunlukta Deneme Sınavı",
-      "description": "Tam ölçekli sınavlarla gerçekçi bir Duolingo Deneme Sınavı deneyimi yaşayın. Akıllı uyumlu sorular ve yapay zeka puanlama özelliklerinin yer aldığı deneme sınavlarımız, Duolingo English Test için etkili bir hazırlık sağlayacak doğru bir değerlendirme sunar.",
-      "keywords": "Duolingo Deneme Sınavı, DET Duolingo, DET Sınav, Duolingo DET, Duolingo Sınav, Duolingo Çevrimiçi Sınav"
+      "title": "DET Practice'ten Gerçek Formatta Duolingo English Deneme Sınavı",
+      "description": "DET'e birebir uygun deneme sınavlarıyla hazırlanın. Sınavınızı tamamladıktan sonra 30 dakika içinde sonuçlarınızı ve detaylı analizinizi alın. 18.000'i aşkın alıştırma sorusu, akıllı uyarlamalı algoritma ve yapay zeka destekli konuşma-yazma değerlendirmesi ile tam donanımlı hazırlık imkanı. DET yolculuğunuza hemen başlayın.",
+      "keywords": "duolingo english örnek sınav, duolingo english alıştırma sınavı, gerçek format DET sınavı, duolingo hazırlık, duolingo english test çalışma, DET örnek sınav, duolingo soru bankası, çevrimiçi duolingo çalışma, DET hazırlık programı, duolingo english soru örnekleri, DET performans ölçümü, duolingo değerlendirme"
     },
-    "h1": "DET Tam Uzunlukta Deneme Sınavı",
-    "desc": "Gerçek bir sınav deneyimiyle kendinizi şımartın. Gerçek sınav sürecinin tadına bakın ve geliştirilmesi gereken alanları belirlemek için hızla puanlar ve ayrıntılı teşhis raporları alın.",
+    "h1": "Gerçek DET Formatında Deneme",
+    "desc": "Birebir uyumlu deneme sınavlarımızla gerçek sınav atmosferini yaşayın. Sınav sürecini önceden deneyimleyin ve gelişim alanlarınızı belirlemek için anında sonuç ve kapsamlı analiz alın.",
     "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
     "mock_user_icon": "Sahte Kullanıcı Simgesi",
     "white_arrow_right": "Beyaz Ok Sağ",
     "orange_arrow_right": "Turuncu Ok Sağ",
-    "learners_have": "{number} öğrenci, kendini değerlendirme ve pratik için deneme sınavlarımızı aldı.",
-    "Mock_Now": "\"Şimdi Alay Et\"",
+    "learners_have": "Şimdiye kadar {number}'den fazla öğrenci başarıyla hazırlandı.",
+    "Mock_Now": "Hemen Dene",
     "Full_scale": "Duolingo 1:1 Gerçek Ölçekli Deneme Sınavı",
     "article1": {
-      "h2": "Gerçek Sınava Yakın",
-      "right_desc": "Gerçek sınav koşullarını gelişmiş uyarlanabilir test algoritmamızla deneyimleyin. Çeşitli soru türlerini hızla öğrenin ve kesin değerlendirmeler elde edin."
+      "h2": "Gerçeğe Birebir Uygun",
+      "right_desc": "Akıllı uyarlamalı algoritmamız sayesinde gerçek sınav ortamında çalışın. Tüm soru tiplerinde uzmanlaşın ve net değerlendirmeler alın."
     },
     "article2": {
-      "h2": "Kesin Skorlama & Ayrıntılı Raporlar",
-      "right_desc": "Detaylı deneme sınavı raporları, mevcut güçlü ve zayıf yönlerin kesin teşhis ve analizini sağlar, çalışma planlarını otomatik olarak güncelleyerek sınava hazırlık verimliliğini artırır."
+      "h2": "Hassas Ölçüm ve Detaylı Analiz",
+      "right_desc": "Her deneme sonrası güçlü ve gelişime açık yönlerinizi gösteren kapsamlı rapor alın. Çalışma planınız otomatik olarak güncellenir."
     },
     "article3": {
-      "h2": "Kolay Sınav Deneyimi",
-      "right_desc": "Randevuya gerek kalmadan, kendi programınıza göre esnek sınav yapmanın keyfini çıkarın. Satın alımdan hemen sonra deneme sınavınıza başlayın ve istediğiniz zaman duraklatma veya yeniden başlatma özgürlüğüne sahip olun."
+      "h2": "Size Özel Çalışma İmkanı",
+      "right_desc": "Randevu derdi olmadan, istediğiniz zaman çalışın. Satın almanızın ardından hemen başlayabilir, dilediğinizde ara verip kaldığınız yerden devam edebilirsiniz."
     },
     "article4": {
-      "h2": "Hızlı Skor Raporlama",
-      "right_desc": "Deneme sınavı sonuçlarınızı <span class='zdfont'>5-30 dakika</span> içinde alın, ilerlemenizi hızlandırın."
-    }
+      "h2": "Hızlı Sonuç Bildirimi",
+      "right_desc": "Deneme sınavı sonuçlarınızı <span class='zdfont'>5-30 dakika</span> içinde alarak ilerlemenizi takip edin."
+    },
+    "vs1": "DET Practice ve Gerçek DET Karşılaştırması",
+    "vs2": "Resmi DET sınavına giren adayların deneme sınavlarımızdaki performans analizi."
   },
   "practice": {
     "seometa": {
-      "title": "DET Egzersiz - Duolingo pratik sınavı için en iyi platform",
-      "description": "DET Test bankımız, detaylı açıklamalar ve başarınıza yardımcı olacak AI analiziyle uzun süreli eğitim için binlerce soru içerir.",
-      "keywords": "Duolingo English Test Pratik, Duolingo İngilizce Testi Pratik, Duolingo İngilizce Pratik Testi, Duolingo Çevrimiçi Pratik Testi, Duolingo Test Pratiği, Duolingo Pratik Test, Duolingo Pratik, Det Pratik Testi, Duolingo English Test Puan"
+      "title": "DET Hazırlık Platformu {'|'} Yapay Zeka Destekli Duolingo Sınav Bankası",
+      "description": "Duolingo İngilizce Testi için en kapsamlı hazırlık platformu! 18.000'den fazla soru, yapay zeka geri bildirimi ve akıllı ilerleme takibi ile DET puanınızı yükseltin. 400.000'den fazla öğrencinin tercih ettiği sınav hazırlık sistemi.",
+      "keywords": "DET hazırlık, Duolingo sınav soruları, DET örnek sorular, Duolingo test çalışması, DET soru bankası, DET konuşma pratiği, DET yazma alıştırmaları, online İngilizce test çalışması, DET çalışma materyalleri, yapay zeka değerlendirmesi"
     },
-    "h1": "Duolingo English Test Pratik",
-    "desc": "Geniş bir test soruları koleksiyonuna erişim sağlayın, cevap analizi, şablonlar, AI destekli konuşma değerlendirmeleri ve akıllı planlama ile geliştirin. AI destekli yaklaşımımızla puan artırma sürecinizi verimli ve ekonomik bir şekilde hızlandırın.",
+    "h1": "Duolingo English Test Hazırlık Merkezi",
+    "desc": "Detaylı çözümler, örnek yanıtlar, yapay zeka destekli konuşma değerlendirmesi ve kişisel çalışma planı sunan kapsamlı test platformu. Yapay zeka teknolojimizle hedef puanınıza uygun maliyetle ve verimli şekilde ulaşın",
     "alt": "DET Pratik: En iyi Duolingo English Test Pratik platformu",
     "altbanner": "Duolingo English Test Uygulama",
     "bank_user_icon": "Banka Kullanıcı Simgesi",
     "white_arrow_right": "Beyaz Ok Sağ",
     "blue_arrow_right": "Mavi Ok Sağ",
-    "learners_have": "{number} öğrenci DET hazırlığı için soru bankamızı kullandı.",
-    "spn": "Şimdi Pratik Yapmaya Başla",
+    "learners_have": "{number}'den fazla öğrenci DET hazırlığında bizi tercih etti",
+    "spn": "Hemen Çalışmaya Başla",
     "article1": {
-      "h2": "En Büyük Soru Bankası",
-      "right_desc": "Kapsamlı kütüphanemizde <span class='zdfont'>18.000'den fazla soru</span>yu keşfedin; çeşitli sınav türleri arasında sürekli olarak güncellenen sorularla pratiklerinizi güncel tutun. Soru bankamız, farklı soru formatlarında sınav becerilerinizi sistematik olarak güçlendirecek şekilde tasarlanmıştır.",
-      "btn": "Uygulamaya Dalış"
+      "h2": "Türkiye'nin En Kapsamlı Soru Bankası",
+      "right_desc": "Sürekli güncellenen 18.000'den fazla soru ile tüm sınav konularını kapsayan içerikler. Düzenli güncellemeler ile en yeni sınav formatına uygun, sistematik öğrenmeyi destekleyen soru bankası.",
+      "btn": "Pratik Yapmaya Başla"
     },
     "article2": {
-      "h2": "Akıllı Öneri",
-      "right_desc": "<span class='zdfont'>AI modeli</span>, her soru türünün ustalık seviyesini, zorluk derecesini, hedef puanı, soru ağırlığını, soruların yeniliğini, testin yakın zamanda yapılma sıklığını, hazırlık süresini ve puanlama verimliliğini vb. dikkate alarak, size sınava verimli bir şekilde hazırlanmanızda yardımcı olacak soruları doğru bir şekilde önerecektir.",
-      "btn": "Akıllı Çalışma Yolculuğuna Başla"
+      "h2": "Akıllı Öğrenme Sistemi",
+      "right_desc": "Yapay zeka sistemimiz seviyenizi, hedef puanınızı, konu ağırlıklarını, güncel sınav eğilimlerini, çalışma sürenizi ve gelişim hızınızı analiz ederek size en uygun soruları sunar.",
+      "btn": "Kişisel Öğrenme Yolculuğunuza Başlayın"
     },
     "article3": {
-      "h2": "AI Konuşma Değerlendirmesi",
-      "right_desc": "<span class='zdfont'>Yapay Zeka destekli konuşma değerlendirmelerimizle</span> sözlü yeterliliğinizi artırın. Konuşma diline yönelik bir soruya yanıtınızı gönderin ve konuşma becerilerinizin detaylı analizini anında alın, böylece doğruluk ve hızla gelişmenize yardımcı olun.",
-      "btn": "Değerlendirmenize Başlayın"
+      "h2": "Yapay Zeka ile Konuşma Analizi",
+      "right_desc": "Konuşma becerilerinizi yapay zeka teknolojisiyle geliştirin. Ses kaydınızı yükleyin, anında detaylı geri bildirim alın ve hızla ilerleme kaydedin.",
+      "btn": "Konuşma Değerlendirmesine Başla"
     },
     "article4": {
-      "h2": "Cevap Analizi",
-      "right_desc": "Kapsamlı cevap açıklamalarına dalarak temel kavramlar ve problem çözme teknikleri üzerine anlayışınızı derinleştirin. Detaylı analizlerimiz sizi doğru cevaplara yönlendirmekle kalmaz—bilginizi genişletir ve çalışma verimliliğinizi artırır.",
-      "btn": "Yanıt Bilgilerini Keşfet"
+      "h2": "Ayrıntılı Çözümler",
+      "right_desc": "Her sorunun detaylı çözümüyle konuları derinlemesine öğrenin. Çözümlerimiz sadece doğru cevabı göstermekle kalmaz, konuyu tam öğrenmenizi ve çalışma verimliliğinizi artırmanızı sağlar.",
+      "btn": "Çözümleri İncele"
     }
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "DET Practice - Duolingo İngilizce Testiniz için Yapay Zeka Konuşma Düzeltme Hizmeti",
-      "description": "Güçlü yapay zeka tarafından sağlanan DET Konuşma Yapay Zekası Düzeltme hizmeti. \nTüm konuşma sorusu türlerini destekler ve DET konuşma puanınızı kolayca geliştirmenize yardımcı olacak profesyonel rehberlik sağlar.",
-      "keywords": "需要提供"
+      "title": "Duolingo English Test Konuşma Becerileri - Yapay Zeka Destekli Değerlendirme {'|'} DET Hazırlık",
+      "description": "Duolingo English Test konuşma bölümünü artık yapay zeka desteğiyle çok daha kolay halledebilirsiniz. Anlık geri bildirimler, kapsamlı analizler ve uzman tavsiyeleri ile DET konuşma becerilerinizi geliştirin. Sınırsız pratik yapın ve DET resmi kriterleri doğrultusunda anında değerlendirme alın.",
+      "keywords": "DET konuşma pratiği, Duolingo sınav hazırlığı, DET konuşma teknikleri, yapay zeka değerlendirmesi, DET konuşma örnekleri, Duolingo speaking tüyoları, DET online hazırlık, İngilizce konuşma pratiği, DET sınav stratejileri, Duolingo konuşma egzersizleri"
     },
-    "h1": "DET Konuşan AI Düzeltme",
-    "desc": "DET Güçlü AI tarafından sağlanan Konuşma AI Düzeltme hizmeti. Tüm konuşma soru türlerini destekler ve DET konuşma puanınızı kolayca artırmanıza yardımcı olmak için profesyonel rehberlik sağlar.",
+    "h1": "Yapay Zeka Destekli Konuşma Değerlendirmesi",
+    "desc": "Gelişmiş yapay zeka teknolojimiz, tüm konuşma soru tiplerini analiz eder ve DET puanınızı yükseltmeniz için size özel yönlendirme sağlar.",
     "alt": "DET Pratik:En iyi DET Konuşma AI Düzeltme platformu",
     "altbanner": "DET Konuşan Yapay Zeka Düzeltme",
     "bank_user_icon": "Banka Kullanıcı Simgesi",
     "white_arrow_right": "Beyaz Ok Sağ",
     "purple_arrow_right": "Mor Ok Sağ",
-    "learners_have": "{number} kişi DET Konuşma AI Düzeltme hizmetini kullandı.",
-    "spn": "Başlayın",
+    "learners_have": "{number}'den fazla öğrenci başarıya ulaştı!",
+    "spn": "Hemen Dene",
     "article1": {
-      "h2": "Doğru skor",
-      "right_desc": "Denemenizi girerek veya soru bankasından seçerek gönderin, ve anında net ve ayrıntılı bir rapor ve puan alabilirsiniz.",
-      "btn": "Deneyimlemeye başlayın"
+      "h2": "Hassas Puanlama",
+      "right_desc": "Soru bankamızdan seçeceğiniz ya da kendi belirlediğiniz konularda konuşma pratiği yapın, anında detaylı rapor alın.",
+      "btn": "Ücretsiz Deneyin"
     },
     "article2": {
-      "h2": "Konuşma Değerlendirmesi",
-      "right_desc": "Telaffuz hatanızı, beklenmedik kesintiyi, eksik duraklamayı, şüpheli yüksek sesle okumayı, şüpheli tekrarı hemen görebilir ve bunlardan nasıl kaçınacağınızı öğrenebilirsiniz.",
+      "h2": "Detaylı Analiz",
+      "right_desc": "Telaffuz hatalarınızı, duraksamalarınızı, gereksiz tekrarlarınızı ve okuma tonlamanızı anında tespit edin, düzeltme önerileri alın.",
       "btn": "Deneyimlemeye başlayın"
     },
     "article3": {
-      "h2": "Profesyonel rehberlik",
-      "right_desc": "DET puanlama öğelerine göre, konuşmanızdaki zayıflıkları belirlemenize yardımcı olmak ve onu mükemmelleştirmek için profesyonel rehberlik sağlıyoruz.",
+      "h2": "Uzman Desteği",
+      "right_desc": "DET değerlendirme kriterlerine göre konuşma becerilerinizi analiz eder, gelişim alanlarınızı belirler ve size özel çözümler sunarız.",
       "btn": "Başlamaya"
     }
   },
@@ -749,81 +778,83 @@
     "seometa": {
       "title": "Gizlilik Politikası - DET Uygulama",
       "description": "Discover DET Practice Gizlilik Politikası: Verileri nasıl işlediğimizi, bilgiyi nasıl koruduğumuzu ve gizliliğinizi nasıl sağladığımızı öğrenin. Şimdi politikalarımız hakkında daha fazla bilgi edinin.",
-      "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Çevrimiçi, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
+      "keywords": "iade politikası, DET Practice iade, geri ödeme politikası, Duolingo test hazırlık iadesi, online kurs iadesi, hizmet iadesi, DET Practice koşulları"
     },
     "h1": "Gizlilik Politikası",
     "q1": {
       "title": "Son güncelleme: 2023-11-20",
-      "a1": "DET Practice (\"biz\", \"bize\" veya \"bizim\") DET Practice web sitesini (\"Hizmet\") işletir.",
-      "a2": "Bu sayfa, Hizmetimizi kullandığınızda Kişisel Bilgilerin toplanması, kullanılması ve açıklanmasıyla ilgili politikalarımız hakkında sizi bilgilendirir.",
-      "a3": "Bilgilerinizi bu Gizlilik Politikası'nda belirtilenler dışında hiç kimseyle kullanmayacak veya paylaşmayacağız.",
-      "a4": "Hizmeti sağlamak ve geliştirmek için Kişisel Bilgilerinizi kullanıyoruz. Hizmeti kullanarak, bilgilerin bu politikaya uygun olarak toplanmasına ve kullanılmasına izin vermiş olursunuz. Bu Gizlilik Politikasında aksi belirtilmedikçe, bu Gizlilik Politikasında kullanılan terimler, Terms and Conditions adresinde erişilebilen Şartlar ve Koşullarımızdaki ile aynı anlamlara sahiptir.",
-      "a5": "Bilgi Toplama ve Kullanma",
-      "a6": "Hizmetimizi kullanırken, sizinle iletişime geçmek veya sizi tanımlamak için kullanılabilecek belirli kişisel olarak tanımlanabilir bilgileri sağlamanızı isteyebiliriz. Kişisel olarak tanımlanabilir bilgiler (“Kişisel Bilgiler”) şunları içerebilir, ancak bunlarla sınırlı değildir:",
-      "a7": "• Adı",
+      "a1": "DET Practice (\"biz\" veya \"bizim\") DET Practice web sitesini (\"Hizmet\") işletmektedir.",
+      "a2": "Bu sayfa, Hizmetimizi kullandığınızda Kişisel Bilgilerin toplanması, kullanılması ve açıklanmasına ilişkin politikalarımız hakkında sizi bilgilendirmektedir.",
+      "a3": "Bilgilerinizi bu Gizlilik Politikasında belirtilenler dışında kimseyle kullanmayacak veya paylaşmayacağız.",
+      "a4": "Kişisel Bilgilerinizi Hizmeti sağlamak ve geliştirmek için kullanıyoruz. Hizmeti kullanarak, bu politika doğrultusunda bilgilerin toplanmasını ve kullanılmasını kabul etmiş olursunuz. Bu Gizlilik Politikasında aksi belirtilmedikçe, bu Gizlilik Politikasında kullanılan terimler, ",
+      "a4_1": "adresinden erişilebilen Kullanım Koşullarımızla aynı anlamlara sahiptir.",
+      "a5": "Bilgi Toplama ve Kullanım",
+      "a6": "Hizmetimizi kullanırken, sizinle iletişim kurmak veya kimliğinizi belirlemek için kullanılabilecek belirli kişisel tanımlayıcı bilgileri bize sağlamanızı isteyebiliriz. Kişisel tanımlayıcı bilgiler (\"Kişisel Bilgiler\") şunları içerebilir, ancak bunlarla sınırlı değildir:",
+      "a7": "• İsim",
       "a8": "• E-posta adresi"
     },
     "q2": {
       "title": "Günlük Verileri",
-      "a1": "Hizmetimizi ziyaret ettiğinizde tarayıcınızın gönderdiği bilgileri topluyoruz (“Günlük Verileri”). Bu Günlük Verileri, bilgisayarınızın İnternet Protokolü (“IP”) adresi, tarayıcı türü, tarayıcı sürümü, Hizmetimizi ziyaret ettiğiniz sayfalar, ziyaretinizin saati ve tarihi, bu sayfalarda geçirilen süre ve diğer istatistikler gibi bilgileri içerebilir."
+      "a1": "Hizmetimizi her ziyaret ettiğinizde tarayıcınızın gönderdiği bilgileri (\"Günlük Verileri\") topluyoruz. Bu Günlük Verileri, bilgisayarınızın İnternet Protokolü (\"IP\") adresi, tarayıcı türü, tarayıcı sürümü, ziyaret ettiğiniz Hizmet sayfaları, ziyaretinizin tarih ve saati, bu sayfalarda geçirilen süre ve diğer istatistikler gibi bilgileri içerebilir."
     },
     "q3": {
       "title": "Çerezler",
-      "a1": "Tanımlama bilgileri, anonim bir benzersiz tanımlayıcı içerebilecek küçük miktarda veri içeren dosyalardır. Tanımlama bilgileri bir web sitesinden tarayıcınıza gönderilir ve bilgisayarınızın sabit diskinde saklanır.",
-      "a2": "“Çerezleri” bilgi toplamak için kullanıyoruz. Tarayıcınıza tüm çerezleri reddetmesini veya bir çerez gönderildiğinde bildirimde bulunmasını söyleyebilirsiniz. Ancak, çerezleri kabul etmezseniz, Hizmetimizin bazı bölümlerini kullanamayabilirsiniz."
+      "a1": "Çerezler, anonim bir benzersiz tanımlayıcı içerebilen küçük miktarda veri içeren dosyalardır. Çerezler bir web sitesinden tarayıcınıza gönderilir ve bilgisayarınızın sabit diskinde saklanır.",
+      "a2": "Bilgi toplamak için \"çerezler\" kullanıyoruz. Tarayıcınızı tüm çerezleri reddetmesi veya bir çerez gönderildiğinde bunu belirtmesi için ayarlayabilirsiniz. Ancak, çerezleri kabul etmezseniz, Hizmetimizin bazı bölümlerini kullanamayabilirsiniz."
     },
     "q4": {
       "title": "Hizmet Sağlayıcıları",
-      "a1": "Hizmetimizi kolaylaştırmak, Hizmeti bizim adımıza sağlamak, Hizmetle ilgili hizmetleri yerine getirmek veya Hizmetimizin nasıl kullanıldığını analiz etmemize yardımcı olmak için üçüncü taraf şirketleri ve bireyleri işe alabiliriz.",
-      "a2": "Bu üçüncü şahıslar, yalnızca bu görevleri bizim adımıza yerine getirmek için Kişisel Bilgilerinize erişime sahiptir ve bunu başka herhangi bir amaçla açıklamamak veya kullanmamakla yükümlüdür."
+      "a1": "Hizmetimizi kolaylaştırmak, Hizmeti bizim adımıza sağlamak, Hizmetle ilgili hizmetleri gerçekleştirmek veya Hizmetimizin nasıl kullanıldığını analiz etmemize yardımcı olmak için üçüncü taraf şirketleri ve bireyleri istihdam edebiliriz.",
+      "a2": "Bu üçüncü taraflar, Kişisel Bilgilerinize yalnızca bu görevleri bizim adımıza gerçekleştirmek için erişebilir ve bunları başka bir amaçla açıklamamak veya kullanmamakla yükümlüdürler."
     },
     "q5": {
       "title": "Güvenlik",
-      "a1": "Kişisel Bilgilerinizin güvenliği bizim için önemlidir, ancak İnternet üzerinden iletim yöntemi veya elektronik depolama yöntemi %100 güvenli değildir. Kişisel Bilgilerinizi korumak için ticari olarak kabul edilebilir yöntemler kullanmaya çalışsak da, mutlak güvenliğini garanti edemeyiz."
+      "a1": "Kişisel Bilgilerinizin güvenliği bizim için önemlidir, ancak İnternet üzerinden hiçbir iletim yönteminin veya elektronik depolama yönteminin %100 güvenli olmadığını unutmayın. Kişisel Bilgilerinizi korumak için ticari olarak kabul edilebilir araçlar kullanmaya çalışsak da, mutlak güvenliğini garanti edemeyiz."
     },
     "q6": {
-      "title": "Ödeme Bilgileri & Güvenliği",
-      "a1": "Müşterilerinizden sizin adınıza ödeme almak ve size ödeme sağlamak amacıyla, üçüncü taraf ödeme işlemcisi olarak Stripe kullanarak, sizden, katılımcılarınızdan ve müşterilerinizden, satıcılarınızdan ve sizin adınıza ödeme yaptığımız ve sizin adınıza ödeme aldığımız diğer taraflardan ödeme bilgilerini topluyoruz. Bu bilgiler yalnızca Hizmetlerle ilgili ödemeleri toplamak ve sağlamak için kullanılır ve yalnızca Stripe tarafından saklanır. Stripe'ın hizmet şartlarını ve gizlilik politikalarını gözden geçirmelisiniz, bunlara şu adresten ulaşabilirsiniz"
+      "title": "Ödeme Bilgileri ve Güvenlik",
+      "a1": "Müşterilerinizden sizin adınıza ödemeleri toplamak ve size ödemeler sağlamak için, üçüncü taraf ödeme işlemcisi olarak Stripe'ı kullanarak, sizden, katılımcılarınızdan ve müşterilerinizden, tedarikçilerinizden ve sizin adınıza ödeme yaptığımız ve sizin adınıza ödeme topladığımız diğer taraflardan ödeme bilgilerini topluyoruz. Bu bilgiler yalnızca Hizmetlerle ilgili ödemeleri toplamak ve sağlamak için kullanılır ve yalnızca Stripe tarafından saklanır. Stripe'ın kullanım koşullarını ve gizlilik politikalarını, ",
+      "a1_1": "adreslerinde bulunan Stripe'ın gizlilik politikalarını incelemelisiniz."
     },
     "q7": {
-      "title": "Diğer Siteler İçin Bağlantılar",
-      "a1": "Hizmetimiz, tarafımızca işletilmeyen diğer sitelere bağlantılar içerebilir. Üçüncü taraf bir bağlantıya tıklarsanız, o üçüncü tarafın sitesine yönlendirileceksiniz. Ziyaret ettiğiniz her sitenin Gizlilik Politikasını gözden geçirmenizi şiddetle tavsiye ederiz.",
-      "a2": "İçerik, gizlilik politikaları veya herhangi bir üçüncü taraf siteleri veya hizmetleri uygulamaları üzerinde hiçbir kontrolümüz yoktur ve sorumluluk kabul etmiyoruz."
+      "title": "Diğer Sitelere Bağlantılar",
+      "a1": "Hizmetimiz, tarafımızca işletilmeyen diğer sitelere bağlantılar içerebilir. Üçüncü taraf bir bağlantıya tıklarsanız, o üçüncü tarafın sitesine yönlendirileceksiniz. Ziyaret ettiğiniz her sitenin Gizlilik Politikasını incelemenizi önemle tavsiye ederiz.",
+      "a2": "Üçüncü taraf sitelerinin veya hizmetlerinin içeriği, gizlilik politikaları veya uygulamaları üzerinde hiçbir kontrolümüz yoktur ve bunlar için hiçbir sorumluluk kabul etmiyoruz."
     }
   },
   "refundPolicy": {
     "seometa": {
-      "title": "İade Politikası: İade Sürecimiz Hakkında Bilgi Edinin | DET Uygulama",
-      "description": "Discover DET Practice'nin İade Politikasını öğrenin: İade taleplerinin nasıl ele alındığı, uygunluk kriterleri ve iade alma süreci hakkında bilgi edinin. Politikalarımız hakkında daha fazla bilgi edinin şimdi.",
+      "title": "İade Politikası - DET Practice {'|'} Şeffaf ve Adil Koşullar",
+      "description": "DET Practice tarafından sunulan tüm hizmetler için net ve şeffaf İade Politikamızı okuyun. Adil ve anlaşılır iade koşullarıyla kullanıcılarımıza en iyi deneyimi sunmaya çalışıyoruz. Bugün daha fazlasını öğrenin.",
       "keywords": "İade Politikası, DET Uygulama İadesi, DET Uygulama Politikası, İade Süreci, İade İçin Eligibility"
     },
     "h1": "İade Politikası",
     "q1": {
-      "a1": "Servislerimizi seçtiğiniz ve satın aldığınız için teşekkür ederiz. Müşterilerimize en iyi öğrenme deneyimini sağlamak için çaba gösteriyoruz. Ancak, satın alma işleminizden tamamen memnun değilseniz, size yardımcı olmak için buradayız."
+      "a1": "Hizmetlerimizi seçtiğiniz ve satın aldığınız için teşekkür ederiz. Müşterilerimize en iyi öğrenme deneyimini sunmak için çalışıyoruz. Ancak, satın almanızdan tamamen memnun değilseniz, size yardımcı olmak için buradayız."
     },
     "q2": {
-      "title": "İade İşlemi için Uygunluk",
-      "a1": "• Üye Hizmetleri: Üye hizmetleri için geri ödeme talepleri satın alınmadan sonraki 3 gün içinde yapılmalıdır.",
-      "a2": "• Erişilen İçerik: 20 sorudan fazlasına erişmediyseniz, para iadesi için uygunsunuz.",
-      "a3": "• Dijital Kurslar: Bir dijital ürün indirildiğinde veya erişildiğinde, kullanılmış kabul edilir ve kullanılan ürünler iade edilemez."
+      "title": "İade Koşulları",
+      "a1": "• Üyelik Hizmetleri: Üyelik hizmetleri için iade talepleri satın alımdan sonraki 3 gün içinde yapılmalıdır.",
+      "a2": "• Erişilen İçerik: 20'den fazla soruya erişmediyseniz, iade için uygun durumdasınız.",
+      "a3": "• Dijital Kurslar: Bir dijital ürün indirildiğinde veya erişildiğinde kullanılmış sayılır ve kullanılmış ürünler iade edilemez."
     },
     "q3": {
-      "title0": "Ancak, DETPractice her durumda sorunlarınızı çözmek için bizimle İletişime geçmenizi memnuniyetle karşılar. Sizi tatmin edecek bir çözüm sunmak için elimizden gelenin en iyisini yapacağız.",
-      "title": "Nasıl İade İsteği Yapılır / Aboneliği İptal Etmek İçin",
-      "a1": "İade isteği için lütfen şu adımları izleyin:",
-      "a2": "Aboneliği İptal Et: Hesabınıza giriş yapın, üyelik sayfasının alt kısmında bulunan <span class='websiteStrong'>\"Faturalarınızı yönetin\"</span> bağlantısını bulun ve tıklayın. Abonelikten çıkma kararınızı onaylayabileceğiniz bir onay sayfasına yönlendirileceksiniz.",
-      "a3": "2. Destek Ekibi İle İletişime Geçin: İade talebi nedeninizi ve sipariş numaranızı içeren bir e-posta göndererek müşteri destek ekibimizle <span class='website'>support{'@'}detpractice.com</span> adresinden iletişime geçin.",
+      "title0": "Bununla birlikte, DETPractice her durumda sorunlarınızı çözmek için bizimle iletişime geçmenizi memnuniyetle karşılar. Sizi memnun edecek bir çözüm sunmak için elimizden gelenin en iyisini yapacağız.",
+      "title": "İade Nasıl Talep Edilir / Abonelik Nasıl İptal Edilir",
+      "a1": "İade talep etmek için lütfen şu adımları izleyin:",
+      "a2": "1. Aboneliği İptal Etme: Hesabınıza giriş yapın, üyelik sayfasının altındaki <span class='websiteStrong'>\"Manage your billing\"</span> bağlantısını bulun ve tıklayın. Abonelikten çıkma kararınızı onaylayabileceğiniz bir onay sayfasına yönlendirileceksiniz.",
+      "a3": "2. Destek Ekibimizle İletişime Geçin: Sipariş numaranız ve iade talebinizin nedeniyle birlikte  <span class='website'>support{'@'}detpractice.com</span> adresinden müşteri destek ekibimizle iletişime geçin.",
       "a4": "3. Ekibimiz talebinizi inceleyecek ve 3 iş günü içinde yanıt verecektir."
     },
     "q4": {
-      "title": "Hariç Tutulanlar",
+      "title": "İade Edilemeyenler",
       "a1": "Aşağıdakiler iade için uygun değildir:",
-      "a2": "• İndirilen dijital ürünler.",
-      "a3": "• Üçüncü taraf satıcılar aracılığıyla satın alınan ürünler ve hizmetler."
+      "a2": "• İndirilmiş dijital ürünler.",
+      "a3": "• Üçüncü taraf satıcılardan satın alınan ürün ve hizmetler."
     },
     "q5": {
       "title": "Bize Ulaşın",
-      "a1": "Satın alma işleminizde herhangi bir sorunuz varsa veya iade politikamız hakkında yardıma ihtiyacınız varsa, lütfen bizimle iletişime geçin:",
+      "a1": "İade politikamız hakkında sorularınız varsa veya satın almanızla ilgili yardıma ihtiyacınız varsa, lütfen bizimle iletişime geçin:",
       "a2": "E-posta: <span class='website'>support{'@'}detpractice.com</span>"
     }
   },
@@ -885,53 +916,53 @@
   },
   "tos": {
     "seometa": {
-      "title": "Koşullar ve Şartlar - DET Uygulama",
-      "description": "Keşfet DET Pratik'in kapsamlı Hizmet Şartları'nı, Gizlilik Politikamızı ve Kullanım Kurallarımızı içerenlerini inceleyin. Şeffaflığı ve uyumu sağlayın.",
-      "keywords": "DET Duolingo, DET Testi, Duolingo DET, Duolingo Testi, Duolingo Testi Çevrimiçi, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
+      "title": "Terms of Service {'|'} DET Practice – Duolingo English Test Preparation",
+      "description": "DET Practice'in Hizmet Şartları'nı inceleyin. Duolingo English Test'e hazırlanmak için platformumuzu kullanırken uyulması gereken kuralları, politikaları, kullanıcı sorumluluklarını, haklarını ve kullanım şartlarını öğrenin.",
+      "keywords": "Hizmet Şartları, DET Practice, Duolingo English Test, sınav hazırlık platformu, kullanıcı sözleşmesi, hizmet koşulları, çevrimiçi sınav hazırlığı, EPT politikaları"
     },
     "title": "Hizmet Şartları",
     "q1": {
       "title": "Son güncelleme: 2023-11-20",
-      "a1": "Lütfen bu Hizmet Şartları'nı (“Şartlar”, “TOS”) kullanmadan önce dikkatlice okuyun",
-      "a2": "web sitesi (\"Hizmet\") DET Practice tarafından (\"biz\", \"bizim\" veya \"bize\") işletilmektedir.",
-      "a3": "Hizmete erişiminiz ve kullanmanız, bu Şartları kabul etmenize ve bunlara uymanıza bağlıdır. Bu Şartlar, Hizmete erişen veya hizmeti kullanan tüm ziyaretçiler, kullanıcılar ve diğerleri için geçerlidir.",
-      "a4": "Hizmete erişerek veya Hizmeti kullanarak bu Şartlara bağlı kalmayı kabul etmiş olursunuz. Şartların herhangi bir kısmına katılmıyorsanız, Hizmete erişemezsiniz."
+      "a1": "DET Practice (\"biz\", \"bizim\" veya \"şirketimiz\") tarafından işletilen",
+      "a2": "web sitesini (\"Hizmet\") kullanmadan önce lütfen bu Hizmet Şartları'nı (\"Şartlar\", \"HŞ\") dikkatlice okuyun.",
+      "a3": "Hizmete erişiminiz ve kullanımınız, bu Şartları kabul etmeniz ve bunlara uymanız koşuluna bağlıdır. Bu Şartlar, Hizmete erişen veya kullanan tüm ziyaretçiler, kullanıcılar ve diğer kişiler için geçerlidir.",
+      "a4": "Hizmete erişerek veya kullanarak bu Şartlarla bağlı olmayı kabul edersiniz. Şartların herhangi bir bölümüne katılmıyorsanız, Hizmete erişemezsiniz."
     },
     "q2": {
       "title": "Hesaplar",
-      "a1": "Bizimle bir hesap oluşturduğunuzda, her zaman doğru, eksiksiz ve güncel bilgiler sağlamalısınız. Bunu yapmamak, Hizmet Şartları'nın ihlali anlamına gelir ve bu durum hesabınızın hemen feshedilmesiyle sonuçlanabilir.",
-      "a2": "Hizmete erişmek için kullandığınız şifrenin korunmasından ve şifreniz ister Hizmetimizde ister üçüncü taraf bir hizmette olsun, şifreniz altındaki herhangi bir etkinlik veya eylemden siz sorumlusunuz.",
-      "a3": "Şifrenizi üçüncü taraflarla paylaşmamayı kabul edersiniz. Herhangi bir güvenlik ihlalinden veya hesabınızın yetkisiz kullanımından haberdar olduğunuzda bizi derhal bilgilendirmelisiniz."
+      "a1": "Bizimle bir hesap oluşturduğunuzda, her zaman doğru, eksiksiz ve güncel bilgiler sağlamak zorundasınız. Bunu yapmamak, hesabınızın Hizmetimizde derhal sonlandırılmasına neden olabilecek Şartların ihlalini oluşturur.",
+      "a2": "Hizmete erişmek için kullandığınız şifreyi ve şifreniz altında gerçekleştirilen tüm etkinlikleri veya işlemleri korumaktan siz sorumlusunuz; şifreniz ister bizim Hizmetimizde ister üçüncü taraf bir hizmette olsun.",
+      "a3": "Şifrenizi herhangi bir üçüncü tarafa açıklamamayı kabul edersiniz. Hesabınızın güvenliğinin ihlal edildiğini veya yetkisiz kullanımını fark ettiğinizde bizi derhal bilgilendirmelisiniz."
     },
     "q3": {
       "title": "Diğer Web Sitelerine Bağlantılar",
-      "a1": "Hizmetimiz, DET Practice tarafından sahip olunmayan veya kontrol edilmeyen üçüncü taraf web sitelerine veya hizmetlerine bağlantılar içerebilir.",
-      "a2": "DET Practice, üçüncü taraf web sitelerinin veya hizmetlerin içeriği, gizlilik politikaları veya uygulamaları üzerinde hiçbir kontrolü yoktur ve sorumluluk kabul etmez. Ayrıca, DET Practice'in bu tür web sitelerinde veya hizmetlerde mevcut olan herhangi bir içerik, mal veya hizmetin kullanımı veya bunlara güvenilmesi sonucunda ortaya çıkan veya ortaya çıktığı iddia edilen herhangi bir zarar veya kayıptan doğrudan veya dolaylı olarak sorumlu olmayacağını kabul ve beyan edersiniz.",
-      "a3": "Ziyaret ettiğiniz üçüncü taraf web sitelerinin veya hizmetlerinin şartlar ve koşullarını ve gizlilik politikalarını okumanızı şiddetle tavsiye ederiz."
+      "a1": "Hizmetimiz, DET Practice'in sahip olmadığı veya kontrol etmediği üçüncü taraf web sitelerine veya hizmetlerine bağlantılar içerebilir.",
+      "a2": "DET Practice, üçüncü taraf web sitelerinin veya hizmetlerinin içeriği, gizlilik politikaları veya uygulamaları üzerinde hiçbir kontrole sahip değildir ve bunlardan sorumlu değildir. Bu tür web sitelerinde veya hizmetlerde bulunan veya bunlar aracılığıyla erişilebilen herhangi bir içerik, mal veya hizmetin kullanımından veya bunlara güvenilmesinden kaynaklanan veya bunlarla bağlantılı olduğu iddia edilen herhangi bir zarar veya kayıptan DET Practice'in doğrudan veya dolaylı olarak sorumlu veya yükümlü olmayacağını kabul edersiniz.",
+      "a3": "Ziyaret ettiğiniz üçüncü taraf web sitelerinin veya hizmetlerinin şartlar ve koşullarını ve gizlilik politikalarını okumanızı önemle tavsiye ederiz."
     },
     "q4": {
-      "title": "Fesih",
-      "a1": "Hizmet Şartlarını ihlal etmeniz dahil ancak bununla sınırlı olmamak üzere herhangi bir nedenle, önceden bildirimde bulunmaksızın veya sorumluluk üstlenmeden, hesabınızı derhal sonlandırabilir veya askıya alabiliriz.",
-      "a2": "Hizmetin sona ermesi durumunda, Hizmeti kullanma hakkınız derhal sona erecektir. Hesabınızı sonlandırmak isterseniz, Hizmeti kullanmayı bırakmanız yeterlidir.",
-      "a3": "Doğası gereği fesih sonrasında da geçerli olması gereken Şartların tüm hükümleri, mülkiyet hükümleri, garanti feragatleri, tazminat ve sorumluluğun sınırlandırılması dahil olmak üzere, fesih sonrasında da geçerli kalacaktır."
+      "title": "Sonlandırma",
+      "a1": "Şartları ihlal etmeniz de dahil olmak üzere herhangi bir nedenle, önceden bildirimde bulunmaksızın veya sorumluluk üstlenmeksizin hesabınızı derhal sonlandırabilir veya askıya alabiliriz.",
+      "a2": "Sonlandırma üzerine, Hizmeti kullanma hakkınız derhal sona erecektir. Hesabınızı sonlandırmak isterseniz, sadece Hizmeti kullanmayı bırakabilirsiniz.",
+      "a3": "Mülkiyet hükümleri, garanti reddi, tazminat ve sorumluluk sınırlamaları dahil ancak bunlarla sınırlı olmamak üzere, doğası gereği sonlandırmadan sonra da geçerli kalması gereken Şartların tüm hükümleri sonlandırmadan sonra da geçerli kalacaktır."
     },
     "q5": {
-      "title": "Feragatname",
-      "a1": "Hizmeti kullanmanız tamamen sizin sorumluluğunuzdadır. Hizmet, “OLDUĞU GİBİ” ve “MEVCUT OLDUĞU ŞEKİLDE” sağlanmaktadır. Hizmet, ticarete elverişlilik, belirli bir amaca uygunluk, ihlal etmeme veya performans şekli dahil ancak bunlarla sınırlı olmamak üzere, açık veya zımni hiçbir garanti olmadan sağlanmaktadır."
+      "title": "Sorumluluk Reddi",
+      "a1": "Hizmeti kullanmanız tamamen kendi sorumluluğunuzdadır. Hizmet \"OLDUĞU GİBİ\" ve \"MEVCUT OLDUĞU ŞEKILDE\" sunulmaktadır. Hizmet, açık veya zımni, ticarete elverişlilik, belirli bir amaca uygunluk, ihlal etmeme veya performans seyri dahil ancak bunlarla sınırlı olmamak üzere hiçbir garanti olmaksızın sunulmaktadır."
     },
     "q6": {
       "title": "Geçerli Hukuk",
-      "a1": "Bu Koşullar, hukuk çatışması hükümlerine bakılmaksızın, Birleşik Krallık yasalarına göre yönetilecek ve yorumlanacaktır.",
-      "a2": "Bu Şartların herhangi bir hakkını veya hükmünü uygulamamamız, bu haklardan feragat ettiğimiz anlamına gelmez. Bu Şartların herhangi bir hükmü bir mahkeme tarafından geçersiz veya uygulanamaz olarak kabul edilirse, bu Şartların geri kalan hükümleri yürürlükte kalacaktır. Bu Şartlar, Hizmetimiz ile ilgili olarak aramızdaki tüm anlaşmayı oluşturur ve aramızda Hizmet ile ilgili olarak yapmış olabileceğimiz önceki anlaşmaların yerine geçer."
+      "a1": "Bu Şartlar, çatışma hukuku hükümleri dikkate alınmaksızın Birleşik Krallık yasalarına göre yönetilecek ve yorumlanacaktır.",
+      "a2": "Bu Şartlardaki herhangi bir hak veya hükmü uygulamamız, bu hakların feragati olarak kabul edilmeyecektir. Bu Şartların herhangi bir hükmünün bir mahkeme tarafından geçersiz veya uygulanamaz olduğuna karar verilirse, Şartların geri kalan hükümleri yürürlükte kalacaktır. Bu Şartlar, Hizmetimizle ilgili olarak aramızdaki tüm anlaşmayı oluşturur ve Hizmetle ilgili olarak aramızda önceden var olabilecek herhangi bir anlaşmanın yerini alır."
     },
     "q7": {
       "title": "Değişiklikler",
-      "a1": "Bu Koşulları herhangi bir zamanda değiştirme veya yerine yenilerini koyma hakkını tamamen kendi takdirimize bağlı olarak saklı tutarız. Eğer bir revizyon önemli ise, yeni koşulların yürürlüğe girmesinden en az 15 gün önce bildirim sağlamaya çalışacağız. Önemli bir değişikliğin ne oluşturduğunu tamamen kendi takdirimize bağlı olarak belirleyeceğiz.",
-      "a2": "Bu revizyonlar yürürlüğe girdikten sonra Hizmetimize erişmeye veya Hizmeti kullanmaya devam ederek, revize edilmiş şartlarla bağlı olmayı kabul edersiniz. Yeni şartları kabul etmiyorsanız, lütfen Hizmeti kullanmayı bırakın."
+      "a1": "Bu Şartları herhangi bir zamanda kendi takdirimize bağlı olarak değiştirme veya yenileme hakkını saklı tutarız. Eğer değişiklik önemliyse, yeni şartların yürürlüğe girmesinden önce en az 15 gün önceden bildirimde bulunmaya çalışacağız. Neyin önemli bir değişiklik oluşturduğuna kendi takdirimize göre karar verilecektir.",
+      "a2": "Bu değişiklikler yürürlüğe girdikten sonra Hizmetimize erişmeye veya kullanmaya devam ederek, revize edilmiş şartlarla bağlı olmayı kabul edersiniz. Yeni şartları kabul etmiyorsanız, lütfen Hizmeti kullanmayı bırakın."
     },
     "q8": {
       "title": "Bize Ulaşın",
-      "a1": "Herhangi bir sorunuz varsa bu Şartlar hakkında, lütfen bizimle iletişime geçin."
+      "a1": "Bu Şartlarla ilgili herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin."
     }
   },
   "sitemap": {
@@ -944,39 +975,39 @@
   },
   "affiliate": {
     "seometa": {
-      "title": "Bağlı Programı | DET Uygulaması",
-      "description": "DET Uygulaması'nın kazançlı bağlı programına katılın ve her yönlendirme için %30'a kadar komisyon kazanın. Öğrencilerin en iyi puanlarına ulaşmalarına yardımcı olmak için bizimle ortak olun.",
-      "keywords": "DET Duolingo, DET Testi, Duolingo DET, Duolingo Testi, Duolingo Testi Online, Duolingo İngilizce Dil Testi, Duolingo İngilizce Sınavı, Duolingo Yeterlilik Sınavı"
+      "title": "İş Ortaklığı Programı - DET Practice {'|'} Duolingo Test Hazırlığı ile Kazanın",
+      "description": "DET Practice İş Ortaklığı Programı'na katılın ve Duolingo test hazırlık hizmetlerimizi tanıtarak kazanmaya başlayın. Yüksek dönüşüm sağlayan materyallere erişin ve her satıştan komisyon kazanın. Bugün nasıl başlayacağınızı öğrenin.",
+      "keywords": "iş ortaklığı programı, Duolingo test hazırlığı ortaklığı, DET Practice ile kazanç, online test hazırlığı ortaklığı, satış ortaklığı, DET Practice ortakları, komisyon kazanma"
     },
-    "tag": "Bağlı Programı",
-    "h1": "Her Yönlendirmenizden <span class='yellow_font'>%30 Komisyon</span> Kazanın",
-    "sun": "Şimdi Kaydolun",
-    "login": "Giriş yap",
-    "join_title": "Detpractice'ın <span class='yellow_font'>Kazançlı</span> Bağlı Programına Katılın",
-    "join_tips": "Detpractice.com'un bağlı programına kaydolun. Herkes Detpractice.com ile Duolingo English Test üzerinde kolayca daha yüksek bir puan alabilir. Bizim ortağımız olun ve her yönlendirme için %30'a kadar komisyon kazanın.",
-    "earth_with_title": "Detpractice'ın Çeşitli Ürün Yelpazesiyle Kazanın",
+    "tag": "İş Ortaklığı Programı",
+    "h1": "Her Yönlendirmeden <span class='yellow_font'>%30</span> Komisyon Kazanın",
+    "sun": "Hemen Üye Olun",
+    "login": "Giriş Yap",
+    "join_title": "Detpractice'in Kazançlı İş Ortaklığı Programına Katılın",
+    "join_tips": "Detpractice.com'un iş ortaklığı programına kayıt olun. Detpractice.com ile herkes Duolingo English Test'te kolayca daha yüksek puan alabilir. İş ortağımız olun ve her yönlendirme için %30'a varan komisyon kazanın.",
+    "earth_with_title": "Detpractice'in Çeşitli Ürün Yelpazesi ile Kazanın",
     "question_bank": "Soru Bankası",
-    "acs": "AI Düzeltme Hizmeti",
-    "Mock_Test": "Deneme Testi",
+    "acs": "Yapay Zeka Düzeltme Hizmeti",
+    "Mock_Test": "Deneme Sınavı",
     "Courses": "Kurslar",
-    "bada": "3 Adımda Detpractice Bağlısı Olun",
+    "bada": "3 Adımda Detpractice İş Ortağı Olun",
     "hep": "Yüksek Kazanç Potansiyeli",
     "heptips": [
-      "Rekabetçi komisyon oranları: Bağlantınızdan gelen tüm gelirlerde %30",
-      "Uzun vadeli ortaklık potansiyeli: Bağlılarımızı değerli buluyor ve uzun vadeli, karşılıklı yarar sağlayan ilişkiler geliştirmeyi hedefliyoruz."
+      "Rekabetçi komisyon oranları: İş ortaklığı bağlantınızdan gelen tüm gelirlerden %30.",
+      "Uzun vadeli ortaklık potansiyeli: İş ortaklarımıza değer veriyor ve karşılıklı fayda sağlayan uzun vadeli ilişkiler geliştirmeye çalışıyoruz."
     ],
-    "ctw": "Çalışmayı Sevdiğimiz İçerik Üreticileri",
+    "ctw": "Birlikte Çalışmaktan Keyif Aldığımız İçerik Üreticileri",
     "ctwtips": [
-      "1. İzleyici kitlesi öğrencilerden oluşan bir içerik üreticisiniz (Duolingo English Test Öğrenmek bir artıdır!)",
-      "2. DET öğrenmenin daha etkili bir yoluyla heyecanlanıyorsunuz",
-      "3. Duolingo English Test öğreten bir eğitim kurumusunuz"
+      "1. Öğrencilerden oluşan bir kitleye sahip içerik üreticisisiniz (Duolingo English Test öğrenmek bir avantaj!)",
+      "2. DET'i öğrenmenin daha etkili bir yoluna heyecan duyuyorsunuz",
+      "3. Duolingo English Test eğitimi veren bir eğitim kurumusunuz"
     ],
     "dos": "Yapılması Gerekenler",
     "dos_icon_alt": "yeşil Doğru İkonu",
     "donts": "Yapılmaması Gerekenler",
     "donts_icon_alt": "kırmızı Hata İkonu",
     "faqs": "SSS",
-    "sew": "Bağlı Programımızla Şimdi Kazanmaya Başlayın",
+    "sew": "İş Ortaklığı Programımız ile Şimdi Kazanmaya Başlayın",
     "contaceUsList": [
       {
         "font": "Bağlı programımıza kaydolun ve yönlendirme bağlantınızı alın.",
@@ -999,55 +1030,66 @@
         "font": "Detpractice.com'u etik ve dürüst bir şekilde tanıtın"
       },
       {
-        "font": "Kaliteli ve ilgili içerikler oluşturun"
+        "font": "Kaliteli ve ilgili içerik oluşturun"
       },
       {
-        "font": "Bağlılık ilişkinizi açıklayın"
+        "font": "İş ortaklığı ilişkinizi açıklayın"
       }
     ],
     "dontsList": [
       {
-        "font": "Detpractice.com hakkında yanıltıcı veya yanlış iddialarda bulunun"
+        "font": "Detpractice.com hakkında yanıltıcı veya yanlış iddialarda bulunmak"
       },
       {
-        "font": "Uygunsuz veya yasa dışı içeriğe sahip platformlarda tanıtım yapın"
+        "font": "Uygunsuz veya yasadışı içeriğe sahip platformlarda tanıtım yapmak"
       },
       {
-        "font": "Herhangi bir kupon sitesinde tanıtım yapın"
+        "font": "Herhangi bir kupon sitesinde tanıtım yapmak"
       },
       {
-        "font": "Marka adımızı kullanarak reklam kampanyaları düzenleyin veya reklamlarınızın hedef URL'lerine alan adımızı koyun"
+        "font": "Marka adımızı kullanarak reklam kampanyaları oluşturmak veya reklamlarınızın hedef URL'lerine alan adımızı yerleştirmek"
       }
     ],
     "faqList": [
       {
-        "q": "DET Uygulaması'nın bağlı programına kimler başvurabilir?",
-        "a": "İzleyici kitlesi öğrencilerden oluşan bir içerik üreticisi, Duolingo English Test öğreten bir eğitim kurumu veya bir influencer iseniz, bağlı programımıza kaydolup para kazanabilirsiniz."
+        "q": "DET Practice'in iş ortaklığı programına kimler başvurabilir?",
+        "a": "Öğrencilerden oluşan bir kitleye sahip içerik üreticisi, Duolingo English Test eğitimi veren bir eğitim kurumu veya influencer iseniz, iş ortaklığı programımıza kaydolabilir ve para kazanabilirsiniz."
       },
       {
-        "q": "Komisyonlarımı nasıl takip ederim?",
-        "a": "Bağlı programımıza kaydolduğunuzda, yönlendirme bağlantılarınızdan gelen dönüşümleri takip edebileceğiniz özel bir yönetici sayfasına erişiminiz olacak."
+        "q": "Komisyonlarımı nasıl takip edebilirim?",
+        "a": "İş ortaklığı programımıza kaydolduktan sonra, yönlendirme bağlantılarınızdan gelen dönüşümleri takip edebileceğiniz size özel yönetici sayfasına erişim elde edeceksiniz."
       },
       {
-        "q": "Yönlendirdiğim bir müşteri abone olur veya yükseltirse komisyon alır mıyım?",
+        "q": "Yönlendirdiğim bir müşteri abonelik alırsa veya yükseltme yaparsa komisyon alır mıyım?",
         "a": "Evet, bir kullanıcı bağlantınız üzerinden kaydolduktan sonra, kullanıcı her satın alma ve yükseltme yaptığında komisyon kazanırsınız."
       },
       {
-        "q": "Kazandığım komisyonun tam yüzdesi nedir?",
-        "a": "İlk 3 sipariş için %10 komisyon alacaksınız; 3'ten fazla sipariş için %30 komisyon alacaksınız."
+        "q": "Kazanabileceğim kesin komisyon yüzdesi nedir?",
+        "a": "İlk 3 sipariş için %10 komisyon alacaksınız; 3 siparişten sonra %30 komisyon alacaksınız."
       },
       {
-        "q": "Yönlendirdiğim bir müşteri satın alımını iptal ederse ne olur?",
-        "a": "Bir müşteri herhangi bir nedenle satın alımını iptal eder veya geri ödeme alırsa, o kişi için kazandığınız komisyon hesabınızdan düşülür."
+        "q": "Yönlendirdiğim bir müşteri satın almasını iptal ederse ne olur?",
+        "a": "Bir müşteri satın almayı iptal ederse veya herhangi bir nedenle geri ödeme alırsa, o kişi için kazandığınız komisyon hesabınızdan düşülecektir."
       },
       {
-        "q": "Ödemelerimi ne zaman ve nasıl alırım?",
-        "a": "Önceki ay kazandığınız tüm komisyonlar için her ayın 15'inde ödemeleri işliyoruz. Ödemeleri PayPal aracılığıyla alabilirsiniz."
+        "q": "Ne zaman ve nasıl ödeme alırım?",
+        "a": "Her ayın 15'inde önceki ay kazandığınız tüm komisyonların ödemesini işleme alırız. Ödemeleri PayPal üzerinden alabilirsiniz."
       },
       {
-        "q": "İnternet pazarlama programınızla ilgili başka sorularım olursa ne yapmalıyım?",
-        "a": "\"<span class='yellow_font'>support{'@'}detpractice.com</span>\" adresinden bizimle iletişime geçin, sorularınızı cevaplamaktan memnuniyet duyarız."
+        "q": "İş ortaklığı pazarlama programınız hakkında başka sorularım olursa ne yapmalıyım?",
+        "a": "Sadece  \"<span class='yellow_font'>support{'@'}detpractice.com</span>\" adresinden bizimle iletişime geçin, tüm sorularınıza yardımcı olmaktan memnuniyet duyarız."
       }
-    ]
+    ],
+    "contaceUsList[0]": {
+      "font": "İş ortaklığı programımıza kaydolun ve yönlendirme bağlantınızı alın.",
+      "btn": "Hemen Üye Olun"
+    },
+    "contaceUsList[1]": {
+      "btn": "Paylaş"
+    },
+    "contaceUsList[2]": {
+      "font": "Sizin ve alt ortaklarınızın getirdiği satışlardan komisyon kazanın.",
+      "btn": "Ödemenizi Alın"
+    }
   }
 }
