@@ -20,4 +20,13 @@ export default defineNuxtPlugin(() => {
     fbq('init', '3700958203515627');
     fbq('track', 'PageView');
   }, 1000);
+
+  <noscript>
+    <img
+      height='1'
+      width='1'
+      style='display: none'
+      src='https://www.facebook.com/tr?id=3700958203515627&ev=PageView&noscript=1'
+    />
+  </noscript>;
 });
