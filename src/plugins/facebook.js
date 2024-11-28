@@ -27,11 +27,9 @@ export default defineNuxtPlugin(() => {
     t.appendChild(s);
     document.body.appendChild(t);
   };
-  setTimeout(function () {
-    init(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '3700958203515627');
-    fbq('track', 'PageView');
+  init(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3700958203515627');
+  fbq('track', 'PageView');
 
-    appendImg();
-  }, 1000);
+  appendImg();
 });
