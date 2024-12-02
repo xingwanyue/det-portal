@@ -49,6 +49,7 @@ onMounted(async () => {
   });
   window.google?.accounts?.id?.prompt();
 });
+const htmlText = `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3700958203515627&ev=PageView&noscript=1" />`
 </script>
 
 <template>
@@ -62,6 +63,9 @@ onMounted(async () => {
     </el-footer>
     <v-changeLanguagetk />
   </el-container>
+  <noscript v-html="htmlText">
+   
+  </noscript>
 </template>
 <style lang="scss" scoped>
 .wrap {

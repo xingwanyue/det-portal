@@ -1,5 +1,14 @@
 <script setup lang="ts">
 import Layout from './layouts/default.vue';
+
+const localePath = useLocalePath();
+useHead({
+  link: [
+    { rel: 'canonical', href: () => `https://www.${domain}${localePath('/')}` },
+    { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}${localePath('/')}` },
+  ],
+});
+
 </script>
 
 <template>

@@ -15,21 +15,13 @@ export default defineNuxtPlugin(() => {
     s = b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t, s);
   };
-  const appendImg = () => {
-    const d = document;
-    const s = d.createElement('img');
-    const t = d.createElement('noscript');
-
-    s.src = 'https://www.facebook.com/tr?id=3700958203515627&ev=PageView&noscript=1';
-    s.height = '1';
-    s.width = '1';
-    s.style.display = 'none';
-    t.appendChild(s);
-    document.body.appendChild(t);
-  };
   init(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '3700958203515627');
   fbq('track', 'PageView');
-
-  appendImg();
+  // nuxtApp.hook('render:html', (html) => {
+  //   html.body = html.body.replace(
+  //     '<div id="__nuxt">',
+  //     `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3700958203515627&ev=PageView&noscript=1" /><div id="__nuxt">`,
+  //   );
+  // });
 });
