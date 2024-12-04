@@ -18,8 +18,8 @@ useHead({
         <img src="/img/affiliate/cre_th_w_l.svg" alt="empty" class="left" />
         <div class="right">
           <h1 class="text-404">404</h1>
-          <div class="text-desc">Sorry, Page Not Found.</div>
-          <a href="/" class="goHomeBtn">Homepage</a>
+          <div class="text-desc">Page Not Found</div>
+          <a href="/" class="goHomeBtn">Return to Homepage</a>
         </div>
       </div>
     </div>
