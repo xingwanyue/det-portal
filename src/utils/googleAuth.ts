@@ -1,5 +1,5 @@
 import { fetchmy } from './request';
-import { api, saveStorage, getStorage } from '@/utils';
+import { api, saveStorage, getStorage, getCookie } from '@/utils';
 
 const YOUR_CLIENT_ID = '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com';
 // secret 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
@@ -99,9 +99,15 @@ export const oauthLogin = async () => {
       nickname: name,
       google: true,
       type: 'pc',
-    };
+    } as any;
     if (InviteCode) {
       args.channel = `${InviteCode}-1`;
+    }
+    if (getCookie('_fbc')) {
+      args.fbc = getCookie('_fbc');
+    }
+    if (getCookie('_fbp')) {
+      args.fbp = getCookie('_fbp');
     }
     return fetchmy(`${api}/common/login`, {
       method: 'post',

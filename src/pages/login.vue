@@ -6,7 +6,7 @@ import { useRoute, useRouter } from 'vue-router';
 
 import { useStore } from '@/store';
 import { oauth2SignIn } from '@/utils/googleAuth';
-import { getToken, saveToken } from '@/utils';
+import { getToken, saveToken, getCookie } from '@/utils';
 useHead({
   meta: [{ name: 'robots', content: 'noindex' }],
 });
@@ -58,10 +58,17 @@ const submit = async () => {
     return false;
   }
   loading.value = true;
-  const { err, data: { token = '' } = {} } = await store.userClickLogin({
+  const args = {
     email: formData.value.email,
     password: formData.value.password,
-  });
+  } as any;
+  if (getCookie('_fbc')) {
+    args.fbc = getCookie('_fbc');
+  }
+  if (getCookie('_fbp')) {
+    args.fbp = getCookie('_fbp');
+  }
+  const { err, data: { token = '' } = {} } = await store.userClickLogin(args);
 
   if (!err) {
     await saveToken(token);
