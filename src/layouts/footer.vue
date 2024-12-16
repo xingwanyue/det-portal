@@ -284,7 +284,8 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
       </div>
 
       <div class="footer_logo_right">
-        <div class="tips_out">{{ t('footer.inc') }}</div>
+        <!-- <div class="tips_out">{{ t('footer.inc') }}</div> -->
+        <div class="tips_out">Henan Zixue Intelligent Technology Co., Ltd</div>
         <div v-if="options.length" class="select_out">
           <!-- <el-select v-model="language" placeholder="Select" style="width: 240px">
             <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"> </el-option>
