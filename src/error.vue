@@ -66,8 +66,8 @@ useHead({
   }
 
   .goHomeBtn {
-    padding: 9px 0;
-    width: 150px;
+    padding: 9px 12px;
+    width: fit-content;
     text-align: center;
     background-color: #f66442;
     border-radius: 22px;
