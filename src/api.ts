@@ -1,5 +1,5 @@
 import { fetchmy } from '@/utils/request';
-import { api, domain } from '@/utils';
+import { api, domain, getCookie } from '@/utils';
 
 export const sesCodeSend = (args: any) =>
   fetchmy(`${api}/common/sesCode`, {
@@ -200,3 +200,17 @@ export const platformData = {
   correctTotal: '21k+', // 批改人次
   speakingTotal: '26k+', // 批改人次
 } as any;
+
+export const logDbAdd = () => {
+  const args = {};
+  if (getCookie('_fbc')) {
+    args.fbc = getCookie('_fbc');
+  }
+  if (getCookie('_fbp')) {
+    args.fbp = getCookie('_fbp');
+  }
+  fetchmy(`${api}/common/logDb`, {
+    method: 'post',
+    body: JSON.stringify(args),
+  });
+};

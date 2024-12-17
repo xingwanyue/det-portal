@@ -23,6 +23,9 @@ declare global {
   }
 }
 onMounted(async () => {
+  setTimeout(() => {
+    store.logDbAdd()
+  }, 100);
   const token = await getToken();
   if (token) {
     store.getUserInfo();
