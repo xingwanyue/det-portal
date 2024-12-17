@@ -6,7 +6,7 @@ import { payEvent, beginCheckoutEvent, setUserData } from '@/utils/gtag';
 
 import { api, saveToken, getToken, removeToken, delay } from '@/utils';
 import { fetchmy } from '@/utils/request';
-import { stripePayUrlGet, stripePayStatusGet, logout, logDbAdd } from '@/api';
+import { stripePayUrlGet, stripePayStatusGet, logout, logFbAdd } from '@/api';
 
 export const useStore = defineStore({
   id: 'base',
@@ -183,8 +183,8 @@ export const useStore = defineStore({
       removeToken();
       window.location.href = '/';
     },
-    async logDbAdd() {
-      logDbAdd();
+    async logFbAdd() {
+      logFbAdd();
     },
   },
 });

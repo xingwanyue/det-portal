@@ -201,7 +201,7 @@ export const platformData = {
   speakingTotal: '26k+', // 批改人次
 } as any;
 
-export const logDbAdd = () => {
+export const logFbAdd = () => {
   const args = {} as any;
   if (getCookie('_fbc')) {
     args.fbc = getCookie('_fbc');
