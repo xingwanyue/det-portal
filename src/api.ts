@@ -202,14 +202,14 @@ export const platformData = {
 } as any;
 
 export const logDbAdd = () => {
-  const args = {};
+  const args = {} as any;
   if (getCookie('_fbc')) {
     args.fbc = getCookie('_fbc');
   }
   if (getCookie('_fbp')) {
     args.fbp = getCookie('_fbp');
   }
-  fetchmy(`${api}/common/logDb`, {
+  fetchmy(`${api}/common/logFb`, {
     method: 'post',
     body: JSON.stringify(args),
   });
