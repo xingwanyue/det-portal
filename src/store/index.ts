@@ -183,8 +183,8 @@ export const useStore = defineStore({
       removeToken();
       window.location.href = '/';
     },
-    async logFbAdd() {
-      logFbAdd();
+    async logFbAdd(fbclid?:string) {
+      logFbAdd(fbclid);
     },
   },
 });
