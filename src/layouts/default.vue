@@ -25,7 +25,7 @@ declare global {
 onMounted(async () => {
   setTimeout(() => {
     store.logFbAdd()
-  }, 100);
+  }, 5000);
   const token = await getToken();
   if (token) {
     store.getUserInfo();
