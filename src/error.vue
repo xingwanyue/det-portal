@@ -1,5 +1,14 @@
 <script setup lang="ts">
 import Layout from './layouts/default.vue';
+
+const localePath = useLocalePath();
+useHead({
+  link: [
+    { rel: 'canonical', href: () => `https://www.${domain}${localePath('/')}` },
+    { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}${localePath('/')}` },
+  ],
+});
+
 </script>
 
 <template>
@@ -9,8 +18,8 @@ import Layout from './layouts/default.vue';
         <img src="/img/affiliate/cre_th_w_l.svg" alt="empty" class="left" />
         <div class="right">
           <h1 class="text-404">404</h1>
-          <div class="text-desc">Sorry, The Page Not Found.</div>
-          <a href="/" class="goHomeBtn">Go Home</a>
+          <div class="text-desc">Page Not Found</div>
+          <a href="/" class="goHomeBtn">Return to Homepage</a>
         </div>
       </div>
     </div>
@@ -22,6 +31,7 @@ import Layout from './layouts/default.vue';
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+
   .errContent {
     display: flex;
     justify-content: center;
@@ -32,18 +42,21 @@ import Layout from './layouts/default.vue';
   .left {
     width: 50%;
   }
+
   .right {
     width: calc(50% - 80px);
     margin-left: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .text-404 {
       font-weight: 700;
       font-size: 64px;
       line-height: 1.25;
       margin: 0;
     }
+
     .text-desc {
       font-weight: 600;
       font-size: 1.5rem;
@@ -51,9 +64,10 @@ import Layout from './layouts/default.vue';
       padding-bottom: 1.25rem;
     }
   }
+
   .goHomeBtn {
-    padding: 9px 0;
-    width: 150px;
+    padding: 9px 12px;
+    width: fit-content;
     text-align: center;
     background-color: #f66442;
     border-radius: 22px;
@@ -61,10 +75,12 @@ import Layout from './layouts/default.vue';
     font-size: 18px;
     color: #ffffff;
   }
+
   @media screen and (max-width: 600px) {
     .left {
       display: none;
     }
+
     .right {
       width: 100%;
       margin: 0;

@@ -1,5 +1,5 @@
 import { fetchmy } from '@/utils/request';
-import { api, domain } from '@/utils';
+import { api, domain, getCookie, delay, setCookie } from '@/utils';
 
 export const sesCodeSend = (args: any) =>
   fetchmy(`${api}/common/sesCode`, {
@@ -200,3 +200,25 @@ export const platformData = {
   correctTotal: '21k+', // 批改人次
   speakingTotal: '26k+', // 批改人次
 } as any;
+
+export const logFbAdd = async (fbclid?: string): Promise<any> => {
+  const args = {} as any;
+  const fbp = getCookie('_fbp');
+  if (!fbp) {
+    await delay(1000);
+    return logFbAdd(fbclid);
+  }
+  const fbc = getCookie('_fbc');
+  if (fbc) {
+    args.fbc = fbc;
+  } else if (fbclid) {
+    args.fbc = `fb.1.${Date.now()}.${fbclid}`;
+    // fb像素代码未正常存储情况  手动寸
+    setCookie('_fbc', args.fbc, 90);
+  }
+  args.fbp = fbp;
+  fetchmy(`${api}/common/logFb`, {
+    method: 'post',
+    body: JSON.stringify(args),
+  });
+};

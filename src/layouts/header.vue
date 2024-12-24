@@ -111,7 +111,7 @@ const menus = computed(() => [
   },
   {
     name: t('Learn'),
-    path: 'https://prep.detpractice.com/',
+    path: '/detpracticetest',
   },
   {
     name: t('Pricing'),

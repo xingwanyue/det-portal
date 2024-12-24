@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { loginBycredential } from '@/utils/googleAuth';
 import { saveToken, getToken } from '@/utils';
-import { useRouter } from 'vue-router';
+import { useRouter, useRoute } from 'vue-router';
 import { useStore } from '@/store';
 import { sinupEvent } from '@/utils/gtag';
 import vHeader from './header.vue';
@@ -9,6 +9,7 @@ import vFooter from './footer.vue';
 import vChangeLanguagetk from './changeLanguage_TK.vue';
 
 const router = useRouter();
+const route = useRoute();
 
 const store = useStore();
 const layouProps = useAttrs();
@@ -22,7 +23,12 @@ declare global {
     google: any;
   }
 }
+const logFbAdd = () => {
+  const fbclid = route.query.fbclid as string;
+  store.logFbAdd(fbclid);
+};
 onMounted(async () => {
+  logFbAdd();
   const token = await getToken();
   if (token) {
     store.getUserInfo();
@@ -49,6 +55,7 @@ onMounted(async () => {
   });
   window.google?.accounts?.id?.prompt();
 });
+const htmlText = `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3700958203515627&ev=PageView&noscript=1" />`;
 </script>
 
 <template>
@@ -62,6 +69,7 @@ onMounted(async () => {
     </el-footer>
     <v-changeLanguagetk />
   </el-container>
+  <noscript v-html="htmlText"> </noscript>
 </template>
 <style lang="scss" scoped>
 .wrap {
