@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const route = useRoute();
 const localePath = useLocalePath();
 useSeoMeta({
@@ -14,6 +13,87 @@ useHead({
     { rel: 'canonical', href: () => `https://www.${domain}${localePath(route.path)}` },
     { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}${localePath(route.path)}` },
   ],
+});
+onMounted(() => {
+  // Image comparison slider
+  function initImageComparison() {
+    const sliders = document.querySelectorAll('.image-compare');
+
+    sliders.forEach((slider) => {
+      const handle = slider.querySelector('.slider-handle') as any;
+      const imageAfter = slider.querySelector('.image-after') as any;
+      let isResizing = false;
+
+      // 设置初始位置为中间
+      function setInitialPosition() {
+        const rect = slider.getBoundingClientRect();
+        const initialPosition = rect.width / 2;
+        setSliderPosition(rect.left + initialPosition);
+      }
+
+      function setSliderPosition(x: any) {
+        const rect = slider.getBoundingClientRect();
+        const position = Math.max(0, Math.min(x - rect.left, rect.width));
+        const percentage = (position / rect.width) * 100;
+        if (handle) {
+          handle.style.left = `${percentage}%`;
+        }
+        if (imageAfter) {
+          imageAfter.style.clipPath = `polygon(${percentage}% 0, 100% 0, 100% 100%, ${percentage}% 100%)`;
+        }
+      }
+
+      function onMouseDown(e: any) {
+        if (e.target.closest('.slider-handle')) {
+          isResizing = true;
+          e.preventDefault();
+        }
+      }
+
+      function onMouseUp(e: any) {
+        isResizing = false;
+      }
+
+      function onMouseMove(e: any) {
+        if (!isResizing) return;
+        setSliderPosition(e.pageX);
+      }
+
+      function onTouchStart(e: any) {
+        if (e.target.closest('.slider-handle')) {
+          isResizing = true;
+          const touch = e.touches[0];
+          setSliderPosition(touch.pageX);
+        }
+      }
+
+      function onTouchEnd() {
+        isResizing = false;
+      }
+
+      function onTouchMove(e: any) {
+        if (!isResizing) return;
+        const touch = e.touches[0];
+        setSliderPosition(touch.pageX);
+      }
+
+      // Mouse events
+      slider.addEventListener('mousedown', onMouseDown);
+      document.addEventListener('mouseup', onMouseUp);
+      document.addEventListener('mousemove', onMouseMove);
+
+      // Touch events
+      slider.addEventListener('touchstart', onTouchStart);
+      document.addEventListener('touchend', onTouchEnd);
+      document.addEventListener('touchmove', onTouchMove);
+
+      // 设置初始位置
+      setInitialPosition();
+    });
+  }
+
+  // Initialize image comparison when DOM is loaded
+  initImageComparison();
 });
 </script>
 
@@ -664,7 +744,6 @@ body {
   min-height: 25vh;
   display: flex;
   align-items: center;
-  margin-top: calc(40px + 2rem); /* 导航栏高度 (logo height + 2 * padding) */
 }
 
 .hero-content {
