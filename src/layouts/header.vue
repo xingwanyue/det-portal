@@ -218,7 +218,7 @@ const menus = computed(() => [
               </NuxtLink>
               <NuxtLink :to="localePath('/duolingo-practice-test')" title="Duolingo English Practice Test" class="one_card card4">
                 <div class="icon">
-                  <img src="/img/home/head_course.svg" alt="Duolingo English Practice Test" />
+                  <img src="/img/home/head_practice.svg" alt="Duolingo English Practice Test" />
                 </div>
                 <div class="right">
                   <div class="title">Duolingo English Practice Test</div>
