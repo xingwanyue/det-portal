@@ -48,6 +48,10 @@ const prod = computed(() => {
         name: t('footer.Products[4]'),
         url: '/courses',
       },
+      {
+        name: 'Duolingo Practice Test',
+        url: '/duolingo-practice-test',
+      },
     ],
   };
 });
