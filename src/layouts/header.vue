@@ -111,7 +111,7 @@ const menus = computed(() => [
   },
   {
     name: t('Learn'),
-    path: '/detpracticetest',
+    path: 'https://prep.detpractice.com/',
   },
   {
     name: t('Pricing'),
@@ -213,6 +213,17 @@ const menus = computed(() => [
                   <div class="title">{{ $t('header.prod3.title') }}</div>
                   <div class="font">
                     {{ $t('header.prod4.font') }}
+                  </div>
+                </div>
+              </NuxtLink>
+              <NuxtLink :to="localePath('/duolingo-practice-test')" title="Duolingo English Practice Test" class="one_card card4">
+                <div class="icon">
+                  <img src="/img/home/head_course.svg" alt="Duolingo English Practice Test" />
+                </div>
+                <div class="right">
+                  <div class="title">Duolingo English Practice Test</div>
+                  <div class="font">
+                    Assess your listening, speaking, reading, and writing skills to identify areas for improvement.
                   </div>
                 </div>
               </NuxtLink>

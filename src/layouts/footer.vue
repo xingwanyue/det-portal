@@ -49,7 +49,7 @@ const prod = computed(() => {
         url: '/courses',
       },
       {
-        name: 'Duolingo Practice Test',
+        name: 'Duolingo English Practice Test',
         url: '/duolingo-practice-test',
       },
     ],

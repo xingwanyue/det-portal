@@ -1,3 +1,22 @@
+<script setup lang="ts">
+
+const route = useRoute();
+const localePath = useLocalePath();
+useSeoMeta({
+  title: () => 'Duolingo English Practice Test Enhanced by DETPractice',
+  description: () =>
+    'Take enhanced Duolingo English Practice Test with real-exam interface and instant scoring. Practice full-length DET tests with detailed analytics and personalized feedback. Join 10,000+ successful test-takers today.',
+  keywords: () =>
+    'duolingo english practice test, duolingo practice test, det practice test, duolingo test practice, det mock exam, duolingo english test preparation',
+});
+useHead({
+  link: [
+    { rel: 'canonical', href: () => `https://www.${domain}${localePath(route.path)}` },
+    { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}${localePath(route.path)}` },
+  ],
+});
+</script>
+
 <template>
   <div>
     <!-- Hero Section -->
