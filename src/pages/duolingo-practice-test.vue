@@ -371,8 +371,9 @@ onMounted(() => {
                 <i class="fas fa-star"></i>
               </div>
               <p class="review-text">
-                "The practice tests were incredibly accurate. I scored 115 on my mock test and 120 on the actual DET.
-                The speaking section practice really helped me improve my confidence."
+                "The DET practice tests were incredibly accurate. I scored 115 on my
+                <NuxtLink :href="localePath('/mock-exam')">DET mock test</NuxtLink> and 120 on the actual DET. The
+                speaking section practice really helped me improve my confidence."
               </p>
             </div>
 
@@ -415,8 +416,8 @@ onMounted(() => {
                 <i class="fas fa-star-half-alt"></i>
               </div>
               <p class="review-text">
-                "The platform's interface is very similar to the real DET. The timer and question types made me feel
-                well-prepared when I took the actual test."
+                "The <NuxtLink :href="localePath('/')">DETPractice platform's</NuxtLink> interface is very similar to
+                the real DET. The timer and question types made me feel well-prepared when I took the actual test."
               </p>
             </div>
 
@@ -437,8 +438,9 @@ onMounted(() => {
                 <i class="fas fa-star"></i>
               </div>
               <p class="review-text">
-                "The mock tests were incredibly helpful. My scores improved consistently with each practice, and I ended
-                up scoring 125 on the actual DET - even higher than my last mock test!"
+                "The <NuxtLink :href="localePath('/mock-exam')">DET mock tests</NuxtLink> were incredibly helpful. My
+                scores improved consistently with each practice, and I ended up scoring 125 on the actual DET - even
+                higher than my last mock test!"
               </p>
             </div>
           </div>
@@ -466,9 +468,12 @@ onMounted(() => {
             </div>
             <div class="faq-answer">
               <p>
-                A Duolingo English Practice Test simulates the official Duolingo English Test environment, providing
-                realistic questions, time limits, and scoring formats. By completing a Duolingo English Practice Test,
-                you can familiarize yourself with the exam's structure, build confidence, and identify areas for
+                A
+                <NuxtLink :href="localePath('/duolingo-practice-test')">Duolingo English Practice Test</NuxtLink>
+                simulates the official Duolingo English Test environment, providing realistic questions, time limits,
+                and scoring formats. By completing a
+                <NuxtLink :href="localePath('/duolingo-practice-test')">Duolingo English Practice Test</NuxtLink>, you
+                can familiarize yourself with the exam's structure, build confidence, and identify areas for
                 improvement.
               </p>
             </div>
@@ -502,8 +507,9 @@ onMounted(() => {
               <p>
                 An enhanced Duolingo practice test provides immediate feedback, highlighting your strengths and
                 weaknesses. By repeatedly practicing, you can enhance vocabulary, refine pronunciation, and solidify
-                grammar skills. Over time, consistent English Duolingo test practice sessions can significantly boost
-                your overall score on the official exam.
+                grammar skills. Over time, consistent
+                <NuxtLink :href="localePath('/practice')">English Duolingo test practice</NuxtLink> sessions can
+                significantly boost your overall score on the official exam.
               </p>
             </div>
           </div>
@@ -528,9 +534,11 @@ onMounted(() => {
             </div>
             <div class="faq-answer">
               <p>
-                Yes. Repeated English Duolingo test practice sessions help you grow more comfortable with the format,
-                reduce test-day anxiety, and improve your accuracy. By observing your progress over multiple attempts,
-                you can track improvements, identify persistent challenges, and focus on targeted learning.
+                Yes. Repeated
+                <NuxtLink :href="localePath('/practice')">English Duolingo test practice</NuxtLink> sessions help you
+                grow more comfortable with the format, reduce test-day anxiety, and improve your accuracy. By observing
+                your progress over multiple attempts, you can track improvements, identify persistent challenges, and
+                focus on targeted learning.
               </p>
             </div>
           </div>
@@ -542,9 +550,10 @@ onMounted(() => {
             <div class="faq-answer">
               <p>
                 Our enhanced Duolingo practice test tools offer detailed score reports, analytics, and performance
-                breakdowns. By reviewing these results after each Duolingo English practice test, you gain a clear
-                understanding of how your proficiency evolves. This data-driven approach allows you to fine-tune your
-                study plan and maximize your final exam outcome.
+                breakdowns. By reviewing these results after each
+                <NuxtLink :href="localePath('/duolingo-practice-test')">Duolingo English Practice Test</NuxtLink>, you
+                gain a clear understanding of how your proficiency evolves. This data-driven approach allows you to
+                fine-tune your study plan and maximize your final exam outcome.
               </p>
             </div>
           </div>
@@ -1225,11 +1234,12 @@ body {
   color: #666;
 }
 
-.faq-answer a {
+.faq-answer a,
+.review-text a {
   color: #f66442;
   text-decoration: none;
 }
-
+.faq-answer a:hover,
 .faq-answer a:hover {
   text-decoration: underline;
 }
