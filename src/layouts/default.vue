@@ -37,7 +37,7 @@ useHead({
       href: () => `https://www.${domain}${currentPathWithoutLocale}`,
     },
   ],
-  meta: [{ property: 'og:locale', content: `${locale.value}_${country}` }],
+  meta: [{ property: 'og:locale', content: () => `${locale.value}_${country}` }],
 });
 declare global {
   interface Window {
