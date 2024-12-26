@@ -21,9 +21,9 @@ const loading = ref(false);
 const pwdShow = ref(false);
 const errMessage = ref('');
 const errShow = ref(false);
-// definePageMeta({
-//   layout: 'noheaderfooter',
-// });
+definePageMeta({
+  layout: 'noheaderfooter',
+});
 
 onMounted(async () => {
   const token = await getToken();
