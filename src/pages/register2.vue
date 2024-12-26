@@ -12,7 +12,9 @@ import { getStorage, urlGet } from '@/utils';
 definePageMeta({
   layout: 'noheaderfooter',
 });
-
+useHead({
+  meta: [{ name: 'robots', content: 'noindex' }],
+});
 const router = useRouter();
 const route = useRoute();
 

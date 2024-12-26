@@ -8,6 +8,9 @@ import { sesCodeVerify } from '@/api';
 definePageMeta({
   layout: 'noheaderfooter',
 });
+useHead({
+  meta: [{ name: 'robots', content: 'noindex' }],
+});
 const route = useRoute();
 const router = useRouter();
 
