@@ -85,7 +85,7 @@ export const useStore = defineStore({
           setUserData({ email: user.email });
         }
       } catch (e) {
-        console.log(e);
+        //
       }
     },
     async userChangeLanguage(language: string) {

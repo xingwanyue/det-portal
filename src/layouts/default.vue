@@ -17,16 +17,26 @@ const localePath = useLocalePath();
 const store = useStore();
 const layouProps = useAttrs();
 
+const currentPathWithoutLocale = route.path.replace(new RegExp(`^/${locale.value}`), '') || '/';
+
 const alternates = locales.map((l: string) => ({
   rel: 'alternate',
   hreflang: l,
-  href: () => `https://www.${domain}/${l}${route.path}`,
+  href: () => `https://www.${domain}/${l}${currentPathWithoutLocale}`,
 }));
 const country = countries[locales.indexOf(locale.value)];
 useHead({
   htmlAttrs: { lang: () => locale.value },
   script: [{ src: 'https://accounts.google.com/gsi/client', async: true }],
-  link: [{ rel: 'canonical', href: () => `https://www.${domain}${localePath(route.path)}` }, ...alternates],
+  link: [
+    { rel: 'canonical', href: () => `https://www.${domain}${localePath(currentPathWithoutLocale)}` },
+    ...alternates,
+    {
+      rel: 'alternate',
+      hreflang: 'x-default',
+      href: () => `https://www.${domain}${currentPathWithoutLocale}`,
+    },
+  ],
   meta: [{ property: 'og:locale', content: `${locale.value}_${country}` }],
 });
 declare global {
@@ -49,7 +59,6 @@ onMounted(async () => {
     client_id: '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com',
     use_fedcm_for_prompt: false,
     callback: async function (response: any) {
-      console.log(response.credential);
       const {
         data: { token, isNew },
         err,

@@ -82,8 +82,6 @@ const clickClose = () => {
 
 if (process.client) {
   state.language = navigator.language.slice(0, 2).toLowerCase() || 'en';
-  console.log(navigator.language);
-  console.log(wehaveLanguage[state.language]);
   //   如果浏览器语言不是英语 且我们有这个语言 就显示弹框
   if (state.language !== 'en') {
     if (wehaveLanguage[state.language]) {

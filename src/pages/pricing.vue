@@ -101,7 +101,6 @@ const getData = async () => {
         membershipArr.push(item);
       } else if (item.type === '2') {
         if (item.write === 1 && item.speak === 1 && item.disabled) {
-          console.log('1');
           moreServiceArr.push(item);
         } else {
           moreServiceArr.push(item);
@@ -129,7 +128,6 @@ const getData = async () => {
         membershipArr.push(item);
       } else if (item.type === '2') {
         if (item.write === 1 && item.speak === 1 && item.disabled) {
-          console.log('1');
           moreServiceArr.push(item);
         } else {
           moreServiceArr.push(item);
@@ -256,7 +254,6 @@ const copy = async (text: any) => {
     textarea.select();
     try {
       document.execCommand('copy');
-      // console.log('Text copied to clipboard');
       ElMessage.success('Copy successfully');
     } catch (err) {
       // console.error('Failed to copy text: ' + err);

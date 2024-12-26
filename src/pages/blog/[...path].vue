@@ -13,7 +13,7 @@ useSeoMeta({
 });
 useHead({
   meta: [
-    { name: 'DC.title', content: t('blog.seometa.title')  },
+    { name: 'DC.title', content: t('blog.seometa.title') },
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: t('blog.seometa.title') },
     { property: 'og:description', content: t('blog.seometa.description') },
@@ -26,7 +26,7 @@ useHead({
     { name: 'twitter:title', content: t('blog.seometa.title') },
     {
       name: 'twitter:description',
-      content: t('blog.seometa.description') ,
+      content: t('blog.seometa.description'),
     },
     { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
