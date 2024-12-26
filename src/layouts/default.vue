@@ -24,10 +24,10 @@ const alternates = locales.map((l: string) => ({
 }));
 const country = countries[locales.indexOf(locale.value)];
 useHead({
-  htmlAttrs: { lang: locale.value },
+  htmlAttrs: { lang: () => locale.value },
   script: [{ src: 'https://accounts.google.com/gsi/client', async: true }],
   link: [{ rel: 'canonical', href: () => `https://www.${domain}${localePath(route.path)}` }, ...alternates],
-  meta: [{ property: 'og:locale', content:`${locale.value}_${country}` }],
+  meta: [{ property: 'og:locale', content: `${locale.value}_${country}` }],
 });
 declare global {
   interface Window {
