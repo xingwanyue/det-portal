@@ -427,11 +427,11 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
                 </div>
               </template>
               <template v-else>
-                <NuxtLink v-if="item.btn" :to="localePath(`/login?url=/courses`)" class="btn">
+                <NuxtLink v-if="item.btn" :to="localePath(`/login?url=/courses`)" class="btn" rel="nofollow">
                   {{ item.btn }}
                 </NuxtLink>
-                <NuxtLink v-if="item.btn1" :to="localePath(`/login?url=/courses`)" class="btn"
-                  >{{ item.btn1 }}
+                <NuxtLink v-if="item.btn1" :to="localePath(`/login?url=/courses`)" class="btn" rel="nofollow">
+                  {{ item.btn1 }}
                 </NuxtLink>
               </template>
             </template>
@@ -466,10 +466,10 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
                 </template>
               </template>
               <template v-else>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/courses`)">
+                <NuxtLink class="btn" :to="localePath(`/login?url=/courses`)" rel="nofollow">
                   {{ item.btn }}
                 </NuxtLink>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/courses`)">
+                <NuxtLink class="btn" :to="localePath(`/login?url=/courses`)" rel="nofollow">
                   {{ item.btn1 }}
                 </NuxtLink>
               </template>
@@ -489,7 +489,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
                 </template>
               </template>
               <template v-else>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/listen`)">
+                <NuxtLink class="btn" :to="localePath(`/login?url=/listen`)" rel="nofollow">
                   {{ item.btn1 }}
                 </NuxtLink></template
               >

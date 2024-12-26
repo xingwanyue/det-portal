@@ -76,7 +76,7 @@ const submit = async () => {
         </el-form-item>
         <el-form-item>
           <div class="zhuce">
-            <NuxtLink class="goLogin" :to="localePath('/login')">＜ {{ $t('forget.Back_to_login') }}</NuxtLink>
+            <NuxtLink class="goLogin" :to="localePath('/login')" rel="nofollow">＜ {{ $t('forget.Back_to_login') }}</NuxtLink>
           </div>
         </el-form-item>
       </el-form>

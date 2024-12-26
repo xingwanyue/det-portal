@@ -115,6 +115,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 v-else
                 :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
                 class="btn common_btn_hover_bgColor"
+                rel="nofollow"
               >
                 <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
 
@@ -159,6 +160,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
@@ -193,6 +195,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
@@ -227,6 +230,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">
@@ -261,6 +265,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
                   <div class="arrow">

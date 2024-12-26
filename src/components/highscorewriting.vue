@@ -16,6 +16,7 @@ const user = computed(() => store.user);
           <NuxtLink
             class="common_btn common_btn_hover_bgColor yellow"
             :to="localePath(`/login?url=${urlGet('/correct')}`)"
+            rel="nofollow"
           >
             {{ $t('highscorewriting.Start_Now') }}</NuxtLink
           >

@@ -125,6 +125,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                 v-else
                 class="btn common_btn_hover_bgColor"
                 :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                rel="nofollow"
               >
                 <div class="font">{{ $t('practice.spn') }}</div>
                 <div class="icon">
@@ -169,6 +170,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('practice.article1.btn') }}</div>
                   <div class="arrow">
@@ -203,6 +205,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('practice.article2.btn') }}</div>
                   <div class="arrow">
@@ -237,6 +240,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('practice.article3.btn') }}</div>
                   <div class="arrow">
@@ -271,6 +275,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('practice.article4.btn') }}</div>
                   <div class="arrow">

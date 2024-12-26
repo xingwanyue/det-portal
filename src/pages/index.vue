@@ -178,6 +178,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           <NuxtLink
             :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
             class="common_btn common_btn_hover_borderCu white"
+            rel="nofollow"
           >
             {{ $t('index.Start_free_with_email') }}
           </NuxtLink>

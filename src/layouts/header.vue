@@ -216,7 +216,11 @@ const menus = computed(() => [
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/duolingo-practice-test')" title="Duolingo English Practice Test" class="one_card card4">
+              <NuxtLink
+                :to="localePath('/duolingo-practice-test')"
+                title="Duolingo English Practice Test"
+                class="one_card card4"
+              >
                 <div class="icon">
                   <img src="/img/home/head_practice.svg" alt="Duolingo English Practice Test" />
                 </div>
@@ -283,7 +287,11 @@ const menus = computed(() => [
       </div>
       <div v-else class="loginbtn">
         <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font"> Login </nuxt-link> -->
-        <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="try_free common_btn_hover_bgColor">
+        <nuxt-link
+          :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
+          class="try_free common_btn_hover_bgColor"
+          rel="nofollow"
+        >
           {{ $t('header.Try_for_free') }}
         </nuxt-link>
       </div>
@@ -376,7 +384,7 @@ const menus = computed(() => [
         </div>
       </div>
       <div v-else class="loginbtn-mobile">
-        <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="try_free">
+        <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="try_free" rel="nofollow">
           {{ $t('header.Try_for_free') }}
         </nuxt-link>
         <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font">Login</nuxt-link> -->

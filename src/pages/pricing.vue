@@ -369,7 +369,7 @@ const changeBuyCorrectTimes = () => {
             </div>
           </div>
           <div class="free_white_dom_right">
-            <NuxtLink class="try_btn" :to="localePath(`/login?url=${encodeURIComponent(host)}`)">{{
+            <NuxtLink class="try_btn" :to="localePath(`/login?url=${encodeURIComponent(host)}`)" rel="nofollow">{{
               $t('pricing.pagefont.tff')
             }}</NuxtLink>
           </div>
@@ -430,7 +430,11 @@ const changeBuyCorrectTimes = () => {
                 </div>
               </div>
               <div v-else>
-                <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
+                <NuxtLink
+                  class="card_price_buy_btn common_btn_hover_bgColor"
+                  :to="localePath(`/login?url=/pricing`)"
+                  rel="nofollow"
+                >
                   {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </NuxtLink>
@@ -492,7 +496,11 @@ const changeBuyCorrectTimes = () => {
                 </template>
               </div>
               <div v-else>
-                <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
+                <NuxtLink
+                  class="card_price_buy_btn common_btn_hover_bgColor"
+                  :to="localePath(`/login?url=/pricing`)"
+                  rel="nofollow"
+                >
                   {{ $t('pricing.pagefont.Buy_Now') }}
                   <div class="scroll-line"></div>
                 </NuxtLink>

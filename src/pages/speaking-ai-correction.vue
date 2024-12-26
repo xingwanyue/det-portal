@@ -105,6 +105,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 v-else
                 class="btn common_btn_hover_bgColor"
                 :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                rel="nofollow"
               >
                 <div class="font">{{ $t('speakingaicorrection.spn') }}</div>
                 <div class="icon">
@@ -157,6 +158,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('speakingaicorrection.article1.btn') }}</div>
                   <div class="arrow">
@@ -202,6 +204,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('speakingaicorrection.article2.btn') }}</div>
                   <div class="arrow">
@@ -247,6 +250,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('speakingaicorrection.article3.btn') }}</div>
                   <div class="arrow">

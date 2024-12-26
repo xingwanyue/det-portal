@@ -113,6 +113,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 v-else
                 class="btn common_btn_hover_bgColor"
                 :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                rel="nofollow"
               >
                 <div class="font">{{ $t('correction.Review_Now') }}</div>
                 <div class="icon">
@@ -161,6 +162,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
                   <div class="arrow">
@@ -195,6 +197,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Get_Scored_Now') }}</div>
                   <div class="arrow">
@@ -229,6 +232,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
                   <div class="arrow">
@@ -263,6 +267,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Enhance_Now') }}</div>
                   <div class="arrow">
@@ -297,6 +302,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Begin_Polishing') }}</div>
                   <div class="arrow">

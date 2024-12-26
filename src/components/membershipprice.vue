@@ -174,7 +174,11 @@ const saveCaculate = (item) => {
               </div>
             </div>
             <div v-else>
-              <NuxtLink class="card_price_buy_btn common_btn_hover_bgColor" :to="localePath(`/login?url=/pricing`)">
+              <NuxtLink
+                class="card_price_buy_btn common_btn_hover_bgColor"
+                :to="localePath(`/login?url=/pricing`)"
+                rel="nofollow"
+              >
                 {{ $t('pricing.pagefont.Buy_Now') }}
                 <div class="scroll-line"></div>
               </NuxtLink>
@@ -243,7 +247,11 @@ const saveCaculate = (item) => {
             </div>
           </div>
           <div v-else>
-            <NuxtLink class="card_price_buy_btn card_price_buy_btn_mock" :to="localePath(`/login?url=/pricing`)">
+            <NuxtLink
+              class="card_price_buy_btn card_price_buy_btn_mock"
+              :to="localePath(`/login?url=/pricing`)"
+              rel="nofollow"
+            >
               {{ $t('pricing.pagefont.Buy_Now') }}
               <div class="scroll-line"></div>
             </NuxtLink>

@@ -112,6 +112,7 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
                 v-else
                 class="btn common_btn_hover_bgColor"
                 :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                rel="nofollow"
               >
                 <div class="font">{{ $t('correction.Review_Now') }}</div>
                 <div class="icon">
@@ -160,6 +161,7 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
                   <div class="arrow">
@@ -194,6 +196,7 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Get_Scored_Now') }}</div>
                   <div class="arrow">
@@ -228,6 +231,7 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
                   <div class="arrow">
@@ -262,6 +266,7 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
                   v-else
                   class="right_click"
                   :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
                   <div class="arrow">
