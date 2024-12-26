@@ -15,13 +15,26 @@ const user = computed(() => store.user);
 useSeoMeta({
   title: t('mockexam.seometa.title'),
   description: t('mockexam.seometa.description'),
-  keywords: t('mockexam.seometa.keywords'),
 });
 
 useHead({
-  link: [
-    { rel: 'canonical', href: `https://www.${domain}${localePath('/mock-exam')}` },
-    { rel: 'alternate', href: `https://www.${domain}${localePath('/mock-exam')}`, hreflang: 'en-GB' },
+  meta: [
+    { name: 'DC.title', content: t('mockexam.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('mockexam.seometa.title') },
+    { property: 'og:description', content: t('mockexam.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/mock-exam')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('mockexam.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('mockexam.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
 });
 

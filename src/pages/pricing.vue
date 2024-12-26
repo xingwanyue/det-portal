@@ -9,13 +9,27 @@ import { useStore } from '@/store';
 useSeoMeta({
   title: t('pricing.seometa.title'),
   description: t('pricing.seometa.description'),
-  keywords: t('pricing.seometa.keywords'),
 });
 const localePath = useLocalePath();
+
 useHead({
-  link: [
-    { rel: 'canonical', href: `https://www.${domain}${localePath('/pricing')}` },
-    { rel: 'alternate', href: `https://www.${domain}${localePath('/pricing')}`, hreflang: 'en-GB' },
+  meta: [
+    { name: 'DC.title', content: t('pricing.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('pricing.seometa.title') },
+    { property: 'og:description', content: t('pricing.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/pricing')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('pricing.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('pricing.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
 });
 

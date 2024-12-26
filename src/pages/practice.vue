@@ -12,15 +12,28 @@ const user = computed(() => store.user);
 useSeoMeta({
   title: t('practice.seometa.title'),
   description: t('practice.seometa.description'),
-  keywords: t('practice.seometa.keywords'),
-});
-useHead({
-  link: [
-    { rel: 'canonical', href: `https://www.${domain}${localePath('/practice')}` },
-    { rel: 'alternate', href: `https://www.${domain}${localePath('/practice')}`, hreflang: 'en-GB' },
-  ],
 });
 
+useHead({
+  meta: [
+    { name: 'DC.title', content: t('practice.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('practice.seometa.title') },
+    { property: 'og:description', content: t('practice.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/practice')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('practice.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('practice.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+  ],
+});
 // 将数字格式化 306281变为306k 3062811变为3061k
 // const toThousands = (num) => {
 //   if (!num) {

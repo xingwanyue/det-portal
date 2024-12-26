@@ -5,13 +5,31 @@ useSeoMeta({
   title: () => 'Duolingo English Practice Test Enhanced by DETPractice',
   description: () =>
     'Take enhanced Duolingo English Practice Test with real-exam interface and instant scoring. Practice full-length DET tests with detailed analytics and personalized feedback. Join 10,000+ successful test-takers today.',
-  keywords: () =>
-    'duolingo english practice test, duolingo practice test, det practice test, duolingo test practice, det mock exam, duolingo english test preparation',
 });
+
 useHead({
-  link: [
-    { rel: 'canonical', href: () => `https://www.${domain}${localePath(route.path)}` },
-    { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}${localePath(route.path)}` },
+  meta: [
+    { name: 'DC.title', content: 'Duolingo English Practice Test Enhanced by DETPractice' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: 'Duolingo English Practice Test Enhanced by DETPractice' },
+    {
+      property: 'og:description',
+      content:
+        'Take enhanced Duolingo English Practice Test with real-exam interface and instant scoring. Practice full-length DET tests with detailed analytics and personalized feedback. Join 10,000+ successful test-takers today.',
+    },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/duolingo-practice-test')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: 'Duolingo English Practice Test Enhanced by DETPractice' },
+    {
+      name: 'twitter:description',
+      content:
+        'Take enhanced Duolingo English Practice Test with real-exam interface and instant scoring. Practice full-length DET tests with detailed analytics and personalized feedback. Join 10,000+ successful test-takers today.',
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
 });
 onMounted(() => {

@@ -27,10 +27,25 @@ useSeoMeta({
   description: () => article.value?.description || t('path.seometa.description'),
   keywords: () => article.value?.keywords,
 });
+
 useHead({
-  link: [
-    { rel: 'canonical', href: () => `https://www.${domain}${localePath(route.path)}` },
-    { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}${localePath(route.path)}` },
+  meta: [
+    { name: 'DC.title', content: article.value?.title || t('path.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: article.value?.title || t('path.seometa.title') },
+    { property: 'og:description', content: article.value?.description || t('path.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath(route.path)}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: article.value?.title || t('path.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: article.value?.description || t('path.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
 });
 </script>

@@ -7,13 +7,26 @@ const state = reactive({});
 useSeoMeta({
   title: t('refundPolicy.seometa.title'),
   description: t('refundPolicy.seometa.description'),
-  keywords: t('privacyPolicy.seometa.keywords'),
 });
 const localePath = useLocalePath();
 useHead({
-  link: [
-    { rel: 'canonical', href: `https://www.${domain}${localePath('/refund-policy')}` },
-    { rel: 'alternate', href: `https://www.${domain}${localePath('/refund-policy')}`, hreflang: 'en-GB' },
+  meta: [
+    { name: 'DC.title', content: t('refundPolicy.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('refundPolicy.seometa.title') },
+    { property: 'og:description', content: t('refundPolicy.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/refund-policy')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('refundPolicy.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('refundPolicy.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
 });
 </script>

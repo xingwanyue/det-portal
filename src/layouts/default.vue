@@ -1,22 +1,33 @@
 <script setup lang="ts">
 import { loginBycredential } from '@/utils/googleAuth';
-import { saveToken, getToken } from '@/utils';
+import { saveToken, getToken, locales, countries } from '@/utils';
 import { useRouter, useRoute } from 'vue-router';
 import { useStore } from '@/store';
 import { sinupEvent } from '@/utils/gtag';
+import { useI18n } from 'vue-i18n';
 import vHeader from './header.vue';
 import vFooter from './footer.vue';
 import vChangeLanguagetk from './changeLanguage_TK.vue';
 
 const router = useRouter();
 const route = useRoute();
+const { locale } = useI18n();
+const localePath = useLocalePath();
 
 const store = useStore();
 const layouProps = useAttrs();
-// const userpc = process.client;
-const isUserPc = ref(import.meta.client);
+
+const alternates = locales.map((l: string) => ({
+  rel: 'alternate',
+  hreflang: l,
+  href: () => `https://www.${domain}/${l}${route.path}`,
+}));
+const country = countries[locales.indexOf(locale.value)];
 useHead({
+  htmlAttrs: { lang: locale.value },
   script: [{ src: 'https://accounts.google.com/gsi/client', async: true }],
+  link: [{ rel: 'canonical', href: () => `https://www.${domain}${localePath(route.path)}` }, ...alternates],
+  meta: [{ property: 'og:locale', content:`${locale.value}_${country}` }],
 });
 declare global {
   interface Window {

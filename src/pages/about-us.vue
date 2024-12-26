@@ -3,14 +3,31 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain, cdn } from '@/utils';
-const state = reactive({});
 useSeoMeta({
   title: t('aboutUs.seometa.title'),
   description: t('aboutUs.seometa.description'),
   keywords: t('aboutUs.seometa.keywords'),
 });
+const localePath = useLocalePath();
 useHead({
-  link: [{ rel: 'canonical', href: `https://www.${domain}/about-us` }],
+  meta: [
+    { name: 'DC.title', content: t('aboutUs.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('aboutUs.seometa.title') },
+    { property: 'og:description', content: t('aboutUs.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/ablou-us')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('aboutUs.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('aboutUs.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+  ],
 });
 
 const our_v_bg = `${cdn}/store/portal/aboutus/our_v_bg.svg`;

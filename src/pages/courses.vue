@@ -11,14 +11,27 @@ const guide2 = `${cdn}/store/portal/guid/xiezuo.webp`;
 useSeoMeta({
   title: t('courses.seometa.title'),
   description: t('courses.seometa.description'),
-  keywords: t('courses.seometa.keywords'),
 });
 const localePath = useLocalePath();
 
 useHead({
-  link: [
-    { rel: 'canonical', href: `https://www.${domain}${localePath('/courses')}` },
-    { rel: 'alternate', href: `https://www.${domain}${localePath('/courses')}`, hreflang: 'en-GB' },
+  meta: [
+    { name: 'DC.title', content: t('courses.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('courses.seometa.title') },
+    { property: 'og:description', content: t('courses.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/courses')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('courses.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('courses.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
 });
 

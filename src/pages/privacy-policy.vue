@@ -7,13 +7,26 @@ const state = reactive({});
 useSeoMeta({
   title: t('privacyPolicy.seometa.title'),
   description: t('privacyPolicy.seometa.description'),
-  keywords: t('privacyPolicy.seometa.keywords'),
 });
 const localePath = useLocalePath();
 useHead({
-  link: [
-    { rel: 'canonical', href: `https://www.${domain}${localePath('/privacy-policy')}` },
-    { rel: 'alternate', href: `https://www.${domain}${localePath('/privacy-policy')}`, hreflang: 'en-GB' },
+  meta: [
+    { name: 'DC.title', content: t('privacyPolicy.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('privacyPolicy.seometa.title') },
+    { property: 'og:description', content: t('privacyPolicy.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/privacy-policy')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('privacyPolicy.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('privacyPolicy.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
 });
 </script>

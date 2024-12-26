@@ -12,9 +12,23 @@ useSeoMeta({
   description: t('blog.seometa.description'),
 });
 useHead({
-  link: [
-    { rel: 'canonical', href: `https://www.${domain}${localePath('/blog')}` },
-    { rel: 'alternate', href: `https://www.${domain}${localePath('/blog')}`, hreflang: 'en-GB' },
+  meta: [
+    { name: 'DC.title', content: t('blog.seometa.title')  },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('blog.seometa.title') },
+    { property: 'og:description', content: t('blog.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/blog')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('blog.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('blog.seometa.description') ,
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
 });
 const route = useRoute();
@@ -25,7 +39,6 @@ const currentPage = ref(1);
 let blogs = ref([]) as any;
 let leftList = ref([]) as any;
 let categoryPath = ref();
-console.log(route.params.path);
 
 const { data: category } = (await useFetch(`${api}/common/article/category`, {
   server: true,

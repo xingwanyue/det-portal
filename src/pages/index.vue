@@ -14,14 +14,27 @@ const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
 useSeoMeta({
   title: t('index.seometa.title'),
   description: t('index.seometa.description'),
-  keywords: t('index.seometa.keywords'),
 });
 const localePath = useLocalePath();
 
 useHead({
-  link: [
-    { rel: 'canonical', href: `https://www.${domain}${localePath('/')}` },
-    { rel: 'alternate', href: `https://www.${domain}${localePath('/')}`, hreflang: 'en-GB' },
+  meta: [
+    { name: 'DC.title', content: t('index.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('index.seometa.title') },
+    { property: 'og:description', content: t('index.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('index.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('index.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
 });
 
@@ -334,7 +347,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <img loading="lazy" :src="home4" :alt="$t('index.article4.title')" @load="onLoad4" placeholder />
+            <img loading="lazy" :src="home4" :alt="$t('index.article4.title')" @load="onLoad4" />
             <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />

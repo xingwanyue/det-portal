@@ -12,12 +12,25 @@ const user = computed(() => store.user);
 useSeoMeta({
   title: t('speakingaicorrection.seometa.title'),
   description: t('speakingaicorrection.seometa.description'),
-  keywords: t('speakingaicorrection.seometa.keywords'),
 });
 useHead({
-  link: [
-    { rel: 'canonical', href: `https://www.${domain}${localePath('/peaking-ai-correction')}` },
-    { rel: 'alternate', href: `https://www.${domain}${localePath('/peaking-ai-correction')}`, hreflang: 'en-GB' },
+  meta: [
+    { name: 'DC.title', content: t('speakingaicorrection.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('speakingaicorrection.seometa.title') },
+    { property: 'og:description', content: t('speakingaicorrection.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/peaking-ai-correction')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('speakingaicorrection.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('speakingaicorrection.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
 });
 const isLoad = ref(false);
