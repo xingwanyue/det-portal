@@ -55,7 +55,7 @@ const state = reactive({
     { key: 'm6', font: t('pricing.mockQuanYiList[5]') },
   ],
   mockBuyTimsId: '',
-  mockBuyItem: {},
+  mockBuyItem: {} as any,
 });
 
 watch(
@@ -83,9 +83,9 @@ const buyMockTimes = () => {
   store.stripePay({ vipId: state.mockBuyTimsId });
 };
 const changeMockBuyTimes = () => {
-  state.mockBuyItem = props.mockSelectBuyTimes.find((item: any) => item.id === state.mockBuyTimsId);
+  state.mockBuyItem = props.mockSelectBuyTimes.find((item: any) => item.id === state.mockBuyTimsId) || {};
 };
-const saveCaculate = (item) => {
+const saveCaculate = (item: any) => {
   const { price = 0, originalPrice = 0, correctPrice = 0, correctOriginalPrice = 0 } = item;
   return (
     100 -
