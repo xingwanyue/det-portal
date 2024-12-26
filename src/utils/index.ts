@@ -155,4 +155,4 @@ export const formatNumber = (num: number) => {
 export const delay = (timeout: number) => new Promise((resolve) => setTimeout(resolve, timeout));
 
 export const locales = ['en', 'id', 'ja', 'ko', 'ru', 'tr', 'de', 'es', 'fr', 'it', 'th', 'zh'];
-export const countries = ['GB', 'ID', 'JA', 'KO', 'RU', 'TR', 'DE', 'ES', 'FR', 'IT', 'TH', 'ZH'];
+export const countries = ['US', 'ID', 'JP', 'KR', 'RU', 'TR', 'DE', 'ES', 'FR', 'IT', 'TH', 'CN'];
