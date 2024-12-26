@@ -22,7 +22,7 @@ const currentPathWithoutLocale = route.path.replace(new RegExp(`^/${locale.value
 const alternates = locales.map((l: string) => ({
   rel: 'alternate',
   hreflang: l,
-  href: () => `https://www.${domain}/${l}${currentPathWithoutLocale}`,
+  href: () => `https://www.${domain}${l === 'en' ? '' : `/${l}`}${currentPathWithoutLocale}`,
 }));
 const country = countries[locales.indexOf(locale.value)];
 useHead({
