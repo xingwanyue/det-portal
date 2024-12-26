@@ -19,7 +19,7 @@ useHead({
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: t('speakingaicorrection.seometa.title') },
     { property: 'og:description', content: t('speakingaicorrection.seometa.description') },
-    { property: 'og:url', content: `https://www.${domain}${localePath('/peaking-ai-correction')}` },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/speaking-ai-correction')}` },
     { property: 'og:site_name', content: 'DET Practice' },
     { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
     { name: 'twitter:card', content: 'summary_large_image' },
