@@ -580,9 +580,7 @@ onMounted(() => {
     </section>
   </div>
 </template>
-
-<style lang="scss">
-/* Reset and base styles */
+<style>
 :root {
   --primary-color: #f66442; /* 青碧绿，比Duolingo的绿色更偏青色 */
   --secondary-color: #ff9552; /* 明亮的黄色，比Duolingo更温暖 */
@@ -626,6 +624,9 @@ onMounted(() => {
   --letter-spacing-normal: 0;
   --letter-spacing-wide: 0.025em;
 }
+</style>
+<style lang="scss" scoped>
+/* Reset and base styles */
 
 * {
   margin: 0;
@@ -648,71 +649,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-unit);
-}
-
-/* Navigation */
-.navbar {
-  background: var(--background-color);
-  padding: 1rem 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: var(--shadow-small);
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  display: flex;
-  align-items: center;
-}
-
-.logo-image {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
-}
-
-@media (max-width: 768px) {
-  .logo-image {
-    height: 32px;
-  }
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.nav-links a {
-  color: var(--text-color);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--primary-color);
-}
-
-.mobile-menu-button {
-  display: none;
-  background: none;
-  border: none;
-  color: var(--text-color);
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0.5rem;
 }
 
 /* Buttons */
@@ -1710,25 +1646,6 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .mobile-menu-button {
-    display: block;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--background-color);
-    flex-direction: column;
-    padding: 1rem;
-    box-shadow: var(--shadow-small);
-  }
-
-  .nav-links a {
-    padding: 0.5rem 0;
-  }
-
   .hero h1 {
     font-size: var(--font-size-3xl);
   }
