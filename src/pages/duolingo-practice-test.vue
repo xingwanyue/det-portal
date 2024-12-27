@@ -589,7 +589,7 @@ onMounted(() => {
   --text-color: #1d1f1f; /* 深色文本 */
   --text-light: #4b4f4f; /* 浅色文本 */
   --background-color: #ffffff; /* 纯白背景 */
-  --background-light: #f2fbf6; /* 非常浅的青绿色背景 */
+  --background-light: rgb(255, 244, 241); /* 非常浅的青绿色背景 */
   --gray-light: #f7f9f8; /* 带一点绿色的浅灰 */
   --gray-medium: #e8efec; /* 带一点绿色的中灰 */
   --border-radius: 12px;
