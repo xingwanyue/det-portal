@@ -13,10 +13,7 @@ gtag('event', 'conversion_event_website_visit', {
 });
 
 // 发送ads 访问成功事件
-gtag('config', 'AW-998843228');
-gtag('event', 'conversion', {
-  send_to: 'AW-998843228/Bsl9CLHbppgZENzGpNwD',
-});
+gtag('config', 'AW-11500231799');
 
 window.addEventListener('load', function (event) {
   document.querySelectorAll('button[type*="submit"]').forEach(function (e) {
