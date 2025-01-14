@@ -2,9 +2,9 @@
 // 注册成功
 export const sinupEvent = () => {
   try {
-    window.gtag('event', 'conversion', {
-      send_to: 'AW-998843228/aUz_CLnt3ZYZENzGpNwD',
-    });
+    // window.gtag('event', 'conversion', {
+    //   send_to: 'AW-998843228/aUz_CLnt3ZYZENzGpNwD',
+    // });
     window.gtag('event', 'conversion_event_signup', {
       event_timeout: 2000,
     });
@@ -17,9 +17,9 @@ export const sinupEvent = () => {
 // 开始支付
 export const beginCheckoutEvent = () => {
   try {
-    window.gtag('event', 'conversion', {
-      send_to: 'AW-998843228/75WQCM-nzpYZENzGpNwD',
-    });
+    // window.gtag('event', 'conversion', {
+    //   send_to: 'AW-998843228/75WQCM-nzpYZENzGpNwD',
+    // });
     window.gtag('event', 'conversion_event_beginCheckout', {
       event_timeout: 2000,
     });
@@ -33,7 +33,7 @@ export const beginCheckoutEvent = () => {
 export const payEvent = (transaction_id = '', value = 100) => {
   try {
     window.gtag('event', 'conversion', {
-      send_to: 'AW-998843228/i-HNCPG91pYZENzGpNwD',
+      send_to: 'AW-11500231799/_6xxCMXJ-IUaEPe43usq',
       transaction_id,
       value: value / 100,
       currency: 'CNY',
