@@ -2,9 +2,9 @@
 // 注册成功
 export const sinupEvent = () => {
   try {
-    // window.gtag('event', 'conversion', {
-    //   send_to: 'AW-998843228/aUz_CLnt3ZYZENzGpNwD',
-    // });
+    window.gtag('event', 'conversion', {
+      send_to: 'AW-11500231799/vIyZCL_G64gaEPe43usq',
+    });
     window.gtag('event', 'conversion_event_signup', {
       event_timeout: 2000,
     });
