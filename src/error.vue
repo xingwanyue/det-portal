@@ -12,7 +12,7 @@ useHead({
 </script>
 
 <template>
-  <Layout>
+  <Layout errorPage>
     <div class="errPage">
       <div class="errContent">
         <img src="/img/affiliate/cre_th_w_l.svg" alt="empty" class="left" />

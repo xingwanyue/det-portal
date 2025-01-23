@@ -9,10 +9,16 @@ import vHeader from './header.vue';
 import vFooter from './footer.vue';
 import vChangeLanguagetk from './changeLanguage_TK.vue';
 
+const props = defineProps({
+  errorPage: Boolean,
+}) as any;
+
 const router = useRouter();
 const route = useRoute();
 const { locale } = useI18n();
 const localePath = useLocalePath();
+
+console.log(props.errorPage);
 
 const store = useStore();
 const layouProps = useAttrs();
@@ -28,15 +34,17 @@ const country = countries[locales.indexOf(locale.value)];
 useHead({
   htmlAttrs: { lang: () => locale.value },
   script: [{ src: 'https://accounts.google.com/gsi/client', async: true }],
-  link: [
-    { rel: 'canonical', href: () => `https://www.${domain}${localePath(currentPathWithoutLocale)}` },
-    ...alternates,
-    {
-      rel: 'alternate',
-      hreflang: 'x-default',
-      href: () => `https://www.${domain}${currentPathWithoutLocale}`,
-    },
-  ],
+  link: props.errorPage
+    ? []
+    : [
+        { rel: 'canonical', href: () => `https://www.${domain}${localePath(currentPathWithoutLocale)}` },
+        ...alternates,
+        {
+          rel: 'alternate',
+          hreflang: 'x-default',
+          href: () => `https://www.${domain}${currentPathWithoutLocale}`,
+        },
+      ],
   meta: [{ property: 'og:locale', content: () => `${locale.value}_${country}` }],
 });
 declare global {
