@@ -7,8 +7,8 @@ useHead({
     { rel: 'canonical', href: () => `https://www.${domain}${localePath('/')}` },
     { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}${localePath('/')}` },
   ],
+  meta: [{ name: 'robots', content: 'noindex' }],
 });
-
 </script>
 
 <template>
