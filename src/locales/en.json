@@ -724,7 +724,33 @@
       "desc2": "Once you're a member, simply visit the Courses tab in your member dashboard to download these valuable study guides. Study at your own pace, anywhere and anytime.",
       "desc3": "Ready to begin? Your membership activates instantly, giving you immediate access to these expert-crafted resources.",
       "btn": "Subscribe Now"
-    }
+    },
+    "aqList": [
+      {
+        "name": "What's included in the DET course package?",
+        "content": "The <a href='https://www.detpractice.com/courses'>DET course package</a> includes comprehensive preparation materials for all four test sections: Reading, Listening, Speaking, and Writing. Each section contains multiple interactive courses focusing on specific question types, with real-time feedback and practical strategies."
+      },
+      {
+        "name": "How is this DET course different from other preparation materials?",
+        "content": "This DET course offers a unique combination of video lessons plus scripts, interactive practice (you can find them at our <a href='https://prep.detpractice.com/duolingo-english-test-prep-course'>DET prep hub</a>), and feedback (some question types). It covers every question type on the test and includes specialized prep materials for each section, making it a complete preparation solution."
+      },
+      {
+        "name": "Can I access the DET course materials on my own schedule?",
+        "content": "Yes, all DET course materials are free to all members, and available 24/7. You can study at your own pace and access the materials anytime, anywhere."
+      },
+      {
+        "name": "Does the DET course cover the latest test format?",
+        "content": "Yes, the DET course is regularly updated to align with the current Duolingo English Test format. It includes practice materials for all current question types, including Read and Select, Fill in the Blanks, Interactive Reading, and Speaking tasks."
+      },
+      {
+        "name": "How do I know which DET course section to start with?",
+        "content": "Each section of the DET course (Reading, Listening, Speaking, and Writing) can be accessed independently. You can choose to start with areas where you need the most improvement or follow the suggested course sequence for comprehensive preparation."
+      },
+      {
+        "name": "Are there sample answers included in the DET course?",
+        "content": "Yes, the DET course includes high-scoring sample responses for both Speaking and Writing sections, along with detailed breakdowns of what makes these responses effective. This helps you understand the scoring criteria and improves your performance."
+      }
+    ]
   },
   "forget": {
     "Please_enter": "Please enter your email address",

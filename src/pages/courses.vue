@@ -534,34 +534,34 @@ const gobuyordetail = () => {
 };
 const aqList = ref([
   {
-    name: t('pricing.aqList[0].name'),
-    content: t('pricing.aqList[0].content'),
+    name: t('courses.aqList[0].name'),
+    content: t('courses.aqList[0].content'),
     open: false,
   },
   {
-    name: t('pricing.aqList[1].name'),
-    content: t('pricing.aqList[1].content'),
+    name: t('courses.aqList[1].name'),
+    content: t('courses.aqList[1].content'),
     open: false,
   },
 
   {
-    name: t('pricing.aqList[3].name'),
-    content: t('pricing.aqList[3].content'),
+    name: t('courses.aqList[3].name'),
+    content: t('courses.aqList[3].content'),
     open: false,
   },
   {
-    name: t('pricing.aqList[4].name'),
-    content: t('pricing.aqList[4].content'),
+    name: t('courses.aqList[4].name'),
+    content: t('courses.aqList[4].content'),
     open: false,
   },
   {
-    name: t('pricing.aqList[5].name'),
-    content: t('pricing.aqList[5].content'),
+    name: t('courses.aqList[5].name'),
+    content: t('courses.aqList[5].content'),
     open: false,
   },
   {
-    name: t('pricing.aqList[6].name'),
-    content: `${t('pricing.aqList[6].content1')}`,
+    name: t('courses.aqList[6].name'),
+    content: `${t('courses.aqList[6].content1')}`,
     open: false,
   },
 ]) as any;
@@ -1335,6 +1335,11 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             }
             .answer_content {
               line-height: 26px;
+              :deep(a)
+               {
+                color: #f66442;
+                text-decoration: underline;
+              }
             }
           }
         }
