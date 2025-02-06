@@ -234,7 +234,7 @@ const four_change_left_data = computed(() => {
     },
   ];
 });
-const four_change_right_data_page = computed(() => {
+const four_change_right_data = computed(() => {
   return [
     {
       title: t('courses.four_change_right_data.data1.title'),
@@ -263,7 +263,81 @@ const four_change_right_data_page = computed(() => {
         },
       ],
     },
+    {
+      title: t('courses.four_change_right_data.data2.title'),
+      desc: t('courses.four_change_right_data.data2.desc'),
+      desc2: t('courses.four_change_right_data.data2.desc2'),
+      videoUrlArr: [
+        {
+          title: t('courses.four_change_right_data.data2.video1data.title'),
+          desc: t('courses.four_change_right_data.data2.video1data.desc'),
+          videoUrl: 'https://www.youtube.com/embed/8vbJAoDrIx0',
+        },
+        {
+          title: t('courses.four_change_right_data.data2.video2data.title'),
+          desc: t('courses.four_change_right_data.data2.video2data.desc'),
+          videoUrl: 'https://www.youtube.com/embed/ptt8E7DNyFw',
+        },
+      ],
+    },
+    {
+      title: t('courses.four_change_right_data.data3.title'),
+      desc: t('courses.four_change_right_data.data3.desc'),
+      desc2: t('courses.four_change_right_data.data3.desc2'),
+      videoUrlArr: [
+        {
+          title: t('courses.four_change_right_data.data3.video1data.title'),
+          desc: t('courses.four_change_right_data.data3.video1data.desc'),
+          videoUrl: 'https://www.youtube.com/embed/oTyjWsblbYk',
+        },
+        {
+          title: t('courses.four_change_right_data.data3.video2data.title'),
+          desc: t('courses.four_change_right_data.data3.video2data.desc'),
+          videoUrl: 'https://www.youtube.com/embed/2bj3ViAPkMY',
+        },
+        {
+          title: t('courses.four_change_right_data.data3.video3data.title'),
+          desc: t('courses.four_change_right_data.data3.video3data.desc'),
+          videoUrl: 'https://www.youtube.com/embed/rqPV8cP9EPo?si=mMTNCeu4Jl3zjFeC',
+        },
+        {
+          title: t('courses.four_change_right_data.data3.video4data.title'),
+          desc: t('courses.four_change_right_data.data3.video4data.desc'),
+          videoUrl: 'https://www.youtube.com/embed/sf8FN3GAuHI',
+        },
+      ],
+    },
+    {
+      title: t('courses.four_change_right_data.data4.title'),
+      desc: t('courses.four_change_right_data.data4.desc'),
+      desc2: t('courses.four_change_right_data.data4.desc2'),
+      videoUrlArr: [
+        {
+          title: t('courses.four_change_right_data.data4.video1data.title'),
+          desc: t('courses.four_change_right_data.data4.video1data.desc'),
+          videoUrl: 'https://www.youtube.com/embed/4FMRfkIKsvQ',
+        },
+        {
+          title: t('courses.four_change_right_data.data4.video2data.title'),
+          desc: t('courses.four_change_right_data.data4.video2data.desc'),
+          videoUrl: 'https://www.youtube.com/embed/BgQ5dxC72WY',
+        },
+        {
+          title: t('courses.four_change_right_data.data4.video3data.title'),
+          desc: t('courses.four_change_right_data.data4.video3data.desc'),
+          videoUrl: 'https://www.youtube.com/embed/hJpe-FvLH9I',
+        },
+        {
+          title: t('courses.four_change_right_data.data4.video4data.title'),
+          desc: t('courses.four_change_right_data.data4.video4data.desc'),
+          videoUrl: '000',
+        },
+      ],
+    },
   ];
+});
+const four_change_right_data_page = computed(() => {
+  return [four_change_right_data.value[four_change_right_active_index.value]];
 });
 // 0 未购买 1 已购买sepaking 2 已购买writing 3 已购买sepaking和writing
 // user 的转态 支付后会更新
@@ -522,7 +596,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
                   ? 'one_change_click_dom one_change_click_dom_active'
                   : 'one_change_click_dom'
               "
-              @click="four_change_left_active_index = item.index"
+              @click="four_change_left_active_index_change(index)"
             >
               <div v-if="four_change_left_active_index === item.index" class="one_change_icon">
                 <img :src="`${item.icon_active}`" alt="green_check_icon" />
@@ -530,7 +604,15 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               <div v-else class="one_change_icon">
                 <img :src="`${item.icon}`" alt="green_check_icon" />
               </div>
-              <div class="one_change_title">{{ item.title }}</div>
+              <div
+                :class="
+                  four_change_left_active_index === item.index
+                    ? 'one_change_title one_change_title_active'
+                    : 'one_change_title'
+                "
+              >
+                {{ item.title }}
+              </div>
             </div>
           </div>
           <div class="change_right">
@@ -816,6 +898,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
         }
         .change_left {
           flex-shrink: 0;
+
           .one_change_click_dom {
             display: flex;
             align-items: center;
@@ -840,6 +923,9 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             .one_change_title {
               font-weight: 500;
               font-size: 24px;
+              color: #333333ff;
+            }
+            .one_change_title_active {
               color: #f66442;
             }
           }
