@@ -616,7 +616,11 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             </div>
           </div>
           <div class="change_right">
-            <div v-for="(item, index) in four_change_right_data_page" :key="index">
+            <div
+              v-for="(item, index) in four_change_right_data"
+              :key="index"
+              v-show="four_change_left_active_index === index"
+            >
               <div class="change_right_title">{{ item.title }}</div>
               <div class="change_right_desc">{{ item.desc }}</div>
               <div class="change_right_desc">{{ item.desc2 }}</div>
