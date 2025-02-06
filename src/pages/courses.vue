@@ -786,7 +786,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
   }
   .aqlist_wrapper {
     padding: 120px 30px;
-    border-bottom: 2px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
     @media screen and (max-width: 450px) {
       padding: 60px 15px;
     }
