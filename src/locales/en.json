@@ -717,6 +717,13 @@
           "desc": "DET Practice | One-stop Duolingo English Test Prep Platform: https://www.detpractice.com"
         }
       }
+    },
+    "package_out": {
+      "title": "Duolingo English Test Guide: DET Ultimate Exam Mastery Package",
+      "desc": "Access two premium guides included in your membership: 'DET Speaking Exam Excellence' and 'DET Writing Exam Excellence.' These comprehensive resources are available to all subscribers at no additional cost.",
+      "desc2": "Once you're a member, simply visit the Courses tab in your member dashboard to download these valuable study guides. Study at your own pace, anywhere and anytime.",
+      "desc3": "Ready to begin? Your membership activates instantly, giving you immediate access to these expert-crafted resources.",
+      "btn": "Subscribe Now"
     }
   },
   "forget": {

@@ -644,6 +644,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             </div>
           </div>
         </div>
+
         <!-- **************************************** -->
         <template v-if="buystatus === 0">
           <Vcoursezh :zongheData="zongheData" :buystatus="buystatus" />
@@ -667,6 +668,21 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             </template>
           </Vcoursezh>
         </template>
+      </div>
+    </div>
+    <div class="package_out_wrapper">
+      <div class="package_out">
+        <div class="package_left"></div>
+        <div class="package_right">
+          <div class="title">{{ t('courses.package_out.title') }}</div>
+          <div class="desc">{{ t('courses.package_out.desc') }}</div>
+          <div class="desc">{{ t('courses.package_out.desc2') }}</div>
+          <div class="desc">{{ t('courses.package_out.desc3') }}</div>
+          <div v-if="user.id" class="btn common_btn_hover_bgColor">{{ t('courses.package_out.btn') }}</div>
+          <NuxtLink v-else class="btn common_btn_hover_bgColor" :to="localePath(`/login?url=/courses`)">{{
+            t('courses.package_out.btn')
+          }}</NuxtLink>
+        </div>
       </div>
     </div>
 
@@ -983,8 +999,57 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
           }
         }
       }
+
       .you_can {
         margin-bottom: 16px;
+      }
+    }
+  }
+  .package_out_wrapper {
+    padding: 0px 30px;
+    @media screen and (max-width: 450px) {
+      padding: 0px 15px;
+    }
+    background: #fff4f1;
+    margin-top: 120px;
+
+    .package_out {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.33fr 1fr;
+      gap: 80px;
+      padding: 100px 0;
+      .package_left {
+        border: 1px red solid;
+      }
+      .package_right {
+        .title {
+          font-weight: 500;
+          font-size: 40px;
+          color: #201515;
+          line-height: 48px;
+          margin-bottom: 16px;
+        }
+        .desc {
+          font-weight: 400;
+          font-size: 20px;
+          color: #403f3e;
+          line-height: 28px;
+          margin-bottom: 16px;
+        }
+        .btn {
+          padding: 8px 24px;
+          background: #f66442;
+          border-radius: 20px;
+          font-weight: 400;
+          font-size: 16px;
+          color: #ffffff;
+          margin-top: 8px;
+          width: fit-content;
+          cursor: pointer;
+          display: block;
+        }
       }
     }
   }
