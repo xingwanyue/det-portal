@@ -3,13 +3,10 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { useStore } from '@/store';
 import { useRouter } from 'vue-router';
-import { staticUrlGet, domain, cdn, getToken } from '@/utils';
-import { getVipdataWithToken, getVipdataNoToken } from '@/api';
+import { domain, cdn } from '@/utils';
+
 const router = useRouter();
-import Vtwocourse from '../components/courseBottom.vue';
-import Vcoursezh from '../components/courseZonghe.vue';
-const guide1 = `${cdn}/store/portal/guid/kouyu.webp`;
-const guide2 = `${cdn}/store/portal/guid/xiezuo.webp`;
+
 useSeoMeta({
   title: t('courses.seometa.title'),
   description: t('courses.seometa.description'),
@@ -39,144 +36,7 @@ useHead({
 
 const store = useStore();
 const user = computed(() => store.user);
-// const userchangeFlag = reactive(() => store.user);
 
-const article1 = ref({
-  title: t('courses.article1.title'),
-  list: [
-    {
-      content: t('courses.article1.list[0].content'),
-    },
-    {
-      content: t('courses.article1.list[1].content'),
-    },
-    {
-      content: t('courses.article1.list[2].content'),
-    },
-    {
-      content: t('courses.article1.list[3].content'),
-    },
-    {
-      content: t('courses.article1.list[4].content'),
-    },
-    {
-      content: t('courses.article1.list[5].content'),
-    },
-    {
-      content: t('courses.article1.list[6].content'),
-    },
-    {
-      content: t('courses.article1.list[7].content'),
-    },
-    {
-      content: t('courses.article1.list[8].content'),
-    },
-  ],
-});
-const article2 = ref({
-  title: t('courses.article2.title'),
-  list: [
-    {
-      content: t('courses.article2.list[0].content'),
-    },
-    {
-      content: t('courses.article2.list[1].content'),
-    },
-    {
-      content: t('courses.article2.list[2].content'),
-    },
-    {
-      content: t('courses.article2.list[3].content'),
-    },
-    {
-      content: t('courses.article2.list[4].content'),
-    },
-    {
-      content: t('courses.article2.list[5].content'),
-    },
-    {
-      content: t('courses.article2.list[6].content'),
-    },
-    {
-      content: t('courses.article2.list[7].content'),
-    },
-  ],
-});
-
-const contaceUsList = ref([
-  {
-    icon: '/img/guid/wallet.svg',
-    font: t('courses.contaceUsList[0].font'),
-    tip: t('courses.contaceUsList[0].tip'),
-    btn: t('courses.contaceUsList[0].btn'),
-    btn1: t('courses.contaceUsList[0].btn1'),
-    id: '1',
-  },
-  {
-    icon: '/img/guid/download.svg',
-    font: t('courses.contaceUsList[1].font'),
-    tip: t('courses.contaceUsList[1].tip'),
-    btn: t('courses.contaceUsList[1].btn'),
-    btn1: t('courses.contaceUsList[1].btn1'),
-    id: '2',
-  },
-  {
-    icon: '/img/guid/book.svg',
-    font: t('courses.contaceUsList[2].font'),
-    tip: t('courses.contaceUsList[2].tip'),
-    btn: '',
-    btn1: t('courses.contaceUsList[2].btn1'),
-    id: '3',
-  },
-]);
-const speakDataPage = ref({}) as any;
-const writeDataPage = ref({}) as any;
-
-const { data: downloadhref = {} } = (await useFetch(`${api}/common/courses`, {
-  server: false,
-  lazy: false,
-  transform: (data: any) => {
-    const { DETSpeakingExamExcellence, DETWritingExamExcellence2024 } = data;
-    return { DETSpeakingExamExcellence, DETWritingExamExcellence2024 };
-  },
-})) as any;
-
-// 0 未购买 1 已购买sepaking 2 已购买writing 3 已购买sepaking和writing
-const buystatus = ref(0);
-let zongheData = ref({
-  img: '/img/courses/courses_group.webp',
-  price: 0,
-  priceid: 0,
-  vipPrice: 0,
-  title: t('courses.zhonghe.title'),
-  desc: t('courses.zhonghe.desc'),
-  isbuyed: false,
-  type: 'zonghe',
-  downloadhref: '',
-});
-let bottomData = ref([
-  {
-    img: guide1,
-    price: 0,
-    priceid: 0,
-    vipPrice: 0,
-    title: t('courses.speaking.title'),
-    article: article1 as any,
-    isbuyed: false,
-    type: 'speaking',
-    downloadhref: '',
-  },
-  {
-    img: guide2,
-    price: 0,
-    priceid: 0,
-    title: t('courses.writing.title'),
-    article: article2 as any,
-    isbuyed: false,
-    type: 'writing',
-    downloadhref: '',
-  },
-]);
 const topVideoFont = computed(() => {
   return [
     {
@@ -338,193 +198,7 @@ const four_change_right_data = computed(() => {
     },
   ];
 });
-const four_change_right_data_page = computed(() => {
-  return [four_change_right_data.value[four_change_right_active_index.value]];
-});
-// 0 未购买 1 已购买sepaking 2 已购买writing 3 已购买sepaking和writing
-// user 的转态 支付后会更新
-const changePageData = (zongheDataarg: any, speakData: any, writeData: any) => {
-  if (user.value.speak === 1 && user.value.write === 1) {
-    buystatus.value = 3;
-  } else if (user.value.speak === 1) {
-    buystatus.value = 1;
-  } else if (user.value.write === 1) {
-    buystatus.value = 2;
-  } else {
-    buystatus.value = 0;
-  }
-  if (buystatus.value === 0) {
-    zongheData.value = {
-      img: '/img/courses/courses_group.webp',
-      price: zongheDataarg?.price,
-      priceid: zongheDataarg?.id,
-      vipPrice: zongheDataarg?.vipPrice,
-      title: t('courses.zhonghe.title'),
-      desc: t('courses.zhonghe.desc'),
-      isbuyed: false,
-      type: 'zonghe',
-      downloadhref: '',
-    };
-    bottomData.value = [
-      {
-        img: guide1,
-        price: speakData?.price,
-        priceid: speakData?.id,
-        vipPrice: speakData?.vipPrice,
-        title: t('courses.speaking.title'),
-        article: article1,
-        isbuyed: false,
-        type: 'speaking',
-        downloadhref: downloadhref.value?.DETSpeakingExamExcellence,
-      },
-      {
-        img: guide2,
-        price: writeData?.price,
-        priceid: writeData?.id,
-        vipPrice: writeData?.vipPrice,
-        title: t('courses.writing.title'),
-        article: article2,
-        isbuyed: false,
-        type: 'writing',
-        downloadhref: downloadhref.value?.DETWritingExamExcellence2024,
-      },
-    ];
-  } else if (buystatus.value === 1) {
-    zongheData.value = {
-      img: guide1,
-      price: speakData?.price,
-      priceid: speakData?.id,
-      vipPrice: speakData?.vipPrice,
-      title: t('courses.speaking.title'),
-      desc: '',
-      isbuyed: true,
-      type: 'speaking',
-      downloadhref: downloadhref.value?.DETSpeakingExamExcellence,
-    };
-    bottomData.value = [
-      {
-        img: guide2,
-        price: writeData?.price,
-        priceid: writeData?.id,
-        vipPrice: writeData?.vipPrice,
-        title: t('courses.writing.title'),
-        article: article2,
-        isbuyed: false,
-        type: 'writing',
-        downloadhref: downloadhref.value?.DETWritingExamExcellence2024,
-      },
-    ];
-  } else if (buystatus.value === 2) {
-    zongheData.value = {
-      img: guide2,
-      price: writeData?.price,
-      priceid: writeData?.id,
-      vipPrice: writeData?.vipPrice,
-      title: t('courses.writing.title'),
-      desc: '',
-      isbuyed: true,
-      type: 'writing',
-      downloadhref: downloadhref.value?.DETWritingExamExcellence2024,
-    };
-    bottomData.value = [
-      {
-        img: guide1,
-        price: speakData?.price,
-        priceid: speakData?.id,
-        vipPrice: speakData?.vipPrice,
-        title: t('courses.speaking.title'),
-        article: article1,
-        isbuyed: false,
-        type: 'speaking',
-        downloadhref: downloadhref.value?.DETSpeakingExamExcellence,
-      },
-    ];
-  } else if (buystatus.value === 3) {
-    zongheData.value = {
-      img: '/img/courses/courses_group.webp',
-      price: 123456,
-      priceid: 123456,
-      vipPrice: 123456,
-      title: t('courses.zhonghe.title'),
-      desc: 'The course package includes the "DET Speaking Exam Excellence" and the "DET Writing Exam Excellence." Upon subscription, you will be able to download the guides at any time and study them with ease, anytime and anywhere. Buy Now Subscription takes effect immediately. Scroll up on the page, view, and click to download the course to start learning.',
-      isbuyed: true,
-      type: 'zonghe',
-      downloadhref: '',
-    };
-    bottomData.value = [
-      {
-        img: guide1,
-        price: speakData?.price,
-        priceid: speakData?.id,
-        vipPrice: speakData?.vipPrice,
-        title: t('courses.speaking.title'),
-        article: [],
-        isbuyed: true,
-        type: 'speaking',
-        downloadhref: downloadhref.value.DETSpeakingExamExcellence,
-      },
-      {
-        img: guide2,
-        price: writeData?.price,
-        priceid: writeData?.id,
-        vipPrice: writeData?.vipPrice,
-        title: t('courses.writing.title'),
-        article: [],
-        isbuyed: true,
-        type: 'writing',
-        downloadhref: downloadhref.value.DETWritingExamExcellence2024,
-      },
-    ];
-  }
-};
 
-const buyedChangePage = async () => {
-  if (user.value.id) {
-    const token = await getToken();
-    const {
-      data: { data },
-    } = await getVipdataWithToken(token);
-    const writeData = data.find((item: any) => item.write === 1 && !item.speak);
-    const speakData = data.find((item: any) => item.speak === 1 && !item.write);
-    const zongheDataDataarg = data.find((item: any) => item.speak === 1 && item.write === 1);
-    speakDataPage.value = speakData;
-    writeDataPage.value = writeData;
-
-    changePageData(zongheDataDataarg, speakData, writeData);
-  } else {
-    const {
-      data: { data },
-    } = await getVipdataNoToken();
-    const writeData = data.find((item: any) => item.write === 1 && !item.speak);
-    const speakData = data.find((item: any) => item.speak === 1 && !item.write);
-    const zongheDataDataarg = data.find((item: any) => item.speak === 1 && item.write === 1);
-
-    speakDataPage.value = speakData;
-    writeDataPage.value = writeData;
-
-    changePageData(zongheDataDataarg, speakData, writeData);
-  }
-};
-
-watch(
-  () => user.value.write,
-  () => {
-    buyedChangePage();
-  },
-);
-watch(
-  () => user.value.speak,
-  () => {
-    buyedChangePage();
-  },
-);
-onMounted(() => {
-  buyedChangePage();
-});
-
-const buyMembership = (id: number) => {
-  store.stripePay({ vipId: id });
-};
 const gobuyordetail = () => {
   if (user.value.speak === 1 && user.value.write === 1) {
     router.push('/member/detail');
@@ -557,11 +231,6 @@ const aqList = ref([
   {
     name: t('courses.aqList[5].name'),
     content: t('courses.aqList[5].content'),
-    open: false,
-  },
-  {
-    name: t('courses.aqList[6].name'),
-    content: `${t('courses.aqList[6].content1')}`,
     open: false,
   },
 ]) as any;
@@ -691,28 +360,6 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
         </div>
 
         <!-- **************************************** -->
-        <template v-if="buystatus === 0">
-          <Vcoursezh :zongheData="zongheData" :buystatus="buystatus" />
-          <div class="you_can">{{ $t('courses.dandumai') }}</div>
-          <Vtwocourse :bottomData="bottomData" :buystatus="buystatus"
-        /></template>
-        <template v-if="buystatus === 1">
-          <Vcoursezh :zongheData="zongheData" :buystatus="buystatus" />
-          <div class="you_can">{{ $t('courses.writing5') }}</div>
-          <Vtwocourse :bottomData="bottomData" :buystatus="buystatus"
-        /></template>
-        <template v-if="buystatus === 2">
-          <Vcoursezh :zongheData="zongheData" :buystatus="buystatus" />
-          <div class="you_can">{{ $t('courses.speaking5') }}</div>
-          <Vtwocourse :bottomData="bottomData" :buystatus="buystatus"
-        /></template>
-        <template v-if="buystatus === 3">
-          <Vcoursezh :zongheData="zongheData" :buystatus="buystatus">
-            <template #footer>
-              <Vtwocourse :bottomData="bottomData" :buystatus="buystatus" />
-            </template>
-          </Vcoursezh>
-        </template>
       </div>
     </div>
     <div class="package_out_wrapper">
@@ -731,114 +378,6 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
           <NuxtLink v-else class="btn common_btn_hover_bgColor" :to="localePath(`/login?url=/courses`)">{{
             t('courses.package_out.btn')
           }}</NuxtLink>
-        </div>
-      </div>
-    </div>
-
-    <div class="part3_wrapper">
-      <div class="part3">
-        <div class="title">{{ $t('courses.pagefont.How_to') }}</div>
-        <div class="three_out">
-          <div v-for="(item, index) in contaceUsList" :key="index" class="one_card">
-            <div class="icon">
-              <img :src="`${item.icon}`" :alt="$t('courses.pagefont.alt')" />
-            </div>
-            <img
-              src="/img/guid/Double_Right_Arrow.svg"
-              class="Double_Right_Arrow"
-              :alt="$t('courses.pagefont.Double_Right_Arrow')"
-            />
-            <div class="method_font">{{ item.font }}</div>
-            <div class="method_tip">{{ item.tip }}</div>
-            <template v-if="item.id === '1'">
-              <template v-if="user.id">
-                <div
-                  v-if="item.btn"
-                  @click="buyMembership(speakDataPage?.id)"
-                  :class="user.speak === 1 ? 'btn disbtn' : 'btn'"
-                >
-                  {{ item.btn }}
-                </div>
-                <div
-                  v-if="item.btn1"
-                  @click="buyMembership(writeDataPage?.id)"
-                  :class="user.write === 1 ? 'btn disbtn' : 'btn'"
-                >
-                  {{ item.btn1 }}
-                </div>
-              </template>
-              <template v-else>
-                <NuxtLink v-if="item.btn" :to="localePath(`/login?url=/courses`)" class="btn" rel="nofollow">
-                  {{ item.btn }}
-                </NuxtLink>
-                <NuxtLink v-if="item.btn1" :to="localePath(`/login?url=/courses`)" class="btn" rel="nofollow">
-                  {{ item.btn1 }}
-                </NuxtLink>
-              </template>
-            </template>
-
-            <template v-if="item.id === '2'">
-              <template v-if="user.id">
-                <template v-if="user.speak === 1">
-                  <a
-                    v-if="item.btn"
-                    :href="staticUrlGet(`/${downloadhref.DETSpeakingExamExcellence}`)"
-                    class="btn"
-                    target="_blank"
-                    >{{ item.btn }}
-                  </a>
-                </template>
-                <template v-else>
-                  <div v-if="item.btn" class="disbtn">{{ item.btn }}</div>
-                </template>
-                <template v-if="user.write === 1">
-                  <a
-                    v-if="item.btn1"
-                    :href="staticUrlGet(`/${downloadhref.DETWritingExamExcellence2024}`)"
-                    class="btn"
-                    target="_blank"
-                    >{{ item.btn1 }}
-                  </a>
-                </template>
-                <template v-else>
-                  <div v-if="item.btn1" class="disbtn">
-                    {{ item.btn1 }}
-                  </div>
-                </template>
-              </template>
-              <template v-else>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/courses`)" rel="nofollow">
-                  {{ item.btn }}
-                </NuxtLink>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/courses`)" rel="nofollow">
-                  {{ item.btn1 }}
-                </NuxtLink>
-              </template>
-            </template>
-            <template v-if="item.id === '3'">
-              <div class="btnNone">{{ $t('courses.pagefont.spa') }}</div>
-              <template v-if="user.id">
-                <template v-if="user.speak === 1">
-                  <NuxtLink class="btn" :to="localePath(`/listen`)">
-                    {{ item.btn1 }}
-                  </NuxtLink>
-                </template>
-                <template v-else>
-                  <div class="disbtn">
-                    {{ item.btn1 }}
-                  </div>
-                </template>
-              </template>
-              <template v-else>
-                <NuxtLink class="btn" :to="localePath(`/login?url=/listen`)" rel="nofollow">
-                  {{ item.btn1 }}
-                </NuxtLink></template
-              >
-            </template>
-          </div>
-        </div>
-        <div class="tips">
-          {{ $t('courses.pagefont.tips') }}
         </div>
       </div>
     </div>
@@ -862,17 +401,6 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               <div class="answer_content" v-html="item.content"></div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="orange_block_wrapper">
-      <div class="orange_block">
-        <div class="orange_title">{{ $t('courses.pagefont.orange_title') }}</div>
-        <div class="team_desc">
-          {{ $t('courses.pagefont.team_desc') }}
-        </div>
-        <div class="team_img">
-          <img :src="team_bg" :alt="$t('courses.pagefont.Elite_Language_Educators')" />
         </div>
       </div>
     </div>
@@ -1257,11 +785,12 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
     }
   }
   .aqlist_wrapper {
-    padding: 0px 30px;
+    padding: 120px 30px;
+    border-bottom: 2px solid #e9e9e9;
     @media screen and (max-width: 450px) {
-      padding: 0px 15px;
+      padding: 60px 15px;
     }
-    margin-top: 60px;
+
     @media (max-width: 450px) {
       margin-top: 30px;
     }
@@ -1335,8 +864,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             }
             .answer_content {
               line-height: 26px;
-              :deep(a)
-               {
+              :deep(a) {
                 color: #f66442;
                 text-decoration: underline;
               }
@@ -1354,55 +882,6 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               transform: rotate(180deg);
             }
           }
-        }
-      }
-    }
-  }
-  .orange_block_wrapper {
-    padding: 0px 30px;
-    @media screen and (max-width: 450px) {
-      padding: 0px 15px;
-    }
-    background: #f66442;
-    .orange_block {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding-top: 100px;
-      @media screen and (max-width: 450px) {
-        padding-top: 50px;
-      }
-      .orange_title {
-        font-weight: 500;
-        font-size: 40px;
-        @media screen and (max-width: 450px) {
-          font-size: 22px;
-        }
-        color: #ffffff;
-        text-align: center;
-        margin: 0;
-      }
-      .team_desc {
-        margin: 0 auto;
-        font-weight: 400;
-        font-size: 20px;
-        @media screen and (max-width: 450px) {
-          font-size: 14px;
-        }
-        color: #ffffff;
-        max-width: 900px;
-        line-height: 28px;
-        text-align: center;
-        margin-top: 32px;
-      }
-      .team_img {
-        margin: 0 auto;
-        max-width: 1078px;
-        margin-top: 48px;
-        display: flex;
-
-        img {
-          width: 100%;
-          height: auto;
         }
       }
     }
