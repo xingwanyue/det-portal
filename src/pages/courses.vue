@@ -2,8 +2,10 @@
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { useStore } from '@/store';
+import { useRouter } from 'vue-router';
 import { staticUrlGet, domain, cdn, getToken } from '@/utils';
 import { getVipdataWithToken, getVipdataNoToken } from '@/api';
+const router = useRouter();
 import Vtwocourse from '../components/courseBottom.vue';
 import Vcoursezh from '../components/courseZonghe.vue';
 const guide1 = `${cdn}/store/portal/guid/kouyu.webp`;
@@ -523,6 +525,49 @@ onMounted(() => {
 const buyMembership = (id: number) => {
   store.stripePay({ vipId: id });
 };
+const gobuyordetail = () => {
+  if (user.value.speak === 1 && user.value.write === 1) {
+    router.push('/member/detail');
+  } else {
+    router.push(localePath('/pricing'));
+  }
+};
+const aqList = ref([
+  {
+    name: t('pricing.aqList[0].name'),
+    content: t('pricing.aqList[0].content'),
+    open: false,
+  },
+  {
+    name: t('pricing.aqList[1].name'),
+    content: t('pricing.aqList[1].content'),
+    open: false,
+  },
+
+  {
+    name: t('pricing.aqList[3].name'),
+    content: t('pricing.aqList[3].content'),
+    open: false,
+  },
+  {
+    name: t('pricing.aqList[4].name'),
+    content: t('pricing.aqList[4].content'),
+    open: false,
+  },
+  {
+    name: t('pricing.aqList[5].name'),
+    content: t('pricing.aqList[5].content'),
+    open: false,
+  },
+  {
+    name: t('pricing.aqList[6].name'),
+    content: `${t('pricing.aqList[6].content1')}`,
+    open: false,
+  },
+]) as any;
+const openOrCloseOneQuestion = (item: any) => {
+  item.open = !item.open;
+};
 
 // 引入cdn图片
 
@@ -672,13 +717,17 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
     </div>
     <div class="package_out_wrapper">
       <div class="package_out">
-        <div class="package_left"></div>
+        <div class="package_left">
+          <img src="/img/courses/courses_group.webp" alt="courses_group.webp" />
+        </div>
         <div class="package_right">
           <div class="title">{{ t('courses.package_out.title') }}</div>
           <div class="desc">{{ t('courses.package_out.desc') }}</div>
           <div class="desc">{{ t('courses.package_out.desc2') }}</div>
           <div class="desc">{{ t('courses.package_out.desc3') }}</div>
-          <div v-if="user.id" class="btn common_btn_hover_bgColor">{{ t('courses.package_out.btn') }}</div>
+          <div v-if="user.id" class="btn common_btn_hover_bgColor" @click="gobuyordetail">
+            {{ t('courses.package_out.btn') }}
+          </div>
           <NuxtLink v-else class="btn common_btn_hover_bgColor" :to="localePath(`/login?url=/courses`)">{{
             t('courses.package_out.btn')
           }}</NuxtLink>
@@ -790,6 +839,29 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
         </div>
         <div class="tips">
           {{ $t('courses.pagefont.tips') }}
+        </div>
+      </div>
+    </div>
+
+    <div class="aqlist_wrapper">
+      <div class="part2">
+        <div class="title">{{ $t('pricing.pagefont.faq') }}</div>
+        <div class="list_out">
+          <div
+            v-for="(item, index) in aqList"
+            :key="index"
+            :class="[item.open ? 'one_question one_question_open' : 'one_question']"
+          >
+            <div class="header" @click="openOrCloseOneQuestion(item)">
+              <div class="icon">
+                <img src="/img/pricing/arrow_down.svg" :alt="$t('pricing.pagefont.arrow_down')" />
+              </div>
+              <div class="qusetion">{{ item.name }}</div>
+            </div>
+            <div v-if="item.open" class="answer">
+              <div class="answer_content" v-html="item.content"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1020,8 +1092,15 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
       grid-template-columns: 0.33fr 1fr;
       gap: 80px;
       padding: 100px 0;
+      @media screen and (max-width: 450px) {
+        padding: 50px 15px;
+        grid-template-columns: 1fr;
+      }
       .package_left {
-        border: 1px red solid;
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
       .package_right {
         .title {
@@ -1174,6 +1253,103 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
         color: #666666;
         margin-top: 16px;
         line-height: 22px;
+      }
+    }
+  }
+  .aqlist_wrapper {
+    padding: 0px 30px;
+    @media screen and (max-width: 450px) {
+      padding: 0px 15px;
+    }
+    margin-top: 60px;
+    @media (max-width: 450px) {
+      margin-top: 30px;
+    }
+
+    .part2 {
+      max-width: 1200px;
+      margin: 0 auto;
+      // overflow: hidden;
+
+      .title {
+        font-weight: 500;
+        font-size: 40px;
+        color: #201515;
+        text-align: center;
+
+        @media (max-width: 450px) {
+          font-size: 20px;
+        }
+      }
+
+      .list_out {
+        // border: 1px red solid;
+        margin-top: 56px;
+
+        .one_question {
+          padding: 18px 24px;
+          background: #f2f4f6;
+          border-radius: 8px;
+
+          margin-bottom: 8px;
+
+          .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            grid-gap: 24px;
+            cursor: pointer;
+
+            .icon {
+              width: 16px;
+              height: 16px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .qusetion {
+              font-weight: 500;
+              font-size: 20px;
+              color: #201515;
+
+              @media (max-width: 662px) {
+                font-size: 16px;
+              }
+            }
+          }
+
+          .answer {
+            font-weight: 400;
+            font-size: 18px;
+            color: #201515;
+            margin-top: 24px;
+            padding-left: 44px;
+            :deep(.email_address) {
+              color: #f66442;
+              text-decoration: underline;
+            }
+
+            @media (max-width: 662px) {
+              font-size: 16px;
+            }
+            .answer_content {
+              line-height: 26px;
+            }
+          }
+        }
+
+        .one_question_open {
+          background: #ffffff;
+          border: 1px solid #e9e9e9;
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
+
+          .header {
+            .icon {
+              transform: rotate(180deg);
+            }
+          }
+        }
       }
     }
   }
