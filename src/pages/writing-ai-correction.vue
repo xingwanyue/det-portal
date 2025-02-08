@@ -3,7 +3,8 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { urlGet, domain, cdn, host } from '@/utils';
 import { platformData } from '@/api';
-import vHighscorewriting from '../components/highscorewritingnew.vue';
+import vEmbark from '../components/embark.vue';
+import vCommonFaqList from '../components/commonFaqList.vue';
 import { useStore } from '@/store';
 const localePath = useLocalePath();
 const store = useStore();
@@ -56,6 +57,47 @@ const isLoad1 = ref(false);
 const onLoad1 = () => {
   isLoad1.value = true;
 };
+const aqtitle = computed(() => {
+  return t('correction.aqtitle');
+});
+const aqlist = computed(() => [
+  {
+    name: t('correction.aqlistfont[0].q'),
+    content: t('correction.aqlistfont[0].a'),
+    open: false,
+  },
+  {
+    name: t('correction.aqlistfont[1].q'),
+    content: t('correction.aqlistfont[1].a'),
+    open: false,
+  },
+  {
+    name: t('correction.aqlistfont[2].q'),
+    content: t('correction.aqlistfont[2].a'),
+    open: false,
+  },
+  {
+    name: t('correction.aqlistfont[3].q'),
+    content: t('correction.aqlistfont[3].a'),
+    open: false,
+  },
+  {
+    name: t('correction.aqlistfont[4].q'),
+    content: t('correction.aqlistfont[4].a'),
+    open: false,
+  },
+  {
+    name: t('correction.aqlistfont[5].q'),
+    content: t('correction.aqlistfont[5].a'),
+    open: false,
+  },
+]);
+const embarkfont = computed(() => {
+  return {
+    title: t('correction.embarkfont.title'),
+    btnText: t('correction.embarkfont.btnText'),
+  };
+});
 // 引入cdn图片
 const service_banner = `${cdn}/store/portal/products/service_banner.png`;
 const service_picture1 = `${cdn}/store/portal/products/writing_picture1.png`;
@@ -73,6 +115,9 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
               <div class="big_title">
                 <h1>{{ $t('correction.h1') }}</h1>
               </div>
+              <h2 class="desc_new">
+                {{ $t('correction.descnew') }}
+              </h2>
               <div class="desc">
                 {{ $t('correction.desc') }}
               </div>
@@ -279,7 +324,9 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
         </div>
       </div>
     </div>
-    <v-highscorewriting />
+
+    <v-common-faq-list :aqlist="aqlist" :aqtitle="aqtitle" />
+    <v-embark :title="embarkfont.title" :btnText="embarkfont.btnText" :gourl="'/correct'" />
   </div>
 </template>
 
