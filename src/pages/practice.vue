@@ -5,6 +5,7 @@ import { urlGet, domain, cdn, host } from '@/utils';
 import { useStore } from '@/store';
 import { platformData } from '@/api';
 import vEmbark from '../components/embark.vue';
+import vCommonFaqList from '../components/commonFaqList.vue';
 
 const localePath = useLocalePath();
 const store = useStore();
@@ -69,6 +70,47 @@ const isLoad4 = ref(false);
 const onLoad4 = () => {
   isLoad4.value = true;
 };
+const aqtitle = computed(() => {
+  return t('practice.aqtitle');
+});
+const aqlist = computed(() => [
+  {
+    name: t('practice.aqlistfont[0].q'),
+    content: t('practice.aqlistfont[0].a'),
+    open: false,
+  },
+  {
+    name: t('practice.aqlistfont[1].q'),
+    content: t('practice.aqlistfont[1].a'),
+    open: false,
+  },
+  {
+    name: t('practice.aqlistfont[2].q'),
+    content: t('practice.aqlistfont[2].a'),
+    open: false,
+  },
+  {
+    name: t('practice.aqlistfont[3].q'),
+    content: t('practice.aqlistfont[3].a'),
+    open: false,
+  },
+  {
+    name: t('practice.aqlistfont[4].q'),
+    content: t('practice.aqlistfont[4].a'),
+    open: false,
+  },
+  {
+    name: t('practice.aqlistfont[5].q'),
+    content: t('practice.aqlistfont[5].a'),
+    open: false,
+  },
+]);
+const embarkfont = computed(() => {
+  return {
+    title: t('practice.embarkfont.title'),
+    btnText: t('practice.embarkfont.btnText'),
+  };
+});
 // 引入cdn图片
 const bank_banner = `${cdn}/store/portal/products/bank_banner.png`;
 const bank_picture1 = `${cdn}/store/portal/products/bank_picture1.png`;
@@ -86,6 +128,9 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
               <div class="big_title">
                 <h1>{{ $t('practice.h1') }}</h1>
               </div>
+              <h2 class="desc_new">
+                {{ $t('practice.descnew') }}
+              </h2>
               <div class="desc">
                 {{ $t('practice.desc') }}
               </div>
@@ -142,6 +187,30 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                 </template>
               </el-skeleton>
             </div>
+          </div>
+        </div>
+        <div v-if="false" class="video_prod_out_common">
+          <div class="video_title">
+            {{ t('practice.video.title') }}
+          </div>
+          <div class="video_desc">
+            {{ t('practice.video.desc') }}
+          </div>
+          <div class="video_content">
+            <video
+              width="100%"
+              height="100%"
+              muted
+              autoplay
+              loop
+              controlslist="nodownload"
+              webkit-playsinline="true"
+              playsinline="true"
+              x5-video-player-fullscreen="true"
+              x5-video-orientation="portraint"
+              x5-video-player-type="h5"
+              src="/video/video_practice.mp4"
+            ></video>
           </div>
         </div>
         <div class="content">
@@ -288,7 +357,8 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
         </div>
       </div>
     </div>
-    <v-embark />
+    <v-common-faq-list :aqlist="aqlist" :aqtitle="aqtitle" />
+    <v-embark :title="embarkfont.title" :btnText="embarkfont.btnText" />
   </div>
 </template>
 

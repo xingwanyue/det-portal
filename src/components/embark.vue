@@ -7,6 +7,7 @@ const user = computed(() => store.user);
 const props = defineProps({
   title: String,
   btnText: String,
+  gourl: String,
 }) as any;
 </script>
 
@@ -25,7 +26,7 @@ const props = defineProps({
         <div>
           <NuxtLink
             class="common_btn common_btn_hover_bgColor yellow"
-            :to="localePath(`/login?url=${urlGet('/home')}`)"
+            :to="localePath(`/login?url=${props.gourl ? urlGet(props.gourl) : urlGet('/home')}`)"
             rel="nofollow"
           >
             {{ props.btnText || $t('embark.Start_Now') }}
@@ -34,7 +35,10 @@ const props = defineProps({
       </div>
       <div v-else class="two_btn_out">
         <div>
-          <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`${urlGet('/home')}`)">
+          <NuxtLink
+            class="common_btn common_btn_hover_bgColor yellow"
+            :to="localePath(`${props.gourl ? urlGet(props.gourl) : urlGet('/home')}`)"
+          >
             {{ props.btnText || $t('embark.Start_Now') }}
           </NuxtLink>
         </div>

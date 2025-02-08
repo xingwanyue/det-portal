@@ -4,7 +4,9 @@ const { t } = useI18n();
 import { urlGet, host, domain, cdn } from '@/utils';
 import { useStore } from '@/store';
 import { platformData } from '@/api';
-import vEasyexam from '../components/easyexam.vue';
+
+import vEmbark from '../components/embark.vue';
+import vCommonFaqList from '../components/commonFaqList.vue';
 
 const vsImgBig = `${cdn}/store/portal/products/vs_img_big.png`;
 const vsImgSmall = `${cdn}/store/portal/products/vs_img_small.png`;
@@ -58,6 +60,47 @@ const isLoad4 = ref(false);
 const onLoad4 = () => {
   isLoad4.value = true;
 };
+const aqtitle = computed(() => {
+  return t('mockexam.aqtitle');
+});
+const aqlist = computed(() => [
+  {
+    name: t('mockexam.aqlistfont[0].q'),
+    content: t('mockexam.aqlistfont[0].a'),
+    open: false,
+  },
+  {
+    name: t('mockexam.aqlistfont[1].q'),
+    content: t('mockexam.aqlistfont[1].a'),
+    open: false,
+  },
+  {
+    name: t('mockexam.aqlistfont[2].q'),
+    content: t('mockexam.aqlistfont[2].a'),
+    open: false,
+  },
+  {
+    name: t('mockexam.aqlistfont[3].q'),
+    content: t('mockexam.aqlistfont[3].a'),
+    open: false,
+  },
+  {
+    name: t('mockexam.aqlistfont[4].q'),
+    content: t('mockexam.aqlistfont[4].a'),
+    open: false,
+  },
+  {
+    name: t('mockexam.aqlistfont[5].q'),
+    content: t('mockexam.aqlistfont[5].a'),
+    open: false,
+  },
+]);
+const embarkfont = computed(() => {
+  return {
+    title: t('mockexam.embarkfont.title'),
+    btnText: t('mockexam.embarkfont.btnText'),
+  };
+});
 // 引入cdn图片
 const mock_banner = `${cdn}/store/portal/products/mock_banner.png`;
 const mock_picture1 = `${cdn}/store/portal/products/mock_picture1.png`;
@@ -75,6 +118,9 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
               <div class="big_title">
                 <h1>{{ $t('mockexam.h1') }}</h1>
               </div>
+              <h2 class="desc_new">
+                {{ $t('mockexam.descnew') }}
+              </h2>
               <div class="desc">
                 {{ $t('mockexam.desc') }}
               </div>
@@ -134,6 +180,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
             </div>
           </div>
         </div>
+
         <div class="content">
           <div class="one_card img_left">
             <div class="one_card_left">
@@ -288,7 +335,9 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
         </div>
       </div>
     </div>
-    <v-easyexam />
+
+    <v-common-faq-list :aqlist="aqlist" :aqtitle="aqtitle" />
+    <v-embark :title="embarkfont.title" :btnText="embarkfont.btnText" :gourl="'/exam'" />
   </div>
 </template>
 
