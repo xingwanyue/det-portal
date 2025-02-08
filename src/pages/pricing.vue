@@ -2,8 +2,9 @@
 import { useI18n } from 'vue-i18n';
 import { formatCash, getToken } from '@/utils';
 const { t } = useI18n();
-import { getVipdataNoToken, getVipdataWithToken } from '@/api';
+import { getVipdataNoToken, getVipdataWithToken, getSetting } from '@/api';
 import vMembershipprice from '../components/membershipprice.vue';
+import vMembershippricepackages from '../components/membershipprice_packages.vue';
 import { staticUrlGet, domain, host, cdn } from '@/utils';
 import { useStore } from '@/store';
 useSeoMeta({
@@ -38,6 +39,7 @@ const store = useStore();
 const user = computed(() => store.user);
 const userChangeFlag = ref(() => store.user);
 const isVip = computed(() => store.isVip);
+const savetagnumber = ref('');
 
 const onlycorrectTimesid = ref(0);
 const onlycorrectTimesprice = ref(0);
@@ -79,6 +81,7 @@ const aqList = ref([
     open: false,
   },
 ]) as any;
+
 const vipsData = ref({}) as any;
 
 const getData = async () => {
@@ -86,8 +89,8 @@ const getData = async () => {
     const {
       data: { data },
     } = await getVipdataNoToken();
-    const membershipArr = [] as any;
-    const moreServiceArr = [] as any;
+    const practiceArr = [] as any;
+    const packagesArr = [] as any;
 
     const correctSelectBuyTimes = data.filter((item: any) => item.type === '3');
     const mockSelectBuyTimes = data.filter((item: any) => item.type === '4');
@@ -98,23 +101,37 @@ const getData = async () => {
         onlycorrectTimesprice.value = correctSelectBuyTimes[1].price;
         item.correctPrice = correctSelectBuyTimes[1].price;
         item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
-        membershipArr.push(item);
+        practiceArr.push(item);
       } else if (item.type === '2') {
-        if (item.write === 1 && item.speak === 1 && item.disabled) {
-          moreServiceArr.push(item);
-        } else {
-          moreServiceArr.push(item);
+        packagesArr.push({
+          ...item,
+          qylist: [
+            t('pricing.packagesallQy.qy1', { times: item.examNum }),
+            t('pricing.packagesallQy.qy2', { times: item.correctNum }),
+            t('pricing.packagesallQy.qy3'),
+            t('pricing.packagesallQy.qy4'),
+            t('pricing.packagesallQy.qy5'),
+            t('pricing.packagesallQy.qy6'),
+            t('pricing.packagesallQy.qy7'),
+            t('pricing.packagesallQy.qy8'),
+          ],
+        });
+        // 如果item.tag = Pro 向qylist 第4 5 位置插入
+        console.log(item);
+        if (item.tag === 'Pro') {
+          packagesArr[packagesArr.length - 1].qylist.splice(3, 0, t('pricing.packagesallQy.qyspeak'));
+          packagesArr[packagesArr.length - 1].qylist.splice(4, 0, t('pricing.packagesallQy.qywrite'));
         }
       }
     });
-    vipsData.value = { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
+    vipsData.value = { practiceArr, packagesArr, correctSelectBuyTimes, mockSelectBuyTimes };
   } else {
     const token = await getToken();
     const {
       data: { data },
     } = await getVipdataWithToken(token);
-    const membershipArr = [] as any;
-    const moreServiceArr = [] as any;
+    const practiceArr = [] as any;
+    const packagesArr = [] as any;
 
     const correctSelectBuyTimes = data.filter((item: any) => item.type === '3');
     const mockSelectBuyTimes = data.filter((item: any) => item.type === '4');
@@ -125,21 +142,42 @@ const getData = async () => {
         onlycorrectTimesprice.value = correctSelectBuyTimes[1].price;
         item.correctPrice = correctSelectBuyTimes[1].price;
         item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
-        membershipArr.push(item);
+
+        practiceArr.push(item);
       } else if (item.type === '2') {
-        if (item.write === 1 && item.speak === 1 && item.disabled) {
-          moreServiceArr.push(item);
-        } else {
-          moreServiceArr.push(item);
+        packagesArr.push({
+          ...item,
+          qylist: [
+            t('pricing.packagesallQy.qy1', { times: item.examNum }),
+            t('pricing.packagesallQy.qy2', { times: item.correctNum }),
+            t('pricing.packagesallQy.qy3'),
+            t('pricing.packagesallQy.qy4'),
+            t('pricing.packagesallQy.qy5'),
+            t('pricing.packagesallQy.qy6'),
+            t('pricing.packagesallQy.qy7'),
+            t('pricing.packagesallQy.qy8'),
+          ],
+        });
+        // 如果item.tag = Pro 向qylist 第4 5 位置插入
+        if (item.tag === 'Pro') {
+          packagesArr[packagesArr.length - 1].qylist.splice(3, 0, t('pricing.packagesallQy.qyspeak'));
+          packagesArr[packagesArr.length - 1].qylist.splice(4, 0, t('pricing.packagesallQy.qywrite'));
         }
       }
     });
-    vipsData.value = { membershipArr, moreServiceArr, correctSelectBuyTimes, mockSelectBuyTimes };
+    vipsData.value = { practiceArr, packagesArr, correctSelectBuyTimes, mockSelectBuyTimes };
   }
+};
+const getsavenum = async () => {
+  const {
+    data: { data },
+  } = await getSetting();
+  savetagnumber.value = data[0].data;
 };
 
 onMounted(async () => {
   getData();
+  getsavenum();
 });
 
 watch(
@@ -204,38 +242,6 @@ const contaceUsList = ref([
     btn: t('pricing.contaceUsList.type3.btn'),
   },
 ]);
-const membershipUnchanging = ref([
-  {
-    name: '1',
-    desc: t('pricing.membershipUnchanging[0]'),
-    tips: '',
-  },
-  {
-    name: '2',
-    desc: t('pricing.membershipUnchanging[1]'),
-    tips: '',
-  },
-  {
-    name: '3',
-    desc: t('pricing.membershipUnchanging[2]'),
-    tips: '',
-  },
-  {
-    name: '4',
-    desc: t('pricing.membershipUnchanging[3]'),
-    tips: '',
-  },
-  {
-    name: '5',
-    desc: t('pricing.membershipUnchanging[4]'),
-    tips: '',
-  },
-  {
-    name: '6',
-    desc: t('pricing.membershipUnchanging[5]'),
-    tips: '',
-  },
-]) as any;
 
 const copy = async (text: any) => {
   if (navigator.clipboard) {
@@ -277,34 +283,6 @@ const formateMinToHour = (min: number) => {
   return `${hour}h ${minute}mins ago`;
 };
 
-const correctServiceQuanYi = ref([
-  {
-    name: '1',
-    desc: t('pricing.correctServiceQuanYi[0]'),
-    tips: '',
-  },
-  {
-    name: '2',
-    desc: t('pricing.correctServiceQuanYi[1]'),
-    tips: '',
-  },
-  {
-    name: '3',
-    desc: t('pricing.correctServiceQuanYi[2]'),
-    tips: '',
-  },
-  {
-    name: '4',
-    desc: t('pricing.correctServiceQuanYi[3]'),
-    tips: '',
-  },
-  {
-    name: '5',
-    desc: t('pricing.correctServiceQuanYi[4]'),
-    tips: '',
-  },
-]);
-
 const buyCorrectNum = () => {
   if (!isVip.value) {
     ElMessageBox.alert(
@@ -342,6 +320,7 @@ const changeBuyCorrectTimes = () => {
         <div class="switch_out">
           <div @click="changeSwitchType('1')" :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']">
             {{ $t('pricing.pagefont.switch1') }}
+            <div class="save_tag_tag">{{ $t('pricing.pagefont.save', { num: savetagnumber }) }}</div>
           </div>
           <div @click="changeSwitchType('2')" :class="[switchType === '2' ? 'switch_btn yellow ' : 'switch_btn']">
             {{ $t('pricing.pagefont.switch2') }}
@@ -374,148 +353,20 @@ const changeBuyCorrectTimes = () => {
             }}</NuxtLink>
           </div>
         </div>
-        <div v-show="switchType === '1'" class="Membership_dom">
+        <div v-show="switchType === '2'" class="Membership_dom">
           <v-membershipprice
-            :membershipArr="vipsData?.membershipArr || []"
+            :membershipArr="vipsData?.practiceArr || []"
             :correctSelectBuyTimes="vipsData?.correctSelectBuyTimes || []"
             :mockSelectBuyTimes="vipsData?.mockSelectBuyTimes || []"
           ></v-membershipprice>
         </div>
-        <div v-show="switchType === '2'" class="Service_dom">
-          <!-- 固定一个批改购买 -->
-          <div class="one_price">
-            <div class="title">{{ $t('pricing.pagefont.mpc') }}</div>
-            <div class="card_price">
-              <div class="card_price_part1">Correction Service</div>
-              <div class="card_price_part2">Can be used for writing and speaking during your membership</div>
-              <div class="card_price_part4 min_heighthack">
-                <div class="your_price">{{ $t('pricing.pagefont.your_price') }}</div>
-                <div class="off_price">
-                  <span class="small">{{ $t('pricing.pagefont.do') }}</span
-                  >{{ (onlycorrectTimesprice / 100).toFixed(2) }}
-                </div>
-                <div class="no_member_font"></div>
-              </div>
-              <div class="card_price_part3" style="padding-bottom: 1px">
-                <div class="select_out_new">
-                  <div class="select_out_new_font">{{ $t('pricing.pagefont.apcs1') }}</div>
-                  <div class="sleect_out_wrapper">
-                    <div class="select_out">
-                      <el-select v-model="onlycorrectTimesid" placeholder="Select" @change="changeBuyCorrectTimes()">
-                        <el-option
-                          v-for="itemTimes in vipsData?.correctSelectBuyTimes?.filter((item: any) => item.price !== 0) || []"
-                          :key="itemTimes.id"
-                          :label="`${itemTimes.correctNum} ${$t('pricing.pagefont.times')}`"
-                          :value="itemTimes.id"
-                        >
-                          <span style="float: left">{{ itemTimes.correctNum }} {{ $t('pricing.pagefont.times') }}</span>
-                          <span style="float: right; font-size: 13px; margin-left: 60px">
-                            {{ $t('pricing.pagefont.do') }}{{ (itemTimes.price / 100).toFixed(2) }}
-                          </span>
-                        </el-option>
-                      </el-select>
-                    </div>
-                    <!-- <div class="select_font">
-                      <template v-if="item.day === 7"> {{ $t('pricing.pagefont.week') }}</template>
-                      <template v-else>{{ $t('pricing.pagefont.month') }}</template>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-              <!-- 11 -->
-              <div v-if="user.id">
-                <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyCorrectNum()">
-                  {{ $t('pricing.pagefont.Buy_Now') }}
-                  <div class="scroll-line"></div>
-                </div>
-              </div>
-              <div v-else>
-                <NuxtLink
-                  class="card_price_buy_btn common_btn_hover_bgColor"
-                  :to="localePath(`/login?url=/pricing`)"
-                  rel="nofollow"
-                >
-                  {{ $t('pricing.pagefont.Buy_Now') }}
-                  <div class="scroll-line"></div>
-                </NuxtLink>
-              </div>
-              <div class="correct_service_quanyi">
-                <div v-for="item in correctServiceQuanYi" class="one_quanyi">
-                  <div class="icon">
-                    <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.bci')" />
-                  </div>
-                  <div class="font" v-html="item.desc"></div>
-                </div>
-              </div>
-              <!-- 55 -->
-            </div>
-          </div>
-          <div
-            v-for="(item, index) in vipsData?.moreServiceArr || []"
-            :key="index"
-            :class="[item.speak === 1 && item.write === 1 ? 'one_price one_price_bundle' : 'one_price ']"
-            @click="changeCurrentMembershipId(item.id)"
-          >
-            <div class="title">{{ $t('pricing.pagefont.mpc') }}</div>
-            <div class="card_price">
-              <div class="card_price_part1">{{ item.tag }}</div>
-              <div v-if="item.description" class="card_price_part2">
-                {{ item.description }}
-              </div>
-              <div v-else class="height_hack_222"></div>
-
-              <div :class="[!isVip ? 'card_price_part4 min_heighthack' : 'card_price_part4 min_heighthack2']">
-                <div v-if="item.day !== 7" class="your_price">{{ $t('pricing.pagefont.your_price') }}</div>
-                <div class="off_price">
-                  <div>
-                    <span class="small">{{ $t('pricing.pagefont.do') }}</span> {{ (item.price / 100).toFixed(2) }}
-                  </div>
-
-                  <!-- <div v-if="item.speak === 1 && item.write === 1" class="save_tag">
-                    {{
-                      $t('pricing.pagefont.save', {
-                        num: (item.price / item.originalPrice) * 100,
-                      })
-                    }}
-                  </div> -->
-                </div>
-                <!-- <div class="old_price">${{ (item.originalPrice / 100).toFixed(2) }}</div> -->
-              </div>
-              <div class="height_hack"></div>
-              <div v-if="user.id">
-                <template v-if="item.disabled">
-                  <div class="card_price_buy_btn card_price_buy_btn_dis" @click="openCoursrBuyed()">
-                    {{ $t('pricing.pagefont.Buy_Now') }}
-                  </div>
-                </template>
-                <template v-else>
-                  <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
-                    {{ $t('pricing.pagefont.Buy_Now') }}
-                    <div class="scroll-line"></div>
-                  </div>
-                </template>
-              </div>
-              <div v-else>
-                <NuxtLink
-                  class="card_price_buy_btn common_btn_hover_bgColor"
-                  :to="localePath(`/login?url=/pricing`)"
-                  rel="nofollow"
-                >
-                  {{ $t('pricing.pagefont.Buy_Now') }}
-                  <div class="scroll-line"></div>
-                </NuxtLink>
-              </div>
-            </div>
-          </div>
-          <div v-if="!vipsData?.moreServiceArr" class="no-load">
-            <el-skeleton :rows="9" animated />
-          </div>
-          <div v-if="!vipsData?.moreServiceArr" class="no-load">
-            <el-skeleton :rows="9" animated />
-          </div>
-          <div v-if="!vipsData?.moreServiceArr" class="no-load">
-            <el-skeleton :rows="9" animated />
-          </div>
+        <div v-show="switchType === '1'" class="Service_dom">
+          <!-- packages -->
+          <v-membershippricepackages
+            :membershipArr="vipsData?.packagesArr || []"
+            :correctSelectBuyTimes="vipsData?.correctSelectBuyTimes || []"
+            :mockSelectBuyTimes="vipsData?.mockSelectBuyTimes || []"
+          ></v-membershippricepackages>
         </div>
 
         <div class="bank_card">
@@ -679,6 +530,7 @@ const changeBuyCorrectTimes = () => {
         align-items: center;
         grid-gap: 16px;
         padding: 4px;
+        position: relative;
 
         .switch_btn {
           padding: 8px 32px;
@@ -688,8 +540,22 @@ const changeBuyCorrectTimes = () => {
           border-radius: 22px;
           color: #484848;
           cursor: pointer;
+
           @media (max-width: 450px) {
             font-size: 14px;
+          }
+          .save_tag_tag {
+            padding: 2px 8px;
+            background: #ffeae5;
+            border-radius: 10px;
+            position: absolute;
+            font-weight: 400;
+            font-size: 12px;
+            color: #f66442;
+            top: -10px;
+            left: 20%;
+            transform: translateX(-50%);
+            width: fit-content;
           }
         }
 

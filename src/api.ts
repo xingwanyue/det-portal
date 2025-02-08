@@ -39,6 +39,10 @@ export const getVipdataNoToken = () =>
   fetchmy(`${api}/common/vips`, {
     method: 'get',
   });
+export const getSetting = () =>
+  fetchmy(`${api}/common/setting?status=1&keys=priceSaveUp`, {
+    method: 'get',
+  });
 
 export const findPassword = (args: any) =>
   fetchmy(`${api}/common/findPassword`, {
