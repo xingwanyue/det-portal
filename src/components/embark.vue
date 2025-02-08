@@ -4,13 +4,23 @@ import { urlGet } from '@/utils';
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
+const props = defineProps({
+  title: String,
+  btnText: String,
+}) as any;
 </script>
 
 <template>
   <div class="embark_out_wrapper">
     <div class="embark_out">
-      <div class="font1">{{ $t('embark.font1') }}</div>
-      <div class="font2">{{ $t('embark.font2') }}</div>
+      <template v-if="props.title">
+        <div class="font1" v-html="props.title"></div>
+      </template>
+      <template v-else>
+        <div class="font1">{{ $t('embark.font1') }}</div>
+        <div class="font2">{{ $t('embark.font2') }}</div></template
+      >
+
       <div v-if="!user.id" class="two_btn_out">
         <div>
           <NuxtLink
@@ -18,15 +28,15 @@ const user = computed(() => store.user);
             :to="localePath(`/login?url=${urlGet('/home')}`)"
             rel="nofollow"
           >
-            {{ $t('embark.Start_Now') }}</NuxtLink
-          >
+            {{ props.btnText || $t('embark.Start_Now') }}
+          </NuxtLink>
         </div>
       </div>
       <div v-else class="two_btn_out">
         <div>
           <NuxtLink class="common_btn common_btn_hover_bgColor yellow" :to="localePath(`${urlGet('/home')}`)">
-            {{ $t('embark.Start_Now') }}</NuxtLink
-          >
+            {{ props.btnText || $t('embark.Start_Now') }}
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -57,6 +67,9 @@ const user = computed(() => store.user);
     }
     @media (max-width: 830px) {
       font-size: 24px;
+    }
+    :deep(.yellow) {
+      color: #f66442;
     }
   }
   .font2 {

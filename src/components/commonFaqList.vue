@@ -8,6 +8,7 @@ const store = useStore();
 const user = computed(() => store.user);
 const props = defineProps({
   aqlist: Array,
+  aqtitle: String,
 }) as any;
 const openIndexArr = ref([]);
 const openOrCloseOneQuestion = (index) => {
@@ -22,7 +23,8 @@ const openOrCloseOneQuestion = (index) => {
 <template>
   <div class="common_faq_list_wrapper">
     <div class="part2">
-      <div class="title">{{ $t('pricing.pagefont.faq') }}</div>
+      <div class="title" v-html="props.aqtitle || t('pricing.pagefont.faq')"></div>
+
       <div class="list_out">
         <div
           v-for="(item, index) in props.aqlist"
@@ -66,6 +68,9 @@ const openOrCloseOneQuestion = (index) => {
       font-size: 40px;
       color: #201515;
       text-align: center;
+      :deep(.yellow) {
+        color: #f66442;
+      }
 
       @media (max-width: 450px) {
         font-size: 20px;

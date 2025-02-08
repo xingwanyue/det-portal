@@ -146,8 +146,6 @@
                         .icon {
                             width: 24px;
                             height: 24px;
-
-
                         }
 
                         &:hover {
@@ -155,7 +153,6 @@
                                 transform: translateX(8px);
                                 transition: all 0.2s;
                             }
-
                         }
                     }
                 }
@@ -302,7 +299,7 @@
 
                 @media (max-width: 986px) {
                     grid-template-columns: 1fr;
-                    grid-template-areas: "one_card_left""one_card_right";
+                    grid-template-areas: "one_card_left" "one_card_right";
                     grid-gap: 40px;
                 }
             }
@@ -312,7 +309,7 @@
 
                 @media (max-width: 986px) {
                     grid-template-columns: 1fr;
-                    grid-template-areas: "one_card_left""one_card_right";
+                    grid-template-areas: "one_card_left" "one_card_right";
                     grid-gap: 40px;
                 }
             }
@@ -322,15 +319,15 @@
 
 .service_out {
     .bank_wrapper {
-        background: linear-gradient(#FFF3F0 0%, #ffffff 657px, #ffffff 0px, #ffffff);
+        background: linear-gradient(#fff3f0 0%, #ffffff 657px, #ffffff 0px, #ffffff);
     }
 
     .right_click {
         .font {
-            color: #F66442 !important;
+            color: #f66442 !important;
 
             &:hover {
-                border-bottom: 1px #F66442 solid !important;
+                border-bottom: 1px #f66442 solid !important;
             }
         }
     }
@@ -338,37 +335,33 @@
 
 .bank_out {
     .bank_wrapper {
-        background: linear-gradient(#ECF7FF 0%, #ffffff 657px, #ffffff 0px, #ffffff);
+        background: linear-gradient(#ecf7ff 0%, #ffffff 657px, #ffffff 0px, #ffffff);
     }
 
     .right_click {
         .font {
-            color: #3E8BF8 !important;
+            color: #3e8bf8 !important;
 
             &:hover {
-                border-bottom: 1px #3E8BF8 solid !important;
+                border-bottom: 1px #3e8bf8 solid !important;
             }
         }
-
-
     }
 }
 
 .speaking_out {
     .bank_wrapper {
-        background: linear-gradient(#EAEAFEFF 0%, #ffffff 657px, #ffffff 0px, #ffffff);
+        background: linear-gradient(#eaeafeff 0%, #ffffff 657px, #ffffff 0px, #ffffff);
     }
 
     .right_click {
         .font {
-            color: #635DF7FF !important;
+            color: #635df7ff !important;
 
             &:hover {
-                border-bottom: 1px #635DF7FF solid !important;
+                border-bottom: 1px #635df7ff solid !important;
             }
         }
-
-
     }
 }
 
@@ -376,23 +369,37 @@
     margin-bottom: 240px;
     padding: 56px 80px;
     padding-bottom: 0px;
-    background: #3E8BF8;
+    background: #3e8bf8;
     border-radius: 24px;
+    @media screen and (max-width: 450px) {
+        padding: 24px 16px;
+        margin-bottom: 60px;
+    }
 
     .video_title {
         font-weight: 800;
         font-size: 40px;
-        color: #FFFFFF;
+        color: #ffffff;
         line-height: 56px;
         text-align: center;
+
+        @media screen and (max-width: 450px) {
+            font-size: 24px;
+            line-height: 32px;
+        }
     }
 
     .video_desc {
         font-weight: 500;
         font-size: 24px;
-        color: #FFFFFF;
+        color: #ffffff;
         line-height: 32px;
         text-align: center;
+
+        @media screen and (max-width: 450px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 
     .video_content {
@@ -400,5 +407,9 @@
         margin: 0 auto;
         margin-top: 24px;
         display: flex;
+
+        @media screen and (max-width: 450px) {
+            margin-top: 16px;
+        }
     }
 }
