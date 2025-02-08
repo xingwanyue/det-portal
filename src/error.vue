@@ -7,12 +7,12 @@ useHead({
     { rel: 'canonical', href: () => `https://www.${domain}${localePath('/')}` },
     { rel: 'alternate', hreflang: 'en-GB', href: () => `https://www.${domain}${localePath('/')}` },
   ],
+  meta: [{ name: 'robots', content: 'noindex' }],
 });
-
 </script>
 
 <template>
-  <Layout>
+  <Layout errorPage>
     <div class="errPage">
       <div class="errContent">
         <img src="/img/affiliate/cre_th_w_l.svg" alt="empty" class="left" />

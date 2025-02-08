@@ -3,7 +3,7 @@ export const cdn = 'https://cdn.detpractice.com';
 export const domain = 'detpractice.com';
 
 // 应用地址
-export const host = `https://app.${domain}`;
+export const host = `https://www.${domain}`;
 // export const api = `https://www.duolingopractice.com/api`;
 // export const api = `http://192.168.1.22:9000/api`;
 // export const api = `https://dev2.zixuekeji.cn/weapp/api`;
@@ -12,7 +12,8 @@ export const affurl = `https://affiliate.detpractice.com`;
 
 export const mode = import.meta.env.VITE_MODE; // 预览模式
 
-export const urlGet = (url: string) => `${host}?url=${encodeURIComponent(url)}`;
+export const urlGet = (url: string) =>
+  `${window.location.protocol}//${window.location.host}/app/#/?url=${encodeURIComponent(url)}`;
 export const domainGet = () => {
   // 浏览器环境
   if (process.client) {
@@ -63,7 +64,7 @@ export function getToken(forHeader?: any) {
   if (!process.client) {
     return;
   }
-  const token = mode === 'preview' ? getStorage(TOKEN) : getCookie(TOKEN);
+  const token = sessionStorage[TOKEN] || localStorage[TOKEN];
   let res;
   if (token) {
     res = forHeader ? `Bearer ${token}` : token;
@@ -74,11 +75,7 @@ export function getToken(forHeader?: any) {
 }
 
 export function saveToken(token: any) {
-  if (mode === 'preview') {
-    saveStorage(TOKEN, token, true);
-    return;
-  }
-  setCookie(TOKEN, token, 90);
+  localStorage[TOKEN] = token;
 }
 let defaultCachePrefix = '20180428_'; // 默认缓存前缀,便于快速清除缓存
 export const setCatchePrefix = (prefix: String) => {
