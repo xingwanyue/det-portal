@@ -95,7 +95,12 @@
     "power_by": "AI-Powered",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With: <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With:<span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
+    "one_small_title": [
+      "DET Practice",
+      "AI Correction",
+      "Full-Length Mock",
+      "DET Courses"
+    ],
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": "Start for free",
@@ -521,8 +526,8 @@
   },
   "courses": {
     "seometa": {
-      "title": "Duolingo English Test Courses {'|'} Comprehensive DET Preparation at DET Practice",
-      "description": "Explore our expert-led Duolingo English Test courses designed to help you succeed. From practice tests to strategies, enhance your skills in reading, writing, speaking, and listening with tailored lessons. Start your DET prep today!",
+      "title": "DET Course - Complete Duolingo English Test Prep {'|'} 95% Success",
+      "description": "Expert-led DET course covering all sections: Reading, Writing, Speaking & Listening. Includes practice tests, lesson plans, and free access for members.",
       "keywords": "Duolingo English Test courses, DET preparation courses, Duolingo test prep, English proficiency courses, DET practice lessons, Duolingo study guide, English test preparation, online DET courses"
     },
     "article1": {
@@ -634,7 +639,118 @@
     "sas": "Speaking Audio Samples",
     "dandumai": "You can also buy them separately :",
     "writing5": "You can buy DET Writing Exam Excellence for $5 :",
-    "speaking5": "You can buy DET Speaking Exam Excellence for $5 :"
+    "speaking5": "You can buy DET Speaking Exam Excellence for $5 :",
+    "four_change_right_data": {
+      "data1": {
+        "title": "DET Course: Duolingo English Test Reading Section",
+        "desc": "The Duolingo English Test (DET) Reading section evaluates key language skills through diverse question types, assessing comprehension, vocabulary, and overall literacy. The question types include Read and Select, Fill in the Blanks, Interactive Reading, and Read and Complete, each designed to target specific reading abilities.",
+        "desc2": "These tasks collectively assess essential reading and comprehension abilities needed for effective communication in academic and everyday contexts.",
+        "video1data": {
+          "title": "Read and Select",
+          "desc": "Read and Select: Test-takers are shown a series of words and must identify whether the ones are real English words. This task evaluates vocabulary recognition and the ability to distinguish between valid and invalid words, reflecting real-world word comprehension."
+        },
+        "video2data": {
+          "title": "Fill in the Blanks",
+          "desc": "Fill in the Blanks: Candidates are presented with sentences containing missing words. They must select the correct words from a list to complete the sentences meaningfully. This task assesses grammar, vocabulary, and the ability to understand contextual clues."
+        },
+        "video3data": {
+          "title": "Interactive Reading",
+          "desc": "Interactive Reading: This component involves reading passages followed by various question types, such as completing sentences, selecting the appropriate sentence to fill a gap, highlighting answers within the text, identifying main ideas, and choosing suitable titles for passages. It gauges your comprehension, critical thinking, and ability to interpret written English in various contexts."
+        },
+        "video4data": {
+          "title": "Read and Complete",
+          "desc": "Read and Complete: This question type presents a passage with missing letters within words. Test-takers must deduce and restore the complete words. It focuses on spelling, contextual understanding, and vocabulary application."
+        }
+      },
+      "data2": {
+        "title": "DET Course: Duolingo English Test Listening Section",
+        "desc": "The Duolingo English Test (DET) features a comprehensive Learning Section that evaluates candidates' listening skills through two primary question types: Interactive Listening and Listen and Type. These components are designed to assess various aspects of English language proficiency, particularly in comprehension and conversational abilities.",
+        "desc2": "",
+        "video1data": {
+          "title": "Listen and Type",
+          "desc": "In the Listen and Type question type, test-takers listen to spoken sentences and must accurately transcribe them. This format not only gauges the ability to understand spoken English but also evaluates spelling and punctuation skills, which are crucial for effective written communication. Typically, this question type appears 6 to 9 times throughout the test, reflecting its significance in assessing comprehension and conversation skills.",
+        },
+        "video2data": {
+          "title": "Interactive Listening",
+          "desc": "Conversely, the Interactive Listening section simulates real-life conversations, often set in academic contexts. Candidates engage in dialogues between peers or between a student and a faculty member, answering questions that test their understanding of the content. This section emphasizes active listening and the ability to synthesize information from discussions, essential for academic success. Overall, these question types collectively enhance the DET's goal of measuring a candidate's readiness for English-speaking environments in both academic and everyday settings.",
+        }
+      },
+      "data3": {
+        "title": "DET Course: Duolingo English Test Speaking Section",
+        "desc": "The Duolingo English Test (DET) includes a dynamic Speaking Section designed to evaluate a candidate's oral proficiency through five distinct question types: Speak about the Photo, Read, then Speak, Listen, then Speak, Read Aloud, and a Speaking Sample. Each of these formats assesses various aspects of English-speaking abilities, crucial for effective communication in academic and everyday contexts.",
+        "desc2": "",
+        "video1data": {
+          "title": "Speak About the Photo",
+          "desc": "In the Speak about the Photo task, candidates describe an image in detail, which tests their ability to articulate thoughts and use descriptive language. This question typically lasts up to 90 seconds and evaluates both fluency and vocabulary."
+        },
+        "video2data": {
+          "title": "Read, Then Speak & Listen, Then Speak",
+          "desc": "The Read, then Speak and Listen, then Speak tasks require test-takers to respond to prompts based on written or spoken content, respectively. These formats assess comprehension and the ability to convey ideas clearly and coherently within a time limit."
+        },
+        "video3data": {
+          "title": "Read Aloud",
+          "desc": "The Read Aloud question challenges candidates to read a provided text aloud, focusing on pronunciation and intonation."
+        },
+        "video4data": {
+          "title": "Speaking Sample",
+          "desc": "Lastly, the Speaking Sample allows candidates to showcase their speaking skills, providing institutions with additional insight into their proficiency. Collectively, these question types ensure a comprehensive evaluation of speaking skills necessary for success in English-speaking environments."
+        }
+      },
+      "data4": {
+        "title": "DET Course: Duolingo English Test Writing Section",
+        "desc": "The Duolingo English Test (DET) includes a dedicated writing section designed to evaluate various aspects of a test taker's English writing proficiency. This section comprises three distinct question types: Write About the Photo, Interactive Writing, and the Writing Sample.",
+        "desc2": "",
+        "video1data": {
+          "title": "Write About the Photo",
+          "desc": "Write About the Photo requires candidates to observe an image and compose a descriptive paragraph within a one-minute timeframe. This task assesses the ability to articulate visual details and express coherent thoughts, emphasizing vocabulary and grammatical accuracy."
+        },
+        "video2data": {
+          "title": "Interactive Writing",
+          "desc": "Interactive Writing, introduced in early 2024, presents a two-part challenge. Initially, test takers respond to a prompt for five minutes, followed by a second prompt generated based on their first response, requiring an additional three minutes of writing. This format tests not only creativity and coherence but also adaptability in writing, as candidates must build upon their initial ideas."
+        },
+        "video3data": {
+          "title": "Writing Sample",
+          "desc": "Writing Sample questions ask test takers to choose from several topics and write a structured response within a limited time. This task evaluates overall writing skills, including organization, clarity, and argumentation. Collectively, these question types ensure a comprehensive assessment of candidates' writing abilities in real-world contexts, reflecting their readiness for academic or professional environments."
+        },
+        "video4data": {
+          "title": "Additional DET Prep Resources",
+          "desc": "DET Practice | One-stop Duolingo English Test Prep Platform: https://www.detpractice.com"
+        }
+      }
+    },
+    "package_out": {
+      "title": "Duolingo English Test Guide: DET Ultimate Exam Mastery Package",
+      "desc": "Access two premium guides included in your membership: 'DET Speaking Exam Excellence' and 'DET Writing Exam Excellence.' These comprehensive resources are available to all subscribers at no additional cost.",
+      "desc2": "Once you're a member, simply visit the Courses tab in your member dashboard to download these valuable study guides. Study at your own pace, anywhere and anytime.",
+      "desc3": "Ready to begin? Your membership activates instantly, giving you immediate access to these expert-crafted resources.",
+      "btn": "Subscribe Now"
+    },
+    "aqList": [
+      {
+        "name": "What's included in the DET course package?",
+        "content": "The <a href='https://www.detpractice.com/courses'>DET course package</a> includes comprehensive preparation materials for all four test sections: Reading, Listening, Speaking, and Writing. Each section contains multiple interactive courses focusing on specific question types, with real-time feedback and practical strategies."
+      },
+      {
+        "name": "How is this DET course different from other preparation materials?",
+        "content": "This DET course offers a unique combination of video lessons plus scripts, interactive practice (you can find them at our <a href='https://prep.detpractice.com/duolingo-english-test-prep-course'>DET prep hub</a>), and feedback (some question types). It covers every question type on the test and includes specialized prep materials for each section, making it a complete preparation solution."
+      },
+      {
+        "name": "Can I access the DET course materials on my own schedule?",
+        "content": "Yes, all DET course materials are free to all members, and available 24/7. You can study at your own pace and access the materials anytime, anywhere."
+      },
+      {
+        "name": "Does the DET course cover the latest test format?",
+        "content": "Yes, the DET course is regularly updated to align with the current Duolingo English Test format. It includes practice materials for all current question types, including Read and Select, Fill in the Blanks, Interactive Reading, and Speaking tasks."
+      },
+      {
+        "name": "How do I know which DET course section to start with?",
+        "content": "Each section of the DET course (Reading, Listening, Speaking, and Writing) can be accessed independently. You can choose to start with areas where you need the most improvement or follow the suggested course sequence for comprehensive preparation."
+      },
+      {
+        "name": "Are there sample answers included in the DET course?",
+        "content": "Yes, the DET course includes high-scoring sample responses for both Speaking and Writing sections, along with detailed breakdowns of what makes these responses effective. This helps you understand the scoring criteria and improves your performance."
+      }
+    ]
   },
   "forget": {
     "Please_enter": "Please enter your email address",
