@@ -9,7 +9,7 @@ import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '
 import { platformData, portalData } from '@/api';
 import { useRoute } from 'vue-router';
 const route = useRoute();
-const videoUrl = `${cdn}/store/portal/banner_video.mp4`;
+
 // const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useSeoMeta({
   title: t('index.seometa.title'),
@@ -212,7 +212,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               x5-video-player-fullscreen="true"
               x5-video-orientation="portraint"
               x5-video-player-type="h5"
-              :src="videoUrl"
+              src="/img/home/detpractice-platform-demo.mp4"
+              poster="https://cdn.detpractice.com/store/portal/home/banner-poster.bg"
+              preload="auto"
+              duration="PT40S"
             ></video>
             <!-- <img :src="bannerImg" /> -->
           </div>
@@ -248,7 +251,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h2>{{ $t('index.article1.title') }}</h2>
+              <h3>{{ $t('index.article1.title') }}</h3>
             </div>
             <div class="tips">
               <div class="tips_icon">
@@ -288,7 +291,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h2>{{ $t('index.article2.title') }}</h2>
+              <h3>{{ $t('index.article2.title') }}</h3>
             </div>
             <div class="tips">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
@@ -320,7 +323,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h2>{{ $t('index.article3.title') }}</h2>
+              <h3>{{ $t('index.article3.title') }}</h3>
             </div>
             <div class="tips">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
@@ -357,7 +360,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h2>{{ $t('index.article4.title') }}</h2>
+              <h3>{{ $t('index.article4.title') }}</h3>
             </div>
             <div class="tips">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
@@ -385,7 +388,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad5" :src="home5" :alt="$t('index.article3.title')" @load="onLoad5" />
+            <el-image v-show="isLoad5" src="/img/home/home4.png" :alt="$t('index.article3.title')" @load="onLoad5" />
             <el-skeleton v-show="!isLoad5" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -394,7 +397,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h2>{{ $t('index.article5.title') }}</h2>
+              <h3>{{ $t('index.article5.title') }}</h3>
             </div>
             <div class="tips">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
@@ -862,7 +865,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             padding-top: 0px;
           }
           .article_out_title {
-            h2 {
+            h3 {
               font-weight: 500;
               font-size: 32px;
               color: #201515;
@@ -987,7 +990,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             padding-top: 0px;
           }
           .article_out_title {
-            h2 {
+            h3 {
               font-weight: 500;
               font-size: 32px;
               color: #201515;
