@@ -176,7 +176,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             {{ $t('index.Start_free_with_Google') }}
           </div>
           <NuxtLink
-            :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
+            :to="localePath(`/login`)"
             class="common_btn common_btn_hover_borderCu white"
             rel="nofollow"
           >

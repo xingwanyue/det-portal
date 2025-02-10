@@ -288,7 +288,7 @@ const menus = computed(() => [
       <div v-else class="loginbtn">
         <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font"> Login </nuxt-link> -->
         <nuxt-link
-          :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
+          :to="localePath(`/login`)"
           class="try_free common_btn_hover_bgColor"
           rel="nofollow"
         >
