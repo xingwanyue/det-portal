@@ -14,7 +14,7 @@ const googleLogin = () => {
 <template>
   <div class="slogen_out_wrapper">
     <div class="slogen_out">
-      <div v-html="$t('slogen.title')"></div>
+      <h2 v-html="$t('slogen.title')"></h2>
       <div v-if="!user.id" class="two_btn_out">
         <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
           <img src="/img/home/google_icon.svg" :alt="$t('slogen.Start_free_with_Google')" />

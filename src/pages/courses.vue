@@ -41,23 +41,23 @@ const topVideoFont = computed(() => {
   return [
     {
       icon: '/img/courses/green_check_icon.svg',
-      desc: 'Complete DET course covering all question types',
+      desc: t('courses.topVideoFont.desc1'),
     },
     {
       icon: '/img/courses/green_check_icon.svg',
-      desc: 'Integrated practice sets with each lesson - learn and practice simultaneously for maximum efficiency',
+      desc: t('courses.topVideoFont.desc2'),
     },
     {
       icon: '/img/courses/green_check_icon.svg',
-      desc: 'Available in both video lessons and text format to match your learning style',
+      desc: t('courses.topVideoFont.desc3'),
     },
     {
       icon: '/img/courses/green_check_icon.svg',
-      desc: 'Fully aligned with the 2025 DET exam format',
+      desc: t('courses.topVideoFont.desc4'),
     },
     {
       icon: '/img/courses/green_check_icon.svg',
-      desc: 'Free access for all DET Practice members, no additional fees',
+      desc: t('courses.topVideoFont.desc5'),
     },
   ];
 });
@@ -72,25 +72,25 @@ const four_change_left_data = computed(() => {
   return [
     {
       index: 0,
-      title: 'Reading',
+      title: t('courses.changeleftfont.read'),
       icon: '/img/courses/reading_icon.svg',
       icon_active: '/img/courses/reading_active_icon.svg',
     },
     {
       index: 1,
-      title: 'Listening',
+      title: t('courses.changeleftfont.lis'),
       icon: '/img/courses/listening_icon.svg',
       icon_active: '/img/courses/listening_active_icon.svg',
     },
     {
       index: 2,
-      title: 'Speaking',
+      title: t('courses.changeleftfont.spe'),
       icon: '/img/courses/speaking_icon.svg',
       icon_active: '/img/courses/speaking_active_icon.svg',
     },
     {
       index: 3,
-      title: 'Writing',
+      title: t('courses.changeleftfont.wri'),
       icon: '/img/courses/writing_icon.svg',
       icon_active: '/img/courses/writing_active_icon.svg',
     },
@@ -191,8 +191,8 @@ const four_change_right_data = computed(() => {
         },
         {
           title: t('courses.four_change_right_data.data4.video4data.title'),
-          desc: t('courses.four_change_right_data.data4.video4data.desc'),
-          videoUrl: '000',
+          desc: '',
+          videoUrl: '',
         },
       ],
     },
@@ -247,8 +247,8 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
   <div class="guide_out">
     <div class="guide_wrapper_out">
       <div class="guide_wrapper">
-        <div class="title">DET Course: Your Path to Duolingo English Test Success</div>
-        <div class="title_desc">Expert-Led DET Course with 95% Student Success Rate</div>
+        <h1 class="title">{{ t('courses.h1') }}</h1>
+        <h2 class="title_desc">{{ t('courses.h2') }}</h2>
         <div class="font_video_out">
           <div class="font_out">
             <div v-for="(item, index) in topVideoFont" :key="index" class="one_font">
@@ -258,43 +258,26 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               <div class="one_font_desc">{{ item.desc }}</div>
             </div>
           </div>
-          <section class="video_out">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/8UYh_8Co2vo"
-              title="Duolingo English Test | Expert Tips &amp; Practice Questions for DET&#39;s &#39;Read and Complete&#39;"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+          <section class="img_out">
+            <img src="/img/courses/course_banner.webp" alt="course_video_img" />
           </section>
         </div>
 
         <div class="exten_det_out">
-          <div class="exten_det_title">Extensive DET Course by DET Practice: Introduction</div>
+          <div class="exten_det_title">{{ t('courses.extdet.title') }}</div>
           <div class="exten_det_content">
             <div class="exten_det_content_left">
               <img src="/img/courses/ext_det_bg.svg" alt="Introduction.svg" />
             </div>
             <div class="exten_det_content_right">
               <div class="one_font">
-                Transform your Duolingo English Test preparation with our comprehensive learning hub! We understand that
-                navigating the DET can seem challenging, which is why we've developed a strategic approach that breaks
-                down every component into manageable, success-oriented modules.
+                {{ t('courses.extdet.desc1') }}
               </div>
               <div class="one_font">
-                Our expertly crafted DET course covers all essential DET components—from advanced reading comprehension
-                to nuanced speaking tasks. What sets us apart is our adaptive learning system that combines in-depth
-                instruction with targeted practice exercises. You'll find dynamic study materials tailored to each
-                proficiency level, allowing you to build confidence across every test section.
+                {{ t('courses.extdet.desc2') }}
               </div>
               <div class="one_font">
-                Start your journey today with our proven methodology, whether you're targeting a competitive score for
-                top universities or building a solid foundation in English proficiency. Each module is specifically
-                engineered to enhance your performance on the latest DET format, ensuring you're fully prepared for test
-                day success.
+                {{ t('courses.extdet.desc3') }}
               </div>
             </div>
           </div>
@@ -340,19 +323,33 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               <div class="change_right_desc">{{ item.desc2 }}</div>
               <div class="change_right_video">
                 <div v-for="(item2, index) in item.videoUrlArr" :key="index">
-                  <div class="change_right_video_iframe">
+                  <div v-if="item2.videoUrl" class="change_right_video_iframe">
                     <iframe
                       width="100%"
                       :src="item2.videoUrl"
-                      title=""
+                      :title="item2.title"
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerpolicy="strict-origin-when-cross-origin"
                       allowfullscreen
+                      loading="lazy"
                     ></iframe>
                   </div>
-                  <div class="change_right_video_title">{{ item2.title }}</div>
-                  <div class="change_right_video_desc">{{ item2.desc }}</div>
+                  <div v-else class="video_hack">
+                    <a target="_blank" href="https://www.detpractice.com">
+                      DET Practice | One-stop Duolingo English Test Prep Platform
+                    </a>
+                    <a target="_blank" href="https://englishtest.duolingo.com/practice">
+                      Duolingo English Test Practice Question Bank
+                    </a>
+                    <a target="_blank" href="https://www.detpractice.com/duolingo-practice-test">
+                      Duolingo English Practice Test
+                    </a>
+                    <a target="_blank" href="https://www.detpractice.com/blog"> DET Practice Learning Blog </a>
+                    <a target="_blank" href="https://prep.detpractice.com/"> Duolingo English Test Prep Hub </a>
+                  </div>
+                  <h3 class="change_right_video_title">{{ item2.title }}</h3>
+                  <div v-if="item2.desc" class="change_right_video_desc">{{ item2.desc }}</div>
                 </div>
               </div>
             </div>
@@ -414,7 +411,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
   background: linear-gradient(#e7fdec 0, #ffffff 657px, #ffffff 0px, #ffffff);
   .guide_wrapper_out {
     padding: 0px 30px;
-    @media (max-width: 450px) {
+    @media (max-width: 760px) {
       padding: 0 15px;
     }
     .guide_wrapper {
@@ -427,6 +424,10 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
         line-height: 72px;
         margin-top: 56px;
         text-align: center;
+        @media screen and (max-width: 760px) {
+          font-size: 28px;
+          line-height: 40px;
+        }
       }
       .title_desc {
         font-weight: 500;
@@ -435,21 +436,36 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
         line-height: 44px;
         margin-top: 24px;
         text-align: center;
+        @media screen and (max-width: 760px) {
+          font-size: 20px;
+          line-height: 30px;
+        }
       }
       .font_video_out {
         display: grid;
         grid-template-columns: 1fr 0.85fr;
         gap: 22px;
+        align-items: center;
         margin-top: 54px;
+        @media screen and (max-width: 760px) {
+          grid-template-columns: 1fr;
+          margin-top: 32px;
+        }
         .font_out {
           display: flex;
           flex-direction: column;
           gap: 20px;
+          @media screen and (max-width: 760px) {
+            gap: 16px;
+          }
           .one_font {
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
             gap: 16px;
+            @media screen and (max-width: 760px) {
+              gap: 12px;
+            }
             .one_font_icon {
               width: 20px;
               height: 20px;
@@ -466,10 +482,21 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               font-size: 20px;
               color: #201515;
               line-height: 30px;
+              @media screen and (max-width: 760px) {
+                font-size: 16px;
+                line-height: 24px;
+              }
             }
           }
         }
-        .video_out {
+        .img_out {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
       .exten_det_out {
@@ -480,12 +507,20 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
           color: #201515;
           line-height: 48px;
           text-align: center;
+          @media screen and (max-width: 760px) {
+            font-size: 20px;
+            line-height: 30px;
+          }
         }
         .exten_det_content {
           display: grid;
           grid-template-columns: 0.75fr 1fr;
           gap: 80px;
           margin-top: 40px;
+          @media screen and (max-width: 760px) {
+            grid-template-columns: 1fr;
+            margin-top: 20px;
+          }
           .exten_det_content_left {
             img {
               width: 100%;
@@ -501,6 +536,10 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               font-size: 18px;
               color: #403f3e;
               line-height: 26px;
+              @media screen and (max-width: 760px) {
+                font-size: 16px;
+                line-height: 24px;
+              }
             }
           }
         }
@@ -511,13 +550,19 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
         gap: 80px;
         margin-top: 120px;
         flex-wrap: wrap;
-
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: 760px) {
           margin-top: 60px;
           grid-template-columns: 1fr !important;
+          gap: 20px;
         }
+
         .change_left {
           flex-shrink: 0;
+          @media screen and (max-width: 760px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
 
           .one_change_click_dom {
             display: flex;
@@ -528,6 +573,9 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             padding: 24px 0;
             &:hover {
               background: #fef7f5;
+              @media screen and (max-width: 760px) {
+                background: white;
+              }
             }
             cursor: pointer;
             .one_change_icon {
@@ -544,6 +592,9 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               font-weight: 500;
               font-size: 24px;
               color: #333333ff;
+              @media screen and (max-width: 760px) {
+                font-size: 16px;
+              }
             }
             .one_change_title_active {
               color: #f66442;
@@ -551,6 +602,9 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
           }
           .one_change_click_dom_active {
             background: #fef7f5;
+            @media screen and (max-width: 760px) {
+              background: white;
+            }
           }
         }
         .change_right {
@@ -559,6 +613,10 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             font-size: 32px;
             color: #201515;
             line-height: 44px;
+            @media screen and (max-width: 760px) {
+              font-size: 20px;
+              line-height: 30px;
+            }
           }
           .change_right_desc {
             font-weight: 400;
@@ -566,21 +624,42 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             color: #403f3e;
             line-height: 26px;
             margin-top: 12px;
+            @media screen and (max-width: 760px) {
+              font-size: 16px;
+              line-height: 24px;
+            }
           }
           .change_right_video {
             margin-top: 32px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 32px;
+            @media screen and (max-width: 760px) {
+              grid-template-columns: 1fr;
+              gap: 16px;
+            }
             .change_right_video_iframe {
               display: flex;
               justify-content: center;
               align-items: center;
-              background: #000000;
+
               border-radius: 16px;
               overflow: hidden;
               // min-height: 400px;+
               // border: 1px red solid;
+            }
+            .video_hack {
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+              a {
+                display: block;
+                color: #666666ff;
+                text-decoration: underline;
+                &:hover {
+                  color: #f66442;
+                }
+              }
             }
             .change_right_video_title {
               margin-top: 16px;
@@ -607,7 +686,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
   }
   .package_out_wrapper {
     padding: 0px 30px;
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 760px) {
       padding: 0px 15px;
     }
     background: #fff4f1;
@@ -620,9 +699,10 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
       grid-template-columns: 0.33fr 1fr;
       gap: 80px;
       padding: 100px 0;
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 760px) {
         padding: 50px 15px;
         grid-template-columns: 1fr;
+        gap: 20px;
       }
       .package_left {
         img {
@@ -637,6 +717,10 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
           color: #201515;
           line-height: 48px;
           margin-bottom: 16px;
+          @media screen and (max-width: 760px) {
+            font-size: 20px;
+            line-height: 30px;
+          }
         }
         .desc {
           font-weight: 400;
@@ -644,6 +728,10 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
           color: #403f3e;
           line-height: 28px;
           margin-bottom: 16px;
+          @media screen and (max-width: 760px) {
+            font-size: 16px;
+            line-height: 24px;
+          }
         }
         .btn {
           padding: 8px 24px;
@@ -663,18 +751,18 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
 
   .part3_wrapper {
     padding: 0px 30px;
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 760px) {
       padding: 0px 15px;
     }
     background: #fff4f1;
     margin-top: 120px;
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 760px) {
       margin-top: 60px;
     }
     .part3 {
       padding: 100px 0;
       padding-bottom: 92px;
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 760px) {
         padding: 50px 0;
       }
 
@@ -686,7 +774,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
         color: #201515;
         text-align: center;
         margin-bottom: 64px;
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: 760px) {
           font-size: 20px;
           margin-bottom: 32px;
         }
@@ -787,12 +875,8 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
   .aqlist_wrapper {
     padding: 120px 30px;
     border-bottom: 1px solid #e9e9e9;
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 760px) {
       padding: 60px 15px;
-    }
-
-    @media (max-width: 450px) {
-      margin-top: 30px;
     }
 
     .part2 {
@@ -806,7 +890,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
         color: #201515;
         text-align: center;
 
-        @media (max-width: 450px) {
+        @media (max-width: 760px) {
           font-size: 20px;
         }
       }
