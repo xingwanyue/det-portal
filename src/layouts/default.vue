@@ -93,7 +93,7 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
       <slot />
     </el-main>
     <el-footer class="footer_wrap">
-      <v-footer />
+      <v-footer :errorPage="props.errorPage" />
     </el-footer>
     <v-changeLanguagetk />
   </el-container>
