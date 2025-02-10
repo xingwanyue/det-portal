@@ -235,7 +235,8 @@
       "times": "volte",
       "bci": "icona_di_controllo_nera",
       "mt": "Esame simulato",
-      "apmt": "Test Simulato Alimentato da AI"
+      "apmt": "Test Simulato Alimentato da AI",
+      "popular": "Popolare"
     },
     "aqList": [
       {
@@ -337,7 +338,19 @@
       "Punteggi di valutazione accurati",
       "Rapporto di valutazione dettagliato",
       "Risultati disponibili in 5-30 minuti"
-    ]
+    ],
+    "packagesallQy": {
+      "qy1": "Esame simulato <span class='yellow'>{times} volte</span>",
+      "qy2": "Servizio di correzione basato su IA <span class='yellow'>{times} volte</span>",
+      "qy3": "<span class='yellow'>Illimitato</span> per le sessioni di pratica",
+      "qy4": "Accesso a tutte le domande di pratica",
+      "qy5": "Consulta esempi di risposte con punteggio elevato",
+      "qy6": "Vocabolario degli esami ad alta frequenza",
+      "qy7": "Piano di studio personalizzato con selezione intelligente delle domande",
+      "qy8": "Valutazioni del parlato basate su IA",
+      "qyspeak": "DET <span class='yellow'>Guida all'esame orale</span>",
+      "qywrite": "DET <span class='yellow'>Guida all'esame scritto</span>"
+    }
   },
   "blog": {
     "seometa": {

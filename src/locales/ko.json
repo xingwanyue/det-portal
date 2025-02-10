@@ -235,7 +235,8 @@
       "times": "회",
       "bci": "검은색_체크_아이콘",
       "mt": "모의 시험",
-      "apmt": "AI 기반 모의 테스트"
+      "apmt": "AI 기반 모의 테스트",
+      "popular": "인기있는"
     },
     "aqList": [
       {
@@ -337,7 +338,19 @@
       "정확한 평가 점수",
       "상세한 평가 보고서",
       "5-30분 내 결과 확인"
-    ]
+    ],
+    "packagesallQy": {
+      "qy1": "모의고사 <span class='yellow'>{times}회</span>",
+      "qy2": "AI 첨삭 서비스 <span class='yellow'>{times}회</span>",
+      "qy3": "연습 문제 <span class='yellow'>무제한</span> 이용",
+      "qy4": "모든 연습 문제 이용 가능",
+      "qy5": "고득점 예시 답안 열람",
+      "qy6": "시험 고빈도 어휘",
+      "qy7": "스마트 문항 선택을 통한 맞춤형 학습 계획",
+      "qy8": "AI 기반 말하기 평가",
+      "qyspeak": "DET <span class='yellow'>말하기 시험 가이드</span>",
+      "qywrite": "DET <span class='yellow'>작문 시험 가이드</span>"
+    }
   },
   "blog": {
     "seometa": {

@@ -234,7 +234,8 @@
       "times": "Mal",
       "bci": "schwarzes_kontrollsymbol",
       "mt": "Probeklausur",
-      "apmt": "KI-gestützter Probetest"
+      "apmt": "KI-gestützter Probetest",
+      "popular": "Beliebt"
     },
     "aqList": [
       {
@@ -336,7 +337,19 @@
       "Genaue Bewertungspunkte",
       "Detaillierter Bewertungsbericht",
       "Ergebnisse in 5-30 Minuten verfügbar"
-    ]
+    ],
+    "packagesallQy": {
+      "qy1": "Probeprüfung <span class='yellow'>{times} Mal</span>",
+      "qy2": "KI-gestützte Korrekturleistung <span class='yellow'>{times} Mal</span>",
+      "qy3": "<span class='yellow'>Unbegrenzt</span> für Übungssitzungen",
+      "qy4": "Zugriff auf alle Übungsfragen",
+      "qy5": "Durchsehen von hochbewerteten Beispielantworten",
+      "qy6": "Hochfrequenz-Prüfungsvokabular",
+      "qy7": "Maßgeschneiderter Studienplan mit intelligenter Fragenauswahl",
+      "qy8": "KI-gestützte Sprechbewertungen",
+      "qyspeak": "DET <span class='yellow'>Sprechprüfungsführer </span>",
+      "qywrite": "DET <span class='yellow'>Schreibprüfungsführer </span>"
+    }
   },
   "blog": {
     "seometa": {

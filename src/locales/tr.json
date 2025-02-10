@@ -235,7 +235,8 @@
       "times": "kez",
       "bci": "siyah_onay_ikonu",
       "mt": "Deneme Sınavı",
-      "apmt": "Yapay Zeka Destekli Deneme Sınavı"
+      "apmt": "Yapay Zeka Destekli Deneme Sınavı",
+      "popular": "Popüler"
     },
     "aqList": [
       {
@@ -337,7 +338,19 @@
       "Hassas Değerlendirme Puanları",
       "Detaylı Değerlendirme Raporu",
       "Sonuçlar 5-30 dakika içinde hazır"
-    ]
+    ],
+    "packagesallQy": {
+      "qy1": "Deneme Sınavı <span class='yellow'>{times} Kez</span>",
+      "qy2": "Yapay Zeka Destekli Düzeltme Hizmeti <span class='yellow'>{times} Kez</span>",
+      "qy3": "Alıştırma Oturumları için <span class='yellow'>Sınırsız</span>",
+      "qy4": "Tüm Alıştırma Sorularına Erişim",
+      "qy5": "Yüksek Puanlı Örnek Cevapları İncele",
+      "qy6": "Sık Kullanılan Sınav Kelimeleri",
+      "qy7": "Akıllı Soru Seçimi ile Özelleştirilmiş Çalışma Planı",
+      "qy8": "Yapay Zeka Destekli Konuşma Değerlendirmeleri",
+      "qyspeak": "DET <span class='yellow'>Konuşma Sınavı Rehberi</span>",
+      "qywrite": "DET <span class='yellow'>Yazma Sınavı Rehberi</span>"
+    }
   },
   "blog": {
     "seometa": {

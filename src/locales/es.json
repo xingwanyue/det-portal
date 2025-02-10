@@ -235,7 +235,8 @@
       "times": "veces",
       "bci": "icono_de_verificación_negro",
       "mt": "Examen de práctica",
-      "apmt": "Prueba Simulada impulsada por IA"
+      "apmt": "Prueba Simulada impulsada por IA",
+      "popular": "Popular",
     },
     "aqList": [
       {
@@ -337,7 +338,19 @@
       "Puntuaciones de evaluación precisas",
       "Informe de evaluación detallado",
       "Resultados disponibles en 5-30 minutos"
-    ]
+    ],
+    "packagesallQy": {
+      "qy1": "Examen de práctica <span class='yellow'>{times} veces</span>",
+      "qy2": "Servicio de corrección con IA <span class='yellow'>{times} veces</span>",
+      "qy3": "<span class='yellow'>Ilimitado</span> para sesiones de práctica",
+      "qy4": "Acceso a todas las preguntas de práctica",
+      "qy5": "Consulta respuestas modelo de alta puntuación",
+      "qy6": "Vocabulario frecuente del examen",
+      "qy7": "Plan de estudio personalizado con selección inteligente de preguntas",
+      "qy8": "Evaluaciones de expresión oral con IA",
+      "qyspeak": "DET <span class='yellow'>Guía del examen oral</span>",
+      "qywrite": "DET <span class='yellow'>Guía del examen escrito</span>"
+    }
   },
   "blog": {
     "seometa": {
