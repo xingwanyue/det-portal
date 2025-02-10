@@ -4,6 +4,9 @@ import { domain } from '@/utils';
 import { reactive } from 'vue';
 const route = useRoute();
 
+const props = defineProps({
+  errorPage: Boolean,
+}) as any;
 const localePath = useLocalePath();
 const { locale, t, setLocale } = useI18n();
 const state = reactive({
@@ -298,7 +301,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
                 class="options_out_name"
                 v-for="item in options"
                 :key="item.value"
-                :to="localePath(route.path, item.value)"
+                :to="props.errorPage ? localePath('/', item.value) : localePath(route.path, item.value)"
                 @click="clickChangeLanguage(item)"
               >
                 {{ item.label }}
