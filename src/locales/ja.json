@@ -198,8 +198,8 @@
     "pagefont": {
       "h1": "あなたに最適なプランを選択",
       "h4": "安全な支払い！いつでもキャンセルできます！今すぐDETをマスターしましょう！",
-      "switch1": "サービス",
-      "switch2": "コース",
+      "switch1": "パッケージ",
+      "switch2": "練習",
       "sep": "安全な支払い",
       "ca": "いつでもキャンセル可能",
       "atde": "DEТ完全攻略",
@@ -234,7 +234,8 @@
       "times": "回",
       "bci": "黒いチェックアイコン",
       "mt": "模擬試験",
-      "apmt": "AI駆動の模擬テスト"
+      "apmt": "AI駆動の模擬テスト",
+      "popular": "人気"
     },
     "aqList": [
       {
@@ -336,7 +337,19 @@
       "正確なスコア評価",
       "詳細な評価レポート",
       "<span class='strongfont'>5-30分</span>以内に結果が判明"
-    ]
+    ],
+    "packagesallQy": {
+      "qy1": "模擬試験 <span class='yellow'>{times}回</span>",
+      "qy2": "AI添削サービス <span class='yellow'>{times}回</span>",
+      "qy3": "練習問題が<span class='yellow'>無制限</span>",
+      "qy4": "すべての練習問題にアクセス可能",
+      "qy5": "高得点の解答例を閲覧可能",
+      "qy6": "頻出単語集",
+      "qy7": "AIによる最適な学習プランと問題選択",
+      "qy8": "AIによるスピーキング評価",
+      "qyspeak": "DET <span class='yellow'>スピーキング試験ガイド</span>",
+      "qywrite": "DET <span class='yellow'>ライティング試験ガイド</span>"
+    }
   },
   "blog": {
     "seometa": {
@@ -708,38 +721,69 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET対策問題集｜AI搭載のDuolingo英語テスト練習プラットフォーム",
-      "description": "Duolingo英語テスト（DET）の対策をお探しですか？18,000問以上の練習問題とAIフィードバ ック機能で、効率的にスコアアップを実現。40万人以上の受験者が選んだ信頼の学習プラット フォームです。",
-      "keywords": "デュオリンゴ英語テスト, DET対策, DET問題集, DET模擬テスト, DET勉強法, DETスピーキング練 習, DETライティング対策, オンライン英語試験対策, DET学習教材, AI音声採点"
+      "title": "Duolingo English Test 練習 - AIでスコアアップ",
+      "description": "18,000問以上の問題でDuolingo English Testの練習。AIスピーキングコーチ、スマート学習パス、詳細な分析。40万人以上の成功した学習者に加わろう！"
     },
-    "h1": "Duolingo English Test 対策問題",
-    "desc": "充実した演習問題と解説、モデル解答、AI音声評価システム、効率的な学習プランをご提 供します。最新のAI技術で、効率的かつリーズナブルにスコアアップを実現できます。",
-    "alt": "DET 練習:最高の Duolingo English Test 練習プラットフォーム",
+    "h1": "Duolingo English Test 最高峰の練習問題集",
+    "descnew": "すべてのDETセクションに対応したAI強化型Duolingo English Test練習",
+    "desc": "Duolingo English Testの練習問題集（解答分析、テンプレート、AIによるスピーキングとライティングの評価、スマートプランニング付き）で、スコアアップを効率的かつ手頃な価格で実現しましょう。",
+    "alt": "DET Practice: 最高のDuolingo English Test 練習プラットフォーム",
     "altbanner": "Duolingo English Test 練習",
-    "bank_user_icon": "銀行ユーザーアイコン",
-    "white_arrow_right": "白い矢印 右",
-    "blue_arrow_right": "青い矢印 右",
-    "learners_have": "これまでに{number} 人以上の方がDET対策に当問題集をご利用いただいています。",
-    "spn": "学習を始める",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "blue_arrow_right": "Blue Arrow Right",
+    "learners_have": "{number}人以上の受験者が選んだDET対策問題集",
+    "spn": "今すぐ練習を始める",
     "article1": {
-      "h2": "豊富な問題数",
-      "right_desc": "18,000問以上の問題を収録し、様々な出題形式に対応。最新の試験傾向に合わせて定期的 にアップデートしております。体系的な演習で確実に実力を養成します。",
-      "btn": "演習を始める"
+      "h2": "18,000問以上のDET練習問題 & 増加中",
+      "right_desc": "リーディングからスピーキングまで、試験の全セクションをカバーする最も包括的なDuolingo English Testの練習問題集にアクセスできます。最新のテストパターンを反映したコンテンツで、常に最新の状態を保ち、目標のDETスコアまでの最短ルートを提供します。",
+      "btn": "DET練習を始める"
     },
     "article2": {
-      "h2": "AIによる最適化",
-      "right_desc": "AIシステムが以下の要素を分析し、最適な問題を提案します： 習熟度、難易度、目標スコ ア、重要度、新規問題、出題傾向、学習期間、学習効率など、効果的な対策をサポートい たします。",
-      "btn": "スマート学習を始める"
+      "h2": "スマートなDuolingo English Test 練習パス",
+      "right_desc": "Duolingo English Testの練習を成功させるための、あなた専用の学習パスを手に入れましょう。私たちのAI搭載システムは、各問題タイプでのパフォーマンス、目標スコアとスケジュール、現在のテストパターン、問題の難易度、そしてあなた独自の学習ペースを継続的に分析し、目標スコアまでの最適な学習プランを作成します。無駄な準備時間をなくし、効果的な学習をサポートします。",
+      "btn": "スマートDET学習を開始"
     },
     "article3": {
-      "h2": "AI音声評価システム",
-      "right_desc": "AI搭載の音声評価システムでスピーキング力を向上。回答を提出すると即座に詳細な分析 結果が表示され、効率的なスキルアップを実現します。",
-      "btn": "評価を受ける"
+      "h2": "AIによるDETスピーキング & ライティング評価",
+      "right_desc": "Duolingo English Testの回答に対する即時フィードバックを入手できます。私たちのAI搭載システムは、<a href='https://www.detpractice.com/speaking-ai-correction'>DETスピーキング</a>と<a href='https://www.detpractice.com/writing-ai-correction'>DETライティング</a>の両方の提出物をリアルタイムで分析し、発音、流暢さ、文法、語彙の使用に関する詳細なスコアリングと提案を提供し、正確かつ自信を持って改善できるようにします。",
+      "btn": "評価を開始"
     },
     "article4": {
-      "h2": "詳細な解説",
-      "right_desc": "各問題に丁寧な解説を用意。重要なポイントや解法のコツを分かりやすく説明し、知識の 定着と学習効率の向上をサポートいたします。",
-      "btn": "解説を確認する"
+      "h2": "Duolingo English Test 練習問題 解答解説",
+      "right_desc": "Duolingo English Testの練習問題の解答について、詳細な解説を入手できます。私たちのAIは各問題を分解し、解答の背後にある理由を明らかにし、主要なテストパターンを強調します。DETの学習効率を最大化しながら、重要な概念をマスターするのに役立ちます。",
+      "btn": "解答解説を見る"
+    },
+    "aqtitle": "私たちの<span class='yellow'>Duolingo English Test 練習</span>に関するよくある質問",
+    "aqlistfont": [
+      {
+        "q": "DET PracticeがDuolingo English Testの練習に最適な理由は何ですか？",
+        "a": "私たちはDuolingo English Testの練習に特化しており、実際のテスト形式と要件に正確に一致する、専門的に設計された教材を提供しています。"
+      },
+      {
+        "q": "<a href='https://www.detpractice.com'>DET Practice</a>でどのくらいの頻度で学習すればよいですか？",
+        "a": "最適な結果を得るには、実際のテスト日の少なくとも2週間前から、1日2〜3時間の集中練習をお勧めします。"
+      },
+      {
+        "q": "Duolingo English Testの練習が不可欠な理由は何ですか？",
+        "a": "私たちのユーザーデータによると、体系的な準備はスコアに大きな影響を与え、生徒は最終テストで平均15〜20ポイント高くなっています。"
+      },
+      {
+        "q": "DET Practiceのコンテンツはどのくらい最新ですか？",
+        "a": "私たちの<a href='https://www.detpractice.com/practice'>Duolingo English Test 練習</a>教材は、最新のテストパターンと要件を反映するように継続的に更新されており、常に準備が整っていることを保証します。"
+      },
+      {
+        "q": "Duolingo English Testの練習は、一般的な英語学習とどう違うのですか？",
+        "a": "一般的な英語学習とは異なり、集中的なテスト対策には、特定の質問タイプと時間管理に慣れる必要があります。これこそ、私たちのプラットフォームが提供するものです。"
+      },
+      {
+        "q": "DETの準備はいつ始めるべきですか？",
+        "a": "最適なスコアの向上を目指すため、ほとんどの成功した学生は、予定されているテスト日の約1か月前に、集中的なDuolingo English Testの練習を開始します。"
+      }
+    ],
+    "embarkfont": {
+      "title": "DETで高得点を獲得するために、<span class='yellow'>Duolingo English Test</span> の練習を始めましょう！",
+      "btnText": "今すぐ練習"
     }
   },
   "speakingaicorrection": {

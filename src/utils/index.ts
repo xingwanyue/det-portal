@@ -12,8 +12,12 @@ export const affurl = `https://affiliate.detpractice.com`;
 
 export const mode = import.meta.env.VITE_MODE; // 预览模式
 
-export const urlGet = (url: string) =>
-  `${window.location.protocol}//${window.location.host}/app/#/?url=${encodeURIComponent(url)}`;
+export const urlGet = (url: string) => {
+  if (process.client) {
+    return `${window.location.protocol}//${window.location.host}/app/#/?url=${encodeURIComponent(url)}`;
+  }
+  return url;
+};
 export const domainGet = () => {
   // 浏览器环境
   if (process.client) {

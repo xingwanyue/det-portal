@@ -198,8 +198,8 @@
     "pagefont": {
       "h1": "Choisissez le Plan qui Vous Convient",
       "h4": "Paiement sécurisé ! Annulez à tout moment ! Maîtrisez le DET maintenant !",
-      "switch1": "Service",
-      "switch2": "Cours",
+      "switch1": "Forfaits",
+      "switch2": "Pratique",
       "sep": "Paiement Sécurisé",
       "ca": "Annulation à Tout Moment",
       "atde": "Maîtrisez le DET Maintenant",
@@ -234,7 +234,8 @@
       "times": "fois",
       "bci": "icône_de_vérification_noire",
       "mt": "Examen blanc",
-      "apmt": "Test simulé alimenté par l'IA"
+      "apmt": "Test simulé alimenté par l'IA",
+      "popular": "Populaire"
     },
     "aqList": [
       {
@@ -336,7 +337,19 @@
       "Scores d'évaluation précis",
       "Rapport d'évaluation détaillé",
       "Résultats disponibles sous 5-30 minutes"
-    ]
+    ],
+    "packagesallQy": {
+      "qy1": "Examen blanc <span class='yellow'>{times} fois</span>",
+      "qy2": "Service de correction alimenté par l'IA <span class='yellow'>{times} fois</span>",
+      "qy3": "<span class='yellow'>Illimité</span> pour les sessions de pratique",
+      "qy4": "Accès à toutes les questions de pratique",
+      "qy5": "Consultez les exemples de réponses à haut score",
+      "qy6": "Vocabulaire d'examen à haute fréquence",
+      "qy7": "Plan d'études personnalisé avec sélection intelligente des questions",
+      "qy8": "Évaluations orales alimentées par l'IA",
+      "qyspeak": "DET <span class='yellow'>Guide de l'examen oral</span>",
+      "qywrite": "DET <span class='yellow'>Guide de l'examen écrit</span>"
+    }
   },
   "blog": {
     "seometa": {

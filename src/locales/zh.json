@@ -198,8 +198,8 @@
     "pagefont": {
       "h1": "选择最适合你的方案",
       "h4": " 安全付款！随时取消！现在就掌握DET！",
-      "switch1": "服务",
-      "switch2": "课程",
+      "switch1": "套餐",
+      "switch2": "练习",
       "sep": "安全支付",
       "ca": "随时可取消",
       "atde": "轻松掌握DET",
@@ -234,7 +234,8 @@
       "times": "次",
       "bci": "黑色检查图标",
       "mt": "模拟考试",
-      "apmt": "AI驱动的模拟测试"
+      "apmt": "AI驱动的模拟测试",
+      "popular": "热门"
     },
     "aqList": [
       {
@@ -336,7 +337,19 @@
       "准确的评估分数",
       "详细评估报告",
       "<span class='strongfont'>5-30分钟</span>内获得结果"
-    ]
+    ],
+    "packagesallQy": {
+      "qy1": "模拟考试 <span class='yellow'>{times} 次</span>",
+      "qy2": "AI 批改服务 <span class='yellow'>{times} 次</span>",
+      "qy3": "练习题<span class='yellow'>无限制</span>使用",
+      "qy4": "访问所有练习题",
+      "qy5": "浏览高分范文",
+      "qy6": "高频考试词汇",
+      "qy7": "智能选题的个性化学习计划",
+      "qy8": "AI 口语评估",
+      "qyspeak": "DET <span class='yellow'>口语考试指南</span>",
+      "qywrite": "DET <span class='yellow'>写作考试指南</span>"
+    }
   },
   "blog": {
     "seometa": {

@@ -136,7 +136,7 @@ const saveCaculate = (item: any) => {
             </div> -->
           </div>
 
-          <div class="select_out_new">
+          <div v-if="false" class="select_out_new">
             <div class="select_out_new_font">{{ $t('pricing.pagefont.apcs') }}</div>
             <div class="sleect_out_wrapper">
               <div class="select_out">
@@ -430,9 +430,9 @@ const saveCaculate = (item: any) => {
     font-size: 14px;
     color: #4c2929;
     min-height: 44px;
+    // display: none;
   }
   .select_out_new {
-    display: none;
     .select_out_new_font {
       font-weight: 400;
       font-size: 14px;
