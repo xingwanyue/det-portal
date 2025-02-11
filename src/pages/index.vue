@@ -175,11 +175,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             <img src="/img/home/google_icon.svg" :alt="$t('index.Start_free_with_Google')" />
             {{ $t('index.Start_free_with_Google') }}
           </div>
-          <NuxtLink
-            :to="localePath(`/login`)"
-            class="common_btn common_btn_hover_borderCu white"
-            rel="nofollow"
-          >
+          <NuxtLink :to="localePath(`/login`)" class="common_btn common_btn_hover_borderCu white" rel="nofollow">
             {{ $t('index.Start_free_with_email') }}
           </NuxtLink>
         </div>
@@ -212,8 +208,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               x5-video-player-fullscreen="true"
               x5-video-orientation="portraint"
               x5-video-player-type="h5"
+              title="detpractice-platform-demo"
               src="/img/home/detpractice-platform-demo.mp4"
-              poster="https://cdn.detpractice.com/store/portal/home/banner-poster.bg"
+              poster="/img/home/detpractice-platform-demo.png"
               preload="auto"
               duration="PT40S"
             ></video>
