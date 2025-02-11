@@ -709,37 +709,68 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Simulador Oficial DET {'|'} Examen Completo de Preparación - DET Practice",
-      "description": "Prepárate con simulaciones exactas del Duolingo English Test. Obtén tu calificación y análisis detallado en tan solo 30 minutos. Accede a más de 18.000 ejercicios, sistema adaptativo inteligente y evaluación automática de speaking y writing mediante IA. Inicia tu camino al DET hoy mismo.",
-      "keywords": "simulador duolingo english test, práctica DET, examen de prueba duolingo, preparación duolingo, simulación oficial DET, ejercicios duolingo test, entrenamiento DET, práctica en línea duolingo, preparación certificación, ejercicios duolingo english, evaluación previa, simulacro DET"
+      "title": "Examen de Práctica Duolingo - Plataforma Profesional de Preparación DET",
+      "description": "Plataforma de Exámenes de Práctica Duolingo con materiales completos de preparación DET. Obtén resultados instantáneos, informes detallados y preguntas tipo examen. Confiado por más de 10.000 estudiantes.",
     },
-    "h1": "Simulación Integral DET",
-    "desc": "Vive una experiencia idéntica al examen oficial con nuestros simulacros completos. Familiarízate con el formato y recibe al instante tu puntuación y análisis detallado para optimizar tu preparación.",
-    "alt": "DET Práctica:La mejor Duolingo English Test plataforma de práctica",
-    "mock_user_icon": "Icono de usuario simulado",
-    "white_arrow_right": "Flecha Blanca Derecha",
-    "orange_arrow_right": "Flecha Naranja Derecha",
-    "learners_have": "Más de {number} estudiantes ya se han preparado con nuestros simulacros.",
-    "Mock_Now": "Empieza Ya",
-    "Full_scale": "Duolingo 1:1 Examen Simulado a Escala Completa",
+    "h1": "Examen de Práctica Duolingo - Plataforma de Experiencia Real por DET Practice",
+    "descnew": "Examen de Práctica Duolingo Completo que Simula la Realidad",
+    "desc": "Practica con nuestro examen de simulación Duolingo que refleja perfectamente el entorno del examen real. Obtén resultados instantáneos y análisis profundos para identificar tus fortalezas y debilidades, ayudándote a prepararte con confianza para el examen real.",
+    "alt": "DET Practice: La Mejor Plataforma de Práctica para el Test de Inglés Duolingo",
+    "mock_user_icon": "Mock User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "orange_arrow_right": "Orange Arrow Right",
+    "learners_have": "¡Únete a {number} estudiantes exitosos que confían en nuestros exámenes de práctica Duolingo!",
+    "Mock_Now": "Comenzar Ahora",
+    "Full_scale": "Examen de Práctica Duolingo Completo 1:1",
     "article1": {
-      "h2": "Fiel al Examen Oficial",
-      "right_desc": "Entrena en condiciones idénticas al examen real gracias a nuestro sistema adaptativo. Domina cada tipo de pregunta con evaluaciones precisas."
+      "h2": "Examen de Práctica DET Como el Día del Examen",
+      "right_desc": "Conoce exactamente qué esperar el día del examen. Nuestro examen de práctica DET refleja el entorno oficial del DET, ayudándote a sentirte seguro y preparado para el examen real. Practica con secciones cronometradas con precisión y tipos de preguntas auténticas para dominar el formato del examen."
     },
     "article2": {
-      "h2": "Evaluación Precisa y Análisis Completo",
-      "right_desc": "Recibe un informe exhaustivo de tus puntos fuertes y áreas de mejora, con plan de estudio personalizado que se actualiza automáticamente."
+      "h2": "Análisis Integral de Puntuación",
+      "right_desc": "Recibe informes detallados del examen de práctica con análisis precisos de rendimiento en todas las secciones. Nuestro sistema de IA inteligente identifica tus fortalezas y áreas de mejora, creando recomendaciones de estudio personalizadas para mejorar tu preparación."
     },
     "article3": {
-      "h2": "Máxima Flexibilidad",
-      "right_desc": "Practica cuando quieras, sin horarios fijos. Acceso inmediato tras la compra con pausas ilimitadas."
+      "h2": "Examen de Práctica DET en Cualquier Momento y Lugar",
+      "right_desc": "Realiza un examen de práctica DET cuando y donde te resulte conveniente. Nuestra plataforma en línea proporciona acceso instantáneo a exámenes de práctica, permitiéndote prepararte según tu horario."
     },
     "article4": {
-      "h2": "Resultados Instantáneos",
-      "right_desc": "Consulta tus resultados en <span class='zdfont'>5-30 minutos</span> para dar seguimiento a tu progreso."
+      "h2": "Informe Rápido de Retroalimentación del Examen de Práctica DET",
+      "right_desc": "Recibe tus resultados detallados del examen de práctica DET en solo <span class='zdfont'>5-30 minutos</span>. Nuestro sistema de calificación ultrarrápido proporciona retroalimentación inmediata, permitiéndote rastrear tu progreso y ajustar tu estrategia de preparación de manera eficiente."
     },
-    "vs1": "Comparativa Simulacro vs DET Oficial",
-    "vs2": "Análisis comparativo entre los resultados del DET oficial y nuestros simulacros."
+    "vs1": "Nuestras Puntuaciones de Exámenes de Práctica DET VS Puntuaciones Reales DET",
+    "vs2": "Comparación de puntuaciones de estudiantes que tomaron nuestros exámenes de práctica DET y el Test de Inglés Duolingo",
+    "aqtitle": "Preguntas Frecuentes sobre nuestro <span class='yellow'>Examen de Práctica DET</span>",
+    "aqlistfont": [
+      {
+        "q": "¿Qué hace que su examen de práctica Duolingo sea diferente de otros materiales de práctica?",
+        "a": "Nuestro <a href='https://www.detpractice.com/mock-exam'>examen de práctica Duolingo</a> refleja con precisión el formato oficial del examen, el tiempo y el nivel de dificultad. Proporcionamos análisis de rendimiento integral y recomendaciones de estudio personalizadas después de cada sesión de práctica."
+      },
+      {
+        "q": "¿Cuánto tiempo lleva completar un examen de práctica Duolingo completo?",
+        "a": "Un examen de práctica Duolingo completo toma aproximadamente 1 hora, igual que el examen oficial. Puedes pausar y reanudar tu sesión de práctica en cualquier momento, haciéndolo flexible para tu horario."
+      },
+      {
+        "q": "¿Cuándo recibiré mis resultados del examen de práctica Duolingo?",
+        "a": "Tus resultados del examen de práctica se entregarán dentro de 5-30 minutos después de completarlo. El informe incluye análisis detallados sección por sección y áreas específicas para mejorar."
+      },
+      {
+        "q": "¿Puedo tomar el examen de práctica Duolingo varias veces?",
+        "a": "¡Sí! Puedes tomar nuestro <a href='https://www.detpractice.com/mock-exam'>examen de práctica DET</a> tantas veces como necesites. Cada intento proporciona nuevas perspectivas y ayuda a rastrear tu progreso con el tiempo."
+      },
+      {
+        "q": "¿Necesito instalar software especial para el examen de práctica Duolingo?",
+        "a": "No se requiere instalación. Nuestra plataforma de exámenes de práctica está basada en web y funciona en cualquier dispositivo con conexión a Internet - simplemente inicia sesión y comienza a practicar. Sin embargo, recomendamos usar el navegador Chrome para la mejor experiencia de prueba."
+      },
+      {
+        "q": "¿Qué tan actualizados están sus contenidos del examen de práctica Duolingo?",
+        "a": "Actualizamos regularmente nuestros <a href='https://www.detpractice.com/'>materiales de práctica DET</a> para reflejar el formato de prueba más reciente y los tipos de preguntas, asegurando que te prepares con el contenido más actual."
+      }
+    ],
+    "embarkfont": {
+      "title": "Toma tu Primer Examen de Práctica Duolingo Ahora",
+      "btnText": "Comenzar Ahora"
+    }
   },
   "practice": {
     "seometa": {

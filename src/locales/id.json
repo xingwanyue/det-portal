@@ -707,37 +707,68 @@
     },
     "mockexam": {
       "seometa": {
-        "title": "Duolingo English Mock Test {'|'} Simulasi DET Lengkap dari DET Practice",
-        "description": "Ikuti simulasi DET lengkap yang menyerupai ujian resmi Duolingo English. Dalam waktu 30 menit, Anda akan mendapatkan nilai dan laporan detail. Dilengkapi dengan bank soal 18.000+ pertanyaan, sistem ujian adaptif, serta penilaian speaking & writing berbasis AI. Persiapkan DET Anda mulai sekarang.",
-        "keywords": "duolingo english mock test, duolingo english practice test, simulasi DET lengkap, persiapan duolingo test, latihan duolingo english test, tryout DET, soal duolingo, latihan duolingo online, persiapan DET, bank soal duolingo english test, simulasi nilai duolingo, evaluasi kemampuan DET"
+        "title": "Tes Simulasi Duolingo - Platform Persiapan DET Profesional",
+        "description": "Platform Tes Simulasi Duolingo dengan materi latihan DET komprehensif. Dapatkan skor instan, laporan detail, dan soal bergaya ujian. Dipercaya oleh 10.000+ peserta tes.",
       },
-      "h1": "Simulasi DET Lengkap",
-      "desc": "Rasakan pengalaman ujian yang mirip dengan tes resmi melalui simulasi kami. Kenali proses ujian sebelum hari-H dan dapatkan nilai beserta laporan analisis lengkap untuk mengetahui aspek yang perlu ditingkatkan.",
-      "alt": "DET Latihan:Platform Duolingo English Test Latihan terbaik",
-      "mock_user_icon": "Ikon Pengguna Tiruan",
-      "white_arrow_right": "Panah Putih Kanan",
-      "orange_arrow_right": "Panah Oranye Kanan",
-      "learners_have": "Sudah lebih dari {number} peserta menggunakan simulasi kami untuk evaluasi dan latihan.",
-      "Mock_Now": "Mulai Simulasi",
-      "Full_scale": "Duolingo 1:1 Ujian Mock Skala Penuh",
+      "h1": "Tes Simulasi Duolingo - Platform Pengalaman Ujian Nyata oleh DET Practice",
+      "descnew": "Tes Simulasi Duolingo Komprehensif yang Terasa Nyata",
+      "desc": "Berlatih dengan tes simulasi Duolingo kami yang mencerminkan dengan sempurna lingkungan ujian yang sebenarnya. Dapatkan skor instan dan analisis mendalam untuk mengidentifikasi kekuatan dan kelemahan Anda, membantu Anda mempersiapkan diri dengan percaya diri untuk ujian sebenarnya.",
+      "alt": "DET Practice: Platform Latihan Tes Bahasa Inggris Duolingo Terbaik",
+      "mock_user_icon": "Mock User Icon",
+      "white_arrow_right": "White Arrow Right",
+      "orange_arrow_right": "Orange Arrow Right",
+      "learners_have": "Bergabunglah dengan {number} peserta tes sukses yang mempercayai tes simulasi Duolingo kami!",
+      "Mock_Now": "Mulai Sekarang",
+      "Full_scale": "Ujian Simulasi Duolingo Skala Penuh 1:1",
       "article1": {
-        "h2": "Mirip Ujian Resmi",
-        "right_desc": "Sistem ujian adaptif kami memberikan pengalaman yang mirip dengan tes resmi. Berlatih dengan berbagai tipe soal dan dapatkan penilaian yang akurat."
+        "h2": "Tes Simulasi DET Seperti Hari Ujian",
+        "right_desc": "Ketahui persis apa yang akan dihadapi pada hari ujian. Tes simulasi DET kami mencerminkan lingkungan DET resmi, membantu Anda merasa percaya diri dan siap menghadapi ujian sebenarnya. Berlatih dengan bagian-bagian yang dijadwalkan secara akurat dan tipe soal otentik untuk menguasai format tes."
       },
       "article2": {
-        "h2": "Penilaian & Analisis Detail",
-        "right_desc": "Laporan hasil simulasi memberikan analisis mendalam tentang kekuatan dan kelemahan Anda, dilengkapi dengan rekomendasi belajar otomatis untuk persiapan yang lebih efektif."
+        "h2": "Analisis Skor Komprehensif",
+        "right_desc": "Terima laporan tes simulasi detail dengan analisis performa yang tepat di semua bagian. Sistem AI cerdas kami mengidentifikasi kekuatan dan area yang perlu ditingkatkan, menciptakan rekomendasi belajar personal untuk meningkatkan persiapan tes Anda."
       },
       "article3": {
-        "h2": "Waktu Fleksibel",
-        "right_desc": "Tidak perlu reservasi, kerjakan kapan saja sesuai waktu Anda. Langsung mulai setelah pembayaran dan bisa dijeda atau dilanjutkan sesuka hati."
+        "h2": "Tes Simulasi DET Kapan Saja, Di Mana Saja",
+        "right_desc": "Ikuti tes simulasi DET kapan pun dan di mana pun yang nyaman bagi Anda. Platform online kami memberikan akses instan ke tes latihan, sehingga Anda bisa bersiap sesuai jadwal Anda."
       },
       "article4": {
-        "h2": "Hasil Cepat",
-        "right_desc": "Nilai dan laporan tersedia dalam <span class='zdfont'>5-30 menit</span> untuk memantau perkembangan belajar Anda."
+        "h2": "Laporan Umpan Balik Tes Simulasi DET yang Cepat",
+        "right_desc": "Dapatkan hasil tes simulasi DET detail Anda hanya dalam <span class='zdfont'>5-30 menit</span>. Sistem penilaian super cepat kami memberikan umpan balik langsung, memungkinkan Anda melacak kemajuan dan menyesuaikan strategi persiapan secara efisien."
       },
-      "vs1": "Perbandingan Nilai Simulasi DET Practice dengan DET Resmi",
-      "vs2": "Data perbandingan nilai peserta yang mengikuti DET resmi dan simulasi kami."
+      "vs1": "Skor Tes Simulasi DET Kami VS Skor Tes DET Sebenarnya",
+      "vs2": "Perbandingan skor peserta tes yang mengambil tes simulasi DET kami dan Tes Bahasa Inggris Duolingo",
+      "aqtitle": "FAQ tentang <span class='yellow'>Tes Simulasi DET</span> kami",
+      "aqlistfont": [
+        {
+          "q": "Apa yang membuat tes simulasi Duolingo Anda berbeda dari materi latihan lainnya?",
+          "a": "<a href='https://www.detpractice.com/mock-exam'>Tes simulasi Duolingo</a> kami secara tepat mencerminkan format ujian resmi, waktu, dan tingkat kesulitan. Kami menyediakan analisis performa komprehensif dan rekomendasi belajar personal setelah setiap sesi latihan."
+        },
+        {
+          "q": "Berapa lama waktu yang dibutuhkan untuk menyelesaikan tes simulasi Duolingo lengkap?",
+          "a": "Tes simulasi Duolingo lengkap membutuhkan waktu sekitar 1 jam, sesuai dengan durasi tes resmi. Anda dapat menjeda dan melanjutkan sesi latihan kapan saja, membuatnya fleksibel untuk jadwal Anda."
+        },
+        {
+          "q": "Kapan saya akan menerima hasil tes simulasi Duolingo saya?",
+          "a": "Hasil tes simulasi Anda akan dikirimkan dalam waktu 5-30 menit setelah selesai. Laporan mencakup analisis detail bagian per bagian dan area spesifik untuk peningkatan."
+        },
+        {
+          "q": "Bisakah saya mengambil tes simulasi Duolingo beberapa kali?",
+          "a": "Ya! Anda dapat mengambil <a href='https://www.detpractice.com/mock-exam'>tes simulasi DET</a> kami sebanyak yang Anda butuhkan. Setiap percobaan memberikan wawasan baru dan membantu melacak kemajuan Anda dari waktu ke waktu."
+        },
+        {
+          "q": "Apakah saya perlu menginstal perangkat lunak khusus untuk tes simulasi Duolingo?",
+          "a": "Tidak perlu instalasi. Platform tes simulasi kami berbasis web dan berfungsi di perangkat apa pun dengan koneksi internet - cukup masuk dan mulai berlatih. Namun, kami merekomendasikan menggunakan browser Chrome untuk pengalaman tes terbaik."
+        },
+        {
+          "q": "Seberapa up-to-date konten tes simulasi Duolingo Anda?",
+          "a": "Kami secara rutin memperbarui materi <a href='https://www.detpractice.com/'>latihan DET</a> kami untuk mencerminkan format tes dan tipe soal terbaru, memastikan Anda bersiap dengan konten yang paling mutakhir."
+        }
+      ],
+      "embarkfont": {
+        "title": "Ambil Tes Simulasi Duolingo Pertama Anda Sekarang",
+        "btnText": "Mulai Sekarang"
+      }
     },
     "practice": {
       "seometa": {

@@ -708,37 +708,68 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "多邻国英语测试（DET）模拟考试 {'|'} 专业完整版模拟测试，由 DET Practice 提供",
-      "description": "参加专业的多邻国英语模拟考试，体验最真实的 DET 考试环境。数分钟即可获得详细的成绩报告和分析。题库包含 18,000+ 道优质试题，采用智能自适应算法，配备 AI 口语和写作评估系统。立即开启你的 DET 备考之路。",
-      "keywords": "duolingo english mock test, duolingo english practice test, DET 模拟考试, duolingo 备考资源, duolingo english test 在线模考, DET practice test, duolingo 真题练习, 在线 duolingo 模拟, DET 备考指南, duolingo english test 题库, duolingo 成绩评估, DET 能力测评"
+      "title": "多邻国模考 - 专业DET备考平台",
+      "description": "多邻国模考平台，提供全面的DET模考材料。获取即时分数、详细报告和真题风格的试题。超过10,000名考生的共同选择。",
     },
-    "h1": "DET 1:1还原模拟考试",
-    "desc": "体验最贴近真实考试的全真模拟。提前熟悉考试流程，获取即时成绩和专业分析报告，精准定位需要提升的分数项",
-    "alt": "DET 练习：最好的 Duolingo English Test 练习平台",
-    "mock_user_icon": "模拟用户图标",
-    "white_arrow_right": "白色箭头右",
-    "orange_arrow_right": "橙色箭头右",
-    "learners_have": "已有超过 {number} 名考生通过我们的模拟系统进行备考训练。",
+    "h1": "多邻国模拟考试 - DET Practice打造的真实考试体验平台",
+    "descnew": "全面的多邻国模拟考试，给您真实考试体验",
+    "desc": "通过我们高度还原真实考试环境的多邻国模拟考试进行练习。获取即时分数和深度分析，帮助您识别优势和不足，让您以充分的信心备战真实考试。",
+    "alt": "DET Practice：最佳多邻国英语测试练习平台",
+    "mock_user_icon": "Mock User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "orange_arrow_right": "Orange Arrow Right",
+    "learners_have": "加入{number}位通过我们多邻国模考的成功上岸的考生！",
     "Mock_Now": "立即模考",
-    "Full_scale": "Duolingo 1:1 完全模拟考试",
+    "Full_scale": "多邻国1:1全真模拟考试",
     "article1": {
-      "h2": "高度还原真实考试",
-      "right_desc": "采用专业的自适应测试算法，打造真实考试环境。帮助你快速掌握各种题型，获得准确的能力评估。"
+      "h2": "还原现场考试的DET模拟测试",
+      "right_desc": "准确模拟考试当天的情况。我们的DET模考完美还原官方DET考试环境，帮助您建立信心，为真实考试做好充分准备。通过准确计时的考试部分和真实的题型练习，快速熟悉考试形式。"
     },
     "article2": {
-      "h2": "专业评分与深度分析",
-      "right_desc": "提供全面的考试报告，精确分析你的强项与短板，并根据表现自动调整学习计划，提高备考效率。"
+      "h2": "全面的分数分析",
+      "right_desc": "获取详细的考试分数报告，精确分析所有考试部分的表现。我们的智能AI系统识别您的强项和需要提升的领域，制定个性化的学习建议以提升您的备考效果。"
     },
     "article3": {
-      "h2": "灵活便捷的考试模式",
-      "right_desc": "随时随地开始考试，无需预约。购买后即可使用，支持随时暂停和继续。"
+      "h2": "随时随地进行DET模考",
+      "right_desc": "随时随地轻松参加 DET 模拟测试。我们的在线平台提供即时练习，助您灵活安排备考时间，高效备考。"
     },
     "article4": {
-      "h2": "快速出分",
-      "right_desc": "<span class='zdfont'>5-30分钟</span>内即可查看考试成绩，助你快速掌握学习进度。"
+      "h2": "快速DET模拟反馈报告",
+      "right_desc": "仅需<span class='zdfont'>5-30分钟</span>即可获取详细的DET模拟考试结果。我们的闪电般快速评分系统提供即时反馈，让您能够有效追踪进度并调整备考策略。"
     },
-    "vs1": "DET Practice 模考成绩与官方考试成绩对比",
-    "vs2": "真实考生在 Duolingo English Test 与我们模拟系统的成绩对照分析"
+    "vs1": "我们的DET模拟考试分数 VS 真实DET考试分数",
+    "vs2": "参加过我们DET模拟考试和多邻国英语测试考生的分数对比",
+    "aqtitle": "关于我们的<span class='yellow'>DET模拟考试</span>常见问题",
+    "aqlistfont": [
+      {
+        "q": "是什么让你们的多邻国模拟考试与其他练习材料不同？",
+        "a": "我们的<a href='https://www.detpractice.com/mock-exam'>多邻国模拟考试</a>精确还原DET官方考试的形式、时间和难度水平。我们在每次练习后提供全面的表现分析和个性化的学习建议。"
+      },
+      {
+        "q": "完成一次完整的多邻国模拟考试需要多长时间？",
+        "a": "一次完整的多邻国模拟考试大约需要1小时，与官方考试时长相同。您可以随时暂停和恢复练习，灵活适应您的时间安排。"
+      },
+      {
+        "q": "我什么时候能收到多邻国模拟考试结果？",
+        "a": "您的模拟考试结果将在完成考试后5-30分钟内生成。报告包括详细的分项分析和具体的改进建议。"
+      },
+      {
+        "q": "我可以多次参加多邻国模拟考试吗？",
+        "a": "当然可以！您可以根据需要多次参加我们的<a href='https://www.detpractice.com/mock-exam'>DET模拟考试</a>。每次尝试都会提供新的见解，帮助您追踪进步情况。"
+      },
+      {
+        "q": "参加多邻国模拟考试需要安装特殊软件吗？",
+        "a": "不需要安装任何软件。我们的模拟考试平台是基于网页的，可在任何有网络连接的设备上使用 - 只需登录即可开始练习。不过，我们建议使用Chrome浏览器以获得最佳测试体验。"
+      },
+      {
+        "q": "你们的多邻国模拟考试内容更新频率如何？",
+        "a": "我们定期更新<a href='https://www.detpractice.com/'>DET练习</a>材料，以反映最新的考试形式和题型，确保您使用最新的内容进行备考。"
+      }
+    ],
+    "embarkfont": {
+      "title": "现在就开始您的第一次多邻国模拟考试",
+      "btnText": "立即开始"
+    }
   },
   "practice": {
     "seometa": {

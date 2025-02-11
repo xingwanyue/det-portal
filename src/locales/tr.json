@@ -709,37 +709,68 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Practice'ten Gerçek Formatta Duolingo English Deneme Sınavı",
-      "description": "DET'e birebir uygun deneme sınavlarıyla hazırlanın. Sınavınızı tamamladıktan sonra 30 dakika içinde sonuçlarınızı ve detaylı analizinizi alın. 18.000'i aşkın alıştırma sorusu, akıllı uyarlamalı algoritma ve yapay zeka destekli konuşma-yazma değerlendirmesi ile tam donanımlı hazırlık imkanı. DET yolculuğunuza hemen başlayın.",
-      "keywords": "duolingo english örnek sınav, duolingo english alıştırma sınavı, gerçek format DET sınavı, duolingo hazırlık, duolingo english test çalışma, DET örnek sınav, duolingo soru bankası, çevrimiçi duolingo çalışma, DET hazırlık programı, duolingo english soru örnekleri, DET performans ölçümü, duolingo değerlendirme"
+      "title": "Duolingo Deneme Sınavı - Profesyonel DET Hazırlık Platformu",
+      "description": "Kapsamlı DET pratik materyalleri ile Duolingo Deneme Sınavı platformu. Anında sonuçlar, detaylı raporlar ve sınav tarzı sorular. 10.000+ sınav adayının güvendiği platform.",
     },
-    "h1": "Gerçek DET Formatında Deneme",
-    "desc": "Birebir uyumlu deneme sınavlarımızla gerçek sınav atmosferini yaşayın. Sınav sürecini önceden deneyimleyin ve gelişim alanlarınızı belirlemek için anında sonuç ve kapsamlı analiz alın.",
-    "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
-    "mock_user_icon": "Sahte Kullanıcı Simgesi",
-    "white_arrow_right": "Beyaz Ok Sağ",
-    "orange_arrow_right": "Turuncu Ok Sağ",
-    "learners_have": "Şimdiye kadar {number}'den fazla öğrenci başarıyla hazırlandı.",
-    "Mock_Now": "Hemen Dene",
-    "Full_scale": "Duolingo 1:1 Gerçek Ölçekli Deneme Sınavı",
+    "h1": "Duolingo Deneme Sınavı - DET Practice'ten Gerçek Sınav Deneyimi Platformu",
+    "descnew": "Gerçeği Aratmayan Kapsamlı Duolingo Deneme Sınavı",
+    "desc": "Gerçek sınav ortamını mükemmel şekilde yansıtan Duolingo deneme sınavımızla pratik yapın. Anında sonuçlar ve derinlemesine analiz ile güçlü ve zayıf yönlerinizi belirleyerek gerçek sınava güvenle hazırlanmanıza yardımcı oluyoruz.",
+    "alt": "DET Practice: En iyi Duolingo İngilizce Testi Pratik platformu",
+    "mock_user_icon": "Mock User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "orange_arrow_right": "Orange Arrow Right",
+    "learners_have": "Duolingo deneme sınavlarımıza güvenen {number} başarılı sınav adayına katılın!",
+    "Mock_Now": "Hemen Başla",
+    "Full_scale": "Duolingo 1:1 Tam Ölçekli Deneme Sınavı",
     "article1": {
-      "h2": "Gerçeğe Birebir Uygun",
-      "right_desc": "Akıllı uyarlamalı algoritmamız sayesinde gerçek sınav ortamında çalışın. Tüm soru tiplerinde uzmanlaşın ve net değerlendirmeler alın."
+      "h2": "Sınav Günü Gibi DET Deneme Sınavı",
+      "right_desc": "Sınav gününde sizi neyin beklediğini tam olarak bilin. DET deneme sınavımız resmi DET ortamını birebir yansıtarak gerçek sınava kendinden emin ve hazırlıklı hissetmenizi sağlar. Doğru zamanlanmış bölümler ve gerçek soru tipleriyle sınav formatını tam olarak öğrenin."
     },
     "article2": {
-      "h2": "Hassas Ölçüm ve Detaylı Analiz",
-      "right_desc": "Her deneme sonrası güçlü ve gelişime açık yönlerinizi gösteren kapsamlı rapor alın. Çalışma planınız otomatik olarak güncellenir."
+      "h2": "Kapsamlı Puan Analizi",
+      "right_desc": "Tüm bölümlerde hassas performans analizi içeren detaylı deneme sınavı raporları alın. Akıllı AI sistemimiz güçlü yönlerinizi ve geliştirilmesi gereken alanları belirleyerek sınav hazırlığınızı artıracak kişiselleştirilmiş çalışma önerileri oluşturur."
     },
     "article3": {
-      "h2": "Size Özel Çalışma İmkanı",
-      "right_desc": "Randevu derdi olmadan, istediğiniz zaman çalışın. Satın almanızın ardından hemen başlayabilir, dilediğinizde ara verip kaldığınız yerden devam edebilirsiniz."
+      "h2": "İstediğiniz Zaman, İstediğiniz Yerde DET Deneme Sınavı",
+      "right_desc": "Size uygun zamanda ve yerde DET deneme sınavı alın. Çevrimiçi platformumuz pratik testlere anında erişim sağlayarak kendi programınıza göre hazırlanmanıza olanak tanır."
     },
     "article4": {
-      "h2": "Hızlı Sonuç Bildirimi",
-      "right_desc": "Deneme sınavı sonuçlarınızı <span class='zdfont'>5-30 dakika</span> içinde alarak ilerlemenizi takip edin."
+      "h2": "Hızlı DET Deneme Sınavı Geri Bildirim Raporu",
+      "right_desc": "Detaylı DET deneme sınavı sonuçlarınızı sadece <span class='zdfont'>5-30 dakika</span> içinde alın. Yıldırım hızındaki puanlama sistemimiz anında geri bildirim sağlayarak ilerlemenizi verimli bir şekilde takip etmenize ve hazırlık stratejinizi ayarlamanıza olanak tanır."
     },
-    "vs1": "DET Practice ve Gerçek DET Karşılaştırması",
-    "vs2": "Resmi DET sınavına giren adayların deneme sınavlarımızdaki performans analizi."
+    "vs1": "DET Deneme Sınavı Puanlarımız ve Gerçek DET Sınavı Puanları Karşılaştırması",
+    "vs2": "DET deneme sınavlarımızı ve Duolingo İngilizce Testini alan adayların puan karşılaştırması",
+    "aqtitle": "<span class='yellow'>DET Deneme Sınavımız</span> hakkında Sık Sorulan Sorular",
+    "aqlistfont": [
+      {
+        "q": "Duolingo deneme sınavınızı diğer pratik materyallerden farklı kılan nedir?",
+        "a": "<a href='https://www.detpractice.com/mock-exam'>Duolingo deneme sınavımız</a> resmi sınav formatını, zamanlamasını ve zorluk seviyesini tam olarak yansıtır. Her pratik oturumundan sonra kapsamlı performans analizi ve kişiselleştirilmiş çalışma önerileri sunuyoruz."
+      },
+      {
+        "q": "Tam bir Duolingo deneme sınavını tamamlamak ne kadar sürer?",
+        "a": "Tam bir Duolingo deneme sınavı, resmi sınavla aynı şekilde yaklaşık 1 saat sürer. Pratik oturumunuzu istediğiniz zaman duraklatıp devam edebilirsiniz, bu da programınıza göre esnek olmasını sağlar."
+      },
+      {
+        "q": "Duolingo deneme sınavı sonuçlarımı ne zaman alacağım?",
+        "a": "Deneme sınavı sonuçlarınız tamamlandıktan sonra 5-30 dakika içinde teslim edilir. Rapor, bölüm bazında detaylı analiz ve geliştirilmesi gereken belirli alanları içerir."
+      },
+      {
+        "q": "Duolingo deneme sınavını birden fazla kez alabilir miyim?",
+        "a": "Evet! <a href='https://www.detpractice.com/mock-exam'>DET deneme sınavımızı</a> ihtiyacınız olan kadar çok kez alabilirsiniz. Her deneme yeni içgörüler sağlar ve zamanla ilerlemenizi takip etmenize yardımcı olur."
+      },
+      {
+        "q": "Duolingo deneme sınavı için özel bir yazılım yüklemem gerekiyor mu?",
+        "a": "Yükleme gerekmez. Deneme sınavı platformumuz web tabanlıdır ve internet bağlantısı olan herhangi bir cihazda çalışır - sadece giriş yapın ve pratik yapmaya başlayın. Ancak, en iyi test deneyimi için Chrome tarayıcısını kullanmanızı öneririz."
+      },
+      {
+        "q": "Duolingo deneme sınavı içeriğiniz ne kadar güncel?",
+        "a": "En son test formatını ve soru tiplerini yansıtması için <a href='https://www.detpractice.com/'>DET pratik</a> materyallerimizi düzenli olarak güncelliyoruz, böylece mevcut en güncel içerikle hazırlanıyorsunuz."
+      }
+    ],
+    "embarkfont": {
+      "title": "İlk Duolingo Deneme Sınavınızı Şimdi Alın",
+      "btnText": "Şimdi Başla"
+    }
   },
   "practice": {
     "seometa": {

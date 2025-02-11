@@ -708,37 +708,68 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Duolingo English Mock Test {'|'} Authentischer DET-Simulationstest von DET Practice",
-      "description": "Bereiten Sie sich optimal auf den Duolingo English Test vor mit unserem originalgetreuen DET-Simulationstest. Ihre Ergebnisse und eine ausführliche Auswertung erhalten Sie innerhalb von 30 Minuten. Profitieren Sie von über 18.000 Übungsaufgaben, einem intelligenten adaptiven Algorithmus und KI-gestützter Bewertung für Sprechen und Schreiben. Starten Sie noch heute mit Ihrer DET-Vorbereitung.",
-      "keywords": "duolingo english mock test, duolingo english practice test, DET-Simulation, duolingo-Vorbereitung, duolingo english test Übung, DET-Probetest, duolingo Übungsmaterial, Online-DET-Training, DET-Prüfungsvorbereitung, duolingo Aufgabensammlung, DET-Leistungsanalyse, Duolingo-Testtraining"
+      "title": "Duolingo Übungstest - Professionelle DET-Vorbereitungsplattform",
+      "description": "Duolingo Übungstest-Plattform mit umfassenden DET-Übungsmaterialien. Erhalten Sie sofortige Ergebnisse, detaillierte Berichte und prüfungsähnliche Fragen. Von über 10.000 Testteilnehmern vertraut.",
     },
-    "h1": "Originalgetreue DET-Simulation",
-    "desc": "Erleben Sie eine authentische Testsituation mit unseren vollständigen Übungstests. Lernen Sie den Prüfungsablauf kennen und erhalten Sie umgehend Ihre Ergebnisse samt detaillierter Analyse zur gezielten Verbesserung.",
-    "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
-    "mock_user_icon": "Benutzersymbol simulieren",
-    "white_arrow_right": "Weißer Pfeil nach rechts",
-    "orange_arrow_right": "Oranger Pfeil rechts",
-    "learners_have": "Bereits über {number} Teilnehmer haben mit unseren Übungstests erfolgreich trainiert.",
-    "Mock_Now": "Test jetzt starten",
-    "Full_scale": "Duolingo 1:1 Vollständige Prüfungssimulation",
+    "h1": "Duolingo Übungstest - Plattform für realistische Prüfungserfahrung von DET Practice",
+    "descnew": "Umfassender Duolingo Übungstest mit echtem Prüfungsgefühl",
+    "desc": "Üben Sie mit unserem realitätsnahen Duolingo Übungstest, der die echte Prüfungsumgebung perfekt nachbildet. Erhalten Sie sofortige Ergebnisse und eingehende Analysen zur Identifizierung Ihrer Stärken und Schwächen, die Ihnen helfen, sich zuversichtlich auf die eigentliche Prüfung vorzubereiten.",
+    "alt": "DET Practice: Die beste Duolingo English Test Übungsplattform",
+    "mock_user_icon": "Mock User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "orange_arrow_right": "Orange Arrow Right",
+    "learners_have": "Schließen Sie sich {number} erfolgreichen Testteilnehmern an, die unseren Duolingo Übungstests vertrauen!",
+    "Mock_Now": "Jetzt üben",
+    "Full_scale": "Duolingo 1:1 Vollständiger Übungstest",
     "article1": {
-      "h2": "Realistische Prüfungsumgebung",
-      "right_desc": "Trainieren Sie unter echten Prüfungsbedingungen dank unserem adaptiven Algorithmus. Beherrschen Sie alle Aufgabentypen und erhalten Sie eine präzise Leistungseinschätzung."
+      "h2": "DET Übungstest wie am Prüfungstag",
+      "right_desc": "Wissen Sie genau, was Sie am Prüfungstag erwartet. Unser DET Übungstest spiegelt die offizielle DET-Umgebung wider und hilft Ihnen, sich selbstbewusst und vorbereitet für die echte Prüfung zu fühlen. Üben Sie mit präzise getakteten Abschnitten und authentischen Fragetypen, um das Prüfungsformat zu meistern."
     },
     "article2": {
-      "h2": "Genaue Bewertung und umfassende Analyse",
-      "right_desc": "Erhalten Sie einen detaillierten Testbericht mit Analyse Ihrer Stärken und Schwächen sowie einen automatisch angepassten Lernplan für optimale Vorbereitung."
+      "h2": "Umfassende Punkteanalyse",
+      "right_desc": "Erhalten Sie detaillierte Übungstestberichte mit präziser Leistungsanalyse in allen Bereichen. Unser intelligentes KI-System identifiziert Ihre Stärken und Verbesserungsbereiche und erstellt personalisierte Lernempfehlungen zur Optimierung Ihrer Testvorbereitung."
     },
     "article3": {
-      "h2": "Maximale Flexibilität",
-      "right_desc": "Üben Sie ohne Terminbindung wann immer es Ihnen passt. Sofortiger Zugang nach dem Kauf mit der Möglichkeit, jederzeit zu pausieren und fortzusetzen."
+      "h2": "DET Übungstest jederzeit und überall",
+      "right_desc": "Nehmen Sie einen DET Übungstest wann und wo es Ihnen am besten passt. Unsere Online-Plattform bietet sofortigen Zugriff auf Übungstests, sodass Sie sich nach Ihrem eigenen Zeitplan vorbereiten können."
     },
     "article4": {
-      "h2": "Schnelle Ergebnisse",
-      "right_desc": "Ihre Testergebnisse sind innerhalb von 5-30 Minuten</span> verfügbar für eine effiziente Lernkontrolle."
+      "h2": "Schneller DET Übungstest-Feedback-Bericht",
+      "right_desc": "Erhalten Sie Ihre detaillierten DET Übungstestergebnisse in nur <span class='zdfont'>5-30 Minuten</span>. Unser blitzschnelles Bewertungssystem liefert sofortiges Feedback, sodass Sie Ihren Fortschritt verfolgen und Ihre Vorbereitungsstrategie effizient anpassen können."
     },
-    "vs1": "Vergleich DET Practice und offizieller DET",
-    "vs2": "Gegenüberstellung der Ergebnisse von Teilnehmern im offiziellen Duolingo English Test und unserem Simulationstest."
+    "vs1": "Unsere DET Übungstest-Ergebnisse VS Echte DET-Testergebnisse",
+    "vs2": "Punktevergleich von Teilnehmern, die unsere DET Übungstests und den Duolingo English Test absolviert haben",
+    "aqtitle": "Häufig gestellte Fragen zu unserem <span class='yellow'>DET Übungstest</span>",
+    "aqlistfont": [
+      {
+        "q": "Was macht Ihren Duolingo Übungstest anders als andere Übungsmaterialien?",
+        "a": "Unser <a href='https://www.detpractice.com/mock-exam'>Duolingo Übungstest</a> spiegelt das offizielle Prüfungsformat, Timing und Schwierigkeitsniveau präzise wider. Wir bieten umfassende Leistungsanalysen und personalisierte Lernempfehlungen nach jeder Übungssitzung."
+      },
+      {
+        "q": "Wie lange dauert ein vollständiger Duolingo Übungstest?",
+        "a": "Ein vollständiger Duolingo Übungstest dauert etwa 1 Stunde, entsprechend der offiziellen Testdauer. Sie können Ihre Übungssitzung jederzeit pausieren und fortsetzen, was sie flexibel für Ihren Zeitplan macht."
+      },
+      {
+        "q": "Wann erhalte ich meine Duolingo Übungstestergebnisse?",
+        "a": "Ihre Übungstestergebnisse werden innerhalb von 5-30 Minuten nach Abschluss zugestellt. Der Bericht enthält detaillierte Analysen für jeden Abschnitt und spezifische Verbesserungsbereiche."
+      },
+      {
+        "q": "Kann ich den Duolingo Übungstest mehrmals absolvieren?",
+        "a": "Ja! Sie können unseren <a href='https://www.detpractice.com/mock-exam'>DET Übungstest</a> so oft wie nötig absolvieren. Jeder Versuch liefert neue Erkenntnisse und hilft Ihnen, Ihren Fortschritt im Laufe der Zeit zu verfolgen."
+      },
+      {
+        "q": "Muss ich spezielle Software für den Duolingo Übungstest installieren?",
+        "a": "Keine Installation erforderlich. Unsere Übungstestplattform ist webbasiert und funktioniert auf jedem Gerät mit Internetverbindung - melden Sie sich einfach an und beginnen Sie mit dem Üben. Für die beste Testerfahrung empfehlen wir jedoch die Verwendung des Chrome-Browsers."
+      },
+      {
+        "q": "Wie aktuell sind Ihre Duolingo Übungstestinhalte?",
+        "a": "Wir aktualisieren unsere <a href='https://www.detpractice.com/'>DET Übungsmaterialien</a> regelmäßig, um das neueste Testformat und die aktuellsten Fragetypen widerzuspiegeln und sicherzustellen, dass Sie mit den aktuellsten Inhalten üben."
+      }
+    ],
+    "embarkfont": {
+      "title": "Nehmen Sie jetzt Ihren ersten Duolingo Übungstest",
+      "btnText": "Jetzt starten"
+    }
   },
   "practice": {
     "seometa": {

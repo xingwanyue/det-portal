@@ -708,37 +708,68 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Test Blanc Duolingo English {'|'} Simulation Complète DET par DET Practice",
-      "description": "Préparez-vous au Duolingo English Test avec notre simulation fidèle du DET. Recevez vos résultats et une analyse détaillée en moins de 30 minutes. Bénéficiez d'une banque de plus de 18 000 questions, d'un algorithme adaptatif intelligent et d'une évaluation par IA de l'expression orale et écrite. Lancez votre préparation au DET aujourd'hui.",
-      "keywords": "duolingo english mock test, duolingo english practice test, simulation DET, préparation duolingo, entraînement duolingo english test, test blanc DET, exercices duolingo, préparation en ligne duolingo, révision DET, banque d'exercices duolingo, évaluation duolingo, entraînement DET"
+      "title": "Test d'Entraînement Duolingo - Plateforme Professionnelle de Préparation DET",
+      "description": "Plateforme de Tests d'Entraînement Duolingo avec matériel complet de préparation DET. Obtenez des résultats instantanés, des rapports détaillés et des questions type examen. Approuvé par plus de 10 000 candidats.",
     },
-    "h1": "Simulation Authentique du DET",
-    "desc": "Immergez-vous dans une simulation fidèle de l'examen. Familiarisez-vous avec le déroulement réel de l'épreuve et obtenez rapidement une analyse détaillée de vos performances pour identifier vos axes de progression.",
-    "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
-    "mock_user_icon": "Icône utilisateur fictif",
-    "white_arrow_right": "Flèche Blanche Droite",
-    "orange_arrow_right": "Flèche Orange Droite",
-    "learners_have": "Déjà plus de {number} candidats ont perfectionné leur préparation grâce à nos simulations.",
-    "Mock_Now": "Commencer le Test",
-    "Full_scale": "Duolingo 1:1 Examen simulé à échelle réelle",
+    "h1": "Test d'Entraînement Duolingo - Plateforme d'Expérience Réelle par DET Practice",
+    "descnew": "Test d'Entraînement Duolingo Complet à l'Image du Réel",
+    "desc": "Entraînez-vous avec notre test d'entraînement Duolingo qui reflète parfaitement l'environnement de l'examen réel. Obtenez des résultats instantanés et des analyses approfondies pour identifier vos points forts et vos points faibles, vous aidant à vous préparer en toute confiance pour l'examen réel.",
+    "alt": "DET Practice : La Meilleure Plateforme d'Entraînement pour le Test d'Anglais Duolingo",
+    "mock_user_icon": "Mock User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "orange_arrow_right": "Orange Arrow Right",
+    "learners_have": "Rejoignez les {number} candidats qui font confiance à nos tests d'entraînement Duolingo !",
+    "Mock_Now": "Commencer Maintenant",
+    "Full_scale": "Test d'Entraînement Duolingo Complet 1:1",
     "article1": {
-      "h2": "Conditions d'Examen Réalistes",
-      "right_desc": "Entraînez-vous dans des conditions identiques au jour J grâce à notre algorithme adaptatif. Maîtrisez tous les types de questions et évaluez précisément votre niveau."
+      "h2": "Test d'Entraînement DET Comme le Jour de l'Examen",
+      "right_desc": "Sachez exactement à quoi vous attendre le jour de l'examen. Notre test d'entraînement DET reflète l'environnement officiel DET, vous aidant à vous sentir confiant et préparé pour l'examen réel. Pratiquez avec des sections minutées avec précision et des types de questions authentiques pour maîtriser le format du test."
     },
     "article2": {
-      "h2": "Évaluation Précise et Analyse Approfondie",
-      "right_desc": "Recevez une analyse détaillée identifiant vos points forts et vos points faibles, avec un programme de révision personnalisé et automatiquement mis à jour."
+      "h2": "Analyse Complète des Scores",
+      "right_desc": "Recevez des rapports détaillés du test d'entraînement avec une analyse précise des performances dans toutes les sections. Notre système d'IA intelligent identifie vos points forts et les domaines à améliorer, créant des recommandations d'étude personnalisées pour améliorer votre préparation."
     },
     "article3": {
-      "h2": "Flexibilité Maximale",
-      "right_desc": "Passez votre test quand vous le souhaitez, sans réservation. Accès immédiat après l'achat, avec possibilité de pause et reprise à votre convenance."
+      "h2": "Test d'Entraînement DET Quand et Où Vous Voulez",
+      "right_desc": "Passez un test d'entraînement DET quand et où cela vous convient. Notre plateforme en ligne fournit un accès instantané aux tests d'entraînement, vous permettant de vous préparer selon votre emploi du temps."
     },
     "article4": {
-      "h2": "Résultats Rapides",
-      "right_desc": " Consultez votre score et votre analyse en <span class='zdfont'>5 à 30 minutes</span> pour un suivi optimal de vos progrès."
+      "h2": "Rapport Rapide de Retour sur le Test d'Entraînement DET",
+      "right_desc": "Recevez vos résultats détaillés du test d'entraînement DET en seulement <span class='zdfont'>5-30 minutes</span>. Notre système de notation ultra-rapide fournit un retour immédiat, vous permettant de suivre vos progrès et d'ajuster votre stratégie de préparation efficacement."
     },
-    "vs1": "Corrélation Scores DET Practice - Scores Officiels",
-    "vs2": "Analyse comparative entre les résultats officiels au Duolingo English Test et les scores obtenus à nos simulations"
+    "vs1": "Nos Scores de Tests d'Entraînement DET VS Scores Réels DET",
+    "vs2": "Comparaison des scores des candidats ayant passé nos tests d'entraînement DET et le Test d'Anglais Duolingo",
+    "aqtitle": "Questions Fréquentes sur notre <span class='yellow'>Test d'Entraînement DET</span>",
+    "aqlistfont": [
+      {
+        "q": "Qu'est-ce qui rend votre test d'entraînement Duolingo différent des autres matériels de pratique ?",
+        "a": "Notre <a href='https://www.detpractice.com/mock-exam'>test d'entraînement Duolingo</a> reflète précisément le format officiel de l'examen, le timing et le niveau de difficulté. Nous fournissons une analyse complète des performances et des recommandations d'étude personnalisées après chaque session de pratique."
+      },
+      {
+        "q": "Combien de temps faut-il pour compléter un test d'entraînement Duolingo complet ?",
+        "a": "Un test d'entraînement Duolingo complet prend environ 1 heure, comme l'examen officiel. Vous pouvez mettre en pause et reprendre votre session de pratique à tout moment, la rendant flexible pour votre emploi du temps."
+      },
+      {
+        "q": "Quand recevrai-je mes résultats du test d'entraînement Duolingo ?",
+        "a": "Vos résultats du test d'entraînement seront livrés dans les 5-30 minutes après l'achèvement. Le rapport inclut une analyse détaillée section par section et des domaines spécifiques à améliorer."
+      },
+      {
+        "q": "Puis-je passer le test d'entraînement Duolingo plusieurs fois ?",
+        "a": "Oui ! Vous pouvez passer notre <a href='https://www.detpractice.com/mock-exam'>test d'entraînement DET</a> autant de fois que nécessaire. Chaque tentative fournit de nouvelles perspectives et aide à suivre vos progrès au fil du temps."
+      },
+      {
+        "q": "Dois-je installer un logiciel spécial pour le test d'entraînement Duolingo ?",
+        "a": "Aucune installation n'est requise. Notre plateforme de test d'entraînement est basée sur le web et fonctionne sur n'importe quel appareil avec une connexion Internet - connectez-vous simplement et commencez à pratiquer. Cependant, nous recommandons d'utiliser le navigateur Chrome pour la meilleure expérience de test."
+      },
+      {
+        "q": "À quelle fréquence votre contenu de test d'entraînement Duolingo est-il mis à jour ?",
+        "a": "Nous mettons régulièrement à jour nos <a href='https://www.detpractice.com/'>matériels de pratique DET</a> pour refléter le dernier format de test et les types de questions, garantissant que vous vous préparez avec le contenu le plus actuel."
+      }
+    ],
+    "embarkfont": {
+      "title": "Passez Votre Premier Test d'Entraînement Duolingo Maintenant",
+      "btnText": "Commencer Maintenant"
+    }
   },
   "practice": {
     "seometa": {
