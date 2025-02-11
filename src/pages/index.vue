@@ -165,7 +165,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             <div class="small_title_wrap">
               <div class="one_small_title current">{{ $t('index.one_small_title[0]') }}</div>
               <div class="one_small_title">{{ locale === 'zh' ? 'AI批改' : $t('index.one_small_title[1]') }}</div>
-              <div class="one_small_title">{{ locale === 'zh' ? '全真模拟' : $t('index.one_small_title[2]') }}{{}}</div>
+              <div class="one_small_title">{{ locale === 'zh' ? '全真模拟' : $t('index.one_small_title[2]') }}</div>
               <div class="one_small_title">{{ $t('index.one_small_title[3]') }}</div>
             </div>
           </div>
