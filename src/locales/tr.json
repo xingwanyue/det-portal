@@ -540,120 +540,141 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET Hazırlık Kursları {'|'} Duolingo English Test için Profesyonel Eğitim",
-      "description": "Profesyonel DET hazırlık kurslarımızla başarıya ulaşın. Okuma, yazma, konuşma ve dinleme becerilerinizi uzman eğitmenler eşliğinde geliştirin. Sınava hazırlığınıza hemen başlayın!",
-      "keywords": "DET hazırlık, Duolingo sınav eğitimi, DET kursları, İngilizce sınav hazırlığı, Duolingo sertifikası, DET özel ders, online İngilizce kursu, DET eğitim materyali"
+      "title": "DET Kursu - Eksiksiz Duolingo İngilizce Testi Hazırlığı {'|'} %95 Başarı",
+      "description": "Uzman eğitmenler eşliğinde Okuma, Yazma, Konuşma ve Dinleme bölümlerini kapsayan DET kursu. Alıştırma testleri, ders planları ve üyeler için ücretsiz erişim dahildir."
     },
-    "article1": {
-      "title": "DET Konuşma Sınavı Mükemmelliğinin Ana Özellikleri:",
-      "list": [
-        {
-          "content": "• Tüm konuşma görevlerinin ayrıntılı analizi"
+    "h1": "DET Kursu: Duolingo İngilizce Testi Başarısına Giden Yolunuz",
+    "h2": "%95 Öğrenci Başarı Oranıyla Uzman Öncülüğünde DET Kursu",
+    "topVideoFont": {
+      "desc1": "Tüm soru türlerini kapsayan eksiksiz DET kursu",
+      "desc2": "Her derse entegre edilmiş alıştırma setleri - maksimum verimlilik için eş zamanlı öğrenme ve pratik",
+      "desc3": "Öğrenme stilinize uygun olarak hem video dersleri hem de metin formatında mevcuttur",
+      "desc4": "2025 DET sınav formatına tamamen uyumlu",
+      "desc5": "Tüm DET Practice üyeleri için ek ücret olmadan ücretsiz erişim"
+    },
+    "extdet": {
+      "title": "DET Practice'den Kapsamlı DET Kursu: Giriş",
+      "desc1": "Kapsamlı öğrenme merkezimizle Duolingo İngilizce Testi hazırlığınızı dönüştürün! DET'in zorlu görünebileceğini anlıyoruz, bu yüzden her bileşeni başarı odaklı, yönetilebilir modüllere ayıran stratejik bir yaklaşım geliştirdik.",
+      "desc2": "Uzmanlar tarafından hazırlanan DET kursumuz, ileri düzey okuma anlama becerilerinden detaylı konuşma görevlerine kadar tüm temel DET bileşenlerini kapsar. Farkımız, derinlemesine öğretim ile hedefli pratik alıştırmaları birleştiren uyarlanabilir öğrenme sistemimizdir. Her yeterlilik seviyesine göre uyarlanmış dinamik çalışma materyalleri bulacaksınız, bu da testin her bölümünde özgüven geliştirmenizi sağlar.",
+      "desc3": "İster üst düzey üniversiteler için rekabetçi bir puan hedefliyor, ister İngilizce yeterliliğinde sağlam bir temel oluşturuyor olun, kanıtlanmış metodolojimizle yolculuğunuza bugün başlayın. Her modül, test günü başarısını garanti etmek için en yeni DET formatında performansınızı artırmak üzere özel olarak tasarlanmıştır."
+    },
+    "changeleftfont": {
+      "read": "Okuma",
+      "lis": "Dinleme",
+      "spe": "Konuşma",
+      "wri": "Yazma"
+    },
+    "four_change_right_data": {
+      "data1": {
+        "title": "DET Kursu: Duolingo İngilizce Testi Okuma Bölümü",
+        "desc": "Duolingo İngilizce Testi (DET) Okuma bölümü, çeşitli soru türleri aracılığıyla temel dil becerilerini değerlendirir, anlama, kelime bilgisi ve genel okuryazarlığı ölçer. Soru türleri arasında Read and Select (Oku ve Seç), Fill in the Blanks (Boşlukları Doldur), Interactive Reading (Etkileşimli Okuma) ve Read and Complete (Oku ve Tamamla) yer alır, her biri belirli okuma becerilerini hedefleyecek şekilde tasarlanmıştır.",
+        "desc2": "Bu görevler, akademik ve günlük bağlamlarda etkili iletişim için gerekli temel okuma ve anlama becerilerini toplu olarak değerlendirir.",
+        "video1data": {
+          "title": "Read and Select",
+          "desc": "Read and Select: Test alıcılara bir dizi kelime gösterilir ve bunların gerçek İngilizce kelimeler olup olmadığını belirlemeleri gerekir. Bu görev, kelime dağarcığı tanıma ve geçerli ile geçersiz kelimeleri ayırt etme yeteneğini değerlendirir, gerçek dünya kelime anlayışını yansıtır."
         },
-        {
-          "content": "• Her soru tipi için kanıtlanmış çözüm teknikleri"
+        "video2data": {
+          "title": "Fill in the Blanks",
+          "desc": "Fill in the Blanks: Adaylara eksik kelimeler içeren cümleler sunulur. Cümleleri anlamlı bir şekilde tamamlamak için listeden doğru kelimeleri seçmeleri gerekir. Bu görev dilbilgisi, kelime bilgisi ve bağlamsal ipuçlarını anlama yeteneğini değerlendirir."
         },
-        {
-          "content": "• Telaffuz ve akıcılık geliştirme alıştırmaları"
+        "video3data": {
+          "title": "Interactive Reading",
+          "desc": "Interactive Reading: Bu bileşen, cümleleri tamamlama, bir boşluğu doldurmak için uygun cümleyi seçme, metin içindeki cevapları vurgulama, ana fikirleri belirleme ve pasajlar için uygun başlıklar seçme gibi çeşitli soru türleriyle pasaj okumayı içerir. Anlama, eleştirel düşünme ve çeşitli bağlamlarda yazılı İngilizceyi yorumlama yeteneğini ölçer."
         },
-        {
-          "content": "• Vurgu ve sunum için uzman tavsiyeleri"
-        },
-        {
-          "content": "• Gerçek sınav örnekleri ve çözümleri"
-        },
-        {
-          "content": "• Örnek ses kayıtları"
-        },
-        {
-          "content": "• Seviyenize uygun öğrenme planı"
-        },
-        {
-          "content": "• Temel kelime ve dilbilgisi çalışması"
-        },
-        {
-          "content": "• Güncel sınav formatına uygun içerik"
+        "video4data": {
+          "title": "Read and Complete",
+          "desc": "Read and Complete: Bu soru türü, kelimelerin içinde eksik harfler bulunan bir pasaj sunar. Test alıcıların tam kelimeleri çıkarsaması ve geri yüklemesi gerekir. Yazım, bağlamsal anlama ve kelime bilgisi uygulamasına odaklanır."
         }
-      ]
-    },
-    "article2": {
-      "title": "DET Yazı Sınavı Mükemmelliğinin Ana Özellikleri:",
-      "list": [
-        {
-          "content": "• Tüm yazma görevlerinin sistematik açıklaması"
+      },
+      "data2": {
+        "title": "DET Kursu: Duolingo İngilizce Testi Dinleme Bölümü",
+        "desc": "Duolingo İngilizce Testi (DET), adayların dinleme becerilerini iki ana soru türü aracılığıyla değerlendiren kapsamlı bir Dinleme Bölümü içerir: Interactive Listening (Etkileşimli Dinleme) ve Listen and Type (Dinle ve Yaz). Bu bileşenler, özellikle anlama ve konuşma yetenekleri açısından İngilizce yeterliliğinin çeşitli yönlerini değerlendirmek üzere tasarlanmıştır.",
+        "desc2": "",
+        "video1data": {
+          "title": "Listen and Type",
+          "desc": "Listen and Type soru türünde, test alıcılar sözlü cümleleri dinler ve bunları doğru bir şekilde yazıya dökmeleri gerekir. Bu format, sadece sözlü İngilizceyi anlama yeteneğini ölçmekle kalmaz, aynı zamanda etkili yazılı iletişim için çok önemli olan yazım ve noktalama becerilerini de değerlendirir. Genellikle test boyunca 6 ila 9 kez görünen bu soru türü, anlama ve konuşma becerilerinin değerlendirilmesindeki önemini yansıtır."
         },
-        {
-          "content": "• Etkili kompozisyon yazma teknikleri"
-        },
-        {
-          "content": "• Sınava yönelik yazma alıştırmaları"
-        },
-        {
-          "content": "• Açık ve ikna edici yazım için ipuçları"
-        },
-        {
-          "content": "• Açıklamalı örnek yazılar"
-        },
-        {
-          "content": "• Her seviyeye uygun çalışma modülleri"
-        },
-        {
-          "content": "• Temel dilbilgisi ve kelime çalışmaları"
-        },
-        {
-          "content": "• En son sınav formatına göre hazırlanmış içerik"
+        "video2data": {
+          "title": "Interactive Listening",
+          "desc": "Öte yandan, Interactive Listening bölümü, genellikle akademik bağlamlarda gerçek hayat konuşmalarını simüle eder. Adaylar, akranlar arasında veya bir öğrenci ile fakülte üyesi arasındaki diyaloglara katılır, içeriği anlama düzeylerini test eden sorulara cevap verirler. Bu bölüm, akademik başarı için gerekli olan aktif dinleme ve tartışmalardan bilgi sentezleme yeteneğini vurgular. Genel olarak, bu soru türleri, adayın hem akademik hem de günlük ortamlarda İngilizce konuşulan ortamlara hazır olma durumunu ölçme hedefini toplu olarak güçlendirir."
         }
-      ]
-    },
-    "contaceUsList": [
-      {
-        "font": "Paketinizi Seçin",
-        "tip": "Konuşma veya yazma eğitiminden birini tercih edin",
-        "btn": "Konuşma Eğitimi Al",
-        "btn1": "Yazma Eğitimi Al"
       },
-      {
-        "font": "Anında Erişim",
-        "tip": "Ödemeniz sonrası hemen erişim sağlayın",
-        "btn": "Konuşma Eğitimini İndir",
-        "btn1": "Yazma Eğitimini İndir"
+      "data3": {
+        "title": "DET Kursu: Duolingo İngilizce Testi Konuşma Bölümü",
+        "desc": "Duolingo İngilizce Testi (DET), adayın sözlü yeterliliğini beş farklı soru türü aracılığıyla değerlendirmek üzere tasarlanmış dinamik bir Konuşma Bölümü içerir: Speak about the Photo (Fotoğraf Hakkında Konuşma), Read, then Speak (Oku, sonra Konuş), Listen, then Speak (Dinle, sonra Konuş), Read Aloud (Sesli Okuma) ve Speaking Sample (Konuşma Örneği). Bu formatların her biri, akademik ve günlük bağlamlarda etkili iletişim için çok önemli olan İngilizce konuşma becerilerinin çeşitli yönlerini değerlendirir.",
+        "desc2": "",
+        "video1data": {
+          "title": "Speak About the Photo",
+          "desc": "Speak about the Photo görevinde adaylar, düşüncelerini açıkça ifade etme ve betimleyici dil kullanma yeteneklerini test eden bir görüntüyü detaylı olarak tanımlar. Bu soru genellikle 90 saniyeye kadar sürer ve hem akıcılığı hem de kelime bilgisini değerlendirir."
+        },
+        "video2data": {
+          "title": "Read, Then Speak & Listen, Then Speak",
+          "desc": "Read, then Speak ve Listen, then Speak görevleri, test alıcıların yazılı veya sözlü içeriğe dayalı olarak yönergelere yanıt vermesini gerektirir. Bu formatlar, anlama ve fikirleri sınırlı süre içinde net ve tutarlı bir şekilde iletme yeteneğini değerlendirir."
+        },
+        "video3data": {
+          "title": "Read Aloud",
+          "desc": "Read Aloud sorusu, adayların verilen metni sesli okumasını gerektirir, telaffuz ve tonlamaya odaklanır."
+        },
+        "video4data": {
+          "title": "Speaking Sample",
+          "desc": "Son olarak, Speaking Sample adayların konuşma becerilerini sergilemelerine olanak tanır, kurumlara yeterlilikleri hakkında ek içgörü sağlar. Toplu olarak, bu soru türleri İngilizce konuşulan ortamlarda başarı için gerekli konuşma becerilerinin kapsamlı bir değerlendirmesini sağlar."
+        }
       },
-      {
-        "font": "Dinleme Materyalleri",
-        "tip": "Ek çalışma örnekleri ve ses kayıtları",
-        "btn1": "Ses Kayıtlarına Eriş"
+      "data4": {
+        "title": "DET Kursu: Duolingo İngilizce Testi Yazma Bölümü",
+        "desc": "Duolingo İngilizce Testi (DET), test alıcının İngilizce yazma yeterliliğinin çeşitli yönlerini değerlendirmek üzere tasarlanmış özel bir yazma bölümü içerir. Bu bölüm üç farklı soru türünden oluşur: Write About the Photo (Fotoğraf Hakkında Yazma), Interactive Writing (Etkileşimli Yazma) ve Writing Sample (Yazma Örneği).",
+        "desc2": "",
+        "video1data": {
+          "title": "Write About the Photo",
+          "desc": "Write About the Photo, adayların bir görüntüyü gözlemleyip bir dakika içinde betimleyici bir paragraf oluşturmasını gerektirir. Bu görev, görsel detayları açıkça ifade etme ve tutarlı düşünceler ifade etme yeteneğini değerlendirir, kelime bilgisi ve dilbilgisi doğruluğunu vurgular."
+        },
+        "video2data": {
+          "title": "Interactive Writing",
+          "desc": "2024 başlarında tanıtılan Interactive Writing, iki bölümlü bir meydan okuma sunar. Başlangıçta test alıcılar beş dakika boyunca bir yönergeye yanıt verir, ardından ilk yanıtlarına dayalı olarak oluşturulan ikinci bir yönerge için ek üç dakikalık yazma süresi gerekir. Bu format, sadece yaratıcılık ve tutarlılığı değil, aynı zamanda adayların ilk fikirlerini geliştirmeleri gerektiğinden yazmada uyarlanabilirliği de test eder."
+        },
+        "video3data": {
+          "title": "Writing Sample",
+          "desc": "Writing Sample sorusu, test alıcıların sınırlı süre içinde verilen bir konuya yapılandırılmış bir yanıt yazmasını gerektirir. Bu görev, organizasyon, netlik ve argümantasyon dahil olmak üzere genel yazma becerilerini değerlendirir. Toplu olarak, bu soru türleri adayların gerçek dünya bağlamlarındaki yazma yeteneklerinin kapsamlı bir değerlendirmesini sağlar, akademik veya profesyonel ortamlara hazır olduklarını yansıtır."
+        },
+        "video4data": {
+          "title": "Additional DET Prep Resources",
+          "desc": ""
+        }
       }
-    ],
-    "pagefont": {
-      "h1": "DET Konuşma Sınavı Mükemmelliği: Kapsamlı Bir Kılavuz",
-      "do": "$",
-      "Buy_Now": "Şimdi Satın Al",
-      "alt": "DET Uygulama:En iyi Duolingo English Test Uygulama platformu",
-      "white_arrow_right": "Beyaz Ok Sağa",
-      "Double_Right_Arrow": "Çift Sağ Ok",
-      "DET_Writing": "DET Yazma Sınavı Mükemmelliği: Kapsamlı Bir Rehber",
-      "How_to": "Eğitim Materyallerine Erişim",
-      "spa": "Konuşma pratiği ses kaydı",
-      "tips": "Önemli Not: Bu dijital bir üründür. İndirme işlemi tamamlandıktan sonra iade kabul edilmemektedir. Lütfen satın almadan önce şartları dikkatle okuyunuz.",
-      "orange_title": "Uzman Eğitim Kadromuz",
-      "team_desc": "TESOL sertifikalı deneyimli eğitmenlerimiz, TOEFL, IELTS ve DET gibi uluslararası sınavlarda uzmanlaşmıştır. Modern öğretim yöntemleri ve kişiye özel yaklaşımlarıyla sınav başarınız için yanınızdayız.",
-      "Elite_Language_Educators": "Seçkin Dil Eğitimcileri"
     },
-    "sas": "Konuşma Sesi Örnekleri",
-    "zhonghe": {
-      "title": "DET Ultimate Sınav Ustalık Paketi",
-      "desc": "Kurs paketi, <span class=\"yellow\">DET Konuşma Sınavı Mükemmelliği</span> ve <span class=\"yellow\">DET Yazma Sınavı Mükemmelliği</span>'ni içerir.  Abone olduğunuzda, kılavuzları istediğiniz zaman indirebilecek ve bunları istediğiniz zaman, istediğiniz yerde kolaylıkla çalışabileceksiniz.  Şimdi Satın Al Aboneliği hemen yürürlüğe girer.  Öğrenmeye başlamak için sayfayı yukarı kaydırın, görüntüleyin ve tıklayın."
+    "package_out": {
+      "title": "Duolingo İngilizce Testi Rehberi: DET Nihai Sınav Ustalık Paketi",
+      "desc": "Üyeliğinize dahil olan iki premium rehbere erişin: 'DET Konuşma Sınavı Mükemmelliği' ve 'DET Yazma Sınavı Mükemmelliği.' Bu kapsamlı kaynaklar tüm abonelere ek ücret olmadan sunulmaktadır.",
+      "desc2": "Üye olduktan sonra, bu değerli çalışma rehberlerini indirmek için üye panelinizde Kurslar sekmesini ziyaret etmeniz yeterlidir. Kendi hızınızda, istediğiniz yerde ve zamanda çalışın.",
+      "desc3": "Başlamaya hazır mısınız? Üyeliğiniz anında aktifleşir ve bu uzman hazırlıklı kaynaklara hemen erişim sağlar.",
+      "btn": "Şimdi Abone Ol"
     },
-    "speaking": {
-      "title": "DET Konuşma Bölümü için Tam Kapsamlı Rehber"
-    },
-    "writing": {
-      "title": "DET Yazma Bölümü için Tam Kapsamlı Rehber"
-    },
-    "downloadguide": "Kılavuzu İndir",
-    "dandumai": "Ayrıca bunları ayrı olarak da satın alabilirsiniz:",
-    "writing5": "DET Writing Exam Excellence'ı 5$'a satın alabilirsiniz:",
-    "speaking5": "DET Konuşma Sınavı Mükemmeliyetini 5$'a satın alabilirsiniz:"
+    "aqList": [
+      {
+        "name": "DET kurs paketine neler dahildir?",
+        "content": "<a href='https://www.detpractice.com/courses'>DET kurs paketi</a>, testin dört bölümünün tümü için kapsamlı hazırlık materyalleri içerir: Okuma, Dinleme, Konuşma ve Yazma. Her bölüm, gerçek zamanlı geri bildirim ve pratik stratejilerle belirli soru türlerine odaklanan çoklu etkileşimli kurslar içerir."
+      },
+      {
+        "name": "Bu DET kursu diğer hazırlık materyallerinden nasıl farklıdır?",
+        "content": "Bu DET kursu, video dersleri artı kapsamlı alıştırmalar (bunları <a href='https://www.detpractice.com/practice'>DET pratik soru bankamızda</a> bulabilirsiniz) ve geri bildirim benzersiz bir kombinasyonu sunar. Testteki her soru türünü kapsar ve her bölüm için özelleştirilmiş hazırlık materyalleri içerir, böylece eksiksiz bir hazırlık çözümü sunar."
+      },
+      {
+        "name": "DET kurs materyallerine kendi programıma göre erişebilir miyim?",
+        "content": "Evet, tüm DET kurs materyalleri <a href='https://www.detpractice.com'>DET Practice</a>'de tüm üyeler için ücretsizdir ve 7/24 erişilebilir. Kendi hızınızda çalışabilir ve materyallere istediğiniz zaman, istediğiniz yerden erişebilirsiniz."
+      },
+      {
+        "name": "DET kursu en son test formatını kapsıyor mu?",
+        "content": "Evet, DET kursu mevcut Duolingo İngilizce Testi formatına uygun olarak düzenli olarak güncellenir. Read and Select, Fill in the Blanks, Interactive Reading ve konuşma görevleri dahil olmak üzere tüm mevcut soru türleri için pratik materyaller içerir."
+      },
+      {
+        "name": "Hangi DET kurs bölümünden başlayacağımı nasıl bilirim?",
+        "content": "DET kursunun her bölümüne (Okuma, Dinleme, Konuşma ve Yazma) bağımsız olarak erişilebilir. En çok gelişime ihtiyaç duyduğunuz alanlardan başlayabilir veya kapsamlı hazırlık için önerilen kurs sırasını takip edebilirsiniz."
+      },
+      {
+        "name": "DET kursunda örnek cevaplar var mı?",
+        "content": "Evet, DET kursu hem Konuşma hem de Yazma bölümleri için yüksek puan alan örnek yanıtlar ve bu yanıtları etkili kılan şeylerin ayrıntılı açıklamalarını içerir. Bu, puanlama kriterlerini anlamanıza ve performansınızı geliştirmenize yardımcı olur."
+      }
+    ]
   },
   "forget": {
     "Please_enter": "Lütfen e-posta adresinizi girin",

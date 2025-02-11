@@ -540,120 +540,141 @@
   },
   "courses": {
     "seometa": {
-      "title": "Corsi Completi per il Duolingo English Test {'|'} Preparazione DET",
-      "description": "Prepararti al successo con i nostri corsi DET tenuti da esperti certificati. Sviluppa le tue competenze di lettura, scrittura, conversazione e ascolto attraverso lezioni mirate e personalizzate. Inizia subito il tuo percorso verso il DET!",
-      "keywords": "preparazione DET, corso Duolingo Test, esame DET, certificazione inglese, lezioni DET, preparazione inglese, corso online DET, materiale didattico DET"
+      "title": "Corso DET - Preparazione Completa al Duolingo English Test {'|'} 95% di Successo",
+      "description": "Corso DET guidato da esperti che copre tutte le sezioni: Lettura, Scrittura, Conversazione e Ascolto. Include test di pratica, piani di studio e accesso gratuito per i membri."
     },
-    "article1": {
-      "title": "Caratteristiche principali di DET Eccellenza dell'Esame Orale:",
-      "list": [
-        {
-          "content": "• Analisi dettagliata di tutte le tipologie di esercizi orali"
+    "h1": "Corso DET: Il Tuo Percorso verso il Successo nel Duolingo English Test",
+    "h2": "Corso DET Guidato da Esperti con il 95% di Successo degli Studenti",
+    "topVideoFont": {
+      "desc1": "Corso DET completo che copre tutti i tipi di domande",
+      "desc2": "Set di pratica integrati in ogni lezione - apprendimento e pratica simultanei per la massima efficienza",
+      "desc3": "Disponibile sia in formato video che testo per adattarsi al tuo stile di apprendimento",
+      "desc4": "Completamente allineato con il formato d'esame DET 2025",
+      "desc5": "Accesso gratuito per tutti i membri DET Practice, senza costi aggiuntivi"
+    },
+    "extdet": {
+      "title": "Corso DET Completo di DET Practice: Introduzione",
+      "desc1": "Trasforma la tua preparazione al Duolingo English Test con il nostro centro di apprendimento completo! Comprendiamo che padroneggiare il DET può sembrare impegnativo, per questo abbiamo sviluppato un approccio strategico che scompone ogni componente in moduli gestibili orientati al successo.",
+      "desc2": "Il nostro corso DET progettato da esperti copre tutte le componenti essenziali del DET - dalla comprensione avanzata della lettura ai compiti dettagliati di conversazione. La nostra distinzione sta nel sistema di apprendimento adattivo che combina istruzione approfondita con esercizi pratici mirati. Troverai materiali di studio dinamici adattati a ogni livello di competenza, permettendoti di sviluppare fiducia in tutte le sezioni del test.",
+      "desc3": "Inizia il tuo percorso oggi con la nostra metodologia collaudata, che tu stia puntando a un punteggio competitivo per le università di primo livello o stia costruendo una solida base di competenza in inglese. Ogni modulo è specificamente progettato per migliorare le tue prestazioni nel formato DET più recente, garantendo una preparazione completa per il successo il giorno dell'esame."
+    },
+    "changeleftfont": {
+      "read": "Lettura",
+      "lis": "Ascolto",
+      "spe": "Conversazione",
+      "wri": "Scrittura"
+    },
+    "four_change_right_data": {
+      "data1": {
+        "title": "Corso DET: Sezione Lettura del Duolingo English Test",
+        "desc": "La sezione Lettura del Duolingo English Test (DET) valuta le competenze linguistiche chiave attraverso vari tipi di domande, valutando comprensione, vocabolario e alfabetizzazione generale. I tipi di domande includono Read and Select (Leggere e Selezionare), Fill in the Blanks (Riempire gli Spazi), Interactive Reading (Lettura Interattiva) e Read and Complete (Leggere e Completare), ciascuno progettato per valutare specifiche abilità di lettura.",
+        "desc2": "Questi compiti valutano collettivamente le abilità essenziali di lettura e comprensione necessarie per una comunicazione efficace in contesti accademici e quotidiani.",
+        "video1data": {
+          "title": "Read and Select",
+          "desc": "Read and Select: Ai candidati viene mostrata una serie di parole e devono identificare quali sono parole inglesi reali. Questo compito valuta il riconoscimento del vocabolario e la capacità di distinguere tra parole valide e non valide, riflettendo la comprensione delle parole nel mondo reale."
         },
-        {
-          "content": "• Tecniche specifiche per ogni prova di speaking"
+        "video2data": {
+          "title": "Fill in the Blanks",
+          "desc": "Fill in the Blanks: Ai candidati vengono presentate frasi con parole mancanti. Devono selezionare le parole corrette da un elenco per completare le frasi in modo significativo. Questo compito valuta grammatica, vocabolario e la capacità di comprendere indizi contestuali."
         },
-        {
-          "content": "• Esercitazioni pratiche per migliorare pronuncia e fluenza"
+        "video3data": {
+          "title": "Interactive Reading",
+          "desc": "Interactive Reading: Questa componente coinvolge la lettura di brani con vari tipi di domande, come completare frasi, selezionare frasi appropriate per riempire uno spazio, evidenziare risposte nel testo, identificare idee principali e selezionare titoli appropriati per i brani. Misura comprensione, pensiero critico e la capacità di interpretare l'inglese scritto in vari contesti."
         },
-        {
-          "content": "•  Consigli professionali su intonazione e presentazione"
-        },
-        {
-          "content": "• Esempi reali commentati di risposte efficaci"
-        },
-        {
-          "content": "• Audio di esempio con spiegazioni dettagliate"
-        },
-        {
-          "content": "• Percorsi formativi adatti a ogni livello"
-        },
-        {
-          "content": "• Approfondimenti su lessico e grammatica essenziali"
-        },
-        {
-          "content": "• Aggiornato secondo l'ultimo formato d'esame"
+        "video4data": {
+          "title": "Read and Complete",
+          "desc": "Read and Complete: Questo tipo di domanda presenta un brano con lettere mancanti nelle parole. I candidati devono dedurre e ripristinare le parole complete. Si concentra su ortografia, comprensione contestuale e applicazione del vocabolario."
         }
-      ]
-    },
-    "article2": {
-      "title": "Caratteristiche principali di DET Eccellenza nell'Esame di Scrittura:",
-      "list": [
-        {
-          "content": "• Spiegazione approfondita di tutti gli esercizi scritti"
+      },
+      "data2": {
+        "title": "Corso DET: Sezione Ascolto del Duolingo English Test",
+        "desc": "Il Duolingo English Test (DET) include una sezione Ascolto completa che valuta le abilità di ascolto dei candidati attraverso due tipi principali di domande: Interactive Listening (Ascolto Interattivo) e Listen and Type (Ascoltare e Digitare). Queste componenti sono progettate per valutare vari aspetti della padronanza dell'inglese, in particolare nella comprensione e nelle capacità conversazionali.",
+        "desc2": "",
+        "video1data": {
+          "title": "Listen and Type",
+          "desc": "In Listen and Type, i candidati ascoltano frasi parlate e devono trascriverle accuratamente. Questo formato non solo misura la capacità di comprendere l'inglese parlato, ma valuta anche le abilità di ortografia e punteggiatura, cruciali per una comunicazione scritta efficace. Tipicamente, questo tipo di domanda appare 6-9 volte durante il test, riflettendo la sua importanza nella valutazione delle abilità di comprensione e conversazione."
         },
-        {
-          "content": "• Metodo step-by-step per la composizione"
-        },
-        {
-          "content": "• Esercizi mirati per la preparazione scritta"
-        },
-        {
-          "content": "• Suggerimenti per uno stile chiaro ed efficace"
-        },
-        {
-          "content": "• Esempi commentati di composizioni"
-        },
-        {
-          "content": "• Percorsi di studio per ogni livello"
-        },
-        {
-          "content": "• Focus su grammatica e vocabolario fondamentali"
-        },
-        {
-          "content": "• Contenuti aggiornati al formato più recente"
+        "video2data": {
+          "title": "Interactive Listening",
+          "desc": "D'altra parte, la sezione Interactive Listening simula conversazioni del mondo reale, spesso in contesti accademici. I candidati partecipano a dialoghi tra pari o tra uno studente e un membro della facoltà, rispondendo a domande che testano la loro comprensione del contenuto. Questa sezione enfatizza l'ascolto attivo e la capacità di sintetizzare informazioni dalle discussioni, essenziale per il successo accademico. Nel complesso, questi tipi di domande rafforzano collettivamente l'obiettivo del DET di misurare la preparazione del candidato per ambienti di lingua inglese sia in configurazioni accademiche che quotidiane."
         }
-      ]
-    },
-    "contaceUsList": [
-      {
-        "font": "Scegli il Tuo Percorso",
-        "tip": "Seleziona la guida orale o scritta in base alle tue esigenze",
-        "btn": "Acquista Guida Orale",
-        "btn1": "Acquista Guida Scritta"
       },
-      {
-        "font": "Accesso Immediato",
-        "tip": "Scarica subito dopo l'acquisto",
-        "btn": "Download Guida Orale",
-        "btn1": " Download Guida Scritta"
+      "data3": {
+        "title": "Corso DET: Sezione Conversazione del Duolingo English Test",
+        "desc": "Il Duolingo English Test (DET) include una sezione Conversazione dinamica progettata per valutare la competenza orale del candidato attraverso cinque diversi tipi di domande: Speak about the Photo (Parlare della Foto), Read, then Speak (Leggere, poi Parlare), Listen, then Speak (Ascoltare, poi Parlare), Read Aloud (Leggere ad Alta Voce) e Speaking Sample (Campione di Conversazione). Ciascuno di questi formati valuta vari aspetti delle abilità di conversazione in inglese, cruciali per una comunicazione efficace in contesti accademici e quotidiani.",
+        "desc2": "",
+        "video1data": {
+          "title": "Speak About the Photo",
+          "desc": "Nel compito Speak about the Photo, i candidati descrivono un'immagine in dettaglio, testando la loro capacità di articolare pensieri e utilizzare un linguaggio descrittivo. Questa domanda tipicamente dura fino a 90 secondi e valuta sia la fluenza che il vocabolario."
+        },
+        "video2data": {
+          "title": "Read, Then Speak & Listen, Then Speak",
+          "desc": "I compiti Read, then Speak e Listen, then Speak richiedono ai candidati di rispondere a prompt basati su contenuti scritti o parlati rispettivamente. Questi formati valutano comprensione e la capacità di trasmettere idee in modo chiaro e coerente entro un limite di tempo."
+        },
+        "video3data": {
+          "title": "Read Aloud",
+          "desc": "La domanda Read Aloud sfida i candidati a leggere un testo fornito ad alta voce, concentrandosi su pronuncia e intonazione."
+        },
+        "video4data": {
+          "title": "Speaking Sample",
+          "desc": "Infine, lo Speaking Sample permette ai candidati di dimostrare le loro abilità di conversazione, fornendo alle istituzioni ulteriori approfondimenti sulla loro competenza. Collettivamente, questi tipi di domande assicurano una valutazione completa delle abilità di conversazione necessarie per il successo in ambienti di lingua inglese."
+        }
       },
-      {
-        "font": "Materiale Audio",
-        "tip": "Accedi agli esempi audio supplementari",
-        "btn1": "Ascolta gli Esempi"
+      "data4": {
+        "title": "Corso DET: Sezione Scrittura del Duolingo English Test",
+        "desc": "Il Duolingo English Test (DET) include una sezione Scrittura dedicata progettata per valutare vari aspetti della padronanza della scrittura in inglese del candidato. Questa sezione consiste in tre diversi tipi di domande: Write About the Photo (Scrivere sulla Foto), Interactive Writing (Scrittura Interattiva) e Writing Sample (Campione di Scrittura).",
+        "desc2": "",
+        "video1data": {
+          "title": "Write About the Photo",
+          "desc": "Write About the Photo richiede ai candidati di osservare un'immagine e comporre un paragrafo descrittivo in un minuto. Questo compito valuta la capacità di articolare dettagli visivi ed esprimere pensieri coerenti, enfatizzando vocabolario e precisione grammaticale."
+        },
+        "video2data": {
+          "title": "Interactive Writing",
+          "desc": "Interactive Writing, introdotto all'inizio del 2024, presenta una sfida in due parti. Inizialmente i candidati rispondono a un prompt per cinque minuti, seguito da un secondo prompt generato basato sulla loro prima risposta, richiedendo tre minuti aggiuntivi di scrittura. Questo formato testa non solo creatività e coerenza, ma anche adattabilità nella scrittura, poiché i candidati devono sviluppare le loro idee iniziali."
+        },
+        "video3data": {
+          "title": "Writing Sample",
+          "desc": "La domanda Writing Sample richiede ai candidati di scrivere una risposta strutturata a un argomento dato in tempo limitato. Questo compito valuta le abilità generali di scrittura, incluse organizzazione, chiarezza e argomentazione. Collettivamente, questi tipi di domande assicurano una valutazione completa delle capacità di scrittura dei candidati in contesti del mondo reale, riflettendo la loro preparazione per ambienti accademici o professionali."
+        },
+        "video4data": {
+          "title": "Additional DET Prep Resources",
+          "desc": ""
+        }
       }
-    ],
-    "pagefont": {
-      "h1": "DET Eccellenza nell'Esame Orale: Una Guida Completa",
-      "do": "$",
-      "Buy_Now": "Acquista Ora",
-      "alt": "DET Pratica:La migliore Duolingo English Test piattaforma di Pratica",
-      "white_arrow_right": "Freccia Bianca Destra",
-      "Double_Right_Arrow": "Doppia freccia destra",
-      "DET_Writing": "DET Scrivere Esami Eccellenti: Una Guida Completa",
-      "How_to": "Come Acquistare",
-      "spa": "Audio di pratica di conversazione",
-      "tips": "Nota Bene: Questo è un prodotto digitale. Una volta completato il download, il prodotto si considera consegnato e non è previsto il rimborso. Si prega di verificare attentamente prima dell'acquisto.",
-      "orange_title": "I Nostri Docenti",
-      "team_desc": "Il nostro team di insegnanti qualificati, con certificazioni TESOL e altre credenziali riconosciute, vanta una solida esperienza nella preparazione agli esami internazionali come TOEFL, IELTS e DET. Grazie a competenze linguistiche eccellenti e metodologie didattiche innovative, ti guideremo verso il massimo risultato nel tuo percorso di certificazione linguistica.",
-      "Elite_Language_Educators": "Educatori di Lingue d'Élite"
     },
-    "sas": "Esempi audio parlanti",
-    "zhonghe": {
-      "title": "Pacchetto di padronanza dell'esame DET Ultimate",
-      "desc": "Il pacchetto del corso include l'<span class=\"giallo\">Esame di conversazione DET Excellence</span> e l'<span class=\"giallo\">Esame di scrittura DET Excellence</span>.  Dopo l'abbonamento potrai scaricare le guide in qualsiasi momento e studiarle con facilità, sempre e ovunque.  Acquista ora L'abbonamento ha effetto immediato.  Scorri verso l'alto nella pagina, visualizza e fai clic per scaricare il corso e iniziare ad apprendere."
+    "package_out": {
+      "title": "Guida al Duolingo English Test: Pacchetto Maestro Ultimate dell'Esame DET",
+      "desc": "Accedi a due guide premium incluse nella tua iscrizione: 'Eccellenza nell'Esame di Conversazione DET' e 'Eccellenza nell'Esame di Scrittura DET.' Queste risorse complete sono disponibili per tutti gli abbonati senza costi aggiuntivi.",
+      "desc2": "Una volta diventato membro, visita semplicemente la scheda Corsi nel tuo pannello membro per scaricare queste preziose guide di studio. Studia al tuo ritmo, ovunque e quando vuoi.",
+      "desc3": "Pronto per iniziare? La tua iscrizione viene attivata istantaneamente, dandoti accesso immediato a queste risorse create da esperti.",
+      "btn": "Abbonati Ora"
     },
-    "speaking": {
-      "title": "Guida Completa alla Prova Orale DET"
-    },
-    "writing": {
-      "title": "Guida Completa alla Prova Scritta DET"
-    },
-    "downloadguide": "Scarica la guida",
-    "dandumai": "Puoi anche acquistarli separatamente:",
-    "writing5": "Puoi acquistare DET Writing Exam Excellence per $ 5:",
-    "speaking5": "Puoi acquistare DET Speaking Exam Excellence per $ 5:"
+    "aqList": [
+      {
+        "name": "Cosa include il pacchetto del corso DET?",
+        "content": "Il <a href='https://www.detpractice.com/courses'>pacchetto del corso DET</a> include materiali di preparazione completi per tutte e quattro le sezioni del test: Lettura, Ascolto, Conversazione e Scrittura. Ogni sezione contiene molteplici corsi interattivi focalizzati su specifici tipi di domande, con feedback in tempo reale e strategie pratiche."
+      },
+      {
+        "name": "In che modo questo corso DET differisce da altri materiali di preparazione?",
+        "content": "Questo corso DET offre una combinazione unica di videolezioni più esercizi estensivi (puoi trovarli nella nostra <a href='https://www.detpractice.com/practice'>banca di domande di pratica DET</a>) e feedback. Copre ogni tipo di domanda nel test e include materiali di preparazione specializzati per ogni sezione, rendendolo una soluzione di preparazione completa."
+      },
+      {
+        "name": "Posso accedere ai materiali del corso DET secondo il mio programma?",
+        "content": "Sì, tutti i materiali del corso DET sono gratuiti per tutti i membri su <a href='https://www.detpractice.com'>DET Practice</a> e sono disponibili 24/7. Puoi studiare al tuo ritmo e accedere ai materiali in qualsiasi momento e ovunque."
+      },
+      {
+        "name": "Il corso DET copre il formato di test più recente?",
+        "content": "Sì, il corso DET viene regolarmente aggiornato per allinearsi con il formato attuale del Duolingo English Test. Include materiali di pratica per tutti i tipi di domande attuali, inclusi Read and Select, Fill in the Blanks, Interactive Reading e compiti di conversazione."
+      },
+      {
+        "name": "Come faccio a sapere da quale sezione del corso DET iniziare?",
+        "content": "Ogni sezione del corso DET (Lettura, Ascolto, Conversazione e Scrittura) è accessibile indipendentemente. Puoi iniziare dalle aree in cui hai bisogno di maggior miglioramento o seguire la sequenza del corso suggerita per una preparazione completa."
+      },
+      {
+        "name": "Ci sono risposte di esempio incluse nel corso DET?",
+        "content": "Sì, il corso DET include risposte di esempio con punteggio elevato sia per le sezioni di Conversazione che di Scrittura, insieme ad analisi dettagliate di ciò che rende queste risposte efficaci. Questo ti aiuta a comprendere i criteri di valutazione e migliorare le tue prestazioni."
+      }
+    ]
   },
   "forget": {
     "Please_enter": "Per favore inserisci il tuo indirizzo email",

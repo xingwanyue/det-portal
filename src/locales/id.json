@@ -538,120 +538,141 @@
     },
     "courses": {
       "seometa": {
-        "title": "Kursus Persiapan Duolingo English Test {'|'} Pelatihan DET Lengkap di DET Practice",
-        "description": "Raih skor DET terbaik bersama para ahli berpengalaman kami. Dari latihan soal hingga teknik ujian, tingkatkan kemampuan membaca, menulis, berbicara, dan mendengarkan Anda melalui program yang dirancang khusus. Mulai persiapan DET Anda sekarang!",
-        "keywords": "Kursus DET, Persiapan Duolingo Test, Belajar DET, Les Bahasa Inggris DET, Latihan Soal DET, Panduan Duolingo Test, Persiapan Ujian Inggris, Kursus DET Online"
+        "title": "Kursus DET - Persiapan Lengkap Ujian Bahasa Inggris Duolingo {'|'} Tingkat Keberhasilan 95%",
+        "description": "Kursus DET yang dipandu ahli mencakup semua bagian: Reading, Writing, Speaking & Listening. Termasuk tes latihan, rencana pembelajaran, dan akses gratis untuk anggota."
       },
-      "article1": {
-        "title": "Fitur Utama dari DET Keunggulan Ujian Berbicara:",
-        "list": [
-          {
-            "content": "• Analisis detail setiap jenis soal speaking DET"
+      "h1": "Kursus DET: Jalan Menuju Kesuksesan Duolingo English Test",
+      "h2": "Kursus DET Dipandu Ahli dengan Tingkat Keberhasilan Siswa 95%",
+      "topVideoFont": {
+        "desc1": "Kursus DET lengkap mencakup semua tipe soal",
+        "desc2": "Set latihan terintegrasi dengan setiap pelajaran - belajar dan berlatih secara bersamaan untuk efisiensi maksimal",
+        "desc3": "Tersedia dalam format video pembelajaran dan teks untuk menyesuaikan gaya belajar Anda",
+        "desc4": "Sepenuhnya selaras dengan format ujian DET 2025",
+        "desc5": "Akses gratis untuk semua anggota DET Practice, tanpa biaya tambahan"
+      },
+      "extdet": {
+        "title": "Kursus DET Komprehensif oleh DET Practice: Pengantar",
+        "desc1": "Transformasikan persiapan Duolingo English Test Anda dengan pusat pembelajaran komprehensif kami! Kami memahami bahwa menguasai DET bisa terasa menantang, itulah mengapa kami mengembangkan pendekatan strategis yang memecah setiap komponen menjadi modul-modul yang mudah dikelola dan berorientasi pada kesuksesan.",
+        "desc2": "Kursus DET kami yang dirancang oleh ahli mencakup semua komponen DET penting—dari pemahaman membaca tingkat lanjut hingga tugas berbicara yang terperinci. Keunggulan kami terletak pada sistem pembelajaran adaptif yang menggabungkan instruksi mendalam dengan latihan praktik yang terarah. Anda akan menemukan materi belajar dinamis yang disesuaikan dengan setiap tingkat kemahiran, memungkinkan Anda membangun kepercayaan diri di setiap bagian tes.",
+        "desc3": "Mulailah perjalanan Anda hari ini dengan metodologi kami yang terbukti, baik Anda menargetkan skor kompetitif untuk universitas terbaik atau membangun fondasi yang kuat dalam kemahiran bahasa Inggris. Setiap modul dirancang khusus untuk meningkatkan performa Anda pada format DET terbaru, memastikan Anda sepenuhnya siap untuk sukses di hari ujian."
+      },
+      "changeleftfont": {
+        "read": "Reading",
+        "lis": "Listening",
+        "spe": "Speaking",
+        "wri": "Writing"
+      },
+      "four_change_right_data": {
+        "data1": {
+          "title": "Kursus DET: Bagian Reading Duolingo English Test",
+          "desc": "Bagian Reading Duolingo English Test (DET) mengevaluasi keterampilan bahasa utama melalui berbagai tipe soal, menilai pemahaman, kosakata, dan literasi secara keseluruhan. Tipe soal mencakup Read and Select, Fill in the Blanks, Interactive Reading, dan Read and Complete, yang masing-masing dirancang untuk menargetkan kemampuan membaca tertentu.",
+          "desc2": "Tugas-tugas ini secara kolektif menilai kemampuan membaca dan pemahaman penting yang diperlukan untuk komunikasi efektif dalam konteks akademik dan sehari-hari.",
+          "video1data": {
+            "title": "Read and Select",
+            "desc": "Read and Select: Peserta tes ditunjukkan serangkaian kata dan harus mengidentifikasi mana yang merupakan kata bahasa Inggris yang nyata. Tugas ini mengevaluasi pengenalan kosakata dan kemampuan untuk membedakan antara kata yang valid dan tidak valid, mencerminkan pemahaman kata dalam dunia nyata."
           },
-          {
-            "content": "• Teknik praktis menjawab setiap soal speaking"
+          "video2data": {
+            "title": "Fill in the Blanks",
+            "desc": "Fill in the Blanks: Kandidat disajikan kalimat yang memiliki kata-kata yang hilang. Mereka harus memilih kata yang tepat dari daftar untuk melengkapi kalimat secara bermakna. Tugas ini menilai tata bahasa, kosakata, dan kemampuan memahami petunjuk kontekstual."
           },
-          {
-            "content": "• Latihan intensif untuk meningkatkan pronunciation, fluency, dan kepercayaan diri"
+          "video3data": {
+            "title": "Interactive Reading",
+            "desc": "Interactive Reading: Komponen ini melibatkan membaca teks yang diikuti oleh berbagai tipe pertanyaan, seperti melengkapi kalimat, memilih kalimat yang tepat untuk mengisi celah, menyorot jawaban dalam teks, mengidentifikasi ide utama, dan memilih judul yang sesuai untuk teks. Ini mengukur pemahaman, pemikiran kritis, dan kemampuan menafsirkan bahasa Inggris tertulis dalam berbagai konteks."
           },
-          {
-            "content": "• Bimbingan ahli untuk pronunciation, intonasi, dan performa keseluruhan"
-          },
-          {
-            "content": "• Contoh jawaban dan analisis strategi terbaik"
-          },
-          {
-            "content": "• Rekaman audio contoh jawaban"
-          },
-          {
-            "content": "• Program belajar sesuai level kemampuan"
-          },
-          {
-            "content": "• Kosakata dan grammar penting untuk speaking"
-          },
-          {
-            "content": "• Materi ter-update sesuai format terbaru DET"
+          "video4data": {
+            "title": "Read and Complete",
+            "desc": "Read and Complete: Tipe soal ini menyajikan teks dengan huruf yang hilang dalam kata-kata. Peserta tes harus menyimpulkan dan memulihkan kata-kata lengkap. Ini berfokus pada ejaan, pemahaman kontekstual, dan aplikasi kosakata."
           }
-        ]
-      },
-      "article2": {
-        "title": "Fitur Utama dari DET Keunggulan Ujian Menulis:",
-        "list": [
-          {
-            "content": "• Pembahasan detail soal writing DET beserta contoh"
+        },
+        "data2": {
+          "title": "Kursus DET: Bagian Listening Duolingo English Test",
+          "desc": "Duolingo English Test (DET) memiliki Bagian Listening komprehensif yang mengevaluasi keterampilan mendengarkan kandidat melalui dua tipe soal utama: Interactive Listening dan Listen and Type. Komponen-komponen ini dirancang untuk menilai berbagai aspek kemahiran bahasa Inggris, khususnya dalam pemahaman dan kemampuan percakapan.",
+          "desc2": "",
+          "video1data": {
+            "title": "Listen and Type",
+            "desc": "Dalam tipe soal Listen and Type, peserta tes mendengarkan kalimat yang diucapkan dan harus mentranskripnya dengan akurat. Format ini tidak hanya mengukur kemampuan memahami bahasa Inggris lisan tetapi juga mengevaluasi keterampilan ejaan dan tanda baca, yang sangat penting untuk komunikasi tertulis yang efektif. Biasanya, tipe soal ini muncul 6 hingga 9 kali sepanjang tes, mencerminkan pentingnya dalam menilai keterampilan pemahaman dan percakapan."
           },
-          {
-            "content": "• Panduan step-by-step menulis esai berkualitas"
-          },
-          {
-            "content": "• Latihan khusus writing untuk DET "
-          },
-          {
-            "content": "• Tips ahli untuk meningkatkan kejelasan, koherensi, dan kualitas tulisan "
-          },
-          {
-            "content": "• Contoh esai dengan penjelasan strategi dan kesalahan umum"
-          },
-          {
-            "content": "• Program belajar yang disesuaikan tiap level"
-          },
-          {
-            "content": "• Fokus pada grammar dan kosakata penting untuk DET"
-          },
-          {
-            "content": "• Materi sesuai format terbaru DET"
+          "video2data": {
+            "title": "Interactive Listening",
+            "desc": "Sebaliknya, bagian Interactive Listening mensimulasikan percakapan kehidupan nyata, sering kali dalam konteks akademik. Kandidat terlibat dalam dialog antara rekan sebaya atau antara mahasiswa dan anggota fakultas, menjawab pertanyaan yang menguji pemahaman mereka terhadap konten. Bagian ini menekankan mendengarkan aktif dan kemampuan menyintesis informasi dari diskusi, penting untuk kesuksesan akademik. Secara keseluruhan, tipe soal ini secara kolektif meningkatkan tujuan DET dalam mengukur kesiapan kandidat untuk lingkungan berbahasa Inggris baik dalam pengaturan akademik maupun sehari-hari."
           }
-        ]
-      },
-      "contaceUsList": [
-        {
-          "font": "Pilih Panduan Anda",
-          "tip": "Pilih panduan Speaking atau Writing untuk fokus persiapan sesuai kebutuhan.",
-          "btn": "Beli Panduan Speaking",
-          "btn1": "Beli Panduan Writing"
         },
-        {
-          "font": "Download Langsung",
-          "tip": "Akses materi segera setelah pembayaran.",
-          "btn": "Download Panduan Speaking",
-          "btn1": "Download Panduan Writing"
+        "data3": {
+          "title": "Kursus DET: Bagian Speaking Duolingo English Test",
+          "desc": "Duolingo English Test (DET) mencakup Bagian Speaking dinamis yang dirancang untuk mengevaluasi kemahiran lisan kandidat melalui lima tipe soal berbeda: Speak about the Photo, Read, then Speak, Listen, then Speak, Read Aloud, dan Speaking Sample. Setiap format ini menilai berbagai aspek kemampuan berbahasa Inggris, penting untuk komunikasi efektif dalam konteks akademik dan sehari-hari.",
+          "desc2": "",
+          "video1data": {
+            "title": "Speak About the Photo",
+            "desc": "Dalam tugas Speak about the Photo, kandidat mendeskripsikan gambar secara detail, yang menguji kemampuan mereka untuk mengartikulasikan pikiran dan menggunakan bahasa deskriptif. Soal ini biasanya berlangsung hingga 90 detik dan mengevaluasi kelancaran dan kosakata."
+          },
+          "video2data": {
+            "title": "Read, Then Speak & Listen, Then Speak",
+            "desc": "Tugas Read, then Speak dan Listen, then Speak mengharuskan peserta tes merespons prompt berdasarkan konten tertulis atau lisan. Format ini menilai pemahaman dan kemampuan menyampaikan ide dengan jelas dan koheren dalam batas waktu."
+          },
+          "video3data": {
+            "title": "Read Aloud",
+            "desc": "Soal Read Aloud menantang kandidat untuk membaca teks yang diberikan dengan lantang, berfokus pada pengucapan dan intonasi."
+          },
+          "video4data": {
+            "title": "Speaking Sample",
+            "desc": "Terakhir, Speaking Sample memungkinkan kandidat menunjukkan keterampilan berbicara mereka, memberikan wawasan tambahan kepada institusi tentang kemahiran mereka. Secara kolektif, tipe-tipe soal ini memastikan evaluasi komprehensif terhadap keterampilan berbicara yang diperlukan untuk sukses dalam lingkungan berbahasa Inggris."
+          }
         },
-        {
-          "font": "Contoh Audio Speaking",
-          "tip": "Dengarkan contoh jawaban speaking yang berkualitas.",
-          "btn1": "Akses Contoh Audio"
+        "data4": {
+          "title": "Kursus DET: Bagian Writing Duolingo English Test",
+          "desc": "Duolingo English Test (DET) mencakup bagian writing khusus yang dirancang untuk mengevaluasi berbagai aspek kemahiran menulis bahasa Inggris peserta tes. Bagian ini terdiri dari tiga tipe soal berbeda: Write About the Photo, Interactive Writing, dan Writing Sample.",
+          "desc2": "",
+          "video1data": {
+            "title": "Write About the Photo",
+            "desc": "Write About the Photo mengharuskan kandidat mengamati gambar dan menyusun paragraf deskriptif dalam waktu satu menit. Tugas ini menilai kemampuan untuk mengartikulasikan detail visual dan mengekspresikan pikiran yang koheren, menekankan kosakata dan akurasi tata bahasa."
+          },
+          "video2data": {
+            "title": "Interactive Writing",
+            "desc": "Interactive Writing, yang diperkenalkan pada awal 2024, menyajikan tantangan dua bagian. Awalnya, peserta tes merespons prompt selama lima menit, diikuti dengan prompt kedua yang dihasilkan berdasarkan respons pertama mereka, memerlukan tiga menit tambahan untuk menulis. Format ini menguji tidak hanya kreativitas dan koherensi tetapi juga kemampuan beradaptasi dalam menulis, karena kandidat harus membangun ide awal mereka."
+          },
+          "video3data": {
+            "title": "Writing Sample",
+            "desc": "Soal Writing Sample meminta peserta tes untuk menulis respons terstruktur untuk topik yang diberikan dalam waktu terbatas. Tugas ini mengevaluasi keterampilan menulis secara keseluruhan, termasuk organisasi, kejelasan, dan argumentasi. Secara kolektif, tipe-tipe soal ini memastikan penilaian komprehensif terhadap kemampuan menulis kandidat dalam konteks dunia nyata, mencerminkan kesiapan mereka untuk lingkungan akademik atau profesional."
+          },
+          "video4data": {
+            "title": "Additional DET Prep Resources",
+            "desc": ""
+          }
         }
-      ],
-      "pagefont": {
-        "h1": "DET Keunggulan Ujian Lisan: Panduan Komprehensif",
-        "do": "$",
-        "Buy_Now": "Beli Sekarang",
-        "alt": "DET Latihan:Platform Latihan terbaik Duolingo English Test",
-        "white_arrow_right": "Panah Putih Kanan",
-        "Double_Right_Arrow": "Panah Kanan Ganda",
-        "DET_Writing": "DET Menulis Ujian Keunggulan: Panduan Komprehensif",
-        "How_to": "Dapatkan Panduan",
-        "spa": "Audio latihan berbicara",
-        "tips": "Terima kasih telah tertarik dengan Panduan Speaking/Writing kami! Perlu diketahui bahwa ini adalah produk digital. Setelah dibeli dan diunduh, produk tidak dapat dikembalikan. Mohon pertimbangkan baik-baik sebelum membeli.",
-        "orange_title": "Tim Pengajar Profesional",
-        "team_desc": "Tim pengajar kami terdiri dari para profesional bersertifikasi TESOL dan kualifikasi pengajaran lainnya, dengan pengalaman luas dalam mempersiapkan siswa untuk ujian TOEFL, IELTS, dan Duolingo English Test (DET). Dengan kemampuan bahasa yang unggul, metode pengajaran yang personal, dan pendekatan inovatif, kami berkomitmen membantu setiap siswa mencapai potensi terbaiknya dalam bahasa Inggris.",
-        "Elite_Language_Educators": "Pendidik Bahasa Elit"
       },
-      "sas": "Contoh Audio Berbicara",
-      "zhonghe": {
-        "title": "Paket Penguasaan Ujian DET Ultimate",
-        "desc": "Paket kursus mencakup <span class=\"kuning\">Keunggulan Ujian Berbicara DET</span> dan <span class=\"kuning\">Keunggulan Ujian Menulis DET</span>.  Setelah berlangganan, Anda akan dapat mengunduh panduan ini kapan saja dan mempelajarinya dengan mudah, kapan saja, dan di mana saja.  Langganan Beli Sekarang akan segera berlaku.  Gulir ke atas pada halaman, lihat, dan klik untuk mengunduh kursus untuk mulai belajar."
+      "package_out": {
+        "title": "Panduan Duolingo English Test: Paket Penguasaan Ujian DET Ultimate",
+        "desc": "Akses dua panduan premium yang termasuk dalam keanggotaan Anda: 'Keunggulan Ujian Speaking DET' dan 'Keunggulan Ujian Writing DET.' Sumber daya komprehensif ini tersedia untuk semua pelanggan tanpa biaya tambahan.",
+        "desc2": "Setelah Anda menjadi anggota, cukup kunjungi tab Kursus di dashboard anggota Anda untuk mengunduh panduan belajar berharga ini. Belajar sesuai kecepatan Anda, di mana saja dan kapan saja.",
+        "desc3": "Siap untuk memulai? Keanggotaan Anda aktif secara instan, memberikan Anda akses langsung ke sumber daya yang dirancang oleh ahli ini.",
+        "btn": "Berlangganan Sekarang"
       },
-      "speaking": {
-        "title": "Panduan Lengkap DET Speaking"
-      },
-      "writing": {
-        "title": "Panduan Lengkap DET Writing"
-      },
-      "downloadguide": "Unduh Panduan",
-      "dandumai": "Anda juga dapat membelinya secara terpisah:",
-      "writing5": "Anda dapat membeli Keunggulan Ujian Penulisan DET seharga $5 :",
-      "speaking5": "Anda dapat membeli DET Speaking Exam Excellence seharga $5 :"
+      "aqList": [
+        {
+          "name": "Apa saja yang termasuk dalam paket kursus DET?",
+          "content": "<a href='https://www.detpractice.com/courses'>Paket kursus DET</a> mencakup materi persiapan komprehensif untuk semua empat bagian tes: Reading, Listening, Speaking, dan Writing. Setiap bagian berisi beberapa kursus interaktif yang fokus pada tipe soal tertentu, dengan umpan balik real-time dan strategi praktis."
+        },
+        {
+          "name": "Apa yang membedakan kursus DET ini dari materi persiapan lainnya?",
+          "content": "Kursus DET ini menawarkan kombinasi unik dari video pembelajaran plus latihan ekstensif (Anda dapat menemukannya di <a href='https://www.detpractice.com/practice'>bank soal latihan DET</a> kami), dan umpan balik. Ini mencakup setiap tipe soal dalam tes dan mencakup materi persiapan khusus untuk setiap bagian, menjadikannya solusi persiapan lengkap."
+        },
+        {
+          "name": "Bisakah saya mengakses materi kursus DET sesuai jadwal saya?",
+          "content": "Ya, semua materi kursus DET gratis untuk semua anggota di <a href='https://www.detpractice.com'>DET Practice</a>, dan tersedia 24/7. Anda dapat belajar sesuai kecepatan Anda dan mengakses materi kapan saja, di mana saja."
+        },
+        {
+          "name": "Apakah kursus DET mencakup format tes terbaru?",
+          "content": "Ya, kursus DET secara rutin diperbarui untuk selaras dengan format Duolingo English Test saat ini. Ini mencakup materi latihan untuk semua tipe soal saat ini, termasuk Read and Select, Fill in the Blanks, Interactive Reading, dan tugas Speaking."
+        },
+        {
+          "name": "Bagaimana saya tahu bagian kursus DET mana yang harus dimulai?",
+          "content": "Setiap bagian kursus DET (Reading, Listening, Speaking, dan Writing) dapat diakses secara independen. Anda dapat memilih untuk memulai dengan area yang paling membutuhkan peningkatan atau mengikuti urutan kursus yang disarankan untuk persiapan komprehensif."
+        },
+        {
+          "name": "Apakah ada contoh jawaban yang termasuk dalam kursus DET?",
+          "content": "Ya, kursus DET mencakup contoh respons dengan skor tinggi untuk bagian Speaking dan Writing, beserta penjelasan rinci tentang apa yang membuat respons ini efektif. Ini membantu Anda memahami kriteria penilaian dan meningkatkan performa Anda."
+        }
+      ]
     },
     "forget": {
       "Please_enter": "Silakan masukkan alamat email Anda",
