@@ -15,10 +15,9 @@ const props = defineProps({
 
 const router = useRouter();
 const route = useRoute();
+const url = useRequestURL();
 const { locale } = useI18n();
 const localePath = useLocalePath();
-
-console.log(props.errorPage);
 
 const store = useStore();
 const layouProps = useAttrs();
@@ -31,6 +30,10 @@ const alternates = locales.map((l: string) => ({
   href: () => `https://www.${domain}${l === 'en' ? '' : `/${l}`}${currentPathWithoutLocale}`,
 }));
 const country = countries[locales.indexOf(locale.value)];
+const meta = [{ property: 'og:locale', content: () => `${locale.value}_${country}` }] as any;
+if (url.host !== 'www.detpractice.com') {
+  meta.push({ name: 'robots', content: 'noindex' });
+}
 useHead({
   htmlAttrs: { lang: () => locale.value },
   script: [{ src: 'https://accounts.google.com/gsi/client', async: true }],
@@ -45,7 +48,7 @@ useHead({
           href: () => `https://www.${domain}${currentPathWithoutLocale}`,
         },
       ],
-  meta: [{ property: 'og:locale', content: () => `${locale.value}_${country}` }],
+  meta,
 });
 declare global {
   interface Window {
