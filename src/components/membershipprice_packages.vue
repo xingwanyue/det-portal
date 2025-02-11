@@ -75,8 +75,8 @@ const changeBuyCorrectTimes = (item: any) => {
 };
 
 const buyMembership = (item: any) => {
-  const { id, correctTimesid } = item;
-  store.stripePay({ vipId: `${id},${correctTimesid}` });
+  const { id } = item;
+  store.stripePay({ vipId: `${id}` });
 };
 
 const buyMockTimes = () => {
