@@ -500,159 +500,205 @@
   },
   "correction": {
     "seometa": {
-      "title": "Duolingo English Test Writing AI {'|'} DET Schreibbewertungs-Checker von DET Practice",
-      "description": "Optimieren Sie Ihre Vorbereitung auf den Duolingo English Test mit unserem intelligenten Analysesystem. Erhalten Sie binnen Minuten eine präzise Auswertung Ihrer Texte nach DET-Standards, individuelle Rückmeldungen und konkrete Verbesserungsvorschläge. Trainieren Sie mit authentischen Aufgaben und steigern Sie Ihre Schreibkompetenz durch fundierte Analysen.",
-      "keywords": "duolingo schreibtest, det übungsmaterial, schreibtraining det, textbewertung duolingo, det korrektur, schreibaufgaben det, ki-analyse, det vorbereitung, schreibtechniken det, musterlösungen, prüfungsvorbereitung, online-übungen"
+      "title": "Duolingo Schreib-KI-Korrektur - Sofortiges DET Essay-Feedback",
+      "description": "Perfektionieren Sie Ihr Duolingo English Test Schreiben in Minuten. KI-gestützte Aufsatzkorrektur mit sofortiger Bewertung, Grammatikprüfung und Expertenberatung. Vertraut von über 21.000 Lernenden."
     },
-    "h1": "KI-Textanalyse für DET",
-    "desc": "Modernste KI-Technologie auf dem Niveau erfahrener Prüfer. Erhalten Sie innerhalb von 5 Minuten eine detaillierte Analyse nach offiziellen DET-Kriterien.",
-    "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
-    "useralt": "Benutzer-Symbol",
-    "white_arrow_right": "weißer_pfeil_rechts",
-    "yellow_arrow_right": "gelber_pfeil_rechts",
-    "learners_have": "Bereits von über {number} Teilnehmern erfolgreich genutzt.",
-    "Review_Now": "Jetzt testen",
-    "Correct_Now": "Sofort starten",
-    "Get_Scored_Now": "Starten Sie das Erlebnis",
-    "Enhance_Now": "Jetzt verbessern",
-    "Begin_Polishing": "Polieren beginnen",
+    "h1": "Sofortige Duolingo Schreib-KI-Korrektur von DET Practice",
+    "descnew": "Professionelle DET-Schreibbewertung in Minuten",
+    "desc": "Erhalten Sie Experten-Feedback für Ihre Duolingo-Schreibaufgaben durch unser fortschrittliches KI-System. Ihre Aufsätze werden nach offiziellen DET-Bewertungskriterien analysiert und liefern umfassende Korrekturen und detaillierte Vorschläge innerhalb von 1-5 Minuten.",
+    "alt": "DET Practice: Die beste Duolingo English Test Übungsplattform",
+    "useralt": "User Icon",
+    "white_arrow_right": "white_arrow_right",
+    "yellow_arrow_right": "yellow_arrow_right",
+    "learners_have": "Von {number} Duolingo English Test Teilnehmern vertraut",
+    "Review_Now": "Jetzt starten",
+    "Correct_Now": "Jetzt ausprobieren",
+    "Get_Scored_Now": "Jetzt ausprobieren",
     "h2_1": {
-      "h2": "Präzise Bewertung",
-      "right_desc": "Wählen Sie eine Aufgabe aus unserer Datenbank und erhalten Sie binnen Minuten eine ausführliche Auswertung."
+      "h2": "Präzise Duolingo-Schreibbewertungsanalyse",
+      "right_desc": "Reichen Sie Ihre DET-Schreibaufgabe aus unserer Fragenbank ein und erhalten Sie innerhalb von 5 Minuten einen detaillierten Bewertungsbericht. Jede Bewertung folgt authentischen DET-Kriterien."
     },
     "h2_2": {
-      "h2": "Intelligente Korrektur",
-      "right_desc": "Automatische Erkennung sprachlicher Schwächen mit konkreten Verbesserungsvorschlägen."
+      "h2": "Echtzeit-Fehlerkorrektur",
+      "right_desc": "Identifizieren Sie sofort Wortschatzverwendung, Grammatikfehler und strukturelle Verbesserungen in Ihren Duolingo-Aufsätzen. Erhalten Sie umsetzbare Vorschläge für jede Korrektur."
     },
     "h2_3": {
-      "h2": "Professionelle Begleitung",
-      "right_desc": "Fundierte Analyse nach DET-Bewertungsmatrix für optimale Prüfungsvorbereitung."
+      "h2": "Professionelles Duolingo-Schreibfeedback",
+      "right_desc": "Erhalten Sie detailliertes Feedback basierend auf offiziellen DET-Bewertungskriterien. Unser KI-System analysiert Ihren Schreibstil, Aufbau und Inhalt, um Ihre Zielpunktzahl zu erreichen."
     },
     "h2_4": {
-      "h2": "Stilistische Optimierung",
-      "right_desc": "Detaillierte Empfehlungen zu Wortwahl, Satzbau und Textstruktur für Höchstleistungen."
+      "h2": "Fortgeschrittene Duolingo-Schreibverbesserung",
+      "right_desc": "Verwandeln Sie Ihr Duolingo-Schreiben von gut zu hervorragend. Unser System bietet tiefgehende Vorschläge für Wortschatzbereicherung, Satzstrukturverfeinerung und Kohärenzverbesserung."
     },
-    "h2_5": {
-      "h2": "Polieren des Originaltextes",
-      "right_desc": "Werten Sie jedes Wort und jeden Satz auf, verfeinern Sie Struktur und Stil für eine herausragende und hochkarätige Komposition."
+    "aqtitle": "Häufig gestellte Fragen zu unserer <span class='yellow'>Duolingo Schreib-KI-Korrektur</span>",
+    "aqlistfont": [
+      {
+        "q": "Wie genau ist Ihr Duolingo-Schreibbewertungssystem?",
+        "a": "Unser KI-Bewertungssystem ist auf offizielle DET-Standards kalibriert und bietet eine Genauigkeit von über 95% im Vergleich zu menschlichen Bewertern. Jede Duolingo-Schreibeinreichung wird in mehreren Dimensionen analysiert, einschließlich Grammatik, Wortschatz, Kohärenz und Aufgabenerfüllung."
+      },
+      {
+        "q": "Welche Art von <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo-Schreibfeedback</a> werde ich erhalten?",
+        "a": "Unser <a href='https://www.detpractice.com/'>DET Practice</a> System bietet umfassendes Feedback, einschließlich:<br>- Detaillierte Grammatik- und Wortschatzkorrekturen<br>- Struktur- und Kohärenzanalyse<br>- Bewertung der Inhaltsrelevanz<br>- Spezifische Verbesserungsvorschläge<br>- Geschätzte Duolingo-Schreibpunktzahl"
+      },
+      {
+        "q": "Wie lange dauert die Bewertung meines Duolingo-Schreibens?",
+        "a": "Sie erhalten Ihre vollständige Analyse innerhalb von 5 Minuten nach Einreichung Ihres Aufsatzes. Dies umfasst sowohl Ihre DET-Schreibpunktzahl als auch detailliertes Feedback zur Verbesserung."
+      },
+      {
+        "q": "Welche Arten von Duolingo-Schreibaufgaben stehen zur Übung zur Verfügung?",
+        "a": "Unser System bietet vielfältige, hochwertige Übungsaufgaben, die sorgfältig entwickelt wurden, um Sie auf den <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo-Schreibteil</a> vorzubereiten. Jede Aufgabe folgt dem standardisierten DET-Format und Schwierigkeitsgrad."
+      },
+      {
+        "q": "Wie viele Aufsätze kann ich zur Bewertung einreichen?",
+        "a": "Als DET Practice Premium-Mitglied können Sie Schreibkorrektur-Guthaben nach Ihren Bedürfnissen erwerben. Diese <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo-Schreibkorrektur</a>-Guthaben können während Ihrer aktiven Abonnementlaufzeit jederzeit genutzt werden. Es gibt keine Begrenzung für die Anzahl der Bewertungspakete, die Sie erwerben können - kaufen Sie einfach die Anzahl der Korrekturen, die Sie für Ihren Studienplan benötigen."
+      },
+      {
+        "q": "Wird das Feedback an mein Schreibniveau angepasst?",
+        "a": "Ja, unser KI-System passt das Feedback an Ihre Schreibfähigkeiten an. Ob Sie Anfänger oder fortgeschrittener Schreiber sind, Sie erhalten relevante Vorschläge zur Verbesserung Ihrer <a href='https://www.detpractice.com/writing-ai-correction'>DET-Schreibleistung</a>."
+      }
+    ],
+    "embarkfont": {
+      "title": "Beginnen Sie heute Ihre Reise zu hohen DET-Schreibpunktzahlen!",
+      "btnText": "Jetzt beginnen"
     }
   },
   "courses": {
     "seometa": {
-      "title": "DET-Vorbereitungskurse {'|'} Professionelles Training für den Duolingo English Test",
-      "description": "Profitieren Sie von unseren professionellen DET-Vorbereitungskursen. Mit gezielten Übungen und bewährten Strategien optimieren wir Ihre Lese-, Schreib-, Sprech- und Hörkompetenzen. Beginnen Sie jetzt mit Ihrer Prüfungsvorbereitung!",
-      "keywords": "DET-Vorbereitung, Duolingo-Prüfungstraining, DET-Kurse, Englischtest-Training, Duolingo-Zertifikat, Prüfungsvorbereitung DET, Online-Englischkurse, DET-Lernmaterial"
+      "title": "DET-Kurs - Komplette Duolingo English Test Vorbereitung {'|'} 95% Erfolgsquote",
+      "description": "Expertengeleiteter DET-Kurs, der alle Bereiche abdeckt: Lesen, Schreiben, Sprechen & Hören. Inklusive Übungstests, Lehrpläne und kostenloser Zugang für Mitglieder."
     },
-    "article1": {
-      "title": "Hauptmerkmale der DET Prüfung zur Sprachbeherrschung:",
-      "list": [
-        {
-          "content": "• Ausführliche Analyse aller Sprechaufgaben"
+    "h1": "DET-Kurs: Ihr Weg zum Erfolg beim Duolingo English Test",
+    "h2": "Expertengeleiteter DET-Kurs mit 95% Erfolgsquote der Studierenden",
+    "topVideoFont": {
+      "desc1": "Vollständiger DET-Kurs mit Abdeckung aller Fragetypen",
+      "desc2": "Integrierte Übungssets in jeder Lektion - gleichzeitiges Lernen und Üben für maximale Effizienz",
+      "desc3": "Verfügbar sowohl als Videolektionen als auch im Textformat, passend zu Ihrem Lernstil",
+      "desc4": "Vollständig auf das DET-Prüfungsformat 2025 ausgerichtet",
+      "desc5": "Kostenloser Zugang für alle DET Practice Mitglieder, keine zusätzlichen Gebühren"
+    },
+    "extdet": {
+      "title": "Umfassender DET-Kurs von DET Practice: Einführung",
+      "desc1": "Transformieren Sie Ihre Duolingo English Test-Vorbereitung mit unserem umfassenden Lernzentrum! Wir verstehen, dass die Bewältigung des DET herausfordernd erscheinen kann, weshalb wir einen strategischen Ansatz entwickelt haben, der jede Komponente in überschaubare, erfolgsorientierte Module aufteilt.",
+      "desc2": "Unser von Experten entwickelter DET-Kurs deckt alle wesentlichen DET-Komponenten ab – von fortgeschrittenem Leseverständnis bis hin zu nuancierten Sprechaufgaben. Unser Unterscheidungsmerkmal ist das adaptive Lernsystem, das gründliche Anleitung mit gezielten Übungsaufgaben verbindet. Sie finden dynamische Studienmaterialien, die auf jedes Kompetenzniveau zugeschnitten sind und es Ihnen ermöglichen, in allen Testbereichen Selbstvertrauen aufzubauen.",
+      "desc3": "Beginnen Sie Ihre Reise heute mit unserer bewährten Methodik, ob Sie eine wettbewerbsfähige Punktzahl für Top-Universitäten anstreben oder eine solide Grundlage in Englischkenntnissen aufbauen. Jedes Modul ist speziell darauf ausgerichtet, Ihre Leistung im neuesten DET-Format zu verbessern und sicherzustellen, dass Sie am Prüfungstag bestens vorbereitet sind."
+    },
+    "changeleftfont": {
+      "read": "Lesen",
+      "lis": "Hören",
+      "spe": "Sprechen",
+      "wri": "Schreiben"
+    },
+    "four_change_right_data": {
+      "data1": {
+        "title": "DET-Kurs: Duolingo English Test Lesebereich",
+        "desc": "Der Lesebereich des Duolingo English Test (DET) bewertet zentrale Sprachfähigkeiten durch verschiedene Fragetypen, prüft Verständnis, Wortschatz und allgemeine Lesekompetenz. Die Fragetypen umfassen Read and Select (Lesen und Auswählen), Fill in the Blanks (Lücken füllen), Interactive Reading (Interaktives Lesen) und Read and Complete (Lesen und Vervollständigen), wobei jeder Typ darauf ausgelegt ist, spezifische Lesefähigkeiten zu prüfen.",
+        "desc2": "Diese Aufgaben bewerten gemeinsam die grundlegenden Lese- und Verständnisfähigkeiten, die für eine effektive Kommunikation in akademischen und alltäglichen Kontexten erforderlich sind.",
+        "video1data": {
+          "title": "Read and Select",
+          "desc": "Read and Select: Den Prüflingen wird eine Reihe von Wörtern gezeigt, und sie müssen identifizieren, welche echte englische Wörter sind. Diese Aufgabe bewertet die Wortschatzerkennung und die Fähigkeit, zwischen gültigen und ungültigen Wörtern zu unterscheiden, was das reale Wortverständnis widerspiegelt."
         },
-        {
-          "content": "• Bewährte Lösungsstrategien für jeden Aufgabentyp"
+        "video2data": {
+          "title": "Fill in the Blanks",
+          "desc": "Fill in the Blanks: Kandidaten werden Sätze mit fehlenden Wörtern präsentiert. Sie müssen die richtigen Wörter aus einer Liste auswählen, um die Sätze sinnvoll zu vervollständigen. Diese Aufgabe bewertet Grammatik, Wortschatz und die Fähigkeit, kontextuelle Hinweise zu verstehen."
         },
-        {
-          "content": "• Praktische Übungen zur Verbesserung von Aussprache und Redefluss"
+        "video3data": {
+          "title": "Interactive Reading",
+          "desc": "Interactive Reading: Diese Komponente beinhaltet das Lesen von Passagen mit verschiedenen Fragetypen wie das Vervollständigen von Sätzen, die Auswahl passender Sätze zum Füllen einer Lücke, das Markieren von Antworten im Text, das Identifizieren von Hauptideen und die Auswahl geeigneter Überschriften für Passagen. Dies misst Verständnis, kritisches Denken und die Fähigkeit, geschriebenes Englisch in verschiedenen Kontexten zu interpretieren."
         },
-        {
-          "content": "• Fachkundige Hinweise zu Betonung und Gesamtauftritt"
-        },
-        {
-          "content": "• Praxisnahe Beispiele mit Strategieanalysen"
-        },
-        {
-          "content": "• Musterlösungen als Audiobeispiele"
-        },
-        {
-          "content": "• Individuell anpassbare Lernwege"
-        },
-        {
-          "content": "• Kernwortschatz und -grammatik im Fokus"
-        },
-        {
-          "content": "• Stets aktuell nach neuesten Prüfungsstandards"
+        "video4data": {
+          "title": "Read and Complete",
+          "desc": "Read and Complete: Dieser Fragetyp präsentiert eine Passage mit fehlenden Buchstaben in Wörtern. Prüflinge müssen die vollständigen Wörter erschließen und wiederherstellen. Er konzentriert sich auf Rechtschreibung, kontextuelles Verständnis und Wortschatzanwendung."
         }
-      ]
-    },
-    "article2": {
-      "title": "Hauptmerkmale der DET Writing Exam Excellence:",
-      "list": [
-        {
-          "content": "• Systematische Darstellung aller Schreibaufgaben"
+      },
+      "data2": {
+        "title": "DET-Kurs: Duolingo English Test Hörbereich",
+        "desc": "Der Duolingo English Test (DET) enthält einen umfassenden Hörbereich, der die Hörfähigkeiten der Kandidaten durch zwei Hauptfragetypen bewertet: Interactive Listening (Interaktives Hören) und Listen and Type (Hören und Tippen). Diese Komponenten sind darauf ausgelegt, verschiedene Aspekte der Englischkenntnisse zu bewerten, insbesondere im Hinblick auf Verständnis und Konversationsfähigkeiten.",
+        "desc2": "",
+        "video1data": {
+          "title": "Listen and Type",
+          "desc": "Bei Listen and Type hören die Prüflinge gesprochene Sätze und müssen diese genau transkribieren. Dieses Format bewertet nicht nur die Fähigkeit, gesprochenes Englisch zu verstehen, sondern auch Rechtschreib- und Zeichensetzungsfähigkeiten, die für eine effektive schriftliche Kommunikation entscheidend sind. Dieser Fragetyp erscheint typischerweise 6 bis 9 Mal während des Tests, was seine Bedeutung bei der Bewertung von Verständnis- und Konversationsfähigkeiten widerspiegelt."
         },
-        {
-          "content": "• Strukturierte Anleitung zum Verfassen überzeugender Texte"
-        },
-        {
-          "content": "• Gezielte Übungen für prüfungsrelevante Schreibkompetenzen"
-        },
-        {
-          "content": "• Expertentipps für klare und überzeugende Formulierungen"
-        },
-        {
-          "content": "• Kommentierte Beispieltexte mit Erläuterungen"
-        },
-        {
-          "content": "• Flexible Lernmodule für alle Niveaustufen"
-        },
-        {
-          "content": "• Wesentliche Grammatik- und Wortschatzübungen"
-        },
-        {
-          "content": "• Aktuell nach neuestem Prüfungsformat"
+        "video2data": {
+          "title": "Interactive Listening",
+          "desc": "Im Gegensatz dazu simuliert der Interactive Listening-Bereich reale Gespräche, oft in akademischen Kontexten. Kandidaten nehmen an Dialogen zwischen Gleichaltrigen oder zwischen einem Studierenden und einem Fakultätsmitglied teil und beantworten Fragen, die ihr Verständnis des Inhalts testen. Dieser Bereich betont aktives Zuhören und die Fähigkeit, Informationen aus Diskussionen zu synthetisieren, was für den akademischen Erfolg wesentlich ist. Insgesamt stärken diese Fragetypen gemeinsam das Ziel des DET, die Bereitschaft des Kandidaten für englischsprachige Umgebungen sowohl in akademischen als auch in alltäglichen Situationen zu messen."
         }
-      ]
-    },
-    "contaceUsList": [
-      {
-        "font": "Wählen Sie Ihr Lernpaket",
-        "tip": "Entscheiden Sie sich für Sprech- oder Schreibtraining",
-        "btn": "Sprechtraining bestellen",
-        "btn1": "Schreibtraining bestellen"
       },
-      {
-        "font": "Sofortzugang",
-        "tip": "Direkter Zugriff nach Zahlungseingang",
-        "btn": "Sprechtraining herunterladen",
-        "btn1": "Schreibtraining herunterladen"
+      "data3": {
+        "title": "DET-Kurs: Duolingo English Test Sprechbereich",
+        "desc": "Der Duolingo English Test (DET) enthält einen dynamischen Sprechbereich, der entwickelt wurde, um die mündliche Kompetenz des Kandidaten durch fünf verschiedene Fragetypen zu bewerten: Speak about the Photo (Über das Foto sprechen), Read, then Speak (Lesen, dann Sprechen), Listen, then Speak (Hören, dann Sprechen), Read Aloud (Laut vorlesen) und Speaking Sample (Sprechprobe). Jedes dieser Formate bewertet verschiedene Aspekte der englischen Sprechfähigkeiten, die für eine effektive Kommunikation in akademischen und alltäglichen Kontexten entscheidend sind.",
+        "desc2": "",
+        "video1data": {
+          "title": "Speak About the Photo",
+          "desc": "In der Aufgabe Speak about the Photo beschreiben Kandidaten ein Bild detailliert, was ihre Fähigkeit testet, Gedanken zu artikulieren und beschreibende Sprache zu verwenden. Diese Frage dauert typischerweise bis zu 90 Sekunden und bewertet sowohl Flüssigkeit als auch Wortschatz."
+        },
+        "video2data": {
+          "title": "Read, Then Speak & Listen, Then Speak",
+          "desc": "Die Aufgaben Read, then Speak und Listen, then Speak erfordern von den Prüflingen, auf Aufforderungen basierend auf schriftlichem bzw. gesprochenem Inhalt zu reagieren. Diese Formate bewerten Verständnis und die Fähigkeit, Ideen klar und zusammenhängend innerhalb eines Zeitlimits zu vermitteln."
+        },
+        "video3data": {
+          "title": "Read Aloud",
+          "desc": "Die Read Aloud-Frage fordert Kandidaten heraus, einen vorgegebenen Text laut vorzulesen, wobei der Fokus auf Aussprache und Intonation liegt."
+        },
+        "video4data": {
+          "title": "Speaking Sample",
+          "desc": "Schließlich ermöglicht das Speaking Sample den Kandidaten, ihre Sprechfähigkeiten zu demonstrieren und Institutionen zusätzliche Einblicke in ihre Kompetenz zu geben. Gemeinsam stellen diese Fragetypen eine umfassende Bewertung der Sprechfähigkeiten sicher, die für den Erfolg in englischsprachigen Umgebungen notwendig sind."
+        }
       },
-      {
-        "font": "Ergänzende Hörmaterialien",
-        "tip": "Zusätzliche Übungsbeispiele mit Audio",
-        "btn1": "Audiomaterial aufrufen"
+      "data4": {
+        "title": "DET-Kurs: Duolingo English Test Schreibbereich",
+        "desc": "Der Duolingo English Test (DET) enthält einen speziellen Schreibbereich, der entwickelt wurde, um verschiedene Aspekte der englischen Schreibkompetenz eines Prüflings zu bewerten. Dieser Bereich besteht aus drei verschiedenen Fragetypen: Write About the Photo (Über das Foto schreiben), Interactive Writing (Interaktives Schreiben) und Writing Sample (Schreibprobe).",
+        "desc2": "",
+        "video1data": {
+          "title": "Write About the Photo",
+          "desc": "Write About the Photo erfordert von den Kandidaten, ein Bild zu beobachten und innerhalb einer Minute einen beschreibenden Absatz zu verfassen. Diese Aufgabe bewertet die Fähigkeit, visuelle Details zu artikulieren und zusammenhängende Gedanken auszudrücken, wobei Wortschatz und grammatikalische Genauigkeit betont werden."
+        },
+        "video2data": {
+          "title": "Interactive Writing",
+          "desc": "Interactive Writing, Anfang 2024 eingeführt, präsentiert eine zweistufige Herausforderung. Zunächst reagieren die Prüflinge fünf Minuten lang auf eine Aufforderung, gefolgt von einer zweiten Aufforderung, die basierend auf ihrer ersten Antwort generiert wird und zusätzliche drei Minuten Schreibzeit erfordert. Dieses Format testet nicht nur Kreativität und Kohärenz, sondern auch Anpassungsfähigkeit im Schreiben, da Kandidaten ihre ursprünglichen Ideen weiterentwickeln müssen."
+        },
+        "video3data": {
+          "title": "Writing Sample",
+          "desc": "Die Writing Sample-Frage fordert Prüflinge auf, innerhalb einer begrenzten Zeit eine strukturierte Antwort zu einem gegebenen Thema zu verfassen. Diese Aufgabe bewertet allgemeine Schreibfähigkeiten, einschließlich Organisation, Klarheit und Argumentation. Gemeinsam stellen diese Fragetypen eine umfassende Bewertung der Schreibfähigkeiten der Kandidaten in realen Kontexten sicher und spiegeln ihre Bereitschaft für akademische oder berufliche Umgebungen wider."
+        },
+        "video4data": {
+          "title": "Additional DET Prep Resources",
+          "desc": ""
+        }
       }
-    ],
-    "pagefont": {
-      "h1": "DET Sprechprüfung Exzellenz: Ein umfassender Leitfaden",
-      "do": "$",
-      "Buy_Now": "Jetzt kaufen",
-      "alt": "DET Praxis:Die beste Duolingo English Test Praxisplattform",
-      "white_arrow_right": "Weißer Pfeil nach rechts",
-      "Double_Right_Arrow": "Doppelpfeil nach rechts",
-      "DET_Writing": "DET Schreibprüfung Exzellenz: Ein umfassender Leitfaden",
-      "How_to": "Zugang zum Lernmaterial",
-      "spa": "Audio für Sprechübungen",
-      "tips": "Hinweis: Dies ist ein digitales Produkt. Mit erfolgtem Download gilt der Kauf als abgeschlossen und ist nicht erstattungsfähig. Bitte prüfen Sie die Bedingungen vor dem Kauf.",
-      "orange_title": "Unser Expertenteam",
-      "team_desc": "Unsere qualifizierten Sprachtrainer (TESOL-zertifiziert u.a.) verfügen über langjährige Erfahrung in der Vorbereitung auf internationale Sprachprüfungen wie TOEFL, IELTS und DET. Mit ihrer Fachkompetenz und modernen Lehrmethoden unterstützen sie Sie optimal auf Ihrem Weg zum Prüfungserfolg.",
-      "Elite_Language_Educators": "Elite Sprachpädagogen"
     },
-    "sas": "Hörbeispiele sprechen",
-    "zhonghe": {
-      "title": "DET Ultimate Exam Mastery-Paket",
-      "desc": "Das Kurspaket umfasst die <span class=\"yellow\">DET Speaking Exam Excellence</span> und die <span class=\"yellow\">DET Writing Exam Excellence</span>.  Mit dem Abonnement können Sie die Leitfäden jederzeit herunterladen und sie jederzeit und überall problemlos studieren.  Das „Jetzt kaufen“-Abonnement tritt sofort in Kraft.  Scrollen Sie auf der Seite nach oben, zeigen Sie den Kurs an und klicken Sie, um ihn herunterzuladen und mit dem Lernen zu beginnen."
+    "package_out": {
+      "title": "Duolingo English Test Leitfaden: DET Ultimate Prüfungsbeherrschungspaket",
+      "desc": "Erhalten Sie Zugang zu zwei Premium-Leitfäden, die in Ihrer Mitgliedschaft enthalten sind: 'DET Speaking Exam Excellence' und 'DET Writing Exam Excellence.' Diese umfassenden Ressourcen stehen allen Abonnenten ohne zusätzliche Kosten zur Verfügung.",
+      "desc2": "Sobald Sie Mitglied sind, besuchen Sie einfach den Kurse-Tab in Ihrem Mitglieder-Dashboard, um diese wertvollen Studienführer herunterzuladen. Lernen Sie in Ihrem eigenen Tempo, überall und jederzeit.",
+      "desc3": "Bereit anzufangen? Ihre Mitgliedschaft wird sofort aktiviert und gibt Ihnen unmittelbaren Zugriff auf diese von Experten erstellten Ressourcen.",
+      "btn": "Jetzt abonnieren"
     },
-    "speaking": {
-      "title": "Kompletter Leitfaden für den DET-Sprachteil"
-    },
-    "writing": {
-      "title": "Kompletter Leitfaden für den DET-Schreibteil"
-    },
-    "downloadguide": "Leitfaden herunterladen",
-    "dandumai": "Sie können sie auch einzeln kaufen:",
-    "writing5": "Sie können DET Writing Exam Excellence für 5 $ kaufen:",
-    "speaking5": "Sie können DET Speaking Exam Excellence für 5 $ kaufen:"
+    "aqList": [
+      {
+        "name": "Was ist im DET-Kurspaket enthalten?",
+        "content": "Das <a href='https://www.detpractice.com/courses'>DET-Kurspaket</a> enthält umfassende Vorbereitungsmaterialien für alle vier Testbereiche: Lesen, Hören, Sprechen und Schreiben. Jeder Bereich enthält mehrere interaktive Kurse, die sich auf spezifische Fragetypen konzentrieren, mit Echtzeit-Feedback und praktischen Strategien."
+      },
+      {
+        "name": "Wie unterscheidet sich dieser DET-Kurs von anderen Vorbereitungsmaterialien?",
+        "content": "Dieser DET-Kurs bietet eine einzigartige Kombination aus Videolektionen plus umfangreiche Übungen (die Sie in unserer <a href='https://www.detpractice.com/practice'>DET-Übungsfragenbank</a> finden können) und Feedback. Er deckt jeden Fragetyp im Test ab und enthält spezialisierte Vorbereitungsmaterialien für jeden Bereich, was ihn zu einer vollständigen Vorbereitungslösung macht."
+      },
+      {
+        "name": "Kann ich auf die DET-Kursmaterialien nach meinem eigenen Zeitplan zugreifen?",
+        "content": "Ja, alle DET-Kursmaterialien sind für alle Mitglieder auf <a href='https://www.detpractice.com'>DET Practice</a> kostenlos und rund um die Uhr verfügbar. Sie können in Ihrem eigenen Tempo lernen und jederzeit und überall auf die Materialien zugreifen."
+      },
+      {
+        "name": "Deckt der DET-Kurs das neueste Testformat ab?",
+        "content": "Ja, der DET-Kurs wird regelmäßig aktualisiert, um dem aktuellen Duolingo English Test-Format zu entsprechen. Er enthält Übungsmaterialien für alle aktuellen Fragetypen, einschließlich Read and Select, Fill in the Blanks, Interactive Reading und Sprechaufgaben."
+      },
+      {
+        "name": "Wie weiß ich, mit welchem DET-Kursbereich ich beginnen soll?",
+        "content": "Jeder Bereich des DET-Kurses (Lesen, Hören, Sprechen und Schreiben) ist unabhängig zugänglich. Sie können mit den Bereichen beginnen, in denen Sie die meiste Verbesserung benötigen, oder der vorgeschlagenen Kursreihenfolge für eine umfassende Vorbereitung folgen."
+      },
+      {
+        "name": "Sind Beispielantworten im DET-Kurs enthalten?",
+        "content": "Ja, der DET-Kurs enthält hochbewertete Beispielantworten sowohl für die Sprech- als auch für die Schreibbereiche, zusammen mit detaillierten Erläuterungen, was diese Antworten effektiv macht. Dies hilft Ihnen, die Bewertungskriterien zu verstehen und Ihre Leistung zu verbessern."
+      }
+    ]
   },
   "forget": {
     "Please_enter": "Bitte geben Sie Ihre E-Mail-Adresse ein",
@@ -687,103 +733,196 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Duolingo English Mock Test {'|'} Authentischer DET-Simulationstest von DET Practice",
-      "description": "Bereiten Sie sich optimal auf den Duolingo English Test vor mit unserem originalgetreuen DET-Simulationstest. Ihre Ergebnisse und eine ausführliche Auswertung erhalten Sie innerhalb von 30 Minuten. Profitieren Sie von über 18.000 Übungsaufgaben, einem intelligenten adaptiven Algorithmus und KI-gestützter Bewertung für Sprechen und Schreiben. Starten Sie noch heute mit Ihrer DET-Vorbereitung.",
-      "keywords": "duolingo english mock test, duolingo english practice test, DET-Simulation, duolingo-Vorbereitung, duolingo english test Übung, DET-Probetest, duolingo Übungsmaterial, Online-DET-Training, DET-Prüfungsvorbereitung, duolingo Aufgabensammlung, DET-Leistungsanalyse, Duolingo-Testtraining"
+      "title": "Duolingo Übungstest - Professionelle DET-Vorbereitungsplattform",
+      "description": "Duolingo Übungstest-Plattform mit umfassenden DET-Übungsmaterialien. Erhalten Sie sofortige Ergebnisse, detaillierte Berichte und prüfungsähnliche Fragen. Von über 10.000 Testteilnehmern vertraut.",
     },
-    "h1": "Originalgetreue DET-Simulation",
-    "desc": "Erleben Sie eine authentische Testsituation mit unseren vollständigen Übungstests. Lernen Sie den Prüfungsablauf kennen und erhalten Sie umgehend Ihre Ergebnisse samt detaillierter Analyse zur gezielten Verbesserung.",
-    "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
-    "mock_user_icon": "Benutzersymbol simulieren",
-    "white_arrow_right": "Weißer Pfeil nach rechts",
-    "orange_arrow_right": "Oranger Pfeil rechts",
-    "learners_have": "Bereits über {number} Teilnehmer haben mit unseren Übungstests erfolgreich trainiert.",
-    "Mock_Now": "Test jetzt starten",
-    "Full_scale": "Duolingo 1:1 Vollständige Prüfungssimulation",
+    "h1": "Duolingo Übungstest - Plattform für realistische Prüfungserfahrung von DET Practice",
+    "descnew": "Umfassender Duolingo Übungstest mit echtem Prüfungsgefühl",
+    "desc": "Üben Sie mit unserem realitätsnahen Duolingo Übungstest, der die echte Prüfungsumgebung perfekt nachbildet. Erhalten Sie sofortige Ergebnisse und eingehende Analysen zur Identifizierung Ihrer Stärken und Schwächen, die Ihnen helfen, sich zuversichtlich auf die eigentliche Prüfung vorzubereiten.",
+    "alt": "DET Practice: Die beste Duolingo English Test Übungsplattform",
+    "mock_user_icon": "Mock User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "orange_arrow_right": "Orange Arrow Right",
+    "learners_have": "Schließen Sie sich {number} erfolgreichen Testteilnehmern an, die unseren Duolingo Übungstests vertrauen!",
+    "Mock_Now": "Jetzt üben",
+    "Full_scale": "Duolingo 1:1 Vollständiger Übungstest",
     "article1": {
-      "h2": "Realistische Prüfungsumgebung",
-      "right_desc": "Trainieren Sie unter echten Prüfungsbedingungen dank unserem adaptiven Algorithmus. Beherrschen Sie alle Aufgabentypen und erhalten Sie eine präzise Leistungseinschätzung."
+      "h2": "DET Übungstest wie am Prüfungstag",
+      "right_desc": "Wissen Sie genau, was Sie am Prüfungstag erwartet. Unser DET Übungstest spiegelt die offizielle DET-Umgebung wider und hilft Ihnen, sich selbstbewusst und vorbereitet für die echte Prüfung zu fühlen. Üben Sie mit präzise getakteten Abschnitten und authentischen Fragetypen, um das Prüfungsformat zu meistern."
     },
     "article2": {
-      "h2": "Genaue Bewertung und umfassende Analyse",
-      "right_desc": "Erhalten Sie einen detaillierten Testbericht mit Analyse Ihrer Stärken und Schwächen sowie einen automatisch angepassten Lernplan für optimale Vorbereitung."
+      "h2": "Umfassende Punkteanalyse",
+      "right_desc": "Erhalten Sie detaillierte Übungstestberichte mit präziser Leistungsanalyse in allen Bereichen. Unser intelligentes KI-System identifiziert Ihre Stärken und Verbesserungsbereiche und erstellt personalisierte Lernempfehlungen zur Optimierung Ihrer Testvorbereitung."
     },
     "article3": {
-      "h2": "Maximale Flexibilität",
-      "right_desc": "Üben Sie ohne Terminbindung wann immer es Ihnen passt. Sofortiger Zugang nach dem Kauf mit der Möglichkeit, jederzeit zu pausieren und fortzusetzen."
+      "h2": "DET Übungstest jederzeit und überall",
+      "right_desc": "Nehmen Sie einen DET Übungstest wann und wo es Ihnen am besten passt. Unsere Online-Plattform bietet sofortigen Zugriff auf Übungstests, sodass Sie sich nach Ihrem eigenen Zeitplan vorbereiten können."
     },
     "article4": {
-      "h2": "Schnelle Ergebnisse",
-      "right_desc": "Ihre Testergebnisse sind innerhalb von 5-30 Minuten</span> verfügbar für eine effiziente Lernkontrolle."
+      "h2": "Schneller DET Übungstest-Feedback-Bericht",
+      "right_desc": "Erhalten Sie Ihre detaillierten DET Übungstestergebnisse in nur <span class='zdfont'>5-30 Minuten</span>. Unser blitzschnelles Bewertungssystem liefert sofortiges Feedback, sodass Sie Ihren Fortschritt verfolgen und Ihre Vorbereitungsstrategie effizient anpassen können."
     },
-    "vs1": "Vergleich DET Practice und offizieller DET",
-    "vs2": "Gegenüberstellung der Ergebnisse von Teilnehmern im offiziellen Duolingo English Test und unserem Simulationstest."
+    "vs1": "Unsere DET Übungstest-Ergebnisse VS Echte DET-Testergebnisse",
+    "vs2": "Punktevergleich von Teilnehmern, die unsere DET Übungstests und den Duolingo English Test absolviert haben",
+    "aqtitle": "Häufig gestellte Fragen zu unserem <span class='yellow'>DET Übungstest</span>",
+    "aqlistfont": [
+      {
+        "q": "Was macht Ihren Duolingo Übungstest anders als andere Übungsmaterialien?",
+        "a": "Unser <a href='https://www.detpractice.com/mock-exam'>Duolingo Übungstest</a> spiegelt das offizielle Prüfungsformat, Timing und Schwierigkeitsniveau präzise wider. Wir bieten umfassende Leistungsanalysen und personalisierte Lernempfehlungen nach jeder Übungssitzung."
+      },
+      {
+        "q": "Wie lange dauert ein vollständiger Duolingo Übungstest?",
+        "a": "Ein vollständiger Duolingo Übungstest dauert etwa 1 Stunde, entsprechend der offiziellen Testdauer. Sie können Ihre Übungssitzung jederzeit pausieren und fortsetzen, was sie flexibel für Ihren Zeitplan macht."
+      },
+      {
+        "q": "Wann erhalte ich meine Duolingo Übungstestergebnisse?",
+        "a": "Ihre Übungstestergebnisse werden innerhalb von 5-30 Minuten nach Abschluss zugestellt. Der Bericht enthält detaillierte Analysen für jeden Abschnitt und spezifische Verbesserungsbereiche."
+      },
+      {
+        "q": "Kann ich den Duolingo Übungstest mehrmals absolvieren?",
+        "a": "Ja! Sie können unseren <a href='https://www.detpractice.com/mock-exam'>DET Übungstest</a> so oft wie nötig absolvieren. Jeder Versuch liefert neue Erkenntnisse und hilft Ihnen, Ihren Fortschritt im Laufe der Zeit zu verfolgen."
+      },
+      {
+        "q": "Muss ich spezielle Software für den Duolingo Übungstest installieren?",
+        "a": "Keine Installation erforderlich. Unsere Übungstestplattform ist webbasiert und funktioniert auf jedem Gerät mit Internetverbindung - melden Sie sich einfach an und beginnen Sie mit dem Üben. Für die beste Testerfahrung empfehlen wir jedoch die Verwendung des Chrome-Browsers."
+      },
+      {
+        "q": "Wie aktuell sind Ihre Duolingo Übungstestinhalte?",
+        "a": "Wir aktualisieren unsere <a href='https://www.detpractice.com/'>DET Übungsmaterialien</a> regelmäßig, um das neueste Testformat und die aktuellsten Fragetypen widerzuspiegeln und sicherzustellen, dass Sie mit den aktuellsten Inhalten üben."
+      }
+    ],
+    "embarkfont": {
+      "title": "Nehmen Sie jetzt Ihren ersten Duolingo Übungstest",
+      "btnText": "Jetzt starten"
+    }
   },
   "practice": {
     "seometa": {
-      "title": "DET Übungsportal {'|'} KI-gestützte Duolingo English Test Vorbereitung",
-      "description": "Auf der Suche nach einer effektiven DET-Vorbereitung? Nutzen Sie unsere umfangreiche Übungsplattform mit über 18.000 Aufgaben, KI-gesteuertem Feedback und intelligentem Lernfortschritt. Schließen Sie sich über 400.000 erfolgreichen Teilnehmern an.",
-      "keywords": "Duolingo Test Vorbereitung, DET Übungsmaterialien, DET Beispielaufgaben, Duolingo Prüfungstraining, DET Aufgabensammlung, DET Sprechübungen, DET Schreibtraining, Online Englischtest Übungen, DET Lernmaterialien, KI-Sprachbewertung"
+      "title": "Duolingo English Test Übung - KI-gestützter Score-Booster",
+      "description": "Duolingo English Test Übung mit über 18.000 Fragen. KI-Sprachcoach, intelligente Lernpfade und detaillierte Analysen. Schließen Sie sich über 400.000 erfolgreichen Lernenden an!"
     },
-    "h1": "Duolingo English Test Übungszentrum",
-    "desc": "Nutzen Sie unsere umfassende Testbibliothek mit ausführlichen Lösungserklärungen, Beispielantworten, KI-basierter Sprachanalyse und individuellem Lernplan. Mit modernster KI-Technologie erreichen Sie Ihr Wunschergebnis effizient und kostengünstig",
-    "alt": "DET Übung:Die beste Duolingo English Test Übungsplattform",
+    "h1": "Beste Duolingo English Test Übungsfragenbank",
+    "descnew": "KI-verstärkte Duolingo English Test Übung für jeden DET-Bereich",
+    "desc": "Erhalten Sie Zugang zu einer umfangreichen Sammlung von Duolingo English Test Übungsfragen, ergänzt durch Antwortanalysen, Vorlagen, KI-gestützte Sprech- und Schreibbewertungen und intelligente Planung. Verbessern Sie Ihre Punktzahl effizient und kostengünstig mit unserem KI-gestützten Ansatz.",
+    "alt": "DET Practice: Die beste Duolingo English Test Übungsplattform",
     "altbanner": "Duolingo English Test Übung",
-    "bank_user_icon": "Bankbenutzer-Symbol",
-    "white_arrow_right": "Weißer Pfeil rechts",
-    "blue_arrow_right": "Blauer Pfeil nach rechts",
-    "learners_have": "Mehr als {number} Teilnehmer vertrauen auf unsere DET-Vorbereitung.",
-    "spn": "Jetzt mit dem Training beginnen",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "blue_arrow_right": "Blue Arrow Right",
+    "learners_have": "Punkteverbessernde DET-Übungsfragenbank - von {number} Testteilnehmern vertraut",
+    "spn": "Jetzt mit dem Üben beginnen",
     "article1": {
-      "h2": "Umfangreichste Aufgabensammlung",
-      "right_desc": "Profitieren Sie von über 18.000 Übungsaufgaben zu allen Prüfungsbereichen. Regelmäßige Aktualisierungen garantieren aktuelle Prüfungsinhalte. Systematischer Aufbau zur gezielten Verbesserung aller Prüfungskompetenzen.",
-      "btn": "Mit dem Training beginnen"
+      "h2": "18.000+ DET Übungsfragen & wachsend",
+      "right_desc": "Greifen Sie auf die umfassendste Duolingo English Test Übungsfragenbank zu, die alle Prüfungsbereiche vom Lesen bis zum Sprechen abdeckt. Bleiben Sie mit unseren regelmäßig aktualisierten Inhalten, die die neuesten Testmuster widerspiegeln, einen Schritt voraus - Ihr schnellster Weg zu Ihrer Ziel-DET-Punktzahl.",
+      "btn": "DET-Übung starten"
     },
     "article2": {
-      "h2": "Intelligente Lernempfehlungen",
-      "right_desc": "Unser KI-System analysiert Ihren aktuellen Leistungsstand, Schwierigkeitsgrade, Zielpunktzahl, Aufgabengewichtung, aktuelle Prüfungstrends, Vorbereitungszeit und Lernfortschritt, um Ihnen optimale Übungsaufgaben für eine effiziente Prüfungsvorbereitung zu empfehlen.",
-      "btn": "Starten Sie Ihr individuelles Training"
+      "h2": "Intelligenter Duolingo English Test Übungsweg",
+      "right_desc": "Erhalten Sie Ihren personalisierten Lernweg für die Duolingo English Test Übung. Unser KI-System analysiert kontinuierlich Ihre Leistung in jeder Fragenartt, Ihre Zielpunktzahl und Zeitplan, aktuelle Testmuster, Schwierigkeitsgrade der Fragen und Ihr individuelles Lerntempo, um die effizienteste Route zu Ihrer Zielpunktzahl zu erstellen - eliminiert Rätselraten und verschwendete Zeit mit ineffektiver Vorbereitung.",
+      "btn": "Intelligentes DET-Lernen beginnen"
     },
     "article3": {
-      "h2": "KI-gestützte Sprachbewertung",
-      "right_desc": "Optimieren Sie Ihre Sprechfertigkeit mit KI-basierter Analyse. Laden Sie Ihre Sprachantworten hoch und erhalten Sie sofort eine detaillierte Auswertung für gezielte Verbesserungen.",
-      "btn": "Sprachbewertung starten"
+      "h2": "KI-gestützte DET Sprech- & Schreibbewertung",
+      "right_desc": "Erhalten Sie sofortiges Feedback zu Ihren Duolingo English Test Antworten. Unser KI-System analysiert Ihre <a href='https://www.detpractice.com/speaking-ai-correction'>DET-Sprech-</a> und <a href='https://www.detpractice.com/writing-ai-correction'>DET-Schreibeinreichungen</a> in Echtzeit und bietet detaillierte Bewertungen und Vorschläge zu Aussprache, Flüssigkeit, Grammatik und Wortschatzverwendung, um Ihnen zu helfen, sich präzise und selbstbewusst zu verbessern.",
+      "btn": "Bewertung starten"
     },
     "article4": {
-      "h2": "Ausführliche Lösungen",
-      "right_desc": "Verstehen Sie die Aufgaben durch detaillierte Erklärungen. Unsere Lösungen vermitteln nicht nur die richtigen Antworten, sondern auch wichtige Konzepte und effektive Lernstrategien.",
-      "btn": "Lösungen anzeigen"
+      "h2": "Duolingo English Test Übungsantworten-Analyse",
+      "right_desc": "Erhalten Sie detaillierte Erklärungen für Ihre Duolingo English Test Übungsantworten. Unsere KI zerlegt jede Frage, enthüllt die Logik hinter den Antworten und hebt wichtige Testmuster hervor - hilft Ihnen, wesentliche Konzepte zu beherrschen und gleichzeitig Ihre Lerneffizienz für den DET zu maximieren.",
+      "btn": "Antworteinblicke erkunden"
+    },
+    "aqtitle": "Häufig gestellte Fragen zu unserer <span class='yellow'>Duolingo English Test Übung</span>",
+    "aqlistfont": [
+      {
+        "q": "Warum ist DET Practice die beste Wahl für Duolingo English Test Übung?",
+        "a": "Wir sind auf Duolingo English Test Übung spezialisiert, mit professionell entwickelten Materialien, die genau dem realen Testformat und den Anforderungen entsprechen."
+      },
+      {
+        "q": "Wie oft sollte ich mit <a href='https://www.detpractice.com'>DET Practice</a> lernen?",
+        "a": "Für optimale Ergebnisse empfehlen wir 2-3 Stunden fokussiertes Üben täglich, idealerweise beginnend mindestens 2 Wochen vor Ihrem tatsächlichen Testtermin."
+      },
+      {
+        "q": "Was macht Duolingo English Test Übung so wichtig?",
+        "a": "Die Nutzerdaten von DET Practice zeigen, dass systematische Vorbereitung einen signifikanten Einfluss auf die Punktzahlen hat, wobei unsere Studenten im Durchschnitt 15-20 Punkte höher in ihrem finalen Test abschneiden."
+      },
+      {
+        "q": "Wie aktuell sind die Inhalte von DET Practice?",
+        "a": "Unsere <a href='https://www.detpractice.com/practice'>Duolingo English Test Übungsmaterialien</a> werden kontinuierlich aktualisiert, um die neuesten Testmuster und Anforderungen widerzuspiegeln und sicherzustellen, dass Sie immer vorbereitet sind."
+      },
+      {
+        "q": "Wie unterscheidet sich Duolingo English Test Übung vom allgemeinen Englischlernen?",
+        "a": "Anders als beim allgemeinen Englischlernen erfordert die fokussierte Testvorbereitung Vertrautheit mit spezifischen Fragetypen und Zeitmanagement - genau das bietet unsere Plattform."
+      },
+      {
+        "q": "Wann sollte ich mit der DET-Vorbereitung beginnen?",
+        "a": "Die meisten erfolgreichen Studenten beginnen etwa einen Monat vor ihrem geplanten Testtermin mit der fokussierten Duolingo English Test Übung für optimale Punkteverbesserung."
+      }
+    ],
+    "embarkfont": {
+      "title": "Beginnen Sie mit der <span class='yellow'>Duolingo English Test</span> Übung, um eine hohe Punktzahl im DET zu erreichen!",
+      "btnText": "Jetzt üben"
     }
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "KI-gestützte Sprechübungen für den Duolingo English Test {'|'} DET-Vorbereitung",
-      "description": "Optimieren Sie Ihre Sprechfertigkeiten für den Duolingo English Test mit modernster KI-Technologie. Profitieren Sie von Echtzeit-Feedback, ausführlichen Analysen und fachkundiger Beratung. Trainieren Sie unbegrenzt mit unserem Übungssystem, das nach offiziellen DET-Kriterien bewertet.",
-      "keywords": "DET Sprechübungen, Duolingo Testvorbereitung, KI-Sprachbewertung, DET Prüfungstraining, Duolingo Sprechpraxis, DET Übungsmaterial, Sprachtest-Vorbereitung, DET Sprechtraining, Englischtest-Coaching, DET Prüfungssimulation"
+      "title": "Duolingo English Test Sprechkorrektur - KI-Bewertung & Feedback",
+      "description": "Meistern Sie den Sprachteil des Duolingo English Tests mit sofortiger KI-Auswertung. Erhalten Sie Feedback zur Aussprache, Bewertungen und professionelle Anleitung. Vertraut von über 26.000 Testteilnehmern.",
     },
-    "h1": "KI-gestützte Sprachanalyse",
-    "desc": "Unsere leistungsstarke KI unterstützt Sie bei allen Aufgabentypen des Speaking-Moduls und hilft Ihnen gezielt, Ihre Testergebnisse zu verbessern.",
-    "alt": "DET Übung: Die beste DET Plattform für KI-gestützte Sprachkorrektur",
-    "altbanner": "DET Sprechende KI-Korrektur",
-    "bank_user_icon": "Bank Nutzer Icon",
-    "white_arrow_right": "Weißer Pfeil nach rechts",
-    "purple_arrow_right": "Lila Pfeil nach rechts",
-    "learners_have": "Bereits über {number} erfolgreiche Nutzer vertrauen unserem System.",
-    "spn": "Jetzt testen",
+    "h1": "Leistungsstarke KI-Sprechkorrektur für DET von DET Practice",
+    "descnew": "Verbessern Sie Ihre DET-Sprechfähigkeiten mit KI-Feedback",
+    "desc": "Unser leistungsstarkes KI-System analysiert Ihre Aussprache, Sprachflüssigkeit und Grammatik im Duolingo English Test und bietet präzises, personalisiertes Feedback und praktische Vorschläge, um Ihre Sprechfähigkeiten schnell zu verbessern und den Sprachteil des Duolingo English Tests (DET) selbstbewusst zu meistern.",
+    "alt": "DET Practice: Die beste KI-Sprechkorrektur-Plattform für DET",
+    "altbanner": "DET Speaking AI Correction",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "purple_arrow_right": "Purple Arrow Right",
+    "learners_have": "Bereits {number} Lernende haben ihre DET-Sprechbewertungen verbessert",
+    "spn": "Jetzt beginnen",
     "article1": {
-      "h2": "Präzise Bewertung",
-      "right_desc": "Wählen Sie eine Übungsaufgabe oder nutzen Sie die freie Aufnahme - Sie erhalten umgehend eine detaillierte Auswertung.",
-      "btn": "Ausprobieren"
+      "h2": "Erhalten Sie genaue DET-Sprechbewertungen",
+      "right_desc": "Reichen Sie Ihre DET-Sprechantworten ein und erhalten Sie sofort eine präzise Bewertung basierend auf fortschrittlicher KI-Analyse. Unser System bewertet Aussprache, Sprachflüssigkeit, Grammatik und Wortschatz, um Ihnen ein klares Verständnis Ihres aktuellen Niveaus und der Verbesserungsbereiche zu geben.",
+      "btn": "Jetzt ausprobieren"
     },
     "article2": {
-      "h2": "Umfassende Analyse",
-      "right_desc": "Das System erkennt Ausspracheprobleme, Sprechpausen, Unterbrechungen, mechanisches Vorlesen und Wiederholungen - mit konkreten Verbesserungsvorschlägen.",
-      "btn": "Beginnen Sie mit dem Erleben"
+      "h2": "Detailliertes DET-Sprechfeedback",
+      "right_desc": "Erhalten Sie detailliertes Feedback zu Ihrer DET-Sprechleistung, einschließlich Analyse von Aussprachefehlern, unerwarteten Unterbrechungen, fehlenden Pausen, vermutetem Ablesen und Wiederholungen. Lernen Sie, diese häufigen Fehler zu vermeiden und Ihre allgemeine Sprachflüssigkeit zu verbessern.",
+      "btn": "Jetzt ausprobieren"
     },
     "article3": {
-      "h2": "Expertenberatung",
-      "right_desc": "Anhand der offiziellen DET-Bewertungskriterien identifizieren wir Ihre Schwachstellen und zeigen Ihnen den Weg zur Optimierung.",
-      "btn": "Beginnen Sie zu erleben"
+      "h2": "Professionelle Anleitung zur Verbesserung des DET-Sprechens",
+      "right_desc": "Basierend auf den offiziellen DET-Bewertungskriterien bietet unsere KI professionelle Anleitung, um Schwächen in Ihrem DET-Sprechen zu identifizieren und effektive Verbesserungsstrategien zu entwickeln. Arbeiten Sie gezielt an spezifischen Bereichen wie Aussprache, Grammatik und Sprachflüssigkeit, um Ihre Punktzahl zu maximieren.",
+      "btn": "Jetzt ausprobieren"
+    },
+    "aqtitle": "Häufig gestellte Fragen zu unserer <span class='yellow'>KI-Sprechkorrektur für DET</span>",
+    "aqlistfont": [
+      {
+        "q": "Wie genau ist Ihre KI-Bewertung im Vergleich zum echten DET-Sprechtest?",
+        "a": "Unser <a href='https://www.detpractice.com/'>DET Practice</a> KI-Bewertungssystem wurde auf Basis umfangreicher Analysen echter Testergebnisse kalibriert. Obwohl kein Übungstool exakt übereinstimmende Punktzahlen garantieren kann, hat unser System bereits Tausenden von Studenten geholfen, ihre DET-Sprechleistung mit über 90% Genauigkeit vorherzusagen."
+      },
+      {
+        "q": "Kann ich bestimmte DET-Sprechaufgabentypen üben?",
+        "a": "Ja, DET Practice deckt alle DET-Sprechaufgabentypen ab, einschließlich Vorlesen, Hören und Sprechen, Sprechprobe, Bildbeschreibung und Lesen mit anschließendem Sprechen. Sie können sich auf bestimmte Aufgabentypen konzentrieren oder im gemischten Format üben."
+      },
+      {
+        "q": "Wie schnell erhalte ich Feedback nach dem Einreichen meiner Sprechantwort?",
+        "a": "Unsere KI liefert sofortiges Feedback innerhalb weniger Minuten nach Abschluss Ihrer Antwort. Jede DET Practice-Sitzung enthält eine detaillierte Analyse Ihrer Aussprache, Sprachflüssigkeit und Ihres Inhalts - damit Sie Ihre <a href='https://www.detpractice.com/speaking-ai-correction'>DET-Sprechfähigkeiten</a> sofort verbessern können."
+      },
+      {
+        "q": "Was kann ich tun, wenn meine DET-Sprechbewertungen konstant niedrig sind?",
+        "a": "DET Practice bietet gezielte Verbesserungsstrategien basierend auf Ihren Leistungsmustern. Wenn Sie mit bestimmten Aspekten des <a href='https://www.detpractice.com/speaking-ai-correction'>DET-Sprechens</a> Schwierigkeiten haben, identifiziert unsere KI die Problembereiche und schlägt fokussierte Übungen zur Verbesserung vor."
+      },
+      {
+        "q": "Bieten Sie Übungstests an, die den echten DET-Sprechteil simulieren?",
+        "a": "Ja, DET Practice bietet vollständige Sprechsimulationen, die das Format des echten DET genau widerspiegeln. Dies umfasst authentische Zeitvorgaben, Fragetypen und Bewertungskriterien, um Ihnen die realistischste Übungserfahrung zu bieten."
+      },
+      {
+        "q": "Wie lange sollte ich mit DET Practice üben, bevor ich den echten Test ablege?",
+        "a": "Basierend auf Nutzerdaten sehen die meisten Studenten, die konsequent 2-3 Wochen auf unserer Plattform üben, eine signifikante Verbesserung ihrer DET-Sprechleistung. Die optimale Vorbereitungszeit variiert jedoch je nach Ausgangsniveau und Zielpunktzahl."
+      }
+    ],
+    "embarkfont": {
+      "title": "Erreichen Sie Ihre <span class='yellow'>DET-Sprech</span>-Zielpunktzahl schneller!",
+      "btnText": "Jetzt üben"
     }
   },
   "privacyPolicy": {

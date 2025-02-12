@@ -372,9 +372,12 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
           <NuxtLink v-if="user.id" class="btn common_btn_hover_bgColor" :to="urlGet(`/guide`)">
             {{ t('courses.package_out.btn') }}
           </NuxtLink>
-          <NuxtLink v-else class="btn common_btn_hover_bgColor" :to="localePath(`/login?url=${urlGet('/guide')}`)">{{
-            t('courses.package_out.btn')
-          }}</NuxtLink>
+          <NuxtLink
+            v-else
+            class="btn common_btn_hover_bgColor"
+            :to="localePath(`/login?url=${encodeURIComponent(urlGet('/guide'))}`)"
+            >{{ t('courses.package_out.btn') }}</NuxtLink
+          >
         </div>
       </div>
     </div>

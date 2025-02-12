@@ -565,7 +565,7 @@
   "courses": {
     "seometa": {
       "title": "DET Course - Complete Duolingo English Test Prep {'|'} 95% Success",
-      "description": "Expert-led DET course covering all sections: Reading, Writing, Speaking & Listening. Includes practice tests, lesson plans, and free access for members.",
+      "description": "Expert-led DET course covering all sections: Reading, Writing, Speaking & Listening. Includes practice tests, lesson plans, and free access for members."
     },
     "h1": "DET Course: Your Path to Duolingo English Test Success",
     "h2": "Expert-Led DET Course with 95% Student Success Rate",
@@ -658,7 +658,7 @@
         },
         "video3data": {
           "title": "Writing Sample",
-          "desc": "Writing Sample questions ask test takers to choose from several topics and write a structured response within a limited time. This task evaluates overall writing skills, including organization, clarity, and argumentation. Collectively, these question types ensure a comprehensive assessment of candidates' writing abilities in real-world contexts, reflecting their readiness for academic or professional environments."
+          "desc": "The Writing Sample question asks test takers to write a structured response to a given topic within a limited time. This task evaluates overall writing skills, including organization, clarity, and argumentation. Collectively, these question types ensure a comprehensive assessment of candidates' writing abilities in real-world contexts, reflecting their readiness for academic or professional environments."
         },
         "video4data": {
           "title": "Additional DET Prep Resources",
@@ -680,11 +680,11 @@
       },
       {
         "name": "How is this DET course different from other preparation materials?",
-        "content": "This DET course offers a unique combination of video lessons plus scripts, interactive practice (you can find them at our <a href='https://prep.detpractice.com/duolingo-english-test-prep-course'>DET prep hub</a>), and feedback (some question types). It covers every question type on the test and includes specialized prep materials for each section, making it a complete preparation solution."
+        "content": "This DET course offers a unique combination of video lessons plus extensive exercises (you can find them at our <a href='https://www.detpractice.com/practice'>DET practice question bank</a>), and feedback . It covers every question type on the test and includes specialized prep materials for each section, making it a complete preparation solution."
       },
       {
         "name": "Can I access the DET course materials on my own schedule?",
-        "content": "Yes, all DET course materials are free to all members, and available 24/7. You can study at your own pace and access the materials anytime, anywhere."
+        "content": "Yes, all DET course materials are free to all members on <a href='https://www.detpractice.com'>DET Practice</a>, and available 24/7. You can study at your own pace and access the materials anytime, anywhere."
       },
       {
         "name": "Does the DET course cover the latest test format?",
@@ -756,7 +756,7 @@
     },
     "article3": {
       "h2": "DET Mock Test Anytime, Anywhere",
-      "right_desc": "Detailed DET mock test reports provide precise diagnosis and analysis of current strengths and weaknesses, automatically updating study plans to enhance exam preparation efficiency."
+      "right_desc": "Take a DET mock test whenever and wherever it's convenient for you. Our online platform provides instant access to practice tests, so you can prepare on your schedule."
     },
     "article4": {
       "h2": "Rapid DET Mock Feedback Report",

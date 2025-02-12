@@ -501,159 +501,205 @@
   },
   "correction": {
     "seometa": {
-      "title": "Duolingo English Test Writing AI {'|'} DET Yazma Skor Kontrolörü by DET Practice",
-      "description": "Yapay zeka teknolojisiyle DET yazma becerinizi geliştirin. Gerçek sınav formatında yazılarınızı analiz edin, anında puan ve detaylı geri bildirim alın. Profesyonel düzeyde önerilerle yazma kalitenizi yükseltin ve DET'e tam hazırlıklı olun.",
-      "keywords": "duolingo yazma sınavı, det yazı hazırlık, yazma değerlendirmesi, duolingo puan hesaplama, det yazı örnekleri, yazma alıştırmaları, yapay zeka analizi, det yazı teknikleri, yazma püf noktaları, örnek yazılar, sınav hazırlığı, online pratik"
+      "title": "Duolingo Yazma AI Düzeltmesi - Anında DET Kompozisyon Geri Bildirimi",
+      "description": "Duolingo English Test yazma bölümünüzü dakikalar içinde mükemmelleştirin. Anında puanlama, dilbilgisi kontrolleri ve uzman seviyesinde rehberlik sunan AI destekli kompozisyon düzeltmesi. 21.000+ öğrenci tarafından güvenilen platform."
     },
-    "h1": "Yapay Zeka Destekli Yazı Analizi",
-    "desc": "Uzman öğretmen kalitesinde yapay zeka değerlendirmesi. DET kriterlerine göre 5 dakika içinde kapsamlı analiz.",
-    "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
-    "useralt": "Kullanıcı Simgesi",
-    "white_arrow_right": "beyaz_ok_sağa",
-    "yellow_arrow_right": "sarı_ok_sağa",
-    "learners_have": "{number}'den fazla öğrencinin tercihi.",
-    "Review_Now": "Hemen Dene",
-    "Correct_Now": "Şimdi Başla",
-    "Get_Scored_Now": "Deneyimlemeye başlayın",
-    "Enhance_Now": "Şimdi Geliştir",
-    "Begin_Polishing": "Cilalamayı Başlat",
+    "h1": "DET Practice'den Anında Duolingo Yazma AI Düzeltmesi",
+    "descnew": "Dakikalar İçinde Profesyonel Seviye DET Yazma Puanlaması",
+    "desc": "Gelişmiş AI sistemimiz aracılığıyla Duolingo Yazma görevleriniz için uzman seviyesinde geri bildirim alın. Kompozisyonlarınız resmi DET puanlama kriterlerine göre analiz edilir ve 1-5 dakika içinde kapsamlı düzeltmeler ve detaylı öneriler sunulur.",
+    "alt": "DET Practice: En iyi Duolingo English Test Pratik platformu",
+    "useralt": "Kullanıcı İkonu",
+    "white_arrow_right": "white_arrow_right",
+    "yellow_arrow_right": "yellow_arrow_right",
+    "learners_have": "{number} Duolingo English Test Adayı Tarafından Güvenilen Platform",
+    "Review_Now": "Başlayın",
+    "Correct_Now": "Deneyimlemeye Başla",
+    "Get_Scored_Now": "Deneyimlemeye Başla",
     "h2_1": {
-      "h2": "Hassas Puanlama",
-      "right_desc": "Soru havuzundan seçtiğiniz konuda yazın, dakikalar içinde detaylı değerlendirme alın."
+      "h2": "Hassas Duolingo Yazma Puan Analizi",
+      "right_desc": "Soru bankamızdan DET Yazma görevinizi gönderin ve 5 dakika içinde detaylı bir puan raporu alın. Her değerlendirme otantik DET puanlama kriterlerini takip eder."
     },
     "h2_2": {
-      "h2": "Anlık Düzeltme",
-      "right_desc": "Dil ve anlatım hatalarınızı anında tespit edip, çözüm önerileri sunuyoruz."
+      "h2": "Gerçek Zamanlı Hata Düzeltme",
+      "right_desc": "Duolingo Yazma kompozisyonlarınızdaki kelime kullanımı, dilbilgisi hataları ve yapısal iyileştirmeleri anında belirleyin. Her düzeltme için uygulanabilir öneriler alın."
     },
     "h2_3": {
-      "h2": "Uzman Desteği",
-      "right_desc": "DET değerlendirme ölçütlerine göre eksiksiz analiz ve yönlendirme."
+      "h2": "Uzman Duolingo Yazma Geri Bildirimi",
+      "right_desc": "Resmi DET puanlama kriterlerine dayalı detaylı geri bildirim alın. AI sistemimiz, hedef puanınıza ulaşmanıza yardımcı olmak için yazma stilinizi, organizasyonunuzu ve içeriğinizi analiz eder."
     },
     "h2_4": {
-      "h2": "İfade Geliştirme",
-      "right_desc": "Kelime seçiminden paragraf düzenine kadar tüm yazınızı mükemmelleştirin."
+      "h2": "Gelişmiş Duolingo Yazma Geliştirme",
+      "right_desc": "Duolingo Yazmanızı iyiden mükemmele dönüştürün. Sistemimiz kelime dağarcığı zenginleştirme, cümle yapısı iyileştirme ve tutarlılık geliştirme için derinlemesine öneriler sunar."
     },
-    "h2_5": {
-      "h2": "Orijinal Metin Parlatma",
-      "right_desc": "Her kelimeyi ve cümleyi geliştirin; seçkin ve yüksek puan alan bir kompozisyon için yapıyı ve stili iyileştirin."
+    "aqtitle": "<span class='yellow'>Duolingo Yazma AI Düzeltmemiz</span> Hakkında SSS",
+    "aqlistfont": [
+      {
+        "q": "Duolingo yazma puanlama sisteminiz ne kadar doğru?",
+        "a": "AI puanlama sistemimiz resmi DET standartlarına göre kalibre edilmiştir ve insan değerlendiricilerle karşılaştırıldığında %95'in üzerinde doğruluk oranları sağlar. Her Duolingo Yazma gönderimi dilbilgisi, kelime dağarcığı, tutarlılık ve görev tamamlama dahil olmak üzere birden çok boyutta analiz edilir."
+      },
+      {
+        "q": "Ne tür <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo yazma geri bildirimi</a> alacağım?",
+        "a": "<a href='https://www.detpractice.com/'>DET Practice</a> sistemimiz şunları içeren kapsamlı geri bildirim sağlar:<br>- Detaylı dilbilgisi ve kelime düzeltmeleri<br>- Yapı ve tutarlılık analizi<br>- İçerik ilgililik değerlendirmesi<br>- Gelişim için özel öneriler<br>- Tahmini Duolingo Yazma puanı"
+      },
+      {
+        "q": "Duolingo yazımı değerlendirmek ne kadar sürer?",
+        "a": "Kompozisyonunuzu gönderdikten sonra 5 dakika içinde hem DET Yazma puanınızı hem de gelişim için detaylı geri bildirimi içeren tam analizinizi alacaksınız."
+      },
+      {
+        "q": "Pratik için hangi tür Duolingo yazma konuları mevcuttur?",
+        "a": "Sistemimiz, <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo Yazma</a> bölümüne hazırlanmanıza yardımcı olmak için özenle tasarlanmış çeşitli yüksek kaliteli pratik konuları sunar. Her konu standardize DET formatını ve zorluk seviyesini takip eder."
+      },
+      {
+        "q": "Değerlendirme için kaç kompozisyon gönderebilirim?",
+        "a": "DET Practice premium üyesi olarak, ihtiyaçlarınıza göre yazma düzeltme kredileri satın alabilirsiniz. Bu <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo Yazma düzeltme</a> kredileri aktif abonelik süreniz boyunca herhangi bir zamanda kullanılabilir. Satın alabileceğiniz değerlendirme paketi sayısında limit yoktur - çalışma planınız için ihtiyaç duyduğunuz düzeltme sayısını satın almanız yeterlidir."
+      },
+      {
+        "q": "Geri bildirim yazma seviyeme göre kişiselleştirilmiş mi?",
+        "a": "Evet, AI sistemimiz geri bildirimini yazma yeterliliğinize göre ayarlar. İster başlangıç düzeyinde ister ileri düzeyde bir yazar olun, <a href='https://www.detpractice.com/writing-ai-correction'>DET Yazma</a> performansınızı geliştirmek için ilgili öneriler alacaksınız."
+      }
+    ],
+    "embarkfont": {
+      "title": "Yüksek Puanlı DET Yazma Yolculuğunuza Bugün Başlayın!",
+      "btnText": "Şimdi Başla"
     }
   },
   "courses": {
     "seometa": {
-      "title": "DET Hazırlık Kursları {'|'} Duolingo English Test için Profesyonel Eğitim",
-      "description": "Profesyonel DET hazırlık kurslarımızla başarıya ulaşın. Okuma, yazma, konuşma ve dinleme becerilerinizi uzman eğitmenler eşliğinde geliştirin. Sınava hazırlığınıza hemen başlayın!",
-      "keywords": "DET hazırlık, Duolingo sınav eğitimi, DET kursları, İngilizce sınav hazırlığı, Duolingo sertifikası, DET özel ders, online İngilizce kursu, DET eğitim materyali"
+      "title": "DET Kursu - Eksiksiz Duolingo İngilizce Testi Hazırlığı {'|'} %95 Başarı",
+      "description": "Uzman eğitmenler eşliğinde Okuma, Yazma, Konuşma ve Dinleme bölümlerini kapsayan DET kursu. Alıştırma testleri, ders planları ve üyeler için ücretsiz erişim dahildir."
     },
-    "article1": {
-      "title": "DET Konuşma Sınavı Mükemmelliğinin Ana Özellikleri:",
-      "list": [
-        {
-          "content": "• Tüm konuşma görevlerinin ayrıntılı analizi"
+    "h1": "DET Kursu: Duolingo İngilizce Testi Başarısına Giden Yolunuz",
+    "h2": "%95 Öğrenci Başarı Oranıyla Uzman Öncülüğünde DET Kursu",
+    "topVideoFont": {
+      "desc1": "Tüm soru türlerini kapsayan eksiksiz DET kursu",
+      "desc2": "Her derse entegre edilmiş alıştırma setleri - maksimum verimlilik için eş zamanlı öğrenme ve pratik",
+      "desc3": "Öğrenme stilinize uygun olarak hem video dersleri hem de metin formatında mevcuttur",
+      "desc4": "2025 DET sınav formatına tamamen uyumlu",
+      "desc5": "Tüm DET Practice üyeleri için ek ücret olmadan ücretsiz erişim"
+    },
+    "extdet": {
+      "title": "DET Practice'den Kapsamlı DET Kursu: Giriş",
+      "desc1": "Kapsamlı öğrenme merkezimizle Duolingo İngilizce Testi hazırlığınızı dönüştürün! DET'in zorlu görünebileceğini anlıyoruz, bu yüzden her bileşeni başarı odaklı, yönetilebilir modüllere ayıran stratejik bir yaklaşım geliştirdik.",
+      "desc2": "Uzmanlar tarafından hazırlanan DET kursumuz, ileri düzey okuma anlama becerilerinden detaylı konuşma görevlerine kadar tüm temel DET bileşenlerini kapsar. Farkımız, derinlemesine öğretim ile hedefli pratik alıştırmaları birleştiren uyarlanabilir öğrenme sistemimizdir. Her yeterlilik seviyesine göre uyarlanmış dinamik çalışma materyalleri bulacaksınız, bu da testin her bölümünde özgüven geliştirmenizi sağlar.",
+      "desc3": "İster üst düzey üniversiteler için rekabetçi bir puan hedefliyor, ister İngilizce yeterliliğinde sağlam bir temel oluşturuyor olun, kanıtlanmış metodolojimizle yolculuğunuza bugün başlayın. Her modül, test günü başarısını garanti etmek için en yeni DET formatında performansınızı artırmak üzere özel olarak tasarlanmıştır."
+    },
+    "changeleftfont": {
+      "read": "Okuma",
+      "lis": "Dinleme",
+      "spe": "Konuşma",
+      "wri": "Yazma"
+    },
+    "four_change_right_data": {
+      "data1": {
+        "title": "DET Kursu: Duolingo İngilizce Testi Okuma Bölümü",
+        "desc": "Duolingo İngilizce Testi (DET) Okuma bölümü, çeşitli soru türleri aracılığıyla temel dil becerilerini değerlendirir, anlama, kelime bilgisi ve genel okuryazarlığı ölçer. Soru türleri arasında Read and Select (Oku ve Seç), Fill in the Blanks (Boşlukları Doldur), Interactive Reading (Etkileşimli Okuma) ve Read and Complete (Oku ve Tamamla) yer alır, her biri belirli okuma becerilerini hedefleyecek şekilde tasarlanmıştır.",
+        "desc2": "Bu görevler, akademik ve günlük bağlamlarda etkili iletişim için gerekli temel okuma ve anlama becerilerini toplu olarak değerlendirir.",
+        "video1data": {
+          "title": "Read and Select",
+          "desc": "Read and Select: Test alıcılara bir dizi kelime gösterilir ve bunların gerçek İngilizce kelimeler olup olmadığını belirlemeleri gerekir. Bu görev, kelime dağarcığı tanıma ve geçerli ile geçersiz kelimeleri ayırt etme yeteneğini değerlendirir, gerçek dünya kelime anlayışını yansıtır."
         },
-        {
-          "content": "• Her soru tipi için kanıtlanmış çözüm teknikleri"
+        "video2data": {
+          "title": "Fill in the Blanks",
+          "desc": "Fill in the Blanks: Adaylara eksik kelimeler içeren cümleler sunulur. Cümleleri anlamlı bir şekilde tamamlamak için listeden doğru kelimeleri seçmeleri gerekir. Bu görev dilbilgisi, kelime bilgisi ve bağlamsal ipuçlarını anlama yeteneğini değerlendirir."
         },
-        {
-          "content": "• Telaffuz ve akıcılık geliştirme alıştırmaları"
+        "video3data": {
+          "title": "Interactive Reading",
+          "desc": "Interactive Reading: Bu bileşen, cümleleri tamamlama, bir boşluğu doldurmak için uygun cümleyi seçme, metin içindeki cevapları vurgulama, ana fikirleri belirleme ve pasajlar için uygun başlıklar seçme gibi çeşitli soru türleriyle pasaj okumayı içerir. Anlama, eleştirel düşünme ve çeşitli bağlamlarda yazılı İngilizceyi yorumlama yeteneğini ölçer."
         },
-        {
-          "content": "• Vurgu ve sunum için uzman tavsiyeleri"
-        },
-        {
-          "content": "• Gerçek sınav örnekleri ve çözümleri"
-        },
-        {
-          "content": "• Örnek ses kayıtları"
-        },
-        {
-          "content": "• Seviyenize uygun öğrenme planı"
-        },
-        {
-          "content": "• Temel kelime ve dilbilgisi çalışması"
-        },
-        {
-          "content": "• Güncel sınav formatına uygun içerik"
+        "video4data": {
+          "title": "Read and Complete",
+          "desc": "Read and Complete: Bu soru türü, kelimelerin içinde eksik harfler bulunan bir pasaj sunar. Test alıcıların tam kelimeleri çıkarsaması ve geri yüklemesi gerekir. Yazım, bağlamsal anlama ve kelime bilgisi uygulamasına odaklanır."
         }
-      ]
-    },
-    "article2": {
-      "title": "DET Yazı Sınavı Mükemmelliğinin Ana Özellikleri:",
-      "list": [
-        {
-          "content": "• Tüm yazma görevlerinin sistematik açıklaması"
+      },
+      "data2": {
+        "title": "DET Kursu: Duolingo İngilizce Testi Dinleme Bölümü",
+        "desc": "Duolingo İngilizce Testi (DET), adayların dinleme becerilerini iki ana soru türü aracılığıyla değerlendiren kapsamlı bir Dinleme Bölümü içerir: Interactive Listening (Etkileşimli Dinleme) ve Listen and Type (Dinle ve Yaz). Bu bileşenler, özellikle anlama ve konuşma yetenekleri açısından İngilizce yeterliliğinin çeşitli yönlerini değerlendirmek üzere tasarlanmıştır.",
+        "desc2": "",
+        "video1data": {
+          "title": "Listen and Type",
+          "desc": "Listen and Type soru türünde, test alıcılar sözlü cümleleri dinler ve bunları doğru bir şekilde yazıya dökmeleri gerekir. Bu format, sadece sözlü İngilizceyi anlama yeteneğini ölçmekle kalmaz, aynı zamanda etkili yazılı iletişim için çok önemli olan yazım ve noktalama becerilerini de değerlendirir. Genellikle test boyunca 6 ila 9 kez görünen bu soru türü, anlama ve konuşma becerilerinin değerlendirilmesindeki önemini yansıtır."
         },
-        {
-          "content": "• Etkili kompozisyon yazma teknikleri"
-        },
-        {
-          "content": "• Sınava yönelik yazma alıştırmaları"
-        },
-        {
-          "content": "• Açık ve ikna edici yazım için ipuçları"
-        },
-        {
-          "content": "• Açıklamalı örnek yazılar"
-        },
-        {
-          "content": "• Her seviyeye uygun çalışma modülleri"
-        },
-        {
-          "content": "• Temel dilbilgisi ve kelime çalışmaları"
-        },
-        {
-          "content": "• En son sınav formatına göre hazırlanmış içerik"
+        "video2data": {
+          "title": "Interactive Listening",
+          "desc": "Öte yandan, Interactive Listening bölümü, genellikle akademik bağlamlarda gerçek hayat konuşmalarını simüle eder. Adaylar, akranlar arasında veya bir öğrenci ile fakülte üyesi arasındaki diyaloglara katılır, içeriği anlama düzeylerini test eden sorulara cevap verirler. Bu bölüm, akademik başarı için gerekli olan aktif dinleme ve tartışmalardan bilgi sentezleme yeteneğini vurgular. Genel olarak, bu soru türleri, adayın hem akademik hem de günlük ortamlarda İngilizce konuşulan ortamlara hazır olma durumunu ölçme hedefini toplu olarak güçlendirir."
         }
-      ]
-    },
-    "contaceUsList": [
-      {
-        "font": "Paketinizi Seçin",
-        "tip": "Konuşma veya yazma eğitiminden birini tercih edin",
-        "btn": "Konuşma Eğitimi Al",
-        "btn1": "Yazma Eğitimi Al"
       },
-      {
-        "font": "Anında Erişim",
-        "tip": "Ödemeniz sonrası hemen erişim sağlayın",
-        "btn": "Konuşma Eğitimini İndir",
-        "btn1": "Yazma Eğitimini İndir"
+      "data3": {
+        "title": "DET Kursu: Duolingo İngilizce Testi Konuşma Bölümü",
+        "desc": "Duolingo İngilizce Testi (DET), adayın sözlü yeterliliğini beş farklı soru türü aracılığıyla değerlendirmek üzere tasarlanmış dinamik bir Konuşma Bölümü içerir: Speak about the Photo (Fotoğraf Hakkında Konuşma), Read, then Speak (Oku, sonra Konuş), Listen, then Speak (Dinle, sonra Konuş), Read Aloud (Sesli Okuma) ve Speaking Sample (Konuşma Örneği). Bu formatların her biri, akademik ve günlük bağlamlarda etkili iletişim için çok önemli olan İngilizce konuşma becerilerinin çeşitli yönlerini değerlendirir.",
+        "desc2": "",
+        "video1data": {
+          "title": "Speak About the Photo",
+          "desc": "Speak about the Photo görevinde adaylar, düşüncelerini açıkça ifade etme ve betimleyici dil kullanma yeteneklerini test eden bir görüntüyü detaylı olarak tanımlar. Bu soru genellikle 90 saniyeye kadar sürer ve hem akıcılığı hem de kelime bilgisini değerlendirir."
+        },
+        "video2data": {
+          "title": "Read, Then Speak & Listen, Then Speak",
+          "desc": "Read, then Speak ve Listen, then Speak görevleri, test alıcıların yazılı veya sözlü içeriğe dayalı olarak yönergelere yanıt vermesini gerektirir. Bu formatlar, anlama ve fikirleri sınırlı süre içinde net ve tutarlı bir şekilde iletme yeteneğini değerlendirir."
+        },
+        "video3data": {
+          "title": "Read Aloud",
+          "desc": "Read Aloud sorusu, adayların verilen metni sesli okumasını gerektirir, telaffuz ve tonlamaya odaklanır."
+        },
+        "video4data": {
+          "title": "Speaking Sample",
+          "desc": "Son olarak, Speaking Sample adayların konuşma becerilerini sergilemelerine olanak tanır, kurumlara yeterlilikleri hakkında ek içgörü sağlar. Toplu olarak, bu soru türleri İngilizce konuşulan ortamlarda başarı için gerekli konuşma becerilerinin kapsamlı bir değerlendirmesini sağlar."
+        }
       },
-      {
-        "font": "Dinleme Materyalleri",
-        "tip": "Ek çalışma örnekleri ve ses kayıtları",
-        "btn1": "Ses Kayıtlarına Eriş"
+      "data4": {
+        "title": "DET Kursu: Duolingo İngilizce Testi Yazma Bölümü",
+        "desc": "Duolingo İngilizce Testi (DET), test alıcının İngilizce yazma yeterliliğinin çeşitli yönlerini değerlendirmek üzere tasarlanmış özel bir yazma bölümü içerir. Bu bölüm üç farklı soru türünden oluşur: Write About the Photo (Fotoğraf Hakkında Yazma), Interactive Writing (Etkileşimli Yazma) ve Writing Sample (Yazma Örneği).",
+        "desc2": "",
+        "video1data": {
+          "title": "Write About the Photo",
+          "desc": "Write About the Photo, adayların bir görüntüyü gözlemleyip bir dakika içinde betimleyici bir paragraf oluşturmasını gerektirir. Bu görev, görsel detayları açıkça ifade etme ve tutarlı düşünceler ifade etme yeteneğini değerlendirir, kelime bilgisi ve dilbilgisi doğruluğunu vurgular."
+        },
+        "video2data": {
+          "title": "Interactive Writing",
+          "desc": "2024 başlarında tanıtılan Interactive Writing, iki bölümlü bir meydan okuma sunar. Başlangıçta test alıcılar beş dakika boyunca bir yönergeye yanıt verir, ardından ilk yanıtlarına dayalı olarak oluşturulan ikinci bir yönerge için ek üç dakikalık yazma süresi gerekir. Bu format, sadece yaratıcılık ve tutarlılığı değil, aynı zamanda adayların ilk fikirlerini geliştirmeleri gerektiğinden yazmada uyarlanabilirliği de test eder."
+        },
+        "video3data": {
+          "title": "Writing Sample",
+          "desc": "Writing Sample sorusu, test alıcıların sınırlı süre içinde verilen bir konuya yapılandırılmış bir yanıt yazmasını gerektirir. Bu görev, organizasyon, netlik ve argümantasyon dahil olmak üzere genel yazma becerilerini değerlendirir. Toplu olarak, bu soru türleri adayların gerçek dünya bağlamlarındaki yazma yeteneklerinin kapsamlı bir değerlendirmesini sağlar, akademik veya profesyonel ortamlara hazır olduklarını yansıtır."
+        },
+        "video4data": {
+          "title": "Additional DET Prep Resources",
+          "desc": ""
+        }
       }
-    ],
-    "pagefont": {
-      "h1": "DET Konuşma Sınavı Mükemmelliği: Kapsamlı Bir Kılavuz",
-      "do": "$",
-      "Buy_Now": "Şimdi Satın Al",
-      "alt": "DET Uygulama:En iyi Duolingo English Test Uygulama platformu",
-      "white_arrow_right": "Beyaz Ok Sağa",
-      "Double_Right_Arrow": "Çift Sağ Ok",
-      "DET_Writing": "DET Yazma Sınavı Mükemmelliği: Kapsamlı Bir Rehber",
-      "How_to": "Eğitim Materyallerine Erişim",
-      "spa": "Konuşma pratiği ses kaydı",
-      "tips": "Önemli Not: Bu dijital bir üründür. İndirme işlemi tamamlandıktan sonra iade kabul edilmemektedir. Lütfen satın almadan önce şartları dikkatle okuyunuz.",
-      "orange_title": "Uzman Eğitim Kadromuz",
-      "team_desc": "TESOL sertifikalı deneyimli eğitmenlerimiz, TOEFL, IELTS ve DET gibi uluslararası sınavlarda uzmanlaşmıştır. Modern öğretim yöntemleri ve kişiye özel yaklaşımlarıyla sınav başarınız için yanınızdayız.",
-      "Elite_Language_Educators": "Seçkin Dil Eğitimcileri"
     },
-    "sas": "Konuşma Sesi Örnekleri",
-    "zhonghe": {
-      "title": "DET Ultimate Sınav Ustalık Paketi",
-      "desc": "Kurs paketi, <span class=\"yellow\">DET Konuşma Sınavı Mükemmelliği</span> ve <span class=\"yellow\">DET Yazma Sınavı Mükemmelliği</span>'ni içerir.  Abone olduğunuzda, kılavuzları istediğiniz zaman indirebilecek ve bunları istediğiniz zaman, istediğiniz yerde kolaylıkla çalışabileceksiniz.  Şimdi Satın Al Aboneliği hemen yürürlüğe girer.  Öğrenmeye başlamak için sayfayı yukarı kaydırın, görüntüleyin ve tıklayın."
+    "package_out": {
+      "title": "Duolingo İngilizce Testi Rehberi: DET Nihai Sınav Ustalık Paketi",
+      "desc": "Üyeliğinize dahil olan iki premium rehbere erişin: 'DET Konuşma Sınavı Mükemmelliği' ve 'DET Yazma Sınavı Mükemmelliği.' Bu kapsamlı kaynaklar tüm abonelere ek ücret olmadan sunulmaktadır.",
+      "desc2": "Üye olduktan sonra, bu değerli çalışma rehberlerini indirmek için üye panelinizde Kurslar sekmesini ziyaret etmeniz yeterlidir. Kendi hızınızda, istediğiniz yerde ve zamanda çalışın.",
+      "desc3": "Başlamaya hazır mısınız? Üyeliğiniz anında aktifleşir ve bu uzman hazırlıklı kaynaklara hemen erişim sağlar.",
+      "btn": "Şimdi Abone Ol"
     },
-    "speaking": {
-      "title": "DET Konuşma Bölümü için Tam Kapsamlı Rehber"
-    },
-    "writing": {
-      "title": "DET Yazma Bölümü için Tam Kapsamlı Rehber"
-    },
-    "downloadguide": "Kılavuzu İndir",
-    "dandumai": "Ayrıca bunları ayrı olarak da satın alabilirsiniz:",
-    "writing5": "DET Writing Exam Excellence'ı 5$'a satın alabilirsiniz:",
-    "speaking5": "DET Konuşma Sınavı Mükemmeliyetini 5$'a satın alabilirsiniz:"
+    "aqList": [
+      {
+        "name": "DET kurs paketine neler dahildir?",
+        "content": "<a href='https://www.detpractice.com/courses'>DET kurs paketi</a>, testin dört bölümünün tümü için kapsamlı hazırlık materyalleri içerir: Okuma, Dinleme, Konuşma ve Yazma. Her bölüm, gerçek zamanlı geri bildirim ve pratik stratejilerle belirli soru türlerine odaklanan çoklu etkileşimli kurslar içerir."
+      },
+      {
+        "name": "Bu DET kursu diğer hazırlık materyallerinden nasıl farklıdır?",
+        "content": "Bu DET kursu, video dersleri artı kapsamlı alıştırmalar (bunları <a href='https://www.detpractice.com/practice'>DET pratik soru bankamızda</a> bulabilirsiniz) ve geri bildirim benzersiz bir kombinasyonu sunar. Testteki her soru türünü kapsar ve her bölüm için özelleştirilmiş hazırlık materyalleri içerir, böylece eksiksiz bir hazırlık çözümü sunar."
+      },
+      {
+        "name": "DET kurs materyallerine kendi programıma göre erişebilir miyim?",
+        "content": "Evet, tüm DET kurs materyalleri <a href='https://www.detpractice.com'>DET Practice</a>'de tüm üyeler için ücretsizdir ve 7/24 erişilebilir. Kendi hızınızda çalışabilir ve materyallere istediğiniz zaman, istediğiniz yerden erişebilirsiniz."
+      },
+      {
+        "name": "DET kursu en son test formatını kapsıyor mu?",
+        "content": "Evet, DET kursu mevcut Duolingo İngilizce Testi formatına uygun olarak düzenli olarak güncellenir. Read and Select, Fill in the Blanks, Interactive Reading ve konuşma görevleri dahil olmak üzere tüm mevcut soru türleri için pratik materyaller içerir."
+      },
+      {
+        "name": "Hangi DET kurs bölümünden başlayacağımı nasıl bilirim?",
+        "content": "DET kursunun her bölümüne (Okuma, Dinleme, Konuşma ve Yazma) bağımsız olarak erişilebilir. En çok gelişime ihtiyaç duyduğunuz alanlardan başlayabilir veya kapsamlı hazırlık için önerilen kurs sırasını takip edebilirsiniz."
+      },
+      {
+        "name": "DET kursunda örnek cevaplar var mı?",
+        "content": "Evet, DET kursu hem Konuşma hem de Yazma bölümleri için yüksek puan alan örnek yanıtlar ve bu yanıtları etkili kılan şeylerin ayrıntılı açıklamalarını içerir. Bu, puanlama kriterlerini anlamanıza ve performansınızı geliştirmenize yardımcı olur."
+      }
+    ]
   },
   "forget": {
     "Please_enter": "Lütfen e-posta adresinizi girin",
@@ -688,103 +734,196 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "DET Practice'ten Gerçek Formatta Duolingo English Deneme Sınavı",
-      "description": "DET'e birebir uygun deneme sınavlarıyla hazırlanın. Sınavınızı tamamladıktan sonra 30 dakika içinde sonuçlarınızı ve detaylı analizinizi alın. 18.000'i aşkın alıştırma sorusu, akıllı uyarlamalı algoritma ve yapay zeka destekli konuşma-yazma değerlendirmesi ile tam donanımlı hazırlık imkanı. DET yolculuğunuza hemen başlayın.",
-      "keywords": "duolingo english örnek sınav, duolingo english alıştırma sınavı, gerçek format DET sınavı, duolingo hazırlık, duolingo english test çalışma, DET örnek sınav, duolingo soru bankası, çevrimiçi duolingo çalışma, DET hazırlık programı, duolingo english soru örnekleri, DET performans ölçümü, duolingo değerlendirme"
+      "title": "Duolingo Deneme Sınavı - Profesyonel DET Hazırlık Platformu",
+      "description": "Kapsamlı DET pratik materyalleri ile Duolingo Deneme Sınavı platformu. Anında sonuçlar, detaylı raporlar ve sınav tarzı sorular. 10.000+ sınav adayının güvendiği platform.",
     },
-    "h1": "Gerçek DET Formatında Deneme",
-    "desc": "Birebir uyumlu deneme sınavlarımızla gerçek sınav atmosferini yaşayın. Sınav sürecini önceden deneyimleyin ve gelişim alanlarınızı belirlemek için anında sonuç ve kapsamlı analiz alın.",
-    "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
-    "mock_user_icon": "Sahte Kullanıcı Simgesi",
-    "white_arrow_right": "Beyaz Ok Sağ",
-    "orange_arrow_right": "Turuncu Ok Sağ",
-    "learners_have": "Şimdiye kadar {number}'den fazla öğrenci başarıyla hazırlandı.",
-    "Mock_Now": "Hemen Dene",
-    "Full_scale": "Duolingo 1:1 Gerçek Ölçekli Deneme Sınavı",
+    "h1": "Duolingo Deneme Sınavı - DET Practice'ten Gerçek Sınav Deneyimi Platformu",
+    "descnew": "Gerçeği Aratmayan Kapsamlı Duolingo Deneme Sınavı",
+    "desc": "Gerçek sınav ortamını mükemmel şekilde yansıtan Duolingo deneme sınavımızla pratik yapın. Anında sonuçlar ve derinlemesine analiz ile güçlü ve zayıf yönlerinizi belirleyerek gerçek sınava güvenle hazırlanmanıza yardımcı oluyoruz.",
+    "alt": "DET Practice: En iyi Duolingo İngilizce Testi Pratik platformu",
+    "mock_user_icon": "Mock User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "orange_arrow_right": "Orange Arrow Right",
+    "learners_have": "Duolingo deneme sınavlarımıza güvenen {number} başarılı sınav adayına katılın!",
+    "Mock_Now": "Hemen Başla",
+    "Full_scale": "Duolingo 1:1 Tam Ölçekli Deneme Sınavı",
     "article1": {
-      "h2": "Gerçeğe Birebir Uygun",
-      "right_desc": "Akıllı uyarlamalı algoritmamız sayesinde gerçek sınav ortamında çalışın. Tüm soru tiplerinde uzmanlaşın ve net değerlendirmeler alın."
+      "h2": "Sınav Günü Gibi DET Deneme Sınavı",
+      "right_desc": "Sınav gününde sizi neyin beklediğini tam olarak bilin. DET deneme sınavımız resmi DET ortamını birebir yansıtarak gerçek sınava kendinden emin ve hazırlıklı hissetmenizi sağlar. Doğru zamanlanmış bölümler ve gerçek soru tipleriyle sınav formatını tam olarak öğrenin."
     },
     "article2": {
-      "h2": "Hassas Ölçüm ve Detaylı Analiz",
-      "right_desc": "Her deneme sonrası güçlü ve gelişime açık yönlerinizi gösteren kapsamlı rapor alın. Çalışma planınız otomatik olarak güncellenir."
+      "h2": "Kapsamlı Puan Analizi",
+      "right_desc": "Tüm bölümlerde hassas performans analizi içeren detaylı deneme sınavı raporları alın. Akıllı AI sistemimiz güçlü yönlerinizi ve geliştirilmesi gereken alanları belirleyerek sınav hazırlığınızı artıracak kişiselleştirilmiş çalışma önerileri oluşturur."
     },
     "article3": {
-      "h2": "Size Özel Çalışma İmkanı",
-      "right_desc": "Randevu derdi olmadan, istediğiniz zaman çalışın. Satın almanızın ardından hemen başlayabilir, dilediğinizde ara verip kaldığınız yerden devam edebilirsiniz."
+      "h2": "İstediğiniz Zaman, İstediğiniz Yerde DET Deneme Sınavı",
+      "right_desc": "Size uygun zamanda ve yerde DET deneme sınavı alın. Çevrimiçi platformumuz pratik testlere anında erişim sağlayarak kendi programınıza göre hazırlanmanıza olanak tanır."
     },
     "article4": {
-      "h2": "Hızlı Sonuç Bildirimi",
-      "right_desc": "Deneme sınavı sonuçlarınızı <span class='zdfont'>5-30 dakika</span> içinde alarak ilerlemenizi takip edin."
+      "h2": "Hızlı DET Deneme Sınavı Geri Bildirim Raporu",
+      "right_desc": "Detaylı DET deneme sınavı sonuçlarınızı sadece <span class='zdfont'>5-30 dakika</span> içinde alın. Yıldırım hızındaki puanlama sistemimiz anında geri bildirim sağlayarak ilerlemenizi verimli bir şekilde takip etmenize ve hazırlık stratejinizi ayarlamanıza olanak tanır."
     },
-    "vs1": "DET Practice ve Gerçek DET Karşılaştırması",
-    "vs2": "Resmi DET sınavına giren adayların deneme sınavlarımızdaki performans analizi."
+    "vs1": "DET Deneme Sınavı Puanlarımız ve Gerçek DET Sınavı Puanları Karşılaştırması",
+    "vs2": "DET deneme sınavlarımızı ve Duolingo İngilizce Testini alan adayların puan karşılaştırması",
+    "aqtitle": "<span class='yellow'>DET Deneme Sınavımız</span> hakkında Sık Sorulan Sorular",
+    "aqlistfont": [
+      {
+        "q": "Duolingo deneme sınavınızı diğer pratik materyallerden farklı kılan nedir?",
+        "a": "<a href='https://www.detpractice.com/mock-exam'>Duolingo deneme sınavımız</a> resmi sınav formatını, zamanlamasını ve zorluk seviyesini tam olarak yansıtır. Her pratik oturumundan sonra kapsamlı performans analizi ve kişiselleştirilmiş çalışma önerileri sunuyoruz."
+      },
+      {
+        "q": "Tam bir Duolingo deneme sınavını tamamlamak ne kadar sürer?",
+        "a": "Tam bir Duolingo deneme sınavı, resmi sınavla aynı şekilde yaklaşık 1 saat sürer. Pratik oturumunuzu istediğiniz zaman duraklatıp devam edebilirsiniz, bu da programınıza göre esnek olmasını sağlar."
+      },
+      {
+        "q": "Duolingo deneme sınavı sonuçlarımı ne zaman alacağım?",
+        "a": "Deneme sınavı sonuçlarınız tamamlandıktan sonra 5-30 dakika içinde teslim edilir. Rapor, bölüm bazında detaylı analiz ve geliştirilmesi gereken belirli alanları içerir."
+      },
+      {
+        "q": "Duolingo deneme sınavını birden fazla kez alabilir miyim?",
+        "a": "Evet! <a href='https://www.detpractice.com/mock-exam'>DET deneme sınavımızı</a> ihtiyacınız olan kadar çok kez alabilirsiniz. Her deneme yeni içgörüler sağlar ve zamanla ilerlemenizi takip etmenize yardımcı olur."
+      },
+      {
+        "q": "Duolingo deneme sınavı için özel bir yazılım yüklemem gerekiyor mu?",
+        "a": "Yükleme gerekmez. Deneme sınavı platformumuz web tabanlıdır ve internet bağlantısı olan herhangi bir cihazda çalışır - sadece giriş yapın ve pratik yapmaya başlayın. Ancak, en iyi test deneyimi için Chrome tarayıcısını kullanmanızı öneririz."
+      },
+      {
+        "q": "Duolingo deneme sınavı içeriğiniz ne kadar güncel?",
+        "a": "En son test formatını ve soru tiplerini yansıtması için <a href='https://www.detpractice.com/'>DET pratik</a> materyallerimizi düzenli olarak güncelliyoruz, böylece mevcut en güncel içerikle hazırlanıyorsunuz."
+      }
+    ],
+    "embarkfont": {
+      "title": "İlk Duolingo Deneme Sınavınızı Şimdi Alın",
+      "btnText": "Şimdi Başla"
+    }
   },
   "practice": {
     "seometa": {
-      "title": "DET Hazırlık Platformu {'|'} Yapay Zeka Destekli Duolingo Sınav Bankası",
-      "description": "Duolingo İngilizce Testi için en kapsamlı hazırlık platformu! 18.000'den fazla soru, yapay zeka geri bildirimi ve akıllı ilerleme takibi ile DET puanınızı yükseltin. 400.000'den fazla öğrencinin tercih ettiği sınav hazırlık sistemi.",
-      "keywords": "DET hazırlık, Duolingo sınav soruları, DET örnek sorular, Duolingo test çalışması, DET soru bankası, DET konuşma pratiği, DET yazma alıştırmaları, online İngilizce test çalışması, DET çalışma materyalleri, yapay zeka değerlendirmesi"
+      "title": "Duolingo İngilizce Testi Pratik - Yapay Zeka Destekli Puan Yükseltici",
+      "description": "18.000+ soru ile Duolingo İngilizce Testi pratiği. Yapay zeka konuşma koçu, akıllı çalışma yolları ve detaylı analizler. 400.000+ başarılı öğrenciye katılın!"
     },
-    "h1": "Duolingo English Test Hazırlık Merkezi",
-    "desc": "Detaylı çözümler, örnek yanıtlar, yapay zeka destekli konuşma değerlendirmesi ve kişisel çalışma planı sunan kapsamlı test platformu. Yapay zeka teknolojimizle hedef puanınıza uygun maliyetle ve verimli şekilde ulaşın",
-    "alt": "DET Pratik: En iyi Duolingo English Test Pratik platformu",
-    "altbanner": "Duolingo English Test Uygulama",
-    "bank_user_icon": "Banka Kullanıcı Simgesi",
-    "white_arrow_right": "Beyaz Ok Sağ",
-    "blue_arrow_right": "Mavi Ok Sağ",
-    "learners_have": "{number}'den fazla öğrenci DET hazırlığında bizi tercih etti",
-    "spn": "Hemen Çalışmaya Başla",
+    "h1": "En İyi Duolingo İngilizce Testi Pratik Soru Bankası",
+    "descnew": "Her DET Bölümü için Yapay Zeka Destekli Duolingo İngilizce Testi Pratiği",
+    "desc": "Cevap analizleri, şablonlar, yapay zeka destekli konuşma ve yazma değerlendirmeleri ve akıllı planlama ile zenginleştirilmiş kapsamlı Duolingo İngilizce Testi pratik sorularına erişin. Yapay zeka destekli yaklaşımımızla uygun fiyata verimli puan artışı sağlayın.",
+    "alt": "DET Pratik: En İyi Duolingo İngilizce Testi Pratik Platformu",
+    "altbanner": "Duolingo İngilizce Testi Pratiği",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "blue_arrow_right": "Blue Arrow Right",
+    "learners_have": "Puan yükseltici DET pratik soru bankası - {number} test adayının güvendiği platform",
+    "spn": "Şimdi Pratik Yapmaya Başla",
     "article1": {
-      "h2": "Türkiye'nin En Kapsamlı Soru Bankası",
-      "right_desc": "Sürekli güncellenen 18.000'den fazla soru ile tüm sınav konularını kapsayan içerikler. Düzenli güncellemeler ile en yeni sınav formatına uygun, sistematik öğrenmeyi destekleyen soru bankası.",
-      "btn": "Pratik Yapmaya Başla"
+      "h2": "18.000+ DET Pratik Sorusu ve Artmaya Devam Ediyor",
+      "right_desc": "Okumadan konuşmaya tüm sınav bölümlerini kapsayan en kapsamlı Duolingo İngilizce Testi pratik soru bankasına erişin. En son test kalıplarını yansıtan düzenli güncellenen içeriğimizle önde olun - hedef DET puanınıza ulaşmanın en hızlı yolu.",
+      "btn": "DET Pratiğine Başla"
     },
     "article2": {
-      "h2": "Akıllı Öğrenme Sistemi",
-      "right_desc": "Yapay zeka sistemimiz seviyenizi, hedef puanınızı, konu ağırlıklarını, güncel sınav eğilimlerini, çalışma sürenizi ve gelişim hızınızı analiz ederek size en uygun soruları sunar.",
-      "btn": "Kişisel Öğrenme Yolculuğunuza Başlayın"
+      "h2": "Akıllı Duolingo İngilizce Testi Pratik Yolu",
+      "right_desc": "Duolingo İngilizce Testi pratiği için kişiselleştirilmiş çalışma yolunuzu alın. Yapay zeka sistemimiz, her soru türündeki performansınızı, hedef puanınızı ve zaman çizelgenizi, mevcut test kalıplarını, soru zorluk seviyelerini ve benzersiz öğrenme hızınızı sürekli analiz ederek hedef puanınıza giden en verimli rotayı oluşturur - tahminleri ve verimsiz hazırlıkta harcanan zamanı ortadan kaldırır.",
+      "btn": "Akıllı DET Çalışmana Başla"
     },
     "article3": {
-      "h2": "Yapay Zeka ile Konuşma Analizi",
-      "right_desc": "Konuşma becerilerinizi yapay zeka teknolojisiyle geliştirin. Ses kaydınızı yükleyin, anında detaylı geri bildirim alın ve hızla ilerleme kaydedin.",
-      "btn": "Konuşma Değerlendirmesine Başla"
+      "h2": "Yapay Zeka Destekli DET Konuşma ve Yazma Değerlendirmesi",
+      "right_desc": "Duolingo İngilizce Testi yanıtlarınız için anında geri bildirim alın. Yapay zeka sistemimiz, <a href='https://www.detpractice.com/speaking-ai-correction'>DET konuşma</a> ve <a href='https://www.detpractice.com/writing-ai-correction'>DET yazma</a> gönderilerinizi gerçek zamanlı olarak analiz eder, telaffuz, akıcılık, dilbilgisi ve kelime kullanımı konusunda detaylı puanlama ve öneriler sunar, hassas ve güvenli bir şekilde gelişmenize yardımcı olur.",
+      "btn": "Değerlendirmeye Başla"
     },
     "article4": {
-      "h2": "Ayrıntılı Çözümler",
-      "right_desc": "Her sorunun detaylı çözümüyle konuları derinlemesine öğrenin. Çözümlerimiz sadece doğru cevabı göstermekle kalmaz, konuyu tam öğrenmenizi ve çalışma verimliliğinizi artırmanızı sağlar.",
-      "btn": "Çözümleri İncele"
+      "h2": "Duolingo İngilizce Testi Pratik Cevap Analizi",
+      "right_desc": "Duolingo İngilizce Testi pratik cevaplarınız için detaylı açıklamalar alın. Yapay zekamız her soruyu analiz eder, cevapların arkasındaki mantığı ortaya çıkarır ve önemli test kalıplarını vurgular - DET için çalışma verimliliğinizi en üst düzeye çıkarırken temel kavramları öğrenmenize yardımcı olur.",
+      "btn": "Cevap Analizlerini Keşfet"
+    },
+    "aqtitle": "<span class='yellow'>Duolingo İngilizce Testi Pratiği</span> hakkında Sık Sorulan Sorular",
+    "aqlistfont": [
+      {
+        "q": "DET Practice neden Duolingo İngilizce Testi pratiği için en iyi seçimdir?",
+        "a": "Gerçek test formatı ve gereksinimlerini tam olarak karşılayan profesyonelce tasarlanmış materyallerle Duolingo İngilizce Testi pratiğinde uzmanlaşmış durumdayız."
+      },
+      {
+        "q": "<a href='https://www.detpractice.com'>DET Practice</a> ile ne sıklıkla çalışmalıyım?",
+        "a": "Optimum sonuçlar için, ideal olarak gerçek test tarihinden en az 2 hafta önce başlayarak günde 2-3 saat odaklanmış pratik yapmanızı öneririz."
+      },
+      {
+        "q": "Duolingo İngilizce Testi pratiği neden önemlidir?",
+        "a": "DET Practice kullanıcı verileri, sistematik hazırlığın puanlar üzerinde önemli bir etkisi olduğunu gösteriyor; öğrencilerimiz final testlerinde ortalama 15-20 puan daha yüksek alıyor."
+      },
+      {
+        "q": "DET Practice'in içeriği ne kadar güncel?",
+        "a": "<a href='https://www.detpractice.com/practice'>Duolingo İngilizce Testi pratik</a> materyallerimiz, en son test kalıplarını ve gereksinimlerini yansıtacak şekilde sürekli güncelleniyor, her zaman hazır olmanızı sağlıyor."
+      },
+      {
+        "q": "Duolingo İngilizce Testi pratiği genel İngilizce öğreniminden nasıl farklıdır?",
+        "a": "Genel İngilizce öğreniminden farklı olarak, odaklanmış test hazırlığı belirli soru türleri ve zaman yönetimi konusunda aşinalık gerektirir - platformumuzun sağladığı tam olarak budur."
+      },
+      {
+        "q": "DET hazırlığına ne zaman başlamalıyım?",
+        "a": "Başarılı öğrencilerin çoğu, optimum puan artışı için planlanan test tarihinden yaklaşık bir ay önce odaklanmış Duolingo İngilizce Testi pratiğine başlıyor."
+      }
+    ],
+    "embarkfont": {
+      "title": "DET'te yüksek puan almak için <span class='yellow'>Duolingo İngilizce Testi</span> pratiğine başlayın!",
+      "btnText": "Şimdi Pratik Yap"
     }
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Duolingo English Test Konuşma Becerileri - Yapay Zeka Destekli Değerlendirme {'|'} DET Hazırlık",
-      "description": "Duolingo English Test konuşma bölümünü artık yapay zeka desteğiyle çok daha kolay halledebilirsiniz. Anlık geri bildirimler, kapsamlı analizler ve uzman tavsiyeleri ile DET konuşma becerilerinizi geliştirin. Sınırsız pratik yapın ve DET resmi kriterleri doğrultusunda anında değerlendirme alın.",
-      "keywords": "DET konuşma pratiği, Duolingo sınav hazırlığı, DET konuşma teknikleri, yapay zeka değerlendirmesi, DET konuşma örnekleri, Duolingo speaking tüyoları, DET online hazırlık, İngilizce konuşma pratiği, DET sınav stratejileri, Duolingo konuşma egzersizleri"
+      "title": "Duolingo English Test Konuşma Düzeltmesi - AI Değerlendirme & Geri Bildirim",
+      "description": "Anlık AI değerlendirmesiyle Duolingo English Test konuşma bölümünde uzmanlaşın. Telaffuz geri bildirimi, puanlama ve profesyonel rehberlik alın. 26.000'den fazla test adayı tarafından güvenilen platform.",
     },
-    "h1": "Yapay Zeka Destekli Konuşma Değerlendirmesi",
-    "desc": "Gelişmiş yapay zeka teknolojimiz, tüm konuşma soru tiplerini analiz eder ve DET puanınızı yükseltmeniz için size özel yönlendirme sağlar.",
-    "alt": "DET Pratik:En iyi DET Konuşma AI Düzeltme platformu",
-    "altbanner": "DET Konuşan Yapay Zeka Düzeltme",
-    "bank_user_icon": "Banka Kullanıcı Simgesi",
-    "white_arrow_right": "Beyaz Ok Sağ",
-    "purple_arrow_right": "Mor Ok Sağ",
-    "learners_have": "{number}'den fazla öğrenci başarıya ulaştı!",
-    "spn": "Hemen Dene",
+    "h1": "DET Practice'den Güçlü AI DET Konuşma Düzeltmesi",
+    "descnew": "AI geri bildirimiyle DET konuşma becerilerinizi geliştirin",
+    "desc": "Güçlü AI sistemimiz, Duolingo English Test'teki telaffuzunuzu, akıcılığınızı ve dilbilginizi analiz eder, konuşma becerilerinizi hızla geliştirmenize ve Duolingo English Test (DET) konuşma bölümünü güvenle tamamlamanıza yardımcı olmak için hassas, kişiselleştirilmiş geri bildirim ve pratik öneriler sunar.",
+    "alt": "DET Practice: DET konuşma için en iyi AI düzeltme platformu",
+    "altbanner": "DET Speaking AI Correction",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "purple_arrow_right": "Purple Arrow Right",
+    "learners_have": "Şimdiden {number} kişi DET konuşma puanlarını geliştirdi",
+    "spn": "Şimdi Başla",
     "article1": {
-      "h2": "Hassas Puanlama",
-      "right_desc": "Soru bankamızdan seçeceğiniz ya da kendi belirlediğiniz konularda konuşma pratiği yapın, anında detaylı rapor alın.",
-      "btn": "Ücretsiz Deneyin"
+      "h2": "Hassas DET Konuşma Puanları Alın",
+      "right_desc": "DET konuşma cevaplarınızı gönderin ve gelişmiş AI analizine dayalı hassas bir puan anında alın. Sistemimiz, mevcut seviyenizi ve gelişim alanlarınızı net bir şekilde anlamanız için telaffuz, akıcılık, dilbilgisi ve kelime dağarcığınızı değerlendirir.",
+      "btn": "Denemeye Başla"
     },
     "article2": {
-      "h2": "Detaylı Analiz",
-      "right_desc": "Telaffuz hatalarınızı, duraksamalarınızı, gereksiz tekrarlarınızı ve okuma tonlamanızı anında tespit edin, düzeltme önerileri alın.",
-      "btn": "Deneyimlemeye başlayın"
+      "h2": "Detaylı DET Konuşma Geri Bildirimi",
+      "right_desc": "DET konuşma performansınız hakkında, telaffuz hataları, beklenmedik duraklamalar, eksik duraklar, okuma şüphesi ve tekrarlar analizi dahil olmak üzere detaylı geri bildirim alın. Bu yaygın hataları nasıl önleyeceğinizi öğrenin ve genel akıcılığınızı geliştirin.",
+      "btn": "Denemeye Başla"
     },
     "article3": {
-      "h2": "Uzman Desteği",
-      "right_desc": "DET değerlendirme kriterlerine göre konuşma becerilerinizi analiz eder, gelişim alanlarınızı belirler ve size özel çözümler sunarız.",
-      "btn": "Başlamaya"
+      "h2": "DET Konuşmayı Geliştirmek için Profesyonel Rehberlik",
+      "right_desc": "Resmi DET değerlendirme kriterlerine dayalı olarak, AI'mız DET konuşmanızdaki zayıf noktaları belirlemenize ve etkili gelişim stratejileri geliştirmenize yardımcı olmak için profesyonel rehberlik sunar. Puanınızı maksimuma çıkarmak için telaffuz, dilbilgisi ve akıcılık gibi özel alanlarda çalışın.",
+      "btn": "Denemeye Başla"
+    },
+    "aqtitle": "<span class='yellow'>DET Konuşma AI Düzeltmemiz</span> Hakkında Sık Sorulan Sorular",
+    "aqlistfont": [
+      {
+        "q": "AI değerlendirmeniz gerçek DET konuşma testiyle karşılaştırıldığında ne kadar doğru?",
+        "a": "<a href='https://www.detpractice.com/'>DET Practice</a> AI puanlama sistemimiz, gerçek test sonuçlarının kapsamlı analizlerine dayalı olarak kalibre edilmiştir. Hiçbir pratik aracı tam olarak eşleşen puanlar garanti edemese de, sistemimiz binlerce öğrencinin DET konuşma performansını %90'ın üzerinde bir doğrulukla tahmin etmesine yardımcı olmuştur."
+      },
+      {
+        "q": "Belirli DET konuşma soru türlerini pratik yapabilir miyim?",
+        "a": "Evet, DET Practice sesli okuma, dinleme ve konuşma, konuşma örneği, resim açıklama ve okuma-konuşma dahil olmak üzere tüm DET konuşma soru türlerini kapsar. Belirli soru türlerine odaklanabilir veya karışık formatta pratik yapabilirsiniz."
+      },
+      {
+        "q": "Konuşma cevabımı gönderdikten sonra ne kadar hızlı geri bildirim alacağım?",
+        "a": "AI'mız cevabınızı tamamladıktan sonra dakikalar içinde anında geri bildirim sağlar. Her DET Practice oturumu, telaffuzunuz, akıcılığınız ve içeriğinizin detaylı bir analizini içerir - <a href='https://www.detpractice.com/speaking-ai-correction'>DET konuşma becerilerinizi</a> hemen geliştirmenize olanak tanır."
+      },
+      {
+        "q": "DET konuşma puanlarım sürekli düşükse ne yapmalıyım?",
+        "a": "DET Practice, performans modellerinize dayalı olarak hedefli gelişim stratejileri sunar. <a href='https://www.detpractice.com/speaking-ai-correction'>DET konuşmanın</a> belirli yönleriyle zorluk yaşıyorsanız, AI'mız sorunlu alanları belirleyecek ve gelişmenize yardımcı olmak için odaklanmış alıştırmalar önerecektir."
+      },
+      {
+        "q": "Gerçek DET konuşma bölümünü simüle eden pratik testler sunuyor musunuz?",
+        "a": "Evet, DET Practice gerçek DET formatını sadakatle yansıtan tam konuşma simülasyonları sunar. Bu, size en gerçekçi pratik deneyimini sunmak için otantik zaman ayarları, soru türleri ve değerlendirme kriterlerini içerir."
+      },
+      {
+        "q": "Gerçek testi almadan önce DET Practice'de ne kadar süre pratik yapmalıyım?",
+        "a": "Kullanıcı verilerine göre, platformumuzda 2-3 hafta boyunca düzenli olarak pratik yapan çoğu öğrenci DET konuşma performanslarında önemli bir gelişme görür. Ancak, optimal hazırlık süresi başlangıç seviyesine ve hedef puana göre değişiklik gösterir."
+      }
+    ],
+    "embarkfont": {
+      "title": "<span class='yellow'>DET Konuşma</span> hedef puanınıza daha hızlı ulaşın!",
+      "btnText": "Şimdi Pratik Yap"
     }
   },
   "privacyPolicy": {
