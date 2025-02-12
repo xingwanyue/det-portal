@@ -35,7 +35,7 @@ const openOrCloseOneQuestion = (index) => {
             <div class="icon">
               <img src="/img/pricing/arrow_down.svg" :alt="$t('pricing.pagefont.arrow_down')" />
             </div>
-            <div class="qusetion" v-html="item.name"></div>
+            <h2 class="qusetion" v-html="item.name"></h2>
           </div>
           <div v-if="openIndexArr.indexOf(index) > -1" class="answer">
             <div class="answer_content" v-html="item.content"></div>

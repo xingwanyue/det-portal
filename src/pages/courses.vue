@@ -395,7 +395,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               <div class="icon">
                 <img src="/img/pricing/arrow_down.svg" :alt="$t('pricing.pagefont.arrow_down')" />
               </div>
-              <div class="qusetion">{{ item.name }}</div>
+              <h2 class="qusetion">{{ item.name }}</h2>
             </div>
             <div v-if="item.open" class="answer">
               <div class="answer_content" v-html="item.content"></div>
