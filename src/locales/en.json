@@ -225,7 +225,8 @@
       "free_font": "Free",
       "free_tips": "You can view 20 questions for free, try our platform, and see if it fits your needs.",
       "tff": "Try for free",
-      "save": "Save up to {num}%",
+      "save": "Save {num}% ",
+      "saveup": "Save up to {num}%",
       "week": "/week",
       "month": "/month",
       "Billed": "Billed ${num} /year",
@@ -347,8 +348,8 @@
       "qy6": "High-Frequency Exam Vocabulary",
       "qy7": "Tailored Study Plan with Smart Question Selection",
       "qy8": "AI-Powered Speaking Evaluations",
-      "qyspeak": "DET <span class='yellow'>Speaking Exam Guide </span>",
-      "qywrite": "DET <span class='yellow'>Writing Exam Guide </span>"
+      "qyspeak": "DET <span class='yellow'>Speaking Exam Guide ( Free Gift )</span>",
+      "qywrite": "DET <span class='yellow'>Writing Exam Guide ( Free Gift )</span>"
     }
   },
   "blog": {

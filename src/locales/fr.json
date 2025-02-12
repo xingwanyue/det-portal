@@ -225,7 +225,8 @@
       "free_font": "Gratuit",
       "free_tips": "Vous pouvez accéder gratuitement à 20 questions, essayer notre plateforme et voir si elle répond à vos besoins.",
       "tff": "Essai Gratuit",
-      "save": "Économisez jusqu'à {num}%",
+      "save": "économisez {num}%",
+      "saveup": "Économisez jusqu'à {num}%",
       "week": "/semaine",
       "month": "/mois",
       "Billed": "Facturé ${num} /an",
@@ -347,8 +348,8 @@
       "qy6": "Vocabulaire d'examen à haute fréquence",
       "qy7": "Plan d'études personnalisé avec sélection intelligente des questions",
       "qy8": "Évaluations orales alimentées par l'IA",
-      "qyspeak": "DET <span class='yellow'>Guide de l'examen oral</span>",
-      "qywrite": "DET <span class='yellow'>Guide de l'examen écrit</span>"
+      "qyspeak": "DET <span class='yellow'>Guide de l'Examen Oral (Cadeau Gratuit)</span>",
+      "qywrite": "DET <span class='yellow'>Guide de l'Examen Écrit (Cadeau Gratuit)</span>"
     }
   },
   "blog": {

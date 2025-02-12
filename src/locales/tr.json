@@ -227,7 +227,8 @@
       "free_font": "Ücretsiz",
       "free_tips": "Platformumuzu denemek ve ihtiyaçlarınıza uygun olup olmadığını görmek için 20 soruya ücretsiz erişebilirsiniz.",
       "tff": "Ücretsiz Deneyin",
-      "save": "{num}% kadar tasarruf edin",
+      "save": "{num}% tasarruf et",
+      "saveup": "{num}% kadar tasarruf edin",
       "week": "/hafta",
       "month": "/ay",
       "Billed": "Faturalandırılan ${num} /yıl",
@@ -348,8 +349,8 @@
       "qy6": "Sık Kullanılan Sınav Kelimeleri",
       "qy7": "Akıllı Soru Seçimi ile Özelleştirilmiş Çalışma Planı",
       "qy8": "Yapay Zeka Destekli Konuşma Değerlendirmeleri",
-      "qyspeak": "DET <span class='yellow'>Konuşma Sınavı Rehberi</span>",
-      "qywrite": "DET <span class='yellow'>Yazma Sınavı Rehberi</span>"
+      "qyspeak": "DET <span class='yellow'>Konuşma Sınavı Rehberi (Ücretsiz Hediye)</span>",
+      "qywrite": "DET <span class='yellow'>Yazma Sınavı Rehberi (Ücretsiz Hediye)</span>"
     }
   },
   "blog": {

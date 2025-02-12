@@ -226,7 +226,8 @@
       "free_font": "Gratis",
       "free_tips": "Anda bisa melihat 20 soal secara gratis, coba platform kami, dan lihat apakah sesuai dengan kebutuhan Anda.",
       "tff": "Coba Gratis",
-      "save": "Hemat hingga {num}%",
+      "save": "hemat {num}%",
+      "saveup": "Hemat hingga {num}%",
       "week": "/minggu",
       "month": "/bulan",
       "Billed": "Ditagih ${num} /tahun",
@@ -348,7 +349,8 @@
       "qy6": "Kosakata Ujian Frekuensi Tinggi",
       "qy7": "Rencana Belajar Disesuaikan dengan Pemilihan Soal Cerdas",
       "qy8": "Evaluasi Speaking dengan AI",
-      "qyspeak": "DET <span class='yellow'>Panduan Ujian Speaking</span>",
+      "qyspeak": "DET <span class='yellow'>Panduan Ujian Berbicara (Hadiah Gratis)</span>",
+      "qywrite": "DET <span class='yellow'>Panduan Ujian Menulis (Hadiah Gratis)</span>"
     },
     "blog": {
       "seometa": {

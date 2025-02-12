@@ -13,6 +13,7 @@ const props = defineProps({
   membershipArr: Array,
   correctSelectBuyTimes: Array,
   mockSelectBuyTimes: Array,
+  savetagnumber: String,
 }) as any;
 
 const state = reactive({
@@ -105,14 +106,16 @@ const saveCaculate = (item: any) => {
           <div>
             <div class="title_out">
               <div class="title">{{ item.tag }}</div>
-              <div v-if="item.tag === 'Pro'" class="save_tag">{{ t('pricing.pagefont.popular') }}</div>
+              <div v-if="item.tag === 'Pro'" class="save_tag">
+                {{ $t('pricing.pagefont.save', { num: savetagnumber }) }}
+              </div>
             </div>
 
             <div class="price_out">
               <div class="do">{{ $t('pricing.pagefont.do') }}</div>
               <template v-if="item.tag === 'Basic'">
                 <div class="price">{{ formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
-                <div class="unit">{{ $t('pricing.pagefont.week') }}</div>
+                <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
               <template v-if="item.tag === 'Pro'">
                 <div class="price">{{ formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
@@ -124,6 +127,9 @@ const saveCaculate = (item: any) => {
                 </div>
                 <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
+            </div>
+            <div class="line_throw">
+              ${{ formatCashfixed2(Number(item.originalPrice)) }}{{ $t('pricing.pagefont.month') }}
             </div>
             <!-- <div class="bill">
               <span v-if="item.day === 365">
@@ -424,6 +430,15 @@ const saveCaculate = (item: any) => {
       color: #333333;
     }
   }
+  .line_throw {
+    font-weight: 600;
+    font-size: 18px;
+    color: #333333;
+    text-decoration: line-through;
+    margin-top: 8px;
+    text-decoration-thickness: 2px; // 添加这行来增加中划线的粗细
+    // 修改 text-decoration 横线宽度
+  }
   .bill {
     margin-top: 12px;
     font-weight: 400;
@@ -493,6 +508,9 @@ const saveCaculate = (item: any) => {
   .price {
     color: #4c2929 !important;
   }
+  .line_throw {
+    color: #4c2929 !important;
+  }
   .unit {
     color: #4c2929 !important;
   }
@@ -557,7 +575,7 @@ const saveCaculate = (item: any) => {
         font-weight: 650;
       }
       ::v-deep(.yellow) {
-        color: #f66442ff;
+        font-weight: 650;
       }
     }
   }

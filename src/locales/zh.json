@@ -226,7 +226,8 @@
       "free_font": "免费",
       "free_tips": "可免费体验20道题目，试用我们的平台，了解是否符合你的需求。",
       "tff": "免费试用",
-      "save": "最高优惠{num}%",
+      "save": "节省 {num}%",
+      "saveup": "最高优惠{num}%",
       "week": "/周",
       "month": "/月",
       "Billed": "每年收费 ${num}",
@@ -347,8 +348,8 @@
       "qy6": "高频考试词汇",
       "qy7": "智能选题的个性化学习计划",
       "qy8": "AI 口语评估",
-      "qyspeak": "DET <span class='yellow'>口语考试指南</span>",
-      "qywrite": "DET <span class='yellow'>写作考试指南</span>"
+      "qyspeak": "DET <span class='yellow'>口语考试指南（免费赠送）</span>",
+      "qywrite": "DET <span class='yellow'>写作考试指南（免费赠送）</span>"
     }
   },
   "blog": {

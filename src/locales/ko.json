@@ -227,7 +227,8 @@
       "free_font": "무료",
       "free_tips": "20개의 문제를 무료로 확인하고, 우리 플랫폼을 체험하여 귀하의 요구에 맞는지 확인하세요.",
       "tff": "무료로 시작하기",
-      "save": "최대 {num}% 할인",
+      "save": "{num}% 절약",
+      "saveup": "최대 {num}% 할인",
       "week": "/주",
       "month": "/월",
       "Billed": "연간 ${num} 청구",
@@ -348,8 +349,8 @@
       "qy6": "시험 고빈도 어휘",
       "qy7": "스마트 문항 선택을 통한 맞춤형 학습 계획",
       "qy8": "AI 기반 말하기 평가",
-      "qyspeak": "DET <span class='yellow'>말하기 시험 가이드</span>",
-      "qywrite": "DET <span class='yellow'>작문 시험 가이드</span>"
+      "qyspeak": "DET <span class='yellow'>말하기 시험 가이드 (무료 선물)</span>",
+      "qywrite": "DET <span class='yellow'>쓰기 시험 가이드 (무료 선물)</span>"
     }
   },
   "blog": {

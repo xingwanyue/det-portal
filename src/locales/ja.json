@@ -225,7 +225,8 @@
       "free_font": "無料",
       "free_tips": "20問を無料で体験でき、プラットフォームを試してニーズに合うかどうかを確認できます。",
       "tff": "無料で試す",
-      "save": "最大{num}%オフ",
+      "save": "{num}% 節約",
+      "saveup": "最大{num}%オフ",
       "week": "/週",
       "month": "/月",
       "Billed": "年間 ${num} 請求",
@@ -347,8 +348,8 @@
       "qy6": "頻出単語集",
       "qy7": "AIによる最適な学習プランと問題選択",
       "qy8": "AIによるスピーキング評価",
-      "qyspeak": "DET <span class='yellow'>スピーキング試験ガイド</span>",
-      "qywrite": "DET <span class='yellow'>ライティング試験ガイド</span>"
+      "qyspeak": "DET <span class='yellow'>スピーキング試験ガイド (無料ギフト)</span>",
+      "qywrite": "DET <span class='yellow'>ライティング試験ガイド (無料ギフト)</span>"
     }
   },
   "blog": {

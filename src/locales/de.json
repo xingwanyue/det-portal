@@ -225,7 +225,8 @@
       "free_font": "Kostenlos",
       "free_tips": "Sie können 20 Fragen kostenlos ansehen, unsere Plattform testen und prüfen, ob sie Ihren Bedürfnissen entspricht.",
       "tff": "Kostenlos testen",
-      "save": "Sparen Sie bis zu {num}%",
+      "save": "sparen {num}%",
+      "saveup": "Sparen Sie bis zu {num}%",
       "week": "/Woche",
       "month": "/Monat",
       "Billed": "Abgerechnet ${num} /Jahr",
@@ -347,8 +348,8 @@
       "qy6": "Hochfrequenz-Prüfungsvokabular",
       "qy7": "Maßgeschneiderter Studienplan mit intelligenter Fragenauswahl",
       "qy8": "KI-gestützte Sprechbewertungen",
-      "qyspeak": "DET <span class='yellow'>Sprechprüfungsführer </span>",
-      "qywrite": "DET <span class='yellow'>Schreibprüfungsführer </span>"
+      "qyspeak": "DET <span class='yellow'>Sprechprüfungsleitfaden (Kostenloses Geschenk)</span>",
+      "qywrite": "DET <span class='yellow'>Schreibprüfungsleitfaden (Kostenloses Geschenk)</span>"
     }
   },
   "blog": {

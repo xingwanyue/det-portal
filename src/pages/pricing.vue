@@ -320,7 +320,7 @@ const changeBuyCorrectTimes = () => {
         <div class="switch_out">
           <div @click="changeSwitchType('1')" :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']">
             {{ $t('pricing.pagefont.switch1') }}
-            <div class="save_tag_tag">{{ $t('pricing.pagefont.save', { num: savetagnumber }) }}</div>
+            <div class="save_tag_tag">{{ $t('pricing.pagefont.saveup', { num: savetagnumber }) }}</div>
           </div>
           <div @click="changeSwitchType('2')" :class="[switchType === '2' ? 'switch_btn yellow ' : 'switch_btn']">
             {{ $t('pricing.pagefont.switch2') }}
@@ -366,6 +366,7 @@ const changeBuyCorrectTimes = () => {
             :membershipArr="vipsData?.packagesArr || []"
             :correctSelectBuyTimes="vipsData?.correctSelectBuyTimes || []"
             :mockSelectBuyTimes="vipsData?.mockSelectBuyTimes || []"
+            :savetagnumber="savetagnumber"
           ></v-membershippricepackages>
         </div>
 
