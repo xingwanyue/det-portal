@@ -537,8 +537,8 @@
         "a": "Our AI scoring system is calibrated to match official DET standards, providing accuracy rates of over 95% compared to human raters. Each Duolingo Writing submission is analyzed across multiple dimensions including grammar, vocabulary, coherence, and task completion."
       },
       {
-        "q": "What types of <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo writing feedback</a> will I receive?",
-        "a": "Our <a href='https://www.detpractice.com/'>DET Practice</a> system provides comprehensive feedback including:<br>- Detailed grammar and vocabulary corrections<br>- Structure and coherence analysis<br>- Content relevance evaluation<br>- Specific suggestions for improvement<br>- Estimated Duolingo Writing score"
+        "q": "What types of <a href='/writing-ai-correction'>Duolingo writing feedback</a> will I receive?",
+        "a": "Our <a href='/'>DET Practice</a> system provides comprehensive feedback including:<br>- Detailed grammar and vocabulary corrections<br>- Structure and coherence analysis<br>- Content relevance evaluation<br>- Specific suggestions for improvement<br>- Estimated Duolingo Writing score"
       },
       {
         "q": "How long does it take to get my Duolingo writing evaluated?",
@@ -546,15 +546,15 @@
       },
       {
         "q": "What types of Duolingo writing prompts are available for practice?",
-        "a": "Our system offers a diverse range of high-quality practice prompts that are carefully designed to help you prepare for the <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo Writing</a> section. Each prompt follows the standardized DET format and difficulty level."
+        "a": "Our system offers a diverse range of high-quality practice prompts that are carefully designed to help you prepare for the <a href='/writing-ai-correction'>Duolingo Writing</a> section. Each prompt follows the standardized DET format and difficulty level."
       },
       {
         "q": "How many essays can I submit for evaluation?",
-        "a": "As a DET Practice premium member, you can purchase writing correction credits according to your needs. These <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo Writing correction</a> credits can be used anytime during your active subscription period. There's no limit on how many evaluation packages you can purchase - simply buy the number of corrections you need for your study plan."
+        "a": "As a DET Practice premium member, you can purchase writing correction credits according to your needs. These <a href='/writing-ai-correction'>Duolingo Writing correction</a> credits can be used anytime during your active subscription period. There's no limit on how many evaluation packages you can purchase - simply buy the number of corrections you need for your study plan."
       },
       {
         "q": "Is the feedback personalized to my writing level?",
-        "a": "Yes, our AI system adapts its feedback based on your writing proficiency. Whether you're a beginner or an advanced writer, you'll receive relevant suggestions to improve your <a href='https://www.detpractice.com/writing-ai-correction'>DET Writing</a> performance."
+        "a": "Yes, our AI system adapts its feedback based on your writing proficiency. Whether you're a beginner or an advanced writer, you'll receive relevant suggestions to improve your <a href='/writing-ai-correction'>DET Writing</a> performance."
       }
     ],
     "embarkfont": {
@@ -676,15 +676,15 @@
     "aqList": [
       {
         "name": "What's included in the DET course package?",
-        "content": "The <a href='https://www.detpractice.com/courses'>DET course package</a> includes comprehensive preparation materials for all four test sections: Reading, Listening, Speaking, and Writing. Each section contains multiple interactive courses focusing on specific question types, with real-time feedback and practical strategies."
+        "content": "The <a href='/courses'>DET course package</a> includes comprehensive preparation materials for all four test sections: Reading, Listening, Speaking, and Writing. Each section contains multiple interactive courses focusing on specific question types, with real-time feedback and practical strategies."
       },
       {
         "name": "How is this DET course different from other preparation materials?",
-        "content": "This DET course offers a unique combination of video lessons plus extensive exercises (you can find them at our <a href='https://www.detpractice.com/practice'>DET practice question bank</a>), and feedback . It covers every question type on the test and includes specialized prep materials for each section, making it a complete preparation solution."
+        "content": "This DET course offers a unique combination of video lessons plus extensive exercises (you can find them at our <a href='/practice'>DET practice question bank</a>), and feedback . It covers every question type on the test and includes specialized prep materials for each section, making it a complete preparation solution."
       },
       {
         "name": "Can I access the DET course materials on my own schedule?",
-        "content": "Yes, all DET course materials are free to all members on <a href='https://www.detpractice.com'>DET Practice</a>, and available 24/7. You can study at your own pace and access the materials anytime, anywhere."
+        "content": "Yes, all DET course materials are free to all members on <a href='/'>DET Practice</a>, and available 24/7. You can study at your own pace and access the materials anytime, anywhere."
       },
       {
         "name": "Does the DET course cover the latest test format?",
@@ -768,7 +768,7 @@
     "aqlistfont": [
       {
         "q": "What makes your Duolingo mock test different from other practice materials?",
-        "a": "Our <a href='https://www.detpractice.com/mock-exam'>Duolingo mock test</a> precisely mirrors the official exam format, timing, and difficulty level. We provide comprehensive performance analytics and personalized study recommendations after each practice session."
+        "a": "Our <a href='/mock-exam'>Duolingo mock test</a> precisely mirrors the official exam format, timing, and difficulty level. We provide comprehensive performance analytics and personalized study recommendations after each practice session."
       },
       {
         "q": "How long does it take to complete a full Duolingo mock test?",
@@ -780,7 +780,7 @@
       },
       {
         "q": "Can I take the Duolingo mock test multiple times?",
-        "a": "Yes! You can take our <a href='https://www.detpractice.com/mock-exam'>DET mock test</a> as many times as needed. Each attempt provides fresh insights and helps track your progress over time."
+        "a": "Yes! You can take our <a href='/mock-exam'>DET mock test</a> as many times as needed. Each attempt provides fresh insights and helps track your progress over time."
       },
       {
         "q": "Do I need to install any special software for the Duolingo mock test?",
@@ -788,7 +788,7 @@
       },
       {
         "q": "How up-to-date is your Duolingo mock test content?",
-        "a": "We regularly update our <a href='https://www.detpractice.com/'>DET practice</a> materials to reflect the latest test format and question types, ensuring you're preparing with the most current content available."
+        "a": "We regularly update our <a href='/'>DET practice</a> materials to reflect the latest test format and question types, ensuring you're preparing with the most current content available."
       }
     ],
     "embarkfont": {
@@ -823,7 +823,7 @@
     },
     "article3": {
       "h2": "AI-Powered DET Speaking & Writing Evaluation",
-      "right_desc": "Get instant feedback on your Duolingo English Test responses. Our AI-powered system analyzes both your <a href='https://www.detpractice.com/speaking-ai-correction'>DET speaking</a> and <a href='https://www.detpractice.com/writing-ai-correction'>DET writing</a> submissions in real-time, providing detailed scoring and suggestions on pronunciation, fluency, grammar, and vocabulary usage to help you improve with precision and confidence.",
+      "right_desc": "Get instant feedback on your Duolingo English Test responses. Our AI-powered system analyzes both your <a href='/speaking-ai-correction'>DET speaking</a> and <a href='/writing-ai-correction'>DET writing</a> submissions in real-time, providing detailed scoring and suggestions on pronunciation, fluency, grammar, and vocabulary usage to help you improve with precision and confidence.",
       "btn": "Begin Your Evaluation"
     },
     "article4": {
@@ -847,7 +847,7 @@
       },
       {
         "q": "How current is DET Practice's content?",
-        "a": "Our <a href='https://www.detpractice.com/practice'>Duolingo English Test practice</a> materials are continuously updated to reflect the latest test patterns and requirements, ensuring you're always prepared."
+        "a": "Our <a href='/practice'>Duolingo English Test practice</a> materials are continuously updated to reflect the latest test patterns and requirements, ensuring you're always prepared."
       },
       {
         "q": "How does Duolingo English Test practice differ from general English study?",
@@ -897,7 +897,7 @@
     "aqlistfont": [
       {
         "q": "How accurate is your AI scoring compared to the actual Duolingo English Speaking test?",
-        "a": "Our <a href='https://www.detpractice.com/'>DET Practice</a> AI scoring system is calibrated based on extensive analysis of real test results. While no practice tool can guarantee exact matching scores, our system has helped thousands of students accurately predict their Duolingo English Speaking performance with over 90% accuracy."
+        "a": "Our <a href='/'>DET Practice</a> AI scoring system is calibrated based on extensive analysis of real test results. While no practice tool can guarantee exact matching scores, our system has helped thousands of students accurately predict their Duolingo English Speaking performance with over 90% accuracy."
       },
       {
         "q": "Can I practice specific types of DET speaking questions?",
@@ -905,11 +905,11 @@
       },
       {
         "q": "How soon will I receive feedback after submitting my speaking response?",
-        "a": "Our AI provides instant feedback within minutes of completing your response. Each DET Practice session includes detailed analysis of your pronunciation, fluency, and content - allowing you to make immediate improvements to your <a href='https://www.detpractice.com/speaking-ai-correction'>Duolingo English Speaking</a> skills."
+        "a": "Our AI provides instant feedback within minutes of completing your response. Each DET Practice session includes detailed analysis of your pronunciation, fluency, and content - allowing you to make immediate improvements to your <a href='/speaking-ai-correction'>Duolingo English Speaking</a> skills."
       },
       {
         "q": "What if I'm consistently scoring low on speaking tasks?",
-        "a": "DET Practice provides targeted improvement strategies based on your performance patterns. If you're struggling with specific aspects of <a href='https://www.detpractice.com/speaking-ai-correction'>Duolingo English Speaking</a>, our AI will identify problem areas and suggest focused exercises to help you improve."
+        "a": "DET Practice provides targeted improvement strategies based on your performance patterns. If you're struggling with specific aspects of <a href='/speaking-ai-correction'>Duolingo English Speaking</a>, our AI will identify problem areas and suggest focused exercises to help you improve."
       },
       {
         "q": "Do you offer practice tests that simulate the actual Duolingo English speaking section?",

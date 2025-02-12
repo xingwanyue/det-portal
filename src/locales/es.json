@@ -538,8 +538,8 @@
         "a": "Nuestro sistema de evaluación por IA está calibrado según los estándares oficiales DET, proporcionando más del 95% de precisión comparado con evaluadores humanos. Cada envío de escritura Duolingo es analizado en múltiples dimensiones incluyendo gramática, vocabulario, coherencia y cumplimiento de tareas."
       },
       {
-        "q": "¿Qué tipo de <a href='https://www.detpractice.com/es/writing-ai-correction'>retroalimentación de escritura Duolingo</a> recibiré?",
-        "a": "Nuestro sistema <a href='https://www.detpractice.com/es'>DET Practice</a> proporciona retroalimentación integral incluyendo:<br>- Correcciones detalladas de gramática y vocabulario<br>- Análisis de estructura y coherencia<br>- Evaluación de relevancia del contenido<br>- Sugerencias específicas de mejora<br>- Puntuación estimada de Escritura Duolingo"
+        "q": "¿Qué tipo de <a href='/es/writing-ai-correction'>retroalimentación de escritura Duolingo</a> recibiré?",
+        "a": "Nuestro sistema <a href='/es'>DET Practice</a> proporciona retroalimentación integral incluyendo:<br>- Correcciones detalladas de gramática y vocabulario<br>- Análisis de estructura y coherencia<br>- Evaluación de relevancia del contenido<br>- Sugerencias específicas de mejora<br>- Puntuación estimada de Escritura Duolingo"
       },
       {
         "q": "¿Cuánto tiempo toma evaluar mi escritura Duolingo?",
@@ -547,15 +547,15 @@
       },
       {
         "q": "¿Qué tipos de prompts de escritura Duolingo están disponibles para práctica?",
-        "a": "Nuestro sistema ofrece diversos prompts de práctica de alta calidad, cuidadosamente diseñados para ayudarte a prepararte para la sección de <a href='https://www.detpractice.com/es/writing-ai-correction'>Escritura Duolingo</a>. Cada prompt sigue el formato y nivel de dificultad estandarizado de DET."
+        "a": "Nuestro sistema ofrece diversos prompts de práctica de alta calidad, cuidadosamente diseñados para ayudarte a prepararte para la sección de <a href='/es/writing-ai-correction'>Escritura Duolingo</a>. Cada prompt sigue el formato y nivel de dificultad estandarizado de DET."
       },
       {
         "q": "¿Hay un límite en cuántos ensayos puedo enviar para evaluación?",
-        "a": "Como miembro premium de DET Practice, puedes comprar créditos de corrección de escritura según tus necesidades. Estos <a href='https://www.detpractice.com/es/writing-ai-correction'>créditos de corrección de escritura Duolingo</a> pueden usarse en cualquier momento durante tu período de suscripción activa. No hay límite en el número de paquetes de evaluación que puedes comprar - simplemente compra la cantidad de correcciones que necesites para tu plan de estudio."
+        "a": "Como miembro premium de DET Practice, puedes comprar créditos de corrección de escritura según tus necesidades. Estos <a href='/es/writing-ai-correction'>créditos de corrección de escritura Duolingo</a> pueden usarse en cualquier momento durante tu período de suscripción activa. No hay límite en el número de paquetes de evaluación que puedes comprar - simplemente compra la cantidad de correcciones que necesites para tu plan de estudio."
       },
       {
         "q": "¿La retroalimentación está personalizada según mi nivel de escritura?",
-        "a": "Sí, nuestro sistema de IA ajusta la retroalimentación según tus habilidades de escritura. Ya seas principiante o escritor avanzado, recibirás sugerencias relevantes para mejorar tu rendimiento en <a href='https://www.detpractice.com/es/writing-ai-correction'>Escritura DET</a>."
+        "a": "Sí, nuestro sistema de IA ajusta la retroalimentación según tus habilidades de escritura. Ya seas principiante o escritor avanzado, recibirás sugerencias relevantes para mejorar tu rendimiento en <a href='/es/writing-ai-correction'>Escritura DET</a>."
       }
     ],
     "embarkfont": {
@@ -677,15 +677,15 @@
     "aqList": [
       {
         "name": "¿Qué incluye el paquete del curso DET?",
-        "content": "El <a href='https://www.detpractice.com/es/courses'>paquete del curso DET</a> incluye materiales de preparación integral para las cuatro secciones del examen: Lectura, Escucha, Habla y Escritura. Cada sección contiene múltiples cursos interactivos que se centran en tipos específicos de preguntas, con retroalimentación en tiempo real y estrategias prácticas."
+        "content": "El <a href='/es/courses'>paquete del curso DET</a> incluye materiales de preparación integral para las cuatro secciones del examen: Lectura, Escucha, Habla y Escritura. Cada sección contiene múltiples cursos interactivos que se centran en tipos específicos de preguntas, con retroalimentación en tiempo real y estrategias prácticas."
       },
       {
         "name": "¿En qué se diferencia este curso DET de otros materiales de preparación?",
-        "content": "Este curso DET ofrece una combinación única de videolecciones más ejercicios extensivos (puedes encontrarlos en nuestro <a href='https://www.detpractice.com/es/practice'>banco de preguntas de práctica DET</a>) y retroalimentación. Cubre cada tipo de pregunta en el examen e incluye materiales de preparación especializados para cada sección, haciéndolo una solución completa de preparación."
+        "content": "Este curso DET ofrece una combinación única de videolecciones más ejercicios extensivos (puedes encontrarlos en nuestro <a href='/es/practice'>banco de preguntas de práctica DET</a>) y retroalimentación. Cubre cada tipo de pregunta en el examen e incluye materiales de preparación especializados para cada sección, haciéndolo una solución completa de preparación."
       },
       {
         "name": "¿Puedo acceder a los materiales del curso DET según mi horario?",
-        "content": "Sí, todos los materiales del curso DET son gratuitos para todos los miembros en <a href='https://www.detpractice.com/es'>DET Practice</a> y están disponibles 24/7. Puedes estudiar a tu propio ritmo y acceder a los materiales en cualquier momento y lugar."
+        "content": "Sí, todos los materiales del curso DET son gratuitos para todos los miembros en <a href='/es'>DET Practice</a> y están disponibles 24/7. Puedes estudiar a tu propio ritmo y acceder a los materiales en cualquier momento y lugar."
       },
       {
         "name": "¿El curso DET cubre el formato más reciente del examen?",
@@ -769,7 +769,7 @@
     "aqlistfont": [
       {
         "q": "¿Qué hace que su examen de práctica Duolingo sea diferente de otros materiales de práctica?",
-        "a": "Nuestro <a href='https://www.detpractice.com/es/mock-exam'>examen de práctica Duolingo</a> refleja con precisión el formato oficial del examen, el tiempo y el nivel de dificultad. Proporcionamos análisis de rendimiento integral y recomendaciones de estudio personalizadas después de cada sesión de práctica."
+        "a": "Nuestro <a href='/es/mock-exam'>examen de práctica Duolingo</a> refleja con precisión el formato oficial del examen, el tiempo y el nivel de dificultad. Proporcionamos análisis de rendimiento integral y recomendaciones de estudio personalizadas después de cada sesión de práctica."
       },
       {
         "q": "¿Cuánto tiempo lleva completar un examen de práctica Duolingo completo?",
@@ -781,7 +781,7 @@
       },
       {
         "q": "¿Puedo tomar el examen de práctica Duolingo varias veces?",
-        "a": "¡Sí! Puedes tomar nuestro <a href='https://www.detpractice.com/es/mock-exam'>examen de práctica DET</a> tantas veces como necesites. Cada intento proporciona nuevas perspectivas y ayuda a rastrear tu progreso con el tiempo."
+        "a": "¡Sí! Puedes tomar nuestro <a href='/es/mock-exam'>examen de práctica DET</a> tantas veces como necesites. Cada intento proporciona nuevas perspectivas y ayuda a rastrear tu progreso con el tiempo."
       },
       {
         "q": "¿Necesito instalar software especial para el examen de práctica Duolingo?",
@@ -789,7 +789,7 @@
       },
       {
         "q": "¿Qué tan actualizados están sus contenidos del examen de práctica Duolingo?",
-        "a": "Actualizamos regularmente nuestros <a href='https://www.detpractice.com/es'>materiales de práctica DET</a> para reflejar el formato de prueba más reciente y los tipos de preguntas, asegurando que te prepares con el contenido más actual."
+        "a": "Actualizamos regularmente nuestros <a href='/es'>materiales de práctica DET</a> para reflejar el formato de prueba más reciente y los tipos de preguntas, asegurando que te prepares con el contenido más actual."
       }
     ],
     "embarkfont": {
@@ -824,7 +824,7 @@
     },
     "article3": {
       "h2": "Evaluación de Speaking y Writing DET basada en IA",
-      "right_desc": "Recibe retroalimentación instantánea para tus respuestas del Duolingo English Test. Nuestro sistema de IA analiza en tiempo real tus envíos de <a href='https://www.detpractice.com/es/speaking-ai-correction'>speaking DET</a> y <a href='https://www.detpractice.com/es/writing-ai-correction'>writing DET</a>, proporcionando puntuación detallada y sugerencias sobre pronunciación, fluidez, gramática y uso de vocabulario para ayudarte a mejorar con precisión y confianza.",
+      "right_desc": "Recibe retroalimentación instantánea para tus respuestas del Duolingo English Test. Nuestro sistema de IA analiza en tiempo real tus envíos de <a href='/es/speaking-ai-correction'>speaking DET</a> y <a href='/es/writing-ai-correction'>writing DET</a>, proporcionando puntuación detallada y sugerencias sobre pronunciación, fluidez, gramática y uso de vocabulario para ayudarte a mejorar con precisión y confianza.",
       "btn": "Comenzar Evaluación"
     },
     "article4": {
@@ -839,7 +839,7 @@
         "a": "Nos especializamos en la práctica del Duolingo English Test con materiales profesionalmente diseñados que coinciden exactamente con el formato real del examen y sus requisitos."
       },
       {
-        "q": "¿Con qué frecuencia debería estudiar con <a href='https://www.detpractice.com/es'>DET Practice</a>?",
+        "q": "¿Con qué frecuencia debería estudiar con <a href='/es'>DET Practice</a>?",
         "a": "Para resultados óptimos, recomendamos 2-3 horas de práctica enfocada diariamente, idealmente comenzando al menos 2 semanas antes de tu fecha real de examen."
       },
       {
@@ -848,7 +848,7 @@
       },
       {
         "q": "¿Qué tan actualizado está el contenido de DET Practice?",
-        "a": "Nuestros materiales de <a href='https://www.detpractice.com/es/practice'>práctica del Duolingo English Test</a> se actualizan continuamente para reflejar los últimos patrones y requisitos del examen, asegurando que siempre estés preparado."
+        "a": "Nuestros materiales de <a href='/es/practice'>práctica del Duolingo English Test</a> se actualizan continuamente para reflejar los últimos patrones y requisitos del examen, asegurando que siempre estés preparado."
       },
       {
         "q": "¿En qué se diferencia la práctica del Duolingo English Test del aprendizaje general de inglés?",
@@ -898,7 +898,7 @@
     "aqlistfont": [
       {
         "q": "¿Qué tan precisa es su evaluación IA comparada con el examen real de speaking DET?",
-        "a": "Nuestro sistema de calificación IA de <a href='https://www.detpractice.com/es'>DET Practice</a> está calibrado basado en extensos análisis de resultados de exámenes reales. Aunque ninguna herramienta de práctica puede garantizar puntajes exactamente coincidentes, nuestro sistema ha ayudado a miles de estudiantes a predecir su desempeño en speaking DET con más del 90% de precisión."
+        "a": "Nuestro sistema de calificación IA de <a href='/es'>DET Practice</a> está calibrado basado en extensos análisis de resultados de exámenes reales. Aunque ninguna herramienta de práctica puede garantizar puntajes exactamente coincidentes, nuestro sistema ha ayudado a miles de estudiantes a predecir su desempeño en speaking DET con más del 90% de precisión."
       },
       {
         "q": "¿Puedo practicar tipos específicos de preguntas de speaking DET?",
@@ -906,11 +906,11 @@
       },
       {
         "q": "¿Qué tan rápido recibiré retroalimentación después de enviar mi respuesta de speaking?",
-        "a": "Nuestra IA proporciona retroalimentación instantánea en minutos después de completar tu respuesta. Cada sesión de DET Practice incluye un análisis detallado de tu pronunciación, fluidez y contenido - permitiéndote mejorar inmediatamente tus habilidades de <a href='https://www.detpractice.com/es/speaking-ai-correction'>speaking DET</a>."
+        "a": "Nuestra IA proporciona retroalimentación instantánea en minutos después de completar tu respuesta. Cada sesión de DET Practice incluye un análisis detallado de tu pronunciación, fluidez y contenido - permitiéndote mejorar inmediatamente tus habilidades de <a href='/es/speaking-ai-correction'>speaking DET</a>."
       },
       {
         "q": "¿Qué debo hacer si mis puntajes de speaking DET son consistentemente bajos?",
-        "a": "DET Practice proporciona estrategias de mejora dirigidas basadas en tus patrones de desempeño. Si tienes dificultades con aspectos específicos del <a href='https://www.detpractice.com/es/speaking-ai-correction'>speaking DET</a>, nuestra IA identificará las áreas problemáticas y sugerirá ejercicios enfocados para ayudarte a mejorar."
+        "a": "DET Practice proporciona estrategias de mejora dirigidas basadas en tus patrones de desempeño. Si tienes dificultades con aspectos específicos del <a href='/es/speaking-ai-correction'>speaking DET</a>, nuestra IA identificará las áreas problemáticas y sugerirá ejercicios enfocados para ayudarte a mejorar."
       },
       {
         "q": "¿Ofrecen exámenes de práctica que simulen la sección real de speaking DET?",

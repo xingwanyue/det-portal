@@ -536,8 +536,8 @@
           "a": "Sistem penilaian AI kami dikalibrasi sesuai standar DET resmi, memberikan tingkat akurasi lebih dari 95% dibandingkan dengan penilai manusia. Setiap tulisan Duolingo dianalisis dalam berbagai dimensi termasuk tata bahasa, kosa kata, koherensi, dan penyelesaian tugas."
         },
         {
-          "q": "Apa jenis <a href='https://www.detpractice.com/id/writing-ai-correction'>umpan balik tulisan Duolingo</a> yang akan saya terima?",
-          "a": "Sistem <a href='https://www.detpractice.com/id'>DET Practice</a> kami memberikan umpan balik komprehensif termasuk:<br>- Koreksi tata bahasa dan kosa kata terperinci<br>- Analisis struktur dan koherensi<br>- Evaluasi relevansi konten<br>- Saran spesifik untuk perbaikan<br>- Perkiraan skor Tulisan Duolingo"
+          "q": "Apa jenis <a href='/id/writing-ai-correction'>umpan balik tulisan Duolingo</a> yang akan saya terima?",
+          "a": "Sistem <a href='/id'>DET Practice</a> kami memberikan umpan balik komprehensif termasuk:<br>- Koreksi tata bahasa dan kosa kata terperinci<br>- Analisis struktur dan koherensi<br>- Evaluasi relevansi konten<br>- Saran spesifik untuk perbaikan<br>- Perkiraan skor Tulisan Duolingo"
         },
         {
           "q": "Berapa lama waktu yang diperlukan untuk mengevaluasi tulisan Duolingo saya?",
@@ -545,15 +545,15 @@
         },
         {
           "q": "Apa saja jenis prompt tulisan Duolingo yang tersedia untuk latihan?",
-          "a": "Sistem kami menawarkan berbagai prompt latihan berkualitas tinggi yang dirancang dengan cermat untuk membantu Anda mempersiapkan bagian <a href='https://www.detpractice.com/id/writing-ai-correction'>Tulisan Duolingo</a>. Setiap prompt mengikuti format dan tingkat kesulitan DET yang terstandarisasi."
+          "a": "Sistem kami menawarkan berbagai prompt latihan berkualitas tinggi yang dirancang dengan cermat untuk membantu Anda mempersiapkan bagian <a href='/id/writing-ai-correction'>Tulisan Duolingo</a>. Setiap prompt mengikuti format dan tingkat kesulitan DET yang terstandarisasi."
         },
         {
           "q": "Berapa banyak esai yang bisa saya kirim untuk dievaluasi?",
-          "a": "Sebagai anggota premium DET Practice, Anda dapat membeli kredit koreksi tulisan sesuai kebutuhan Anda. <a href='https://www.detpractice.com/id/writing-ai-correction'>Kredit koreksi tulisan Duolingo</a> ini dapat digunakan kapan saja selama periode langganan aktif Anda. Tidak ada batasan jumlah paket evaluasi yang dapat Anda beli - cukup beli jumlah koreksi yang Anda butuhkan untuk rencana belajar Anda."
+          "a": "Sebagai anggota premium DET Practice, Anda dapat membeli kredit koreksi tulisan sesuai kebutuhan Anda. <a href='/id/writing-ai-correction'>Kredit koreksi tulisan Duolingo</a> ini dapat digunakan kapan saja selama periode langganan aktif Anda. Tidak ada batasan jumlah paket evaluasi yang dapat Anda beli - cukup beli jumlah koreksi yang Anda butuhkan untuk rencana belajar Anda."
         },
         {
           "q": "Apakah umpan balik disesuaikan dengan tingkat penulisan saya?",
-          "a": "Ya, sistem AI kami menyesuaikan umpan balik berdasarkan kemampuan menulis Anda. Baik Anda pemula atau penulis tingkat lanjut, Anda akan menerima saran yang relevan untuk meningkatkan performa <a href='https://www.detpractice.com/id/writing-ai-correction'>Tulisan DET</a> Anda."
+          "a": "Ya, sistem AI kami menyesuaikan umpan balik berdasarkan kemampuan menulis Anda. Baik Anda pemula atau penulis tingkat lanjut, Anda akan menerima saran yang relevan untuk meningkatkan performa <a href='/id/writing-ai-correction'>Tulisan DET</a> Anda."
         }
       ],
       "embarkfont": {
@@ -675,15 +675,15 @@
       "aqList": [
         {
           "name": "Apa saja yang termasuk dalam paket kursus DET?",
-          "content": "<a href='https://www.detpractice.com/id/courses'>Paket kursus DET</a> mencakup materi persiapan komprehensif untuk semua empat bagian tes: Reading, Listening, Speaking, dan Writing. Setiap bagian berisi beberapa kursus interaktif yang fokus pada tipe soal tertentu, dengan umpan balik real-time dan strategi praktis."
+          "content": "<a href='/id/courses'>Paket kursus DET</a> mencakup materi persiapan komprehensif untuk semua empat bagian tes: Reading, Listening, Speaking, dan Writing. Setiap bagian berisi beberapa kursus interaktif yang fokus pada tipe soal tertentu, dengan umpan balik real-time dan strategi praktis."
         },
         {
           "name": "Apa yang membedakan kursus DET ini dari materi persiapan lainnya?",
-          "content": "Kursus DET ini menawarkan kombinasi unik dari video pembelajaran plus latihan ekstensif (Anda dapat menemukannya di <a href='https://www.detpractice.com/id/practice'>bank soal latihan DET</a> kami), dan umpan balik. Ini mencakup setiap tipe soal dalam tes dan mencakup materi persiapan khusus untuk setiap bagian, menjadikannya solusi persiapan lengkap."
+          "content": "Kursus DET ini menawarkan kombinasi unik dari video pembelajaran plus latihan ekstensif (Anda dapat menemukannya di <a href='/id/practice'>bank soal latihan DET</a> kami), dan umpan balik. Ini mencakup setiap tipe soal dalam tes dan mencakup materi persiapan khusus untuk setiap bagian, menjadikannya solusi persiapan lengkap."
         },
         {
           "name": "Bisakah saya mengakses materi kursus DET sesuai jadwal saya?",
-          "content": "Ya, semua materi kursus DET gratis untuk semua anggota di <a href='https://www.detpractice.com/id'>DET Practice</a>, dan tersedia 24/7. Anda dapat belajar sesuai kecepatan Anda dan mengakses materi kapan saja, di mana saja."
+          "content": "Ya, semua materi kursus DET gratis untuk semua anggota di <a href='/id'>DET Practice</a>, dan tersedia 24/7. Anda dapat belajar sesuai kecepatan Anda dan mengakses materi kapan saja, di mana saja."
         },
         {
           "name": "Apakah kursus DET mencakup format tes terbaru?",
@@ -767,7 +767,7 @@
       "aqlistfont": [
         {
           "q": "Apa yang membuat tes simulasi Duolingo Anda berbeda dari materi latihan lainnya?",
-          "a": "<a href='https://www.detpractice.com/id/mock-exam'>Tes simulasi Duolingo</a> kami secara tepat mencerminkan format ujian resmi, waktu, dan tingkat kesulitan. Kami menyediakan analisis performa komprehensif dan rekomendasi belajar personal setelah setiap sesi latihan."
+          "a": "<a href='/id/mock-exam'>Tes simulasi Duolingo</a> kami secara tepat mencerminkan format ujian resmi, waktu, dan tingkat kesulitan. Kami menyediakan analisis performa komprehensif dan rekomendasi belajar personal setelah setiap sesi latihan."
         },
         {
           "q": "Berapa lama waktu yang dibutuhkan untuk menyelesaikan tes simulasi Duolingo lengkap?",
@@ -779,7 +779,7 @@
         },
         {
           "q": "Bisakah saya mengambil tes simulasi Duolingo beberapa kali?",
-          "a": "Ya! Anda dapat mengambil <a href='https://www.detpractice.com/id/mock-exam'>tes simulasi DET</a> kami sebanyak yang Anda butuhkan. Setiap percobaan memberikan wawasan baru dan membantu melacak kemajuan Anda dari waktu ke waktu."
+          "a": "Ya! Anda dapat mengambil <a href='/id/mock-exam'>tes simulasi DET</a> kami sebanyak yang Anda butuhkan. Setiap percobaan memberikan wawasan baru dan membantu melacak kemajuan Anda dari waktu ke waktu."
         },
         {
           "q": "Apakah saya perlu menginstal perangkat lunak khusus untuk tes simulasi Duolingo?",
@@ -787,7 +787,7 @@
         },
         {
           "q": "Seberapa up-to-date konten tes simulasi Duolingo Anda?",
-          "a": "Kami secara rutin memperbarui materi <a href='https://www.detpractice.com/id'>latihan DET</a> kami untuk mencerminkan format tes dan tipe soal terbaru, memastikan Anda bersiap dengan konten yang paling mutakhir."
+          "a": "Kami secara rutin memperbarui materi <a href='/id'>latihan DET</a> kami untuk mencerminkan format tes dan tipe soal terbaru, memastikan Anda bersiap dengan konten yang paling mutakhir."
         }
       ],
       "embarkfont": {
@@ -822,7 +822,7 @@
       },
       "article3": {
         "h2": "Evaluasi Speaking & Writing DET Berbasis AI",
-        "right_desc": "Dapatkan umpan balik instan untuk jawaban Tes Bahasa Inggris Duolingo Anda. Sistem AI kami menganalisis pengiriman <a href='https://www.detpractice.com/id/speaking-ai-correction'>speaking DET</a> dan <a href='https://www.detpractice.com/id/writing-ai-correction'>writing DET</a> Anda secara real-time, memberikan penilaian terperinci dan saran tentang pengucapan, kelancaran, tata bahasa, dan penggunaan kosakata untuk membantu Anda meningkat dengan tepat dan percaya diri.",
+        "right_desc": "Dapatkan umpan balik instan untuk jawaban Tes Bahasa Inggris Duolingo Anda. Sistem AI kami menganalisis pengiriman <a href='/id/speaking-ai-correction'>speaking DET</a> dan <a href='/id/writing-ai-correction'>writing DET</a> Anda secara real-time, memberikan penilaian terperinci dan saran tentang pengucapan, kelancaran, tata bahasa, dan penggunaan kosakata untuk membantu Anda meningkat dengan tepat dan percaya diri.",
         "btn": "Mulai Evaluasi Anda"
       },
       "article4": {
@@ -837,7 +837,7 @@
           "a": "Kami mengkhususkan diri dalam latihan Tes Bahasa Inggris Duolingo, dengan materi yang dirancang khusus sesuai format dan persyaratan tes yang sebenarnya."
         },
         {
-          "q": "Seberapa sering saya harus belajar dengan <a href='https://www.detpractice.com/id'>DET Practice</a>?",
+          "q": "Seberapa sering saya harus belajar dengan <a href='/id'>DET Practice</a>?",
           "a": "Untuk hasil optimal, kami menyarankan 2-3 jam latihan fokus setiap hari, idealnya dimulai setidaknya 2 minggu sebelum tanggal tes Anda."
         },
         {
@@ -846,7 +846,7 @@
         },
         {
           "q": "Seberapa terkini konten DET Practice?",
-          "a": "Materi <a href='https://www.detpractice.com/id/practice'>latihan Tes Bahasa Inggris Duolingo</a> kami terus diperbarui untuk mencerminkan pola dan persyaratan tes terbaru, memastikan Anda selalu siap."
+          "a": "Materi <a href='/id/practice'>latihan Tes Bahasa Inggris Duolingo</a> kami terus diperbarui untuk mencerminkan pola dan persyaratan tes terbaru, memastikan Anda selalu siap."
         },
         {
           "q": "Bagaimana latihan Tes Bahasa Inggris Duolingo berbeda dari belajar Bahasa Inggris umum?",
@@ -896,7 +896,7 @@
       "aqlistfont": [
         {
           "q": "Seberapa akurat penilaian AI Anda dibandingkan dengan tes speaking DET yang sebenarnya?",
-          "a": "Sistem penilaian AI <a href='https://www.detpractice.com/id'>DET Practice</a> kami dikalibrasi berdasarkan analisis mendalam dari hasil tes nyata. Meskipun tidak ada alat latihan yang dapat menjamin skor yang persis sama, sistem kami telah membantu ribuan siswa memprediksi performa speaking DET mereka dengan akurasi lebih dari 90%."
+          "a": "Sistem penilaian AI <a href='/id'>DET Practice</a> kami dikalibrasi berdasarkan analisis mendalam dari hasil tes nyata. Meskipun tidak ada alat latihan yang dapat menjamin skor yang persis sama, sistem kami telah membantu ribuan siswa memprediksi performa speaking DET mereka dengan akurasi lebih dari 90%."
         },
         {
           "q": "Apakah saya bisa berlatih tipe soal speaking DET tertentu?",
@@ -904,11 +904,11 @@
         },
         {
           "q": "Berapa lama saya akan menerima umpan balik setelah mengirimkan jawaban speaking?",
-          "a": "AI kami memberikan umpan balik instan dalam hitungan menit setelah Anda menyelesaikan jawaban. Setiap sesi DET Practice mencakup analisis mendetail tentang pengucapan, kelancaran, dan konten Anda - memungkinkan Anda untuk segera meningkatkan kemampuan <a href='https://www.detpractice.com/id/speaking-ai-correction'>speaking DET</a> Anda."
+          "a": "AI kami memberikan umpan balik instan dalam hitungan menit setelah Anda menyelesaikan jawaban. Setiap sesi DET Practice mencakup analisis mendetail tentang pengucapan, kelancaran, dan konten Anda - memungkinkan Anda untuk segera meningkatkan kemampuan <a href='/id/speaking-ai-correction'>speaking DET</a> Anda."
         },
         {
           "q": "Apa yang harus saya lakukan jika skor speaking DET saya terus rendah?",
-          "a": "DET Practice menyediakan strategi peningkatan yang ditargetkan berdasarkan pola performa Anda. Jika Anda kesulitan dengan aspek tertentu dari <a href='https://www.detpractice.com/id/speaking-ai-correction'>speaking DET</a>, AI kami akan mengidentifikasi area masalah dan menyarankan latihan yang fokus untuk membantu Anda meningkat."
+          "a": "DET Practice menyediakan strategi peningkatan yang ditargetkan berdasarkan pola performa Anda. Jika Anda kesulitan dengan aspek tertentu dari <a href='/id/speaking-ai-correction'>speaking DET</a>, AI kami akan mengidentifikasi area masalah dan menyarankan latihan yang fokus untuk membantu Anda meningkat."
         },
         {
           "q": "Apakah Anda menyediakan tes latihan yang mensimulasikan bagian speaking DET yang sebenarnya?",

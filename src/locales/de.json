@@ -537,8 +537,8 @@
         "a": "Unser KI-Bewertungssystem ist auf offizielle DET-Standards kalibriert und bietet eine Genauigkeit von über 95% im Vergleich zu menschlichen Bewertern. Jede Duolingo-Schreibeinreichung wird in mehreren Dimensionen analysiert, einschließlich Grammatik, Wortschatz, Kohärenz und Aufgabenerfüllung."
       },
       {
-        "q": "Welche Art von <a href='https://www.detpractice.com/de/writing-ai-correction'>Duolingo-Schreibfeedback</a> werde ich erhalten?",
-        "a": "Unser <a href='https://www.detpractice.com/de'>DET Practice</a> System bietet umfassendes Feedback, einschließlich:<br>- Detaillierte Grammatik- und Wortschatzkorrekturen<br>- Struktur- und Kohärenzanalyse<br>- Bewertung der Inhaltsrelevanz<br>- Spezifische Verbesserungsvorschläge<br>- Geschätzte Duolingo-Schreibpunktzahl"
+        "q": "Welche Art von <a href='/de/writing-ai-correction'>Duolingo-Schreibfeedback</a> werde ich erhalten?",
+        "a": "Unser <a href='/de'>DET Practice</a> System bietet umfassendes Feedback, einschließlich:<br>- Detaillierte Grammatik- und Wortschatzkorrekturen<br>- Struktur- und Kohärenzanalyse<br>- Bewertung der Inhaltsrelevanz<br>- Spezifische Verbesserungsvorschläge<br>- Geschätzte Duolingo-Schreibpunktzahl"
       },
       {
         "q": "Wie lange dauert die Bewertung meines Duolingo-Schreibens?",
@@ -546,15 +546,15 @@
       },
       {
         "q": "Welche Arten von Duolingo-Schreibaufgaben stehen zur Übung zur Verfügung?",
-        "a": "Unser System bietet vielfältige, hochwertige Übungsaufgaben, die sorgfältig entwickelt wurden, um Sie auf den <a href='https://www.detpractice.com/de/writing-ai-correction'>Duolingo-Schreibteil</a> vorzubereiten. Jede Aufgabe folgt dem standardisierten DET-Format und Schwierigkeitsgrad."
+        "a": "Unser System bietet vielfältige, hochwertige Übungsaufgaben, die sorgfältig entwickelt wurden, um Sie auf den <a href='/de/writing-ai-correction'>Duolingo-Schreibteil</a> vorzubereiten. Jede Aufgabe folgt dem standardisierten DET-Format und Schwierigkeitsgrad."
       },
       {
         "q": "Wie viele Aufsätze kann ich zur Bewertung einreichen?",
-        "a": "Als DET Practice Premium-Mitglied können Sie Schreibkorrektur-Guthaben nach Ihren Bedürfnissen erwerben. Diese <a href='https://www.detpractice.com/de/writing-ai-correction'>Duolingo-Schreibkorrektur</a>-Guthaben können während Ihrer aktiven Abonnementlaufzeit jederzeit genutzt werden. Es gibt keine Begrenzung für die Anzahl der Bewertungspakete, die Sie erwerben können - kaufen Sie einfach die Anzahl der Korrekturen, die Sie für Ihren Studienplan benötigen."
+        "a": "Als DET Practice Premium-Mitglied können Sie Schreibkorrektur-Guthaben nach Ihren Bedürfnissen erwerben. Diese <a href='/de/writing-ai-correction'>Duolingo-Schreibkorrektur</a>-Guthaben können während Ihrer aktiven Abonnementlaufzeit jederzeit genutzt werden. Es gibt keine Begrenzung für die Anzahl der Bewertungspakete, die Sie erwerben können - kaufen Sie einfach die Anzahl der Korrekturen, die Sie für Ihren Studienplan benötigen."
       },
       {
         "q": "Wird das Feedback an mein Schreibniveau angepasst?",
-        "a": "Ja, unser KI-System passt das Feedback an Ihre Schreibfähigkeiten an. Ob Sie Anfänger oder fortgeschrittener Schreiber sind, Sie erhalten relevante Vorschläge zur Verbesserung Ihrer <a href='https://www.detpractice.com/de/writing-ai-correction'>DET-Schreibleistung</a>."
+        "a": "Ja, unser KI-System passt das Feedback an Ihre Schreibfähigkeiten an. Ob Sie Anfänger oder fortgeschrittener Schreiber sind, Sie erhalten relevante Vorschläge zur Verbesserung Ihrer <a href='/de/writing-ai-correction'>DET-Schreibleistung</a>."
       }
     ],
     "embarkfont": {
@@ -676,15 +676,15 @@
     "aqList": [
       {
         "name": "Was ist im DET-Kurspaket enthalten?",
-        "content": "Das <a href='https://www.detpractice.com/de/courses'>DET-Kurspaket</a> enthält umfassende Vorbereitungsmaterialien für alle vier Testbereiche: Lesen, Hören, Sprechen und Schreiben. Jeder Bereich enthält mehrere interaktive Kurse, die sich auf spezifische Fragetypen konzentrieren, mit Echtzeit-Feedback und praktischen Strategien."
+        "content": "Das <a href='/de/courses'>DET-Kurspaket</a> enthält umfassende Vorbereitungsmaterialien für alle vier Testbereiche: Lesen, Hören, Sprechen und Schreiben. Jeder Bereich enthält mehrere interaktive Kurse, die sich auf spezifische Fragetypen konzentrieren, mit Echtzeit-Feedback und praktischen Strategien."
       },
       {
         "name": "Wie unterscheidet sich dieser DET-Kurs von anderen Vorbereitungsmaterialien?",
-        "content": "Dieser DET-Kurs bietet eine einzigartige Kombination aus Videolektionen plus umfangreiche Übungen (die Sie in unserer <a href='https://www.detpractice.com/de/practice'>DET-Übungsfragenbank</a> finden können) und Feedback. Er deckt jeden Fragetyp im Test ab und enthält spezialisierte Vorbereitungsmaterialien für jeden Bereich, was ihn zu einer vollständigen Vorbereitungslösung macht."
+        "content": "Dieser DET-Kurs bietet eine einzigartige Kombination aus Videolektionen plus umfangreiche Übungen (die Sie in unserer <a href='/de/practice'>DET-Übungsfragenbank</a> finden können) und Feedback. Er deckt jeden Fragetyp im Test ab und enthält spezialisierte Vorbereitungsmaterialien für jeden Bereich, was ihn zu einer vollständigen Vorbereitungslösung macht."
       },
       {
         "name": "Kann ich auf die DET-Kursmaterialien nach meinem eigenen Zeitplan zugreifen?",
-        "content": "Ja, alle DET-Kursmaterialien sind für alle Mitglieder auf <a href='https://www.detpractice.com/de'>DET Practice</a> kostenlos und rund um die Uhr verfügbar. Sie können in Ihrem eigenen Tempo lernen und jederzeit und überall auf die Materialien zugreifen."
+        "content": "Ja, alle DET-Kursmaterialien sind für alle Mitglieder auf <a href='/de'>DET Practice</a> kostenlos und rund um die Uhr verfügbar. Sie können in Ihrem eigenen Tempo lernen und jederzeit und überall auf die Materialien zugreifen."
       },
       {
         "name": "Deckt der DET-Kurs das neueste Testformat ab?",
@@ -768,7 +768,7 @@
     "aqlistfont": [
       {
         "q": "Was macht Ihren Duolingo Übungstest anders als andere Übungsmaterialien?",
-        "a": "Unser <a href='https://www.detpractice.com/de/mock-exam'>Duolingo Übungstest</a> spiegelt das offizielle Prüfungsformat, Timing und Schwierigkeitsniveau präzise wider. Wir bieten umfassende Leistungsanalysen und personalisierte Lernempfehlungen nach jeder Übungssitzung."
+        "a": "Unser <a href='/de/mock-exam'>Duolingo Übungstest</a> spiegelt das offizielle Prüfungsformat, Timing und Schwierigkeitsniveau präzise wider. Wir bieten umfassende Leistungsanalysen und personalisierte Lernempfehlungen nach jeder Übungssitzung."
       },
       {
         "q": "Wie lange dauert ein vollständiger Duolingo Übungstest?",
@@ -780,7 +780,7 @@
       },
       {
         "q": "Kann ich den Duolingo Übungstest mehrmals absolvieren?",
-        "a": "Ja! Sie können unseren <a href='https://www.detpractice.com/de/mock-exam'>DET Übungstest</a> so oft wie nötig absolvieren. Jeder Versuch liefert neue Erkenntnisse und hilft Ihnen, Ihren Fortschritt im Laufe der Zeit zu verfolgen."
+        "a": "Ja! Sie können unseren <a href='/de/mock-exam'>DET Übungstest</a> so oft wie nötig absolvieren. Jeder Versuch liefert neue Erkenntnisse und hilft Ihnen, Ihren Fortschritt im Laufe der Zeit zu verfolgen."
       },
       {
         "q": "Muss ich spezielle Software für den Duolingo Übungstest installieren?",
@@ -788,7 +788,7 @@
       },
       {
         "q": "Wie aktuell sind Ihre Duolingo Übungstestinhalte?",
-        "a": "Wir aktualisieren unsere <a href='https://www.detpractice.com/de'>DET Übungsmaterialien</a> regelmäßig, um das neueste Testformat und die aktuellsten Fragetypen widerzuspiegeln und sicherzustellen, dass Sie mit den aktuellsten Inhalten üben."
+        "a": "Wir aktualisieren unsere <a href='/de'>DET Übungsmaterialien</a> regelmäßig, um das neueste Testformat und die aktuellsten Fragetypen widerzuspiegeln und sicherzustellen, dass Sie mit den aktuellsten Inhalten üben."
       }
     ],
     "embarkfont": {
@@ -823,7 +823,7 @@
     },
     "article3": {
       "h2": "KI-gestützte DET Sprech- & Schreibbewertung",
-      "right_desc": "Erhalten Sie sofortiges Feedback zu Ihren Duolingo English Test Antworten. Unser KI-System analysiert Ihre <a href='https://www.detpractice.com/de/speaking-ai-correction'>DET-Sprech-</a> und <a href='https://www.detpractice.com/de/writing-ai-correction'>DET-Schreibeinreichungen</a> in Echtzeit und bietet detaillierte Bewertungen und Vorschläge zu Aussprache, Flüssigkeit, Grammatik und Wortschatzverwendung, um Ihnen zu helfen, sich präzise und selbstbewusst zu verbessern.",
+      "right_desc": "Erhalten Sie sofortiges Feedback zu Ihren Duolingo English Test Antworten. Unser KI-System analysiert Ihre <a href='/de/speaking-ai-correction'>DET-Sprech-</a> und <a href='/de/writing-ai-correction'>DET-Schreibeinreichungen</a> in Echtzeit und bietet detaillierte Bewertungen und Vorschläge zu Aussprache, Flüssigkeit, Grammatik und Wortschatzverwendung, um Ihnen zu helfen, sich präzise und selbstbewusst zu verbessern.",
       "btn": "Bewertung starten"
     },
     "article4": {
@@ -838,7 +838,7 @@
         "a": "Wir sind auf Duolingo English Test Übung spezialisiert, mit professionell entwickelten Materialien, die genau dem realen Testformat und den Anforderungen entsprechen."
       },
       {
-        "q": "Wie oft sollte ich mit <a href='https://www.detpractice.com/de'>DET Practice</a> lernen?",
+        "q": "Wie oft sollte ich mit <a href='/de'>DET Practice</a> lernen?",
         "a": "Für optimale Ergebnisse empfehlen wir 2-3 Stunden fokussiertes Üben täglich, idealerweise beginnend mindestens 2 Wochen vor Ihrem tatsächlichen Testtermin."
       },
       {
@@ -847,7 +847,7 @@
       },
       {
         "q": "Wie aktuell sind die Inhalte von DET Practice?",
-        "a": "Unsere <a href='https://www.detpractice.com/de/practice'>Duolingo English Test Übungsmaterialien</a> werden kontinuierlich aktualisiert, um die neuesten Testmuster und Anforderungen widerzuspiegeln und sicherzustellen, dass Sie immer vorbereitet sind."
+        "a": "Unsere <a href='/de/practice'>Duolingo English Test Übungsmaterialien</a> werden kontinuierlich aktualisiert, um die neuesten Testmuster und Anforderungen widerzuspiegeln und sicherzustellen, dass Sie immer vorbereitet sind."
       },
       {
         "q": "Wie unterscheidet sich Duolingo English Test Übung vom allgemeinen Englischlernen?",
@@ -897,7 +897,7 @@
     "aqlistfont": [
       {
         "q": "Wie genau ist Ihre KI-Bewertung im Vergleich zum echten DET-Sprechtest?",
-        "a": "Unser <a href='https://www.detpractice.com/de'>DET Practice</a> KI-Bewertungssystem wurde auf Basis umfangreicher Analysen echter Testergebnisse kalibriert. Obwohl kein Übungstool exakt übereinstimmende Punktzahlen garantieren kann, hat unser System bereits Tausenden von Studenten geholfen, ihre DET-Sprechleistung mit über 90% Genauigkeit vorherzusagen."
+        "a": "Unser <a href='/de'>DET Practice</a> KI-Bewertungssystem wurde auf Basis umfangreicher Analysen echter Testergebnisse kalibriert. Obwohl kein Übungstool exakt übereinstimmende Punktzahlen garantieren kann, hat unser System bereits Tausenden von Studenten geholfen, ihre DET-Sprechleistung mit über 90% Genauigkeit vorherzusagen."
       },
       {
         "q": "Kann ich bestimmte DET-Sprechaufgabentypen üben?",
@@ -905,11 +905,11 @@
       },
       {
         "q": "Wie schnell erhalte ich Feedback nach dem Einreichen meiner Sprechantwort?",
-        "a": "Unsere KI liefert sofortiges Feedback innerhalb weniger Minuten nach Abschluss Ihrer Antwort. Jede DET Practice-Sitzung enthält eine detaillierte Analyse Ihrer Aussprache, Sprachflüssigkeit und Ihres Inhalts - damit Sie Ihre <a href='https://www.detpractice.com/de/speaking-ai-correction'>DET-Sprechfähigkeiten</a> sofort verbessern können."
+        "a": "Unsere KI liefert sofortiges Feedback innerhalb weniger Minuten nach Abschluss Ihrer Antwort. Jede DET Practice-Sitzung enthält eine detaillierte Analyse Ihrer Aussprache, Sprachflüssigkeit und Ihres Inhalts - damit Sie Ihre <a href='/de/speaking-ai-correction'>DET-Sprechfähigkeiten</a> sofort verbessern können."
       },
       {
         "q": "Was kann ich tun, wenn meine DET-Sprechbewertungen konstant niedrig sind?",
-        "a": "DET Practice bietet gezielte Verbesserungsstrategien basierend auf Ihren Leistungsmustern. Wenn Sie mit bestimmten Aspekten des <a href='https://www.detpractice.com/de/speaking-ai-correction'>DET-Sprechens</a> Schwierigkeiten haben, identifiziert unsere KI die Problembereiche und schlägt fokussierte Übungen zur Verbesserung vor."
+        "a": "DET Practice bietet gezielte Verbesserungsstrategien basierend auf Ihren Leistungsmustern. Wenn Sie mit bestimmten Aspekten des <a href='/de/speaking-ai-correction'>DET-Sprechens</a> Schwierigkeiten haben, identifiziert unsere KI die Problembereiche und schlägt fokussierte Übungen zur Verbesserung vor."
       },
       {
         "q": "Bieten Sie Übungstests an, die den echten DET-Sprechteil simulieren?",
