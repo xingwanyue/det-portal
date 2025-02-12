@@ -774,38 +774,69 @@
   },
   "practice": {
     "seometa": {
-      "title": "Preparación DET {'|'} Banco de Preguntas Duolingo con IA Integrada",
-      "description": "¿Buscas prepararte para el Duolingo English Test? Accede a más de 18.000 ejercicios con retroalimentación por inteligencia artificial y seguimiento personalizado. Únete a más de 400.000 estudiantes que ya mejoraron su puntuación en el DET.",
-      "keywords": "preparación DET, ejercicios Duolingo, práctica examen DET, banco preguntas Duolingo, simulador DET, ejercicios speaking DET, práctica writing DET, preparación inglés online, materiales estudio DET, evaluación IA inglés"
+      "title": "Práctica del Duolingo English Test - Mejora de Puntuación con IA",
+      "description": "Práctica del Duolingo English Test con más de 18.000 preguntas. Entrenador de speaking con IA, rutas de aprendizaje inteligentes y análisis detallado. ¡Únete a más de 400.000 estudiantes exitosos!"
     },
-    "h1": "Práctica del Duolingo English Test",
-    "desc": "Accede a una amplia colección de preguntas de examen, enriquecida con análisis de respuestas, plantillas, evaluaciones de expresión oral con IA y planificación inteligente. Mejora tu puntuación de manera eficiente y económica con nuestro enfoque basado en IA.",
-    "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
-    "altbanner": "Duolingo English Test Práctica",
-    "bank_user_icon": "Icono de usuario del banco",
-    "white_arrow_right": "Flecha Blanca Derecha",
-    "blue_arrow_right": "Flecha Azul Derecha",
-    "learners_have": "Más de {number} estudiantes han utilizado nuestro banco de preguntas para prepararse para el DET.",
+    "h1": "El Mejor Banco de Preguntas de Práctica para el Duolingo English Test",
+    "descnew": "Práctica del Duolingo English Test potenciada por IA para cada sección del DET",
+    "desc": "Accede a una amplia colección de preguntas de práctica del Duolingo English Test, complementada con análisis de respuestas, plantillas, evaluación de speaking y writing basada en IA, y planificación inteligente. Mejora tu puntuación de manera eficiente y económica con nuestro enfoque basado en IA.",
+    "alt": "DET Practice: La Mejor Plataforma de Práctica para el Duolingo English Test",
+    "altbanner": "Práctica del Duolingo English Test",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "blue_arrow_right": "Blue Arrow Right",
+    "learners_have": "Banco de preguntas DET para mejorar la puntuación - Confiado por {number} examinandos",
     "spn": "Comienza a Practicar Ahora",
     "article1": {
-      "h2": "El Banco de Preguntas Más Grande",
-      "right_desc": "Explora nuestra amplia biblioteca de más de 18,000 preguntas en diversos tipos de exámenes, actualizada constantemente para mantener tu práctica al día. Nuestro banco de preguntas está diseñado para fortalecer tus habilidades de examen en varios formatos de preguntas de forma sistemática.",
-      "btn": "Sumérgete en la Práctica"
+      "h2": "Más de 18.000 Preguntas de Práctica DET y Aumentando",
+      "right_desc": "Accede al banco de preguntas de práctica más completo del Duolingo English Test, cubriendo todas las secciones del examen desde reading hasta speaking. Mantente adelante con nuestro contenido regularmente actualizado que refleja los últimos patrones del examen - la ruta más rápida hacia tu puntuación objetivo en el DET.",
+      "btn": "Comenzar Práctica DET"
     },
     "article2": {
-      "h2": "Recomendación Inteligente",
-      "right_desc": "El modelo de IA considera el nivel de dominio de cada tipo de pregunta, dificultad, puntuación objetivo, peso de la pregunta, novedad, frecuencia del examen, tiempo de preparación y eficiencia en la puntuación para recomendar preguntas específicas que optimicen tu preparación.",
-      "btn": "Comienza tu Viaje de Estudio Inteligente"
+      "h2": "Ruta Inteligente de Práctica del Duolingo English Test",
+      "right_desc": "Obtén tu ruta de aprendizaje personalizada para dominar el Duolingo English Test. Nuestro sistema de IA analiza continuamente tu rendimiento en cada tipo de pregunta, tu puntuación objetivo y cronograma, los patrones actuales del examen, niveles de dificultad de las preguntas y tu ritmo único de aprendizaje para crear la ruta más eficiente hacia tu puntuación objetivo - eliminando las conjeturas y el tiempo perdido en preparación ineficaz.",
+      "btn": "Iniciar Aprendizaje DET Inteligente"
     },
     "article3": {
-      "h2": "Evaluación de Expresión Oral con IA",
-      "right_desc": "Mejora tu competencia oral con nuestras evaluaciones de expresión oral basadas en IA. Envía tu respuesta a una pregunta hablada y recibe de inmediato un análisis detallado de tus habilidades de expresión, ayudándote a mejorar de manera precisa y rápida.",
-      "btn": "Comienza tu Evaluación"
+      "h2": "Evaluación de Speaking y Writing DET basada en IA",
+      "right_desc": "Recibe retroalimentación instantánea para tus respuestas del Duolingo English Test. Nuestro sistema de IA analiza en tiempo real tus envíos de <a href='https://www.detpractice.com/speaking-ai-correction'>speaking DET</a> y <a href='https://www.detpractice.com/writing-ai-correction'>writing DET</a>, proporcionando puntuación detallada y sugerencias sobre pronunciación, fluidez, gramática y uso de vocabulario para ayudarte a mejorar con precisión y confianza.",
+      "btn": "Comenzar Evaluación"
     },
     "article4": {
-      "h2": "Análisis de Respuestas",
-      "right_desc": "Sumérgete en explicaciones completas de las respuestas que profundizan tu comprensión de los conceptos clave y técnicas de resolución de problemas. Nuestros análisis detallados no solo te guían hacia las respuestas correctas, sino que amplían tu conocimiento y aumentan la eficiencia de tu estudio.",
-      "btn": "Explora los Insights de Respuestas"
+      "h2": "Análisis de Respuestas de Práctica del Duolingo English Test",
+      "right_desc": "Obtén explicaciones detalladas para tus respuestas de práctica del Duolingo English Test. Nuestra IA desglosa cada pregunta, revela la lógica detrás de las respuestas y destaca patrones importantes del examen - ayudándote a dominar conceptos esenciales mientras maximizas la eficiencia de estudio para el DET.",
+      "btn": "Explorar Análisis de Respuestas"
+    },
+    "aqtitle": "Preguntas frecuentes sobre nuestra <span class='yellow'>Práctica del Duolingo English Test</span>",
+    "aqlistfont": [
+      {
+        "q": "¿Por qué DET Practice es la mejor opción para la práctica del Duolingo English Test?",
+        "a": "Nos especializamos en la práctica del Duolingo English Test con materiales profesionalmente diseñados que coinciden exactamente con el formato real del examen y sus requisitos."
+      },
+      {
+        "q": "¿Con qué frecuencia debería estudiar con <a href='https://www.detpractice.com'>DET Practice</a>?",
+        "a": "Para resultados óptimos, recomendamos 2-3 horas de práctica enfocada diariamente, idealmente comenzando al menos 2 semanas antes de tu fecha real de examen."
+      },
+      {
+        "q": "¿Por qué es esencial la práctica del Duolingo English Test?",
+        "a": "Los datos de usuarios de DET Practice muestran que la preparación sistemática tiene un impacto significativo en las puntuaciones, con nuestros estudiantes obteniendo en promedio 15-20 puntos más en su examen final."
+      },
+      {
+        "q": "¿Qué tan actualizado está el contenido de DET Practice?",
+        "a": "Nuestros materiales de <a href='https://www.detpractice.com/practice'>práctica del Duolingo English Test</a> se actualizan continuamente para reflejar los últimos patrones y requisitos del examen, asegurando que siempre estés preparado."
+      },
+      {
+        "q": "¿En qué se diferencia la práctica del Duolingo English Test del aprendizaje general de inglés?",
+        "a": "A diferencia del aprendizaje general de inglés, la preparación enfocada para el examen requiere familiaridad con tipos específicos de preguntas y gestión del tiempo - exactamente lo que nuestra plataforma proporciona."
+      },
+      {
+        "q": "¿Cuándo debería comenzar la preparación para el DET?",
+        "a": "La mayoría de los estudiantes exitosos comienzan la práctica enfocada del Duolingo English Test aproximadamente un mes antes de su fecha programada de examen para una mejora óptima de la puntuación."
+      }
+    ],
+    "embarkfont": {
+      "title": "¡Comienza la práctica del <span class='yellow'>Duolingo English Test</span> para obtener una alta puntuación en el DET!",
+      "btnText": "Practicar Ahora"
     }
   },
   "speakingaicorrection": {

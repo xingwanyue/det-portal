@@ -774,38 +774,69 @@
   },
   "practice": {
     "seometa": {
-      "title": "DET Hazırlık Platformu {'|'} Yapay Zeka Destekli Duolingo Sınav Bankası",
-      "description": "Duolingo İngilizce Testi için en kapsamlı hazırlık platformu! 18.000'den fazla soru, yapay zeka geri bildirimi ve akıllı ilerleme takibi ile DET puanınızı yükseltin. 400.000'den fazla öğrencinin tercih ettiği sınav hazırlık sistemi.",
-      "keywords": "DET hazırlık, Duolingo sınav soruları, DET örnek sorular, Duolingo test çalışması, DET soru bankası, DET konuşma pratiği, DET yazma alıştırmaları, online İngilizce test çalışması, DET çalışma materyalleri, yapay zeka değerlendirmesi"
+      "title": "Duolingo İngilizce Testi Pratik - Yapay Zeka Destekli Puan Yükseltici",
+      "description": "18.000+ soru ile Duolingo İngilizce Testi pratiği. Yapay zeka konuşma koçu, akıllı çalışma yolları ve detaylı analizler. 400.000+ başarılı öğrenciye katılın!"
     },
-    "h1": "Duolingo English Test Hazırlık Merkezi",
-    "desc": "Detaylı çözümler, örnek yanıtlar, yapay zeka destekli konuşma değerlendirmesi ve kişisel çalışma planı sunan kapsamlı test platformu. Yapay zeka teknolojimizle hedef puanınıza uygun maliyetle ve verimli şekilde ulaşın",
-    "alt": "DET Pratik: En iyi Duolingo English Test Pratik platformu",
-    "altbanner": "Duolingo English Test Uygulama",
-    "bank_user_icon": "Banka Kullanıcı Simgesi",
-    "white_arrow_right": "Beyaz Ok Sağ",
-    "blue_arrow_right": "Mavi Ok Sağ",
-    "learners_have": "{number}'den fazla öğrenci DET hazırlığında bizi tercih etti",
-    "spn": "Hemen Çalışmaya Başla",
+    "h1": "En İyi Duolingo İngilizce Testi Pratik Soru Bankası",
+    "descnew": "Her DET Bölümü için Yapay Zeka Destekli Duolingo İngilizce Testi Pratiği",
+    "desc": "Cevap analizleri, şablonlar, yapay zeka destekli konuşma ve yazma değerlendirmeleri ve akıllı planlama ile zenginleştirilmiş kapsamlı Duolingo İngilizce Testi pratik sorularına erişin. Yapay zeka destekli yaklaşımımızla uygun fiyata verimli puan artışı sağlayın.",
+    "alt": "DET Pratik: En İyi Duolingo İngilizce Testi Pratik Platformu",
+    "altbanner": "Duolingo İngilizce Testi Pratiği",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "blue_arrow_right": "Blue Arrow Right",
+    "learners_have": "Puan yükseltici DET pratik soru bankası - {number} test adayının güvendiği platform",
+    "spn": "Şimdi Pratik Yapmaya Başla",
     "article1": {
-      "h2": "Türkiye'nin En Kapsamlı Soru Bankası",
-      "right_desc": "Sürekli güncellenen 18.000'den fazla soru ile tüm sınav konularını kapsayan içerikler. Düzenli güncellemeler ile en yeni sınav formatına uygun, sistematik öğrenmeyi destekleyen soru bankası.",
-      "btn": "Pratik Yapmaya Başla"
+      "h2": "18.000+ DET Pratik Sorusu ve Artmaya Devam Ediyor",
+      "right_desc": "Okumadan konuşmaya tüm sınav bölümlerini kapsayan en kapsamlı Duolingo İngilizce Testi pratik soru bankasına erişin. En son test kalıplarını yansıtan düzenli güncellenen içeriğimizle önde olun - hedef DET puanınıza ulaşmanın en hızlı yolu.",
+      "btn": "DET Pratiğine Başla"
     },
     "article2": {
-      "h2": "Akıllı Öğrenme Sistemi",
-      "right_desc": "Yapay zeka sistemimiz seviyenizi, hedef puanınızı, konu ağırlıklarını, güncel sınav eğilimlerini, çalışma sürenizi ve gelişim hızınızı analiz ederek size en uygun soruları sunar.",
-      "btn": "Kişisel Öğrenme Yolculuğunuza Başlayın"
+      "h2": "Akıllı Duolingo İngilizce Testi Pratik Yolu",
+      "right_desc": "Duolingo İngilizce Testi pratiği için kişiselleştirilmiş çalışma yolunuzu alın. Yapay zeka sistemimiz, her soru türündeki performansınızı, hedef puanınızı ve zaman çizelgenizi, mevcut test kalıplarını, soru zorluk seviyelerini ve benzersiz öğrenme hızınızı sürekli analiz ederek hedef puanınıza giden en verimli rotayı oluşturur - tahminleri ve verimsiz hazırlıkta harcanan zamanı ortadan kaldırır.",
+      "btn": "Akıllı DET Çalışmana Başla"
     },
     "article3": {
-      "h2": "Yapay Zeka ile Konuşma Analizi",
-      "right_desc": "Konuşma becerilerinizi yapay zeka teknolojisiyle geliştirin. Ses kaydınızı yükleyin, anında detaylı geri bildirim alın ve hızla ilerleme kaydedin.",
-      "btn": "Konuşma Değerlendirmesine Başla"
+      "h2": "Yapay Zeka Destekli DET Konuşma ve Yazma Değerlendirmesi",
+      "right_desc": "Duolingo İngilizce Testi yanıtlarınız için anında geri bildirim alın. Yapay zeka sistemimiz, <a href='https://www.detpractice.com/speaking-ai-correction'>DET konuşma</a> ve <a href='https://www.detpractice.com/writing-ai-correction'>DET yazma</a> gönderilerinizi gerçek zamanlı olarak analiz eder, telaffuz, akıcılık, dilbilgisi ve kelime kullanımı konusunda detaylı puanlama ve öneriler sunar, hassas ve güvenli bir şekilde gelişmenize yardımcı olur.",
+      "btn": "Değerlendirmeye Başla"
     },
     "article4": {
-      "h2": "Ayrıntılı Çözümler",
-      "right_desc": "Her sorunun detaylı çözümüyle konuları derinlemesine öğrenin. Çözümlerimiz sadece doğru cevabı göstermekle kalmaz, konuyu tam öğrenmenizi ve çalışma verimliliğinizi artırmanızı sağlar.",
-      "btn": "Çözümleri İncele"
+      "h2": "Duolingo İngilizce Testi Pratik Cevap Analizi",
+      "right_desc": "Duolingo İngilizce Testi pratik cevaplarınız için detaylı açıklamalar alın. Yapay zekamız her soruyu analiz eder, cevapların arkasındaki mantığı ortaya çıkarır ve önemli test kalıplarını vurgular - DET için çalışma verimliliğinizi en üst düzeye çıkarırken temel kavramları öğrenmenize yardımcı olur.",
+      "btn": "Cevap Analizlerini Keşfet"
+    },
+    "aqtitle": "<span class='yellow'>Duolingo İngilizce Testi Pratiği</span> hakkında Sık Sorulan Sorular",
+    "aqlistfont": [
+      {
+        "q": "DET Practice neden Duolingo İngilizce Testi pratiği için en iyi seçimdir?",
+        "a": "Gerçek test formatı ve gereksinimlerini tam olarak karşılayan profesyonelce tasarlanmış materyallerle Duolingo İngilizce Testi pratiğinde uzmanlaşmış durumdayız."
+      },
+      {
+        "q": "<a href='https://www.detpractice.com'>DET Practice</a> ile ne sıklıkla çalışmalıyım?",
+        "a": "Optimum sonuçlar için, ideal olarak gerçek test tarihinden en az 2 hafta önce başlayarak günde 2-3 saat odaklanmış pratik yapmanızı öneririz."
+      },
+      {
+        "q": "Duolingo İngilizce Testi pratiği neden önemlidir?",
+        "a": "DET Practice kullanıcı verileri, sistematik hazırlığın puanlar üzerinde önemli bir etkisi olduğunu gösteriyor; öğrencilerimiz final testlerinde ortalama 15-20 puan daha yüksek alıyor."
+      },
+      {
+        "q": "DET Practice'in içeriği ne kadar güncel?",
+        "a": "<a href='https://www.detpractice.com/practice'>Duolingo İngilizce Testi pratik</a> materyallerimiz, en son test kalıplarını ve gereksinimlerini yansıtacak şekilde sürekli güncelleniyor, her zaman hazır olmanızı sağlıyor."
+      },
+      {
+        "q": "Duolingo İngilizce Testi pratiği genel İngilizce öğreniminden nasıl farklıdır?",
+        "a": "Genel İngilizce öğreniminden farklı olarak, odaklanmış test hazırlığı belirli soru türleri ve zaman yönetimi konusunda aşinalık gerektirir - platformumuzun sağladığı tam olarak budur."
+      },
+      {
+        "q": "DET hazırlığına ne zaman başlamalıyım?",
+        "a": "Başarılı öğrencilerin çoğu, optimum puan artışı için planlanan test tarihinden yaklaşık bir ay önce odaklanmış Duolingo İngilizce Testi pratiğine başlıyor."
+      }
+    ],
+    "embarkfont": {
+      "title": "DET'te yüksek puan almak için <span class='yellow'>Duolingo İngilizce Testi</span> pratiğine başlayın!",
+      "btnText": "Şimdi Pratik Yap"
     }
   },
   "speakingaicorrection": {

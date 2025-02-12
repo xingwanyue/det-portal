@@ -772,38 +772,69 @@
     },
     "practice": {
       "seometa": {
-        "title": "Latihan DET {'|'} Bank Soal Duolingo English Test dengan AI Pintar",
-        "description": "Sedang persiapan Duolingo English Test? Akses lebih dari 18.000 soal lengkap dengan feedback AI dan sistem tracking otomatis. Bergabung bersama 400.000+ pelajar yang sudah berhasil meningkatkan skor DET mereka.",
-        "keywords": "atihan DET, soal Duolingo test, contoh soal DET, persiapan Duolingo, bank soal DET, latihan speaking DET, latihan writing DET, latihan tes Inggris online, materi belajar DET, evaluasi berbicara AI"
+        "title": "Latihan Tes Bahasa Inggris Duolingo - Peningkat Skor Berbasis AI",
+        "description": "Latihan Tes Bahasa Inggris Duolingo dengan 18.000+ soal. Pelatih speaking AI, jalur belajar cerdas, dan analisis terperinci. Bergabung dengan 400rb+ pelajar sukses!"
       },
-      "h1": "Latihan Duolingo English Test",
-      "desc": "Akses ribuan soal lengkap dengan analisis jawaban, template, penilaian speaking berbasis AI, dan pembelajaran terencana. Tingkatkan nilai Anda secara efektif dan ekonomis dengan teknologi AI kami.",
-      "alt": "DET Latihan:Yang terbaik Duolingo English Test Platform latihan",
-      "altbanner": "Duolingo English Test Latihan",
-      "bank_user_icon": "Ikon Pengguna Bank",
-      "white_arrow_right": "Panah Putih Kanan",
-      "blue_arrow_right": "Panah Biru Kanan",
-      "learners_have": "Sudah lebih dari {number} peserta menggunakan bank soal kami untuk persiapan DET.",
+      "h1": "Bank Soal Latihan Tes Bahasa Inggris Duolingo Terbaik",
+      "descnew": "Latihan Tes Bahasa Inggris Duolingo dengan AI untuk Setiap Bagian DET",
+      "desc": "Dapatkan akses ke koleksi lengkap soal latihan Tes Bahasa Inggris Duolingo, dilengkapi dengan analisis jawaban, template, evaluasi speaking dan writing berbasis AI, serta perencanaan cerdas. Tingkatkan skor Anda secara efisien dan terjangkau dengan pendekatan berbasis AI kami.",
+      "alt": "DET Practice: Platform Latihan Tes Bahasa Inggris Duolingo Terbaik",
+      "altbanner": "Latihan Tes Bahasa Inggris Duolingo",
+      "bank_user_icon": "Bank User Icon",
+      "white_arrow_right": "White Arrow Right",
+      "blue_arrow_right": "Blue Arrow Right",
+      "learners_have": "Bank soal latihan DET untuk meningkatkan skor - Dipercaya oleh {number} peserta tes",
       "spn": "Mulai Berlatih Sekarang",
       "article1": {
-        "h2": "Bank Soal Terlengkap",
-        "right_desc": "Dapatkan akses ke lebih dari 18.000 soal berbagai tipe yang selalu diperbarui sesuai perkembangan ujian terkini. Bank soal kami dirancang untuk meningkatkan kemampuan Anda secara sistematis dalam menghadapi berbagai format soal.",
-        "btn": "Mulai Latihan"
+        "h2": "18rb+ Soal Latihan DET & Terus Bertambah",
+        "right_desc": "Akses bank soal latihan Tes Bahasa Inggris Duolingo paling lengkap, mencakup semua bagian ujian dari reading hingga speaking. Tetap terdepan dengan konten kami yang diperbarui secara berkala sesuai pola tes terbaru - cara tercepat untuk mencapai skor DET target Anda.",
+        "btn": "Mulai Latihan DET"
       },
       "article2": {
-        "h2": "Sistem Rekomendasi Cerdas",
-        "right_desc": "AI kami menganalisis tingkat kemahiran per tipe soal, tingkat kesulitan, target nilai, tingkat kepentingan soal, kebaruan materi, frekuensi soal dalam ujian, waktu persiapan, dan efektivitas pembelajaran untuk memberikan rekomendasi soal yang paling sesuai.",
-        "btn": "Mulai Belajar Pintar"
+        "h2": "Jalur Latihan Tes Bahasa Inggris Duolingo yang Cerdas",
+        "right_desc": "Dapatkan jalur belajar personal untuk menguasai latihan Tes Bahasa Inggris Duolingo. Sistem AI kami terus menganalisis performa Anda di setiap jenis soal, target skor dan timeline, pola tes terkini, tingkat kesulitan soal, dan kecepatan belajar Anda untuk merancang rute paling efisien menuju skor target Anda - menghilangkan keraguan dan waktu terbuang untuk persiapan yang tidak efektif.",
+        "btn": "Mulai Belajar DET Cerdas"
       },
       "article3": {
-        "h2": "Penilaian Speaking dengan AI",
-        "right_desc": "Tingkatkan kemampuan speaking Anda dengan penilaian AI. Kirimkan rekaman jawaban Anda dan dapatkan analisis detail secara instan untuk perbaikan yang cepat dan tepat.",
-        "btn": "Mulai Penilaian"
+        "h2": "Evaluasi Speaking & Writing DET Berbasis AI",
+        "right_desc": "Dapatkan umpan balik instan untuk jawaban Tes Bahasa Inggris Duolingo Anda. Sistem AI kami menganalisis pengiriman <a href='https://www.detpractice.com/speaking-ai-correction'>speaking DET</a> dan <a href='https://www.detpractice.com/writing-ai-correction'>writing DET</a> Anda secara real-time, memberikan penilaian terperinci dan saran tentang pengucapan, kelancaran, tata bahasa, dan penggunaan kosakata untuk membantu Anda meningkat dengan tepat dan percaya diri.",
+        "btn": "Mulai Evaluasi Anda"
       },
       "article4": {
-        "h2": "Pembahasan Lengkap",
-        "right_desc": "Pelajari pembahasan mendalam untuk memahami konsep penting dan teknik penyelesaian soal. Analisis kami tidak sekadar memberikan jawaban benar, tapi juga membantu meningkatkan pemahaman dan efisiensi belajar Anda.",
-        "btn": "Lihat Pembahasan"
+        "h2": "Analisis Jawaban Latihan Tes Bahasa Inggris Duolingo",
+        "right_desc": "Dapatkan penjelasan terperinci untuk jawaban latihan Tes Bahasa Inggris Duolingo Anda. AI kami menguraikan setiap pertanyaan, mengungkap alasan di balik jawaban, dan menyoroti pola tes penting - membantu Anda menguasai konsep penting sambil memaksimalkan efisiensi belajar untuk DET.",
+        "btn": "Jelajahi Wawasan Jawaban"
+      },
+      "aqtitle": "FAQ tentang <span class='yellow'>Latihan Tes Bahasa Inggris Duolingo</span> kami",
+      "aqlistfont": [
+        {
+          "q": "Mengapa DET Practice adalah pilihan terbaik untuk Latihan Tes Bahasa Inggris Duolingo?",
+          "a": "Kami mengkhususkan diri dalam latihan Tes Bahasa Inggris Duolingo, dengan materi yang dirancang khusus sesuai format dan persyaratan tes yang sebenarnya."
+        },
+        {
+          "q": "Seberapa sering saya harus belajar dengan <a href='https://www.detpractice.com'>DET Practice</a>?",
+          "a": "Untuk hasil optimal, kami menyarankan 2-3 jam latihan fokus setiap hari, idealnya dimulai setidaknya 2 minggu sebelum tanggal tes Anda."
+        },
+        {
+          "q": "Apa yang membuat latihan Tes Bahasa Inggris Duolingo penting?",
+          "a": "Data pengguna DET Practice menunjukkan bahwa persiapan sistematis berdampak signifikan pada skor, dengan siswa kami rata-rata mendapat nilai 15-20 poin lebih tinggi pada tes akhir mereka."
+        },
+        {
+          "q": "Seberapa terkini konten DET Practice?",
+          "a": "Materi <a href='https://www.detpractice.com/practice'>latihan Tes Bahasa Inggris Duolingo</a> kami terus diperbarui untuk mencerminkan pola dan persyaratan tes terbaru, memastikan Anda selalu siap."
+        },
+        {
+          "q": "Bagaimana latihan Tes Bahasa Inggris Duolingo berbeda dari belajar Bahasa Inggris umum?",
+          "a": "Berbeda dengan pembelajaran Bahasa Inggris umum, persiapan tes yang terfokus membutuhkan pemahaman tentang jenis soal tertentu dan manajemen waktu - tepat seperti yang disediakan platform kami."
+        },
+        {
+          "q": "Kapan saya harus mulai persiapan DET?",
+          "a": "Kebanyakan siswa yang sukses memulai latihan Tes Bahasa Inggris Duolingo terfokus sekitar satu bulan sebelum tanggal tes yang dijadwalkan untuk peningkatan skor optimal."
+        }
+      ],
+      "embarkfont": {
+        "title": "Mulai Latihan <span class='yellow'>Tes Bahasa Inggris Duolingo</span> untuk mendapatkan skor tinggi di DET!",
+        "btnText": "Latihan Sekarang"
       }
     },
     "speakingaicorrection": {

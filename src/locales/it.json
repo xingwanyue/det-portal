@@ -774,38 +774,69 @@
   },
   "practice": {
     "seometa": {
-      "title": "Preparazione al DET {'|'} Banca Dati Duolingo con Intelligenza Artificiale",
-      "description": "Cerchi un modo efficace per prepararti al Duolingo English Test? Accedi alla nostra piattaforma con oltre 18.000 quesiti, feedback intelligente e monitoraggio AI. Unisciti a più di 400.000 studenti che hanno già migliorato il loro punteggio DET.",
-      "keywords": "esercizi DET, preparazione Duolingo test, simulazione DET, esercitazioni Duolingo, banca dati DET, pratica speaking DET, esercizi writing DET, allenamento test inglese online, materiale didattico DET, valutazione AI speaking"
+      "title": "Esercitazione Duolingo English Test - Miglioramento del Punteggio con IA",
+      "description": "Esercitazione Duolingo English Test con oltre 18.000 domande. Coach di speaking con IA, percorsi di apprendimento intelligenti e analisi dettagliate. Unisciti a oltre 400.000 studenti di successo!"
     },
-    "h1": "Centro di Preparazione Duolingo English Test",
-    "desc": "Accedi a una raccolta completa di esercizi con spiegazioni dettagliate, esempi di risposte, valutazione AI del parlato e piano di studio personalizzato. Ottieni il punteggio desiderato in modo efficace ed economico grazie alla nostra tecnologia avanzata",
-    "alt": "DET Pratica:La migliore Duolingo English Test piattaforma di Pratica",
-    "altbanner": "Duolingo English Test Pratica",
-    "bank_user_icon": "Icona Utente della Banca",
-    "white_arrow_right": "Freccia Bianca Destra",
-    "blue_arrow_right": "Freccia Blu a Destra",
-    "learners_have": "Più di {number} candidati si sono preparati con il nostro sistema.",
-    "spn": "Inizia ad Esercitarti",
+    "h1": "La Migliore Banca di Esercizi per il Duolingo English Test",
+    "descnew": "Esercitazione Duolingo English Test potenziata dall'IA per ogni sezione del DET",
+    "desc": "Accedi a un'ampia raccolta di esercizi del Duolingo English Test, arricchita con analisi delle risposte, modelli, valutazioni di speaking e writing basate sull'IA e pianificazione intelligente. Migliora il tuo punteggio in modo efficiente ed economico con il nostro approccio basato sull'IA.",
+    "alt": "DET Practice: La Migliore Piattaforma di Esercitazione per il Duolingo English Test",
+    "altbanner": "Esercitazione Duolingo English Test",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "blue_arrow_right": "Blue Arrow Right",
+    "learners_have": "Banca di esercizi DET per migliorare il punteggio - Fidata da {number} candidati",
+    "spn": "Inizia a Esercitarti Ora",
     "article1": {
-      "h2": "La Banca Dati Più Completa",
-      "right_desc": "Oltre 18.000 quesiti costantemente aggiornati che coprono tutti gli aspetti dell'esame. Un sistema strutturato per sviluppare metodicamente le competenze richieste in ogni sezione del test.",
-      "btn": "Comincia ad Allenarti"
+      "h2": "Oltre 18.000 Esercizi DET e in Crescita",
+      "right_desc": "Accedi alla più completa banca di esercizi del Duolingo English Test, che copre tutte le sezioni dell'esame dal reading allo speaking. Rimani all'avanguardia con i nostri contenuti regolarmente aggiornati che riflettono gli ultimi modelli del test - la via più rapida per raggiungere il tuo punteggio target al DET.",
+      "btn": "Inizia l'Esercitazione DET"
     },
     "article2": {
-      "h2": "Sistema di Raccomandazione Intelligente",
-      "right_desc": "Il nostro sistema AI analizza il tuo livello di preparazione, la difficoltà degli esercizi, il punteggio target, la rilevanza dei contenuti, gli aggiornamenti del test, i tempi di preparazione e i progressi per suggerirti il percorso di studio ottimale.",
-      "btn": "Avvia il Tuo Percorso Personalizzato"
+      "h2": "Percorso Intelligente di Esercitazione al Duolingo English Test",
+      "right_desc": "Ottieni il tuo percorso di apprendimento personalizzato per padroneggiare il Duolingo English Test. Il nostro sistema IA analizza continuamente le tue prestazioni in ogni tipo di domanda, il tuo punteggio obiettivo e la programmazione, i modelli attuali del test, i livelli di difficoltà delle domande e il tuo ritmo di apprendimento unico per creare il percorso più efficiente verso il tuo obiettivo - eliminando le supposizioni e il tempo perso in preparazione inefficace.",
+      "btn": "Inizia l'Apprendimento DET Intelligente"
     },
     "article3": {
-      "h2": "Valutazione AI del Speaking",
-      "right_desc": "Perfeziona le tue competenze orali con la nostra valutazione AI. Registra le tue risposte e ricevi immediatamente un'analisi dettagliata per migliorare in modo mirato e rapido.",
+      "h2": "Valutazione DET di Speaking e Writing basata sull'IA",
+      "right_desc": "Ricevi feedback istantaneo per le tue risposte al Duolingo English Test. Il nostro sistema IA analizza in tempo reale i tuoi invii di <a href='https://www.detpractice.com/speaking-ai-correction'>speaking DET</a> e <a href='https://www.detpractice.com/writing-ai-correction'>writing DET</a>, fornendo punteggi dettagliati e suggerimenti su pronuncia, fluidità, grammatica e uso del vocabolario per aiutarti a migliorare con precisione e sicurezza.",
       "btn": "Inizia la Valutazione"
     },
     "article4": {
-      "h2": "Analisi Approfondite",
-      "right_desc": "Comprendi a fondo ogni esercizio grazie alle spiegazioni complete. Le nostre soluzioni non si limitano a mostrarti la risposta corretta, ma ti aiutano a padroneggiare i concetti chiave e le strategie di studio più efficaci.",
-      "btn": "Scopri le Soluzioni"
+      "h2": "Analisi delle Risposte di Esercitazione al Duolingo English Test",
+      "right_desc": "Ottieni spiegazioni dettagliate per le tue risposte di esercitazione al Duolingo English Test. La nostra IA scompone ogni domanda, rivela la logica dietro le risposte e evidenzia importanti modelli del test - aiutandoti a padroneggiare i concetti essenziali mentre massimizzi l'efficienza dello studio per il DET.",
+      "btn": "Esplora le Analisi delle Risposte"
+    },
+    "aqtitle": "Domande frequenti sulla nostra <span class='yellow'>Esercitazione al Duolingo English Test</span>",
+    "aqlistfont": [
+      {
+        "q": "Perché DET Practice è la scelta migliore per l'esercitazione al Duolingo English Test?",
+        "a": "Siamo specializzati nell'esercitazione al Duolingo English Test con materiali progettati professionalmente che corrispondono esattamente al formato reale dell'esame e ai suoi requisiti."
+      },
+      {
+        "q": "Con quale frequenza dovrei studiare con <a href='https://www.detpractice.com'>DET Practice</a>?",
+        "a": "Per risultati ottimali, raccomandiamo 2-3 ore di esercitazione mirata al giorno, idealmente iniziando almeno 2 settimane prima della data effettiva del test."
+      },
+      {
+        "q": "Perché l'esercitazione al Duolingo English Test è essenziale?",
+        "a": "I dati degli utenti di DET Practice mostrano che la preparazione sistematica ha un impatto significativo sui punteggi, con i nostri studenti che ottengono in media 15-20 punti in più nel loro test finale."
+      },
+      {
+        "q": "Quanto sono aggiornati i contenuti di DET Practice?",
+        "a": "I nostri materiali di <a href='https://www.detpractice.com/practice'>esercitazione al Duolingo English Test</a> vengono continuamente aggiornati per riflettere gli ultimi modelli del test e requisiti, assicurando che tu sia sempre preparato."
+      },
+      {
+        "q": "In che modo l'esercitazione al Duolingo English Test differisce dall'apprendimento generale dell'inglese?",
+        "a": "A differenza dell'apprendimento generale dell'inglese, la preparazione mirata all'esame richiede familiarità con specifici tipi di domande e gestione del tempo - esattamente ciò che la nostra piattaforma fornisce."
+      },
+      {
+        "q": "Quando dovrei iniziare la preparazione al DET?",
+        "a": "La maggior parte degli studenti di successo inizia l'esercitazione mirata al Duolingo English Test circa un mese prima della data programmata dell'esame per un miglioramento ottimale del punteggio."
+      }
+    ],
+    "embarkfont": {
+      "title": "Inizia l'esercitazione al <span class='yellow'>Duolingo English Test</span> per ottenere un punteggio elevato al DET!",
+      "btnText": "Esercitati Ora"
     }
   },
   "speakingaicorrection": {
