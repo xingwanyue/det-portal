@@ -50,6 +50,7 @@ const userPingLunResponse = computed(() => {
     pinglunMid[i + 1].rate = Number(pinglunMid[i + 1].rate);
     pinglunArr.push([pinglunMid[i], pinglunMid[i + 1]]);
   }
+  console.log(pinglunArr);
   return pinglunArr;
 });
 const haveCookie = ref(false);
@@ -431,7 +432,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         <div class="review_scroll_out">
           <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
             <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
-              <Slide v-for="(item, index) in userPingLunResponse" :key="index" class="two_card_out">
+              <Slide
+                v-for="(item, index) in userPingLunResponse.concat(userPingLunResponse)"
+                :key="index"
+                class="two_card_out"
+              >
                 <div class="width100">
                   <div class="one_card">
                     <div class="one_card_top">
