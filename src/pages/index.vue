@@ -431,7 +431,14 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
         <div class="review_scroll_out">
           <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
-            <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true">
+            <Carousel
+              :itemsToShow="4"
+              :autoplay="2000"
+              :wrap-around="true"
+              :pauseAutoplayOnHover="true"
+              :snap-align="'center'"
+              :items-to-scroll="1"
+            >
               <Slide
                 v-for="(item, index) in userPingLunResponse.concat(userPingLunResponse)"
                 :key="index"
@@ -1252,10 +1259,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           overflow: hidden;
           .two_card_out {
             // border: 1px red solid;
-            margin-left: 12px;
-            width: 432px !important;
+            padding: 0 6px; // 改用 padding 来设置间距
+            width: calc(28% - 12px) !important; // 动态计算宽度，考虑间距
             @media (max-width: 450px) {
-              width: 366px !important;
+              width: calc(100% - 12px) !important;
             }
 
             display: flex;
