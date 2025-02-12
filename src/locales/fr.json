@@ -500,41 +500,66 @@
   },
   "correction": {
     "seometa": {
-      "title": "Duolingo English Test Writing AI {'|'} Vérificateur de Score de Rédaction DET par DET Practice",
-      "description": "Optimisez votre préparation au Duolingo English Test avec notre outil d'évaluation intelligent. Notre système analyse votre rédaction en temps réel et fournit une évaluation précise, des retours personnalisés et des conseils ciblés. Entraînez-vous sur des sujets authentiques du DET et perfectionnez votre expression écrite grâce à nos analyses expertes.",
-      "keywords": "duolingo test rédaction, préparation DET, correction rédaction, évaluation duolingo, retour écrit DET, exercices duolingo, analyse IA, méthodologie DET, techniques rédaction, exemples corrigés, entraînement DET, exercices en ligne"
+      "title": "Correction IA des Écrits Duolingo - Retour Instantané sur les Essais DET",
+      "description": "Perfectionnez vos écrits du Duolingo English Test en quelques minutes. Correction d'essais basée sur l'IA avec notation instantanée, vérification grammaticale et conseils d'expert. Approuvé par plus de 21 000 apprenants."
     },
-    "h1": "Assistant Rédaction DET",
-    "desc": "Notre technologie d'IA égale l'expertise des correcteurs professionnels. Analyse complète selon les critères officiels du DET, avec retour détaillé sous 5 minutes.",
-    "alt": "DET Pratique:La meilleure Duolingo English Test plateforme de pratique",
-    "useralt": "Icône utilisateur",
-    "white_arrow_right": "flèche_blanche_droite",
-    "yellow_arrow_right": "flèche_jaune_droite",
-    "learners_have": "Déjà adopté par plus de {number} candidats.",
-    "Review_Now": "Découvrir",
-    "Correct_Now": "Tester Maintenant",
-    "Get_Scored_Now": "Commencez à expérimenter",
-    "Enhance_Now": "Améliorez maintenant",
-    "Begin_Polishing": "Commencer le polissage",
+    "h1": "Correction IA Instantanée des Écrits Duolingo par DET Practice",
+    "descnew": "Évaluation Professionnelle des Écrits DET en Minutes",
+    "desc": "Obtenez des retours d'expert sur vos tâches d'écriture Duolingo grâce à notre système IA avancé. Vos essais sont analysés selon les critères officiels d'évaluation DET, fournissant des corrections complètes et des suggestions détaillées en 1-5 minutes.",
+    "alt": "DET Practice : La Meilleure Plateforme d'Entraînement pour le Duolingo English Test",
+    "useralt": "User Icon",
+    "white_arrow_right": "white_arrow_right",
+    "yellow_arrow_right": "yellow_arrow_right",
+    "learners_have": "Approuvé par {number} Participants au Duolingo English Test",
+    "Review_Now": "Commencer Maintenant",
+    "Correct_Now": "Essayer Maintenant",
+    "Get_Scored_Now": "Essayer Maintenant",
     "h2_1": {
-      "h2": "Notation Experte",
-      "right_desc": "Choisissez un sujet de notre base et recevez une évaluation détaillée en quelques minutes."
+      "h2": "Analyse Précise des Notes d'Écriture Duolingo",
+      "right_desc": "Soumettez votre tâche d'écriture DET depuis notre banque de questions et recevez un rapport détaillé de notation en 5 minutes. Chaque évaluation suit les critères authentiques du DET."
     },
     "h2_2": {
-      "h2": "Correction Intelligente",
-      "right_desc": "Repérage instantané des erreurs linguistiques avec explications et conseils de remédiation."
+      "h2": "Correction d'Erreurs en Temps Réel",
+      "right_desc": "Identifiez instantanément l'utilisation du vocabulaire, les erreurs grammaticales et les améliorations structurelles dans vos essais Duolingo. Recevez des suggestions exploitables pour chaque correction."
     },
     "h2_3": {
-      "h2": "Accompagnement Expert",
-      "right_desc": "Analyse approfondie selon la grille officielle DET pour optimiser votre performance."
+      "h2": "Retours d'Expert sur les Écrits Duolingo",
+      "right_desc": "Recevez des retours détaillés basés sur les critères officiels d'évaluation DET. Notre système IA analyse votre style d'écriture, l'organisation et le contenu pour vous aider à atteindre votre score cible."
     },
     "h2_4": {
-      "h2": "Perfectionnement Stylistique",
-      "right_desc": "Recommandations précises sur le vocabulaire, la syntaxe et la structure pour maximiser votre score."
+      "h2": "Amélioration Avancée des Écrits Duolingo",
+      "right_desc": "Transformez vos écrits Duolingo de bons à excellents. Notre système fournit des suggestions approfondies pour enrichir le vocabulaire, affiner la structure des phrases et améliorer la cohérence."
     },
-    "h2_5": {
-      "h2": "Polissage du texte original",
-      "right_desc": "Élevez chaque mot et chaque phrase ; affinez la structure et le style pour une composition distinguée et performante."
+    "aqtitle": "FAQ sur notre <span class='yellow'>Correction IA des Écrits Duolingo</span>",
+    "aqlistfont": [
+      {
+        "q": "Quelle est la précision de votre système d'évaluation des écrits Duolingo ?",
+        "a": "Notre système d'évaluation IA est calibré selon les standards officiels DET, offrant une précision supérieure à 95% par rapport aux évaluateurs humains. Chaque soumission d'écrit Duolingo est analysée selon plusieurs dimensions incluant la grammaire, le vocabulaire, la cohérence et l'accomplissement de la tâche."
+      },
+      {
+        "q": "Quels types de <a href='https://www.detpractice.com/writing-ai-correction'>retours sur les écrits Duolingo</a> vais-je recevoir ?",
+        "a": "Notre système <a href='https://www.detpractice.com/'>DET Practice</a> fournit des retours complets incluant :<br>- Corrections détaillées de grammaire et de vocabulaire<br>- Analyse de la structure et de la cohérence<br>- Évaluation de la pertinence du contenu<br>- Suggestions spécifiques d'amélioration<br>- Score estimé pour l'Écrit Duolingo"
+      },
+      {
+        "q": "Combien de temps faut-il pour évaluer mon écrit Duolingo ?",
+        "a": "Vous recevrez votre analyse complète dans les 5 minutes suivant la soumission de votre essai. Cela inclut à la fois votre score d'Écrit DET et des retours détaillés pour l'amélioration."
+      },
+      {
+        "q": "Quels types de sujets d'écriture Duolingo sont disponibles pour l'entraînement ?",
+        "a": "Notre système propose divers sujets d'entraînement de haute qualité, soigneusement conçus pour vous aider à préparer la section <a href='https://www.detpractice.com/writing-ai-correction'>Écriture Duolingo</a>. Chaque sujet suit le format et le niveau de difficulté standardisés du DET."
+      },
+      {
+        "q": "Y a-t-il une limite au nombre d'essais que je peux soumettre pour évaluation ?",
+        "a": "En tant que membre premium DET Practice, vous pouvez acheter des crédits de correction d'écriture selon vos besoins. Ces <a href='https://www.detpractice.com/writing-ai-correction'>crédits de correction d'écrits Duolingo</a> peuvent être utilisés à tout moment pendant votre période d'abonnement active. Il n'y a pas de limite au nombre de packs d'évaluation que vous pouvez acheter - achetez simplement le nombre de corrections dont vous avez besoin pour votre plan d'études."
+      },
+      {
+        "q": "Les retours sont-ils personnalisés selon mon niveau d'écriture ?",
+        "a": "Oui, notre système IA adapte les retours en fonction de vos compétences en écriture. Que vous soyez débutant ou rédacteur avancé, vous recevrez des suggestions pertinentes pour améliorer votre performance en <a href='https://www.detpractice.com/writing-ai-correction'>Écriture DET</a>."
+      }
+    ],
+    "embarkfont": {
+      "title": "Commencez Votre Voyage vers des Scores DET Élevés Aujourd'hui !",
+      "btnText": "Commencer Maintenant"
     }
   },
   "courses": {

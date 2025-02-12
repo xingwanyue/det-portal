@@ -501,41 +501,66 @@
   },
   "correction": {
     "seometa": {
-      "title": "Duolingo English Test Writing AI {'|'} DET Yazma Skor Kontrolörü by DET Practice",
-      "description": "Yapay zeka teknolojisiyle DET yazma becerinizi geliştirin. Gerçek sınav formatında yazılarınızı analiz edin, anında puan ve detaylı geri bildirim alın. Profesyonel düzeyde önerilerle yazma kalitenizi yükseltin ve DET'e tam hazırlıklı olun.",
-      "keywords": "duolingo yazma sınavı, det yazı hazırlık, yazma değerlendirmesi, duolingo puan hesaplama, det yazı örnekleri, yazma alıştırmaları, yapay zeka analizi, det yazı teknikleri, yazma püf noktaları, örnek yazılar, sınav hazırlığı, online pratik"
+      "title": "Duolingo Yazma AI Düzeltmesi - Anında DET Kompozisyon Geri Bildirimi",
+      "description": "Duolingo English Test yazma bölümünüzü dakikalar içinde mükemmelleştirin. Anında puanlama, dilbilgisi kontrolleri ve uzman seviyesinde rehberlik sunan AI destekli kompozisyon düzeltmesi. 21.000+ öğrenci tarafından güvenilen platform."
     },
-    "h1": "Yapay Zeka Destekli Yazı Analizi",
-    "desc": "Uzman öğretmen kalitesinde yapay zeka değerlendirmesi. DET kriterlerine göre 5 dakika içinde kapsamlı analiz.",
-    "alt": "DET Pratik:En iyi Duolingo English Test Pratik platformu",
-    "useralt": "Kullanıcı Simgesi",
-    "white_arrow_right": "beyaz_ok_sağa",
-    "yellow_arrow_right": "sarı_ok_sağa",
-    "learners_have": "{number}'den fazla öğrencinin tercihi.",
-    "Review_Now": "Hemen Dene",
-    "Correct_Now": "Şimdi Başla",
-    "Get_Scored_Now": "Deneyimlemeye başlayın",
-    "Enhance_Now": "Şimdi Geliştir",
-    "Begin_Polishing": "Cilalamayı Başlat",
+    "h1": "DET Practice'den Anında Duolingo Yazma AI Düzeltmesi",
+    "descnew": "Dakikalar İçinde Profesyonel Seviye DET Yazma Puanlaması",
+    "desc": "Gelişmiş AI sistemimiz aracılığıyla Duolingo Yazma görevleriniz için uzman seviyesinde geri bildirim alın. Kompozisyonlarınız resmi DET puanlama kriterlerine göre analiz edilir ve 1-5 dakika içinde kapsamlı düzeltmeler ve detaylı öneriler sunulur.",
+    "alt": "DET Practice: En iyi Duolingo English Test Pratik platformu",
+    "useralt": "Kullanıcı İkonu",
+    "white_arrow_right": "white_arrow_right",
+    "yellow_arrow_right": "yellow_arrow_right",
+    "learners_have": "{number} Duolingo English Test Adayı Tarafından Güvenilen Platform",
+    "Review_Now": "Başlayın",
+    "Correct_Now": "Deneyimlemeye Başla",
+    "Get_Scored_Now": "Deneyimlemeye Başla",
     "h2_1": {
-      "h2": "Hassas Puanlama",
-      "right_desc": "Soru havuzundan seçtiğiniz konuda yazın, dakikalar içinde detaylı değerlendirme alın."
+      "h2": "Hassas Duolingo Yazma Puan Analizi",
+      "right_desc": "Soru bankamızdan DET Yazma görevinizi gönderin ve 5 dakika içinde detaylı bir puan raporu alın. Her değerlendirme otantik DET puanlama kriterlerini takip eder."
     },
     "h2_2": {
-      "h2": "Anlık Düzeltme",
-      "right_desc": "Dil ve anlatım hatalarınızı anında tespit edip, çözüm önerileri sunuyoruz."
+      "h2": "Gerçek Zamanlı Hata Düzeltme",
+      "right_desc": "Duolingo Yazma kompozisyonlarınızdaki kelime kullanımı, dilbilgisi hataları ve yapısal iyileştirmeleri anında belirleyin. Her düzeltme için uygulanabilir öneriler alın."
     },
     "h2_3": {
-      "h2": "Uzman Desteği",
-      "right_desc": "DET değerlendirme ölçütlerine göre eksiksiz analiz ve yönlendirme."
+      "h2": "Uzman Duolingo Yazma Geri Bildirimi",
+      "right_desc": "Resmi DET puanlama kriterlerine dayalı detaylı geri bildirim alın. AI sistemimiz, hedef puanınıza ulaşmanıza yardımcı olmak için yazma stilinizi, organizasyonunuzu ve içeriğinizi analiz eder."
     },
     "h2_4": {
-      "h2": "İfade Geliştirme",
-      "right_desc": "Kelime seçiminden paragraf düzenine kadar tüm yazınızı mükemmelleştirin."
+      "h2": "Gelişmiş Duolingo Yazma Geliştirme",
+      "right_desc": "Duolingo Yazmanızı iyiden mükemmele dönüştürün. Sistemimiz kelime dağarcığı zenginleştirme, cümle yapısı iyileştirme ve tutarlılık geliştirme için derinlemesine öneriler sunar."
     },
-    "h2_5": {
-      "h2": "Orijinal Metin Parlatma",
-      "right_desc": "Her kelimeyi ve cümleyi geliştirin; seçkin ve yüksek puan alan bir kompozisyon için yapıyı ve stili iyileştirin."
+    "aqtitle": "<span class='yellow'>Duolingo Yazma AI Düzeltmemiz</span> Hakkında SSS",
+    "aqlistfont": [
+      {
+        "q": "Duolingo yazma puanlama sisteminiz ne kadar doğru?",
+        "a": "AI puanlama sistemimiz resmi DET standartlarına göre kalibre edilmiştir ve insan değerlendiricilerle karşılaştırıldığında %95'in üzerinde doğruluk oranları sağlar. Her Duolingo Yazma gönderimi dilbilgisi, kelime dağarcığı, tutarlılık ve görev tamamlama dahil olmak üzere birden çok boyutta analiz edilir."
+      },
+      {
+        "q": "Ne tür <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo yazma geri bildirimi</a> alacağım?",
+        "a": "<a href='https://www.detpractice.com/'>DET Practice</a> sistemimiz şunları içeren kapsamlı geri bildirim sağlar:<br>- Detaylı dilbilgisi ve kelime düzeltmeleri<br>- Yapı ve tutarlılık analizi<br>- İçerik ilgililik değerlendirmesi<br>- Gelişim için özel öneriler<br>- Tahmini Duolingo Yazma puanı"
+      },
+      {
+        "q": "Duolingo yazımı değerlendirmek ne kadar sürer?",
+        "a": "Kompozisyonunuzu gönderdikten sonra 5 dakika içinde hem DET Yazma puanınızı hem de gelişim için detaylı geri bildirimi içeren tam analizinizi alacaksınız."
+      },
+      {
+        "q": "Pratik için hangi tür Duolingo yazma konuları mevcuttur?",
+        "a": "Sistemimiz, <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo Yazma</a> bölümüne hazırlanmanıza yardımcı olmak için özenle tasarlanmış çeşitli yüksek kaliteli pratik konuları sunar. Her konu standardize DET formatını ve zorluk seviyesini takip eder."
+      },
+      {
+        "q": "Değerlendirme için kaç kompozisyon gönderebilirim?",
+        "a": "DET Practice premium üyesi olarak, ihtiyaçlarınıza göre yazma düzeltme kredileri satın alabilirsiniz. Bu <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo Yazma düzeltme</a> kredileri aktif abonelik süreniz boyunca herhangi bir zamanda kullanılabilir. Satın alabileceğiniz değerlendirme paketi sayısında limit yoktur - çalışma planınız için ihtiyaç duyduğunuz düzeltme sayısını satın almanız yeterlidir."
+      },
+      {
+        "q": "Geri bildirim yazma seviyeme göre kişiselleştirilmiş mi?",
+        "a": "Evet, AI sistemimiz geri bildirimini yazma yeterliliğinize göre ayarlar. İster başlangıç düzeyinde ister ileri düzeyde bir yazar olun, <a href='https://www.detpractice.com/writing-ai-correction'>DET Yazma</a> performansınızı geliştirmek için ilgili öneriler alacaksınız."
+      }
+    ],
+    "embarkfont": {
+      "title": "Yüksek Puanlı DET Yazma Yolculuğunuza Bugün Başlayın!",
+      "btnText": "Şimdi Başla"
     }
   },
   "courses": {

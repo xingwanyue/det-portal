@@ -500,41 +500,66 @@
   },
   "correction": {
     "seometa": {
-      "title": "Duolingo English Test Writing AI {'|'} DET Schreibbewertungs-Checker von DET Practice",
-      "description": "Optimieren Sie Ihre Vorbereitung auf den Duolingo English Test mit unserem intelligenten Analysesystem. Erhalten Sie binnen Minuten eine präzise Auswertung Ihrer Texte nach DET-Standards, individuelle Rückmeldungen und konkrete Verbesserungsvorschläge. Trainieren Sie mit authentischen Aufgaben und steigern Sie Ihre Schreibkompetenz durch fundierte Analysen.",
-      "keywords": "duolingo schreibtest, det übungsmaterial, schreibtraining det, textbewertung duolingo, det korrektur, schreibaufgaben det, ki-analyse, det vorbereitung, schreibtechniken det, musterlösungen, prüfungsvorbereitung, online-übungen"
+      "title": "Duolingo Schreib-KI-Korrektur - Sofortiges DET Essay-Feedback",
+      "description": "Perfektionieren Sie Ihr Duolingo English Test Schreiben in Minuten. KI-gestützte Aufsatzkorrektur mit sofortiger Bewertung, Grammatikprüfung und Expertenberatung. Vertraut von über 21.000 Lernenden."
     },
-    "h1": "KI-Textanalyse für DET",
-    "desc": "Modernste KI-Technologie auf dem Niveau erfahrener Prüfer. Erhalten Sie innerhalb von 5 Minuten eine detaillierte Analyse nach offiziellen DET-Kriterien.",
-    "alt": "DET Üben:Die beste Duolingo English Test Übungsplattform",
-    "useralt": "Benutzer-Symbol",
-    "white_arrow_right": "weißer_pfeil_rechts",
-    "yellow_arrow_right": "gelber_pfeil_rechts",
-    "learners_have": "Bereits von über {number} Teilnehmern erfolgreich genutzt.",
-    "Review_Now": "Jetzt testen",
-    "Correct_Now": "Sofort starten",
-    "Get_Scored_Now": "Starten Sie das Erlebnis",
-    "Enhance_Now": "Jetzt verbessern",
-    "Begin_Polishing": "Polieren beginnen",
+    "h1": "Sofortige Duolingo Schreib-KI-Korrektur von DET Practice",
+    "descnew": "Professionelle DET-Schreibbewertung in Minuten",
+    "desc": "Erhalten Sie Experten-Feedback für Ihre Duolingo-Schreibaufgaben durch unser fortschrittliches KI-System. Ihre Aufsätze werden nach offiziellen DET-Bewertungskriterien analysiert und liefern umfassende Korrekturen und detaillierte Vorschläge innerhalb von 1-5 Minuten.",
+    "alt": "DET Practice: Die beste Duolingo English Test Übungsplattform",
+    "useralt": "User Icon",
+    "white_arrow_right": "white_arrow_right",
+    "yellow_arrow_right": "yellow_arrow_right",
+    "learners_have": "Von {number} Duolingo English Test Teilnehmern vertraut",
+    "Review_Now": "Jetzt starten",
+    "Correct_Now": "Jetzt ausprobieren",
+    "Get_Scored_Now": "Jetzt ausprobieren",
     "h2_1": {
-      "h2": "Präzise Bewertung",
-      "right_desc": "Wählen Sie eine Aufgabe aus unserer Datenbank und erhalten Sie binnen Minuten eine ausführliche Auswertung."
+      "h2": "Präzise Duolingo-Schreibbewertungsanalyse",
+      "right_desc": "Reichen Sie Ihre DET-Schreibaufgabe aus unserer Fragenbank ein und erhalten Sie innerhalb von 5 Minuten einen detaillierten Bewertungsbericht. Jede Bewertung folgt authentischen DET-Kriterien."
     },
     "h2_2": {
-      "h2": "Intelligente Korrektur",
-      "right_desc": "Automatische Erkennung sprachlicher Schwächen mit konkreten Verbesserungsvorschlägen."
+      "h2": "Echtzeit-Fehlerkorrektur",
+      "right_desc": "Identifizieren Sie sofort Wortschatzverwendung, Grammatikfehler und strukturelle Verbesserungen in Ihren Duolingo-Aufsätzen. Erhalten Sie umsetzbare Vorschläge für jede Korrektur."
     },
     "h2_3": {
-      "h2": "Professionelle Begleitung",
-      "right_desc": "Fundierte Analyse nach DET-Bewertungsmatrix für optimale Prüfungsvorbereitung."
+      "h2": "Professionelles Duolingo-Schreibfeedback",
+      "right_desc": "Erhalten Sie detailliertes Feedback basierend auf offiziellen DET-Bewertungskriterien. Unser KI-System analysiert Ihren Schreibstil, Aufbau und Inhalt, um Ihre Zielpunktzahl zu erreichen."
     },
     "h2_4": {
-      "h2": "Stilistische Optimierung",
-      "right_desc": "Detaillierte Empfehlungen zu Wortwahl, Satzbau und Textstruktur für Höchstleistungen."
+      "h2": "Fortgeschrittene Duolingo-Schreibverbesserung",
+      "right_desc": "Verwandeln Sie Ihr Duolingo-Schreiben von gut zu hervorragend. Unser System bietet tiefgehende Vorschläge für Wortschatzbereicherung, Satzstrukturverfeinerung und Kohärenzverbesserung."
     },
-    "h2_5": {
-      "h2": "Polieren des Originaltextes",
-      "right_desc": "Werten Sie jedes Wort und jeden Satz auf, verfeinern Sie Struktur und Stil für eine herausragende und hochkarätige Komposition."
+    "aqtitle": "Häufig gestellte Fragen zu unserer <span class='yellow'>Duolingo Schreib-KI-Korrektur</span>",
+    "aqlistfont": [
+      {
+        "q": "Wie genau ist Ihr Duolingo-Schreibbewertungssystem?",
+        "a": "Unser KI-Bewertungssystem ist auf offizielle DET-Standards kalibriert und bietet eine Genauigkeit von über 95% im Vergleich zu menschlichen Bewertern. Jede Duolingo-Schreibeinreichung wird in mehreren Dimensionen analysiert, einschließlich Grammatik, Wortschatz, Kohärenz und Aufgabenerfüllung."
+      },
+      {
+        "q": "Welche Art von <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo-Schreibfeedback</a> werde ich erhalten?",
+        "a": "Unser <a href='https://www.detpractice.com/'>DET Practice</a> System bietet umfassendes Feedback, einschließlich:<br>- Detaillierte Grammatik- und Wortschatzkorrekturen<br>- Struktur- und Kohärenzanalyse<br>- Bewertung der Inhaltsrelevanz<br>- Spezifische Verbesserungsvorschläge<br>- Geschätzte Duolingo-Schreibpunktzahl"
+      },
+      {
+        "q": "Wie lange dauert die Bewertung meines Duolingo-Schreibens?",
+        "a": "Sie erhalten Ihre vollständige Analyse innerhalb von 5 Minuten nach Einreichung Ihres Aufsatzes. Dies umfasst sowohl Ihre DET-Schreibpunktzahl als auch detailliertes Feedback zur Verbesserung."
+      },
+      {
+        "q": "Welche Arten von Duolingo-Schreibaufgaben stehen zur Übung zur Verfügung?",
+        "a": "Unser System bietet vielfältige, hochwertige Übungsaufgaben, die sorgfältig entwickelt wurden, um Sie auf den <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo-Schreibteil</a> vorzubereiten. Jede Aufgabe folgt dem standardisierten DET-Format und Schwierigkeitsgrad."
+      },
+      {
+        "q": "Wie viele Aufsätze kann ich zur Bewertung einreichen?",
+        "a": "Als DET Practice Premium-Mitglied können Sie Schreibkorrektur-Guthaben nach Ihren Bedürfnissen erwerben. Diese <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo-Schreibkorrektur</a>-Guthaben können während Ihrer aktiven Abonnementlaufzeit jederzeit genutzt werden. Es gibt keine Begrenzung für die Anzahl der Bewertungspakete, die Sie erwerben können - kaufen Sie einfach die Anzahl der Korrekturen, die Sie für Ihren Studienplan benötigen."
+      },
+      {
+        "q": "Wird das Feedback an mein Schreibniveau angepasst?",
+        "a": "Ja, unser KI-System passt das Feedback an Ihre Schreibfähigkeiten an. Ob Sie Anfänger oder fortgeschrittener Schreiber sind, Sie erhalten relevante Vorschläge zur Verbesserung Ihrer <a href='https://www.detpractice.com/writing-ai-correction'>DET-Schreibleistung</a>."
+      }
+    ],
+    "embarkfont": {
+      "title": "Beginnen Sie heute Ihre Reise zu hohen DET-Schreibpunktzahlen!",
+      "btnText": "Jetzt beginnen"
     }
   },
   "courses": {

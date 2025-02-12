@@ -500,41 +500,66 @@
   },
   "correction": {
     "seometa": {
-      "title": "Duolingo English Test 写作 AI 助手｜DET 写作智能评分系统",
-      "description": "专业的 DET 写作智能评分工具，实时诊断和评估你的 Duolingo English Test 写作水平。系统会在几分钟内给出精准评分、专业点评和改进建议。配备真实 DET 写作题库，助你通过系统性分析全面提升写作能力。",
-      "keywords": "duolingo english test writing, DET写作训练, DET作文批改, duolingo写作评分, DET写作指导, 多邻国英语测试写作, AI写作点评, DET写作诊断, DET写作提升, 多邻国英语测试写作范文, DET备考写作, 在线写作辅导"
+      "title": "多邻国写作AI批改 - 即时DET考试写作反馈",
+      "description": "几分钟内改善您的多邻国英语测试写作。AI驱动的写作批改提供即时评分、语法检查和专家级指导。超过2万学习者信赖。"
     },
-    "h1": "DET写作智能助手",
-    "desc": "基于深度学习的写作诊断系统，评分标准与DET考试完全同步。1-5分钟内即可获得全面的写作分析报告和针对性建议。",
-    "alt": "DET 练习：最好的 Duolingo English Test 练习平台",
-    "useralt": "用户图标",
-    "white_arrow_right": "白色_箭头_右",
-    "yellow_arrow_right": "黄色箭头右",
-    "learners_have": "已有超过{number}名考生使用并提升了写作水平。",
-    "Review_Now": "开始体验",
-    "Correct_Now": "立即测评",
+    "h1": "DET Practice提供的即时多邻国写作AI批改",
+    "descnew": "几分钟内完成专业级DET写作评分",
+    "desc": "通过我们的高级AI系统获取多邻国写作任务的专家级反馈。使用官方DET评分标准分析您的作文，在1-5分钟内提供全面的批改反馈和改进建议。",
+    "alt": "DET Practice:最佳多邻国英语测试练习平台",
+    "useralt": "User Icon",
+    "white_arrow_right": "white_arrow_right",
+    "yellow_arrow_right": "yellow_arrow_right",
+    "learners_have": "已有{number}名多邻国英语测试考生信赖",
+    "Review_Now": "立即开始",
+    "Correct_Now": "开始体验",
     "Get_Scored_Now": "开始体验",
-    "Enhance_Now": "立即增强",
-    "Begin_Polishing": "开始抛光",
     "h2_1": {
-      "h2": "评分精准可靠",
-      "right_desc": "从真题库中选择题目完成写作，系统会在1-5分钟内生成专业的评分报告。"
+      "h2": "准确的多邻国写作分数分析",
+      "right_desc": "从我们的题库中提交DET写作任务，在5分钟内获得详细的评分报告。每次评估都遵循真实的DET评分标准。"
     },
     "h2_2": {
-      "h2": "智能纠错指导",
-      "right_desc": "系统自动标注语言错误，并提供详细的改正说明，帮你避免常见问题"
+      "h2": "实时错误纠正",
+      "right_desc": "即时识别多邻国写作中的词汇使用、语法错误和结构改进点。为每处修改提供可执行的建议。"
     },
     "h2_3": {
-      "h2": "专业评分解析",
-      "right_desc": "严格遵循DET评分标准，深入分析文章优缺点，指导你逐步提升写作水平。"
+      "h2": "专业多邻国写作反馈",
+      "right_desc": "基于官方DET评分标准获取详细反馈。我们的AI系统分析您的写作风格、组织结构和内容，帮助您达到目标分数。"
     },
     "h2_4": {
-      "h2": "写作优化建议",
-      "right_desc": "从用词、句式到段落结构，全方位提供改进建议，帮你打造出高质量的文章。"
+      "h2": "高级多邻国写作提升",
+      "right_desc": "将您的多邻国写作从优秀提升至卓越。我们的系统为词汇丰富度、句子结构优化和连贯性改进提供深入建议。"
     },
-    "h2_5": {
-      "h2": "原文润色",
-      "right_desc": "提升每一个单词和句子；完善结构和风格，以获得杰出的高分作文。"
+    "aqtitle": "关于我们的<span class='yellow'>多邻国写作AI批改</span>常见问题",
+    "aqlistfont": [
+      {
+        "q": "你们的多邻国写作评分系统准确度如何？",
+        "a": "我们的AI评分系统按照官方DET标准校准，与人工评分相比准确率超过95%。每份多邻国写作提交都会从语法、词汇、连贯性和任务完成度等多个维度进行分析。"
+      },
+      {
+        "q": "我会收到什么类型的<a href='https://www.detpractice.com/writing-ai-correction'>多邻国写作反馈</a>？",
+        "a": "我们的<a href='https://www.detpractice.com/'>DET Practice</a>系统提供全面的反馈，包括：<br>- 详细的语法和词汇纠正<br>- 结构和连贯性分析<br>- 内容相关性评估<br>- 具体改进建议<br>- 预估的多邻国写作分数"
+      },
+      {
+        "q": "获取多邻国写作评估需要多长时间？",
+        "a": "在提交作文后5分钟内，您就能收到完整的分析报告。这包括DET写作分数和详细的改进反馈。"
+      },
+      {
+        "q": "有哪些类型的多邻国写作练习题目？",
+        "a": "我们的系统提供多样化的高质量练习题目，这些题目经过精心设计，帮助您准备<a href='https://www.detpractice.com/writing-ai-correction'>多邻国写作</a>部分。每个题目都遵循标准化的DET考试形式和难度水平。"
+      },
+      {
+        "q": "我可以提交多少篇作文进行评估？",
+        "a": "作为DET Practice高级会员，您可以根据需要购买写作批改额度。这些<a href='https://www.detpractice.com/writing-ai-correction'>多邻国写作批改</a>额度可在您的有效订阅期内随时使用。购买评估额度的数量没有限制 - 只需购买符合您学习计划所需的批改次数即可。"
+      },
+      {
+        "q": "反馈是否根据我的写作水平进行个性化调整？",
+        "a": "是的，我们的AI系统会根据您的写作水平调整反馈。无论您是初学者还是高级写作者，都能收到相关的建议来提高您的<a href='https://www.detpractice.com/writing-ai-correction'>DET写作</a>表现。"
+      }
+    ],
+    "embarkfont": {
+      "title": "今天就开启您的高分DET写作之旅！",
+      "btnText": "立即开始"
     }
   },
   "courses": {
