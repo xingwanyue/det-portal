@@ -143,9 +143,8 @@ export const useStore = defineStore({
             //   type: 'success',
             // });
             ElMessageBox.alert(`${message.join('<br>')}`, '', {
-              // if you want to disable its autofocus
-              // autofocus: false,
               confirmButtonText: 'Confirm',
+              dangerouslyUseHTMLString: true,
             });
           }
         } else {
@@ -183,7 +182,7 @@ export const useStore = defineStore({
       removeToken();
       window.location.href = '/';
     },
-    async logFbAdd(fbclid?:string) {
+    async logFbAdd(fbclid?: string) {
       logFbAdd(fbclid);
     },
   },
