@@ -537,8 +537,8 @@
         "a": "我们的AI评分系统按照官方DET标准校准，与人工评分相比准确率超过95%。每份多邻国写作提交都会从语法、词汇、连贯性和任务完成度等多个维度进行分析。"
       },
       {
-        "q": "我会收到什么类型的<a href='https://www.detpractice.com/writing-ai-correction'>多邻国写作反馈</a>？",
-        "a": "我们的<a href='https://www.detpractice.com/'>DET Practice</a>系统提供全面的反馈，包括：<br>- 详细的语法和词汇纠正<br>- 结构和连贯性分析<br>- 内容相关性评估<br>- 具体改进建议<br>- 预估的多邻国写作分数"
+        "q": "我会收到什么类型的<a href='https://www.detpractice.com/zh/writing-ai-correction'>多邻国写作反馈</a>？",
+        "a": "我们的<a href='https://www.detpractice.com/zh'>DET Practice</a>系统提供全面的反馈，包括：<br>- 详细的语法和词汇纠正<br>- 结构和连贯性分析<br>- 内容相关性评估<br>- 具体改进建议<br>- 预估的多邻国写作分数"
       },
       {
         "q": "获取多邻国写作评估需要多长时间？",
@@ -546,15 +546,15 @@
       },
       {
         "q": "有哪些类型的多邻国写作练习题目？",
-        "a": "我们的系统提供多样化的高质量练习题目，这些题目经过精心设计，帮助您准备<a href='https://www.detpractice.com/writing-ai-correction'>多邻国写作</a>部分。每个题目都遵循标准化的DET考试形式和难度水平。"
+        "a": "我们的系统提供多样化的高质量练习题目，这些题目经过精心设计，帮助您准备<a href='https://www.detpractice.com/zh/writing-ai-correction'>多邻国写作</a>部分。每个题目都遵循标准化的DET考试形式和难度水平。"
       },
       {
         "q": "我可以提交多少篇作文进行评估？",
-        "a": "作为DET Practice高级会员，您可以根据需要购买写作批改额度。这些<a href='https://www.detpractice.com/writing-ai-correction'>多邻国写作批改</a>额度可在您的有效订阅期内随时使用。购买评估额度的数量没有限制 - 只需购买符合您学习计划所需的批改次数即可。"
+        "a": "作为DET Practice高级会员，您可以根据需要购买写作批改额度。这些<a href='https://www.detpractice.com/zh/writing-ai-correction'>多邻国写作批改</a>额度可在您的有效订阅期内随时使用。购买评估额度的数量没有限制 - 只需购买符合您学习计划所需的批改次数即可。"
       },
       {
         "q": "反馈是否根据我的写作水平进行个性化调整？",
-        "a": "是的，我们的AI系统会根据您的写作水平调整反馈。无论您是初学者还是高级写作者，都能收到相关的建议来提高您的<a href='https://www.detpractice.com/writing-ai-correction'>DET写作</a>表现。"
+        "a": "是的，我们的AI系统会根据您的写作水平调整反馈。无论您是初学者还是高级写作者，都能收到相关的建议来提高您的<a href='https://www.detpractice.com/zh/writing-ai-correction'>DET写作</a>表现。"
       }
     ],
     "embarkfont": {
@@ -676,15 +676,15 @@
     "aqList": [
       {
         "name": "DET课程体系包含哪些内容？",
-        "content": "<a href='https://www.detpractice.com/courses'>DET课程</a>包含所有四个考试部分的综合备考材料：阅读、听力、口语和写作。每个部分都包含多个互动课程，针对特定题型，提供实时反馈和实用策略。"
+        "content": "<a href='https://www.detpractice.com/zh/courses'>DET课程</a>包含所有四个考试部分的综合备考材料：阅读、听力、口语和写作。每个部分都包含多个互动课程，针对特定题型，提供实时反馈和实用策略。"
       },
       {
         "name": "这个DET课程与其他备考材料有什么不同？",
-        "content": "这个DET课程独特地结合了视频课程和大量练习（你可以在我们的<a href='https://www.detpractice.com/practice'>DET练习题库</a>中找到），以及反馈。它涵盖考试中的每种题型，并为每个部分提供专门的备考材料，是一个完整的备考解决方案。"
+        "content": "这个DET课程独特地结合了视频课程和大量练习（你可以在我们的<a href='https://www.detpractice.com/zh/practice'>DET练习题库</a>中找到），以及反馈。它涵盖考试中的每种题型，并为每个部分提供专门的备考材料，是一个完整的备考解决方案。"
       },
       {
         "name": "我能按照自己的时间安排学习DET课程材料吗？",
-        "content": "是的，所有DET课程材料对<a href='https://www.detpractice.com'>DET Practice</a>的所有会员都是免费的，并且全天候提供。你可以按照自己的节奏学习，随时随地访问材料。"
+        "content": "是的，所有DET课程材料对<a href='https://www.detpractice.com/zh'>DET Practice</a>的所有会员都是免费的，并且全天候提供。你可以按照自己的节奏学习，随时随地访问材料。"
       },
       {
         "name": "DET课程是否涵盖最新的考试格式？",
@@ -768,7 +768,7 @@
     "aqlistfont": [
       {
         "q": "是什么让你们的多邻国模拟考试与其他练习材料不同？",
-        "a": "我们的<a href='https://www.detpractice.com/mock-exam'>多邻国模拟考试</a>精确还原DET官方考试的形式、时间和难度水平。我们在每次练习后提供全面的表现分析和个性化的学习建议。"
+        "a": "我们的<a href='https://www.detpractice.com/zh/mock-exam'>多邻国模拟考试</a>精确还原DET官方考试的形式、时间和难度水平。我们在每次练习后提供全面的表现分析和个性化的学习建议。"
       },
       {
         "q": "完成一次完整的多邻国模拟考试需要多长时间？",
@@ -780,7 +780,7 @@
       },
       {
         "q": "我可以多次参加多邻国模拟考试吗？",
-        "a": "当然可以！您可以根据需要多次参加我们的<a href='https://www.detpractice.com/mock-exam'>DET模拟考试</a>。每次尝试都会提供新的见解，帮助您追踪进步情况。"
+        "a": "当然可以！您可以根据需要多次参加我们的<a href='https://www.detpractice.com/zh/mock-exam'>DET模拟考试</a>。每次尝试都会提供新的见解，帮助您追踪进步情况。"
       },
       {
         "q": "参加多邻国模拟考试需要安装特殊软件吗？",
@@ -788,7 +788,7 @@
       },
       {
         "q": "你们的多邻国模拟考试内容更新频率如何？",
-        "a": "我们定期更新<a href='https://www.detpractice.com/'>DET练习</a>材料，以反映最新的考试形式和题型，确保您使用最新的内容进行备考。"
+        "a": "我们定期更新<a href='https://www.detpractice.com/zh'>DET练习</a>材料，以反映最新的考试形式和题型，确保您使用最新的内容进行备考。"
       }
     ],
     "embarkfont": {
@@ -823,7 +823,7 @@
     },
     "article3": {
       "h2": "AI驱动的DET口语和写作评估",
-      "right_desc": "获取多邻国英语测试答案的即时反馈。我们的AI系统实时分析您的<a href='https://www.detpractice.com/speaking-ai-correction'>DET口语</a>和<a href='https://www.detpractice.com/writing-ai-correction'>DET写作</a>的提交内容，提供详细的评分和建议，包括发音、流畅度、语法和词汇使用，助您快速提分。",
+      "right_desc": "获取多邻国英语测试答案的即时反馈。我们的AI系统实时分析您的<a href='https://www.detpractice.com/zh/speaking-ai-correction'>DET口语</a>和<a href='https://www.detpractice.com/zh/writing-ai-correction'>DET写作</a>的提交内容，提供详细的评分和建议，包括发音、流畅度、语法和词汇使用，助您快速提分。",
       "btn": "开始评估"
     },
     "article4": {
@@ -838,7 +838,7 @@
         "a": "我们专注于多邻国英语测试练习，提供精心设计的材料，完全符合真实考试格式和要求。"
       },
       {
-        "q": "使用<a href='https://www.detpractice.com'>DET Practice</a>学习的最佳频率是什么？",
+        "q": "使用<a href='https://www.detpractice.com/zh'>DET Practice</a>学习的最佳频率是什么？",
         "a": "为取得最佳效果，我们建议每天进行2-3小时的集中练习，理想情况下至少在实际考试日期前2周开始。"
       },
       {
@@ -847,7 +847,7 @@
       },
       {
         "q": "DET Practice的内容更新频率如何？",
-        "a": "我们的<a href='https://www.detpractice.com/practice'>多邻国英语测试练习</a>材料持续更新，始终反映最新的考试模式和要求，确保您随时做好准备。"
+        "a": "我们的<a href='https://www.detpractice.com/zh/practice'>多邻国英语测试练习</a>材料持续更新，始终反映最新的考试模式和要求，确保您随时做好准备。"
       },
       {
         "q": "多邻国英语测试备考与普通英语学习有何不同？",
@@ -897,7 +897,7 @@
     "aqlistfont": [
       {
         "q": "与实际的多邻国英语口语考试相比，你们的AI评分准确度如何？",
-        "a": "我们的<a href='https://www.detpractice.com/'>DET Practice</a> AI评分系统基于大量真实考试结果校准。虽然没有练习工具能保证与实考完全匹配的分数，但我们的系统已帮助数千名学生以超过90%的准确度预测他们的多邻国英语测试的口语表现。"
+        "a": "我们的<a href='https://www.detpractice.com/zh'>DET Practice</a> AI评分系统基于大量真实考试结果校准。虽然没有练习工具能保证与实考完全匹配的分数，但我们的系统已帮助数千名学生以超过90%的准确度预测他们的多邻国英语测试的口语表现。"
       },
       {
         "q": "我可以练习特定类型的DET口语题目吗？",
@@ -905,11 +905,11 @@
       },
       {
         "q": "提交口语答案后多久能收到反馈？",
-        "a": "我们的AI在您完成答题后几分钟内就能提供即时反馈。每次DET Practice练习都包含对您发音、流利度和内容的详细分析 - 让您能够立即改进您的<a href='https://www.detpractice.com/speaking-ai-correction'>多邻国英语测试口语</a>技能。"
+        "a": "我们的AI在您完成答题后几分钟内就能提供即时反馈。每次DET Practice练习都包含对您发音、流利度和内容的详细分析 - 让您能够立即改进您的<a href='https://www.detpractice.com/zh/speaking-ai-correction'>多邻国英语测试口语</a>技能。"
       },
       {
         "q": "如果我的DET口语成绩一直很低该怎么办？",
-        "a": "DET Practice根据您的表现模式提供有针对性的提升策略。如果您在<a href='https://www.detpractice.com/speaking-ai-correction'>多邻国英语口语</a>的某些方面遇到困难，我们的AI将识别问题所在，并推荐针对性的练习帮助您提高。"
+        "a": "DET Practice根据您的表现模式提供有针对性的提升策略。如果您在<a href='https://www.detpractice.com/zh/speaking-ai-correction'>多邻国英语口语</a>的某些方面遇到困难，我们的AI将识别问题所在，并推荐针对性的练习帮助您提高。"
       },
       {
         "q": "你们是否提供模拟真实多邻国英语口语部分的练习测试？",
