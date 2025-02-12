@@ -431,12 +431,11 @@ const saveCaculate = (item: any) => {
     }
   }
   .line_throw {
-    font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
     color: #333333;
     text-decoration: line-through;
     margin-top: 8px;
-    text-decoration-thickness: 2px; // 添加这行来增加中划线的粗细
+    text-decoration-thickness: 1px; // 添加这行来增加中划线的粗细
     // 修改 text-decoration 横线宽度
   }
   .bill {
