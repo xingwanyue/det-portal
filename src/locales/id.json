@@ -839,33 +839,64 @@
     },
     "speakingaicorrection": {
       "seometa": {
-        "title": "Umpan Balik AI untuk Speaking Duolingo English Test {'|'} Latihan DET",
-        "description": "Berlatih Speaking Duolingo English Test menjadi lebih mudah dengan bantuan AI mutakhir! Dapatkan umpan balik instan, analisis terperinci, dan saran ahli untuk menguasai Speaking DET. Latih kemampuan berbicara Anda dengan soal-soal tidak terbatas dan terima skor langsung sesuai standar resmi DET.",
-        "keywords": "Latihan Speaking DET, Persiapan Duolingo Test, Soal Speaking DET, AI Feedback DET, Koreksi Speaking Duolingo, Contoh Soal Speaking DET, Tips Speaking Duolingo Test, Latihan Speaking Duolingo, Penilaian Speaking DET, Cara Persiapan Speaking DET"
+        "title": "Koreksi Speaking Duolingo English Test - Penilaian & Umpan Balik AI",
+        "description": "Kuasai speaking Duolingo English Test dengan evaluasi AI secara instan. Dapatkan umpan balik pengucapan, penilaian, dan panduan profesional. Dipercaya oleh 26.000+ peserta tes.",
       },
-      "h1": "AI Feedback untuk Speaking DET",
-      "desc": "Layanan AI canggih untuk meningkatkan kemampuan Speaking DET Anda. Mencakup semua jenis soal speaking dengan panduan ahli untuk membantu Anda meraih skor tinggi dengan lebih mudah.",
-      "alt": "DET Latihan:Platform Koreksi AI Berbicara Terbaik DET",
-      "altbanner": "DET Koreksi AI Berbicara",
-      "bank_user_icon": "Ikon Pengguna Bank",
-      "white_arrow_right": "Panah Putih Kanan",
-      "purple_arrow_right": "Panah Ungu Kanan",
-      "learners_have": "Sudah dipercaya oleh lebih dari {number} peserta DET.",
+      "h1": "Koreksi AI Speaking DET yang Handal dari DET Practice",
+      "descnew": "Tingkatkan Kemampuan Speaking DET Anda dengan Umpan Balik AI",
+      "desc": "Sistem AI canggih kami menganalisis pengucapan, kelancaran, dan tata bahasa speaking Duolingo English Test Anda, memberikan umpan balik personal yang akurat dan saran praktis untuk membantu Anda meningkatkan kemampuan speaking dengan cepat dan menghadapi bagian speaking Duolingo English Test (DET) dengan percaya diri.",
+      "alt": "DET Practice: Platform Koreksi AI Speaking DET Terbaik",
+      "altbanner": "DET Speaking AI Correction",
+      "bank_user_icon": "Bank User Icon",
+      "white_arrow_right": "White Arrow Right",
+      "purple_arrow_right": "Purple Arrow Right",
+      "learners_have": "Sudah {number} orang meningkatkan skor speaking DET mereka",
       "spn": "Mulai Sekarang",
       "article1": {
-        "h2": "Penilaian Akurat",
-        "right_desc": "Kirimkan jawaban Anda atau pilih dari bank soal kami untuk mendapatkan laporan terperinci dan skor langsung.",
-        "btn": "Coba Sekarang"
+        "h2": "Dapatkan Skor Speaking DET yang Akurat",
+        "right_desc": "Kirimkan jawaban speaking DET Anda dan terima skor akurat secara instan berdasarkan analisis AI canggih. Sistem kami mengevaluasi pengucapan, kelancaran, tata bahasa, dan kosakata untuk memberikan pemahaman yang jelas tentang level Anda saat ini dan area yang perlu ditingkatkan.",
+        "btn": "Mulai Mencoba"
       },
       "article2": {
-        "h2": "Evaluasi Speaking",
-        "right_desc": "Identifikasi langsung kesalahan pengucapan, jeda yang tidak tepat, tanda baca yang terlewat, keraguan dalam membaca, atau pengulangan yang tidak perlu, serta pelajari cara memperbaikinya.",
-        "btn": "Mulai mengalami"
+        "h2": "Umpan Balik Speaking DET yang Mendetail",
+        "right_desc": "Dapatkan umpan balik mendetail tentang performa speaking DET Anda, termasuk analisis kesalahan pengucapan, gangguan tak terduga, kurangnya jeda, dugaan membaca, dan pengulangan. Pelajari cara menghindari kesalahan umum ini dan tingkatkan kelancaran secara keseluruhan.",
+        "btn": "Mulai Mencoba"
       },
       "article3": {
-        "h2": "Panduan Profesional",
-        "right_desc": "Berdasarkan kriteria penilaian resmi DET, kami memberikan panduan ahli untuk mengidentifikasi dan menyempurnakan kelemahan speaking Anda.",
-        "btn": "Mulai merasakan"
+        "h2": "Panduan Profesional untuk Meningkatkan Speaking DET",
+        "right_desc": "Berdasarkan kriteria penilaian DET resmi, AI kami memberikan panduan profesional untuk membantu Anda mengidentifikasi kelemahan dalam speaking DET dan mengembangkan strategi peningkatan yang efektif. Targetkan area spesifik seperti pengucapan, tata bahasa, dan kelancaran untuk memaksimalkan skor Anda.",
+        "btn": "Mulai Mencoba"
+      },
+      "aqtitle": "FAQ tentang <span class='yellow'>Koreksi AI Speaking DET</span> kami",
+      "aqlistfont": [
+        {
+          "q": "Seberapa akurat penilaian AI Anda dibandingkan dengan tes speaking DET yang sebenarnya?",
+          "a": "Sistem penilaian AI <a href='https://www.detpractice.com/'>DET Practice</a> kami dikalibrasi berdasarkan analisis mendalam dari hasil tes nyata. Meskipun tidak ada alat latihan yang dapat menjamin skor yang persis sama, sistem kami telah membantu ribuan siswa memprediksi performa speaking DET mereka dengan akurasi lebih dari 90%."
+        },
+        {
+          "q": "Apakah saya bisa berlatih tipe soal speaking DET tertentu?",
+          "a": "Ya, DET Practice mencakup semua tipe soal speaking DET, termasuk Read Aloud, Listen then Speak, Speaking Sample, Describe Image, dan Read then Speak. Anda bisa fokus pada tipe soal tertentu atau berlatih dengan format campuran."
+        },
+        {
+          "q": "Berapa lama saya akan menerima umpan balik setelah mengirimkan jawaban speaking?",
+          "a": "AI kami memberikan umpan balik instan dalam hitungan menit setelah Anda menyelesaikan jawaban. Setiap sesi DET Practice mencakup analisis mendetail tentang pengucapan, kelancaran, dan konten Anda - memungkinkan Anda untuk segera meningkatkan kemampuan <a href='https://www.detpractice.com/speaking-ai-correction'>speaking DET</a> Anda."
+        },
+        {
+          "q": "Apa yang harus saya lakukan jika skor speaking DET saya terus rendah?",
+          "a": "DET Practice menyediakan strategi peningkatan yang ditargetkan berdasarkan pola performa Anda. Jika Anda kesulitan dengan aspek tertentu dari <a href='https://www.detpractice.com/speaking-ai-correction'>speaking DET</a>, AI kami akan mengidentifikasi area masalah dan menyarankan latihan yang fokus untuk membantu Anda meningkat."
+        },
+        {
+          "q": "Apakah Anda menyediakan tes latihan yang mensimulasikan bagian speaking DET yang sebenarnya?",
+          "a": "Ya, DET Practice menyediakan simulasi speaking lengkap yang mencerminkan format DET yang sebenarnya. Ini mencakup pengaturan waktu, tipe soal, dan kriteria penilaian yang sama dengan tes asli untuk memberikan pengalaman latihan yang paling realistis."
+        },
+        {
+          "q": "Berapa lama saya harus berlatih di DET Practice sebelum mengambil tes yang sebenarnya?",
+          "a": "Berdasarkan data pengguna, sebagian besar siswa yang berlatih secara konsisten di platform kami selama 2-3 minggu melihat peningkatan signifikan dalam performa speaking DET mereka. Namun, waktu persiapan optimal bervariasi tergantung pada level awal dan skor target Anda."
+        }
+      ],
+      "embarkfont": {
+        "title": "Raih Skor Target <span class='yellow'>Speaking DET</span> Anda Lebih Cepat!",
+        "btnText": "Latihan Sekarang"
       }
     },
     "privacyPolicy": {

@@ -840,33 +840,64 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "KI-gestützte Sprechübungen für den Duolingo English Test {'|'} DET-Vorbereitung",
-      "description": "Optimieren Sie Ihre Sprechfertigkeiten für den Duolingo English Test mit modernster KI-Technologie. Profitieren Sie von Echtzeit-Feedback, ausführlichen Analysen und fachkundiger Beratung. Trainieren Sie unbegrenzt mit unserem Übungssystem, das nach offiziellen DET-Kriterien bewertet.",
-      "keywords": "DET Sprechübungen, Duolingo Testvorbereitung, KI-Sprachbewertung, DET Prüfungstraining, Duolingo Sprechpraxis, DET Übungsmaterial, Sprachtest-Vorbereitung, DET Sprechtraining, Englischtest-Coaching, DET Prüfungssimulation"
+      "title": "Duolingo English Test Sprechkorrektur - KI-Bewertung & Feedback",
+      "description": "Meistern Sie den Sprachteil des Duolingo English Tests mit sofortiger KI-Auswertung. Erhalten Sie Feedback zur Aussprache, Bewertungen und professionelle Anleitung. Vertraut von über 26.000 Testteilnehmern.",
     },
-    "h1": "KI-gestützte Sprachanalyse",
-    "desc": "Unsere leistungsstarke KI unterstützt Sie bei allen Aufgabentypen des Speaking-Moduls und hilft Ihnen gezielt, Ihre Testergebnisse zu verbessern.",
-    "alt": "DET Übung: Die beste DET Plattform für KI-gestützte Sprachkorrektur",
-    "altbanner": "DET Sprechende KI-Korrektur",
-    "bank_user_icon": "Bank Nutzer Icon",
-    "white_arrow_right": "Weißer Pfeil nach rechts",
-    "purple_arrow_right": "Lila Pfeil nach rechts",
-    "learners_have": "Bereits über {number} erfolgreiche Nutzer vertrauen unserem System.",
-    "spn": "Jetzt testen",
+    "h1": "Leistungsstarke KI-Sprechkorrektur für DET von DET Practice",
+    "descnew": "Verbessern Sie Ihre DET-Sprechfähigkeiten mit KI-Feedback",
+    "desc": "Unser leistungsstarkes KI-System analysiert Ihre Aussprache, Sprachflüssigkeit und Grammatik im Duolingo English Test und bietet präzises, personalisiertes Feedback und praktische Vorschläge, um Ihre Sprechfähigkeiten schnell zu verbessern und den Sprachteil des Duolingo English Tests (DET) selbstbewusst zu meistern.",
+    "alt": "DET Practice: Die beste KI-Sprechkorrektur-Plattform für DET",
+    "altbanner": "DET Speaking AI Correction",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "purple_arrow_right": "Purple Arrow Right",
+    "learners_have": "Bereits {number} Lernende haben ihre DET-Sprechbewertungen verbessert",
+    "spn": "Jetzt beginnen",
     "article1": {
-      "h2": "Präzise Bewertung",
-      "right_desc": "Wählen Sie eine Übungsaufgabe oder nutzen Sie die freie Aufnahme - Sie erhalten umgehend eine detaillierte Auswertung.",
-      "btn": "Ausprobieren"
+      "h2": "Erhalten Sie genaue DET-Sprechbewertungen",
+      "right_desc": "Reichen Sie Ihre DET-Sprechantworten ein und erhalten Sie sofort eine präzise Bewertung basierend auf fortschrittlicher KI-Analyse. Unser System bewertet Aussprache, Sprachflüssigkeit, Grammatik und Wortschatz, um Ihnen ein klares Verständnis Ihres aktuellen Niveaus und der Verbesserungsbereiche zu geben.",
+      "btn": "Jetzt ausprobieren"
     },
     "article2": {
-      "h2": "Umfassende Analyse",
-      "right_desc": "Das System erkennt Ausspracheprobleme, Sprechpausen, Unterbrechungen, mechanisches Vorlesen und Wiederholungen - mit konkreten Verbesserungsvorschlägen.",
-      "btn": "Beginnen Sie mit dem Erleben"
+      "h2": "Detailliertes DET-Sprechfeedback",
+      "right_desc": "Erhalten Sie detailliertes Feedback zu Ihrer DET-Sprechleistung, einschließlich Analyse von Aussprachefehlern, unerwarteten Unterbrechungen, fehlenden Pausen, vermutetem Ablesen und Wiederholungen. Lernen Sie, diese häufigen Fehler zu vermeiden und Ihre allgemeine Sprachflüssigkeit zu verbessern.",
+      "btn": "Jetzt ausprobieren"
     },
     "article3": {
-      "h2": "Expertenberatung",
-      "right_desc": "Anhand der offiziellen DET-Bewertungskriterien identifizieren wir Ihre Schwachstellen und zeigen Ihnen den Weg zur Optimierung.",
-      "btn": "Beginnen Sie zu erleben"
+      "h2": "Professionelle Anleitung zur Verbesserung des DET-Sprechens",
+      "right_desc": "Basierend auf den offiziellen DET-Bewertungskriterien bietet unsere KI professionelle Anleitung, um Schwächen in Ihrem DET-Sprechen zu identifizieren und effektive Verbesserungsstrategien zu entwickeln. Arbeiten Sie gezielt an spezifischen Bereichen wie Aussprache, Grammatik und Sprachflüssigkeit, um Ihre Punktzahl zu maximieren.",
+      "btn": "Jetzt ausprobieren"
+    },
+    "aqtitle": "Häufig gestellte Fragen zu unserer <span class='yellow'>KI-Sprechkorrektur für DET</span>",
+    "aqlistfont": [
+      {
+        "q": "Wie genau ist Ihre KI-Bewertung im Vergleich zum echten DET-Sprechtest?",
+        "a": "Unser <a href='https://www.detpractice.com/'>DET Practice</a> KI-Bewertungssystem wurde auf Basis umfangreicher Analysen echter Testergebnisse kalibriert. Obwohl kein Übungstool exakt übereinstimmende Punktzahlen garantieren kann, hat unser System bereits Tausenden von Studenten geholfen, ihre DET-Sprechleistung mit über 90% Genauigkeit vorherzusagen."
+      },
+      {
+        "q": "Kann ich bestimmte DET-Sprechaufgabentypen üben?",
+        "a": "Ja, DET Practice deckt alle DET-Sprechaufgabentypen ab, einschließlich Vorlesen, Hören und Sprechen, Sprechprobe, Bildbeschreibung und Lesen mit anschließendem Sprechen. Sie können sich auf bestimmte Aufgabentypen konzentrieren oder im gemischten Format üben."
+      },
+      {
+        "q": "Wie schnell erhalte ich Feedback nach dem Einreichen meiner Sprechantwort?",
+        "a": "Unsere KI liefert sofortiges Feedback innerhalb weniger Minuten nach Abschluss Ihrer Antwort. Jede DET Practice-Sitzung enthält eine detaillierte Analyse Ihrer Aussprache, Sprachflüssigkeit und Ihres Inhalts - damit Sie Ihre <a href='https://www.detpractice.com/speaking-ai-correction'>DET-Sprechfähigkeiten</a> sofort verbessern können."
+      },
+      {
+        "q": "Was kann ich tun, wenn meine DET-Sprechbewertungen konstant niedrig sind?",
+        "a": "DET Practice bietet gezielte Verbesserungsstrategien basierend auf Ihren Leistungsmustern. Wenn Sie mit bestimmten Aspekten des <a href='https://www.detpractice.com/speaking-ai-correction'>DET-Sprechens</a> Schwierigkeiten haben, identifiziert unsere KI die Problembereiche und schlägt fokussierte Übungen zur Verbesserung vor."
+      },
+      {
+        "q": "Bieten Sie Übungstests an, die den echten DET-Sprechteil simulieren?",
+        "a": "Ja, DET Practice bietet vollständige Sprechsimulationen, die das Format des echten DET genau widerspiegeln. Dies umfasst authentische Zeitvorgaben, Fragetypen und Bewertungskriterien, um Ihnen die realistischste Übungserfahrung zu bieten."
+      },
+      {
+        "q": "Wie lange sollte ich mit DET Practice üben, bevor ich den echten Test ablege?",
+        "a": "Basierend auf Nutzerdaten sehen die meisten Studenten, die konsequent 2-3 Wochen auf unserer Plattform üben, eine signifikante Verbesserung ihrer DET-Sprechleistung. Die optimale Vorbereitungszeit variiert jedoch je nach Ausgangsniveau und Zielpunktzahl."
+      }
+    ],
+    "embarkfont": {
+      "title": "Erreichen Sie Ihre <span class='yellow'>DET-Sprech</span>-Zielpunktzahl schneller!",
+      "btnText": "Jetzt üben"
     }
   },
   "privacyPolicy": {

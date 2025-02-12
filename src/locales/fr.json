@@ -840,33 +840,64 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Assistant IA pour l'Épreuve Orale du Duolingo English Test {'|'} Préparation DET",
-      "description": "Optimisez votre performance à l'épreuve orale du Duolingo English Test grâce à notre technologie IA de pointe. Bénéficiez d'une évaluation instantanée, d'analyses approfondies et de conseils personnalisés. Entraînez-vous sans limite avec notre système d'évaluation aligné sur les critères officiels du DET.",
-      "keywords": "préparation DET oral, entraînement Duolingo Test, exercices speaking DET, correction IA Duolingo, évaluation orale DET, conseils réussite DET, simulation test Duolingo, préparation speaking test, exercices anglais oral, méthodologie DET"
+      "title": "Correction d'expression orale Duolingo English Test - Évaluation & Feedback IA",
+      "description": "Maîtrisez l'expression orale du Duolingo English Test avec une évaluation IA instantanée. Obtenez des retours sur la prononciation, des notes et des conseils professionnels. Fait confiance par plus de 26 000 candidats.",
     },
-    "h1": "Évaluation IA de l'Expression Orale",
-    "desc": "Notre technologie IA avancée analyse tous les aspects de votre expression orale et vous guide efficacement vers l'amélioration de vos performances au DET.",
-    "alt": "DET Pratique :La meilleure DET Plateforme de correction d'IA pour parler",
-    "altbanner": "DET Correction de l'IA Parlante",
-    "bank_user_icon": "Icône d'utilisateur bancaire",
-    "white_arrow_right": "Flèche Blanche Droite",
-    "purple_arrow_right": "Flèche violette vers la droite",
-    "learners_have": "Déjà plus de {number} candidats nous font confiance.",
-    "spn": "Essayer gratuitement",
+    "h1": "Correction IA puissante de l'expression orale DET par DET Practice",
+    "descnew": "Améliorez vos compétences en expression orale DET avec le feedback IA",
+    "desc": "Notre puissant système d'IA analyse votre prononciation, votre fluidité et votre grammaire dans le Duolingo English Test, fournissant un feedback personnalisé précis et des suggestions pratiques pour vous aider à améliorer rapidement vos compétences en expression orale et à aborder avec confiance la section d'expression orale du Duolingo English Test (DET).",
+    "alt": "DET Practice : La meilleure plateforme de correction IA pour l'expression orale DET",
+    "altbanner": "DET Speaking AI Correction",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "purple_arrow_right": "Purple Arrow Right",
+    "learners_have": "Déjà {number} personnes ont amélioré leurs scores d'expression orale DET",
+    "spn": "Commencer maintenant",
     "article1": {
-      "h2": "Notation Précise",
-      "right_desc": "Enregistrez votre réponse ou choisissez un sujet de notre base d'exercices pour recevoir instantanément une évaluation détaillée.",
-      "btn": "Commencer l'évaluation"
+      "h2": "Obtenez des scores précis en expression orale DET",
+      "right_desc": "Soumettez vos réponses d'expression orale DET et recevez instantanément une note précise basée sur une analyse IA avancée. Notre système évalue la prononciation, la fluidité, la grammaire et le vocabulaire pour vous donner une compréhension claire de votre niveau actuel et des domaines à améliorer.",
+      "btn": "Commencer à essayer"
     },
     "article2": {
-      "h2": "Analyse Complète",
-      "right_desc": "Identifiez immédiatement vos erreurs de prononciation, les hésitations, les pauses inappropriées, la lecture mécanique et les répétitions superflues.",
-      "btn": "Commencez à faire l'expérience"
+      "h2": "Feedback détaillé sur l'expression orale DET",
+      "right_desc": "Recevez un feedback détaillé sur votre performance en expression orale DET, incluant l'analyse des erreurs de prononciation, des interruptions inattendues, du manque de pauses, de la suspicion de lecture et des répétitions. Apprenez à éviter ces erreurs courantes et améliorez votre fluidité globale.",
+      "btn": "Commencer à essayer"
     },
     "article3": {
-      "h2": "Accompagnement Expert",
-      "right_desc": "Conformément aux critères d'évaluation du DET, nous ciblons vos points faibles et vous proposons des solutions concrètes.",
-      "btn": "Commencez à expérimenter"
+      "h2": "Guide professionnel pour améliorer l'expression orale DET",
+      "right_desc": "Basé sur les critères d'évaluation officiels DET, notre IA fournit des conseils professionnels pour vous aider à identifier les faiblesses dans votre expression orale DET et à développer des stratégies d'amélioration efficaces. Travaillez sur des domaines spécifiques comme la prononciation, la grammaire et la fluidité pour maximiser votre score.",
+      "btn": "Commencer à essayer"
+    },
+    "aqtitle": "Questions fréquentes sur notre <span class='yellow'>correction IA de l'expression orale DET</span>",
+    "aqlistfont": [
+      {
+        "q": "Quelle est la précision de votre évaluation IA par rapport au test réel d'expression orale DET ?",
+        "a": "Notre système d'évaluation IA <a href='https://www.detpractice.com/'>DET Practice</a> est calibré sur la base d'analyses approfondies des résultats de tests réels. Bien qu'aucun outil d'entraînement ne puisse garantir des scores exactement identiques, notre système a aidé des milliers d'étudiants à prédire leur performance en expression orale DET avec une précision supérieure à 90%."
+      },
+      {
+        "q": "Puis-je m'entraîner sur des types spécifiques de questions d'expression orale DET ?",
+        "a": "Oui, DET Practice couvre tous les types de questions d'expression orale DET, y compris la lecture à voix haute, l'écoute puis l'expression, l'échantillon d'expression, la description d'image et la lecture suivie d'expression. Vous pouvez vous concentrer sur des types spécifiques de questions ou vous entraîner en format mixte."
+      },
+      {
+        "q": "Combien de temps faut-il pour recevoir un feedback après avoir soumis ma réponse orale ?",
+        "a": "Notre IA fournit un feedback instantané en quelques minutes après la fin de votre réponse. Chaque session DET Practice inclut une analyse détaillée de votre prononciation, fluidité et contenu - vous permettant d'améliorer immédiatement vos compétences en <a href='https://www.detpractice.com/speaking-ai-correction'>expression orale DET</a>."
+      },
+      {
+        "q": "Que dois-je faire si mes scores d'expression orale DET sont constamment bas ?",
+        "a": "DET Practice fournit des stratégies d'amélioration ciblées basées sur vos modèles de performance. Si vous avez des difficultés avec des aspects spécifiques de <a href='https://www.detpractice.com/speaking-ai-correction'>l'expression orale DET</a>, notre IA identifiera les zones problématiques et suggérera des exercices ciblés pour vous aider à progresser."
+      },
+      {
+        "q": "Proposez-vous des tests d'entraînement qui simulent la section réelle d'expression orale DET ?",
+        "a": "Oui, DET Practice fournit des simulations complètes d'expression orale qui reflètent fidèlement le format du DET réel. Cela inclut les paramètres de temps, les types de questions et les critères d'évaluation authentiques pour vous offrir l'expérience d'entraînement la plus réaliste."
+      },
+      {
+        "q": "Combien de temps devrais-je m'entraîner sur DET Practice avant de passer le test réel ?",
+        "a": "Selon les données des utilisateurs, la plupart des étudiants qui s'entraînent régulièrement sur notre plateforme pendant 2-3 semaines voient une amélioration significative de leur performance en expression orale DET. Cependant, le temps de préparation optimal varie selon le niveau initial et le score visé."
+      }
+    ],
+    "embarkfont": {
+      "title": "Atteignez votre score cible en <span class='yellow'>expression orale DET</span> plus rapidement !",
+      "btnText": "S'entraîner maintenant"
     }
   },
   "privacyPolicy": {

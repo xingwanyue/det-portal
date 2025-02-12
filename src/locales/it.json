@@ -841,33 +841,64 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Preparazione al Duolingo English Test con Feedback IA {'|'} Esercitazioni Speaking DET",
-      "description": "Ottimizza la tua performance nella sezione orale del Duolingo English Test grazie alla nostra innovativa tecnologia di Intelligenza Artificiale. Ricevi valutazioni immediate, analisi approfondite e consigli personalizzati. Esercitati senza limiti con un sistema di valutazione allineato ai criteri ufficiali DET.",
-      "keywords": "esercizi speaking DET, preparazione Duolingo Test, valutazione IA inglese, simulazione prova orale, correzione speaking DET, esercitazioni Duolingo, metodo speaking test, preparazione esame DET, allenamento pronuncia, strategie DET"
+      "title": "Correzione Speaking Duolingo English Test - Valutazione & Feedback IA",
+      "description": "Padroneggia lo speaking del Duolingo English Test con valutazione IA istantanea. Ottieni feedback sulla pronuncia, valutazioni e guida professionale. Utilizzato da oltre 26.000 candidati.",
     },
-    "h1": "Valutazione IA della Prova Orale",
-    "desc": "La nostra avanzata tecnologia IA analizza ogni aspetto della tua espressione orale e ti guida verso il miglioramento delle tue prestazioni nel DET.",
-    "alt": "DET Pratica:La migliore DET piattaforma di correzione per il parlato AI",
-    "altbanner": "DET Correzione AI Parlante",
-    "bank_user_icon": "Icona Utente della Banca",
-    "white_arrow_right": "Freccia Bianca Destra",
-    "purple_arrow_right": "Freccia Viola Destra",
-    "learners_have": "Più di {number} studenti si sono già affidati al nostro sistema.",
-    "spn": "Prova Subito",
+    "h1": "Potente Correzione IA dello Speaking DET da DET Practice",
+    "descnew": "Migliora le tue abilità di speaking DET con il feedback IA",
+    "desc": "Il nostro potente sistema IA analizza la tua pronuncia, fluenza e grammatica nel Duolingo English Test, fornendo feedback personalizzato accurato e suggerimenti pratici per aiutarti a migliorare rapidamente le tue abilità di speaking e affrontare con sicurezza la sezione speaking del Duolingo English Test (DET).",
+    "alt": "DET Practice: La migliore piattaforma di correzione IA per lo speaking DET",
+    "altbanner": "DET Speaking AI Correction",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "purple_arrow_right": "Purple Arrow Right",
+    "learners_have": "Già {number} persone hanno migliorato i loro punteggi di speaking DET",
+    "spn": "Inizia ora",
     "article1": {
-      "h2": "Valutazione Precisa",
-      "right_desc": "Registra la tua risposta o scegli un esercizio dalla nostra banca dati per ricevere immediatamente un'analisi dettagliata.",
-      "btn": "Inizia la Prova"
+      "h2": "Ottieni punteggi precisi per lo speaking DET",
+      "right_desc": "Invia le tue risposte di speaking DET e ricevi istantaneamente un punteggio accurato basato su analisi IA avanzata. Il nostro sistema valuta pronuncia, fluenza, grammatica e vocabolario, dandoti una chiara comprensione del tuo livello attuale e delle aree di miglioramento.",
+      "btn": "Inizia a provare"
     },
     "article2": {
-      "h2": "Analisi Completa",
-      "right_desc": "Individua istantaneamente errori di pronuncia, esitazioni, pause inadeguate, lettura meccanica e ripetizioni superflue.",
-      "btn": "Inizia a sperimentare"
+      "h2": "Feedback dettagliato sullo speaking DET",
+      "right_desc": "Ricevi feedback dettagliato sulla tua performance nello speaking DET, inclusa l'analisi degli errori di pronuncia, interruzioni inaspettate, mancanza di pause, sospetto di lettura e ripetizioni. Impara a evitare questi errori comuni e migliora la tua fluenza generale.",
+      "btn": "Inizia a provare"
     },
     "article3": {
-      "h2": "Supporto Esperto",
-      "right_desc": "Seguendo i criteri di valutazione DET, identifichiamo i tuoi punti deboli e ti proponiamo soluzioni mirate.",
-      "btn": "Inizia a sperimentare"
+      "h2": "Guida professionale per migliorare lo speaking DET",
+      "right_desc": "Basata sui criteri di valutazione ufficiali DET, la nostra IA fornisce una guida professionale per aiutarti a identificare le debolezze nel tuo speaking DET e sviluppare strategie di miglioramento efficaci. Lavora su aree specifiche come pronuncia, grammatica e fluenza per massimizzare il tuo punteggio.",
+      "btn": "Inizia a provare"
+    },
+    "aqtitle": "Domande frequenti sulla nostra <span class='yellow'>correzione IA dello speaking DET</span>",
+    "aqlistfont": [
+      {
+        "q": "Quanto è accurata la vostra valutazione IA rispetto al test speaking DET reale?",
+        "a": "Il nostro sistema di valutazione IA <a href='https://www.detpractice.com/'>DET Practice</a> è calibrato sulla base di approfondite analisi dei risultati dei test reali. Sebbene nessuno strumento di pratica possa garantire punteggi esattamente coincidenti, il nostro sistema ha aiutato migliaia di studenti a prevedere la loro performance nello speaking DET con una precisione superiore al 90%."
+      },
+      {
+        "q": "Posso esercitarmi su specifici tipi di domande dello speaking DET?",
+        "a": "Sì, DET Practice copre tutti i tipi di domande dello speaking DET, inclusi lettura ad alta voce, ascolto e parlato, campione di speaking, descrizione dell'immagine e lettura seguita da speaking. Puoi concentrarti su specifici tipi di domande o esercitarti in formato misto."
+      },
+      {
+        "q": "Quanto velocemente riceverò il feedback dopo aver inviato la mia risposta speaking?",
+        "a": "La nostra IA fornisce feedback istantaneo in pochi minuti dopo il completamento della tua risposta. Ogni sessione DET Practice include un'analisi dettagliata della tua pronuncia, fluenza e contenuto - permettendoti di migliorare immediatamente le tue abilità di <a href='https://www.detpractice.com/speaking-ai-correction'>speaking DET</a>."
+      },
+      {
+        "q": "Cosa devo fare se i miei punteggi di speaking DET sono costantemente bassi?",
+        "a": "DET Practice fornisce strategie di miglioramento mirate basate sui tuoi modelli di performance. Se hai difficoltà con aspetti specifici dello <a href='https://www.detpractice.com/speaking-ai-correction'>speaking DET</a>, la nostra IA identificherà le aree problematiche e suggerirà esercizi mirati per aiutarti a migliorare."
+      },
+      {
+        "q": "Offrite test di pratica che simulano la sezione speaking DET reale?",
+        "a": "Sì, DET Practice fornisce simulazioni complete di speaking che riflettono fedelmente il formato del DET reale. Questo include impostazioni di tempo, tipi di domande e criteri di valutazione autentici per offrirti l'esperienza di pratica più realistica."
+      },
+      {
+        "q": "Per quanto tempo dovrei esercitarmi su DET Practice prima di sostenere il test reale?",
+        "a": "In base ai dati degli utenti, la maggior parte degli studenti che si esercitano costantemente sulla nostra piattaforma per 2-3 settimane vedono un significativo miglioramento nella loro performance nello speaking DET. Tuttavia, il tempo di preparazione ottimale varia in base al livello iniziale e al punteggio obiettivo."
+      }
+    ],
+    "embarkfont": {
+      "title": "Raggiungi il tuo punteggio obiettivo nello <span class='yellow'>speaking DET</span> più velocemente!",
+      "btnText": "Inizia ad esercitarti"
     }
   },
   "privacyPolicy": {

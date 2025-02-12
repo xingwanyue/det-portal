@@ -841,33 +841,64 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Duolingo English Test Konuşma Becerileri - Yapay Zeka Destekli Değerlendirme {'|'} DET Hazırlık",
-      "description": "Duolingo English Test konuşma bölümünü artık yapay zeka desteğiyle çok daha kolay halledebilirsiniz. Anlık geri bildirimler, kapsamlı analizler ve uzman tavsiyeleri ile DET konuşma becerilerinizi geliştirin. Sınırsız pratik yapın ve DET resmi kriterleri doğrultusunda anında değerlendirme alın.",
-      "keywords": "DET konuşma pratiği, Duolingo sınav hazırlığı, DET konuşma teknikleri, yapay zeka değerlendirmesi, DET konuşma örnekleri, Duolingo speaking tüyoları, DET online hazırlık, İngilizce konuşma pratiği, DET sınav stratejileri, Duolingo konuşma egzersizleri"
+      "title": "Duolingo English Test Konuşma Düzeltmesi - AI Değerlendirme & Geri Bildirim",
+      "description": "Anlık AI değerlendirmesiyle Duolingo English Test konuşma bölümünde uzmanlaşın. Telaffuz geri bildirimi, puanlama ve profesyonel rehberlik alın. 26.000'den fazla test adayı tarafından güvenilen platform.",
     },
-    "h1": "Yapay Zeka Destekli Konuşma Değerlendirmesi",
-    "desc": "Gelişmiş yapay zeka teknolojimiz, tüm konuşma soru tiplerini analiz eder ve DET puanınızı yükseltmeniz için size özel yönlendirme sağlar.",
-    "alt": "DET Pratik:En iyi DET Konuşma AI Düzeltme platformu",
-    "altbanner": "DET Konuşan Yapay Zeka Düzeltme",
-    "bank_user_icon": "Banka Kullanıcı Simgesi",
-    "white_arrow_right": "Beyaz Ok Sağ",
-    "purple_arrow_right": "Mor Ok Sağ",
-    "learners_have": "{number}'den fazla öğrenci başarıya ulaştı!",
-    "spn": "Hemen Dene",
+    "h1": "DET Practice'den Güçlü AI DET Konuşma Düzeltmesi",
+    "descnew": "AI geri bildirimiyle DET konuşma becerilerinizi geliştirin",
+    "desc": "Güçlü AI sistemimiz, Duolingo English Test'teki telaffuzunuzu, akıcılığınızı ve dilbilginizi analiz eder, konuşma becerilerinizi hızla geliştirmenize ve Duolingo English Test (DET) konuşma bölümünü güvenle tamamlamanıza yardımcı olmak için hassas, kişiselleştirilmiş geri bildirim ve pratik öneriler sunar.",
+    "alt": "DET Practice: DET konuşma için en iyi AI düzeltme platformu",
+    "altbanner": "DET Speaking AI Correction",
+    "bank_user_icon": "Bank User Icon",
+    "white_arrow_right": "White Arrow Right",
+    "purple_arrow_right": "Purple Arrow Right",
+    "learners_have": "Şimdiden {number} kişi DET konuşma puanlarını geliştirdi",
+    "spn": "Şimdi Başla",
     "article1": {
-      "h2": "Hassas Puanlama",
-      "right_desc": "Soru bankamızdan seçeceğiniz ya da kendi belirlediğiniz konularda konuşma pratiği yapın, anında detaylı rapor alın.",
-      "btn": "Ücretsiz Deneyin"
+      "h2": "Hassas DET Konuşma Puanları Alın",
+      "right_desc": "DET konuşma cevaplarınızı gönderin ve gelişmiş AI analizine dayalı hassas bir puan anında alın. Sistemimiz, mevcut seviyenizi ve gelişim alanlarınızı net bir şekilde anlamanız için telaffuz, akıcılık, dilbilgisi ve kelime dağarcığınızı değerlendirir.",
+      "btn": "Denemeye Başla"
     },
     "article2": {
-      "h2": "Detaylı Analiz",
-      "right_desc": "Telaffuz hatalarınızı, duraksamalarınızı, gereksiz tekrarlarınızı ve okuma tonlamanızı anında tespit edin, düzeltme önerileri alın.",
-      "btn": "Deneyimlemeye başlayın"
+      "h2": "Detaylı DET Konuşma Geri Bildirimi",
+      "right_desc": "DET konuşma performansınız hakkında, telaffuz hataları, beklenmedik duraklamalar, eksik duraklar, okuma şüphesi ve tekrarlar analizi dahil olmak üzere detaylı geri bildirim alın. Bu yaygın hataları nasıl önleyeceğinizi öğrenin ve genel akıcılığınızı geliştirin.",
+      "btn": "Denemeye Başla"
     },
     "article3": {
-      "h2": "Uzman Desteği",
-      "right_desc": "DET değerlendirme kriterlerine göre konuşma becerilerinizi analiz eder, gelişim alanlarınızı belirler ve size özel çözümler sunarız.",
-      "btn": "Başlamaya"
+      "h2": "DET Konuşmayı Geliştirmek için Profesyonel Rehberlik",
+      "right_desc": "Resmi DET değerlendirme kriterlerine dayalı olarak, AI'mız DET konuşmanızdaki zayıf noktaları belirlemenize ve etkili gelişim stratejileri geliştirmenize yardımcı olmak için profesyonel rehberlik sunar. Puanınızı maksimuma çıkarmak için telaffuz, dilbilgisi ve akıcılık gibi özel alanlarda çalışın.",
+      "btn": "Denemeye Başla"
+    },
+    "aqtitle": "<span class='yellow'>DET Konuşma AI Düzeltmemiz</span> Hakkında Sık Sorulan Sorular",
+    "aqlistfont": [
+      {
+        "q": "AI değerlendirmeniz gerçek DET konuşma testiyle karşılaştırıldığında ne kadar doğru?",
+        "a": "<a href='https://www.detpractice.com/'>DET Practice</a> AI puanlama sistemimiz, gerçek test sonuçlarının kapsamlı analizlerine dayalı olarak kalibre edilmiştir. Hiçbir pratik aracı tam olarak eşleşen puanlar garanti edemese de, sistemimiz binlerce öğrencinin DET konuşma performansını %90'ın üzerinde bir doğrulukla tahmin etmesine yardımcı olmuştur."
+      },
+      {
+        "q": "Belirli DET konuşma soru türlerini pratik yapabilir miyim?",
+        "a": "Evet, DET Practice sesli okuma, dinleme ve konuşma, konuşma örneği, resim açıklama ve okuma-konuşma dahil olmak üzere tüm DET konuşma soru türlerini kapsar. Belirli soru türlerine odaklanabilir veya karışık formatta pratik yapabilirsiniz."
+      },
+      {
+        "q": "Konuşma cevabımı gönderdikten sonra ne kadar hızlı geri bildirim alacağım?",
+        "a": "AI'mız cevabınızı tamamladıktan sonra dakikalar içinde anında geri bildirim sağlar. Her DET Practice oturumu, telaffuzunuz, akıcılığınız ve içeriğinizin detaylı bir analizini içerir - <a href='https://www.detpractice.com/speaking-ai-correction'>DET konuşma becerilerinizi</a> hemen geliştirmenize olanak tanır."
+      },
+      {
+        "q": "DET konuşma puanlarım sürekli düşükse ne yapmalıyım?",
+        "a": "DET Practice, performans modellerinize dayalı olarak hedefli gelişim stratejileri sunar. <a href='https://www.detpractice.com/speaking-ai-correction'>DET konuşmanın</a> belirli yönleriyle zorluk yaşıyorsanız, AI'mız sorunlu alanları belirleyecek ve gelişmenize yardımcı olmak için odaklanmış alıştırmalar önerecektir."
+      },
+      {
+        "q": "Gerçek DET konuşma bölümünü simüle eden pratik testler sunuyor musunuz?",
+        "a": "Evet, DET Practice gerçek DET formatını sadakatle yansıtan tam konuşma simülasyonları sunar. Bu, size en gerçekçi pratik deneyimini sunmak için otantik zaman ayarları, soru türleri ve değerlendirme kriterlerini içerir."
+      },
+      {
+        "q": "Gerçek testi almadan önce DET Practice'de ne kadar süre pratik yapmalıyım?",
+        "a": "Kullanıcı verilerine göre, platformumuzda 2-3 hafta boyunca düzenli olarak pratik yapan çoğu öğrenci DET konuşma performanslarında önemli bir gelişme görür. Ancak, optimal hazırlık süresi başlangıç seviyesine ve hedef puana göre değişiklik gösterir."
+      }
+    ],
+    "embarkfont": {
+      "title": "<span class='yellow'>DET Konuşma</span> hedef puanınıza daha hızlı ulaşın!",
+      "btnText": "Şimdi Pratik Yap"
     }
   },
   "privacyPolicy": {
