@@ -222,7 +222,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
     <div class="three_nums_wrapper">
       <div class="three_nums_out">
         <div class="title1" data-aos="fade-up" data-aos-duration="1000">
-          <div>{{ $t('index.The_Best_Platform') }}</div>
+          <h2>{{ $t('index.The_Best_Platform') }}</h2>
         </div>
         <div class="three_nums" data-aos="fade-up" data-aos-duration="1000">
           <div class="one_nums">
@@ -751,7 +751,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       }
       margin: 0 auto;
       .title1 {
-        div {
+        h2 {
           font-weight: 500;
           font-size: 40px;
           color: #201515;
