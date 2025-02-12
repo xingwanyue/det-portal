@@ -1261,6 +1261,22 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             // border: 1px red solid;
             padding: 0 6px; // 改用 padding 来设置间距
             width: calc(28% - 12px) !important; // 动态计算宽度，考虑间距
+            @media (max-width: 1450px) {
+              width: calc(35% - 12px) !important; // 动态计算宽度，考虑间距
+            }
+            @media (max-width: 1250px) {
+              width: calc(50% - 12px) !important; // 动态计算宽度，考虑间距
+            }
+            @media (max-width: 1050px) {
+              width: calc(65% - 12px) !important; // 动态计算宽度，考虑间距
+            }
+            @media (max-width: 850px) {
+              width: calc(75% - 12px) !important; // 动态计算宽度，考虑间距
+            }
+            @media (max-width: 650px) {
+              width: calc(85% - 12px) !important; // 动态计算宽度，考虑间距
+            }
+
             @media (max-width: 450px) {
               width: calc(100% - 12px) !important;
             }
