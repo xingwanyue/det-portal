@@ -226,7 +226,7 @@
       "free_font": "Gratis",
       "free_tips": "Puede ver 20 preguntas gratis, probar nuestra plataforma y ver si se adapta a sus necesidades.",
       "tff": "Prueba Gratuita",
-      "save": "ahorra {num}%",
+      "save": "Ahorre hasta un {num}%",
       "week": "/semana",
       "month": "/mes",
       "Billed": "Facturado ${num} /año",
