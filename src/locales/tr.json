@@ -538,8 +538,8 @@
         "a": "AI puanlama sistemimiz resmi DET standartlarına göre kalibre edilmiştir ve insan değerlendiricilerle karşılaştırıldığında %95'in üzerinde doğruluk oranları sağlar. Her Duolingo Yazma gönderimi dilbilgisi, kelime dağarcığı, tutarlılık ve görev tamamlama dahil olmak üzere birden çok boyutta analiz edilir."
       },
       {
-        "q": "Ne tür <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo yazma geri bildirimi</a> alacağım?",
-        "a": "<a href='https://www.detpractice.com/'>DET Practice</a> sistemimiz şunları içeren kapsamlı geri bildirim sağlar:<br>- Detaylı dilbilgisi ve kelime düzeltmeleri<br>- Yapı ve tutarlılık analizi<br>- İçerik ilgililik değerlendirmesi<br>- Gelişim için özel öneriler<br>- Tahmini Duolingo Yazma puanı"
+        "q": "Ne tür <a href='https://www.detpractice.com/tr/writing-ai-correction'>Duolingo yazma geri bildirimi</a> alacağım?",
+        "a": "<a href='https://www.detpractice.com/tr'>DET Practice</a> sistemimiz şunları içeren kapsamlı geri bildirim sağlar:<br>- Detaylı dilbilgisi ve kelime düzeltmeleri<br>- Yapı ve tutarlılık analizi<br>- İçerik ilgililik değerlendirmesi<br>- Gelişim için özel öneriler<br>- Tahmini Duolingo Yazma puanı"
       },
       {
         "q": "Duolingo yazımı değerlendirmek ne kadar sürer?",
@@ -547,15 +547,15 @@
       },
       {
         "q": "Pratik için hangi tür Duolingo yazma konuları mevcuttur?",
-        "a": "Sistemimiz, <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo Yazma</a> bölümüne hazırlanmanıza yardımcı olmak için özenle tasarlanmış çeşitli yüksek kaliteli pratik konuları sunar. Her konu standardize DET formatını ve zorluk seviyesini takip eder."
+        "a": "Sistemimiz, <a href='https://www.detpractice.com/tr/writing-ai-correction'>Duolingo Yazma</a> bölümüne hazırlanmanıza yardımcı olmak için özenle tasarlanmış çeşitli yüksek kaliteli pratik konuları sunar. Her konu standardize DET formatını ve zorluk seviyesini takip eder."
       },
       {
         "q": "Değerlendirme için kaç kompozisyon gönderebilirim?",
-        "a": "DET Practice premium üyesi olarak, ihtiyaçlarınıza göre yazma düzeltme kredileri satın alabilirsiniz. Bu <a href='https://www.detpractice.com/writing-ai-correction'>Duolingo Yazma düzeltme</a> kredileri aktif abonelik süreniz boyunca herhangi bir zamanda kullanılabilir. Satın alabileceğiniz değerlendirme paketi sayısında limit yoktur - çalışma planınız için ihtiyaç duyduğunuz düzeltme sayısını satın almanız yeterlidir."
+        "a": "DET Practice premium üyesi olarak, ihtiyaçlarınıza göre yazma düzeltme kredileri satın alabilirsiniz. Bu <a href='https://www.detpractice.com/tr/writing-ai-correction'>Duolingo Yazma düzeltme</a> kredileri aktif abonelik süreniz boyunca herhangi bir zamanda kullanılabilir. Satın alabileceğiniz değerlendirme paketi sayısında limit yoktur - çalışma planınız için ihtiyaç duyduğunuz düzeltme sayısını satın almanız yeterlidir."
       },
       {
         "q": "Geri bildirim yazma seviyeme göre kişiselleştirilmiş mi?",
-        "a": "Evet, AI sistemimiz geri bildirimini yazma yeterliliğinize göre ayarlar. İster başlangıç düzeyinde ister ileri düzeyde bir yazar olun, <a href='https://www.detpractice.com/writing-ai-correction'>DET Yazma</a> performansınızı geliştirmek için ilgili öneriler alacaksınız."
+        "a": "Evet, AI sistemimiz geri bildirimini yazma yeterliliğinize göre ayarlar. İster başlangıç düzeyinde ister ileri düzeyde bir yazar olun, <a href='https://www.detpractice.com/tr/writing-ai-correction'>DET Yazma</a> performansınızı geliştirmek için ilgili öneriler alacaksınız."
       }
     ],
     "embarkfont": {
@@ -677,15 +677,15 @@
     "aqList": [
       {
         "name": "DET kurs paketine neler dahildir?",
-        "content": "<a href='https://www.detpractice.com/courses'>DET kurs paketi</a>, testin dört bölümünün tümü için kapsamlı hazırlık materyalleri içerir: Okuma, Dinleme, Konuşma ve Yazma. Her bölüm, gerçek zamanlı geri bildirim ve pratik stratejilerle belirli soru türlerine odaklanan çoklu etkileşimli kurslar içerir."
+        "content": "<a href='https://www.detpractice.com/tr/courses'>DET kurs paketi</a>, testin dört bölümünün tümü için kapsamlı hazırlık materyalleri içerir: Okuma, Dinleme, Konuşma ve Yazma. Her bölüm, gerçek zamanlı geri bildirim ve pratik stratejilerle belirli soru türlerine odaklanan çoklu etkileşimli kurslar içerir."
       },
       {
         "name": "Bu DET kursu diğer hazırlık materyallerinden nasıl farklıdır?",
-        "content": "Bu DET kursu, video dersleri artı kapsamlı alıştırmalar (bunları <a href='https://www.detpractice.com/practice'>DET pratik soru bankamızda</a> bulabilirsiniz) ve geri bildirim benzersiz bir kombinasyonu sunar. Testteki her soru türünü kapsar ve her bölüm için özelleştirilmiş hazırlık materyalleri içerir, böylece eksiksiz bir hazırlık çözümü sunar."
+        "content": "Bu DET kursu, video dersleri artı kapsamlı alıştırmalar (bunları <a href='https://www.detpractice.com/tr/practice'>DET pratik soru bankamızda</a> bulabilirsiniz) ve geri bildirim benzersiz bir kombinasyonu sunar. Testteki her soru türünü kapsar ve her bölüm için özelleştirilmiş hazırlık materyalleri içerir, böylece eksiksiz bir hazırlık çözümü sunar."
       },
       {
         "name": "DET kurs materyallerine kendi programıma göre erişebilir miyim?",
-        "content": "Evet, tüm DET kurs materyalleri <a href='https://www.detpractice.com'>DET Practice</a>'de tüm üyeler için ücretsizdir ve 7/24 erişilebilir. Kendi hızınızda çalışabilir ve materyallere istediğiniz zaman, istediğiniz yerden erişebilirsiniz."
+        "content": "Evet, tüm DET kurs materyalleri <a href='https://www.detpractice.com/tr'>DET Practice</a>'de tüm üyeler için ücretsizdir ve 7/24 erişilebilir. Kendi hızınızda çalışabilir ve materyallere istediğiniz zaman, istediğiniz yerden erişebilirsiniz."
       },
       {
         "name": "DET kursu en son test formatını kapsıyor mu?",
@@ -769,7 +769,7 @@
     "aqlistfont": [
       {
         "q": "Duolingo deneme sınavınızı diğer pratik materyallerden farklı kılan nedir?",
-        "a": "<a href='https://www.detpractice.com/mock-exam'>Duolingo deneme sınavımız</a> resmi sınav formatını, zamanlamasını ve zorluk seviyesini tam olarak yansıtır. Her pratik oturumundan sonra kapsamlı performans analizi ve kişiselleştirilmiş çalışma önerileri sunuyoruz."
+        "a": "<a href='https://www.detpractice.com/tr/mock-exam'>Duolingo deneme sınavımız</a> resmi sınav formatını, zamanlamasını ve zorluk seviyesini tam olarak yansıtır. Her pratik oturumundan sonra kapsamlı performans analizi ve kişiselleştirilmiş çalışma önerileri sunuyoruz."
       },
       {
         "q": "Tam bir Duolingo deneme sınavını tamamlamak ne kadar sürer?",
@@ -781,7 +781,7 @@
       },
       {
         "q": "Duolingo deneme sınavını birden fazla kez alabilir miyim?",
-        "a": "Evet! <a href='https://www.detpractice.com/mock-exam'>DET deneme sınavımızı</a> ihtiyacınız olan kadar çok kez alabilirsiniz. Her deneme yeni içgörüler sağlar ve zamanla ilerlemenizi takip etmenize yardımcı olur."
+        "a": "Evet! <a href='https://www.detpractice.com/tr/mock-exam'>DET deneme sınavımızı</a> ihtiyacınız olan kadar çok kez alabilirsiniz. Her deneme yeni içgörüler sağlar ve zamanla ilerlemenizi takip etmenize yardımcı olur."
       },
       {
         "q": "Duolingo deneme sınavı için özel bir yazılım yüklemem gerekiyor mu?",
@@ -789,7 +789,7 @@
       },
       {
         "q": "Duolingo deneme sınavı içeriğiniz ne kadar güncel?",
-        "a": "En son test formatını ve soru tiplerini yansıtması için <a href='https://www.detpractice.com/'>DET pratik</a> materyallerimizi düzenli olarak güncelliyoruz, böylece mevcut en güncel içerikle hazırlanıyorsunuz."
+        "a": "En son test formatını ve soru tiplerini yansıtması için <a href='https://www.detpractice.com/tr'>DET pratik</a> materyallerimizi düzenli olarak güncelliyoruz, böylece mevcut en güncel içerikle hazırlanıyorsunuz."
       }
     ],
     "embarkfont": {
@@ -824,7 +824,7 @@
     },
     "article3": {
       "h2": "Yapay Zeka Destekli DET Konuşma ve Yazma Değerlendirmesi",
-      "right_desc": "Duolingo İngilizce Testi yanıtlarınız için anında geri bildirim alın. Yapay zeka sistemimiz, <a href='https://www.detpractice.com/speaking-ai-correction'>DET konuşma</a> ve <a href='https://www.detpractice.com/writing-ai-correction'>DET yazma</a> gönderilerinizi gerçek zamanlı olarak analiz eder, telaffuz, akıcılık, dilbilgisi ve kelime kullanımı konusunda detaylı puanlama ve öneriler sunar, hassas ve güvenli bir şekilde gelişmenize yardımcı olur.",
+      "right_desc": "Duolingo İngilizce Testi yanıtlarınız için anında geri bildirim alın. Yapay zeka sistemimiz, <a href='https://www.detpractice.com/tr/speaking-ai-correction'>DET konuşma</a> ve <a href='https://www.detpractice.com/tr/writing-ai-correction'>DET yazma</a> gönderilerinizi gerçek zamanlı olarak analiz eder, telaffuz, akıcılık, dilbilgisi ve kelime kullanımı konusunda detaylı puanlama ve öneriler sunar, hassas ve güvenli bir şekilde gelişmenize yardımcı olur.",
       "btn": "Değerlendirmeye Başla"
     },
     "article4": {
@@ -839,7 +839,7 @@
         "a": "Gerçek test formatı ve gereksinimlerini tam olarak karşılayan profesyonelce tasarlanmış materyallerle Duolingo İngilizce Testi pratiğinde uzmanlaşmış durumdayız."
       },
       {
-        "q": "<a href='https://www.detpractice.com'>DET Practice</a> ile ne sıklıkla çalışmalıyım?",
+        "q": "<a href='https://www.detpractice.com/tr'>DET Practice</a> ile ne sıklıkla çalışmalıyım?",
         "a": "Optimum sonuçlar için, ideal olarak gerçek test tarihinden en az 2 hafta önce başlayarak günde 2-3 saat odaklanmış pratik yapmanızı öneririz."
       },
       {
@@ -848,7 +848,7 @@
       },
       {
         "q": "DET Practice'in içeriği ne kadar güncel?",
-        "a": "<a href='https://www.detpractice.com/practice'>Duolingo İngilizce Testi pratik</a> materyallerimiz, en son test kalıplarını ve gereksinimlerini yansıtacak şekilde sürekli güncelleniyor, her zaman hazır olmanızı sağlıyor."
+        "a": "<a href='https://www.detpractice.com/tr/practice'>Duolingo İngilizce Testi pratik</a> materyallerimiz, en son test kalıplarını ve gereksinimlerini yansıtacak şekilde sürekli güncelleniyor, her zaman hazır olmanızı sağlıyor."
       },
       {
         "q": "Duolingo İngilizce Testi pratiği genel İngilizce öğreniminden nasıl farklıdır?",
@@ -898,7 +898,7 @@
     "aqlistfont": [
       {
         "q": "AI değerlendirmeniz gerçek DET konuşma testiyle karşılaştırıldığında ne kadar doğru?",
-        "a": "<a href='https://www.detpractice.com/'>DET Practice</a> AI puanlama sistemimiz, gerçek test sonuçlarının kapsamlı analizlerine dayalı olarak kalibre edilmiştir. Hiçbir pratik aracı tam olarak eşleşen puanlar garanti edemese de, sistemimiz binlerce öğrencinin DET konuşma performansını %90'ın üzerinde bir doğrulukla tahmin etmesine yardımcı olmuştur."
+        "a": "<a href='https://www.detpractice.com/tr'>DET Practice</a> AI puanlama sistemimiz, gerçek test sonuçlarının kapsamlı analizlerine dayalı olarak kalibre edilmiştir. Hiçbir pratik aracı tam olarak eşleşen puanlar garanti edemese de, sistemimiz binlerce öğrencinin DET konuşma performansını %90'ın üzerinde bir doğrulukla tahmin etmesine yardımcı olmuştur."
       },
       {
         "q": "Belirli DET konuşma soru türlerini pratik yapabilir miyim?",
@@ -906,11 +906,11 @@
       },
       {
         "q": "Konuşma cevabımı gönderdikten sonra ne kadar hızlı geri bildirim alacağım?",
-        "a": "AI'mız cevabınızı tamamladıktan sonra dakikalar içinde anında geri bildirim sağlar. Her DET Practice oturumu, telaffuzunuz, akıcılığınız ve içeriğinizin detaylı bir analizini içerir - <a href='https://www.detpractice.com/speaking-ai-correction'>DET konuşma becerilerinizi</a> hemen geliştirmenize olanak tanır."
+        "a": "AI'mız cevabınızı tamamladıktan sonra dakikalar içinde anında geri bildirim sağlar. Her DET Practice oturumu, telaffuzunuz, akıcılığınız ve içeriğinizin detaylı bir analizini içerir - <a href='https://www.detpractice.com/tr/speaking-ai-correction'>DET konuşma becerilerinizi</a> hemen geliştirmenize olanak tanır."
       },
       {
         "q": "DET konuşma puanlarım sürekli düşükse ne yapmalıyım?",
-        "a": "DET Practice, performans modellerinize dayalı olarak hedefli gelişim stratejileri sunar. <a href='https://www.detpractice.com/speaking-ai-correction'>DET konuşmanın</a> belirli yönleriyle zorluk yaşıyorsanız, AI'mız sorunlu alanları belirleyecek ve gelişmenize yardımcı olmak için odaklanmış alıştırmalar önerecektir."
+        "a": "DET Practice, performans modellerinize dayalı olarak hedefli gelişim stratejileri sunar. <a href='https://www.detpractice.com/tr/speaking-ai-correction'>DET konuşmanın</a> belirli yönleriyle zorluk yaşıyorsanız, AI'mız sorunlu alanları belirleyecek ve gelişmenize yardımcı olmak için odaklanmış alıştırmalar önerecektir."
       },
       {
         "q": "Gerçek DET konuşma bölümünü simüle eden pratik testler sunuyor musunuz?",
