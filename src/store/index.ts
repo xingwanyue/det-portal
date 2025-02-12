@@ -94,7 +94,7 @@ export const useStore = defineStore({
     async checkPayStatus(logVipId: string, token: string) {
       const { err, data = {} } = await stripePayStatusGet(logVipId, token);
       if (!err) {
-        const { code, vipEndTime, vipDays, examNum, correctNum, id, amount, write, speak } = data;
+        const { code, vipEndTime, vipDays, examNum, correctNum, id, amount, write, speak, type, tag } = data;
         if (code === 1) {
           payEvent(id, amount);
           this.user.vipEndTime = vipEndTime;
@@ -105,35 +105,39 @@ export const useStore = defineStore({
             this.user.correctNum = (this.user.correctNum || 0) + correctNum;
           }
           const message = [];
-          if (examNum) {
-            message.push(`${examNum} mock exams purchased successfully !`);
-          }
-          if (correctNum) {
-            message.push(`${correctNum} correction services purchased successfully !`);
-          }
-          if (vipDays) {
-            message.push(`${vipDays}
-            days premium package purchased successfully! Membership valid until 
-            ${dayjs(vipEndTime).format('YYYY-MM-DD')}.`);
-          }
-          if (write && speak) {
-            this.user.write = 1;
-            this.user.speak = 1;
-            message.push(
-              `"Speaking Guide" and "Writing Guide" purchase successful. You can view or download them directly from the course page.`,
-            );
-          }
-          if (write && !speak) {
-            this.user.write = 1;
-            message.push(
-              `"Writing Guide" purchase successful. You can view or download it directly from the course page.`,
-            );
-          }
-          if (speak && !write) {
-            this.user.speak = 1;
-            message.push(
-              `"Speaking Guide" purchase successful. You can view or download it directly from the course page.`,
-            );
+          if (type === '2') {
+            message.push(` Your "${tag}" membership is now active! Open the app to explore your exclusive features.`);
+          } else {
+            if (examNum) {
+              message.push(`${examNum} mock exams purchased successfully !`);
+            }
+            if (correctNum) {
+              message.push(`${correctNum} correction services purchased successfully !`);
+            }
+            if (vipDays) {
+              message.push(`${vipDays}
+              days premium package purchased successfully! Membership valid until 
+              ${dayjs(vipEndTime).format('YYYY-MM-DD')}.`);
+            }
+            if (write && speak) {
+              this.user.write = 1;
+              this.user.speak = 1;
+              message.push(
+                `"Speaking Guide" and "Writing Guide" purchase successful. You can view or download them directly from the course page.`,
+              );
+            }
+            if (write && !speak) {
+              this.user.write = 1;
+              message.push(
+                `"Writing Guide" purchase successful. You can view or download it directly from the course page.`,
+              );
+            }
+            if (speak && !write) {
+              this.user.speak = 1;
+              message.push(
+                `"Speaking Guide" purchase successful. You can view or download it directly from the course page.`,
+              );
+            }
           }
 
           if (message.length) {
