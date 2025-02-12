@@ -255,7 +255,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
           <div class="logo_img_out">
             <img src="/img/footer/small_logo.svg" :alt="$t('footer.newAlt')" />
           </div>
-          <div class="Copyright">© 2024 DET Practice</div>
+          <div class="Copyright">© 2025 DET Practice</div>
         </div>
 
         <div class="logo_icon_out">
