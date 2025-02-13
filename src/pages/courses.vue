@@ -4,6 +4,7 @@ const { t } = useI18n();
 import { useStore } from '@/store';
 import { useRouter } from 'vue-router';
 import { domain, cdn } from '@/utils';
+import { onMounted, onUnmounted } from 'vue';
 
 const router = useRouter();
 
@@ -251,6 +252,33 @@ const openOrCloseOneQuestion = (item: any) => {
 // 引入cdn图片
 
 const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
+
+const isSticky = ref(false);
+const changeLeftRef = ref<HTMLElement | null>(null);
+const changeRightRef = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  const handleScroll = () => {
+    if (!changeLeftRef.value || !changeRightRef.value) return;
+
+    const rightRect = changeRightRef.value.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // 当右侧内容开始进入视口时，设置左侧为固定定位
+    if (rightRect.top <= 20 && rightRect.bottom >= windowHeight * 0.5) {
+      isSticky.value = true;
+    } else {
+      isSticky.value = false;
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  // 清理事件监听
+  onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll);
+  });
+});
 </script>
 
 <template>
@@ -294,35 +322,38 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
         </div>
 
         <div class="four_changes_out">
-          <div class="change_left">
-            <div
-              v-for="(item, index) in four_change_left_data"
-              :key="index"
-              :class="
-                four_change_left_active_index === item.index
-                  ? 'one_change_click_dom one_change_click_dom_active'
-                  : 'one_change_click_dom'
-              "
-              @click="four_change_left_active_index_change(index)"
-            >
-              <div v-if="four_change_left_active_index === item.index" class="one_change_icon">
-                <img :src="`${item.icon_active}`" alt="green_check_icon" />
-              </div>
-              <div v-else class="one_change_icon">
-                <img :src="`${item.icon}`" alt="green_check_icon" />
-              </div>
+          <div class="four_changes_out_left">
+            <div ref="changeLeftRef" :class="['change_left', { change_left_sticky: isSticky }]">
               <div
+                v-for="(item, index) in four_change_left_data"
+                :key="index"
                 :class="
                   four_change_left_active_index === item.index
-                    ? 'one_change_title one_change_title_active'
-                    : 'one_change_title'
+                    ? 'one_change_click_dom one_change_click_dom_active'
+                    : 'one_change_click_dom'
                 "
+                @click="four_change_left_active_index_change(index)"
               >
-                {{ item.title }}
+                <div v-if="four_change_left_active_index === item.index" class="one_change_icon">
+                  <img :src="`${item.icon_active}`" alt="green_check_icon" />
+                </div>
+                <div v-else class="one_change_icon">
+                  <img :src="`${item.icon}`" alt="green_check_icon" />
+                </div>
+                <div
+                  :class="
+                    four_change_left_active_index === item.index
+                      ? 'one_change_title one_change_title_active'
+                      : 'one_change_title'
+                  "
+                >
+                  {{ item.title }}
+                </div>
               </div>
             </div>
           </div>
-          <div class="change_right">
+
+          <div ref="changeRightRef" class="change_right">
             <div v-for="(item, index) in four_change_right_data" :key="index">
               <div class="change_right_title" :id="`section-${index}`">{{ item.title }}</div>
               <div class="change_right_desc">{{ item.desc }}</div>
@@ -552,27 +583,31 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
       }
       .four_changes_out {
         display: grid;
-        grid-template-columns: 0.33fr 1fr;
+        grid-template-columns: 300px 1fr;
         gap: 80px;
         margin-top: 120px;
         flex-wrap: wrap;
+        position: relative;
         @media screen and (max-width: 760px) {
           margin-top: 60px;
           grid-template-columns: 1fr !important;
           gap: 20px;
         }
+        .four_changes_out_left {
+        }
 
         .change_left {
           flex-shrink: 0;
+
           display: flex;
           flex-direction: column;
           gap: 16px;
+
           @media screen and (max-width: 760px) {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
           }
-
           .one_change_click_dom {
             display: flex;
             align-items: center;
@@ -617,6 +652,16 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             }
           }
         }
+
+        .change_left_sticky {
+          @media screen and (min-width: 761px) {
+            position: fixed;
+            top: 20px;
+            width: 300px; // 根据实际布局调整宽度
+            max-width: 300px;
+          }
+        }
+
         .change_right {
           display: flex;
           flex-direction: column;
