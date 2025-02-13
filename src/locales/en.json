@@ -1235,5 +1235,119 @@
     "contaceUsList[2]": {
       "btn": "Get Paid"
     }
+  },
+  "duolinguopt": {
+    "seometa": {
+      "title": "Duolingo English Practice Test Enhanced by DETPractice",
+      "description": "Take enhanced Duolingo English Practice Test with real-exam interface and instant scoring. Practice full-length DET tests with detailed analytics and personalized feedback. Join 10,000+ successful test-takers today."
+    },
+    "hero": {
+      "title": "Enhanced Duolingo English Practice Test",
+      "desc": "Take full-length Duolingo English Practice Tests just like the <strong>real DET</strong>. Get <strong>instant scores</strong> and <strong>detailed feedback</strong> to improve fast and perform your best.",
+      "btn": "Mock Now"
+    },
+    "features": {
+      "title": "Why Choose Our Enhanced DET Practice Test?",
+      "comparison": {
+        "title": "Slide to compare Basic and Enhanced Reports",
+        "left_title": "Duolingo Practice Test Basic Report",
+        "right_title": "Enhanced Analysis DET Mock Report"
+      },
+      "cards": [
+        {
+          "title": "10K+ Users Approved",
+          "desc": "Join thousands who've hit their target DET scores with our proven practice platform."
+        },
+        {
+          "title": "Real Test Setting",
+          "desc": "Practice with an interface that matches the real DET — same question types, same time limits."
+        },
+        {
+          "title": "Detailed Analytics",
+          "desc": "Get detailed performance reports and tailored study plans to target your weak points and improve faster."
+        },
+        {
+          "title": "Practice Anytime",
+          "desc": "Take mock tests 24/7 with instant scoring. Pause and resume whenever you need."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "How It Works",
+      "steps": [
+        {
+          "title": "Take a Practice Test",
+          "desc": "Complete a full-length mock test under real exam conditions."
+        },
+        {
+          "title": "Get Instant Results",
+          "desc": "Receive your score and detailed feedback within 5-30 minutes."
+        },
+        {
+          "title": "Review & Improve",
+          "desc": "Analyze your performance and focus on weak areas with our study plans."
+        },
+        {
+          "title": "Track Progress",
+          "desc": "Monitor your improvement across multiple practice tests."
+        }
+      ]
+    },
+    "score_comparison": {
+      "title": "Score Comparisons: DET Practice Mock Test vs. Official DET",
+    },
+    "pricing": {
+      "title": "Pricing",
+      "btn": "Buy Now",
+      "save": "Save",
+      "tests": "Tests"
+    },
+    "reviews": {
+      "title": "Student Reviews",
+      "items": [
+        {
+          "text": "The DET practice tests were incredibly accurate. I scored 115 on my <a href='/mock-exam'>DET mock test</a> and 120 on the actual DET. The speaking section practice really helped me improve my confidence."
+        },
+        {
+          "text": "The detailed feedback after each practice test helped me understand my weaknesses. I improved my writing score from 85 to 110 in just three weeks!"
+        },
+        {
+          "text": "The <a href='/'>DETPractice platform's</a> interface is very similar to the real DET. The timer and question types made me feel well-prepared when I took the actual test."
+        },
+        {
+          "text": "The <a href='/mock-exam'>DET mock tests</a> were incredibly helpful. My scores improved consistently with each practice, and I ended up scoring 125 on the actual DET - even higher than my last mock test!"
+        }
+      ],
+      "btn": "Mock Now"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is a Duolingo English Practice Test?",
+          "a": "A <a href='/duolingo-practice-test'>Duolingo English Practice Test</a> simulates the official Duolingo English Test environment, providing realistic questions, time limits, and scoring formats. By completing a <a href='/duolingo-practice-test'>Duolingo English Practice Test</a>, you can familiarize yourself with the exam's structure, build confidence, and identify areas for improvement."
+        },
+        {
+          "q": "How does a DET Practice Test differ from the official exam?",
+          "a": "A DET Practice Test (Duolingo English Test Practice) mirrors the official test format but is not administered by Duolingo. Instead, it offers a risk-free environment to sharpen your skills. With an enhanced det practice test, you gain insight into the test's question types, pacing, and scoring criteria before committing to the real Duolingo English Test. For more information, visit: <a href='https: //prep.detpractice.com/free-premium-duolingo-english-practice-test/' target='_blank' rel='noopener noreferrer'>Free vs. Premium Duolingo English Practice Test: Which Option Best Fits Your Needs? </a>"
+        },
+        {
+          "q": "How can an enhanced Duolingo Practice Test help me improve my performance?",
+          "a": "An enhanced Duolingo practice test provides immediate feedback, highlighting your strengths and weaknesses. By repeatedly practicing, you can enhance vocabulary, refine pronunciation, and solidify grammar skills. Over time, consistent <a href='/practice'>English Duolingo test practice</a> sessions can significantly boost your overall score on the official exam."
+        },
+        {
+          "q": "What strategies can I learn through Duolingo English Test Practice sessions?",
+          "a": " Engaging in Duolingo English Test practice helps you develop essential strategies: managing time effectively, handling unfamiliar vocabulary, and approaching complex reading or listening tasks. Through trial and error in a practice environment, you'll refine techniques that lead to better results on test day."
+        },
+        {
+          "q": "Can multiple English Duolingo Test Practice attempts improve my confidence?",
+          "a": "Yes. Repeated <a href='/practice'>English Duolingo test practice</a> sessions help you grow more comfortable with the format, reduce test-day anxiety, and improve your accuracy. By observing your progress over multiple attempts, you can track improvements, identify persistent challenges, and focus on targeted learning."
+        },
+        {
+          "q": "How can I measure improvement through ongoing Duolingo English Test Practice?",
+          "a": "Our enhanced Duolingo practice test tools offer detailed score reports, analytics, and performance breakdowns. By reviewing these results after each <a href='/duolingo-practice-test'>Duolingo English Practice Test</a>, you gain a clear understanding of how your proficiency evolves. This data-driven approach allows you to fine-tune your study plan and maximize your final exam outcome."
+        }
+      ]
+    }
   }
 }

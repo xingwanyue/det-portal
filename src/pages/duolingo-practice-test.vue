@@ -1,21 +1,20 @@
 <script setup lang="ts">
 const route = useRoute();
+const { t } = useI18n();
 const localePath = useLocalePath();
 useSeoMeta({
-  title: () => 'Duolingo English Practice Test Enhanced by DETPractice',
-  description: () =>
-    'Take enhanced Duolingo English Practice Test with real-exam interface and instant scoring. Practice full-length DET tests with detailed analytics and personalized feedback. Join 10,000+ successful test-takers today.',
+  title: () => t('duolinguopt.seometa.title'),
+  description: () => t('duolinguopt.seometa.description'),
 });
 
 useHead({
   meta: [
-    { name: 'DC.title', content: 'Duolingo English Practice Test Enhanced by DETPractice' },
+    { name: 'DC.title', content: t('duolinguopt.seometa.title') },
     { property: 'og:type', content: 'website' },
-    { property: 'og:title', content: 'Duolingo English Practice Test Enhanced by DETPractice' },
+    { property: 'og:title', content: t('duolinguopt.seometa.title') },
     {
       property: 'og:description',
-      content:
-        'Take enhanced Duolingo English Practice Test with real-exam interface and instant scoring. Practice full-length DET tests with detailed analytics and personalized feedback. Join 10,000+ successful test-takers today.',
+      content: t('duolinguopt.seometa.description'),
     },
     { property: 'og:url', content: `https://www.${domain}${localePath('/duolingo-practice-test')}` },
     { property: 'og:site_name', content: 'DET Practice' },
@@ -23,11 +22,10 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:site', content: '@det_practice' },
     { name: 'twitter:creator', content: 'DET Practice' },
-    { name: 'twitter:title', content: 'Duolingo English Practice Test Enhanced by DETPractice' },
+    { name: 'twitter:title', content: t('duolinguopt.seometa.title') },
     {
       name: 'twitter:description',
-      content:
-        'Take enhanced Duolingo English Practice Test with real-exam interface and instant scoring. Practice full-length DET tests with detailed analytics and personalized feedback. Join 10,000+ successful test-takers today.',
+      content: t('duolinguopt.seometa.description'),
     },
     { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
@@ -121,15 +119,11 @@ onMounted(() => {
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>Enhanced Duolingo English Practice Test</h1>
-          <p>
-            Take full-length Duolingo English Practice Tests just like the <strong>real DET</strong>. Get
-            <strong>instant scores</strong> and <strong>detailed feedback</strong> to improve fast and perform your
-            best.
-          </p>
+          <h1>{{ t('duolinguopt.hero.title') }}</h1>
+          <p v-html="t('duolinguopt.hero.desc')"></p>
           <div class="hero-buttons">
             <NuxtLink href="/mock-exam">
-              <button class="btn btn-primary">Mock Now</button>
+              <button class="btn btn-primary">{{ t('duolinguopt.hero.btn') }}</button>
             </NuxtLink>
           </div>
         </div>
@@ -139,12 +133,12 @@ onMounted(() => {
     <!-- Features Section -->
     <section id="features" class="features">
       <div class="container">
-        <h2>Why Choose Our Enhanced DET Practice Test?</h2>
+        <h2>{{ t('duolinguopt.features.title') }}</h2>
 
         <!-- 添加图片对比组件 -->
-        <h3 class="mobile-comparison-title">Slide to compare Basic and Enhanced Reports</h3>
+        <h3 class="mobile-comparison-title">{{ t('duolinguopt.features.comparison.title') }}</h3>
         <div class="comparison-container">
-          <div class="title-left">Duolingo Practice Test Basic Report</div>
+          <div class="title-left">{{ t('duolinguopt.features.comparison.left_title') }}</div>
           <div class="image-compare">
             <div class="image-wrapper">
               <img src="/img/detpracticetest/basic-report.png" alt="Basic DET Score Report" class="image-before" />
@@ -158,31 +152,29 @@ onMounted(() => {
               </div>
             </div>
           </div>
-          <div class="title-right">Enhanced Analysis DET Mock Report</div>
+          <div class="title-right">{{ t('duolinguopt.features.comparison.right_title') }}</div>
         </div>
 
         <div class="features-grid">
           <div class="feature-card">
             <i class="fas fa-users"></i>
-            <h3>10K+ Users Approved</h3>
-            <p>Join thousands who've hit their target DET scores with our proven practice platform.</p>
+            <h3>{{ t('duolinguopt.features.cards[0].title') }}</h3>
+            <p>{{ t('duolinguopt.features.cards[0].desc') }}</p>
           </div>
           <div class="feature-card">
             <i class="fas fa-laptop"></i>
-            <h3>Real Test Setting</h3>
-            <p>Practice with an interface that matches the real DET — same question types, same time limits.</p>
+            <h3>{{ t('duolinguopt.features.cards[1].title') }}</h3>
+            <p>{{ t('duolinguopt.features.cards[1].desc') }}</p>
           </div>
           <div class="feature-card">
             <i class="fas fa-chart-line"></i>
-            <h3>Detailed Analytics</h3>
-            <p>
-              Get detailed performance reports and tailored study plans to target your weak points and improve faster.
-            </p>
+            <h3>{{ t('duolinguopt.features.cards[2].title') }}</h3>
+            <p>{{ t('duolinguopt.features.cards[2].desc') }}</p>
           </div>
           <div class="feature-card">
             <i class="fas fa-clock"></i>
-            <h3>Practice Anytime</h3>
-            <p>Take mock tests 24/7 with instant scoring. Pause and resume whenever you need.</p>
+            <h3>{{ t('duolinguopt.features.cards[3].title') }}</h3>
+            <p>{{ t('duolinguopt.features.cards[3].desc') }}</p>
           </div>
         </div>
       </div>
@@ -191,27 +183,27 @@ onMounted(() => {
     <!-- How It Works Section -->
     <section id="how-it-works" class="how-it-works">
       <div class="container">
-        <h2>How It Works</h2>
+        <h2>{{ t('duolinguopt.how_it_works.title') }}</h2>
         <div class="steps-grid">
           <div class="step-card">
             <div class="step-number">1</div>
-            <h3>Take a Practice Test</h3>
-            <p>Complete a full-length mock test under real exam conditions.</p>
+            <h3>{{ t('duolinguopt.how_it_works.steps[0].title') }}</h3>
+            <p>{{ t('duolinguopt.how_it_works.steps[0].desc') }}</p>
           </div>
           <div class="step-card">
             <div class="step-number">2</div>
-            <h3>Get Instant Results</h3>
-            <p>Receive your score and detailed feedback within 5-30 minutes.</p>
+            <h3>{{ t('duolinguopt.how_it_works.steps[1].title') }}</h3>
+            <p>{{ t('duolinguopt.how_it_works.steps[1].desc') }}</p>
           </div>
           <div class="step-card">
             <div class="step-number">3</div>
-            <h3>Review & Improve</h3>
-            <p>Analyze your performance and focus on weak areas with our study plans.</p>
+            <h3>{{ t('duolinguopt.how_it_works.steps[2].title') }}</h3>
+            <p>{{ t('duolinguopt.how_it_works.steps[2].desc') }}</p>
           </div>
           <div class="step-card">
             <div class="step-number">4</div>
-            <h3>Track Progress</h3>
-            <p>Monitor your improvement across multiple practice tests.</p>
+            <h3>{{ t('duolinguopt.how_it_works.steps[3].title') }}</h3>
+            <p>{{ t('duolinguopt.how_it_works.steps[3].desc') }}</p>
           </div>
         </div>
       </div>
@@ -220,7 +212,7 @@ onMounted(() => {
     <!-- Score Comparison Section -->
     <section id="score-comparison" class="score-comparison">
       <div class="container">
-        <h2>Score Comparisons: DET Practice Mock Test vs. Official DET</h2>
+        <h2>{{ t('duolinguopt.score_comparison.title') }}</h2>
         <div class="table-container">
           <div class="score-grid">
             <div class="score-card">
@@ -327,40 +319,48 @@ onMounted(() => {
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
       <div class="container">
-        <h2>Pricing</h2>
+        <h2>{{ t('duolinguopt.pricing.title') }}</h2>
         <div class="pricing-grid">
           <div class="pricing-card">
             <h3>1 Test</h3>
             <div class="original-price">$0.00</div>
             <div class="price">$4.99</div>
-            <NuxtLink href="/pricing"><button class="btn btn-primary">Buy Now</button></NuxtLink>
+            <NuxtLink href="/pricing"
+              ><button class="btn btn-primary">{{ t('duolinguopt.pricing.btn') }}</button></NuxtLink
+            >
           </div>
           <div class="pricing-card">
             <div class="save-badge">
-              <span>Save<br />7%</span>
+              <span>{{ t('duolinguopt.pricing.save') }}<br />7%</span>
             </div>
-            <h3>3 Tests</h3>
+            <h3>3 {{ t('duolinguopt.pricing.tests') }}</h3>
             <div class="original-price">$14.97</div>
             <div class="price">$13.99</div>
-            <NuxtLink href="/pricing"><button class="btn btn-primary">Buy Now</button></NuxtLink>
+            <NuxtLink href="/pricing"
+              ><button class="btn btn-primary">{{ t('duolinguopt.pricing.btn') }}</button></NuxtLink
+            >
           </div>
           <div class="pricing-card">
             <div class="save-badge">
-              <span>Save<br />28%</span>
+              <span>{{ t('duolinguopt.pricing.save') }}<br />28%</span>
             </div>
-            <h3>5 Tests</h3>
+            <h3>5 {{ t('duolinguopt.pricing.tests') }}</h3>
             <div class="original-price">$24.95</div>
             <div class="price">$17.99</div>
-            <NuxtLink href="/pricing"><button class="btn btn-primary">Buy Now</button></NuxtLink>
+            <NuxtLink href="/pricing"
+              ><button class="btn btn-primary">{{ t('duolinguopt.pricing.btn') }}</button></NuxtLink
+            >
           </div>
           <div class="pricing-card">
             <div class="save-badge">
-              <span>Save<br />44%</span>
+              <span>{{ t('duolinguopt.pricing.save') }}<br />44%</span>
             </div>
-            <h3>10 Tests</h3>
+            <h3>10 {{ t('duolinguopt.pricing.tests') }}</h3>
             <div class="original-price">$49.90</div>
             <div class="price">$27.99</div>
-            <NuxtLink href="/pricing"> <button class="btn btn-primary">Buy Now</button></NuxtLink>
+            <NuxtLink href="/pricing">
+              <button class="btn btn-primary">{{ t('duolinguopt.pricing.btn') }}</button></NuxtLink
+            >
           </div>
         </div>
       </div>
@@ -369,7 +369,7 @@ onMounted(() => {
     <!-- Student Reviews Section -->
     <section id="reviews" class="reviews">
       <div class="container">
-        <h2>Student Reviews</h2>
+        <h2>{{ t('duolinguopt.reviews.title') }}</h2>
         <div class="reviews-slider">
           <div class="reviews-track">
             <!-- Review Card 1 -->
@@ -388,11 +388,7 @@ onMounted(() => {
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
-              <p class="review-text">
-                "The DET practice tests were incredibly accurate. I scored 115 on my
-                <NuxtLink :href="localePath('/mock-exam')">DET mock test</NuxtLink> and 120 on the actual DET. The
-                speaking section practice really helped me improve my confidence."
-              </p>
+              <div class="review-text" v-html="t('duolinguopt.reviews.items[0].text')"></div>
             </div>
 
             <!-- Review Card 2 -->
@@ -411,10 +407,7 @@ onMounted(() => {
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
-              <p class="review-text">
-                "The detailed feedback after each practice test helped me understand my weaknesses. I improved my
-                writing score from 85 to 110 in just three weeks!"
-              </p>
+              <div class="review-text" v-html="t('duolinguopt.reviews.items[1].text')"></div>
             </div>
 
             <!-- Review Card 3 -->
@@ -433,10 +426,7 @@ onMounted(() => {
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
               </div>
-              <p class="review-text">
-                "The <NuxtLink :href="localePath('/')">DETPractice platform's</NuxtLink> interface is very similar to
-                the real DET. The timer and question types made me feel well-prepared when I took the actual test."
-              </p>
+              <div class="review-text" v-html="t('duolinguopt.reviews.items[2].text')"></div>
             </div>
 
             <!-- Review Card 4 -->
@@ -455,11 +445,7 @@ onMounted(() => {
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
-              <p class="review-text">
-                "The <NuxtLink :href="localePath('/mock-exam')">DET mock tests</NuxtLink> were incredibly helpful. My
-                scores improved consistently with each practice, and I ended up scoring 125 on the actual DET - even
-                higher than my last mock test!"
-              </p>
+              <div class="review-text" v-html="t('duolinguopt.reviews.items[3].text')"></div>
             </div>
           </div>
         </div>
@@ -470,7 +456,11 @@ onMounted(() => {
     <section class="footer-cta">
       <div class="container">
         <div class="cta-content">
-          <NuxtLink href="/mock-exam"><button class="btn btn-primary btn-large">Mock Now</button></NuxtLink>
+          <NuxtLink href="/mock-exam"
+            ><button class="btn btn-primary btn-large">
+              {{ t('duolinguopt.reviews.btn') }}
+            </button>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -478,101 +468,59 @@ onMounted(() => {
     <!-- FAQ Section -->
     <section id="faq" class="faq">
       <div class="container">
-        <h2>Frequently Asked Questions</h2>
+        <h2>{{ t('duolinguopt.faq.title') }}</h2>
         <div class="faq-grid">
           <div class="faq-item">
             <div class="faq-question">
-              <h3>What is a Duolingo English Practice Test?</h3>
+              <h3>{{ t('duolinguopt.faq.items[0].q') }}</h3>
             </div>
             <div class="faq-answer">
-              <p>
-                A
-                <NuxtLink :href="localePath('/duolingo-practice-test')">Duolingo English Practice Test</NuxtLink>
-                simulates the official Duolingo English Test environment, providing realistic questions, time limits,
-                and scoring formats. By completing a
-                <NuxtLink :href="localePath('/duolingo-practice-test')">Duolingo English Practice Test</NuxtLink>, you
-                can familiarize yourself with the exam's structure, build confidence, and identify areas for
-                improvement.
-              </p>
+              <div class="faq-answer-text" v-html="t('duolinguopt.faq.items[0].a')"></div>
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              <h3>How does a DET Practice Test differ from the official exam?</h3>
+              <h3>{{ t('duolinguopt.faq.items[1].q') }}</h3>
             </div>
             <div class="faq-answer">
-              <p>
-                A DET Practice Test (Duolingo English Test Practice) mirrors the official test format but is not
-                administered by Duolingo. Instead, it offers a risk-free environment to sharpen your skills. With an
-                enhanced det practice test, you gain insight into the test's question types, pacing, and scoring
-                criteria before committing to the real Duolingo English Test. For more information, visit:
-                <NuxtLink
-                  href="https://prep.detpractice.com/free-premium-duolingo-english-practice-test/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Free vs. Premium Duolingo English Practice Test: Which Option Best Fits Your Needs?
-                </NuxtLink>
-              </p>
+              <div class="faq-answer-text" v-html="t('duolinguopt.faq.items[1].a')"></div>
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              <h3>How can an enhanced Duolingo Practice Test help me improve my performance?</h3>
+              <h3>{{ t('duolinguopt.faq.items[2].q') }}</h3>
             </div>
             <div class="faq-answer">
-              <p>
-                An enhanced Duolingo practice test provides immediate feedback, highlighting your strengths and
-                weaknesses. By repeatedly practicing, you can enhance vocabulary, refine pronunciation, and solidify
-                grammar skills. Over time, consistent
-                <NuxtLink :href="localePath('/practice')">English Duolingo test practice</NuxtLink> sessions can
-                significantly boost your overall score on the official exam.
-              </p>
+              <div class="faq-answer-text" v-html="t('duolinguopt.faq.items[2].a')"></div>
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              <h3>What strategies can I learn through Duolingo English Test Practice sessions?</h3>
+              <h3>{{ t('duolinguopt.faq.items[3].q') }}</h3>
             </div>
             <div class="faq-answer">
-              <p>
-                Engaging in Duolingo English Test practice helps you develop essential strategies: managing time
-                effectively, handling unfamiliar vocabulary, and approaching complex reading or listening tasks. Through
-                trial and error in a practice environment, you'll refine techniques that lead to better results on test
-                day.
-              </p>
+              <div class="faq-answer-text" v-html="t('duolinguopt.faq.items[3].a')"></div>
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              <h3>Can multiple English Duolingo Test Practice attempts improve my confidence?</h3>
+              <h3>{{ t('duolinguopt.faq.items[4].q') }}</h3>
             </div>
             <div class="faq-answer">
-              <p>
-                Yes. Repeated
-                <NuxtLink :href="localePath('/practice')">English Duolingo test practice</NuxtLink> sessions help you
-                grow more comfortable with the format, reduce test-day anxiety, and improve your accuracy. By observing
-                your progress over multiple attempts, you can track improvements, identify persistent challenges, and
-                focus on targeted learning.
-              </p>
+              <div class="faq-answer-text" v-html="t('duolinguopt.faq.items[4].a')"></div>
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              <h3>How can I measure improvement through ongoing Duolingo English Test Practice?</h3>
+              <h3>{{ t('duolinguopt.faq.items[5].q') }}</h3>
             </div>
             <div class="faq-answer">
-              <p>
-                Our enhanced Duolingo practice test tools offer detailed score reports, analytics, and performance
-                breakdowns. By reviewing these results after each
-                <NuxtLink :href="localePath('/duolingo-practice-test')">Duolingo English Practice Test</NuxtLink>, you
-                gain a clear understanding of how your proficiency evolves. This data-driven approach allows you to
-                fine-tune your study plan and maximize your final exam outcome.
-              </p>
+              <div class="faq-answer-text" v-html="t('duolinguopt.faq.items[5].a')"></div>
             </div>
           </div>
         </div>
@@ -1180,6 +1128,14 @@ body {
 .faq-answer {
   padding-top: 15px;
   border-top: 1px solid #e0e0e0;
+  ::v-deep(a) {
+    color: #f66442;
+    text-decoration: none;
+  }
+  ::v-deep(.zdfont) {
+    color: #f66442;
+    text-decoration: none;
+  }
 }
 
 .faq-answer p {
@@ -1193,6 +1149,13 @@ body {
   color: #f66442;
   text-decoration: none;
 }
+.review-text {
+  ::v-deep(a) {
+    color: #f66442;
+    text-decoration: none;
+  }
+}
+
 .faq-answer a:hover,
 .faq-answer a:hover {
   text-decoration: underline;
