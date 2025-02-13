@@ -66,6 +66,16 @@ const four_change_right_active_index = ref(0);
 const four_change_left_active_index_change = (index: number) => {
   four_change_left_active_index.value = index;
   four_change_right_active_index.value = index;
+  const element = document.getElementById(`section-${index}`);
+  if (element) {
+    const offset = 100; // 可以根据需要调整这个值
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
+  }
 };
 
 const four_change_left_data = computed(() => {
@@ -313,12 +323,8 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             </div>
           </div>
           <div class="change_right">
-            <div
-              v-for="(item, index) in four_change_right_data"
-              :key="index"
-              v-show="four_change_left_active_index === index"
-            >
-              <div class="change_right_title">{{ item.title }}</div>
+            <div v-for="(item, index) in four_change_right_data" :key="index">
+              <div class="change_right_title" :id="`section-${index}`">{{ item.title }}</div>
               <div class="change_right_desc">{{ item.desc }}</div>
               <div class="change_right_desc">{{ item.desc2 }}</div>
               <div class="change_right_video">
@@ -615,6 +621,9 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
           }
         }
         .change_right {
+          display: flex;
+          flex-direction: column;
+          gap: 120px;
           .change_right_title {
             font-weight: 500;
             font-size: 32px;
