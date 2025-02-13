@@ -237,7 +237,8 @@
       "bci": "ikon_periksa_hitam",
       "mt": "Ujian Tiruan",
       "apmt": "Tes Tiruan Bertenaga AI",
-      "popular": "Populer"
+      "popular": "Populer",
+      "bestvalue": "Nilai Terbaik"
     },
     "aqList": [
       {

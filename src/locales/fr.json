@@ -236,7 +236,8 @@
       "bci": "icône_de_vérification_noire",
       "mt": "Examen blanc",
       "apmt": "Test simulé alimenté par l'IA",
-      "popular": "Populaire"
+      "popular": "Populaire",
+      "bestvalue": "Meilleur Valeur"
     },
     "aqList": [
       {

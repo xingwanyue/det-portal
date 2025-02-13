@@ -106,11 +106,7 @@ const saveCaculate = (item: any) => {
             <div class="title_out">
               <div class="title">{{ item.tag }}</div>
               <div v-if="item.day === 365" class="save_tag">
-                {{
-                  $t('pricing.pagefont.save', {
-                    num: saveCaculate(item).toFixed(0),
-                  })
-                }}
+                {{ $t('pricing.pagefont.bestvalue') }}
               </div>
             </div>
 
@@ -413,7 +409,7 @@ const saveCaculate = (item: any) => {
       color: #063156;
     }
     .save_tag {
-      padding: 4px 10px;
+      padding: 4px 6px;
       background: #edc295;
       border-radius: 16px;
       font-weight: 500;

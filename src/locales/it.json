@@ -237,7 +237,8 @@
       "bci": "icona_di_controllo_nera",
       "mt": "Esame simulato",
       "apmt": "Test Simulato Alimentato da AI",
-      "popular": "Popolare"
+      "popular": "Popolare",
+      "bestvalue": "Miglior Valore"
     },
     "aqList": [
       {

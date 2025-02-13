@@ -236,7 +236,8 @@
       "bci": "schwarzes_kontrollsymbol",
       "mt": "Probeklausur",
       "apmt": "KI-gestützter Probetest",
-      "popular": "Beliebt"
+      "popular": "Beliebt",
+      "bestvalue": "Best Value"
     },
     "aqList": [
       {

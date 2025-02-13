@@ -237,7 +237,8 @@
       "bci": "icono_de_verificación_negro",
       "mt": "Examen de práctica",
       "apmt": "Prueba Simulada impulsada por IA",
-      "popular": "Popular"
+      "popular": "Popular",
+      "bestvalue": "Mejor Valor"
     },
     "aqList": [
       {
