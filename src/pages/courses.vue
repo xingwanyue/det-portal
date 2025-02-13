@@ -348,17 +348,10 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
                   <h3 class="change_right_video_title">{{ item2.title }}</h3>
                   <div v-if="item2.desc" class="change_right_video_desc">{{ item2.desc }}</div>
                   <div v-if="!item2.videoUrl" class="video_hack">
-                    <a target="_blank" href="https://www.detpractice.com">
-                      DET Practice | One-stop Duolingo English Test Prep Platform
-                    </a>
-                    <a target="_blank" href="https://englishtest.duolingo.com/practice">
-                      Duolingo English Test Practice Question Bank
-                    </a>
-                    <a target="_blank" href="https://www.detpractice.com/duolingo-practice-test">
-                      Duolingo Practice Test
-                    </a>
-                    <a target="_blank" href="https://www.detpractice.com/blog"> DET Practice Learning Blog </a>
-                    <a target="_blank" href="https://prep.detpractice.com/"> Duolingo English Test Prep Hub </a>
+                    <a target="_blank" href="/"> DET Practice | One-stop Duolingo English Test Prep Platform </a>
+                    <a target="_blank" href="/practice"> Duolingo English Test Practice Question Bank </a>
+                    <a target="_blank" href="/duolingo-practice-test"> Duolingo Practice Test </a>
+                    <a target="_blank" href="/blog"> DET Practice Learning Blog </a>
                   </div>
                 </div>
               </div>
@@ -681,6 +674,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               display: flex;
               flex-direction: column;
               gap: 4px;
+              margin-top: 8px;
               a {
                 display: block;
                 color: #666666ff;
