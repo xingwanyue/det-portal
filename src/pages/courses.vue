@@ -341,7 +341,26 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
                       loading="lazy"
                     ></iframe>
                   </div>
-                  <div v-else class="video_hack">
+                  <div v-else class="change_right_video_iframe">
+                    <img src="/img/courses/video_hack.png" alt="video_hack" />
+                  </div>
+
+                  <!-- <div v-else class="video_hack">
+                    <a target="_blank" href="https://www.detpractice.com">
+                      DET Practice | One-stop Duolingo English Test Prep Platform
+                    </a>
+                    <a target="_blank" href="https://englishtest.duolingo.com/practice">
+                      Duolingo English Test Practice Question Bank
+                    </a>
+                    <a target="_blank" href="https://www.detpractice.com/duolingo-practice-test">
+                      Duolingo English Practice Test
+                    </a>
+                    <a target="_blank" href="https://www.detpractice.com/blog"> DET Practice Learning Blog </a>
+                    <a target="_blank" href="https://prep.detpractice.com/"> Duolingo English Test Prep Hub </a>
+                  </div> -->
+                  <h3 class="change_right_video_title">{{ item2.title }}</h3>
+                  <div v-if="item2.desc" class="change_right_video_desc">{{ item2.desc }}</div>
+                  <div v-if="!item2.videoUrl" class="video_hack">
                     <a target="_blank" href="https://www.detpractice.com">
                       DET Practice | One-stop Duolingo English Test Prep Platform
                     </a>
@@ -354,8 +373,6 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
                     <a target="_blank" href="https://www.detpractice.com/blog"> DET Practice Learning Blog </a>
                     <a target="_blank" href="https://prep.detpractice.com/"> Duolingo English Test Prep Hub </a>
                   </div>
-                  <h3 class="change_right_video_title">{{ item2.title }}</h3>
-                  <div v-if="item2.desc" class="change_right_video_desc">{{ item2.desc }}</div>
                 </div>
               </div>
             </div>
@@ -661,6 +678,10 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               height: 0;
               border-radius: 16px;
               overflow: hidden;
+              img {
+                width: 100%;
+                height: auto;
+              }
             }
             .change_right_video_iframe iframe {
               position: absolute;
