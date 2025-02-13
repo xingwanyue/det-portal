@@ -642,14 +642,19 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
               gap: 16px;
             }
             .change_right_video_iframe {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
+              position: relative;
+              width: 100%;
+              padding-bottom: 56.25%; /* 16:9 宽高比 (9/16 = 0.5625) */
+              height: 0;
               border-radius: 16px;
               overflow: hidden;
-              // min-height: 400px;+
-              // border: 1px red solid;
+            }
+            .change_right_video_iframe iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
             }
             .video_hack {
               display: flex;
