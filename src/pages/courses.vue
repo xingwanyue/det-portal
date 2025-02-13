@@ -561,6 +561,9 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
 
         .change_left {
           flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
           @media screen and (max-width: 760px) {
             display: flex;
             flex-direction: row;
@@ -574,6 +577,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
             justify-content: flex-start;
             gap: 8px;
             padding: 24px 0;
+            border-radius: 20px;
             &:hover {
               background: #fef7f5;
               @media screen and (max-width: 760px) {
