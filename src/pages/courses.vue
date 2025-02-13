@@ -355,7 +355,7 @@ const team_bg = `${cdn}/store/portal/guid/team_bg.png`;
                       Duolingo English Test Practice Question Bank
                     </a>
                     <a target="_blank" href="https://www.detpractice.com/duolingo-practice-test">
-                      Duolingo English Practice Test
+                      Duolingo Practice Test
                     </a>
                     <a target="_blank" href="https://www.detpractice.com/blog"> DET Practice Learning Blog </a>
                     <a target="_blank" href="https://prep.detpractice.com/"> Duolingo English Test Prep Hub </a>

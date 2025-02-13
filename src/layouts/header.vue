@@ -218,14 +218,14 @@ const menus = computed(() => [
               </NuxtLink>
               <NuxtLink
                 :to="localePath('/duolingo-practice-test')"
-                title="Duolingo English Practice Test"
+                title="Duolingo Practice Test"
                 class="one_card card4"
               >
                 <div class="icon">
-                  <img src="/img/home/head_practice.svg" alt="Duolingo English Practice Test" />
+                  <img src="/img/home/head_practice.svg" alt="Duolingo Practice Test" />
                 </div>
                 <div class="right">
-                  <div class="title">Duolingo English Practice Test</div>
+                  <div class="title">Duolingo Practice Test</div>
                   <div class="font">
                     Assess your listening, speaking, reading, and writing skills to identify areas for improvement.
                   </div>
@@ -287,11 +287,7 @@ const menus = computed(() => [
       </div>
       <div v-else class="loginbtn">
         <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font"> Login </nuxt-link> -->
-        <nuxt-link
-          :to="localePath(`/login`)"
-          class="try_free common_btn_hover_bgColor"
-          rel="nofollow"
-        >
+        <nuxt-link :to="localePath(`/login`)" class="try_free common_btn_hover_bgColor" rel="nofollow">
           {{ $t('header.Try_for_free') }}
         </nuxt-link>
       </div>
