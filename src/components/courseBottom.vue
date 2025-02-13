@@ -49,7 +49,7 @@ const buyMembership = (id: number) => {
                 <NuxtLink :to="localePath(`/login?url=/courses`)" v-else class="btn common_btn_hover_bgColor">
                   <div class="font">{{ $t('courses.pagefont.Buy_Now') }}</div>
                 </NuxtLink>
-                <div class="jiantou"><img src="/img/courses/courses_jiantou.svg" /></div>
+                <div class="jiantou"><img src="/img/courses/courses_jiantou.svg" alt="courses_jiantou" /></div>
               </template>
 
               <a
@@ -64,7 +64,7 @@ const buyMembership = (id: number) => {
                 <div class="font">{{ $t('courses.downloadguide') }}</div>
               </div>
               <template v-if="item.type === 'speaking'">
-                <div class="jiantou"><img src="/img/courses/courses_jiantou.svg" /></div>
+                <div class="jiantou"><img src="/img/courses/courses_jiantou.svg" alt="courses_jiantou" /></div>
                 <NuxtLink v-if="item.isbuyed" class="btn common_btn_hover_bgColor" :to="localePath(`/listen`)">
                   <div class="font">{{ $t('courses.sas') }}</div>
                 </NuxtLink>

@@ -48,7 +48,7 @@ const buyMembership = (id: number) => {
             <div class="font">{{ $t('courses.downloadguide') }}</div>
           </a>
           <div v-if="props.zongheData.type === 'speaking'" class="jiantou">
-            <img src="/img/courses/courses_jiantou.svg" />
+            <img src="/img/courses/courses_jiantou.svg" alt="courses_jiantou" />
           </div>
           <NuxtLink
             v-if="props.zongheData.type === 'speaking'"

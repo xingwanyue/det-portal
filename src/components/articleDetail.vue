@@ -179,8 +179,8 @@ const iconHover = (index: number) => {
             <div class="rate-con-right">
               <div class="top_icon_group">
                 <div class="one_share_icon" @mouseover="iconHover(1)" @mouseleave="iconHover(-1)" @click="shareToX">
-                  <img v-show="state.iconHoverIndex !== 1" src="/img/footer/x_logo.svg" />
-                  <img v-show="state.iconHoverIndex === 1" src="/img/footer/x_logo_active.svg" />
+                  <img v-show="state.iconHoverIndex !== 1" src="/img/footer/x_logo.svg" alt="x_logo" />
+                  <img v-show="state.iconHoverIndex === 1" src="/img/footer/x_logo_active.svg" alt="x_logo" />
                 </div>
                 <div
                   class="one_share_icon"
@@ -188,8 +188,12 @@ const iconHover = (index: number) => {
                   @mouseleave="iconHover(-1)"
                   @click="shareToFacebook"
                 >
-                  <img v-show="state.iconHoverIndex !== 2" src="/img/footer/facebook_logo.svg" />
-                  <img v-show="state.iconHoverIndex === 2" src="/img/footer/facebook_logo_active.svg" />
+                  <img v-show="state.iconHoverIndex !== 2" src="/img/footer/facebook_logo.svg" alt="facebook_logo" />
+                  <img
+                    v-show="state.iconHoverIndex === 2"
+                    src="/img/footer/facebook_logo_active.svg"
+                    alt="facebook_logo"
+                  />
                 </div>
               </div>
               <div class="bottom_font">{{ $t('articleDetail.share') }}</div>

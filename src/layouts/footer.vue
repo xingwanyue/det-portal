@@ -261,26 +261,26 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         <div class="logo_icon_out">
           <NuxtLink to="https://youtube.com/@duolingoenglishtestpractices" target="_blank">
             <div class="one_icon youtube" @mouseover="iconHover(0)" @mouseleave="iconHover(-1)">
-              <img v-show="state.iconHoverIndex !== 0" src="/img/footer/youtube_logo.svg" />
-              <img v-show="state.iconHoverIndex === 0" src="/img/footer/youtube_logo_active.svg" />
+              <img v-show="state.iconHoverIndex !== 0" src="/img/footer/youtube_logo.svg" alt="youtube_logo" />
+              <img v-show="state.iconHoverIndex === 0" src="/img/footer/youtube_logo_active.svg" alt="youtube_logo" />
             </div>
           </NuxtLink>
           <NuxtLink to="https://x.com/det_practice" target="_blank">
             <div class="one_icon x" @mouseover="iconHover(1)" @mouseleave="iconHover(-1)">
-              <img v-show="state.iconHoverIndex !== 1" src="/img/footer/x_logo.svg" />
-              <img v-show="state.iconHoverIndex === 1" src="/img/footer/x_logo_active.svg" />
+              <img v-show="state.iconHoverIndex !== 1" src="/img/footer/x_logo.svg" alt="x_logo" />
+              <img v-show="state.iconHoverIndex === 1" src="/img/footer/x_logo_active.svg" alt="x_logo" />
             </div>
           </NuxtLink>
           <NuxtLink to="https://www.facebook.com/detpractice" target="_blank">
             <div class="one_icon facebook" @mouseover="iconHover(2)" @mouseleave="iconHover(-1)">
-              <img v-show="state.iconHoverIndex !== 2" src="/img/footer/facebook_logo.svg" />
-              <img v-show="state.iconHoverIndex === 2" src="/img/footer/facebook_logo_active.svg" />
+              <img v-show="state.iconHoverIndex !== 2" src="/img/footer/facebook_logo.svg" alt="facebook_logo" />
+              <img v-show="state.iconHoverIndex === 2" src="/img/footer/facebook_logo_active.svg" alt="facebook_logo" />
             </div>
           </NuxtLink>
           <NuxtLink to=" https://www.instagram.com/detpractice" target="_blank">
             <div class="one_icon ins" @mouseover="iconHover(3)" @mouseleave="iconHover(-1)">
-              <img v-show="state.iconHoverIndex !== 3" src="/img/footer/ins_logo.svg" />
-              <img v-show="state.iconHoverIndex === 3" src="/img/footer/ins_logo_active.svg" />
+              <img v-show="state.iconHoverIndex !== 3" src="/img/footer/ins_logo.svg" alt="ins_logo" />
+              <img v-show="state.iconHoverIndex === 3" src="/img/footer/ins_logo_active.svg" alt="ins_logo" />
             </div>
           </NuxtLink>
           <!-- <NuxtLink to=""> 

@@ -48,7 +48,7 @@ const submit = async () => {
 <template>
   <div class="login">
     <div class="left">
-      <img src="/img/login/lock.svg" alt="" />
+      <img src="/img/login/lock.svg" alt="lock" />
       <div class="t1">{{ $t('forget.t1') }}</div>
       <h1 class="t2">{{ $t('forget.t2') }}</h1>
       <el-form
@@ -76,7 +76,9 @@ const submit = async () => {
         </el-form-item>
         <el-form-item>
           <div class="zhuce">
-            <NuxtLink class="goLogin" :to="localePath('/login')" rel="nofollow">＜ {{ $t('forget.Back_to_login') }}</NuxtLink>
+            <NuxtLink class="goLogin" :to="localePath('/login')" rel="nofollow"
+              >＜ {{ $t('forget.Back_to_login') }}</NuxtLink
+            >
           </div>
         </el-form-item>
       </el-form>
