@@ -249,7 +249,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h3>{{ $t('index.article1.title') }}</h3>
+              <h3>
+                <NuxtLink :to="localePath('/practice')"> {{ $t('index.article1.title') }}</NuxtLink>
+              </h3>
             </div>
             <div class="tips">
               <div class="tips_icon">
@@ -289,7 +291,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h3>{{ $t('index.article2.title') }}</h3>
+              <h3>
+                <NuxtLink :to="localePath('/mock-exam')">{{ $t('index.article2.title') }}</NuxtLink>
+              </h3>
             </div>
             <div class="tips">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
@@ -321,7 +325,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h3>{{ $t('index.article3.title') }}</h3>
+              <h3>
+                <NuxtLink :to="localePath('/writing-ai-correction')"> {{ $t('index.article3.title') }}</NuxtLink>
+              </h3>
             </div>
             <div class="tips">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
@@ -358,7 +364,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h3>{{ $t('index.article4.title') }}</h3>
+              <h3>
+                <NuxtLink :to="localePath('/speaking-ai-correction')"> {{ $t('index.article4.title') }}</NuxtLink>
+              </h3>
             </div>
             <div class="tips">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
@@ -395,7 +403,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h3>{{ $t('index.article5.title') }}</h3>
+              <h3> <NuxtLink :to="localePath('/courses')">{{ $t('index.article5.title') }}</NuxtLink></h3>
             </div>
             <div class="tips">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
