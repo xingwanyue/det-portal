@@ -1243,5 +1243,119 @@
       "font": "Gagnez des commissions sur les ventes générées par vous et vos sous-affiliés.",
       "btn": "Recevez vos Gains"
     }
+  },
+  "duolinguopt": {
+    "seometa": {
+      "title": "Test d'entraînement Duolingo Gratuit｜DETPractice",
+      "description": "Essayez le test d'entraînement Duolingo gratuit au format identique à l'examen DET officiel ! Notation instantanée, analyse détaillée et feedback personnalisé. Utilisé par plus de 10 000 étudiants - Commencez gratuitement maintenant !"
+    },
+    "hero": {
+      "title": "Test d'entraînement Duolingo Gratuit",
+      "desc": "Passez un test d'anglais Duolingo complet identique au <strong>DET officiel</strong>. Obtenez des <strong>résultats instantanés</strong> et un <strong>feedback détaillé</strong> pour améliorer rapidement vos performances et atteindre votre meilleur niveau.",
+      "btn": "Commencer maintenant"
+    },
+    "features": {
+      "title": "Pourquoi choisir notre test d'entraînement DET Premium ?",
+      "comparison": {
+        "title": "Comparez les rapports Basic et Premium",
+        "left_title": "Rapport Basic du test d'entraînement Duolingo",
+        "right_title": "Analyse Premium du test d'entraînement DET"
+      },
+      "cards": [
+        {
+          "title": "Approuvé par plus de 10 000 utilisateurs",
+          "desc": "Rejoignez des milliers d'étudiants qui ont atteint leurs scores DET cibles grâce à notre plateforme d'entraînement."
+        },
+        {
+          "title": "Environnement d'examen authentique",
+          "desc": "Entraînez-vous sur une interface identique au DET réel — mêmes types de questions, mêmes durées."
+        },
+        {
+          "title": "Analyse détaillée",
+          "desc": "Recevez des rapports de performance détaillés et des plans d'étude personnalisés pour améliorer rapidement vos points faibles."
+        },
+        {
+          "title": "Entraînez-vous à tout moment",
+          "desc": "Accès 24/7 aux tests d'entraînement avec résultats instantanés. Mettez en pause et reprenez quand vous voulez."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "Comment ça marche",
+      "steps": [
+        {
+          "title": "Passez le test d'entraînement",
+          "desc": "Complétez un test d'entraînement complet dans des conditions réelles d'examen."
+        },
+        {
+          "title": "Obtenez des résultats instantanés",
+          "desc": "Recevez votre score et un feedback détaillé en 5-30 minutes."
+        },
+        {
+          "title": "Analysez et améliorez",
+          "desc": "Analysez votre performance et concentrez-vous sur les domaines à améliorer avec notre plan d'étude."
+        },
+        {
+          "title": "Suivez vos progrès",
+          "desc": "Surveillez vos améliorations à travers plusieurs tests d'entraînement."
+        }
+      ]
+    },
+    "score_comparison": {
+      "title": "Comparaison des scores : Test d'entraînement DET vs DET officiel"
+    },
+    "pricing": {
+      "title": "Tarifs",
+      "btn": "Acheter maintenant",
+      "save": "Économisez",
+      "tests": "tests"
+    },
+    "reviews": {
+      "title": "Avis d'étudiants",
+      "items": [
+        {
+          "text": "Le test d'entraînement DET est très précis. J'ai obtenu 115 au <a href='/fr/mock-exam'>test d'entraînement DET</a> et 120 au DET réel. L'entraînement à l'oral a vraiment aidé à augmenter ma confiance."
+        },
+        {
+          "text": "Le feedback détaillé après chaque test d'entraînement m'a aidé à comprendre mes points faibles. Mon score en expression écrite est passé de 85 à 110 en seulement trois semaines !"
+        },
+        {
+          "text": "L'interface de la <a href='/fr'>plateforme DETPractice</a> est très similaire au DET réel. Le chronomètre et les formats de questions m'ont fait me sentir totalement préparé pour l'examen réel."
+        },
+        {
+          "text": "Le <a href='/fr/mock-exam'>test d'entraînement DET</a> a été très utile. Mes scores se sont constamment améliorés avec chaque pratique, et j'ai finalement obtenu 125 au DET réel - même plus haut que mon dernier test d'entraînement !"
+        }
+      ],
+      "btn": "Commencer maintenant"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Qu'est-ce que le test d'entraînement d'anglais Duolingo ?",
+          "a": "Le <a href='/fr/duolingo-practice-test'>test d'entraînement d'anglais Duolingo</a> simule l'environnement de l'examen officiel Duolingo, en fournissant des questions similaires, des limites de temps et un système de notation. En complétant le <a href='/fr/duolingo-practice-test'>test d'entraînement d'anglais Duolingo</a>, vous pouvez vous familiariser avec la structure de l'examen, gagner en confiance et identifier les domaines à améliorer."
+        },
+        {
+          "q": "Quelle est la différence entre le test d'entraînement DET et l'examen officiel ?",
+          "a": "Le test d'entraînement DET (pratique du test d'anglais Duolingo) reflète le format de l'examen officiel mais n'est pas un produit officiel de Duolingo. Au lieu de cela, il fournit un environnement sans risque pour améliorer vos compétences. Avec le test d'entraînement DET premium, vous pouvez comprendre les types de questions, la gestion du temps et les critères d'évaluation avant de passer le véritable test d'anglais Duolingo."
+        },
+        {
+          "q": "Comment le test d'entraînement Duolingo premium améliore-t-il mes performances ?",
+          "a": "Le test d'entraînement Duolingo premium fournit un feedback instantané qui met en évidence vos forces et vos faiblesses. Grâce à la pratique répétée, vous pouvez enrichir votre vocabulaire, améliorer votre prononciation et renforcer vos compétences grammaticales. Avec le temps, une <a href='/fr/practice'>pratique constante du test d'anglais Duolingo</a> peut améliorer significativement votre score global à l'examen officiel."
+        },
+        {
+          "q": "Quelles stratégies puis-je apprendre grâce à la pratique du test d'anglais Duolingo ?",
+          "a": "La pratique du test d'anglais Duolingo vous aide à développer des stratégies importantes : gestion efficace du temps, traitement du vocabulaire inconnu et résolution de tâches complexes de lecture ou d'écoute. En expérimentant dans l'environnement d'entraînement, vous affinerez ces compétences pour une meilleure performance le jour de l'examen."
+        },
+        {
+          "q": "La pratique répétée du test d'anglais Duolingo augmente-t-elle la confiance ?",
+          "a": "Oui. La répétition de la <a href='/fr/practice'>pratique du test d'anglais Duolingo</a> vous aide à vous familiariser avec le format de l'examen, à réduire l'anxiété et à augmenter la précision. En observant les progrès à travers plusieurs tentatives, vous pouvez suivre les améliorations, identifier les problèmes et faiblesses persistants, et vous concentrer sur l'apprentissage ciblé."
+        },
+        {
+          "q": "Comment mesure-t-on les progrès à travers la pratique continue du test d'anglais Duolingo ?",
+          "a": "Notre outil de test d'entraînement Duolingo premium fournit des rapports de scores détaillés, des analyses et une ventilation des performances. En examinant ces résultats après chaque <a href='/fr/duolingo-practice-test'>test d'entraînement d'anglais Duolingo</a>, vous pouvez comprendre clairement le développement de vos compétences. Cette approche basée sur les données vous permet d'ajuster votre plan d'étude et d'accélérer l'atteinte des scores souhaités."
+        }
+      ]
+    }
   }
 }

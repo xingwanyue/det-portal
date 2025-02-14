@@ -1242,6 +1242,120 @@
       "contaceUsList[2]": {
         "btn": "Terima Pembayaran"
       }
+    },
+    "duolinguopt": {
+      "seometa": {
+        "title": "Tes Latihan Duolingo Gratis {'|'} DETPractice",
+        "description": "Rasakan tes latihan Duolingo gratis dengan format yang sama persis dengan ujian DET resmi! Penilaian instan, analisis terperinci, dan umpan balik personal. Sudah digunakan oleh 10,000+ peserta ujian - Coba gratis sekarang!"
+      },
+      "hero": {
+        "title": "Tes Latihan Duolingo Gratis",
+        "desc": "Ikuti tes latihan bahasa Inggris Duolingo versi lengkap yang identik dengan <strong>DET resmi</strong>. Dapatkan <strong>skor instan</strong> dan <strong>umpan balik terperinci</strong> untuk meningkatkan nilai dengan cepat dan tampil maksimal.",
+        "btn": "Mulai Sekarang"
+      },
+      "features": {
+        "title": "Mengapa Memilih Tes Latihan DET Premium Kami?",
+        "comparison": {
+          "title": "Bandingkan Laporan Versi Dasar dan Premium",
+          "left_title": "Laporan Dasar Tes Latihan Duolingo",
+          "right_title": "Laporan Analisis DET Premium"
+        },
+        "cards": [
+          {
+            "title": "Dipercaya oleh 10,000+ Pengguna",
+            "desc": "Bergabunglah dengan ribuan peserta ujian yang telah mencapai skor DET target mereka melalui platform latihan kami."
+          },
+          {
+            "title": "Lingkungan Ujian Otentik",
+            "desc": "Berlatih dengan antarmuka yang persis sama dengan DET asli — tipe soal dan durasi yang identik."
+          },
+          {
+            "title": "Analisis Mendalam",
+            "desc": "Dapatkan laporan nilai terperinci dan rencana belajar yang disesuaikan untuk meningkatkan area yang lemah dengan lebih cepat."
+          },
+          {
+            "title": "Latihan Kapan Saja",
+            "desc": "Akses tes latihan 24/7 dengan skor instan. Jeda dan lanjutkan sesuka Anda."
+          }
+        ]
+      },
+      "how_it_works": {
+        "title": "Cara Kerja",
+        "steps": [
+          {
+            "title": "Ikuti Tes Latihan",
+            "desc": "Selesaikan simulasi ujian lengkap dalam kondisi ujian yang realistis."
+          },
+          {
+            "title": "Dapatkan Hasil Instan",
+            "desc": "Terima skor dan umpan balik terperinci dalam 5-30 menit."
+          },
+          {
+            "title": "Pelajari & Tingkatkan",
+            "desc": "Analisis performa Anda dan fokus pada area yang lemah melalui rencana belajar kami."
+          },
+          {
+            "title": "Pantau Kemajuan",
+            "desc": "Lacak peningkatan Anda di berbagai tes latihan."
+          }
+        ]
+      },
+      "score_comparison": {
+        "title": "Perbandingan Skor: Tes Latihan DET vs DET Resmi"
+      },
+      "pricing": {
+        "title": "Harga",
+        "btn": "Beli Sekarang",
+        "save": "Hemat",
+        "tests": "tes"
+      },
+      "reviews": {
+        "title": "Ulasan Peserta",
+        "items": [
+          {
+            "text": "Tes latihan DET sangat akurat. Saya mendapat 115 di <a href='/id/mock-exam'>tes latihan DET</a> dan 120 di ujian DET resmi. Latihan speaking benar-benar membantu meningkatkan kepercayaan diri saya."
+          },
+          {
+            "text": "Umpan balik terperinci setelah setiap tes latihan membantu saya memahami kelemahan saya. Skor writing saya meningkat dari 85 menjadi 110 hanya dalam tiga minggu!"
+          },
+          {
+            "text": "Antarmuka <a href='/id'>platform DETPractice</a> sangat mirip dengan DET asli. Timer dan format soal membuat saya merasa sangat siap saat ujian sebenarnya."
+          },
+          {
+            "text": "<a href='/id/mock-exam'>Tes latihan DET</a> sangat membantu. Skor saya meningkat secara konsisten di setiap latihan, dan akhirnya saya mendapat 125 di DET resmi - bahkan lebih tinggi dari skor tes latihan terakhir saya!"
+          }
+        ],
+        "btn": "Mulai Sekarang"
+      },
+      "faq": {
+        "title": "Pertanyaan Umum",
+        "items": [
+          {
+            "q": "Apa itu tes latihan bahasa Inggris Duolingo?",
+            "a": "<a href='/id/duolingo-practice-test'>Tes latihan bahasa Inggris Duolingo</a> mensimulasikan lingkungan ujian Duolingo resmi, menyediakan soal, batas waktu, dan sistem penilaian yang mirip dengan aslinya. Dengan menyelesaikan <a href='/id/duolingo-practice-test'>tes latihan bahasa Inggris Duolingo</a>, Anda dapat membiasakan diri dengan struktur ujian, membangun kepercayaan diri, dan mengidentifikasi area yang perlu ditingkatkan."
+          },
+          {
+            "q": "Apa perbedaan antara tes latihan DET dan ujian resmi?",
+            "a": "Tes latihan DET (latihan ujian bahasa Inggris Duolingo) mencerminkan format ujian resmi tetapi bukan produk resmi Duolingo. Sebaliknya, ini menyediakan lingkungan bebas risiko untuk meningkatkan keterampilan Anda. Dengan tes latihan DET premium, Anda dapat memahami jenis soal, manajemen waktu, dan kriteria penilaian sebelum mengambil ujian Duolingo yang sebenarnya."
+          },
+          {
+            "q": "Bagaimana tes latihan Duolingo premium membantu meningkatkan performa?",
+            "a": "Tes latihan Duolingo premium memberikan umpan balik instan yang menyoroti kekuatan dan kelemahan Anda. Melalui latihan berulang, Anda dapat meningkatkan kosakata, memperbaiki pengucapan, dan memperkuat keterampilan tata bahasa. Seiring waktu, <a href='/id/practice'>latihan ujian bahasa Inggris Duolingo</a> yang konsisten dapat meningkatkan skor keseluruhan Anda secara signifikan dalam ujian resmi."
+          },
+          {
+            "q": "Strategi apa yang bisa dipelajari dari latihan ujian bahasa Inggris Duolingo?",
+            "a": "Latihan ujian bahasa Inggris Duolingo membantu Anda mengembangkan strategi penting: manajemen waktu yang efektif, menangani kosakata asing, dan menghadapi tugas membaca atau mendengarkan yang kompleks. Dengan bereksperimen dalam lingkungan latihan, Anda akan menyempurnakan keterampilan ini untuk performa yang lebih baik pada hari ujian."
+          },
+          {
+            "q": "Apakah latihan ujian bahasa Inggris Duolingo berulang dapat meningkatkan kepercayaan diri?",
+            "a": "Ya. Mengulang <a href='/id/practice'>latihan ujian bahasa Inggris Duolingo</a> membantu Anda membiasakan diri dengan format ujian, mengurangi kecemasan ujian, dan meningkatkan akurasi. Dengan mengamati kemajuan dari berbagai percobaan, Anda dapat melacak perkembangan, mengidentifikasi masalah dan kelemahan yang persisten, dan fokus pada pembelajaran yang terarah."
+          },
+          {
+            "q": "Bagaimana mengukur kemajuan melalui latihan ujian bahasa Inggris Duolingo yang berkelanjutan?",
+            "a": "Alat tes latihan Duolingo premium kami menyediakan laporan skor terperinci, analisis, dan breakdown performa. Dengan meninjau hasil ini setelah setiap <a href='/id/duolingo-practice-test'>tes latihan bahasa Inggris Duolingo</a>, Anda dapat memahami dengan jelas perkembangan kemampuan Anda. Pendekatan berbasis data ini memungkinkan Anda menyesuaikan rencana belajar dan mempercepat pencapaian skor yang diinginkan."
+          }
+        ]
+      }
     }
   }
 }

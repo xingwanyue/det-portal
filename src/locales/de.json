@@ -1243,5 +1243,119 @@
       "font": "Verdienen Sie Provisionen aus Verkäufen, die Sie und Ihre Sub-Partner generieren.",
       "btn": "Erhalten Sie Ihre Vergütung"
     }
+  },
+  "duolinguopt": {
+    "seometa": {
+      "title": "Kostenloser Duolingo Übungstest{'|'}DETPractice",
+      "description": "Erleben Sie den kostenlosen Duolingo Übungstest im Format der echten DET-Prüfung! Sofortige Bewertung, detaillierte Analyse und persönliches Feedback. Von über 10.000 Prüflingen genutzt - Jetzt kostenlos testen!"
+    },
+    "hero": {
+      "title": "Kostenloser Duolingo Übungstest",
+      "desc": "Absolvieren Sie einen vollständigen Duolingo-Englisch-Übungstest, der mit dem <strong>echten DET</strong> identisch ist. Erhalten Sie <strong>sofortige Ergebnisse</strong> und <strong>detailliertes Feedback</strong>, um Ihre Leistung schnell zu verbessern und Ihr Bestes zu geben.",
+      "btn": "Jetzt starten"
+    },
+    "features": {
+      "title": "Warum unseren Premium-DET-Übungstest wählen?",
+      "comparison": {
+        "title": "Vergleichen Sie Basis- und Premium-Berichte",
+        "left_title": "Basis-Duolingo-Übungstest-Bericht",
+        "right_title": "Premium-DET-Übungstest-Analyse"
+      },
+      "cards": [
+        {
+          "title": "Von über 10.000 Nutzern bestätigt",
+          "desc": "Schließen Sie sich Tausenden von Prüflingen an, die ihre DET-Zielwerte durch unsere Übungsplattform erreicht haben."
+        },
+        {
+          "title": "Authentische Prüfungsumgebung",
+          "desc": "Üben Sie mit einer Oberfläche, die mit dem echten DET identisch ist — gleiche Aufgabentypen, gleiche Zeitvorgaben."
+        },
+        {
+          "title": "Detaillierte Analyse",
+          "desc": "Erhalten Sie ausführliche Leistungsberichte und individualisierte Lernpläne zur gezielten Verbesserung Ihrer Schwachstellen."
+        },
+        {
+          "title": "Jederzeit üben",
+          "desc": "Rund um die Uhr Zugang zu Übungstests mit sofortigen Ergebnissen. Pausieren und fortsetzen nach Belieben."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "So funktioniert's",
+      "steps": [
+        {
+          "title": "Übungstest absolvieren",
+          "desc": "Absolvieren Sie einen vollständigen Übungstest unter realen Prüfungsbedingungen."
+        },
+        {
+          "title": "Sofortige Ergebnisse",
+          "desc": "Erhalten Sie Ihre Punktzahl und detailliertes Feedback innerhalb von 5-30 Minuten."
+        },
+        {
+          "title": "Analysieren & Verbessern",
+          "desc": "Analysieren Sie Ihre Leistung und konzentrieren Sie sich mit unserem Lernplan auf Verbesserungsbereiche."
+        },
+        {
+          "title": "Fortschritt verfolgen",
+          "desc": "Beobachten Sie Ihre Verbesserungen über mehrere Übungstests hinweg."
+        }
+      ]
+    },
+    "score_comparison": {
+      "title": "Punktevergleich: DET-Übungstest vs. Offizieller DET"
+    },
+    "pricing": {
+      "title": "Preise",
+      "btn": "Jetzt kaufen",
+      "save": "Sparen",
+      "tests": "Tests"
+    },
+    "reviews": {
+      "title": "Teilnehmerstimmen",
+      "items": [
+        {
+          "text": "Der DET-Übungstest ist sehr präzise. Ich erreichte 115 Punkte im <a href='/de/mock-exam'>DET-Übungstest</a> und 120 im echten DET. Die Sprechübungen haben wirklich mein Selbstvertrauen gestärkt."
+        },
+        {
+          "text": "Das detaillierte Feedback nach jedem Übungstest half mir, meine Schwachstellen zu verstehen. Meine Schreibpunktzahl stieg in nur drei Wochen von 85 auf 110!"
+        },
+        {
+          "text": "Die Benutzeroberfläche der <a href='/de'>DETPractice-Plattform</a> ist dem echten DET sehr ähnlich. Der Timer und die Aufgabenformate ließen mich perfekt vorbereitet in die echte Prüfung gehen."
+        },
+        {
+          "text": "Der <a href='/de/mock-exam'>DET-Übungstest</a> war sehr hilfreich. Meine Punktzahl stieg bei jeder Übung stetig an, und schließlich erreichte ich 125 Punkte im echten DET - sogar höher als in meinem letzten Übungstest!"
+        }
+      ],
+      "btn": "Jetzt beginnen"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "items": [
+        {
+          "q": "Was ist der Duolingo-Englisch-Übungstest?",
+          "a": "Der <a href='/de/duolingo-practice-test'>Duolingo-Englisch-Übungstest</a> simuliert die offizielle Duolingo-Prüfungsumgebung mit ähnlichen Aufgaben, Zeitbegrenzungen und Bewertungssystem. Durch das Absolvieren des <a href='/de/duolingo-practice-test'>Duolingo-Englisch-Übungstests</a> können Sie sich mit der Prüfungsstruktur vertraut machen, Selbstvertrauen aufbauen und verbesserungsbedürftige Bereiche identifizieren."
+        },
+        {
+          "q": "Was ist der Unterschied zwischen dem DET-Übungstest und der offiziellen Prüfung?",
+          "a": "Der DET-Übungstest (Duolingo English Test-Übung) spiegelt das Format der offiziellen Prüfung wider, ist aber kein offizielles Duolingo-Produkt. Stattdessen bietet er eine risikofreie Umgebung zur Verbesserung Ihrer Fähigkeiten. Mit dem Premium-DET-Übungstest können Sie vor dem echten Duolingo-Englischtest die Aufgabentypen, das Zeitmanagement und die Bewertungskriterien verstehen."
+        },
+        {
+          "q": "Wie verbessert der Premium-Duolingo-Übungstest meine Leistung?",
+          "a": "Der Premium-Duolingo-Übungstest bietet sofortiges Feedback, das Ihre Stärken und Schwächen hervorhebt. Durch wiederholtes Üben können Sie Ihren Wortschatz erweitern, Ihre Aussprache verbessern und Ihre Grammatikkenntnisse stärken. Mit der Zeit kann konsequentes <a href='/de/practice'>Duolingo-Englischtest-Üben</a> Ihre Gesamtpunktzahl in der offiziellen Prüfung erheblich verbessern."
+        },
+        {
+          "q": "Welche Strategien kann ich durch das Üben des Duolingo-Englischtests lernen?",
+          "a": "Das Üben des Duolingo-Englischtests hilft Ihnen, wichtige Strategien zu entwickeln: effektives Zeitmanagement, Umgang mit unbekanntem Vokabular und Bewältigung komplexer Lese- oder Höraufgaben. Durch Experimentieren in der Übungsumgebung verfeinern Sie diese Fähigkeiten für eine bessere Leistung am Prüfungstag."
+        },
+        {
+          "q": "Steigert wiederholtes Duolingo-Englischtest-Üben das Selbstvertrauen?",
+          "a": "Ja. Die Wiederholung von <a href='/de/practice'>Duolingo-Englischtest-Übungen</a> hilft Ihnen, sich mit dem Prüfungsformat vertraut zu machen, Prüfungsangst zu reduzieren und die Genauigkeit zu erhöhen. Durch Beobachtung des Fortschritts über mehrere Versuche hinweg können Sie Verbesserungen verfolgen, anhaltende Probleme und Schwächen identifizieren und sich auf gezieltes Lernen konzentrieren."
+        },
+        {
+          "q": "Wie wird der Fortschritt beim kontinuierlichen Duolingo-Englischtest-Üben gemessen?",
+          "a": "Unser Premium-Duolingo-Übungstest-Tool bietet detaillierte Punkteberichte, Analysen und Leistungsaufschlüsselungen. Durch die Überprüfung dieser Ergebnisse nach jedem <a href='/de/duolingo-practice-test'>Duolingo-Englisch-Übungstest</a> können Sie Ihre Fähigkeitsentwicklung klar erkennen. Dieser datengesteuerte Ansatz ermöglicht es Ihnen, Ihren Lernplan anzupassen und das Erreichen der gewünschten Punktzahlen zu beschleunigen."
+        }
+      ]
+    }
   }
 }

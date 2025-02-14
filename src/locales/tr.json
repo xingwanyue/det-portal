@@ -1245,5 +1245,119 @@
       "font": "Sizin ve alt ortaklarınızın getirdiği satışlardan komisyon kazanın.",
       "btn": "Ödemenizi Alın"
     }
+  },
+  "duolinguopt": {
+    "seometa": {
+      "title": "Ücretsiz Duolingo Deneme Testi {'|'} DETPractice",
+      "description": "Gerçek DET sınavıyla aynı formatta ücretsiz Duolingo deneme testini deneyin! Anında puanlama, detaylı analiz ve kişisel geri bildirim. 10,000+ öğrenci tarafından kullanılmıştır - Hemen ücretsiz deneyin!"
+    },
+    "hero": {
+      "title": "Ücretsiz Duolingo Deneme Testi",
+      "desc": "<strong>Gerçek DET</strong> ile tamamen aynı olan tam kapsamlı Duolingo İngilizce deneme testini deneyimleyin. <strong>Anında sonuçlar</strong> ve <strong>detaylı geri bildirim</strong> ile skorlarınızı hızla yükseltin ve en iyi performansınızı gösterin.",
+      "btn": "Hemen Başla"
+    },
+    "features": {
+      "title": "Premium DET Deneme Testimizi Neden Seçmelisiniz?",
+      "comparison": {
+        "title": "Temel ve Premium Raporları Karşılaştırın",
+        "left_title": "Temel Duolingo Deneme Test Raporu",
+        "right_title": "Premium DET Deneme Test Analizi"
+      },
+      "cards": [
+        {
+          "title": "10,000+ Kullanıcı Tarafından Onaylandı",
+          "desc": "Platformumuz sayesinde hedef DET puanlarına ulaşan binlerce öğrenciye katılın."
+        },
+        {
+          "title": "Gerçek Sınav Ortamı",
+          "desc": "Gerçek DET ile birebir aynı arayüzde pratik yapın — aynı soru tipleri, aynı süre."
+        },
+        {
+          "title": "Detaylı Analiz",
+          "desc": "Ayrıntılı puan raporu ve kişiselleştirilmiş çalışma planıyla zayıf yönlerinizi hızla geliştirin."
+        },
+        {
+          "title": "İstediğiniz Zaman Pratik",
+          "desc": "7/24 deneme testlerine erişim ve anında sonuçlar. İstediğiniz zaman duraklatıp devam edin."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "Nasıl Çalışır",
+      "steps": [
+        {
+          "title": "Deneme Testini Tamamlayın",
+          "desc": "Gerçek sınav koşullarında tam bir deneme testi yapın."
+        },
+        {
+          "title": "Anında Sonuç Alın",
+          "desc": "5-30 dakika içinde puanınızı ve detaylı geri bildirim alın."
+        },
+        {
+          "title": "Analiz Edin ve Geliştirin",
+          "desc": "Performansınızı analiz edin ve çalışma planımızla zayıf alanlarınıza odaklanın."
+        },
+        {
+          "title": "İlerlemenizi Takip Edin",
+          "desc": "Çoklu deneme testlerindeki gelişiminizi izleyin."
+        }
+      ]
+    },
+    "score_comparison": {
+      "title": "Puan Karşılaştırması: DET Deneme Testi vs Resmi DET"
+    },
+    "pricing": {
+      "title": "Fiyatlandırma",
+      "btn": "Hemen Satın Al",
+      "save": "Tasarruf",
+      "tests": "test"
+    },
+    "reviews": {
+      "title": "Öğrenci Yorumları",
+      "items": [
+        {
+          "text": "DET deneme testi çok isabetli. <a href='/tr/mock-exam'>DET deneme testinde</a> 115 aldım ve gerçek DET'te 120 puan aldım. Konuşma pratiği gerçekten özgüvenimi artırmama yardımcı oldu."
+        },
+        {
+          "text": "Her deneme testinden sonraki detaylı geri bildirim zayıf yönlerimi anlamama yardımcı oldu. Yazma puanım sadece üç haftada 85'ten 110'a yükseldi!"
+        },
+        {
+          "text": "<a href='/tr'>DETPractice platformunun</a> arayüzü gerçek DET'e çok benziyor. Zamanlayıcı ve soru formatları sayesinde gerçek sınava tamamen hazır hissettim."
+        },
+        {
+          "text": "<a href='/tr/mock-exam'>DET deneme testi</a> çok yardımcı oldu. Her pratikle puanlarım istikrarlı bir şekilde yükseldi ve sonunda gerçek DET'te 125 aldım - son deneme testimden bile daha yüksek!"
+        }
+      ],
+      "btn": "Hemen Başla"
+    },
+    "faq": {
+      "title": "Sık Sorulan Sorular",
+      "items": [
+        {
+          "q": "Duolingo İngilizce deneme testi nedir?",
+          "a": "<a href='/tr/duolingo-practice-test'>Duolingo İngilizce deneme testi</a>, resmi Duolingo sınav ortamını simüle eder ve benzer sorular, zaman sınırlamaları ve puanlama sistemi sunar. <a href='/tr/duolingo-practice-test'>Duolingo İngilizce deneme testini</a> tamamlayarak sınav yapısına aşina olabilir, özgüven kazanabilir ve geliştirilmesi gereken alanları belirleyebilirsiniz."
+        },
+        {
+          "q": "DET deneme testi ile resmi sınav arasındaki fark nedir?",
+          "a": "DET deneme testi (Duolingo İngilizce Test pratiği) resmi sınav formatını yansıtır ancak Duolingo'nun resmi bir ürünü değildir. Bunun yerine, becerilerinizi geliştirmek için risk içermeyen bir ortam sunar. Premium DET deneme testi ile gerçek Duolingo İngilizce sınavına girmeden önce soru tiplerini, zaman yönetimini ve değerlendirme kriterlerini anlayabilirsiniz."
+        },
+        {
+          "q": "Premium Duolingo deneme testi performansımı nasıl geliştirir?",
+          "a": "Premium Duolingo deneme testi, güçlü ve zayıf yönlerinizi vurgulayan anında geri bildirim sağlar. Tekrarlanan pratik yoluyla kelime dağarcığınızı genişletebilir, telaffuzunuzu iyileştirebilir ve dilbilgisi becerilerinizi güçlendirebilirsiniz. Zamanla, tutarlı <a href='/tr/practice'>Duolingo İngilizce Test pratiği</a> resmi sınavdaki genel puanınızı önemli ölçüde artırabilir."
+        },
+        {
+          "q": "Duolingo İngilizce Test pratiği ile hangi stratejileri öğrenebilirim?",
+          "a": "Duolingo İngilizce Test pratiği önemli stratejiler geliştirmenize yardımcı olur: etkili zaman yönetimi, bilinmeyen kelimelerle başa çıkma ve karmaşık okuma veya dinleme görevlerini ele alma. Pratik ortamında deneme yanılma yoluyla bu becerileri geliştirerek sınav günü daha iyi performans gösterebilirsiniz."
+        },
+        {
+          "q": "Tekrarlanan Duolingo İngilizce Test pratiği özgüvenimi artırır mı?",
+          "a": "<a href='/tr/practice'>Duolingo İngilizce Test pratiğini</a> tekrarlamak sınav formatına alışmanıza, sınav kaygısını azaltmanıza ve doğruluğu artırmanıza yardımcı olur. Çoklu denemelerden ilerlemeyi gözlemleyerek iyileştirmeleri takip edebilir, sürekli sorunları ve zayıflıkları belirleyebilir ve hedefe yönelik öğrenmeye odaklanabilirsiniz."
+        },
+        {
+          "q": "Sürekli Duolingo İngilizce Test pratiğindeki ilerleme nasıl ölçülür?",
+          "a": "Premium Duolingo deneme test aracımız detaylı puan raporları, analizler ve performans dökümü sağlar. Her <a href='/tr/duolingo-practice-test'>Duolingo İngilizce deneme testinden</a> sonra bu sonuçları inceleyerek yetenek gelişiminizi net bir şekilde anlayabilirsiniz. Bu veri odaklı yaklaşım, çalışma planınızı ayarlamanıza ve istenen puanlara ulaşmanızı hızlandırmanıza olanak tanır."
+        }
+      ]
+    }
   }
 }

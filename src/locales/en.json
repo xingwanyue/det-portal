@@ -1239,7 +1239,7 @@
   },
   "duolinguopt": {
     "seometa": {
-      "title": "Free Duolingo Practice Test {'|'} DET Practice",
+      "title": "Free Duolingo Practice Test{'｜'}DET Practice",
       "description": "Experience real DET format with our FREE Duolingo Practice Test! Instant scoring, detailed analytics, personalized feedback. Join 10,000+ learners - Try it for free!"
     },
     "hero": {
@@ -1295,7 +1295,7 @@
       ]
     },
     "score_comparison": {
-      "title": "Score Comparisons: DET Practice Mock Test vs. Official DET",
+      "title": "Score Comparisons: DET Practice Mock Test vs. Official DET"
     },
     "pricing": {
       "title": "Pricing",
@@ -1319,18 +1319,18 @@
           "text": "The <a href='/mock-exam'>DET mock tests</a> were incredibly helpful. My scores improved consistently with each practice, and I ended up scoring 125 on the actual DET - even higher than my last mock test!"
         }
       ],
-      "btn": "Mock Now"
+      "btn": "Test Now"
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "items": [
         {
           "q": "What is a Duolingo English Practice Test?",
-          "a": "A <a href='/duolingo-practice-test'>Duolingo English Practice Test</a> simulates the official Duolingo English Test environment, providing realistic questions, time limits, and scoring formats. By completing a <a href='/duolingo-practice-test'>Duolingo English Practice Test</a>, you can familiarize yourself with the exam's structure, build confidence, and identify areas for improvement."
+          "a": "A <a href='/duolingo-practice-test'>Duolingo English Practice Test</a> simulates the official Duolingo English Test environment, providing similar questions, time limits, and scoring formats. By completing a <a href='/duolingo-practice-test'>Duolingo English Practice Test</a>, you can familiarize yourself with the exam's structure, build confidence, and identify areas for improvement."
         },
         {
           "q": "How does a DET Practice Test differ from the official exam?",
-          "a": "A DET Practice Test (Duolingo English Test Practice) mirrors the official test format but is not administered by Duolingo. Instead, it offers a risk-free environment to sharpen your skills. With an enhanced det practice test, you gain insight into the test's question types, pacing, and scoring criteria before committing to the real Duolingo English Test. For more information, visit: <a href='https: //prep.detpractice.com/free-premium-duolingo-english-practice-test/' target='_blank' rel='noopener noreferrer'>Free vs. Premium Duolingo English Practice Test: Which Option Best Fits Your Needs? </a>"
+          "a": "A DET Practice Test (Duolingo English Test Practice) mirrors the official test format but is not administered by Duolingo. Instead, it offers a risk-free environment to sharpen your skills. With an enhanced det practice test, you gain insight into the test's question types, pacing, and scoring criteria before committing to the real Duolingo English Test."
         },
         {
           "q": "How can an enhanced Duolingo Practice Test help me improve my performance?",

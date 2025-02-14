@@ -1244,5 +1244,119 @@
       "font": "Guadagna commissioni dalle vendite generate da te e dai tuoi sub-affiliati.",
       "btn": "Ricevi i Pagamenti"
     }
+  },
+  "duolinguopt": {
+    "seometa": {
+      "title": "Test di pratica Duolingo Gratuito {'|'} DETPractice",
+      "description": "Prova il test di pratica Duolingo gratuito nello stesso formato dell'esame DET ufficiale! Valutazione istantanea, analisi dettagliata e feedback personalizzato. Utilizzato da oltre 10.000 studenti - Inizia gratuitamente ora!"
+    },
+    "hero": {
+      "title": "Test di pratica Duolingo Gratuito",
+      "desc": "Completa un test di inglese Duolingo completo identico al <strong>DET ufficiale</strong>. Ottieni <strong>risultati immediati</strong> e <strong>feedback dettagliato</strong> per migliorare rapidamente le tue prestazioni e raggiungere il tuo massimo potenziale.",
+      "btn": "Inizia ora"
+    },
+    "features": {
+      "title": "Perché scegliere il nostro test di pratica DET Premium?",
+      "comparison": {
+        "title": "Confronta i report Base e Premium",
+        "left_title": "Report Base del test di pratica Duolingo",
+        "right_title": "Analisi Premium del test di pratica DET"
+      },
+      "cards": [
+        {
+          "title": "Approvato da oltre 10.000 utenti",
+          "desc": "Unisciti a migliaia di studenti che hanno raggiunto i loro punteggi DET target attraverso la nostra piattaforma."
+        },
+        {
+          "title": "Ambiente d'esame autentico",
+          "desc": "Esercitati con un'interfaccia identica al DET reale — stessi tipi di domande, stessi tempi."
+        },
+        {
+          "title": "Analisi dettagliata",
+          "desc": "Ricevi report dettagliati sulle prestazioni e piani di studio personalizzati per migliorare rapidamente i tuoi punti deboli."
+        },
+        {
+          "title": "Esercitati in qualsiasi momento",
+          "desc": "Accesso 24/7 ai test di pratica con risultati immediati. Metti in pausa e riprendi quando vuoi."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "Come funziona",
+      "steps": [
+        {
+          "title": "Completa il test di pratica",
+          "desc": "Svolgi un test di pratica completo in condizioni d'esame reali."
+        },
+        {
+          "title": "Ottieni risultati immediati",
+          "desc": "Ricevi il tuo punteggio e feedback dettagliato in 5-30 minuti."
+        },
+        {
+          "title": "Analizza e migliora",
+          "desc": "Analizza le tue prestazioni e concentrati sulle aree di miglioramento con il nostro piano di studio."
+        },
+        {
+          "title": "Monitora i progressi",
+          "desc": "Osserva i tuoi miglioramenti attraverso più test di pratica."
+        }
+      ]
+    },
+    "score_comparison": {
+      "title": "Confronto punteggi: Test di pratica DET vs DET ufficiale"
+    },
+    "pricing": {
+      "title": "Prezzi",
+      "btn": "Acquista ora",
+      "save": "Risparmia",
+      "tests": "test"
+    },
+    "reviews": {
+      "title": "Recensioni degli studenti",
+      "items": [
+        {
+          "text": "Il test di pratica DET è molto preciso. Ho ottenuto 115 nel <a href='/it/mock-exam'>test di pratica DET</a> e 120 nel DET reale. La pratica dello speaking ha davvero aiutato ad aumentare la mia sicurezza."
+        },
+        {
+          "text": "Il feedback dettagliato dopo ogni test di pratica mi ha aiutato a capire i miei punti deboli. Il mio punteggio nello writing è salito da 85 a 110 in sole tre settimane!"
+        },
+        {
+          "text": "L'interfaccia della <a href='/it'>piattaforma DETPractice</a> è molto simile al DET reale. Il timer e i formati delle domande mi hanno fatto sentire completamente preparato per l'esame reale."
+        },
+        {
+          "text": "Il <a href='/it/mock-exam'>test di pratica DET</a> è stato molto utile. I miei punteggi sono migliorati costantemente con ogni pratica, e alla fine ho ottenuto 125 nel DET reale - persino più alto del mio ultimo test di pratica!"
+        }
+      ],
+      "btn": "Inizia ora"
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "items": [
+        {
+          "q": "Che cos'è il test di pratica di inglese Duolingo?",
+          "a": "Il <a href='/it/duolingo-practice-test'>test di pratica di inglese Duolingo</a> simula l'ambiente dell'esame ufficiale Duolingo, fornendo domande simili, limiti di tempo e sistema di valutazione. Completando il <a href='/it/duolingo-practice-test'>test di pratica di inglese Duolingo</a>, puoi familiarizzare con la struttura dell'esame, acquisire sicurezza e identificare le aree di miglioramento."
+        },
+        {
+          "q": "Qual è la differenza tra il test di pratica DET e l'esame ufficiale?",
+          "a": "Il test di pratica DET (pratica del test di inglese Duolingo) riflette il formato dell'esame ufficiale ma non è un prodotto ufficiale Duolingo. Invece, fornisce un ambiente sicuro per migliorare le tue abilità. Con il test di pratica DET premium, puoi comprendere i tipi di domande, la gestione del tempo e i criteri di valutazione prima di sostenere il vero test di inglese Duolingo."
+        },
+        {
+          "q": "Come migliora il test di pratica Duolingo premium le mie prestazioni?",
+          "a": "Il test di pratica Duolingo premium fornisce feedback immediato che evidenzia i tuoi punti di forza e debolezza. Attraverso la pratica ripetuta, puoi espandere il tuo vocabolario, migliorare la pronuncia e rafforzare le abilità grammaticali. Nel tempo, la <a href='/it/practice'>pratica costante del test di inglese Duolingo</a> può migliorare significativamente il tuo punteggio complessivo nell'esame ufficiale."
+        },
+        {
+          "q": "Quali strategie posso imparare attraverso la pratica del test di inglese Duolingo?",
+          "a": "La pratica del test di inglese Duolingo ti aiuta a sviluppare strategie importanti: gestione efficace del tempo, gestione del vocabolario sconosciuto e approccio a compiti complessi di lettura o ascolto. Sperimentando nell'ambiente di pratica, affinerai queste abilità per una migliore performance il giorno dell'esame."
+        },
+        {
+          "q": "La pratica ripetuta del test di inglese Duolingo aumenta la sicurezza?",
+          "a": "Sì. Ripetere la <a href='/it/practice'>pratica del test di inglese Duolingo</a> ti aiuta a familiarizzare con il formato dell'esame, ridurre l'ansia e aumentare la precisione. Osservando i progressi attraverso più tentativi, puoi tracciare i miglioramenti, identificare problemi e debolezze persistenti, e concentrarti sull'apprendimento mirato."
+        },
+        {
+          "q": "Come si misurano i progressi attraverso la pratica continua del test di inglese Duolingo?",
+          "a": "Il nostro strumento di test di pratica Duolingo premium fornisce report dettagliati sui punteggi, analisi e breakdown delle prestazioni. Esaminando questi risultati dopo ogni <a href='/it/duolingo-practice-test'>test di pratica di inglese Duolingo</a>, puoi comprendere chiaramente lo sviluppo delle tue abilità. Questo approccio basato sui dati ti permette di regolare il tuo piano di studio e accelerare il raggiungimento dei punteggi desiderati."
+        }
+      ]
+    }
   }
 }
