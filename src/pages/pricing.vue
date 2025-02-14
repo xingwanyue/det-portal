@@ -380,7 +380,7 @@ const changeBuyCorrectTimes = () => {
     </div>
     <div class="part2_wrapper">
       <div class="part2">
-        <div class="title">{{ $t('pricing.pagefont.faq') }}</div>
+        <h2 class="title">{{ $t('pricing.pagefont.faq') }}</h2>
         <div class="list_out">
           <div
             v-for="(item, index) in aqList"
@@ -391,7 +391,7 @@ const changeBuyCorrectTimes = () => {
               <div class="icon">
                 <img src="/img/pricing/arrow_down.svg" :alt="$t('pricing.pagefont.arrow_down')" />
               </div>
-              <h2 class="qusetion">{{ item.name }}</h2>
+              <h3 class="qusetion">{{ item.name }}</h3>
             </div>
             <div v-if="item.open" class="answer">
               <div class="answer_content" v-html="item.content"></div>

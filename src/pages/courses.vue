@@ -302,7 +302,7 @@ onMounted(() => {
         </div>
 
         <div class="exten_det_out">
-          <div class="exten_det_title">{{ t('courses.extdet.title') }}</div>
+          <h2 class="exten_det_title">{{ t('courses.extdet.title') }}</h2>
           <div class="exten_det_content">
             <div class="exten_det_content_left">
               <img src="/img/courses/ext_det_bg.svg" alt="Introduction.svg" />
@@ -355,7 +355,7 @@ onMounted(() => {
 
           <div ref="changeRightRef" class="change_right">
             <div v-for="(item, index) in four_change_right_data" :key="index">
-              <div class="change_right_title" :id="`section-${index}`">{{ item.title }}</div>
+              <h2 class="change_right_title" :id="`section-${index}`">{{ item.title }}</h2>
               <div class="change_right_desc">{{ item.desc }}</div>
               <div class="change_right_desc">{{ item.desc2 }}</div>
               <div class="change_right_video">
@@ -399,7 +399,7 @@ onMounted(() => {
           <img src="/img/courses/courses_group.webp" alt="courses_group.webp" />
         </div>
         <div class="package_right">
-          <div class="title">{{ t('courses.package_out.title') }}</div>
+          <h2 class="title">{{ t('courses.package_out.title') }}</h2>
           <div class="desc">{{ t('courses.package_out.desc') }}</div>
           <div class="desc">{{ t('courses.package_out.desc2') }}</div>
           <div class="desc">{{ t('courses.package_out.desc3') }}</div>
@@ -418,7 +418,7 @@ onMounted(() => {
 
     <div class="aqlist_wrapper">
       <div class="part2">
-        <div class="title">{{ $t('pricing.pagefont.faq') }}</div>
+        <h2 class="title">{{ $t('pricing.pagefont.faq') }}</h2>
         <div class="list_out">
           <div
             v-for="(item, index) in aqList"
@@ -429,7 +429,7 @@ onMounted(() => {
               <div class="icon">
                 <img src="/img/pricing/arrow_down.svg" :alt="$t('pricing.pagefont.arrow_down')" />
               </div>
-              <h2 class="qusetion">{{ item.name }}</h2>
+              <h3 class="qusetion">{{ item.name }}</h3>
             </div>
             <div v-if="item.open" class="answer">
               <div class="answer_content" v-html="item.content"></div>

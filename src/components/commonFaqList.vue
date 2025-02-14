@@ -23,7 +23,7 @@ const openOrCloseOneQuestion = (index) => {
 <template>
   <div class="common_faq_list_wrapper">
     <div class="part2">
-      <div class="title" v-html="props.aqtitle || t('pricing.pagefont.faq')"></div>
+      <h2 class="title" v-html="props.aqtitle || t('pricing.pagefont.faq')"></h2>
 
       <div class="list_out">
         <div
@@ -35,7 +35,7 @@ const openOrCloseOneQuestion = (index) => {
             <div class="icon">
               <img src="/img/pricing/arrow_down.svg" :alt="$t('pricing.pagefont.arrow_down')" />
             </div>
-            <h2 class="qusetion" v-html="item.name"></h2>
+            <h3 class="qusetion" v-html="item.name"></h3>
           </div>
           <div v-if="openIndexArr.indexOf(index) > -1" class="answer">
             <div class="answer_content" v-html="item.content"></div>

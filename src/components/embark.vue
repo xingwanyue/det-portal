@@ -15,12 +15,12 @@ const props = defineProps({
   <div class="embark_out_wrapper">
     <div class="embark_out">
       <template v-if="props.title">
-        <div class="font1" v-html="props.title"></div>
+        <h2 class="font1" v-html="props.title"></h2>
       </template>
-      <template v-else>
+      <h2 v-else>
         <div class="font1">{{ $t('embark.font1') }}</div>
-        <div class="font2">{{ $t('embark.font2') }}</div></template
-      >
+        <div class="font2">{{ $t('embark.font2') }}</div>
+      </h2>
 
       <div v-if="!user.id" class="two_btn_out">
         <div>

@@ -132,7 +132,7 @@ const handleCurrentChange = async (val: number) => {
             data-aos-duration="1000"
             :to="localePath(`/${item.path}`)"
           >
-            <div class="title">{{ item.name }}</div>
+            <h2 class="title">{{ item.name }}</h2>
             <div class="content">
               {{ item.content }}
             </div>
