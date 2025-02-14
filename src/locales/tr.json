@@ -503,8 +503,8 @@
   },
   "correction": {
     "seometa": {
-      "title": "Duolingo Yazma AI Düzeltmesi - Anında DET Kompozisyon Geri Bildirimi",
-      "description": "Duolingo English Test yazma bölümünüzü dakikalar içinde mükemmelleştirin. Anında puanlama, dilbilgisi kontrolleri ve uzman seviyesinde rehberlik sunan AI destekli kompozisyon düzeltmesi. 21.000+ öğrenci tarafından güvenilen platform."
+      "title": "Duolingo İngilizce Testi Yazma AI Düzeltmesi - Anında DET Kompozisyon Geri Bildirimi {'|'} DET Practice",
+      "description": "AI düzeltmesi ile DET yazma bölümünü dakikalar içinde mükemmelleştirin: anında puanlama, dilbilgisi kontrolleri ve uzman rehberliği. 21 bin+ öğrencinin güvendiği sistem. Anında geri bildirim alın - Hemen deneyin!"
     },
     "h1": "DET Practice'den Anında Duolingo Yazma AI Düzeltmesi",
     "descnew": "Dakikalar İçinde Profesyonel Seviye DET Yazma Puanlaması",
@@ -567,8 +567,8 @@
   },
   "courses": {
     "seometa": {
-      "title": "DET Kursu - Eksiksiz Duolingo İngilizce Testi Hazırlığı {'|'} %95 Başarı",
-      "description": "Uzman eğitmenler eşliğinde Okuma, Yazma, Konuşma ve Dinleme bölümlerini kapsayan DET kursu. Alıştırma testleri, ders planları ve üyeler için ücretsiz erişim dahildir."
+      "title": "Ücretsiz DET Kursu - Duolingo İngilizce Testi Hazırlık Kursları {'|'} DET Practice",
+      "description": "Uzman eğitmenlerden DET kursları: Tüm bölümleri, pratik testleri ve ders planlarını öğrenin. %95 başarı oranı. Bugün ücretsiz başlayın!"
     },
     "h1": "DET Kursu: Duolingo İngilizce Testi Başarısına Giden Yolunuz",
     "h2": "%95 Öğrenci Başarı Oranıyla Uzman Öncülüğünde DET Kursu",
@@ -736,10 +736,10 @@
   },
   "mockexam": {
     "seometa": {
-      "title": "Duolingo Deneme Sınavı - Profesyonel DET Hazırlık Platformu",
-      "description": "Kapsamlı DET pratik materyalleri ile Duolingo Deneme Sınavı platformu. Anında sonuçlar, detaylı raporlar ve sınav tarzı sorular. 10.000+ sınav adayının güvendiği platform."
+      "title": "Duolingo Online Deneme Sınavı - En Gerçekçi Pratik {'|'} DET Practice",
+      "description": "En gerçekçi Duolingo deneme sınavlarını çevrimiçi deneyimleyin. Anında puanlama, detaylı performans analizi ve gerçek sınav simülasyonu. Ücretsiz başlayın!"
     },
-    "h1": "Duolingo Deneme Sınavı - DET Practice'ten Gerçek Sınav Deneyimi Platformu",
+    "h1": "Duolingo Deneme Sınavı - Gerçek Sınav Deneyimi",
     "descnew": "Gerçeği Aratmayan Kapsamlı Duolingo Deneme Sınavı",
     "desc": "Gerçek sınav ortamını mükemmel şekilde yansıtan Duolingo deneme sınavımızla pratik yapın. Anında sonuçlar ve derinlemesine analiz ile güçlü ve zayıf yönlerinizi belirleyerek gerçek sınava güvenle hazırlanmanıza yardımcı oluyoruz.",
     "alt": "DET Practice: En iyi Duolingo İngilizce Testi Pratik platformu",
@@ -801,10 +801,10 @@
   },
   "practice": {
     "seometa": {
-      "title": "Duolingo İngilizce Testi Pratik - Yapay Zeka Destekli Puan Yükseltici",
-      "description": "18.000+ soru ile Duolingo İngilizce Testi pratiği. Yapay zeka konuşma koçu, akıllı çalışma yolları ve detaylı analizler. 400.000+ başarılı öğrenciye katılın!"
+      "title": "Duolingo İngilizce Testi Alıştırma Soruları ve AI Destekli Hazırlık {'|'} DET Practice",
+      "description": "18.000+ Duolingo İngilizce test alıştırma sorusuyla DET'i öğrenin. Konuşma/yazma için AI puanlaması alın. Duolingo İngilizce pratik testi puanlarınızı bugün artırmaya başlayın!"
     },
-    "h1": "En İyi Duolingo İngilizce Testi Pratik Soru Bankası",
+    "h1": "Duolingo İngilizce Testi Alıştırmaları",
     "descnew": "Her DET Bölümü için Yapay Zeka Destekli Duolingo İngilizce Testi Pratiği",
     "desc": "Cevap analizleri, şablonlar, yapay zeka destekli konuşma ve yazma değerlendirmeleri ve akıllı planlama ile zenginleştirilmiş kapsamlı Duolingo İngilizce Testi pratik sorularına erişin. Yapay zeka destekli yaklaşımımızla uygun fiyata verimli puan artışı sağlayın.",
     "alt": "DET Pratik: En İyi Duolingo İngilizce Testi Pratik Platformu",
@@ -868,8 +868,8 @@
   },
   "speakingaicorrection": {
     "seometa": {
-      "title": "Duolingo English Test Konuşma Düzeltmesi - AI Değerlendirme & Geri Bildirim",
-      "description": "Anlık AI değerlendirmesiyle Duolingo English Test konuşma bölümünde uzmanlaşın. Telaffuz geri bildirimi, puanlama ve profesyonel rehberlik alın. 26.000'den fazla test adayı tarafından güvenilen platform."
+      "title": "Duolingo İngilizce Testi Konuşma Düzeltmesi - AI Puanlama ve Geri Bildirim {'|'} DET Practice",
+      "description": "AI ile DET konuşma bölümünde ustalaşın! Anında telaffuz geri bildirimi, puanlama ve uzman rehberliği alın. 26 bin+ sınav adayının güvendiği sistem. Puanınızı şimdi yükseltin!"
     },
     "h1": "DET Practice'den Güçlü AI DET Konuşma Düzeltmesi",
     "descnew": "AI geri bildirimiyle DET konuşma becerilerinizi geliştirin",
@@ -1248,11 +1248,11 @@
   },
   "duolinguopt": {
     "seometa": {
-      "title": "Ücretsiz Duolingo Deneme Testi {'|'} DETPractice",
-      "description": "Gerçek DET sınavıyla aynı formatta ücretsiz Duolingo deneme testini deneyin! Anında puanlama, detaylı analiz ve kişisel geri bildirim. 10,000+ öğrenci tarafından kullanılmıştır - Hemen ücretsiz deneyin!"
+      "title": "Ücretsiz Duolingo Pratik Testi {'|'} DET Practice",
+      "description": "ÜCRETSİZ Duolingo Pratik Testimizle gerçek DET formatını deneyimleyin! Anında puanlama, detaylı analiz, kişiselleştirilmiş geri bildirim. 10.000+ öğrenciye katılın - Hemen ücretsiz deneyin!"
     },
     "hero": {
-      "title": "Ücretsiz Duolingo Deneme Testi",
+      "title": "Ücretsiz Duolingo Pratik Testi",
       "desc": "<strong>Gerçek DET</strong> ile tamamen aynı olan tam kapsamlı Duolingo İngilizce deneme testini deneyimleyin. <strong>Anında sonuçlar</strong> ve <strong>detaylı geri bildirim</strong> ile skorlarınızı hızla yükseltin ve en iyi performansınızı gösterin.",
       "btn": "Hemen Başla"
     },
