@@ -222,12 +222,12 @@ const menus = computed(() => [
                 class="one_card card4"
               >
                 <div class="icon">
-                  <img src="/img/home/head_practice.svg" alt="Duolingo Practice Test" />
+                  <img src="/img/home/head_practice.svg" :alt="$t('header.dpt.alt')" />
                 </div>
                 <div class="right">
-                  <div class="title">Duolingo Practice Test</div>
+                  <div class="title">{{ $t('header.dpt.title') }}</div>
                   <div class="font">
-                    Assess your listening, speaking, reading, and writing skills to identify areas for improvement.
+                    {{ $t('header.dpt.font') }}
                   </div>
                 </div>
               </NuxtLink>

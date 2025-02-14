@@ -43,6 +43,11 @@
       "title": "DET Corrección de IA Hablante",
       "alt": "DET Corrección de IA Hablante",
       "font": "Aprovecha la poderosa IA para mejorar tu DET puntuación de expresión oral de manera enfocada. ¡Soporta todas las preguntas de expresión oral!"
+    },
+    "dpt": {
+      "title": "Examen de práctica de Duolingo",
+      "alt": "Examen de práctica de Duolingo",
+      "font": "Evalúa tus habilidades de comprensión auditiva, expresión oral, lectura y escritura para identificar áreas de mejora."
     }
   },
   "footer": {

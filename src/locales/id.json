@@ -43,6 +43,11 @@
       "title": "DET Koreksi AI Berbicara",
       "alt": "DET Koreksi AI Berbicara",
       "font": "Manfaatkan AI yang kuat untuk meningkatkan skor DET berbicara Anda secara terarah. Dukung semua pertanyaan berbicara!"
+    },
+    "dpt": {
+      "title": "Tes Latihan Duolingo",
+      "alt": "Tes Latihan Duolingo",
+      "font": "Nilai kemampuan mendengarkan, berbicara, membaca, dan menulis Anda untuk mengidentifikasi area yang perlu ditingkatkan."
     }
   },
   "footer": {

@@ -43,6 +43,11 @@
       "title": "DET Konuşan AI Düzeltmesi",
       "alt": "DET Konuşan AI Düzeltme",
       "font": "Güçlü yapay zekayı kullanarak konuşma skorunuzu hedefli bir şekilde artırın. Tüm konuşma sorularını destekleyin!"
+    },
+    "dpt": {
+      "title": "Duolingo Alıştırma Testi",
+      "alt": "Duolingo Alıştırma Testi",
+      "font": "Geliştirilmesi gereken alanları belirlemek için dinleme, konuşma, okuma ve yazma becerilerinizi değerlendirin."
     }
   },
   "footer": {

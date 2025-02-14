@@ -43,6 +43,11 @@
       "title": "DET Correzione AI Parlante",
       "alt": "DET Correzione AI di Parlato",
       "font": "Sfrutta la potente IA per migliorare il tuo punteggio di DET orale in modo mirato. Supporta tutte le domande orali!"
+    },
+    "dpt": {
+      "title": "Test di pratica Duolingo",
+      "alt": "Test di pratica Duolingo",
+      "font": "Valuta le tue capacità di ascolto, conversazione, lettura e scrittura per identificare le aree di miglioramento."
     }
   },
   "footer": {

@@ -43,6 +43,11 @@
       "title": "DET Speaking AI Correction",
       "alt": "DET Speaking AI Correction",
       "font": "Leverage powerful AI to improve your DET speaking score in a targeted manner. Support all speaking questions!"
+    },
+    "dpt": {
+      "title": "Duolingo Practice Test",
+      "alt": "Duolingo Practice Test",
+      "font": "Assess your listening, speaking, reading, and writing skills to identify areas for improvement."
     }
   },
   "footer": {

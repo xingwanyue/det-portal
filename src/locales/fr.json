@@ -43,6 +43,11 @@
       "title": "DET Correction de l'IA Parlante",
       "alt": "DET Correction d'IA Parlante",
       "font": "Tirez parti de l'IA puissante pour améliorer votre score DET de speaking de manière ciblée. Supporte toutes les questions de speaking !"
+    },
+    "dpt": {
+      "title": "Test d'entraînement Duolingo",
+      "alt": "Test d'entraînement Duolingo",
+      "font": "Évaluez vos compétences en écoute, expression orale, lecture et écriture pour identifier les domaines à améliorer."
     }
   },
   "footer": {
