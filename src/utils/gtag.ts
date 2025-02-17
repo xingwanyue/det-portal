@@ -36,7 +36,7 @@ export const payEvent = (transaction_id = '', value = 100) => {
       send_to: 'AW-11500231799/_6xxCMXJ-IUaEPe43usq',
       transaction_id,
       value: value / 100,
-      currency: 'CNY',
+      currency: 'USD',
     });
 
     window.gtag('event', 'conversion_event_paid', {
