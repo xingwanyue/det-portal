@@ -68,7 +68,7 @@ export function getToken(forHeader?: any) {
   if (!process.client) {
     return;
   }
-  const token = sessionStorage[TOKEN] || localStorage[TOKEN];
+  const token = sessionStorage[TOKEN] || localStorage[TOKEN] || getCookie(TOKEN);;
   let res;
   if (token) {
     res = forHeader ? `Bearer ${token}` : token;
@@ -80,6 +80,7 @@ export function getToken(forHeader?: any) {
 
 export function saveToken(token: any) {
   localStorage[TOKEN] = token;
+  setCookie(TOKEN, token, 90);
 }
 let defaultCachePrefix = '20180428_'; // 默认缓存前缀,便于快速清除缓存
 export const setCatchePrefix = (prefix: String) => {
