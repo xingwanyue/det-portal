@@ -68,7 +68,7 @@ export function getToken(forHeader?: any) {
   if (!process.client) {
     return;
   }
-  const token = sessionStorage[TOKEN] || localStorage[TOKEN] || getCookie(TOKEN);;
+  const token = sessionStorage[TOKEN] || localStorage[TOKEN] || getCookie(TOKEN);
   let res;
   if (token) {
     res = forHeader ? `Bearer ${token}` : token;
