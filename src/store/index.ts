@@ -152,6 +152,7 @@ export const useStore = defineStore({
             ElMessageBox.alert(`${message.join('<br>')}`, '', {
               confirmButtonText: 'Confirm',
               dangerouslyUseHTMLString: true,
+              cancelButtonClass: 'confirmBtn',
               beforeClose: () => {
                 window.location.href = '/app/#/vip';
               },

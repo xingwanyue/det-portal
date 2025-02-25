@@ -40,6 +40,31 @@ onMounted(() => {
   flex-direction: column;
   align-items: center;
   padding: 100px 15px 0;
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+
+    25% {
+      transform: rotate(-90deg);
+    }
+
+    50% {
+      transform: rotate(-180deg);
+    }
+
+    75% {
+      transform: rotate(-270deg);
+    }
+
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .circleImg {
+    animation: rotate 2s linear infinite;
+  }
   .title {
     font-weight: 500;
     font-size: 18px;
@@ -68,5 +93,11 @@ onMounted(() => {
     text-align: center;
     margin-top: 12px;
   }
+}
+</style>
+<style>
+.confirmBtn {
+  background-color: #f66442;
+  color: #ffffff;
 }
 </style>
