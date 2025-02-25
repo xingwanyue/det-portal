@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import { useRouter } from 'vue-router';
 import { payEvent, beginCheckoutEvent, setUserData } from '@/utils/gtag';
 
-import { api, saveToken, getToken, removeToken, delay } from '@/utils';
+import { api, saveToken, getToken, removeToken, delay, getDeviceType } from '@/utils';
 import { fetchmy } from '@/utils/request';
 import { stripePayUrlGet, stripePayStatusGet, logout, logFbAdd } from '@/api';
 
@@ -91,7 +91,10 @@ export const useStore = defineStore({
     async userChangeLanguage(language: string) {
       this.userSelectLanguage = language;
     },
-    async checkPayStatus(logVipId: string, token: string) {
+    async checkPayStatus(logVipId: string, token?: string) {
+      if (!token) {
+        token = (await getToken(false)) as string;
+      }
       const { err, data = {} } = await stripePayStatusGet(logVipId, token);
       if (!err) {
         const { code, vipEndTime, vipDays, examNum, correctNum, id, amount, write, speak, type, tag } = data;
@@ -149,6 +152,9 @@ export const useStore = defineStore({
             ElMessageBox.alert(`${message.join('<br>')}`, '', {
               confirmButtonText: 'Confirm',
               dangerouslyUseHTMLString: true,
+              beforeClose: () => {
+                window.location.href = '/app/#/vip';
+              },
             });
           }
         } else {
@@ -165,14 +171,21 @@ export const useStore = defineStore({
         router.push(localePath('/login'));
         return;
       }
-      const { err, data } = await stripePayUrlGet(payload, token);
+      const { err, data } = await stripePayUrlGet(
+        { ...payload, path: 'pricing', isMobile: getDeviceType() !== 'pc' ? '1' : '0' },
+        token,
+      );
       if (!err) {
         const { logVipId, url } = data;
 
         if (url) {
           beginCheckoutEvent();
           this.checkPayStatus(logVipId, token);
-          window.open(url, '_blank');
+          if (getDeviceType() !== 'pc') {
+            window.location.href = url;
+          } else {
+            window.open(url, '_blank');
+          }
         }
       } else {
         ElMessage({

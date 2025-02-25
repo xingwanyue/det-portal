@@ -14,7 +14,7 @@ export const sesCodeVerify = (args: any) =>
   });
 
 export const stripePayUrlGet = (args: any, token: string) =>
-  fetchmy(`${api}/stripe/payUrl?vipId=${args.vipId}`, {
+  fetchmy(`${api}/stripe/payUrl?vipId=${args.vipId}&path=${args.path || ''}&isMobile=${args.isMobile || ''}`, {
     method: 'get',
     headers: {
       Authorization: `Bearer ${token}`,
