@@ -6,10 +6,12 @@
     <meta name="robots" content="noindex" />
     <title>Det Practice</title>
     <script>
-      window.close();
-      setTimeout(() => {
-        window.location.replace('/app/#/home');
-      }, 2000);
+      window.onload = () => {
+        window.close();
+        setTimeout(() => {
+          window.location.replace('/app/#/home');
+        }, 2000);
+      };
     </script>
   </head>
   <body></body>
