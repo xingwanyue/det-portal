@@ -25,7 +25,7 @@ onMounted(() => {
 
 <template>
   <div class="paySuccess">
-    <img width="200" height="200" src="/img/circle.png" alt="circle" class="circleImg" />
+    <img width="100" height="100" src="/img/circle.png" alt="circle" class="circleImg" />
     <div class="title">
       Payment in Progress, Please Wait<span class="dot">{{ dots }}</span>
     </div>
@@ -112,3 +112,4 @@ onMounted(() => {
   }
 }
 </style>
+

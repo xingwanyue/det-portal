@@ -154,7 +154,7 @@ export const useStore = defineStore({
               dangerouslyUseHTMLString: true,
               confirmButtonClass: 'confirmBtn',
               beforeClose: () => {
-                window.location.href = '/app/#/vip';
+                window.location.replace('/app/#/home');
               },
             });
           }
