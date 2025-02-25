@@ -95,9 +95,20 @@ onMounted(() => {
   }
 }
 </style>
-<style>
-.confirmBtn {
-  background-color: #f66442;
-  color: #ffffff;
+<style lang="scss">
+.el-message-box {
+  .el-message-box__btns {
+    .confirmBtn {
+      background-color: #f66442;
+      color: #ffffff;
+      border-color: #f66442;
+      :hover,
+      :active {
+        background-color: #f66442;
+        color: #ffffff;
+        border-color: #f66442;
+      }
+    }
+  }
 }
 </style>
