@@ -6,7 +6,7 @@ const route = useRoute();
 watch(
   () => route.path,
   (val) => {
-    if (val) {
+    if (val && process.client) {
       fetch(
         `https://www.duolingopractice.com/weapp/api/common/logPath?path=${encodeURIComponent(
           window.location.pathname,
