@@ -10,7 +10,7 @@
   <body>
     <script>
       window.onload = () => {
-        fetch(`https://www.duolingopractice.com/weapp/api/common/logPath/${encodeURIComponent('/fb')}`);
+        fetch(`https://www.duolingopractice.com/weapp/api/common/logPath?path=${encodeURIComponent(window.location.pathname)}`);
         window.localStorage['20180428_InviteCode'] = '65';
         window.location.href = '/';
       };
