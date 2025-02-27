@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <title>DET Practice</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        window.onload = () => {
-            window.localStorage['20180428_InviteCode'] = '67'
-            window.location.href = '/'
-        }
+      window.onload = () => {
+        fetch(`https://www.duolingopractice.com/weapp/api/common/logPath/${encodeURIComponent('/x')}`);
+        window.localStorage['20180428_InviteCode'] = '67';
+        window.location.href = '/';
+      };
     </script>
-</body>
-
+  </body>
 </html>
