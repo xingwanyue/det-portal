@@ -178,6 +178,7 @@ const wehaveLanguage = {
   it: 'Italiano',
   th: 'ไทย',
   zh: '中文',
+  pt: 'Português',
 } as any;
 const options = Object.keys(wehaveLanguage).map((value) => ({
   value,
