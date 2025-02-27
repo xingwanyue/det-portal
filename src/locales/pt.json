@@ -1,0 +1,1359 @@
+{
+  "test": "Para teste",
+  "Home": "Início",
+  "Products": "Produtos",
+  "Learn": "Aprender",
+  "Pricing": "Preços",
+  "Blog": "Blog",
+  "header": {
+    "home_logo_title": "Prática DET",
+    "path_practice_title": "Teste de Prática de Inglês Duolingo Online",
+    "path_correction_title": "Serviço de Correção por IA para Teste Duolingo",
+    "path_mock_title": "Simulado Duolingo",
+    "path_course_title": "Curso Online para o Teste de Inglês Duolingo",
+    "commonAlt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "Get_started": " Começar ",
+    "Try_for_free": "Experimente grátis",
+    "prod1": {
+      "title": "Prática do Teste de Inglês Duolingo",
+      "alt": "Prática do Teste de Inglês Duolingo",
+      "font": "Alcance a Excelência com Nosso Extenso Banco de Questões: Mais de 18.000 Questões, Atualizações Regulares e Monitoramento Inteligente de Desempenho!"
+    },
+    "prod2": {
+      "title": "Serviço de Correção do Teste de Inglês Duolingo",
+      "alt": "Serviço de Correção do Teste de Inglês Duolingo",
+      "font": "Aperfeiçoe Suas Redações com Feedback de Professor Baseado em IA: Correções Precisas, Relatórios Instantâneos e Melhoria de Pontuação em Duas Semanas!"
+    },
+    "prod3": {
+      "title": "Curso do Teste de Inglês Duolingo",
+      "alt": "Curso do Teste de Inglês Duolingo",
+      "font": "Conquiste Seu Exame com Simulados Completos Autênticos: Análise Detalhada e Resultados Instantâneos, Disponíveis a Qualquer Hora, em Qualquer Lugar."
+    },
+    "prod4": {
+      "title": "Simulado Completo DET",
+      "alt": "Simulado Completo DET",
+      "font": "Desbloqueie o Sucesso no DET: Domínio Abrangente, Técnicas Comprovadas e Insights Atualizados para Excelência Confiante em Fala e Escrita!"
+    },
+    "prodwriting": {
+      "title": "Correção de Escrita DET por IA",
+      "alt": "Correção de Escrita DET por IA",
+      "font": "Obtenha pontuações precisas e relatórios detalhados para melhorar suas habilidades de escrita mais rapidamente. Suporte para todas as questões de escrita!"
+    },
+    "prodspeaking": {
+      "title": "Correção de Fala DET por IA",
+      "alt": "Correção de Fala DET por IA",
+      "font": "Aproveite a poderosa IA para melhorar sua pontuação de fala no DET de maneira direcionada. Suporte para todas as questões de fala!"
+    },
+    "dpt": {
+      "title": "Teste de Prática Duolingo",
+      "alt": "Teste de Prática Duolingo",
+      "font": "Avalie suas habilidades de audição, fala, leitura e escrita para identificar áreas de melhoria."
+    }
+  },
+  "footer": {
+    "inc": "Nosso produto não tem conexão com Duolingo, Inc",
+    "ProductsTitle": "Produtos",
+    "LearnTitle": "Recursos de Preparação",
+    "BlogTitle": "Blog",
+    "CompanyTitle": "Empresa",
+    "Products": [
+      "Prática DET",
+      "Correção de Escrita DET por IA",
+      "Correção de Fala DET por IA",
+      "Simulado DET",
+      "Curso do Teste de Inglês Duolingo"
+    ],
+    "Company": [
+      "Sobre nós",
+      "Contate-nos",
+      "Termos e Condições",
+      "Política de Privacidade",
+      "Mapa do Site",
+      "Programa de Afiliados",
+      "Política de Reembolso"
+    ],
+    "show_more": "Mostrar mais",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "cookie_contenr": " Prática DET usa cookies para melhorar o conteúdo com base nas configurações do seu navegador. Para mais detalhes, veja",
+    "newAlt": "Prática DET",
+    "close_icon_alt": "Símbolo de Fechar",
+    "resourcesNew": [
+      "Leitura DET",
+      "Escrita DET",
+      "Fala DET",
+      "Audição DET",
+      "Vídeos de Preparação DET",
+      "Vocabulário DET",
+      "Dicas de Preparação DET",
+      "Aprender DET"
+    ],
+    "igetit": "OK, entendi"
+  },
+  "index": {
+    "seometa": {
+      "title": "Prática DET - Domine o Teste de Inglês Duolingo",
+      "description": "Prática DET é a melhor plataforma para praticar o Teste de Inglês Duolingo. Temos o maior banco de testes, simulado completo, serviço de correção e cursos DET.",
+      "keywords": "DET Duolingo, Teste DET, Duolingo DET, Teste Duolingo, Teste Duolingo Online, Teste de Inglês Duolingo, Exame de Inglês Duolingo, Exame de Proficiência Duolingo, Exame de Proficiência em Inglês Duolingo, Teste de Proficiência em Inglês Duolingo"
+    },
+    "bigtitle1": "Número de Pessoas com Pontuação Alta (130+ Pontos): 10000+",
+    "bigtitle2": "Avaliação Excepcional de 4,8/5 de Mais de 850 Avaliações!",
+    "power_by": "Alimentado por IA",
+    "h1Mobile": "Consiga uma Pontuação Mais Alta<br />Facilmente no Teste <br />de Inglês Duolingo Com: <span class=\"seo_hack\">Prática DET</span>",
+    "h1PC": "Consiga uma Pontuação Mais Alta Facilmente no <br />Teste de Inglês Duolingo Com:<span class=\"seo_hack\">Prática DET</span>",
+    "one_small_title": [
+      "Prática DET",
+      "Correção por IA",
+      "Simulado Completo",
+      "Cursos DET"
+    ],
+    "Start_free_with_Google": "Comece grátis com Google",
+    "Start_free_with_email": "Comece grátis com email",
+    "Start_for_free": "Comece grátis",
+    "trustedByWorldwide": "Confiado por {path} estudantes em todo o mundo para um aumento de pontuação no Teste de Inglês Duolingo em 1 mês.",
+    "The_Best_Platform": "A Melhor Plataforma para Prática e Aprendizado do Teste de Inglês Duolingo",
+    "Tu": "Total de Usuários",
+    "questions": "Questões",
+    "mockTest": "Simulado",
+    "Leverage_Our": "Aproveite Nossos Recursos Completos para Melhorar Rapidamente sua Pontuação",
+    "yellow_check_icon_alt": "ícone_de_verificação_amarelo",
+    "article1": {
+      "title": "Prática do Teste de Inglês Duolingo",
+      "tips1": "O <span class='yellow'>Maior</span> Banco de Questões, {number} Questões Práticas",
+      "tips2": "<span class='yellow'>Atualizado continuamente todos os dias</span>",
+      "tips3": "Fornece respostas de alta pontuação e explicações detalhadas",
+      "tips4": "Pontuação por IA para Leitura em Voz Alta",
+      "btn_font": "Descubra mais",
+      "btn_img_alt": "Seta Amarela à Direita"
+    },
+    "article2": {
+      "title": "Simulado Completo DET",
+      "tips1": "O Simulado Mais <span class='yellow'>Poderoso</span>, Próximo ao <span class='yellow'>Exame DET Real</span>",
+      "tips2": "Exames Adaptativos e Pontuação por IA",
+      "tips3": "Pontuações de Avaliação Precisas, Relatório de Avaliação Detalhado",
+      "tips4": "Resultados disponíveis em <span class='yellow'>5-30 minutos</span>",
+      "btn_font": "Saiba mais",
+      "btn_img_alt": "Seta Amarela à Direita"
+    },
+    "article3": {
+      "title": "Correção de Escrita DET por IA",
+      "tips1": "Suporte para \"Escrever sobre a Foto\", \"Escrita Interativa\", \"Amostra de Escrita\"",
+      "tips2": "Pontuação por IA, Correção por IA, Orientação de Professor",
+      "tips3": "Pontuações de Avaliação Precisas, Relatório de Avaliação Detalhado",
+      "tips4": "Resultados disponíveis em <span class='yellow'>1-5 minutos</span>",
+      "btn_font": "Saiba mais",
+      "btn_img_alt": "Seta Amarela à Direita"
+    },
+    "article4": {
+      "title": "Correção de Fala DET por IA",
+      "tips1": "Suporte para \"Ouvir e Falar\", \"Falar sobre a Foto\", \"Ler e Falar\", \"Amostra de Fala\"",
+      "tips2": "Pontuação por IA, Resultados de Avaliação por IA, Orientação de Professor",
+      "tips3": "Pontuações de Avaliação Precisas, Relatório de Avaliação Detalhado",
+      "tips4": "Resultados disponíveis em <span class='yellow'>1-5 minutos</span>",
+      "btn_font": "Saiba mais",
+      "btn_img_alt": "Seta Amarela à Direita"
+    },
+    "article5": {
+      "title": "Curso do Teste de Inglês Duolingo",
+      "tips1": "Desenvolva um <span class='yellow'>entendimento profundo</span> das seções de fala e escrita do DET com nossos guias detalhados",
+      "tips2": "Alcance Domínio Abrangente",
+      "tips3": "Aprenda com Especialistas em ESL",
+      "tips4": "Mantenha-se Informado e à Frente",
+      "btn_font": "Explore mais",
+      "btn_img_alt": "Seta Amarela à Direita"
+    },
+    "thousand": "mil",
+    "Users": "Usuários",
+    "Questions": "Questões",
+    "Mock_Exam": "Simulado",
+    "Join_Them": "Junte-se a Eles"
+  },
+  "slogen": {
+    "title": "<div class='font1'>Inicie Seu Caminho para as Melhores Pontuações no</div><div class='font2'>Teste de Inglês Duolingo!</div>",
+    "Start_free_with_Google": "Comece grátis com Google",
+    "Start_free_with_email": "Comece grátis com email",
+    "Start_for_free": " Comece grátis"
+  },
+  "subscribe": {
+    "emailErrMessage1": "O email deve ser um endereço de email válido.",
+    "emailErrMessage2": "Por favor, digite seu endereço de email.",
+    "Subscribe_successfully": "Inscrição bem-sucedida",
+    "Subscribe!": "Inscreva-se!",
+    "Subscribe_for": "Inscreva-se para as Últimas Dicas e Estratégias para Elevar Sua Pontuação.",
+    "Email": "Email",
+    "Subscribe": "Inscrever-se"
+  },
+  "learn": {
+    "seometa": {
+      "title": "Prática DET - Aprenda dicas especializadas para o Teste de Inglês Duolingo",
+      "description": "Explore estratégias especializadas e métodos de estudo para o Teste de Inglês Duolingo. Oferecemos dicas práticas e insights para aprimorar sua preparação e aumentar sua pontuação.",
+      "keywords": "DET Duolingo, Teste DET, Duolingo DET, Teste Duolingo, Teste Duolingo Online, Teste de Inglês Duolingo, Exame de Inglês Duolingo, Exame de Proficiência Duolingo"
+    },
+    "h1": "Atualizaremos regularmente as dicas de preparação para o Teste de Inglês Duolingo",
+    "title2": " A última atualização foi até {time}",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "down_icon": "Ícone de Seta para Baixo",
+    "Show_more": "Mostrar mais"
+  },
+  "pricing": {
+    "seometa": {
+      "title": "Preços da Preparação para o Teste de Inglês Duolingo {'|'} Planos Acessíveis de Preparação DET",
+      "description": "Descubra opções de preços para preparação do Teste de Inglês Duolingo na Prática DET. Escolha entre planos flexíveis e acessíveis adaptados para ajudá-lo a ter sucesso na preparação para o Teste Duolingo. Comece sua jornada com o plano certo hoje!",
+      "keywords": "preços de preparação do Teste de Inglês Duolingo, planos de preparação para o Teste Duolingo, prática DET acessível, preparação para o Teste de Inglês Duolingo, preços DET, preços de teste de proficiência em inglês, planos de preparação para teste"
+    },
+    "pagefont": {
+      "h1": "Escolha o Plano que Funciona para Você",
+      "h4": "Pagamento seguro! Cancele a qualquer momento! Domine o DET agora!",
+      "switch1": "Pacotes",
+      "switch2": "Prática",
+      "sep": "Pagamento seguro",
+      "ca": "Cancele a qualquer momento",
+      "atde": "Domine o DET agora",
+      "circle_check_icon": "ícone_de_verificação_circular",
+      "Most_Popular_Choice": "Escolha Mais Popular",
+      "off": " {off}% de desconto ",
+      "do": "R$",
+      "mp": "Preço para membros",
+      "Buy_Now": "Comprar Agora",
+      "tf": " Experimente grátis ",
+      "mpc": "Escolha Mais Popular",
+      "your_price": "seu preço",
+      "Non_member": "Não-membro",
+      "purchased": "comprado",
+      "Secure_Payment": "Pagamento Seguro:",
+      "faq": "Perguntas Frequentes",
+      "Contact_Us": "Contate-nos",
+      "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+      "check_icon": "Verificar",
+      "tip_icon": "Dica",
+      "green_check": "Verificação Verde",
+      "arrow_down": "Seta para Baixo",
+      "free_font": "Grátis",
+      "free_tips": "Você pode visualizar 20 questões gratuitamente, experimentar nossa plataforma e ver se atende às suas necessidades.",
+      "tff": "Experimente grátis",
+      "save": "Economize {num}% ",
+      "saveup": "Economize até {num}%",
+      "week": "/semana",
+      "month": "/mês",
+      "Billed": "Cobrado R${num} /ano",
+      "apcs": "Serviço de Correção com IA",
+      "apcs1": "Serviço de Correção com IA",
+      "times": "vezes",
+      "bci": "ícone_de_verificação_preto",
+      "mt": "Simulado",
+      "apmt": "Simulado com IA",
+      "popular": "Popular",
+      "bestvalue": "Melhor Valor"
+    },
+    "aqList": [
+      {
+        "name": "Como funcionam os planos e preços da DETPractice?",
+        "content": "Oferecemos planos e preços transparentes para nossos usuários, sem taxas ocultas. Além disso, oferecemos pacotes de assinatura adicionais para que você possa escolher serviços de acordo com suas necessidades."
+      },
+      {
+        "name": "Existe um período de teste gratuito?",
+        "content": "Sim! Você pode visualizar 20 questões gratuitamente. Isso ajuda você a nos conhecer antes de comprar mais serviços."
+      },
+      {
+        "name": "Vocês oferecem descontos?",
+        "content": "Sim! Oferecemos descontos personalizados para cada serviço. No entanto, ao optar por um serviço de 30 dias, você receberá um desconto maior em comparação com outros serviços. Consulte os detalhes de preço acima para mais informações."
+      },
+      {
+        "name": "Meu pagamento foi bem-sucedido, mas a atualização falhou.",
+        "content": "Entre em contato conosco via chat ou e-mail: <span class='email_address'>support{'@'}detpractice.com</span>. Esta é a maneira mais simples e rápida de resolver suas preocupações."
+      },
+      {
+        "name": "Comprei o curso, mas não consigo visualizá-lo?",
+        "content": "Após comprar o curso com sucesso, você pode ir para a página de descrição do curso <span class='email_address'>https://www.detpractice.com/courses</span> para visualizar e baixar as informações do curso. Se não conseguir encontrar as informações do curso, entre em contato conosco via chat ou e-mail: <span class='email_address'>support{'@'}detpractice.com</span>."
+      },
+      {
+        "name": "Onde envio meu feedback?",
+        "content": "Você pode enviar feedback através do chat de suporte no canto inferior direito, ou entrar em contato conosco via e-mail em <span class='email_address'>support{'@'}detpractice.com</span>. Alternativamente, você pode deixar uma mensagem diretamente na seção \"Contate-nos\"."
+      },
+      {
+        "name": "Qual é a política de reembolso?",
+        "content1": "Para informações e instruções sobre como obter um reembolso, você pode consultar o link \"Política de Reembolso\" na parte inferior da página como prioridade, ou entrar em contato conosco em <span class='email_address'> support{'@'}detpractice.com </span>."
+      }
+    ],
+    "qlList": {
+      "day0": {
+        "name1Desc": "<span class='bigger'>20</span> Questões Práticas"
+      },
+      "day7": {
+        "name1Desc": "<span class='bigger'>Ilimitado</span> para Sessões de Prática",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Serviços de Correção",
+        "name2Tips": "Para Questões de Fala e Escrita",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Simulado"
+      },
+      "day15": {
+        "name1Desc": "`<span class='bigger'>Ilimitado</span> para Sessões de Prática",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Serviços de Correção",
+        "name2Tips": "Para Questões de Fala e Escrita",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Simulado"
+      },
+      "day30": {
+        "name1Desc": "<span class='bigger'>Ilimitado</span> para Sessões de Prática",
+        "name2Desc": "<span class='bigger'>{correctNum}</span> Serviços de Correção",
+        "name2Tips": "Para Questões de Fala e Escrita",
+        "name4Desc": "<span class='bigger'>{examNum}</span> Simulado"
+      }
+    },
+    "membershipUnchanging": [
+      "Acesso a todas as Questões Práticas",
+      "Navegue por Respostas Demonstrativas de Alta Pontuação",
+      "Análise Aprofundada de Questões",
+      "Livro de Palavras de Alta Frequência no Exame",
+      "Plano de Estudo Personalizado com Seleção Inteligente de Questões",
+      "Avaliações de Fala com IA"
+    ],
+    "correctServiceQuanYi": [
+      "Pode ser usado para escrita e fala DET",
+      "Pontuação por IA, Pontuação precisa",
+      "Resultados de Avaliação por IA",
+      "Relatório de Avaliação Detalhado",
+      "Resultados disponíveis em <span class='strongfont'>1-5 minutos</span>"
+    ],
+    "contaceUsList": {
+      "type1": {
+        "font": "Atendimento ao Cliente Online",
+        "tip": "Disponível de segunda a sexta, 10:00 - 19:00",
+        "btn": "Conversar Agora"
+      },
+      "type2": {
+        "font": "Envie-nos um Email",
+        "tip": "Receba uma resposta em 1 dia útil."
+      },
+      "type3": {
+        "font": "Deixe uma mensagem",
+        "tip": "Responderemos em um dia útil.",
+        "btn": "Deixar uma mensagem agora"
+      }
+    },
+    "leftQuanYiList": [
+      "<span class='strongfont'>Ilimitado</span> para Sessões de Prática",
+      "Acesso a <span class='strongfont'>18000+</span> Questões Práticas",
+      "Navegue por Respostas Demonstrativas de <span class='strongfont'>Alta Pontuação</span>",
+      "Análise <span class='strongfont'>Aprofundada</span> de Questões",
+      "<span class='strongfont'>Livro</span> de Palavras de Alta Frequência no Exame",
+      "<span class='strongfont'>Plano de Estudo</span> Personalizado com Seleção Inteligente de Questões",
+      "Avaliações de Fala com IA"
+    ],
+    "mockQuanYiList": [
+      "Simulados <span class='strongfont'>Completos</span>",
+      "Teste a qualquer momento",
+      "Próximo ao <span class='strongfont'>exame DET real</span>",
+      "Pontuações de avaliação precisas",
+      "Relatório de avaliação detalhado",
+      "Resultados disponíveis em <span class='strongfont'>5-30 minutos</span>"
+    ],
+    "packagesallQy": {
+      "qy1": "Simulado <span class='yellow'>{times} Vezes</span>",
+      "qy2": "Serviço de Correção com IA <span class='yellow'>{times} Vezes</span>",
+      "qy3": "<span class='yellow'>Ilimitado</span> para Sessões de Prática",
+      "qy4": "Acesso a todas as Questões Práticas",
+      "qy5": "Navegue por Respostas Demonstrativas de Alta Pontuação",
+      "qy6": "Vocabulário de Alta Frequência no Exame",
+      "qy7": "Plano de Estudo Personalizado com Seleção Inteligente de Questões",
+      "qy8": "Avaliações de Fala com IA",
+      "qyspeak": "Guia de <span class='yellow'>Exame de Fala DET (Presente Grátis)</span>",
+      "qywrite": "Guia de <span class='yellow'>Exame de Escrita DET (Presente Grátis)</span>"
+    }
+  },
+  "blog": {
+    "seometa": {
+      "title": "Prática DET - Dicas e Truques do Teste de Inglês Duolingo",
+      "description": "Descubra dicas e truques essenciais do Teste de Inglês Duolingo com o blog da Prática DET. Mergulhe em estratégias especializadas, insights de pontuação e guias detalhados para se destacar em cada seção do Teste de Inglês Duolingo e alcançar sua melhor pontuação."
+    },
+    "h1": "Blog da Prática DET",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo"
+  },
+  "embark": {
+    "font1": "Embarque em sua jornada para altas pontuações no",
+    "font2": "Teste de Inglês Duolingo!",
+    "Start_Now": "Comece Agora"
+  },
+  "articleDetail": {
+    "Submitted_successfully": "Enviado com sucesso",
+    "Home": " Início ",
+    "Learn": " Aprender ",
+    "Blog": " Blog ",
+    "Related_Articles": "Artigos Relacionados",
+    "Thanks_for_voting": "Obrigado por votar!",
+    "Rate_this_article": "Avalie este artigo",
+    "share": "Compartilhe este artigo",
+    "getHiger": "Obtenha uma Pontuação Mais Alta Facilmente no DET"
+  },
+  "easyexam": {
+    "snfeep": "Comece Agora para uma Preparação Fácil para o Exame.",
+    "Start_Now": " Comece Agora"
+  },
+  "highscorewriting": {
+    "font1": "Acelere Seu Caminho para o",
+    "font2": "Domínio da Escrita de Alta Pontuação.",
+    "Start_Now": "Comece Agora"
+  },
+  "highscorespeaking": {
+    "font1": "Embarque imediatamente em sua jornada para",
+    "font2": "Fala de Alta Pontuação!",
+    "Start_Now": "Comece Agora"
+  },
+  "highscorewritingnew": {
+    "font1": "Embarque imediatamente em sua jornada para",
+    "font2": "Escrita de Alta Pontuação!",
+    "Start_Now": "Comece Agora"
+  },
+  "path": {
+    "seometa": {
+      "title": "Blog da Prática DET",
+      "description": "Blog da Prática DET"
+    }
+  },
+  "aboutUs": {
+    "seometa": {
+      "title": "Sobre a Prática DET {'|'} Preparação para o Teste de Inglês Duolingo com IA",
+      "description": "Conheça a Prática DET - sua plataforma abrangente para preparação do Teste de Inglês Duolingo. Acesse mais de 18.000 questões práticas, correções com IA e simulados completos.",
+      "keywords": "prática DET, preparação para o Teste de Inglês Duolingo, simulado DET, banco de questões DET, correção DET com IA, prática de fala DET, prática de escrita DET, preparação para o teste Duolingo, curso DET, plataforma de aprendizado DET"
+    },
+    "title": "Sobre a Prática DET",
+    "title_desc": "DETPractice.com é a melhor plataforma para praticar e aprender para o Teste de Inglês Duolingo.",
+    "check_out": {
+      "h2": "Confira o Que Podemos Fazer",
+      "qbt": "Banco de Questões DET",
+      "qbtdesc": "Temos o maior banco de questões e o atualizamos diariamente. Você pode melhorar rapidamente sua pontuação no Teste de Inglês Duolingo praticando as questões.",
+      "flm": "Simulado Completo DET",
+      "flmdesc": "Temos o simulado DET mais poderoso, que permite avaliar suas pontuações de teste com precisão a um custo menor.",
+      "acs": "Serviço de Correção DET com IA",
+      "acsdesc": "Você pode usar as ferramentas de correção com IA que fornecemos para melhorar rapidamente suas pontuações de fala e escrita no DET.",
+      "dc": "Cursos DET",
+      "dedesc": "Continuaremos a desenvolver materiais de preparação para o teste e cursos baseados nas características mais recentes do DET."
+    },
+    "three_our_our": {
+      "h2": "Embora Jovem, Mas Forte",
+      "ov": "Nossa Visão",
+      "me": "Tornando a educação melhor através da IA",
+      "om": "Nossa Missão",
+      "omdesc": "Garantir que a inteligência artificial <br />geral beneficie todos os estudantes.",
+      "ovs": "Nossos Valores",
+      "ovsdesc": "Sinceridade, cooperação e benefício<br /> mútuo"
+    },
+    "get_in_touch": {
+      "h2": "Entre em Contato",
+      "goytb": "Vá para o YouTube",
+      "getmore": "Explore Nosso Conteúdo Educacional no YouTube"
+    }
+  },
+  "contactUs": {
+    "seometa": {
+      "title": "Contate a Prática DET {'|'} Suporte e Atendimento ao Cliente",
+      "description": "Entre em contato com a equipe de suporte da Prática DET para perguntas, feedback ou assistência. Ajuda especializada para preparação do Teste de Inglês Duolingo.",
+      "keywords": "contato prática DET, contato suporte DET, ajuda na preparação para o teste DET, suporte para Teste de Inglês Duolingo, atendimento ao cliente da prática DET, assistência para simulado DET, suporte para correção de escrita DET, ajuda para correção de fala DET"
+    },
+    "checkEmail": "O email deve ser um endereço de email válido.",
+    "enterName": "Por favor, digite seu nome.",
+    "enterEmail": "Por favor, digite seu endereço de email.",
+    "entermessage": "Por favor, digite sua mensagem.",
+    "subsuccess": "Enviado com sucesso",
+    "Contact_Us": "Contate-nos",
+    "Questions": "Tem perguntas, problemas ou feedback? Estamos aqui para ajudar!",
+    "fill_in": "Preencha o formulário",
+    "thank": "Obrigado por Entrar em Contato. Envie-nos um email, e responderemos em 24 horas com assistência personalizada para sua jornada de preparação para o DET.",
+    "email": "Email",
+    "Name": "Nome",
+    "Email_Address": "Endereço de Email",
+    "Message": "Mensagem",
+    "SUBMIT": " ENVIAR ",
+    "send": "Enviar"
+  },
+  "cookie": {
+    "seometa": {
+      "title": "Política de Cookies - Prática DET"
+    },
+    "Cookie_Policy": "Política de Cookies",
+    "Last_updated": "Última atualização: ",
+    "Last_updated_time": "2024-03-27",
+    "cookie_ex": " Esta Política de Cookies explica o que são cookies, como os usamos e suas opções em relação aos cookies em nosso site.",
+    "q1": {
+      "title": "O que são cookies?",
+      "a1": "Cookies são pequenos fragmentos de texto enviados pelo seu navegador web por um site que você visita. Um arquivo de cookie é armazenado em seu navegador web e permite que o site ou um terceiro reconheça você e torne sua próxima visita mais fácil e o site mais útil para você.",
+      "a2": "Os cookies podem ser \"persistentes\" ou de \"sessão\". Cookies persistentes permanecem em seu computador pessoal ou dispositivo móvel quando você fica offline, enquanto cookies de sessão são excluídos assim que você fecha seu navegador web."
+    },
+    "q2": {
+      "title": "Como usamos cookies",
+      "a1": "Quando você usa e acessa nosso site, podemos colocar vários arquivos de cookies em seu navegador web.",
+      "a2": "Usamos cookies para os seguintes propósitos:",
+      "a3": "• Para habilitar certas funções do site",
+      "a4": "• Para fornecer análises",
+      "a5": "• Para armazenar suas preferências",
+      "a6": "• Para permitir a entrega de anúncios (que são cookies de um domínio diferente do domínio do site que você está visitando - para nossos esforços de publicidade e marketing.)",
+      "a7": "Usamos cookies de sessão e persistentes em nosso site e usamos diferentes tipos de cookies para executar o site:",
+      "a8": "• Cookies essenciais: Podemos usar cookies essenciais para autenticar usuários e evitar uso fraudulento de contas de usuário.",
+      "a9": "• Cookies analíticos/de desempenho: Podemos usar cookies analíticos/de desempenho para rastrear a atividade do usuário no site e coletar dados sobre como os visitantes usam o site. Essas informações são usadas para melhorar a experiência do site para nossos usuários.",
+      "a10": "• Cookies de funcionalidade: Podemos usar cookies de funcionalidade para reconhecê-lo quando você retorna ao site e personalizar o conteúdo para você.",
+      "a11": "• Cookies de direcionamento: Podemos usar cookies de direcionamento para registrar sua visita ao site, as páginas que você visitou e os links que você seguiu."
+    },
+    "q3": {
+      "title": "Suas escolhas em relação aos cookies",
+      "a1": "Se você preferir evitar o uso de cookies em nosso site, deve desativar o uso de cookies em seu navegador e depois excluir os cookies salvos em seu navegador associados a este site. Você pode usar esta opção para evitar o uso de cookies a qualquer momento."
+    },
+    "q4": {
+      "title": "Contate-nos",
+      "a1": "Se você tiver alguma dúvida sobre nossa Política de Cookies, entre em contato conosco:",
+      "a2": "• Por email: ",
+      "a3": "• Visitando esta página em nosso site:"
+    },
+    "q5": {
+      "title": "Alterações em nossa Política de Cookies",
+      "a1": "Podemos atualizar nossa Política de Cookies de tempos em tempos. Notificaremos você sobre quaisquer alterações publicando a nova Política de Cookies nesta página."
+    }
+  },
+  "correction": {
+    "seometa": {
+      "title": "Correção de Escrita do Teste de Inglês Duolingo por IA - Feedback Instantâneo para Redações DET {'|'} Prática DET",
+      "description": "Aperfeiçoe sua escrita DET em minutos com correção por IA: pontuação instantânea, verificações gramaticais e orientação especializada. Confiado por mais de 21 mil estudantes. Obtenha feedback instantâneo - Experimente agora!"
+    },
+    "h1": "Correção Instantânea de Escrita Duolingo por IA da Prática DET",
+    "descnew": "Pontuação de Escrita DET de Nível Profissional em Minutos",
+    "desc": "Obtenha feedback de nível especializado em suas tarefas de escrita Duolingo através do nosso sistema avançado de IA. Suas redações são analisadas usando critérios oficiais de pontuação DET, entregando correções abrangentes e sugestões detalhadas em 1-5 minutos.",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "useralt": "Ícone de Usuário",
+    "white_arrow_right": "seta_branca_direita",
+    "yellow_arrow_right": "seta_amarela_direita",
+    "learners_have": "Confiado por {number} Participantes do Teste de Inglês Duolingo",
+    "Review_Now": "Comece Agora",
+    "Correct_Now": "Comece a experimentar",
+    "Get_Scored_Now": "Comece a experimentar",
+    "h2_1": {
+      "h2": "Análise Precisa de Pontuação de Escrita Duolingo",
+      "right_desc": "Envie sua tarefa de escrita DET do nosso banco de questões e receba um relatório de pontuação detalhado em 5 minutos. Cada avaliação segue critérios autênticos de pontuação DET."
+    },
+    "h2_2": {
+      "h2": "Correção de Erros em Tempo Real",
+      "right_desc": "Identifique instantaneamente uso de vocabulário, erros gramaticais e melhorias estruturais em suas redações de escrita Duolingo. Obtenha sugestões práticas para cada correção."
+    },
+    "h2_3": {
+      "h2": "Feedback Especializado de Escrita Duolingo",
+      "right_desc": "Receba feedback detalhado baseado em critérios oficiais de pontuação DET. Nosso sistema de IA analisa seu estilo de escrita, organização e conteúdo para ajudá-lo a alcançar sua pontuação alvo."
+    },
+    "h2_4": {
+      "h2": "Aprimoramento Avançado de Escrita Duolingo",
+      "right_desc": "Transforme sua escrita Duolingo de boa para excelente. Nosso sistema fornece sugestões detalhadas para enriquecimento de vocabulário, refinamento de estrutura de frases e melhoria de coerência."
+    },
+    "aqtitle": "Perguntas Frequentes sobre nossa <span class='yellow'>Correção de Escrita Duolingo por IA</span>",
+    "aqlistfont": [
+      {
+        "q": "Quão preciso é seu sistema de pontuação de escrita Duolingo?",
+        "a": "Nosso sistema de pontuação com IA é calibrado para corresponder aos padrões oficiais do DET, fornecendo taxas de precisão superiores a 95% em comparação com avaliadores humanos. Cada envio de escrita Duolingo é analisado em múltiplas dimensões, incluindo gramática, vocabulário, coerência e conclusão da tarefa."
+      },
+      {
+        "q": "Que tipos de <a href='/writing-ai-correction'>feedback de escrita Duolingo</a> receberei?",
+        "a": "Nosso sistema <a href='/'>Prática DET</a> fornece feedback abrangente, incluindo:<br>- Correções detalhadas de gramática e vocabulário<br>- Análise de estrutura e coerência<br>- Avaliação de relevância de conteúdo<br>- Sugestões específicas para melhoria<br>- Pontuação estimada de escrita Duolingo"
+      },
+      {
+        "q": "Quanto tempo leva para ter minha escrita Duolingo avaliada?",
+        "a": "Você receberá sua análise completa em 5 minutos após enviar sua redação. Isso inclui tanto sua pontuação de escrita DET quanto feedback detalhado para melhoria."
+      },
+      {
+        "q": "Que tipos de propostas de escrita Duolingo estão disponíveis para prática?",
+        "a": "Nosso sistema oferece uma variedade diversificada de propostas de prática de alta qualidade, cuidadosamente projetadas para ajudá-lo a se preparar para a seção de <a href='/writing-ai-correction'>escrita Duolingo</a>. Cada proposta segue o formato padronizado e nível de dificuldade do DET."
+      },
+      {
+        "q": "Quantas redações posso enviar para avaliação?",
+        "a": "Como membro premium da Prática DET, você pode comprar créditos de correção de escrita de acordo com suas necessidades. Esses créditos de <a href='/writing-ai-correction'>correção de escrita Duolingo</a> podem ser usados a qualquer momento durante seu período de assinatura ativa. Não há limite para quantos pacotes de avaliação você pode comprar - simplesmente compre o número de correções que você precisa para seu plano de estudo."
+      },
+      {
+        "q": "O feedback é personalizado para meu nível de escrita?",
+        "a": "Sim, nosso sistema de IA adapta seu feedback com base em sua proficiência de escrita. Seja você um iniciante ou um escritor avançado, você receberá sugestões relevantes para melhorar seu desempenho de <a href='/writing-ai-correction'>escrita DET</a>."
+      }
+    ],
+    "embarkfont": {
+      "title": "Comece Sua Jornada para Escrita DET de Alta Pontuação Hoje!",
+      "btnText": "Comece Agora"
+    }
+  },
+  "courses": {
+    "seometa": {
+      "title": "Curso DET Gratuito - Cursos de Preparação para o Teste de Inglês Duolingo {'|'} Prática DET",
+      "description": "Cursos DET liderados por especialistas: Domine todas as seções, testes práticos e planos de aula. Taxa de sucesso de 95%. Comece grátis hoje!"
+    },
+    "h1": "Curso DET: Seu Caminho para o Sucesso no Teste de Inglês Duolingo",
+    "h2": "Curso DET Liderado por Especialistas com 95% de Taxa de Sucesso dos Alunos",
+    "topVideoFont": {
+      "desc1": "Curso DET completo cobrindo todos os tipos de questões",
+      "desc2": "Conjuntos de prática integrados com cada lição - aprenda e pratique simultaneamente para máxima eficiência",
+      "desc3": "Disponível tanto em formato de vídeo quanto de texto para combinar com seu estilo de aprendizado",
+      "desc4": "Totalmente alinhado com o formato do exame DET 2025",
+      "desc5": "Acesso gratuito para todos os membros da Prática DET, sem taxas adicionais"
+    },
+    "extdet": {
+      "title": "Curso DET Extensivo pela Prática DET: Introdução",
+      "desc1": "Transforme sua preparação para o Teste de Inglês Duolingo com nosso centro de aprendizado abrangente! Entendemos que navegar pelo DET pode parecer desafiador, por isso desenvolvemos uma abordagem estratégica que divide cada componente em módulos gerenciáveis e orientados para o sucesso.",
+      "desc2": "Nosso curso DET habilmente elaborado cobre todos os componentes essenciais do DET - desde compreensão avançada de leitura até tarefas de fala nuançadas. O que nos diferencia é nosso sistema de aprendizado adaptativo que combina instrução aprofundada com exercícios práticos direcionados. Você encontrará materiais de estudo dinâmicos adaptados a cada nível de proficiência, permitindo que você desenvolva confiança em todas as seções do teste.",
+      "desc3": "Comece sua jornada hoje com nossa metodologia comprovada, seja visando uma pontuação competitiva para universidades de ponta ou construindo uma base sólida em proficiência em inglês. Cada módulo é especificamente projetado para melhorar seu desempenho no formato mais recente do DET, garantindo que você esteja totalmente preparado para o sucesso no dia do teste."
+    },
+    "changeleftfont": {
+      "read": "Leitura",
+      "lis": "Audição",
+      "spe": "Fala",
+      "wri": "Escrita"
+    },
+    "four_change_right_data": {
+      "data1": {
+        "title": "Curso DET: Seção de Leitura do Teste de Inglês Duolingo",
+        "desc": "A seção de Leitura do Teste de Inglês Duolingo (DET) avalia habilidades linguísticas-chave através de diversos tipos de questões, avaliando compreensão, vocabulário e alfabetização geral. Os tipos de questões incluem Ler e Selecionar, Preencher Lacunas, Leitura Interativa e Ler e Completar, cada um projetado para atingir habilidades específicas de leitura.",
+        "desc2": "Essas tarefas coletivamente avaliam habilidades essenciais de leitura e compreensão necessárias para comunicação eficaz em contextos acadêmicos e cotidianos.",
+        "video1data": {
+          "title": "Ler e Selecionar",
+          "desc": "Ler e Selecionar: Os participantes do teste são mostrados uma série de palavras e devem identificar se são palavras reais em inglês. Esta tarefa avalia o reconhecimento de vocabulário e a capacidade de distinguir entre palavras válidas e inválidas, refletindo a compreensão de palavras do mundo real."
+        },
+        "video2data": {
+          "title": "Preencher Lacunas",
+          "desc": "Preencher Lacunas: Os candidatos são apresentados com frases contendo palavras faltando. Eles devem selecionar as palavras corretas de uma lista para completar as frases de forma significativa. Esta tarefa avalia gramática, vocabulário e a capacidade de entender pistas contextuais."
+        },
+        "video3data": {
+          "title": "Leitura Interativa",
+          "desc": "Leitura Interativa: Este componente envolve a leitura de passagens seguidas de vários tipos de questões, como completar frases, selecionar a frase apropriada para preencher uma lacuna, destacar respostas dentro do texto, identificar ideias principais e escolher títulos adequados para passagens. Avalia sua compreensão, pensamento crítico e capacidade de interpretar inglês escrito em vários contextos."
+        },
+        "video4data": {
+          "title": "Ler e Completar",
+          "desc": "Ler e Completar: Este tipo de questão apresenta uma passagem com letras faltando dentro das palavras. Os participantes do teste devem deduzir e restaurar as palavras completas. Concentra-se em ortografia, compreensão contextual e aplicação de vocabulário."
+        }
+      },
+      "data2": {
+        "title": "Curso DET: Seção de Audição do Teste de Inglês Duolingo",
+        "desc": "O Teste de Inglês Duolingo (DET) apresenta uma Seção de Aprendizado abrangente que avalia as habilidades de audição dos candidatos através de dois tipos principais de questões: Audição Interativa e Ouvir e Digitar. Esses componentes são projetados para avaliar vários aspectos da proficiência em língua inglesa, particularmente em compreensão e habilidades conversacionais.",
+        "desc2": "",
+        "video1data": {
+          "title": "Ouvir e Digitar",
+          "desc": "No tipo de questão Ouvir e Digitar, os participantes do teste ouvem frases faladas e devem transcrevê-las com precisão. Este formato não apenas mede a capacidade de entender inglês falado, mas também avalia habilidades de ortografia e pontuação, que são cruciais para comunicação escrita eficaz. Tipicamente, este tipo de questão aparece de 6 a 9 vezes ao longo do teste, refletindo sua importância na avaliação de habilidades de compreensão e conversação."
+        },
+        "video2data": {
+          "title": "Audição Interativa",
+          "desc": "Por outro lado, a seção de Audição Interativa simula conversas da vida real, frequentemente ambientadas em contextos acadêmicos. Os candidatos participam de diálogos entre colegas ou entre um aluno e um membro do corpo docente, respondendo a perguntas que testam sua compreensão do conteúdo. Esta seção enfatiza a escuta ativa e a capacidade de sintetizar informações de discussões, essenciais para o sucesso acadêmico. No geral, esses tipos de questões coletivamente melhoram o objetivo do DET de medir a prontidão de um candidato para ambientes de língua inglesa tanto em ambientes acadêmicos quanto cotidianos."
+        }
+      },
+      "data3": {
+        "title": "Curso DET: Seção de Fala do Teste de Inglês Duolingo",
+        "desc": "O Teste de Inglês Duolingo (DET) inclui uma Seção de Fala dinâmica projetada para avaliar a proficiência oral de um candidato através de cinco tipos distintos de questões: Falar sobre a Foto, Ler e Falar, Ouvir e Falar, Ler em Voz Alta e uma Amostra de Fala. Cada um desses formatos avalia vários aspectos das habilidades de fala em inglês, cruciais para comunicação eficaz em contextos acadêmicos e cotidianos.",
+        "desc2": "",
+        "video1data": {
+          "title": "Falar sobre a Foto",
+          "desc": "Na tarefa Falar sobre a Foto, os candidatos descrevem uma imagem em detalhes, o que testa sua capacidade de articular pensamentos e usar linguagem descritiva. Esta questão geralmente dura até 90 segundos e avalia tanto a fluência quanto o vocabulário."
+        },
+        "video2data": {
+          "title": "Ler e Falar & Ouvir e Falar",
+          "desc": "As tarefas Ler e Falar e Ouvir e Falar exigem que os participantes do teste respondam a estímulos baseados em conteúdo escrito ou falado, respectivamente. Esses formatos avaliam a compreensão e a capacidade de transmitir ideias de forma clara e coerente dentro de um limite de tempo."
+        },
+        "video3data": {
+          "title": "Ler em Voz Alta",
+          "desc": "A questão Ler em Voz Alta desafia os candidatos a ler um texto fornecido em voz alta, focando em pronúncia e entonação."
+        },
+        "video4data": {
+          "title": "Amostra de Fala",
+          "desc": "Por último, a Amostra de Fala permite que os candidatos mostrem suas habilidades de fala, fornecendo às instituições insights adicionais sobre sua proficiência. Coletivamente, esses tipos de questões garantem uma avaliação abrangente das habilidades de fala necessárias para o sucesso em ambientes de língua inglesa."
+        }
+      },
+      "data4": {
+        "title": "Curso DET: Seção de Escrita do Teste de Inglês Duolingo",
+        "desc": "O Teste de Inglês Duolingo (DET) inclui uma seção de escrita dedicada projetada para avaliar vários aspectos da proficiência em escrita em inglês de um participante do teste. Esta seção compreende três tipos distintos de questões: Escrever Sobre a Foto, Escrita Interativa e a Amostra de Escrita.",
+        "desc2": "",
+        "video1data": {
+          "title": "Escrever Sobre a Foto",
+          "desc": "Escrever Sobre a Foto requer que os candidatos observem uma imagem e componham um parágrafo descritivo dentro de um prazo de um minuto. Esta tarefa avalia a capacidade de articular detalhes visuais e expressar pensamentos coerentes, enfatizando vocabulário e precisão gramatical."
+        },
+        "video2data": {
+          "title": "Escrita Interativa",
+          "desc": "Escrita Interativa, introduzida no início de 2024, apresenta um desafio em duas partes. Inicialmente, os participantes do teste respondem a um estímulo por cinco minutos, seguido por um segundo estímulo gerado com base em sua primeira resposta, exigindo três minutos adicionais de escrita. Este formato testa não apenas criatividade e coerência, mas também adaptabilidade na escrita, já que os candidatos devem construir sobre suas ideias iniciais."
+        },
+        "video3data": {
+          "title": "Amostra de Escrita",
+          "desc": "A questão de Amostra de Escrita pede aos participantes do teste que escrevam uma resposta estruturada a um tópico dado dentro de um tempo limitado. Esta tarefa avalia habilidades gerais de escrita, incluindo organização, clareza e argumentação. Coletivamente, esses tipos de questões garantem uma avaliação abrangente das habilidades de escrita dos candidatos em contextos do mundo real, refletindo sua prontidão para ambientes acadêmicos ou profissionais."
+        },
+        "video4data": {
+          "title": "Recursos Adicionais de Preparação DET",
+          "desc": ""
+        }
+      }
+    },
+    "package_out": {
+      "title": "Guia do Teste de Inglês Duolingo: Pacote de Domínio Completo do Exame DET",
+      "desc": "Como membro Pro, você receberá acesso gratuito por tempo limitado a dois guias premium: 'Excelência no Exame de Fala DET' e 'Excelência no Exame de Escrita DET'. Esses recursos abrangentes estão incluídos em sua assinatura sem custo adicional.",
+      "desc2": "Uma vez que sua assinatura esteja ativada, simplesmente vá para o módulo de Guia dentro do aplicativo para visualizar e baixar esses valiosos materiais de estudo. Estude em seu próprio ritmo, a qualquer hora e em qualquer lugar.",
+      "desc3": "Por favor, note que esses guias são um bônus por tempo limitado e não um benefício pago. Ative sua assinatura agora para obter acesso instantâneo a esses recursos criados por especialistas.",
+      "btn": "Obtenha Agora"
+    },
+    "aqList": [
+      {
+        "name": "O que está incluído no pacote de curso DET?",
+        "content": "O <a href='/courses'>pacote de curso DET</a> inclui materiais abrangentes de preparação para as quatro seções do teste: Leitura, Audição, Fala e Escrita. Cada seção contém múltiplos cursos interativos focados em tipos específicos de questões, com feedback em tempo real e estratégias práticas."
+      },
+      {
+        "name": "Como este curso DET é diferente de outros materiais de preparação?",
+        "content": "Este curso DET oferece uma combinação única de aulas em vídeo mais exercícios extensivos (você pode encontrá-los em nosso <a href='/practice'>banco de questões de prática DET</a>) e feedback. Cobre cada tipo de questão do teste e inclui materiais de preparação especializados para cada seção, tornando-o uma solução completa de preparação."
+      },
+      {
+        "name": "Posso acessar os materiais do curso DET em meu próprio ritmo?",
+        "content": "Sim, todos os materiais do curso DET são gratuitos para todos os membros na <a href='/'>Prática DET</a> e disponíveis 24/7. Você pode estudar em seu próprio ritmo e acessar os materiais a qualquer hora, em qualquer lugar."
+      },
+      {
+        "name": "O curso DET cobre o formato de teste mais recente?",
+        "content": "Sim, o curso DET é regularmente atualizado para alinhar-se com o formato atual do Teste de Inglês Duolingo. Inclui materiais de prática para todos os tipos de questões atuais, incluindo Ler e Selecionar, Preencher Lacunas, Leitura Interativa e tarefas de Fala."
+      },
+      {
+        "name": "Como sei por qual seção do curso DET começar?",
+        "content": "Cada seção do curso DET (Leitura, Audição, Fala e Escrita) pode ser acessada independentemente. Você pode escolher começar com áreas onde precisa de mais melhoria ou seguir a sequência sugerida do curso para uma preparação abrangente."
+      },
+      {
+        "name": "Existem respostas de exemplo incluídas no curso DET?",
+        "content": "Sim, o curso DET inclui respostas de exemplo de alta pontuação para as seções de Fala e Escrita, junto com análises detalhadas do que torna essas respostas eficazes. Isso ajuda você a entender os critérios de pontuação e melhora seu desempenho."
+      }
+    ]
+  },
+  "forget": {
+    "Please_enter": "Por favor, digite seu endereço de email",
+    "Invalid_email": "Email inválido.",
+    "t1": "Esqueceu a Senha?",
+    "t2": "Por favor, digite o email usado para criar sua conta",
+    "Enter_your_email": "Digite seu email",
+    "desc": "Enviaremos um email com o código de redefinição",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "Send_reset_code": "Enviar Código de Redefinição",
+    "Back_to_login": "Voltar ao login"
+  },
+  "listen": {
+    "Speaking_practice_audio": "Áudio de prática de fala",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo"
+  },
+  "login": {
+    "peyea": "Por favor, digite seu endereço de email.",
+    "ie": "Email inválido.",
+    "peyp": "Por favor, digite sua senha.",
+    "Welcome_back": "Bem-vindo de volta",
+    "h1": "Login para praticar",
+    "Login_with_Google": "Login com Google",
+    "Or_continue_with": "Ou continue com",
+    "Email_address": " Endereço de email",
+    "Password": "Senha",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "Login": "Login",
+    "Forgot_password": "Esqueceu a senha?",
+    "Dont_have_an_account": "Não tem uma conta?",
+    "Sign_up_here": "Cadastre-se aqui"
+  },
+  "mockexam": {
+    "seometa": {
+      "title": "Simulado Duolingo Online - Prática Mais Realista {'|'} Prática DET",
+      "description": "Experimente os simulados Duolingo online mais autênticos. Obtenha pontuação instantânea, análise detalhada de desempenho e simulações de exame real. Comece grátis!"
+    },
+    "h1": "Simulado Duolingo - Experiência de Teste Real",
+    "descnew": "Simulado Duolingo Abrangente que Parece Real",
+    "desc": "Pratique com nosso simulado Duolingo fiel à realidade que reflete perfeitamente o ambiente do exame real. Obtenha pontuações instantâneas e análises detalhadas para identificar seus pontos fortes e fracos, ajudando você a se preparar com confiança para o teste real.",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "mock_user_icon": "Ícone de Usuário do Simulado",
+    "white_arrow_right": "Seta Branca à Direita",
+    "orange_arrow_right": "Seta Laranja à Direita",
+    "learners_have": "Junte-se a {number} participantes bem-sucedidos que confiam em nossos simulados Duolingo!",
+    "Mock_Now": "Simular Agora",
+    "Full_scale": "Simulado Duolingo Completo 1:1",
+    "article1": {
+      "h2": "Simulado DET Como no Dia do Teste",
+      "right_desc": "Saiba exatamente o que esperar no dia do teste. Nosso simulado DET espelha o ambiente oficial do DET, ajudando você a se sentir confiante e preparado para o teste real. Pratique com seções cronometradas com precisão e tipos de questões autênticos para dominar o formato do teste."
+    },
+    "article2": {
+      "h2": "Análise Abrangente de Pontuação",
+      "right_desc": "Receba relatórios detalhados de simulado com análise precisa de desempenho em todas as seções. Nosso sistema inteligente de IA identifica seus pontos fortes e áreas de melhoria, criando recomendações de estudo personalizadas para impulsionar sua preparação para o teste."
+    },
+    "article3": {
+      "h2": "Simulado DET a Qualquer Hora, em Qualquer Lugar",
+      "right_desc": "Faça um simulado DET quando e onde for conveniente para você. Nossa plataforma online fornece acesso instantâneo a testes práticos, para que você possa se preparar de acordo com sua agenda."
+    },
+    "article4": {
+      "h2": "Relatório de Feedback Rápido do Simulado DET",
+      "right_desc": "Obtenha seus resultados detalhados do simulado DET em apenas <span class='zdfont'>5-30 minutos</span>. Nosso sistema de pontuação ultra-rápido fornece feedback imediato, permitindo que você acompanhe seu progresso e ajuste sua estratégia de preparação de forma eficiente."
+    },
+    "vs1": "Nossas Pontuações de Simulado DET VS Pontuações Reais do Teste DET",
+    "vs2": "Comparações de pontuação de participantes que fizeram nossos simulados DET e o Teste de Inglês Duolingo",
+    "aqtitle": "Perguntas Frequentes sobre nosso <span class='yellow'>Simulado DET</span>",
+    "aqlistfont": [
+      {
+        "q": "O que torna seu simulado Duolingo diferente de outros materiais de prática?",
+        "a": "Nosso <a href='/mock-exam'>simulado Duolingo</a> espelha precisamente o formato oficial do exame, cronometragem e nível de dificuldade. Fornecemos análises abrangentes de desempenho e recomendações de estudo personalizadas após cada sessão de prática."
+      },
+      {
+        "q": "Quanto tempo leva para completar um simulado Duolingo completo?",
+        "a": "Um simulado Duolingo completo leva aproximadamente 1 hora, correspondendo à duração oficial do teste. Você pode pausar e retomar sua sessão de prática a qualquer momento, tornando-a flexível para seu cronograma."
+      },
+      {
+        "q": "Quando receberei meus resultados do simulado Duolingo?",
+        "a": "Seus resultados do simulado são entregues em 5-30 minutos após a conclusão. O relatório inclui análise detalhada seção por seção e áreas específicas para melhoria."
+      },
+      {
+        "q": "Posso fazer o simulado Duolingo várias vezes?",
+        "a": "Sim! Você pode fazer nosso <a href='/mock-exam'>simulado DET</a> quantas vezes precisar. Cada tentativa fornece novos insights e ajuda a acompanhar seu progresso ao longo do tempo."
+      },
+      {
+        "q": "Preciso instalar algum software especial para o simulado Duolingo?",
+        "a": "Nenhuma instalação é necessária. Nossa plataforma de simulado é baseada na web e funciona em qualquer dispositivo com conexão à internet - basta fazer login e começar a praticar. No entanto, recomendamos usar o navegador Chrome para a melhor experiência de teste."
+      },
+      {
+        "q": "Quão atualizado está o conteúdo do seu simulado Duolingo?",
+        "a": "Atualizamos regularmente nossos materiais de <a href='/'>prática DET</a> para refletir o formato mais recente do teste e tipos de questões, garantindo que você esteja se preparando com o conteúdo mais atual disponível."
+      }
+    ],
+    "embarkfont": {
+      "title": "Faça Seu Primeiro Simulado Duolingo Agora",
+      "btnText": "Comece Agora"
+    }
+  },
+  "practice": {
+    "seometa": {
+      "title": "Questões de Prática do Teste de Inglês Duolingo e Preparação com IA {'|'} Prática DET",
+      "description": "Domine o DET com mais de 18.000 questões de prática do teste de inglês Duolingo. Obtenha pontuação por IA para fala/escrita. Comece a melhorar suas pontuações no teste de prática de inglês Duolingo hoje!"
+    },
+    "h1": "Prática do Teste de Inglês Duolingo",
+    "descnew": "Prática do Teste de Inglês Duolingo Aprimorada por IA para Cada Seção do DET",
+    "desc": "Obtenha acesso a uma extensa coleção de questões de prática do Teste de Inglês Duolingo, aprimorada com análise de respostas, modelos, avaliações de fala e escrita orientadas por IA e planejamento inteligente. Acelere sua melhoria de pontuação de forma eficiente e acessível com nossa abordagem alimentada por IA.",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "altbanner": "Prática do Teste de Inglês Duolingo",
+    "bank_user_icon": "Ícone de Usuário do Banco",
+    "white_arrow_right": "Seta Branca à Direita",
+    "blue_arrow_right": "Seta Azul à Direita",
+    "learners_have": "Banco de questões de prática DET para aumento de pontuação - confiado por {number} participantes",
+    "spn": "Comece a Praticar Agora",
+    "article1": {
+      "h2": "18K+ Questões de Prática DET e Crescendo",
+      "right_desc": "Acesse o banco de questões de prática do Teste de Inglês Duolingo mais abrangente, cobrindo todas as seções do exame, de leitura a fala. Mantenha-se à frente com nosso conteúdo regularmente atualizado que reflete os padrões de teste mais recentes - seu caminho mais rápido para alcançar sua pontuação alvo no DET.",
+      "btn": "Mergulhe na Prática DET"
+    },
+    "article2": {
+      "h2": "Caminho de Prática Inteligente do Teste de Inglês Duolingo",
+      "right_desc": "Obtenha seu caminho de estudo personalizado para dominar a prática do Teste de Inglês Duolingo. Nosso sistema alimentado por IA analisa continuamente seu desempenho em cada tipo de questão, sua pontuação alvo e cronograma, padrões de teste atuais, níveis de dificuldade das questões e seu ritmo de aprendizado único para criar a rota mais eficiente para sua pontuação alvo - eliminando suposições e tempo desperdiçado em preparação ineficaz.",
+      "btn": "Inicie Seu Estudo DET Inteligente"
+    },
+    "article3": {
+      "h2": "Avaliação de Fala e Escrita DET com IA",
+      "right_desc": "Obtenha feedback instantâneo sobre suas respostas no Teste de Inglês Duolingo. Nosso sistema alimentado por IA analisa tanto suas submissões de <a href='/speaking-ai-correction'>fala DET</a> quanto de <a href='/writing-ai-correction'>escrita DET</a> em tempo real, fornecendo pontuação detalhada e sugestões sobre pronúncia, fluência, gramática e uso de vocabulário para ajudá-lo a melhorar com precisão e confiança.",
+      "btn": "Comece Sua Avaliação"
+    },
+    "article4": {
+      "h2": "Análise de Respostas de Prática do Teste de Inglês Duolingo",
+      "right_desc": "Obtenha explicações detalhadas para suas respostas de prática do Teste de Inglês Duolingo. Nossa IA decompõe cada questão, revela o raciocínio por trás das respostas e destaca padrões-chave de teste - ajudando você a dominar conceitos essenciais enquanto maximiza sua eficiência de estudo para o DET.",
+      "btn": "Explore Insights de Respostas"
+    },
+    "aqtitle": "Perguntas Frequentes sobre nossa <span class='yellow'>Prática do Teste de Inglês Duolingo</span>",
+    "aqlistfont": [
+      {
+        "q": "Por que a Prática DET é a principal escolha para Prática do Teste de Inglês Duolingo?",
+        "a": "Nós nos especializamos em prática do Teste de Inglês Duolingo, com materiais projetados por especialistas que correspondem precisamente ao formato e requisitos do teste real."
+      },
+      {
+        "q": "Com que frequência devo aprender com a <a href='/'>Prática DET</a>?",
+        "a": "Para resultados ideais, recomendamos 2-3 horas de prática focada diariamente, idealmente começando pelo menos 2 semanas antes da data real do seu teste."
+      },
+      {
+        "q": "O que torna essencial a prática do Teste de Inglês Duolingo?",
+        "a": "Os dados de usuários da Prática DET mostram que a preparação sistemática impacta significativamente as pontuações, com nossos alunos tendo em média 15-20 pontos a mais em seu teste final."
+      },
+      {
+        "q": "Quão atual é o conteúdo da Prática DET?",
+        "a": "Nossos materiais de <a href='/practice'>prática do Teste de Inglês Duolingo</a> são continuamente atualizados para refletir os padrões e requisitos mais recentes do teste, garantindo que você esteja sempre preparado."
+      },
+      {
+        "q": "Como a prática do Teste de Inglês Duolingo difere do estudo geral de inglês?",
+        "a": "Diferentemente do aprendizado geral de inglês, a preparação focada no teste requer familiaridade com tipos específicos de questões e gerenciamento de tempo - exatamente o que nossa plataforma fornece."
+      },
+      {
+        "q": "Quando devo começar minha preparação para o DET?",
+        "a": "A maioria dos alunos bem-sucedidos começa sua prática focada no Teste de Inglês Duolingo cerca de um mês antes da data programada do teste para melhoria ideal de pontuação."
+      }
+    ],
+    "embarkfont": {
+      "title": "Comece a <span class='yellow'>Prática do Teste de Inglês Duolingo</span> para obter uma alta pontuação no DET!",
+      "btnText": "Pratique Agora"
+    }
+  },
+  "speakingaicorrection": {
+    "seometa": {
+      "title": "Correção de Fala do Teste de Inglês Duolingo - Pontuação e Feedback por IA {'|'} Prática DET",
+      "description": "Domine a fala DET com IA! Obtenha feedback instantâneo de pronúncia, pontuação e orientação especializada. Confiado por mais de 26 mil participantes. Melhore sua pontuação agora!"
+    },
+    "h1": "Poderosa Correção de Fala em Inglês Duolingo por IA da Prática DET",
+    "descnew": "Eleve Sua Fala em Inglês Duolingo com Feedback de IA",
+    "desc": "Nossa poderosa IA analisa sua pronúncia, fluência e gramática na fala em inglês Duolingo, fornecendo feedback preciso e personalizado e sugestões práticas para ajudá-lo a melhorar rapidamente suas habilidades de fala e enfrentar com confiança a seção de fala do Teste de Inglês Duolingo (DET).",
+    "alt": "Prática DET: A melhor plataforma de Correção de Fala DET por IA",
+    "altbanner": "Correção de Fala DET por IA",
+    "bank_user_icon": "Ícone de Usuário do Banco",
+    "white_arrow_right": "Seta Branca à Direita",
+    "purple_arrow_right": "Seta Roxa à Direita",
+    "learners_have": "Confiado por {number} para aumentar suas pontuações de fala em inglês Duolingo",
+    "spn": "Comece Agora",
+    "article1": {
+      "h2": "Obtenha Pontuações Precisas de Fala em Inglês Duolingo",
+      "right_desc": "Envie suas respostas de Fala em Inglês Duolingo e receba uma pontuação instantânea e precisa baseada em análise avançada de IA. Nosso sistema avalia pronúncia, fluência, gramática e vocabulário para dar a você uma compreensão clara do seu nível atual e áreas de melhoria.",
+      "btn": "Comece a experimentar"
+    },
+    "article2": {
+      "h2": "Feedback Detalhado de Fala em Inglês Duolingo",
+      "right_desc": "Receba feedback detalhado sobre seu desempenho de Fala em Inglês Duolingo, incluindo análise de erros de pronúncia, interrupções inesperadas, pausas ausentes, suspeita de leitura em voz alta e repetições. Aprenda como evitar esses erros comuns e melhorar sua fluência geral.",
+      "btn": "Comece a experimentar"
+    },
+    "article3": {
+      "h2": "Orientação Profissional para Melhorar a Fala DET",
+      "right_desc": "Com base nos critérios oficiais de pontuação DET, nossa IA fornece orientação profissional para ajudá-lo a identificar fraquezas em sua Fala em Inglês Duolingo e desenvolver estratégias eficazes para melhoria. Direcione áreas específicas como pronúncia, gramática e fluência para maximizar sua pontuação.",
+      "btn": "Comece a experimentar"
+    },
+    "aqtitle": "Perguntas Frequentes sobre nossa <span class='yellow'>Correção de Fala em Inglês Duolingo por IA</span>",
+    "aqlistfont": [
+      {
+        "q": "Quão precisa é sua pontuação por IA em comparação com o teste real de Fala em Inglês Duolingo?",
+        "a": "Nosso sistema de pontuação por IA da <a href='/'>Prática DET</a> é calibrado com base em análise extensiva de resultados de testes reais. Embora nenhuma ferramenta de prática possa garantir pontuações exatamente correspondentes, nosso sistema ajudou milhares de estudantes a prever com precisão seu desempenho de Fala em Inglês Duolingo com mais de 90% de precisão."
+      },
+      {
+        "q": "Posso praticar tipos específicos de questões de fala DET?",
+        "a": "Sim, a Prática DET cobre todos os tipos de questões de Fala em Inglês Duolingo, incluindo Ler em Voz Alta, Ouvir e Falar, Amostra de Fala, Descrever a Foto e Questões de Ler e Falar. Você pode focar em tipos específicos de questões ou praticar com um formato misto."
+      },
+      {
+        "q": "Quanto tempo levarei para receber feedback após enviar minha resposta de fala?",
+        "a": "Nossa IA fornece feedback instantâneo em minutos após completar sua resposta. Cada sessão de Prática DET inclui análise detalhada de sua pronúncia, fluência e conteúdo - permitindo que você faça melhorias imediatas em suas habilidades de <a href='/speaking-ai-correction'>Fala em Inglês Duolingo</a>."
+      },
+      {
+        "q": "E se eu estiver consistentemente recebendo pontuações baixas nas tarefas de fala?",
+        "a": "A Prática DET fornece estratégias de melhoria direcionadas com base nos padrões de seu desempenho. Se você estiver lutando com aspectos específicos da <a href='/speaking-ai-correction'>Fala em Inglês Duolingo</a>, nossa IA identificará áreas problemáticas e sugerirá exercícios focados para ajudá-lo a melhorar."
+      },
+      {
+        "q": "Vocês oferecem testes práticos que simulam a seção real de fala em inglês Duolingo?",
+        "a": "Sim, a Prática DET fornece simulações completas de fala que espelham o formato real do Teste de Inglês Duolingo. Isso inclui cronometragem autêntica, tipos de questões e critérios de pontuação para dar a você a experiência de prática mais realista."
+      },
+      {
+        "q": "Por quanto tempo devo praticar fala com a Prática DET antes de fazer o teste real?",
+        "a": "Com base em dados de usuários, a maioria dos estudantes que praticam consistentemente com nossa plataforma por 2-3 semanas veem melhoria significativa em seu desempenho de Fala em Inglês Duolingo. No entanto, o tempo de preparação ideal varia dependendo do seu nível inicial e pontuação alvo."
+      }
+    ],
+    "embarkfont": {
+      "title": "Alcance Sua Pontuação Alvo de <span class='yellow'>Fala em Inglês Duolingo</span> Mais Rápido!",
+      "btnText": "Pratique Agora"
+    }
+  },
+  "privacyPolicy": {
+    "seometa": {
+      "title": "Política de Privacidade {'|'} Prática DET – Preparação para o Teste de Inglês Duolingo",
+      "description": "Leia a Política de Privacidade da Prática DET. Saiba como coletamos, usamos e protegemos suas informações pessoais quando você acessa nossa plataforma para preparação do Teste de Inglês Duolingo. Sua privacidade é importante para nós, e estamos comprometidos em proteger seus dados.",
+      "keywords": "política de reembolso, reembolso da Prática DET, política de devolução, reembolso de preparação para teste Duolingo, reembolso de curso online, reembolso de serviço, termos da Prática DET"
+    },
+    "h1": "Política de Privacidade",
+    "q1": {
+      "title": "Última atualização: 2023-11-20",
+      "a1": "Prática DET (\"nós\", \"nosso\" ou \"nossa\") opera o site Prática DET (o \"Serviço\").",
+      "a2": "Esta página informa você sobre nossas políticas relativas à coleta, uso e divulgação de Informações Pessoais quando você usa nosso Serviço.",
+      "a3": "Não usaremos ou compartilharemos suas informações com ninguém, exceto conforme descrito nesta Política de Privacidade.",
+      "a4": "Usamos suas Informações Pessoais para fornecer e melhorar o Serviço. Ao usar o Serviço, você concorda com a coleta e uso de informações de acordo com esta política. A menos que definido de outra forma nesta Política de Privacidade, os termos usados nesta Política de Privacidade têm os mesmos significados que em nossos Termos e Condições, acessíveis em",
+      "a4_1": " ",
+      "a5": "Coleta e Uso de Informações",
+      "a6": "Ao usar nosso Serviço, podemos pedir que você nos forneça certas informações de identificação pessoal que podem ser usadas para contatá-lo ou identificá-lo. Informações de identificação pessoal (\"Informações Pessoais\") podem incluir, mas não estão limitadas a:",
+      "a7": "• Nome",
+      "a8": "• Endereço de email"
+    },
+    "q2": {
+      "title": "Dados de Log",
+      "a1": "Coletamos informações que seu navegador envia sempre que você visita nosso Serviço (\"Dados de Log\"). Esses Dados de Log podem incluir informações como o endereço de Protocolo de Internet (\"IP\") do seu computador, tipo de navegador, versão do navegador, as páginas do nosso Serviço que você visita, a hora e data da sua visita, o tempo gasto nessas páginas e outras estatísticas."
+    },
+    "q3": {
+      "title": "Cookies",
+      "a1": "Cookies são arquivos com uma pequena quantidade de dados, que podem incluir um identificador único anônimo. Cookies são enviados para seu navegador a partir de um site e armazenados no disco rígido do seu computador.",
+      "a2": " Usamos \"cookies\" para coletar informações. Você pode instruir seu navegador a recusar todos os cookies ou indicar quando um cookie está sendo enviado. No entanto, se você não aceitar cookies, poderá não conseguir usar algumas partes do nosso Serviço."
+    },
+    "q4": {
+      "title": "Provedores de Serviço",
+      "a1": "Podemos empregar empresas e indivíduos terceirizados para facilitar nosso Serviço, fornecer o Serviço em nosso nome, executar serviços relacionados ao Serviço ou nos ajudar a analisar como nosso Serviço é usado.",
+      "a2": "Esses terceiros têm acesso às suas Informações Pessoais apenas para realizar essas tarefas em nosso nome e são obrigados a não divulgá-las ou usá-las para qualquer outro propósito."
+    },
+    "q5": {
+      "title": "Segurança",
+      "a1": "A segurança de suas Informações Pessoais é importante para nós, mas lembre-se que nenhum método de transmissão pela Internet ou método de armazenamento eletrônico é 100% seguro. Embora nos esforcemos para usar meios comercialmente aceitáveis para proteger suas Informações Pessoais, não podemos garantir sua segurança absoluta."
+    },
+    "q6": {
+      "title": "Informações de Pagamento e Segurança",
+      "a1": "Para coletar pagamentos em seu nome de seus clientes e fornecer pagamentos a você, nós, usando o Stripe como processador de pagamento de terceiros, coletamos informações de pagamento de você, seus participantes e clientes, seus fornecedores e outras partes para quem fornecemos pagamentos em seu nome e de quem coletamos pagamentos em seu nome. Essas informações são usadas exclusivamente para coletar e fornecer pagamentos relacionados aos Serviços e são armazenadas apenas pelo Stripe. Você deve revisar os termos de serviço e políticas de privacidade do Stripe, disponíveis em",
+      "a1_1": " "
+    },
+    "q7": {
+      "title": "Links Para Outros Sites",
+      "a1": "Nosso Serviço pode conter links para outros sites que não são operados por nós. Se você clicar em um link de terceiros, será direcionado ao site desse terceiro. Recomendamos fortemente que você revise a Política de Privacidade de cada site que visitar.",
+      "a2": "Não temos controle e não assumimos responsabilidade pelo conteúdo, políticas de privacidade ou práticas de sites ou serviços de terceiros."
+    }
+  },
+  "refundPolicy": {
+    "seometa": {
+      "title": "Política de Reembolso - Prática DET {'|'} Termos Transparentes e Justos",
+      "description": "Leia nossa Política de Reembolso clara e transparente para todos os serviços oferecidos pela Prática DET. Nos esforçamos para proporcionar a melhor experiência para nossos usuários com termos de reembolso justos e diretos. Saiba mais hoje.",
+      "keywords": "Política de Reembolso, Reembolso da Prática DET, Política da Prática DET, Processo de Reembolso, Elegibilidade para Reembolso"
+    },
+    "h1": "Política de Reembolso",
+    "q1": {
+      "a1": "Obrigado por escolher e comprar nossos serviços. Nos esforçamos para proporcionar a melhor experiência de aprendizado para nossos clientes. No entanto, se você não estiver totalmente satisfeito com sua compra, estamos aqui para ajudar."
+    },
+    "q2": {
+      "title": "Elegibilidade para Reembolsos",
+      "a1": "• Serviços de Membro: Solicitações de reembolso para serviços de membro devem ser feitas dentro de 3 dias após a compra.",
+      "a2": "• Conteúdo Acessado: Se você não acessou mais de 20 questões, você é elegível para um reembolso.",
+      "a3": "• Cursos Digitais: Uma vez que um produto digital é baixado ou acessado, é considerado usado e produtos usados não podem ser reembolsados."
+    },
+    "q3": {
+      "title0": "No entanto, a DETPractice o convida a Entrar em contato conosco para resolver seus problemas em qualquer situação. Faremos o possível para fornecer uma solução que o satisfaça.",
+      "title": "Como Solicitar um Reembolso / Cancelar Assinatura",
+      "a1": "Para solicitar um reembolso, siga estes passos:",
+      "a2": "1.Cancelar Assinatura: Faça login em sua conta, encontre e clique no link <span class='websiteStrong'>\"Gerenciar sua cobrança\"</span> na parte inferior da página de associação. Você será redirecionado para uma página de confirmação onde poderá confirmar sua decisão de cancelar a assinatura.",
+      "a3": "2.Contatar Nosso Suporte: Entre em contato com nossa equipe de suporte ao cliente em <span class='website'>support{'@'}detpractice.com</span> com seu número de pedido e o motivo para a solicitação de reembolso.",
+      "a4": "3.Nossa equipe analisará sua solicitação e responderá dentro de 3 dias úteis."
+    },
+    "q4": {
+      "title": "Exclusões",
+      "a1": "Os seguintes itens não são elegíveis para reembolsos:",
+      "a2": "• Produtos digitais que foram baixados.",
+      "a3": "• Produtos e serviços comprados através de fornecedores terceirizados."
+    },
+    "q5": {
+      "title": "Contate-nos",
+      "a1": "Se você tiver alguma dúvida sobre nossa política de reembolso ou precisar de assistência com sua compra, entre em contato conosco em:",
+      "a2": "Email: <span class='website'>support{'@'}detpractice.com</span>"
+    }
+  },
+  "register": {
+    "peyea": "Por favor, digite seu endereço de email.",
+    "Invalid_email": "Email inválido.",
+    "Sign_up": "Cadastre-se",
+    "cya": "Crie sua conta gratuita na DETPractice",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "suwg": "Cadastre-se com Google",
+    "ocw": "Ou continue com",
+    "Email_address": "Endereço de email",
+    "ywr": "Você receberá seu código de ativação por email",
+    "cwe": "Continue com Email",
+    "ahaa": "Já tem uma conta?",
+    "Login_here": "Faça login aqui"
+  },
+  "register2": {
+    "Sign_up": "Cadastre-se",
+    "cyfda": "Crie sua conta gratuita na DETPractice",
+    "Sign_up_with_Google": "Cadastre-se com Google",
+    "Or_continue_with": "Ou continue com",
+    "Register_code": "Código de registro",
+    "Enter_your_code": "Digite seu código",
+    "Full_Name": "Nome completo",
+    "Password": "Senha",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "Create_Account": "Criar Conta",
+    "ahaa": "Já tem uma conta?",
+    "Login_here": "Faça login aqui.",
+    "peyc": "Por favor, digite seu código.",
+    "peyfn": "Por favor, digite seu nome completo.",
+    "peyp": "Por favor, digite sua senha.",
+    "pts": "Senha muito curta."
+  },
+  "resetPassword": {
+    "peuc": "Por favor, digite seu código.",
+    "fp": "Esqueceu a Senha?",
+    "pete": "Por favor, digite o email usado para criar sua conta",
+    "Enter_your_code": "Digite seu código",
+    "pw": "Por favor, aguarde 120 segundos para redefinir o código",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "rpr": "Solicitar Redefinição de Senha",
+    "btl": "Voltar ao login"
+  },
+  "resetPasswordStep2": {
+    "peue": "Por favor, digite seu endereço de email.",
+    "pts": "Senha muito curta.",
+    "pi": "Inconsistência de senha.",
+    "fp": "Esqueceu a Senha?",
+    "pete": "Por favor, digite o email usado para criar sua conta",
+    "np": "Nova senha",
+    "eanp": "Digite uma nova senha",
+    "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
+    "cnp": "Confirmar nova senha",
+    "cynp": "Confirme sua nova senha",
+    "rmp": "Redefinir Minha Senha",
+    "btl": "Voltar ao login"
+  },
+  "tos": {
+    "seometa": {
+      "title": "Termos de Serviço {'|'} Prática DET – Preparação para o Teste de Inglês Duolingo",
+      "description": "Explore os Termos de Serviço da Prática DET. Entenda as diretrizes e políticas para usar nossa plataforma para se preparar para o Teste de Inglês Duolingo, incluindo responsabilidades do usuário, direitos e termos de uso.",
+      "keywords": "Termos de Serviço, Prática DET, Teste de Inglês Duolingo, plataforma de preparação para teste, acordo de usuário, termos de serviço, preparação para teste online, políticas EPT"
+    },
+    "title": "Termos de Serviço",
+    "q1": {
+      "title": "Última atualização: 2023-11-20",
+      "a1": "Por favor, leia estes Termos de Serviço (\"Termos\", \"TOS\") cuidadosamente antes de usar o ",
+      "a2": "site (o \"Serviço\") operado pela Prática DET (\"nós\", \"nosso\" ou \"nossa\").",
+      "a3": "Seu acesso e uso do Serviço está condicionado à sua aceitação e conformidade com estes Termos. Estes Termos se aplicam a todos os visitantes, usuários e outros que acessam ou usam o Serviço.",
+      "a4": "Ao acessar ou usar o Serviço, você concorda em estar vinculado a estes Termos. Se você discordar de qualquer parte dos termos, então você não pode acessar o Serviço."
+    },
+    "q2": {
+      "title": "Contas",
+      "a1": "Quando você cria uma conta conosco, deve nos fornecer informações precisas, completas e atualizadas em todos os momentos. O não cumprimento constitui uma violação dos Termos, o que pode resultar no encerramento imediato de sua conta em nosso Serviço.",
+      "a2": "Você é responsável por proteger a senha que usa para acessar o Serviço e por quaisquer atividades ou ações sob sua senha, seja sua senha com nosso Serviço ou um serviço de terceiros.",
+      "a3": "Você concorda em não divulgar sua senha a terceiros. Você deve nos notificar imediatamente ao tomar conhecimento de qualquer violação de segurança ou uso não autorizado de sua conta."
+    },
+    "q3": {
+      "title": "Links Para Outros Sites",
+      "a1": "Nosso Serviço pode conter links para sites ou serviços de terceiros que não são de propriedade ou controlados pela Prática DET.",
+      "a2": "A Prática DET não tem controle e não assume responsabilidade pelo conteúdo, políticas de privacidade ou práticas de quaisquer sites ou serviços de terceiros. Você reconhece e concorda ainda que a Prática DET não será responsável ou imputável, direta ou indiretamente, por qualquer dano ou perda causada ou alegadamente causada por ou em conexão com o uso ou confiança em qualquer conteúdo, bens ou serviços disponíveis em ou através de quaisquer desses sites ou serviços.",
+      "a3": "Aconselhamos fortemente que você leia os termos e condições e políticas de privacidade de quaisquer sites ou serviços de terceiros que você visite."
+    },
+    "q4": {
+      "title": "Rescisão",
+      "a1": "Podemos encerrar ou suspender sua conta imediatamente, sem aviso prévio ou responsabilidade, por qualquer motivo, incluindo, sem limitação, se você violar os Termos.",
+      "a2": "Após a rescisão, seu direito de usar o Serviço cessará imediatamente. Se você desejar encerrar sua conta, pode simplesmente descontinuar o uso do Serviço.",
+      "a3": "Todas as disposições dos Termos que, por sua natureza, devem sobreviver à rescisão sobreviverão à rescisão, incluindo, sem limitação, disposições de propriedade, isenções de garantia, indenização e limitações de responsabilidade."
+    },
+    "q5": {
+      "title": "Isenção de Responsabilidade",
+      "a1": "Seu uso do Serviço é por sua própria conta e risco. O Serviço é fornecido \"COMO ESTÁ\" e \"CONFORME DISPONÍVEL\". O Serviço é fornecido sem garantias de qualquer tipo, sejam expressas ou implícitas, incluindo, mas não se limitando a, garantias implícitas de comercialização, adequação a um propósito específico, não violação ou curso de desempenho."
+    },
+    "q6": {
+      "title": "Lei Aplicável",
+      "a1": "Estes Termos serão regidos e interpretados de acordo com as leis do Reino Unido, sem considerar suas disposições sobre conflitos de leis.",
+      "a2": "Nossa falha em fazer cumprir qualquer direito ou disposição destes Termos não será considerada uma renúncia desses direitos. Se qualquer disposição destes Termos for considerada inválida ou inexequível por um tribunal, as disposições restantes destes Termos permanecerão em vigor. Estes Termos constituem o acordo completo entre nós em relação ao nosso Serviço e substituem e substituem quaisquer acordos anteriores que possamos ter entre nós em relação ao Serviço."
+    },
+    "q7": {
+      "title": "Alterações",
+      "a1": "Reservamo-nos o direito, a nosso exclusivo critério, de modificar ou substituir estes Termos a qualquer momento. Se uma revisão for material, tentaremos fornecer pelo menos 15 dias de aviso antes que quaisquer novos termos entrem em vigor. O que constitui uma mudança material será determinado a nosso exclusivo critério.",
+      "a2": "Ao continuar a acessar ou usar nosso Serviço após essas revisões se tornarem efetivas, você concorda em estar vinculado aos termos revisados. Se você não concordar com os novos termos, por favor, pare de usar o Serviço."
+    },
+    "q8": {
+      "title": "Contate-nos",
+      "a1": "Se você tiver alguma dúvida sobre estes Termos, entre em contato conosco."
+    }
+  },
+  "sitemap": {
+    "seometa": {
+      "title": "Mapa do Site da Prática DET: Encontre Todos os Testes Práticos e Recursos",
+      "description": "Explore o mapa do site completo da Prática DET para acessar todos os testes práticos, recursos de estudo e guias. Navegue facilmente por nossas ofertas abrangentes de preparação para teste.",
+      "keywords": "DET Duolingo, Teste DET, Duolingo DET, Teste Duolingo, Teste Duolingo Online, Teste de Inglês Duolingo, Exame de Inglês Duolingo, Exame de Proficiência Duolingo"
+    },
+    "h1": "Mapa do Site"
+  },
+  "affiliate": {
+    "seometa": {
+      "title": "Programa de Afiliados - Prática DET {'|'} Ganhe com a Preparação para o Teste Duolingo",
+      "description": "Junte-se ao Programa de Afiliados da Prática DET e comece a ganhar promovendo nossos serviços de preparação para o teste Duolingo. Obtenha acesso a materiais de alta conversão e ganhe comissões por cada venda. Saiba como começar hoje.",
+      "keywords": "programa de afiliados, afiliado de preparação para teste Duolingo, ganhe com a Prática DET, afiliado de preparação para teste online, marketing de afiliados, parceiros da Prática DET, ganhe comissões"
+    },
+    "tag": "Programa de Afiliados",
+    "h1": "Ganhe <span class='yellow_font'>30% de Comissão</span> De Cada Indicação Sua",
+    "sun": "Inscreva-se Agora",
+    "login": "Login",
+    "join_title": "Junte-se ao <span class='yellow_font'>Lucrativo</span> Programa de Afiliados da Detpractice",
+    "join_tips": "Inscreva-se no programa de afiliados da Detpractice.com. Qualquer pessoa pode obter uma pontuação mais alta facilmente no Teste de Inglês Duolingo com a Detpractice.com. Torne-se nosso parceiro e receba até 30% de comissão por cada indicação.",
+    "earth_with_title": "Ganhe Com a Variedade de Produtos da Detpractice",
+    "question_bank": "Banco de questões",
+    "acs": "Serviço de Correção com IA",
+    "Mock_Test": "Simulado",
+    "Courses": "Cursos",
+    "bada": "Torne-se um Afiliado da Detpractice em 3 Passos",
+    "hep": "Alto Potencial de Ganhos",
+    "heptips": [
+      "Taxas de comissão competitivas: 30% sobre toda receita contribuída pelo seu link de afiliado.",
+      "Potencial para parcerias de longo prazo: Valorizamos nossos afiliados e nos esforçamos para desenvolver relacionamentos mutuamente benéficos de longo prazo."
+    ],
+    "ctw": "Criadores Com Quem Adoramos Trabalhar",
+    "ctwtips": [
+      "1.Você é um criador que tem uma audiência composta por estudantes (Aprender o Teste de Inglês Duolingo é um diferencial!)",
+      "2.Você está entusiasmado com uma maneira mais eficaz de aprender DET",
+      "3.Você é uma instituição de treinamento que ensina o Teste de Inglês Duolingo"
+    ],
+    "dos": "O que fazer",
+    "dos_icon_alt": "Ícone Verde de Certo",
+    "donts": "O que não fazer",
+    "donts_icon_alt": "Ícone Vermelho de Erro",
+    "faqs": "Perguntas Frequentes",
+    "sew": "Comece a Ganhar com Nosso Programa de Afiliados Agora",
+    "contaceUsList": [
+      {
+        "font": "Inscreva-se em nosso programa de afiliados e obtenha seu link de indicação.",
+        "btn": "Inscreva-se Agora"
+      },
+      {
+        "font": "Compartilhe seu link em seu site ou outras plataformas.",
+        "btn": "Vá e Compartilhe"
+      },
+      {
+        "font": "Ganhe comissões das vendas que você e seus sub-afiliados gerarem.",
+        "btn": "Confira"
+      }
+    ],
+    "dosList": [
+      {
+        "font": "Experimente a Detpractice.com por si mesmo"
+      },
+      {
+        "font": "Promova a Detpractice.com de forma ética e honesta"
+      },
+      {
+        "font": "Crie conteúdo de qualidade e relevante"
+      },
+      {
+        "font": "Divulgue seu relacionamento de afiliado"
+      }
+    ],
+    "dontsList": [
+      {
+        "font": "Fazer afirmações enganosas ou falsas sobre a Detpractice.com"
+      },
+      {
+        "font": "Promover em plataformas que tenham conteúdo inadequado ou ilegal"
+      },
+      {
+        "font": "Promover em qualquer site de cupons"
+      },
+      {
+        "font": "Configurar campanhas de anúncios usando nosso nome de marca, ou colocando nosso nome de domínio nas URLs de destino de seus anúncios"
+      }
+    ],
+    "faqList": [
+      {
+        "q": "Quem pode se inscrever no programa de afiliados da DET Practice?",
+        "a": "Se você é um criador que tem uma audiência composta por estudantes, uma instituição de treinamento que ensina o Teste de Inglês Duolingo, ou um influenciador, você pode se inscrever em nosso programa de afiliados e ganhar dinheiro."
+      },
+      {
+        "q": "Como rastreio minhas comissões?",
+        "a": "Depois de se inscrever em nosso programa de afiliados, você terá acesso à sua página de administração dedicada onde poderá rastrear conversões de seus links de indicação."
+      },
+      {
+        "q": "Recebo comissão se um cliente que indiquei assinar ou fazer upgrade?",
+        "a": "Sim, depois que um usuário se inscrever através do seu link, você ganha uma comissão cada vez que o usuário faz uma compra e faz upgrade."
+      },
+      {
+        "q": "Qual é a porcentagem exata de comissão que posso ganhar?",
+        "a": "Para os 3 primeiros pedidos, você receberá 10% de comissão; para mais de 3 pedidos, você receberá 30% de comissão."
+      },
+      {
+        "q": "E se um cliente que indiquei cancelar a compra?",
+        "a": "Se um cliente cancelar uma compra ou receber um reembolso por qualquer motivo, a comissão que você ganhou por essa pessoa será deduzida da sua conta."
+      },
+      {
+        "q": "Quando e como recebo o pagamento?",
+        "a": "Processamos pagamentos no dia 15 de cada mês para todas as comissões que você ganhou no mês anterior. Você pode receber pagamentos via PayPal."
+      },
+      {
+        "q": "E se eu tiver outras perguntas sobre seu programa de marketing de afiliados na internet?",
+        "a": "Basta entrar em contato conosco em <span class='yellow_font'>support{'@'}detpractice.com</span> e teremos prazer em ajudá-lo com quaisquer perguntas que você possa ter."
+      }
+    ],
+    "contaceUsList[2]": {
+      "btn": "Receba Pagamento"
+    }
+  },
+  "duolinguopt": {
+    "seometa": {
+      "title": "Teste de Prática Duolingo Gratuito{'|'}Prática DET",
+      "description": "Experimente o formato real do DET com nosso Teste de Prática Duolingo GRATUITO! Pontuação instantânea, análises detalhadas, feedback personalizado. Junte-se a mais de 10.000 aprendizes - Experimente gratuitamente!"
+    },
+    "hero": {
+      "title": "Teste de Prática Duolingo Gratuito",
+      "desc": "Faça Testes de Prática de Inglês Duolingo completos exatamente como o <strong>DET real</strong>. Obtenha <strong>pontuações instantâneas</strong> e <strong>feedback detalhado</strong> para melhorar rapidamente e ter o melhor desempenho.",
+      "btn": "Simular Agora"
+    },
+    "features": {
+      "title": "Por Que Escolher Nosso Teste de Prática DET Aprimorado?",
+      "comparison": {
+        "title": "Deslize para comparar Relatórios Básicos e Aprimorados",
+        "left_title": "Relatório Básico do Teste de Prática Duolingo",
+        "right_title": "Relatório de Simulado DET com Análise Aprimorada"
+      },
+      "cards": [
+        {
+          "title": "Aprovado por 10K+ Usuários",
+          "desc": "Junte-se a milhares que atingiram suas pontuações alvo no DET com nossa plataforma de prática comprovada."
+        },
+        {
+          "title": "Ambiente de Teste Real",
+          "desc": "Pratique com uma interface que corresponde ao DET real — mesmos tipos de questões, mesmos limites de tempo."
+        },
+        {
+          "title": "Análises Detalhadas",
+          "desc": "Obtenha relatórios de desempenho detalhados e planos de estudo personalizados para atingir seus pontos fracos e melhorar mais rápido."
+        },
+        {
+          "title": "Pratique a Qualquer Hora",
+          "desc": "Faça simulados 24/7 com pontuação instantânea. Pause e retome quando precisar."
+        }
+      ]
+    },
+    "how_it_works": {
+      "title": "Como Funciona",
+      "steps": [
+        {
+          "title": "Faça um Teste Prático",
+          "desc": "Complete um simulado completo sob condições reais de exame."
+        },
+        {
+          "title": "Obtenha Resultados Instantâneos",
+          "desc": "Receba sua pontuação e feedback detalhado em 5-30 minutos."
+        },
+        {
+          "title": "Revise e Melhore",
+          "desc": "Analise seu desempenho e concentre-se em áreas fracas com nossos planos de estudo."
+        },
+        {
+          "title": "Acompanhe o Progresso",
+          "desc": "Monitore sua melhoria em vários testes práticos."
+        }
+      ]
+    },
+    "score_comparison": {
+      "title": "Comparações de Pontuação: Simulado de Prática DET vs. DET Oficial"
+    },
+    "pricing": {
+      "title": "Preços",
+      "btn": "Comprar Agora",
+      "save": "Economize",
+      "tests": "Testes"
+    },
+    "reviews": {
+      "title": "Avaliações de Estudantes",
+      "items": [
+        {
+          "text": "Os testes de prática DET foram incrivelmente precisos. Consegui 115 no meu <a href='/mock-exam'>simulado DET</a> e 120 no DET real. A prática da seção de fala realmente me ajudou a melhorar minha confiança."
+        },
+        {
+          "text": "O feedback detalhado após cada teste prático me ajudou a entender minhas fraquezas. Melhorei minha pontuação de escrita de 85 para 110 em apenas três semanas!"
+        },
+        {
+          "text": "A interface da plataforma <a href='/'>DETPractice</a> é muito semelhante ao DET real. O cronômetro e os tipos de questões me fizeram sentir bem preparado quando fiz o teste real."
+        },
+        {
+          "text": "Os <a href='/mock-exam'>simulados DET</a> foram incrivelmente úteis. Minhas pontuações melhoraram consistentemente a cada prática, e acabei marcando 125 no DET real - ainda mais alto que meu último simulado!"
+        }
+      ],
+      "btn": "Teste Agora"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "items": [
+        {
+          "q": "O que é um Teste de Prática de Inglês Duolingo?",
+          "a": "Um <a href='/duolingo-practice-test'>Teste de Prática de Inglês Duolingo</a> simula o ambiente oficial do Teste de Inglês Duolingo, fornecendo questões similares, limites de tempo e formatos de pontuação. Ao completar um <a href='/duolingo-practice-test'>Teste de Prática de Inglês Duolingo</a>, você pode se familiarizar com a estrutura do exame, ganhar confiança e identificar áreas para melhoria."
+        },
+        {
+          "q": "Como um Teste Prático DET difere do exame oficial?",
+          "a": "Um Teste Prático DET (Prática do Teste de Inglês Duolingo) espelha o formato de teste oficial, mas não é administrado pela Duolingo. Em vez disso, oferece um ambiente sem riscos para aprimorar suas habilidades. Com um teste de prática det aprimorado, você ganha insight sobre os tipos de questões do teste, ritmo e critérios de pontuação antes de se comprometer com o Teste de Inglês Duolingo real."
+        },
+        {
+          "q": "Como um Teste de Prática Duolingo aprimorado pode me ajudar a melhorar meu desempenho?",
+          "a": "Um teste de prática Duolingo aprimorado fornece feedback imediato, destacando seus pontos fortes e fracos. Ao praticar repetidamente, você pode melhorar o vocabulário, refinar a pronúncia e solidificar habilidades gramaticais. Com o tempo, sessões consistentes de <a href='/practice'>prática de teste de inglês Duolingo</a> podem aumentar significativamente sua pontuação geral no exame oficial."
+        },
+        {
+          "q": "Quais estratégias posso aprender através das sessões de Prática do Teste de Inglês Duolingo?",
+          "a": " Envolver-se na prática do Teste de Inglês Duolingo ajuda você a desenvolver estratégias essenciais: gerenciar o tempo efetivamente, lidar com vocabulário não familiar e abordar tarefas complexas de leitura ou audição. Através de tentativa e erro em um ambiente de prática, você refinará técnicas que levam a melhores resultados no dia do teste."
+        },
+        {
+          "q": "Múltiplas tentativas de Prática de Teste de Inglês Duolingo podem melhorar minha confiança?",
+          "a": "Sim. Sessões repetidas de <a href='/practice'>prática de teste de inglês Duolingo</a> ajudam você a ficar mais confortável com o formato, reduzir a ansiedade do dia do teste e melhorar sua precisão. Ao observar seu progresso ao longo de múltiplas tentativas, você pode acompanhar melhorias, identificar desafios persistentes e focar em aprendizado direcionado."
+        },
+        {
+          "q": "Como posso medir a melhoria através da Prática contínua do Teste de Inglês Duolingo?",
+          "a": "Nossas ferramentas aprimoradas de teste de prática Duolingo oferecem relatórios detalhados de pontuação, análises e destaques de desempenho. Ao revisar esses resultados após cada <a href='/duolingo-practice-test'>Teste de Prática de Inglês Duolingo</a>, você ganha uma compreensão clara de como sua proficiência evolui. Esta abordagem baseada em dados permite que você ajuste seu plano de estudo e maximize o resultado de seu exame final."
+        }
+      ]
+    }
+  }
+}

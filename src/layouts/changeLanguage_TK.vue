@@ -12,6 +12,7 @@ const wehaveLanguage = {
   id: 'Bahasa Indonesia',
   ja: '日本語',
   ko: '한국어',
+  pt: 'Português',
   ru: 'Русский',
   tr: 'Türkçe',
   de: 'Deutsch',
@@ -37,6 +38,10 @@ const changeLanguageTips = {
   ko: {
     title: '언어 선택',
     tips: '당사 웹 사이트에 오신 것을 환영합니다. [한국어] 버전으로 전환하여 서비스를 더 잘 이해하고 활용할 수 있습니다.',
+  },
+  pt: {
+    title: 'Selecione o idioma',
+    tips: 'Bem-vindo ao nosso site. Você pode alternar para a versão [Português] para entender e usar melhor nossos serviços.',
   },
   ru: {
     title: 'Выберите язык',

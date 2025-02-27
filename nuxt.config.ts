@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   pages: true,
   sourcemap: false,
   i18n: {
-    locales: ['en', 'id', 'ja', 'ko', 'ru', 'tr', 'de', 'es', 'fr', 'it', 'th', 'zh'].map((locale) => ({
+    locales: ['en', 'id', 'ja', 'ko', 'pt', 'ru', 'tr', 'de', 'es', 'fr', 'it', 'th', 'zh'].map((locale) => ({
       code: locale,
       file: `${locale}.json`,
     })),
@@ -131,7 +131,10 @@ export default defineNuxtConfig({
       title: 'DET Practice - Ace the Duolingo English Test',
       meta: [
         { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no',
+        },
         { name: 'msvalidate.01', content: 'AB8D0671C60241C25BF7B5B9E68F5683' },
       ],
     },
