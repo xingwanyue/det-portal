@@ -1,7 +1,21 @@
 <script setup lang="ts">
-onMounted(() => {
-  fetch(`https://www.duolingopractice.com/weapp/api/common/logPath?path=${encodeURIComponent(window.location.pathname)}`);
-});
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+
+watch(
+  () => route.path,
+  (val) => {
+    if (val) {
+      fetch(
+        `https://www.duolingopractice.com/weapp/api/common/logPath?path=${encodeURIComponent(
+          window.location.pathname,
+        )}`,
+      );
+    }
+  },
+  { immediate: true },
+);
 </script>
 
 <template>
