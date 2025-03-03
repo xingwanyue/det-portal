@@ -673,6 +673,19 @@
           "title": "Additional DET Prep Resources",
           "desc": ""
         }
+      },
+      "data5": {
+        "title": "66666",
+        "desc": "777777",
+        "desc2": "8888",
+        "video1data": {
+          "title": "Boost Your DET Vocabulary: 7 Advanced Photo Description Techniques",
+          "desc": "This comprehensive post offers advanced strategies and vocabulary for excelling in the “Speak and Write About the Photo” sections of the Duolingo English Test. It covers seven key areas: color descriptions, nature scenes, urban"
+        },
+        "video2data": {
+          "title": "Unlocking DET Interactive Listening with Scenario-Specific Vocabulary",
+          "desc": "The Interactive Listening section of the Duolingo English Test (DET) presents a unique challenge to test-takers and educators alike. This section demands not just language proficiency but also the ability to navigate context-specific ·"
+        }
       }
     },
     "package_out": {
@@ -1356,6 +1369,68 @@
           "a": "Our enhanced Duolingo practice test tools offer detailed score reports, analytics, and performance breakdowns. By reviewing these results after each <a href='/duolingo-practice-test'>Duolingo English Practice Test</a>, you gain a clear understanding of how your proficiency evolves. This data-driven approach allows you to fine-tune your study plan and maximize your final exam outcome."
         }
       ]
+    }
+  },
+  "det_read_and_select_course": {
+    "seometa": {
+      "title": "DET Prep Course: Read and Select Questions - Duolingo English Test Preparation Hub",
+      "description": ""
+    },
+    "articelContent": {
+      "a1_h2": "“Read and Select” Questions Format and Time Constraints",
+      "a1": "Hi there, welcome to our Duolingo English Test practice hub. Today, we will be discussing the “Read and Select” question type.",
+      "t1": "Read and Select Question UI",
+      "a2": "First, let’s introduce this question format. “Read and Select”, also known as “Word Recognition”, primarily assesses the test taker’s familiarity with word spelling. The format is straightforward – during the test, you will need to determine whether the word displayed on the screen is spelled correctly and click the corresponding button to indicate if it is correct or not. This question type appears 15 to 18 times in the actual test. Each time, a word will be shown in the center of the screen, and you will have only 5 seconds to make a judgment.",
+      "t2": "Read and Select Questions: Intro and Tips",
+      "a3": "Therefore, a good command of word spelling and quick reaction and judgment skills are essential. When answering these questions, carefully read the spelling of each word, as incorrect words often have spellings similar to correct ones, making it easy to select the wrong option if you’re not attentive. ",
+      "a3_1": "Additionally, learning word formation rules, understanding common roots, prefixes, and suffixes, and their meanings can help you make better judgments when necessary. Of course, mastering some spelling rules can also be helpful. For example, in an unstressed closed syllable, when the letters “i” and “e” are together, “i” usually comes before “e”, unless they are preceded by the letter “c”, such as in words like “believe”, “field”, and “niece”.",
+      "a3_2": "Ultimately, to fundamentally improve your accuracy in this question type, you need to memorize more words and expand your vocabulary. Moreover, practicing with the questions in the question bank can help you quickly adapt to the pace of this type of question, understand common incorrect word settings, and improve your accuracy.",
+      "t3": "",
+      "a4_h2": "Word Formation: Roots and Affixes",
+      "a4": "Next, let’s discuss some knowledge of word formation and familiarize ourselves with the concepts of roots and affixes. What is a word root? A word root is the core part of a word and usually carries the basic meaning of the word. Most roots originate from ancient Greek and Latin. For example, “struct” in “construction”, “instruct”, and “destruction” means “to build” or “structure”, while “port” in “transport” and “portable” means “to carry” or “transport”. Then there are affixes, which are letters or combinations of letters added before or after the root to modify the meaning of the root or create a new word.",
+      "a4_1": "Depending on their position in the word, affixes can be further divided into prefixes and suffixes. Prefixes are affixes added before the root. For example, “un-” in “undo” or “unhappy” indicates negation. Suffixes are affixes added after the root. For example, “-able” in “readable” or “likable” means “able to be” or “having the quality of”.",
+      "t4": "Word Roots VS Affixes: Differences",
+      "a5": "Now, let’s look at the differences between roots and affixes. First, in terms of meaning and function, roots usually provide the main meaning of the word, while affixes modify or change that meaning. For example, in the word “inspect”, “in-” is a prefix. In “inspect”, “in-” means “into”, implying the meaning of looking deeply or examining.",
+      "a5_1": "The rest of the word, “-spect”, comes from a Latin root meaning “to look” or “to observe”. Therefore, “inspect” as a whole can be understood as “to go in and observe or examine”. Additionally, in terms of independence, most roots can exist independently as complete words, while affixes cannot exist independently and must be attached to roots to have meaning.",
+      "a5_2": "Let’s illustrate with an example. The suffix “-ness” cannot be used alone; it is used to convert adjectives into nouns. For example, in the word “happiness”, “-ness” is attached to “happy”, converting the adjective into a noun. Finally, let’s look at the position of roots and affixes in words. The root is the central part of the word, while affixes are placed before or after the root.",
+      "a5_3": "For example, in the word “disagreement”, the two affixes “dis-” and “-ment” are located at the beginning and end of the word, respectively, as the prefix and suffix. Just like in the image below, the red parts can be understood as the prefixes and suffixes of the word, while the blue part in the middle can be understood as the root of the word.",
+      "t5": "",
+      "a6_h2": "Common Error Patterns",
+      "a6": "Let’s look at some common error patterns. First, there are similar words, where common errors include letter substitution, letter addition, and letter omission in correct words. Therefore, before making a selection, we need to carefully read and spell the selected word to see if it is completely correct and whether there are any added, omitted, or substituted letters.",
+      "t6": "Common Patterns of Frequently Misspelled Words Example 1: slush",
+      "a7": "Let’s look at the following examples. You can determine if it is a correct word. Do you think “snush” is a word? In fact, the correct word is “slush”, so the letter “n” here has been replaced with “l”, resulting in a letter substitution error, making it an incorrect word.",
+      "t7": "Common Patterns of Frequently Misspelled Words Example 2: carriage",
+      "a8": "Let’s look at the next one. Is “curriage” a word? The correct word should be “carriage”. Here, there is also a letter substitution error, where the second letter of the correct word has been replaced with an incorrect one, so this word is also incorrect.",
+      "t8": "Common Patterns of Frequently Misspelled Words Example 3: bunny",
+      "a9": "Look at this word, “buny”. Is it correct? The correct word here should be “bunny”. There is a letter omission error, missing the letter “n”, so it is also an incorrect word.",
+      "t9": "Common Patterns of Frequently Misspelled Words Example 4: man",
+      "a10": "Let’s look at the word “myan”. The correct word here should be “man”, but the word has an extra letter “y”, so it is incorrect.",
+      "t10": "Common Patterns of Frequently Misspelled Words Example 5: guide",
+      "a11": "Let’s look at cases of letter addition. For example, the word “guidet”. You can see that the correct word is actually “guide”. This word has an extra letter “t” added at the end, resulting in an error.",
+      "t11": "Common Patterns of Frequently Misspelled Words Example 6: intend",
+      "a12": "Another example is the word “intendle”. Here, the letters “l” and “e” have been added after “intend”, so it is also incorrect.",
+      "a12_1": "Let’s now look at cases of word form errors. Before making a selection, we need to carefully consider whether the combination of roots and affixes is correct, whether there are incorrect combinations, and whether there are combinations of multiple correct words. Additionally, before making a selection, we need to carefully consider whether the word form changes follow the rules.",
+      "t12": "Common Patterns of Frequently Misspelled Words Example 7: informal",
+      "a13": "Let’s look at the following examples: For the word “unformal”, do you think it is correct? In fact, the correct word should be “informal”. Here, the prefix of the word is incorrect.",
+      "t13": "Common Patterns of Frequently Misspelled Words Example 8: warning",
+      "a14": "Let’s look at the word “warnning”. It seems to be correct, but please note that we do not need to double the letter “n”, so the correct word form should be “warning”, with only one letter “n”, not two.",
+      "t14": "Common Patterns of Frequently Misspelled Words Example 9: south + out",
+      "a15": "Let’s look at the word “southout”. I believe you have already guessed that although “south” and “out” are two correct words, if they are combined together, it becomes an incorrect word.",
+      "t15": "Common Patterns of Frequently Misspelled Words Example 10: pop + again",
+      "a16": "Similarly, there is “popagain”. This word is formed by combining the two words “pop” and “again”, so it is also incorrect.",
+      "t16": "Common Patterns of Frequently Misspelled Words Example 11: grape + man",
+      "a17": "Let’s look at the word “grapman”. It is formed by combining the words “grape” and “man”, and the letter “e” in “grape” has also been dropped, so this is an incorrect word.",
+      "a18_h2": "Tips from the Duolingo English Test Official Guide",
+      "a18": "Then, let’s look at some tips provided by the Duolingo English Test Official Guide. Here, a few points are emphasized. First, the number of correct words in this part of the test is actually not fixed, so it is possible to have more or fewer correct words when answering questions. Don’t be too concerned about it.",
+      "a18_1": "Second, when answering questions, be sure to carefully read the questions. Some words may look correct, but there are often cases of added, omitted, or substituted letters, so carefully distinguish them to avoid selecting the wrong option.",
+      "a18_2": "Third, when answering questions, even if there are words you are unsure about, be sure to make a selection before the question time runs out. This way, you have at least a 50% chance of getting the question right. If you don’t select an answer, the question will be directly marked as incorrect.",
+      "a19_h2": "Test-Taking and Preparation Suggestions",
+      "a19": "Finally, let’s look at some test-taking and preparation suggestions provided by the DET Practice Exam Research Team. We should only select words that we are 100% certain are correct. When answering questions, we can use observation and reading aloud to help us make judgments.",
+      "a19_1": "If a word sounds awkward or unreadable when read aloud, such as the example “guidet” we mentioned earlier, then it is likely an incorrect word. Additionally, longer words are actually easier to spot issues with, such as combinations of two or more words, incorrect roots or affixes, etc.",
+      "a19_2": "Also, each word must have at least one vowel to form a syllable. We need to pay attention to these when answering questions. For regular preparation, it is recommended to practice questions in the Duolingo question bank every day during the preparation period, while also organizing incorrectly selected words and adding them to your vocabulary list.",
+      "a19_3": "Use your fragmented time each day to repeatedly memorize and review, focusing on the spelling of words when memorizing. Vocabulary is accumulated slowly. I believe that through a period of practice and accumulation, your vocabulary will gradually expand, and you will achieve good results in the “Read and Select” questions!",
+      "a20_h2": "Practice Questions",
+      "a20": "That’s all for this lesson. Next, let’s focus on practicing “Read and Select” questions. There are 100 words here, some of which are incorrect. Please try to pick them out:"
     }
   }
 }

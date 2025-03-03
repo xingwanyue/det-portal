@@ -79,7 +79,7 @@ const four_change_left_active_index_change = (index: number) => {
   }
 };
 
-const four_change_left_data = computed(() => {
+const five_change_left_data = computed(() => {
   return [
     {
       index: 0,
@@ -105,6 +105,12 @@ const four_change_left_data = computed(() => {
       icon: '/img/courses/writing_icon.svg',
       icon_active: '/img/courses/writing_active_icon.svg',
     },
+    {
+      index: 4,
+      title: t('courses.changeleftfont.vocabulary'),
+      icon: '/img/courses/writing_icon.svg',
+      icon_active: '/img/courses/writing_active_icon.svg',
+    },
   ];
 });
 const four_change_right_data = computed(() => {
@@ -118,6 +124,7 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data1.video1data.title'),
           desc: t('courses.four_change_right_data.data1.video1data.desc'),
           videoUrl: 'https://www.youtube.com/embed/8UYh_8Co2vo',
+          prepUrl: '/det-read-and-select-course',
         },
         {
           title: t('courses.four_change_right_data.data1.video2data.title'),
@@ -203,7 +210,24 @@ const four_change_right_data = computed(() => {
         {
           title: t('courses.four_change_right_data.data4.video4data.title'),
           desc: '',
-          videoUrl: '',
+          imgUrl: '/img/courses/video_hack.png',
+        },
+      ],
+    },
+    {
+      title: t('courses.four_change_right_data.data5.title'),
+      desc: t('courses.four_change_right_data.data5.desc'),
+      desc2: t('courses.four_change_right_data.data5.desc2'),
+      videoUrlArr: [
+        {
+          title: t('courses.four_change_right_data.data5.video1data.title'),
+          desc: t('courses.four_change_right_data.data5.video1data.desc'),
+          imgUrl: '/img/courses/video_hack.png',
+        },
+        {
+          title: t('courses.four_change_right_data.data5.video2data.title'),
+          desc: t('courses.four_change_right_data.data5.video2data.desc'),
+          imgUrl: '/img/courses/video_hack.png',
         },
       ],
     },
@@ -325,7 +349,7 @@ onMounted(() => {
           <div class="four_changes_out_left">
             <div ref="changeLeftRef" :class="['change_left', { change_left_sticky: isSticky }]">
               <div
-                v-for="(item, index) in four_change_left_data"
+                v-for="(item, index) in five_change_left_data"
                 :key="index"
                 :class="
                   four_change_left_active_index === item.index
@@ -358,6 +382,7 @@ onMounted(() => {
               <h2 class="change_right_title" :id="`section-${index}`">{{ item.title }}</h2>
               <div class="change_right_desc">{{ item.desc }}</div>
               <div class="change_right_desc">{{ item.desc2 }}</div>
+
               <div class="change_right_video">
                 <div v-for="(item2, index) in item.videoUrlArr" :key="index">
                   <div v-if="item2.videoUrl" class="change_right_video_iframe">
@@ -373,17 +398,18 @@ onMounted(() => {
                     ></iframe>
                   </div>
                   <div v-else class="change_right_video_iframe">
-                    <img src="/img/courses/video_hack.png" alt="video_hack" />
+                    <img :src="`${item2.imgUrl}`" :alt="item2.title" />
                   </div>
 
                   <h3 class="change_right_video_title">{{ item2.title }}</h3>
                   <div v-if="item2.desc" class="change_right_video_desc">{{ item2.desc }}</div>
-                  <div v-if="!item2.videoUrl" class="video_hack">
+                  <div v-if="!item2.videoUrl && index === 3" class="video_hack">
                     <a target="_blank" href="/"> DET Practice | One-stop Duolingo English Test Prep Platform </a>
                     <a target="_blank" href="/practice"> Duolingo English Test Practice Question Bank </a>
                     <a target="_blank" href="/duolingo-practice-test"> Duolingo Practice Test </a>
                     <a target="_blank" href="/blog"> DET Practice Learning Blog </a>
                   </div>
+                  <NuxtLink :to="localePath(`${item2.prepUrl}`)"> {{ item2.title }} Prep Course</NuxtLink>
                 </div>
               </div>
             </div>
