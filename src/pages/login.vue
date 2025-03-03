@@ -15,7 +15,7 @@ const route = useRoute();
 const router = useRouter();
 const store = useStore();
 
-const url = route.query.url ? decodeURIComponent(route.query.url as string) : '/';
+const url = route.query.url ? decodeURIComponent(route.query.url as string) : '/app';
 const formData = ref({}) as any;
 const loading = ref(false);
 const pwdShow = ref(false);
@@ -29,7 +29,7 @@ onMounted(async () => {
   const token = await getToken();
   if (token) {
     await store.getUserInfo();
-    if (url.startsWith('http')) {
+    if (url.startsWith('http') || url.startsWith('/app')) {
       window.location.href = url;
       return;
     }
