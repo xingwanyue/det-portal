@@ -1065,6 +1065,7 @@ const changeBuyCorrectTimes = () => {
                   color: #403f3e;
                   ::v-deep(.strongfont) {
                     font-weight: 650;
+                    color: #f66442;
                   }
                 }
               }

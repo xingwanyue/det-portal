@@ -334,6 +334,7 @@ const saveCaculate = (item: any) => {
           color: #403f3e;
           ::v-deep(.strongfont) {
             font-weight: 650;
+            color: #f66442;
           }
         }
       }
@@ -372,6 +373,7 @@ const saveCaculate = (item: any) => {
           font-size: 14px;
           color: #403f3e;
           ::v-deep(.strongfont) {
+            color: #f66442;
             font-weight: 650;
           }
         }
