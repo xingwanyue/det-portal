@@ -237,6 +237,7 @@
       "week": "/주",
       "month": "/월",
       "Billed": "연간 ${num} 청구",
+      "BilledThreeMonth": "3개월 ${num} 청구",
       "apcs": "AI 기반 수정 서비스",
       "times": "회",
       "bci": "검은색_체크_아이콘",

@@ -235,6 +235,7 @@
       "week": "/Woche",
       "month": "/Monat",
       "Billed": "Abgerechnet ${num} /Jahr",
+      "BilledThreeMonth": "Abgerechnet ${num} /3 Monate",
       "apcs": "KI-gestützter Korrekturservice",
       "apcs1": "KI-Korrekturservice",
       "times": "Mal",

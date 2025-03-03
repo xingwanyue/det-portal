@@ -237,6 +237,7 @@
       "week": "/hafta",
       "month": "/ay",
       "Billed": "Faturalandırılan ${num} /yıl",
+      "BilledThreeMonth": "Faturalandırılan ${num} /3 ay",
       "apcs": "Yapay Zeka Destekli Düzeltme Hizmeti",
       "times": "kez",
       "bci": "siyah_onay_ikonu",

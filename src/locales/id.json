@@ -236,6 +236,7 @@
       "week": "/minggu",
       "month": "/bulan",
       "Billed": "Ditagih ${num} /tahun",
+      "BilledThreeMonth": "Ditagih ${num} /3 bulan",
       "apcs": "Layanan Koreksi Bertenaga AI",
       "apcs1": "Layanan Koreksi AI",
       "times": "kali",

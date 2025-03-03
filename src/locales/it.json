@@ -236,6 +236,7 @@
       "week": "/settimana",
       "month": "/mese",
       "Billed": "Fatturato ${num} /anno",
+      "BilledThreeMonth": "Fatturato ${num} /3 mesi",
       "apcs": "Servizio di Correzione Alimentato da AI",
       "apcs1": "Servizio di Correzione AI",
       "times": "volte",

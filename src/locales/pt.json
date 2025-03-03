@@ -235,6 +235,7 @@
       "week": "/semana",
       "month": "/mês",
       "Billed": "Cobrado R${num} /ano",
+      "BilledThreeMonth": "Cobrado R${num} /3 meses",
       "apcs": "Serviço de Correção com IA",
       "apcs1": "Serviço de Correção com IA",
       "times": "vezes",

@@ -235,6 +235,7 @@
       "week": "/週",
       "month": "/月",
       "Billed": "年間 ${num} 請求",
+      "BilledThreeMonth": "3ヶ月 ${num} 請求",
       "apcs": "AI駆動の修正サービス",
       "apcs1": "AI修正サービス",
       "times": "回",

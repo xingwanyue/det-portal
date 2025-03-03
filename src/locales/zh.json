@@ -236,6 +236,7 @@
       "week": "/周",
       "month": "/月",
       "Billed": "每年收费 ${num}",
+      "BilledThreeMonth": "3个月收费 ${num}",
       "apcs": "AI驱动的校正服务",
       "times": "次",
       "bci": "黑色检查图标",
