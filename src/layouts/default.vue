@@ -7,7 +7,6 @@ import { sinupEvent } from '@/utils/gtag';
 import { useI18n } from 'vue-i18n';
 import vHeader from './header.vue';
 import vFooter from './footer.vue';
-import vChangeLanguagetk from './changeLanguage_TK.vue';
 
 const props = defineProps({
   errorPage: Boolean,
@@ -98,7 +97,6 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
     <el-footer class="footer_wrap">
       <v-footer :errorPage="props.errorPage" />
     </el-footer>
-    <v-changeLanguagetk />
   </el-container>
   <noscript v-html="htmlText"> </noscript>
 </template>
