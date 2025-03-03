@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
-import { urlGet, domain, cdn, host } from '@/utils';
+import { urlGet, domain, cdn } from '@/utils';
 import { platformData } from '@/api';
 import vHighscorewriting from '../components/highscorewriting.vue';
 import { useStore } from '@/store';
@@ -17,7 +17,7 @@ useHead({
     { name: 'DC.title', content: t('correction.seometa.title') },
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: t('correction.seometa.title') },
-    { property: 'og:description', content:  t('correction.seometa.description') },
+    { property: 'og:description', content: t('correction.seometa.description') },
     { property: 'og:url', content: `https://www.${domain}${localePath('/correction')}` },
     { property: 'og:site_name', content: 'DET Practice' },
     { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
@@ -27,7 +27,7 @@ useHead({
     { name: 'twitter:title', content: t('correction.seometa.title') },
     {
       name: 'twitter:description',
-      content:  t('correction.seometa.description'),
+      content: t('correction.seometa.description'),
     },
     { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
@@ -112,7 +112,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
               <NuxtLink
                 v-else
                 class="btn common_btn_hover_bgColor"
-                :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                :to="localePath(`/login?url=${encodeURIComponent(urlGet('/questions'))}`)"
                 rel="nofollow"
               >
                 <div class="font">{{ $t('correction.Review_Now') }}</div>
@@ -161,7 +161,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/questions'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
@@ -196,7 +196,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/questions'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Get_Scored_Now') }}</div>
@@ -231,7 +231,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/questions'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
@@ -266,7 +266,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/questions'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Enhance_Now') }}</div>
@@ -301,7 +301,7 @@ const service_picture5 = `${cdn}/store/portal/products/service_picture5.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/questions'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Begin_Polishing') }}</div>

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
-import { urlGet, domain, cdn, host } from '@/utils';
+import { urlGet, domain, cdn } from '@/utils';
 import { useStore } from '@/store';
 import { platformData } from '@/api';
 import vEmbark from '../components/embark.vue';
@@ -149,7 +149,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
               <NuxtLink
                 v-else
                 class="btn common_btn_hover_bgColor"
-                :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                :to="localePath(`/login?url=${encodeURIComponent(urlGet('/correct'))}`)"
                 rel="nofollow"
               >
                 <div class="font">{{ $t('speakingaicorrection.spn') }}</div>
@@ -202,7 +202,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/correct'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('speakingaicorrection.article1.btn') }}</div>
@@ -248,7 +248,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/correct'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('speakingaicorrection.article2.btn') }}</div>
@@ -294,7 +294,7 @@ const bank_picture3 = `${cdn}/store/portal/products/speaking_picture3.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/correct'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('speakingaicorrection.article3.btn') }}</div>

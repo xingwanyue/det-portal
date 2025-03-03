@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { urlGet, saveStorage, getStorage, host, getToken } from '@/utils';
+import { urlGet, saveStorage, getStorage, getToken } from '@/utils';
 import { useStore } from '@/store';
 import last from 'lodash/last';
 const localePath = useLocalePath();
@@ -286,7 +286,7 @@ const menus = computed(() => [
         </div>
       </div>
       <div v-else class="loginbtn">
-        <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font"> Login </nuxt-link> -->
+        <!-- <nuxt-link :to="localePath(`/login`)" class="login_font"> Login </nuxt-link> -->
         <nuxt-link :to="localePath(`/login`)" class="try_free common_btn_hover_bgColor" rel="nofollow">
           {{ $t('header.Try_for_free') }}
         </nuxt-link>
@@ -380,10 +380,10 @@ const menus = computed(() => [
         </div>
       </div>
       <div v-else class="loginbtn-mobile">
-        <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="try_free" rel="nofollow">
+        <nuxt-link :to="localePath(`/login`)" class="try_free" rel="nofollow">
           {{ $t('header.Try_for_free') }}
         </nuxt-link>
-        <!-- <nuxt-link :to="localePath(`/login?url=${encodeURIComponent(host)}`)" class="login_font">Login</nuxt-link> -->
+        <!-- <nuxt-link :to="localePath(`/login`)" class="login_font">Login</nuxt-link> -->
       </div>
     </el-drawer>
   </div>

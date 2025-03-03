@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
-import { urlGet, host, domain, cdn } from '@/utils';
+import { urlGet, domain, cdn } from '@/utils';
 import { useStore } from '@/store';
 import { platformData } from '@/api';
 
@@ -159,7 +159,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
               </NuxtLink>
               <NuxtLink
                 v-else
-                :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                :to="localePath(`/login?url=${encodeURIComponent(urlGet('/exam'))}`)"
                 class="btn common_btn_hover_bgColor"
                 rel="nofollow"
               >
@@ -206,7 +206,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/exam'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
@@ -241,7 +241,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/exam'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
@@ -276,7 +276,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/exam'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>
@@ -311,7 +311,7 @@ const mock_picture4 = `${cdn}/store/portal/products/mock_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/exam`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/exam'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('mockexam.Mock_Now') }}</div>

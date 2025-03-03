@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
-import { urlGet, domain, cdn, host } from '@/utils';
+import { urlGet, domain, cdn } from '@/utils';
 import { useStore } from '@/store';
 import { platformData } from '@/api';
 import vEmbark from '../components/embark.vue';
@@ -169,7 +169,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
               <NuxtLink
                 v-else
                 class="btn common_btn_hover_bgColor"
-                :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                :to="localePath(`/login?url=${encodeURIComponent(urlGet('/questions'))}`)"
                 rel="nofollow"
               >
                 <div class="font">{{ $t('practice.spn') }}</div>
@@ -238,7 +238,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/questions'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('practice.article1.btn') }}</div>
@@ -273,7 +273,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/questions'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('practice.article2.btn') }}</div>
@@ -308,7 +308,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/questions'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('practice.article3.btn') }}</div>
@@ -343,7 +343,7 @@ const bank_picture4 = `${cdn}/store/portal/products/bank_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/questions`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/questions'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('practice.article4.btn') }}</div>

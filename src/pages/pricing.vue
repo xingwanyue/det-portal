@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { formatCash, getToken } from '@/utils';
+import { getToken } from '@/utils';
 const { t } = useI18n();
 import { getVipdataNoToken, getVipdataWithToken, getSetting } from '@/api';
 import vMembershipprice from '../components/membershipprice.vue';
 import vMembershippricepackages from '../components/membershipprice_packages.vue';
-import { staticUrlGet, domain, host, cdn } from '@/utils';
+import { domain, cdn } from '@/utils';
 import { useStore } from '@/store';
 useSeoMeta({
   title: t('pricing.seometa.title'),
@@ -348,7 +348,7 @@ const changeBuyCorrectTimes = () => {
             </div>
           </div>
           <div class="free_white_dom_right">
-            <NuxtLink class="try_btn" :to="localePath(`/login?url=${encodeURIComponent(host)}`)" rel="nofollow">{{
+            <NuxtLink class="try_btn" :to="localePath(`/login`)" rel="nofollow">{{
               $t('pricing.pagefont.tff')
             }}</NuxtLink>
           </div>

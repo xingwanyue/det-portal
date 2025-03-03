@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
-import { urlGet, domain, cdn, host } from '@/utils';
+import { urlGet, domain, cdn } from '@/utils';
 import { platformData } from '@/api';
 import vEmbark from '../components/embark.vue';
 import vCommonFaqList from '../components/commonFaqList.vue';
@@ -156,7 +156,7 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
               <NuxtLink
                 v-else
                 class="btn common_btn_hover_bgColor"
-                :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                :to="localePath(`/login?url=${encodeURIComponent(urlGet('/correct'))}`)"
                 rel="nofollow"
               >
                 <div class="font">{{ $t('correction.Review_Now') }}</div>
@@ -205,7 +205,7 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/correct'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
@@ -240,7 +240,7 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/correct'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Get_Scored_Now') }}</div>
@@ -275,7 +275,7 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/correct'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>
@@ -310,7 +310,7 @@ const service_picture4 = `${cdn}/store/portal/products/writing_picture4.png`;
                 <NuxtLink
                   v-else
                   class="right_click"
-                  :to="localePath(`/login?url=${encodeURIComponent(`${host}/correct`)}`)"
+                  :to="localePath(`/login?url=${encodeURIComponent(urlGet('/correct'))}`)"
                   rel="nofollow"
                 >
                   <div class="font">{{ $t('correction.Correct_Now') }}</div>

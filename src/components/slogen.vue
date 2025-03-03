@@ -21,7 +21,7 @@ const googleLogin = () => {
           {{ $t('slogen.Start_free_with_Google') }}
         </div>
         <NuxtLink
-          :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
+          :to="localePath(`/login`)"
           class="common_btn common_btn_hover_borderCu white"
           rel="nofollow"
         >

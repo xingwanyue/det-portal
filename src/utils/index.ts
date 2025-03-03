@@ -2,8 +2,6 @@ export const cdn = 'https://cdn.detpractice.com';
 
 export const domain = 'detpractice.com';
 
-// 应用地址
-export const host = `https://www.${domain}`;
 // export const api = `https://www.duolingopractice.com/api`;
 // export const api = `http://192.168.1.22:9000/api`;
 // export const api = `https://dev2.zixuekeji.cn/weapp/api`;

@@ -7,7 +7,7 @@ import { useStore } from '@/store';
 import find from 'lodash/find';
 import head from 'lodash/head';
 import { ElMessage } from 'element-plus';
-import { rateAdd, saveStorage, getStorage, articleCategoryGet, getToken } from '@/utils';
+import { rateAdd, saveStorage, getStorage, articleCategoryGet, getToken, urlGet } from '@/utils';
 import subscribe from '@/components/subscribe.vue';
 
 const props = defineProps({
@@ -201,11 +201,7 @@ const iconHover = (index: number) => {
           </div>
         </div>
         <div class="right_list">
-          <NuxtLink
-            v-if="!user.id && !haveCookie"
-            class="article_img"
-            :to="localePath(`/login?url=${encodeURIComponent(host)}`)"
-          >
+          <NuxtLink v-if="!user.id && !haveCookie" class="article_img" :to="localePath(`/login`)">
             <div class="article_img_top">{{ $t('articleDetail.getHiger') }}</div>
             <div class="article_img_bottom">
               <img src="/img/blog/article_small_img.png" :alt="props.article.name" />
