@@ -6,7 +6,7 @@ import { useRoute, useRouter } from 'vue-router';
 
 import { useStore } from '@/store';
 import { oauth2SignIn } from '@/utils/googleAuth';
-import { getToken, saveToken, getCookie } from '@/utils';
+import { getToken, saveToken, getCookie, urlGet } from '@/utils';
 useHead({
   meta: [{ name: 'robots', content: 'noindex' }],
 });
@@ -15,7 +15,7 @@ const route = useRoute();
 const router = useRouter();
 const store = useStore();
 
-const url = route.query.url ? decodeURIComponent(route.query.url as string) : '/app/#/home';
+const url = route.query.url ? decodeURIComponent(route.query.url as string) : urlGet('/home');
 const formData = ref({}) as any;
 const loading = ref(false);
 const pwdShow = ref(false);
@@ -29,7 +29,7 @@ onMounted(async () => {
   const token = await getToken();
   if (token) {
     await store.getUserInfo();
-    if (url.startsWith('http') || url.startsWith('/app')) {
+    if (url.startsWith('http')) {
       window.location.href = url;
       return;
     }
