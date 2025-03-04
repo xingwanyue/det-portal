@@ -103,6 +103,7 @@ const getBlob = async () => {
     server: true,
     query: { ...args },
     headers: { locale: locale.value },
+    key: 'blog',
   })) as any;
   Blog.value = [...(blogsjk.value?.data || []), { name: showmorefont, path: 'blog' }].map((item: any) => {
     return {
@@ -151,9 +152,10 @@ const language = ref('');
 
 language.value = locale.value;
 
-getBlob();
+await getBlob();
 
 const clickChangeLanguage = (item) => {
+  console.log('clickChangeLanguage');
   setLocale(item.value).then(() => {
     getBlob();
   });
