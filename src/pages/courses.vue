@@ -136,6 +136,7 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data1.video3data.title'),
           desc: t('courses.four_change_right_data.data1.video3data.desc'),
           videoUrl: 'https://www.youtube.com/embed/J7ymVabfTJk?si=qy-P02K7ly1faKNf',
+          prepUrl: '/det-interactive-reading-course',
         },
         {
           title: t('courses.four_change_right_data.data1.video4data.title'),
