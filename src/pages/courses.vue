@@ -130,6 +130,7 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data1.video2data.title'),
           desc: t('courses.four_change_right_data.data1.video2data.desc'),
           videoUrl: 'https://www.youtube.com/embed/k7kIedxU9og',
+          prepUrl: '/det-fill-in-the-blanks',
         },
         {
           title: t('courses.four_change_right_data.data1.video3data.title'),

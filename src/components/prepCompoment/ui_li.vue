@@ -18,5 +18,6 @@ const localePath = useLocalePath();
 </template>
 <style lang="scss" scoped>
 .common_ui_li_out {
+  border: 1px red solid;
 }
 </style>

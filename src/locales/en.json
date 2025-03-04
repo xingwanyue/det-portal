@@ -1376,6 +1376,30 @@
       "title": "DET Prep Course: Read and Select Questions - Duolingo English Test Preparation Hub",
       "description": ""
     },
+    "h1": "DET Prep Course: Read and Select Questions",
+    "summary": {
+      "title": "Summary",
+      "desc": "This comprehensive guide focuses on the “Read and Select” question type in the Duolingo English Test. It covers the format, importance of word spelling, tips for answering questions, and strategies for preparation. The post also delves into word formation, roots, affixes, and common error patterns to help test-takers improve their performance.",
+      "video_title": "A video version of this course:"
+    },
+    "video": {
+      "video_title": "Read and Select Questions"
+    },
+    "table_of_con": {
+      "title": "Table of Contents",
+      "li1": "1. “Read and Select” Questions Format and Time Constraints",
+      "li2": "2. Word Formation: Roots and Affixes",
+      "li2_1": "2.1 Understanding Word Roots",
+      "li2_2": "2.2 Prefixes and Suffixes",
+      "li2_3": "2.3 Differences Between Roots and Affixes",
+      "li3": "3. Common Error Patterns",
+      "li3_1": "3.1 Similar Words",
+      "li3_2": "3.2 Letter Substitution, Addition, and Omission",
+      "li3_3": "3.3 Word Form Errors",
+      "li4": "4. Tips from the Duolingo English Test Official Guide",
+      "li5": "5. Test-Taking and Preparation Suggestions",
+      "li6": "6. Practice Questions"
+    },
     "articelContent": {
       "a1_h2": "“Read and Select” Questions Format and Time Constraints",
       "a1": "Hi there, welcome to our Duolingo English Test practice hub. Today, we will be discussing the “Read and Select” question type.",
@@ -1433,8 +1457,8 @@
       "a20": "That’s all for this lesson. Next, let’s focus on practicing “Read and Select” questions. There are 100 words here, some of which are incorrect. Please try to pick them out:"
     },
     "hit": "Hint: Misspelled words will be shown in red.",
-    "recap": "Recap",
-    "ui_li": {
+    "table_of_con2": {
+      "title": "Recap",
       "li1": "The \"Read and Select\" question type assesses word spelling recognition.",
       "li2": "Test-takers have 5 seconds to judge whether a displayed word is spelled correctly.",
       "li3": "Understanding word formation, roots, and affixes can improve performance.",
@@ -1453,6 +1477,33 @@
       "a1name": "duolingo english test",
       "a2name": "duolingo english test reading",
       "a3name": "read and select"
+    }
+  },
+  "det_fill_in_the_blanks": {
+    "seometa": {
+      "title": "DET Prep Course: Fill in the Blanks - Duolingo English Test Preparation Hub",
+      "description": "Master the Fill in the Blanks question type for the Duolingo English Test. Boost your comprehension skills."
+    },
+    "h1": "DET Prep Course: Fill in the Blanks",
+    "summary": {
+      "title": "Summary",
+      "desc": "This comprehensive guide focuses on the Fill in the Blanks question type in the Duolingo English Test. It covers the question format, importance, and various problem-solving techniques to help test-takers improve their performance. The article provides detailed explanations and example questions to enhance understanding and preparation for this crucial part of the test.",
+      "video_title": "A video version of this course:"
+    },
+    "video": {
+      "video_title": "Fill in the Blanks"
+    },
+    "table_of_con": {
+      "title": "Table of Contents",
+      "li1": "1. Introduction to Fill in the Blanks Questions",
+      "li2": "2. Question Format and Importance",
+      "li3": "3. Problem-Solving Techniques",
+      "li3_1": "1. Understanding the Context",
+      "li3_2": "2. Paying Attention to Keywords",
+      "li3_3": "3. Logical Inference",
+      "li3_4": "4. Word Class Matching",
+      "li3_5": "5. Word Roots and Affixes",
+      "li4": "4. Conclusion"
     }
   }
 }
