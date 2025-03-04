@@ -1,6 +1,7 @@
 export const cdn = 'https://cdn.detpractice.com';
 
 export const domain = 'detpractice.com';
+export const host = `https://www.${domain}`;
 
 // export const api = `https://www.duolingopractice.com/api`;
 // export const api = `http://192.168.1.22:9000/api`;
