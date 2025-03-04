@@ -9,12 +9,14 @@ const props = defineProps({
   imgArr: Array,
   imgTipArr: Array,
   h2: String,
+  h3: String,
 }) as any;
 const localePath = useLocalePath();
 </script>
 <template>
   <div class="desc_img_tips">
     <h2 class="p_h2 p_mgt_20" v-if="props.h2">{{ props.h2 }}</h2>
+    <h3 class="p_h3 p_mgt_20" v-if="props.h3">{{ props.h3 }}</h3>
     <div class="desc" v-for="item in props.descArr" :key="item">{{ item }}</div>
     <div class="desc_img" v-for="item in props.imgArr" :key="item">
       <img :src="`${item}`" alt="" />

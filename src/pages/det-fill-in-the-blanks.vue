@@ -9,6 +9,7 @@ import a_list from '@/components/prepCompoment/a_list.vue';
 import Summary from '@/components/prepCompoment/summary.vue';
 import my_video from '@/components/prepCompoment/video.vue';
 import table_of_con from '@/components/prepCompoment/table_of_con.vue';
+import complete_the_sen from '@/components/prepCompoment/complete_the_sen.vue';
 
 const state = reactive({});
 useSeoMeta({
@@ -53,14 +54,12 @@ const video_data = computed(() => {
 
 const ui_li_list = computed(() => {
   return [
-    t('det_read_and_select_course.ui_li.li1'),
-    t('det_read_and_select_course.ui_li.li2'),
-    t('det_read_and_select_course.ui_li.li3'),
-    t('det_read_and_select_course.ui_li.li4'),
-    t('det_read_and_select_course.ui_li.li5'),
-    t('det_read_and_select_course.ui_li.li6'),
-    t('det_read_and_select_course.ui_li.li7'),
-    t('det_read_and_select_course.ui_li.li8'),
+    t('det_fill_in_the_blanks.ui_li.li1'),
+    t('det_fill_in_the_blanks.ui_li.li2'),
+    t('det_fill_in_the_blanks.ui_li.li3'),
+    t('det_fill_in_the_blanks.ui_li.li4'),
+    t('det_fill_in_the_blanks.ui_li.li5'),
+    t('det_fill_in_the_blanks.ui_li.li6'),
   ];
 });
 const table_of_con_data = computed(() => {
@@ -86,162 +85,245 @@ const table_of_con_data = computed(() => {
 const desc_img_tipsArr = computed(() => {
   return [
     {
-      h2: t('det_read_and_select_course.articelContent.a1_h2'),
-      descArr: [t('det_read_and_select_course.articelContent.a1')],
-      imgArr: ['/img/det-read-and-select-course/read-select-ui.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t1')],
-    },
-    {
-      descArr: [t('det_read_and_select_course.articelContent.a2')],
-      imgArr: ['/img/det-read-and-select-course/read-select-intro-tips.jpg'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t2')],
+      h2: t('det_fill_in_the_blanks.articelContent.a1_h2'),
+      descArr: [t('det_fill_in_the_blanks.articelContent.a1')],
+      imgArr: ['/img/det-fill-in-the-blanks/fill-in-the-blanks.png'],
+      imgTipArr: [t('det_fill_in_the_blanks.articelContent.t1')],
     },
     {
       descArr: [
-        t('det_read_and_select_course.articelContent.a3'),
-        t('det_read_and_select_course.articelContent.a3_1'),
-        t('det_read_and_select_course.articelContent.a3_2'),
+        t('det_fill_in_the_blanks.articelContent.a2'),
+        t('det_fill_in_the_blanks.articelContent.a2_1'),
+        t('det_fill_in_the_blanks.articelContent.a2_2'),
+        t('det_fill_in_the_blanks.articelContent.a2_3'),
       ],
       imgArr: [],
       imgTipArr: [],
     },
     {
-      h2: t('det_read_and_select_course.articelContent.a4_h2'),
-      descArr: [t('det_read_and_select_course.articelContent.a4'), t('det_read_and_select_course.articelContent.a4_1')],
-      imgArr: ['/img/det-read-and-select-course/roots-affixes-difference.jpg'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t4')],
+      h2: t('det_fill_in_the_blanks.articelContent.a3_h2'),
+      descArr: [t('det_fill_in_the_blanks.articelContent.a3')],
+      imgArr: ['/img/det-fill-in-the-blanks/intro-page-fill-in-the-blanks.png'],
+      imgTipArr: [t('det_fill_in_the_blanks.articelContent.t3')],
     },
     {
       h2: '',
-      descArr: [
-        t('det_read_and_select_course.articelContent.a5'),
-        t('det_read_and_select_course.articelContent.a5_1'),
-        t('det_read_and_select_course.articelContent.a5_2'),
-        t('det_read_and_select_course.articelContent.a5_3'),
-      ],
+      descArr: [t('det_fill_in_the_blanks.articelContent.a4')],
       imgArr: [],
       imgTipArr: [],
     },
     {
-      h2: t('det_read_and_select_course.articelContent.a6_h2'),
-      descArr: [t('det_read_and_select_course.articelContent.a6')],
-      imgArr: ['/img/det-read-and-select-course/slush.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t6')],
-    },
-    {
-      h2: '',
-      descArr: [t('det_read_and_select_course.articelContent.a7')],
-      imgArr: ['/img/det-read-and-select-course/carriage.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t7')],
-    },
-    {
-      h2: '',
-      descArr: [t('det_read_and_select_course.articelContent.a8')],
-      imgArr: ['/img/det-read-and-select-course/bunny.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t8')],
-    },
-    {
-      h2: '',
-      descArr: [t('det_read_and_select_course.articelContent.a9')],
-      imgArr: ['/img/det-read-and-select-course/man-1.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t9')],
-    },
-    {
-      h2: '',
-      descArr: [t('det_read_and_select_course.articelContent.a10')],
-      imgArr: ['/img/det-read-and-select-course/guide.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t10')],
-    },
-    {
-      h2: '',
-      descArr: [t('det_read_and_select_course.articelContent.a11')],
-      imgArr: ['/img/det-read-and-select-course/intend.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t11')],
-    },
-    {
-      h2: '',
-      descArr: [
-        t('det_read_and_select_course.articelContent.a12'),
-        t('det_read_and_select_course.articelContent.a12_1'),
-      ],
-      imgArr: ['/img/det-read-and-select-course/informal.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t12')],
-    },
-    {
-      h2: '',
-      descArr: [t('det_read_and_select_course.articelContent.a13')],
-      imgArr: ['/img/det-read-and-select-course/warning.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t13')],
-    },
-    {
-      h2: '',
-      descArr: [t('det_read_and_select_course.articelContent.a14')],
-      imgArr: ['/img/det-read-and-select-course/south-out.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t14')],
-    },
-    {
-      h2: '',
-      descArr: [t('det_read_and_select_course.articelContent.a15')],
-      imgArr: ['/img/det-read-and-select-course/pop-again.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t15')],
-    },
-    {
-      h2: '',
-      descArr: [t('det_read_and_select_course.articelContent.a16')],
-      imgArr: ['/img/det-read-and-select-course/grape-man.png'],
-      imgTipArr: [t('det_read_and_select_course.articelContent.t16')],
-    },
-    {
-      h2: '',
-      descArr: [t('det_read_and_select_course.articelContent.a17')],
+      h2: t('det_fill_in_the_blanks.articelContent.a5_h2'),
+      h3: t('det_fill_in_the_blanks.articelContent.a5_h3'),
+      descArr: [t('det_fill_in_the_blanks.articelContent.a5')],
       imgArr: [],
       imgTipArr: [],
     },
+  ];
+});
+const comp_the_s1 = computed(() => {
+  return [
     {
-      h2: t('det_read_and_select_course.articelContent.a18_h2'),
-      descArr: [
-        t('det_read_and_select_course.articelContent.a18'),
-        t('det_read_and_select_course.articelContent.a18_1'),
-        t('det_read_and_select_course.articelContent.a18_2'),
-      ],
-      imgArr: [],
-      imgTipArr: [],
+      title: t('det_fill_in_the_blanks.cts.title'),
+      test: 'The impact of <span class="word_box">w</span><span class="word_box">i</span><span class="word_box">c</span><span class="word_box">k</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span>  as a force that undermines social cohesion is counteracted by acts of kindness.',
     },
+  ];
+});
+const comp_the_s2 = computed(() => {
+  return [
     {
-      h2: t('det_read_and_select_course.articelContent.a19_h2'),
-      descArr: [
-        t('det_read_and_select_course.articelContent.a19'),
-        t('det_read_and_select_course.articelContent.a19_1'),
-        t('det_read_and_select_course.articelContent.a19_2'),
-      ],
-      imgArr: [],
-      imgTipArr: [],
+      title: t('det_fill_in_the_blanks.cts.title'),
+      test: 'Hey, remember to <span class="word_box">c</span><span class="word_box">i</span><span class="word_box">r</span><span class="word_box">c</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span>  those party invitations to all the guests, we need to spread the word quickly.',
     },
+  ];
+});
+const comp_the_s3 = computed(() => {
+  return [
     {
-      h2: t('det_read_and_select_course.articelContent.a20_h2'),
-      descArr: [t('det_read_and_select_course.articelContent.a20')],
-      imgArr: [],
-      imgTipArr: [],
+      title: t('det_fill_in_the_blanks.cts.title'),
+      test: 'An election winner is determined when the votes for one candidate <span class="word_box">o</span><span class="word_box">u</span><span class="word_box">t</span><span class="word_box">n</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span>  the votes for the other candidates.',
+    },
+  ];
+});
+const comp_the_s4 = computed(() => {
+  return [
+    {
+      title: t('det_fill_in_the_blanks.cts.title'),
+      test: 'Despite heavy rain, a large <span class="word_box">c</span><span class="word_box">r</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span> turned up to support the local soccer team.',
+    },
+  ];
+});
+const comp_the_s5 = computed(() => {
+  return [
+    {
+      title: t('det_fill_in_the_blanks.cts.title'),
+      test: 'Having a hearty meal always seems to <span class="word_box">e</span><span class="word_box">n</span><span class="word_box">e</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span> me for the rest of the day.',
+    },
+  ];
+});
+const comp_the_s6 = computed(() => {
+  return [
+    {
+      title: t('det_fill_in_the_blanks.cts.title'),
+      test: 'I’ve been mulling over ideas about life’s purpose, kind of like a personal <span class="word_box">p</span><span class="word_box">h</span><span class="word_box">i</span><span class="word_box">l</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span> me for the rest of the day.',
+    },
+  ];
+});
+const comp_the_s7 = computed(() => {
+  return [
+    {
+      title: t('det_fill_in_the_blanks.cts.title'),
+      test: 'Smiling at her finished painting, she was <span class="word_box">p</span><span class="word_box">l</span><span class="word_box">e</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span> to see her emotions coming to life on the canvas.',
+    },
+  ];
+});
+const comp_the_s8 = computed(() => {
+  return [
+    {
+      title: t('det_fill_in_the_blanks.cts.title'),
+      test: 'In the film, the storm was used <span class="word_box">s</span><span class="word_box">y</span><span class="word_box">m</span><span class="word_box">b</span><span class="word_box">o</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span><span class="word_box">&nbsp;</span> to indicate the character’s inner turmoil.',
     },
   ];
 });
 const desc_img_tipsArr2 = computed(() => {
   return [
     {
-      h2: null,
-      descArr: [t('det_read_and_select_course.articelContent2.a1')],
+      h2: '',
+      descArr: [t('det_fill_in_the_blanks.articelContent2.a1'), t('det_fill_in_the_blanks.articelContent2.a2')],
       imgArr: [],
       imgTipArr: [],
     },
+  ];
+});
+const desc_img_tipsArr3 = computed(() => {
+  return [
     {
-      h2: null,
-      descArr: [t('det_read_and_select_course.articelContent2.a2')],
+      h2: '',
+      descArr: [t('det_fill_in_the_blanks.articelContent3.a1')],
       imgArr: [],
       imgTipArr: [],
     },
+  ];
+});
+const desc_img_tipsArr4 = computed(() => {
+  return [
     {
-      h2: null,
-      descArr: [t('det_read_and_select_course.articelContent2.a3')],
+      h3: t('det_fill_in_the_blanks.articelContent4.h3'),
+      descArr: [t('det_fill_in_the_blanks.articelContent4.a1')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const desc_img_tipsArr5 = computed(() => {
+  return [
+    {
+      h3: '',
+      descArr: [t('det_fill_in_the_blanks.articelContent5.a1')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const desc_img_tipsArr6 = computed(() => {
+  return [
+    {
+      h3: t('det_fill_in_the_blanks.articelContent6.h3'),
+      descArr: [t('det_fill_in_the_blanks.articelContent6.a1')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const desc_img_tipsArr7 = computed(() => {
+  return [
+    {
+      h3: '',
+      descArr: [t('det_fill_in_the_blanks.articelContent7.a1'), t('det_fill_in_the_blanks.articelContent7.a2')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const desc_img_tipsArr8 = computed(() => {
+  return [
+    {
+      h3: '',
+      descArr: [t('det_fill_in_the_blanks.articelContent8.a1')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const desc_img_tipsArr9 = computed(() => {
+  return [
+    {
+      h3: t('det_fill_in_the_blanks.articelContent9.h3'),
+      descArr: [t('det_fill_in_the_blanks.articelContent9.a1')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const desc_img_tipsArr10 = computed(() => {
+  return [
+    {
+      h3: '',
+      descArr: [t('det_fill_in_the_blanks.articelContent10.a1')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const desc_img_tipsArr11 = computed(() => {
+  return [
+    {
+      h3: t('det_fill_in_the_blanks.articelContent11.h3'),
+      descArr: [t('det_fill_in_the_blanks.articelContent11.a1')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const desc_img_tipsArr12 = computed(() => {
+  return [
+    {
+      h3: '',
+      descArr: [t('det_fill_in_the_blanks.articelContent12.a1'), t('det_fill_in_the_blanks.articelContent12.a2')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const desc_img_tipsArr13 = computed(() => {
+  return [
+    {
+      h3: '',
+      descArr: [t('det_fill_in_the_blanks.articelContent13.a1')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const desc_img_tipsArr14 = computed(() => {
+  return [
+    {
+      h2: t('det_fill_in_the_blanks.articelContent14.h2'),
+      descArr: [t('det_fill_in_the_blanks.articelContent14.a1')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const desc_img_tipsArr15 = computed(() => {
+  return [
+    {
+      h2: '',
+      descArr: [
+        t('det_fill_in_the_blanks.articelContent15.a1'),
+        t('det_fill_in_the_blanks.articelContent15.a2'),
+        t('det_fill_in_the_blanks.articelContent15.a3'),
+      ],
       imgArr: [],
       imgTipArr: [],
     },
@@ -250,16 +332,16 @@ const desc_img_tipsArr2 = computed(() => {
 const a_list_data = computed(() => {
   return [
     {
-      name: t('det_read_and_select_course.a_list.a1name'),
+      name: t('det_fill_in_the_blanks.a_list.a1name'),
       url: 'https://prep.detpractice.com/tag/duolingo-english-test/',
     },
     {
-      name: t('det_read_and_select_course.a_list.a2name'),
-      url: 'https://prep.detpractice.com/tag/duolingo-english-test-reading/',
+      name: t('det_fill_in_the_blanks.a_list.a2name'),
+      url: 'https://prep.detpractice.com/tag/duolingo-english-test-course/',
     },
     {
-      name: t('det_read_and_select_course.a_list.a3name'),
-      url: 'https://prep.detpractice.com/tag/read-and-select/',
+      name: t('det_fill_in_the_blanks.a_list.a3name'),
+      url: 'https://prep.detpractice.com/tag/duolingo-english-test-reading/',
     },
   ];
 });
@@ -277,13 +359,73 @@ const a_list_data = computed(() => {
         <my_video :video_url="video_data.video_url" :video_title="video_data.video_title"></my_video>
         <table_of_con :title="table_of_con_data.title" :list="table_of_con_data.list" />
         <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr" :key="index">
+          <desc_img_tips
+            :h2="item.h2"
+            :h3="item.h3"
+            :descArr="item.descArr"
+            :imgArr="item.imgArr"
+            :imgTipArr="item.imgTipArr"
+          />
+        </div>
+        <complete_the_sen :list="comp_the_s1" />
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr2" :key="index">
+          <desc_img_tips
+            :h2="item.h2"
+            :h3="item.h3"
+            :descArr="item.descArr"
+            :imgArr="item.imgArr"
+            :imgTipArr="item.imgTipArr"
+          />
+        </div>
+
+        <complete_the_sen :list="comp_the_s2" />
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr3" :key="index">
+          <desc_img_tips :h2="item.h2" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr4" :key="index">
+          <desc_img_tips :h3="item.h3" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+        <complete_the_sen :list="comp_the_s3" />
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr5" :key="index">
+          <desc_img_tips :h3="item.h3" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr6" :key="index">
+          <desc_img_tips :h3="item.h3" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+
+        <complete_the_sen :list="comp_the_s4" />
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr7" :key="index">
+          <desc_img_tips :h3="item.h3" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+        <complete_the_sen :list="comp_the_s5" />
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr8" :key="index">
+          <desc_img_tips :h3="item.h3" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr9" :key="index">
+          <desc_img_tips :h3="item.h3" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+        <complete_the_sen :list="comp_the_s6" />
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr10" :key="index">
+          <desc_img_tips :h3="item.h3" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr11" :key="index">
+          <desc_img_tips :h3="item.h3" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+
+        <complete_the_sen :list="comp_the_s7" />
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr12" :key="index">
+          <desc_img_tips :h3="item.h3" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+        <complete_the_sen :list="comp_the_s8" />
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr13" :key="index">
+          <desc_img_tips :h3="item.h3" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr14" :key="index">
           <desc_img_tips :h2="item.h2" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
         </div>
 
-        <p>{{ t('det_read_and_select_course.hit') }}</p>
-        <h3>{{ t('det_read_and_select_course.recap') }}</h3>
         <ui_li :list="ui_li_list" />
-        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr2" :key="index">
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr15" :key="index">
           <desc_img_tips :h2="item.h2" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
         </div>
         <a_list :list="a_list_data" />

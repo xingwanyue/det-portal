@@ -1506,24 +1506,20 @@
       "li4": "4. Conclusion"
     },
     "articelContent": {
-      "a1_h2": "“Read and Select” Questions Format and Time Constraints",
-      "a1": "Hi there, welcome to our Duolingo English Test practice hub. Today, we will be discussing the “Read and Select” question type.",
-      "t1": "Read and Select Question UI",
-      "a2": "First, let’s introduce this question format. “Read and Select”, also known as “Word Recognition”, primarily assesses the test taker’s familiarity with word spelling. The format is straightforward – during the test, you will need to determine whether the word displayed on the screen is spelled correctly and click the corresponding button to indicate if it is correct or not. This question type appears 15 to 18 times in the actual test. Each time, a word will be shown in the center of the screen, and you will have only 5 seconds to make a judgment.",
-      "t2": "Read and Select Questions: Intro and Tips",
-      "a3": "Therefore, a good command of word spelling and quick reaction and judgment skills are essential. When answering these questions, carefully read the spelling of each word, as incorrect words often have spellings similar to correct ones, making it easy to select the wrong option if you’re not attentive. ",
-      "a3_1": "Additionally, learning word formation rules, understanding common roots, prefixes, and suffixes, and their meanings can help you make better judgments when necessary. Of course, mastering some spelling rules can also be helpful. For example, in an unstressed closed syllable, when the letters “i” and “e” are together, “i” usually comes before “e”, unless they are preceded by the letter “c”, such as in words like “believe”, “field”, and “niece”.",
-      "a3_2": "Ultimately, to fundamentally improve your accuracy in this question type, you need to memorize more words and expand your vocabulary. Moreover, practicing with the questions in the question bank can help you quickly adapt to the pace of this type of question, understand common incorrect word settings, and improve your accuracy.",
-      "t3": "",
-      "a4_h2": "Word Formation: Roots and Affixes",
-      "a4": "Next, let’s discuss some knowledge of word formation and familiarize ourselves with the concepts of roots and affixes. What is a word root? A word root is the core part of a word and usually carries the basic meaning of the word. Most roots originate from ancient Greek and Latin. For example, “struct” in “construction”, “instruct”, and “destruction” means “to build” or “structure”, while “port” in “transport” and “portable” means “to carry” or “transport”. Then there are affixes, which are letters or combinations of letters added before or after the root to modify the meaning of the root or create a new word.",
-      "a4_1": "Depending on their position in the word, affixes can be further divided into prefixes and suffixes. Prefixes are affixes added before the root. For example, “un-” in “undo” or “unhappy” indicates negation. Suffixes are affixes added after the root. For example, “-able” in “readable” or “likable” means “able to be” or “having the quality of”.",
-      "t4": "Word Roots VS Affixes: Differences",
-      "a5": "Now, let’s look at the differences between roots and affixes. First, in terms of meaning and function, roots usually provide the main meaning of the word, while affixes modify or change that meaning. For example, in the word “inspect”, “in-” is a prefix. In “inspect”, “in-” means “into”, implying the meaning of looking deeply or examining.",
-      "a5_1": "The rest of the word, “-spect”, comes from a Latin root meaning “to look” or “to observe”. Therefore, “inspect” as a whole can be understood as “to go in and observe or examine”. Additionally, in terms of independence, most roots can exist independently as complete words, while affixes cannot exist independently and must be attached to roots to have meaning.",
-      "a5_2": "Let’s illustrate with an example. The suffix “-ness” cannot be used alone; it is used to convert adjectives into nouns. For example, in the word “happiness”, “-ness” is attached to “happy”, converting the adjective into a noun. Finally, let’s look at the position of roots and affixes in words. The root is the central part of the word, while affixes are placed before or after the root.",
-      "a5_3": "For example, in the word “disagreement”, the two affixes “dis-” and “-ment” are located at the beginning and end of the word, respectively, as the prefix and suffix. Just like in the image below, the red parts can be understood as the prefixes and suffixes of the word, while the blue part in the middle can be understood as the root of the word.",
-      "t5": "",
+      "a1_h2": "Introduction to Fill in the Blanks Questions",
+      "a1": "Hello everyone, welcome to the Duolingo English Test Prep Hub. Today, we’ll be discussing the Fill in the Blanks question type. Let’s start with an introduction to this question format:",
+      "t1": "Fill in the Blanks UI",
+      "a2": "The format of Fill in the Blanks questions is quite simple. During the test, you will see a sentence on the screen, usually no longer than 20 words. Within this sentence, there will be one word with missing letters that you need to complete, hence the alternate name “Word Completion.” This question type appears 6 to 9 times in the actual test.",
+      "a2_1": "As it falls under the Comprehension section, it is relatively important. When answering these questions, remember to first understand the sentence before attempting to fill in the blank. The context provided by the sentence can help you complete the question more quickly and accurately.",
+      "a2_2": "Additionally, vocabulary plays a crucial role in determining the accuracy of your answers. Therefore, it’s essential to expand your vocabulary in your daily life, paying special attention to word spellings, as this can greatly assist you in completing these types of questions.",
+      "a2_3": "When filling in the blank, pay attention to the part of speech required, as this can help you narrow down the word choices. Also, practicing with the test question bank is an effective way to prepare for the exam.",
+      "a3_h2": "Question Format and Importance",
+      "a3": "Now, let’s look at the question interface. When encountering this question type, you will first see an introduction page explaining the frequency of Fill in the Blanks questions and the time allotted for each question.",
+      "t3": "Question Intro Page",
+      "a4": "As you can see, you only have 20 seconds to answer each question, which means you need to be able to read and solve problems quickly. Before we start, let’s discuss some problem-solving techniques. ",
+      "a5_h2": "Problem-Solving Techniques",
+      "a5_h3": "Understanding the Context",
+      "a5": "Let’s look at the first one: understanding the context. Before answering the question, carefully read the entire sentence to ensure you understand the context before attempting to fill in the blank. Let’s look at an example question:",
       "a6_h2": "Common Error Patterns",
       "a6": "Let’s look at some common error patterns. First, there are similar words, where common errors include letter substitution, letter addition, and letter omission in correct words. Therefore, before making a selection, we need to carefully read and spell the selected word to see if it is completely correct and whether there are any added, omitted, or substituted letters.",
       "t6": "Common Patterns of Frequently Misspelled Words Example 1: slush",
@@ -1561,5 +1557,73 @@
       "a20_h2": "Practice Questions",
       "a20": "That’s all for this lesson. Next, let’s focus on practicing “Read and Select” questions. There are 100 words here, some of which are incorrect. Please try to pick them out:"
     },
+    "articelContent2": {
+      "a1": "By translating this sentence, we can understand that it roughly means: The impact of something that undermines social cohesion is counteracted by acts of kindness. Therefore, the blank should be filled with a word that represents a negative quality, the opposite of kindness. The word “wickedness” means “evil” and fits the context well. With this, we have the answer to this question.",
+      "a2": " Let’s look at another question:"
+    },
+    "articelContent3": {
+      "a1": "This sentence can be roughly translated as: Remember to do something with those party invitations to all the guests; we need to spread the word quickly. So, we can understand that the context of the sentence is about distributing party invitations and the need to spread the message quickly. The word “circulate” means “to distribute or pass around,” which fits the context, indicating that the invitations should be distributed to all guests. This way, we have solved this question."
+    },
+    "articelContent4": {
+      "h3": "Paying Attention to Keywords",
+      "a1": "Let’s look at problem-solving technique 2: paying attention to keywords. Content words in a sentence, such as nouns, verbs, adjectives, and adverbs, are often the keywords or key phrases in the sentence. By analyzing these words, we can sometimes determine the word that needs to be filled in. Let’s look at a specific question:"
+    },
+    "articelContent5": {
+      "a1": "This sentence means that when one candidate’s vote count does something to the other candidates’ vote counts, the election winner is determined. In this sentence, the keywords “votes” and “winner” imply that the winner has more votes. The word “outnumber” means to exceed in number, which fits the context, indicating that one candidate’s vote count exceeds the other candidates’, resulting in their victory."
+    },
+    "articelContent6": {
+      "h3": "Logical Inference",
+      "a1": "Let’s look at the next problem-solving technique: logical inference. We can answer questions based on logical reasoning or common sense. Let’s look at an example question:"
+    },
+    "articelContent7": {
+      "a1": "We can interpret this as: Despite heavy rain, a large number of something showed up to support the local soccer team. Here, we can infer that in stormy weather, a large group of people appeared to support the local soccer team. Therefore, “crowd” is the appropriate answer.",
+      "a2": "Let’s look at the next question: ",
+    },
+    "articelContent8": {
+      "a1": "This sentence means that having a hearty meal always makes me feel something for the rest of the day. From the context, we can infer that a hearty meal always makes “me” feel something that lasts all day. The word “energize” means to give energy or invigorate, which fits the logic, indicating that a hearty meal provides “me” with the energy needed for the entire day."
+    },
+    "articelContent9": {
+      "h3": "Word Class Matching",
+      "a1": "Let’s look at the next problem-solving technique: word class matching. We can determine the part of speech of the word to be filled in by looking at its position in the sentence. For example, if the word to be filled in is in the subject position, we usually need to fill in a noun or pronoun. If the word to be filled in is near a verb, it’s likely to be an adverb. Let’s look at the following example question:"
+    },
+    "articelContent10": {
+      "a1": "This sentence means: I’ve been thinking about ideas regarding life’s purpose, kind of like a personal something. The word to be filled in is after the adjective “personal,” so it should be a noun to form a noun phrase. The word “philosophy” means a set of ideas about life, and it is a noun that fits the grammatical requirements of the sentence, indicating that “I” have been thinking about ideas regarding life’s purpose, forming a kind of personal philosophy."
+    },
+    "articelContent11": {
+      "h3": "Word Roots and Affixes",
+      "a1": "Let’s look at another problem-solving technique: word roots and affixes. Sometimes we can infer the word to be filled in based on the meaning of its root and affixes. Let’s look at the following question:"
+    },
+    "articelContent12": {
+      "a1": "This sentence means: She smiled at her finished painting, she was something to see her emotions coming to life on the canvas. The sentence describes “her” feelings when looking at her completed painting. Smiling implies a positive emotion. The root “plea” means “satisfaction, happiness,” and the suffix “-ed” indicates the past participle of an adjective. Therefore, “pleased,” meaning happy or satisfied, fits the context, expressing that “she” was satisfied with her painting.",
+      "a2": "Let’s look at the next question:"
+    },
+    "articelContent13": {
+      "a1": "This sentence means: In the film, the storm was used to somehow indicate the character’s inner turmoil. Here, the prefix “symbol-” represents “symbolize,” and this word is after a verb, so it is most likely an adverb. Therefore, the word we need to fill in is “symbolically,” and with that, we have completed this question."
+    },
+    "articelContent14": {
+      "h2": "Recap & Conclusion",
+      "a1": "The Fill in the Blanks question type is a crucial component of the Duolingo English Test, appearing 6 to 9 times in the Comprehension section. To excel in this question type, test-takers should:"
+    },
+    "ui_li": {
+      "li1": "1.Understand the overall context of the sentence",
+      "li2": "2.Pay attention to keywords and phrases",
+      "li3": "3.Use logical inference and common sense",
+      "li4": "4.Match the word class (part of speech) with the sentence structure",
+      "li5": "5.Utilize knowledge of word roots and affixes",
+      "li6": "6.Practice regularly with sample questions"
+    },
+    "articelContent15": {
+      "a1": "By mastering these techniques and expanding their vocabulary, test-takers can significantly improve their performance on Fill in the Blanks questions.",
+      "a2": "Mastering the Fill in the Blanks question type is essential for success in the Duolingo English Test. By understanding the question format, employing various problem-solving techniques, and practicing regularly, test-takers can enhance their skills and confidence.",
+      "a3": "Remember that vocabulary expansion and attention to word spelling are crucial for long-term improvement. With dedicated preparation and the strategies outlined in this guide, you’ll be well-equipped to tackle Fill in the Blanks questions effectively and boost your overall performance on the Duolingo English Test."
+    },
+    "a_list": {
+      "a1name": "duolingo english test",
+      "a2name": "duolingo english test course",
+      "a3name": "duolingo english test reading"
+    },
+    "cts": {
+      "title": "Complete the sentence with the correct word."
+    }
   }
 }
