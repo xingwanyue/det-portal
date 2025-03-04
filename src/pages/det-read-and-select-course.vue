@@ -6,11 +6,14 @@ import { domain } from '@/utils';
 import desc_img_tips from '@/components/prepCompoment/desc_img_tips.vue';
 import ui_li from '@/components/prepCompoment/ui_li.vue';
 import a_list from '@/components/prepCompoment/a_list.vue';
+import Summary from '@/components/prepCompoment/summary.vue';
+import my_video from '@/components/prepCompoment/video.vue';
+import table_of_con from '@/components/prepCompoment/table_of_con.vue';
 
 const state = reactive({});
 useSeoMeta({
   title: t('det_read_and_select_course.seometa.title'),
-  description: t('tos.seometa.description'),
+  description: t('det_read_and_select_course.seometa.description'),
 });
 
 const localePath = useLocalePath();
@@ -29,10 +32,65 @@ useHead({
     { name: 'twitter:title', content: t('det_read_and_select_course.seometa.title') },
     {
       name: 'twitter:description',
-      content: t('tos.seometa.description'),
+      content: t('det_read_and_select_course.seometa.description'),
     },
     { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
+});
+const summary_data = computed(() => {
+  return {
+    title: t('det_read_and_select_course.summary.title'),
+    desc: t('det_read_and_select_course.summary.desc'),
+    video_title: t('det_read_and_select_course.summary.video_title'),
+  };
+});
+const video_data = computed(() => {
+  return {
+    video_url: 'https://www.youtube.com/embed/J7ymVabfTJk?si=f0UJjprrSbKXba49',
+    video_title: t('det_read_and_select_course.video.video_title'),
+  };
+});
+const table_of_con_data = computed(() => {
+  return {
+    title: t('det_read_and_select_course.table_of_con.title'),
+    list: [
+      { name: t('det_read_and_select_course.table_of_con.li1'), children: [] },
+      {
+        name: t('det_read_and_select_course.table_of_con.li2'),
+        children: [
+          { name: t('det_read_and_select_course.table_of_con.li2_1') },
+          { name: t('det_read_and_select_course.table_of_con.li2_2') },
+          { name: t('det_read_and_select_course.table_of_con.li2_3') },
+        ],
+      },
+      {
+        name: t('det_read_and_select_course.table_of_con.li3'),
+        children: [
+          { name: t('det_read_and_select_course.table_of_con.li3_1') },
+          { name: t('det_read_and_select_course.table_of_con.li3_2') },
+          { name: t('det_read_and_select_course.table_of_con.li3_3') },
+        ],
+      },
+      { name: t('det_read_and_select_course.table_of_con.li4'), children: [] },
+      { name: t('det_read_and_select_course.table_of_con.li5'), children: [] },
+      { name: t('det_read_and_select_course.table_of_con.li6'), children: [] },
+    ],
+  };
+});
+const table_of_con_data2 = computed(() => {
+  return {
+    title: t('det_read_and_select_course.table_of_con2.title'),
+    list: [
+      { name: t('det_read_and_select_course.table_of_con2.li1'), children: [] },
+      { name: t('det_read_and_select_course.table_of_con2.li2'), children: [] },
+      { name: t('det_read_and_select_course.table_of_con2.li3'), children: [] },
+      { name: t('det_read_and_select_course.table_of_con2.li4'), children: [] },
+      { name: t('det_read_and_select_course.table_of_con2.li5'), children: [] },
+      { name: t('det_read_and_select_course.table_of_con2.li6'), children: [] },
+      { name: t('det_read_and_select_course.table_of_con2.li7'), children: [] },
+      { name: t('det_read_and_select_course.table_of_con2.li8'), children: [] },
+    ],
+  };
 });
 const desc_img_tipsArr = computed(() => {
   return [
@@ -164,6 +222,7 @@ const desc_img_tipsArr = computed(() => {
         t('det_read_and_select_course.articelContent.a19'),
         t('det_read_and_select_course.articelContent.a19_1'),
         t('det_read_and_select_course.articelContent.a19_2'),
+        t('det_read_and_select_course.articelContent.a19_3'),
       ],
       imgArr: [],
       imgTipArr: [],
@@ -580,18 +639,7 @@ const right_or_wrong_word_out = computed(() => {
     },
   ];
 });
-const ui_li_list = computed(() => {
-  return [
-    t('det_read_and_select_course.ui_li.li1'),
-    t('det_read_and_select_course.ui_li.li2'),
-    t('det_read_and_select_course.ui_li.li3'),
-    t('det_read_and_select_course.ui_li.li4'),
-    t('det_read_and_select_course.ui_li.li5'),
-    t('det_read_and_select_course.ui_li.li6'),
-    t('det_read_and_select_course.ui_li.li7'),
-    t('det_read_and_select_course.ui_li.li8'),
-  ];
-});
+
 const desc_img_tipsArr2 = computed(() => {
   return [
     {
@@ -639,38 +687,10 @@ const openShowWrongWord = ref(false);
         <div class="banner_img">
           <img src="/img/det-read-and-select-course/read_select_course.jpg" alt="" />
         </div>
-        <h1 class="h1 p_h1">DET Prep Course: Read and Select Questions</h1>
-        <div class="Summary p_mgt_20">Summary</div>
-        <div class="summayr_content">
-          This comprehensive guide focuses on the “Read and Select” question type in the Duolingo English Test. It
-          covers the format, importance of word spelling, tips for answering questions, and strategies for preparation.
-          The post also delves into word formation, roots, affixes, and common error patterns to help test-takers
-          improve their performance.
-        </div>
-        <div class="video_font p_mgt_20 p_mgb_20">A video version of this course:</div>
-        <div class="video_out">video</div>
-        <h2 class="p_h2 p_mgt_20">Table of Contents</h2>
-        <div class="ul_of_contents">
-          <ul>
-            <li>1. “Read and Select” Questions Format and Time Constraints</li>
-            <li>2. Word Formation: Roots and Affixes</li>
-            <ul>
-              <li>2.1 Understanding Word Roots</li>
-              <li>2.2 Prefixes and Suffixes</li>
-              <li>2.3 Differences Between Roots and Affixes</li>
-            </ul>
-            <li>3. Common Error Patterns</li>
-            <ul>
-              <li>3.1 Similar Words</li>
-              <li>3.2 Letter Substitution, Addition, and Omission</li>
-              <li>3.3 Word Form Errors</li>
-            </ul>
-            <li>4. Tips from the Duolingo English Test Official Guide</li>
-            <li>5. Test-Taking and Preparation Suggestions</li>
-            <li>6. Practice Questions</li>
-          </ul>
-        </div>
-
+        <h1 class="h1 p_h1">{{ t('det_read_and_select_course.h1') }}</h1>
+        <Summary :title="summary_data.title" :desc="summary_data.desc" :video_title="summary_data.video_title" />
+        <my_video :title="video_data.video_title" :video_url="video_data.video_url" />
+        <table_of_con :title="table_of_con_data.title" :list="table_of_con_data.list" />
         <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr" :key="index">
           <desc_img_tips :h2="item.h2" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
         </div>
@@ -702,8 +722,7 @@ const openShowWrongWord = ref(false);
         </div>
         <div class="show_wrong_word_btn" @click="openShowWrongWord = !openShowWrongWord">Show Answer</div>
         <p>{{ t('det_read_and_select_course.hit') }}</p>
-        <h3>{{ t('det_read_and_select_course.recap') }}</h3>
-        <ui_li :list="ui_li_list" />
+        <table_of_con :title="table_of_con_data2.title" :list="table_of_con_data2.list" />
         <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr2" :key="index">
           <desc_img_tips :h2="item.h2" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
         </div>
