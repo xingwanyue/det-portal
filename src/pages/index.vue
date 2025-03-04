@@ -50,7 +50,6 @@ const userPingLunResponse = computed(() => {
     pinglunMid[i + 1].rate = Number(pinglunMid[i + 1].rate);
     pinglunArr.push([pinglunMid[i], pinglunMid[i + 1]]);
   }
-  console.log(pinglunArr);
   return pinglunArr;
 });
 const haveCookie = ref(false);
