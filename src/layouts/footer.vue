@@ -233,7 +233,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         <div class="one_link_list_title">{{ Company.name }}</div>
         <div v-for="(itemin, indexin) in Company.list" :key="indexin" class="one_link_list_detail">
           <template v-if="itemin.url === '/sitemap'">
-            <NuxtLink style="display: none" :to="`https://www.${domain}/sitemap.xml`" :title="itemin.name">
+            <NuxtLink style="display: none" to="/sitemap.xml" :title="itemin.name">
               {{ itemin.name }}
             </NuxtLink>
           </template>
