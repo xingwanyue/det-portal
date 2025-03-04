@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { domain } from '@/utils';
 import { reactive } from 'vue';
 const route = useRoute();
 
