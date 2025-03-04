@@ -1431,6 +1431,28 @@
       "a19_3": "Use your fragmented time each day to repeatedly memorize and review, focusing on the spelling of words when memorizing. Vocabulary is accumulated slowly. I believe that through a period of practice and accumulation, your vocabulary will gradually expand, and you will achieve good results in the “Read and Select” questions!",
       "a20_h2": "Practice Questions",
       "a20": "That’s all for this lesson. Next, let’s focus on practicing “Read and Select” questions. There are 100 words here, some of which are incorrect. Please try to pick them out:"
+    },
+    "hit": "Hint: Misspelled words will be shown in red.",
+    "recap": "Recap",
+    "ui_li": {
+      "li1": "The \"Read and Select\" question type assesses word spelling recognition.",
+      "li2": "Test-takers have 5 seconds to judge whether a displayed word is spelled correctly.",
+      "li3": "Understanding word formation, roots, and affixes can improve performance.",
+      "li4": "Common error patterns include letter substitution, addition, and omission.",
+      "li5": "Carefully read each word and consider potential errors before selecting an answer.",
+      "li6": "Practice regularly with the Duolingo question bank and focus on expanding your vocabulary.",
+      "li7": "Use observation and reading-aloud techniques to help make judgments during the test.",
+      "li8": "Remember that longer words may be easier to spot issues with, and every word must contain at least one vowel."
+    },
+    "articelContent2": {
+      "a1": "Alright, that concludes our practice for today. Remember, consistent practice is key to improving your performance on the \"Read and Select\" question type.",
+      "a2": "As you continue to study, pay attention to word patterns, common spelling rules, and exceptions in English. Don't be discouraged if you make mistakes - they're a natural part of the learning process. Use them as opportunities to identify areas for improvement.",
+      "a3": "Lastly, maintain a positive attitude and stay focused during the actual test. Trust in your preparation, manage your time wisely, and approach each question with confidence. With dedication and the right strategies, you'll be well-equipped to tackle the \"Read and Select\" questions and excel in your Duolingo English Test. Good luck with your test!",
+    },
+    "a_list": {
+      "a1name": "duolingo english test",
+      "a2name": "duolingo english test reading",
+      "a3name": "read and select"
     }
   }
 }

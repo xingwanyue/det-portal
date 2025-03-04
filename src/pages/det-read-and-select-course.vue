@@ -4,6 +4,8 @@ const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain } from '@/utils';
 import desc_img_tips from '@/components/prepCompoment/desc_img_tips.vue';
+import ui_li from '@/components/prepCompoment/ui_li.vue';
+import a_list from '@/components/prepCompoment/a_list.vue';
 
 const state = reactive({});
 useSeoMeta({
@@ -174,6 +176,461 @@ const desc_img_tipsArr = computed(() => {
     },
   ];
 });
+const right_or_wrong_word_out = computed(() => {
+  return [
+    {
+      word: 'correct',
+      is_correct: true,
+    },
+    {
+      word: 'incorrect',
+      is_correct: false,
+    },
+    {
+      word: 'indispensable',
+      is_correct: true,
+    },
+    {
+      word: 'interruption',
+      is_correct: false,
+    },
+    {
+      word: 'believe',
+      is_correct: true,
+    },
+    {
+      word: 'recieve',
+      is_correct: false,
+    },
+    {
+      word: 'accommodate',
+      is_correct: true,
+    },
+    {
+      word: 'separate',
+      is_correct: false,
+    },
+    {
+      word: 'existence',
+      is_correct: true,
+    },
+    {
+      word: 'accross',
+      is_correct: false,
+    },
+    {
+      word: 'definitely',
+      is_correct: true,
+    },
+    {
+      word: 'ocurrance',
+      is_correct: false,
+    },
+    {
+      word: 'achievement',
+      is_correct: true,
+    },
+    {
+      word: 'maintenence',
+      is_correct: false,
+    },
+    {
+      word: 'privilege',
+      is_correct: true,
+    },
+    {
+      word: 'wierd',
+      is_correct: false,
+    },
+    {
+      word: 'successful',
+      is_correct: true,
+    },
+    {
+      word: 'tommorow',
+      is_correct: false,
+    },
+    {
+      word: 'recommend',
+      is_correct: true,
+    },
+    {
+      word: 'acknowledgment',
+      is_correct: false,
+    },
+    {
+      word: 'embarrass',
+      is_correct: true,
+    },
+    {
+      word: 'neccessary',
+      is_correct: false,
+    },
+    {
+      word: 'conscientious',
+      is_correct: true,
+    },
+    {
+      word: 'harrass',
+      is_correct: false,
+    },
+    {
+      word: 'supersede',
+      is_correct: true,
+    },
+    {
+      word: 'occurence',
+      is_correct: false,
+    },
+    {
+      word: 'irresistible',
+      is_correct: true,
+    },
+    {
+      word: 'occured',
+      is_correct: false,
+    },
+    {
+      word: 'judgement',
+      is_correct: true,
+    },
+    {
+      word: 'license',
+      is_correct: false,
+    },
+    {
+      word: 'friend',
+      is_correct: true,
+    },
+    {
+      word: 'until',
+      is_correct: false,
+    },
+    {
+      word: 'noticeable',
+      is_correct: true,
+    },
+    {
+      word: 'accomodate',
+      is_correct: false,
+    },
+    {
+      word: 'guarantee',
+      is_correct: true,
+    },
+    {
+      word: 'beginning',
+      is_correct: false,
+    },
+    {
+      word: 'referred',
+      is_correct: true,
+    },
+    {
+      word: 'arguement',
+      is_correct: false,
+    },
+    {
+      word: 'necessary',
+      is_correct: true,
+    },
+    {
+      word: 'misspell',
+      is_correct: true,
+    },
+    {
+      word: 'occasionally',
+      is_correct: true,
+    },
+    {
+      word: 'restarant',
+      is_correct: false,
+    },
+    {
+      word: 'mischievous',
+      is_correct: true,
+    },
+    {
+      word: 'perseverance',
+      is_correct: true,
+    },
+    {
+      word: 'occurred',
+      is_correct: true,
+    },
+    {
+      word: 'noticeable',
+      is_correct: false,
+    },
+    {
+      word: 'rhythm',
+      is_correct: true,
+    },
+    {
+      word: 'remember',
+      is_correct: false,
+    },
+    {
+      word: 'receipt',
+      is_correct: true,
+    },
+    {
+      word: 'definately',
+      is_correct: false,
+    },
+    {
+      word: 'discipline',
+      is_correct: true,
+    },
+    {
+      word: 'apparent',
+      is_correct: true,
+    },
+    {
+      word: 'consensus',
+      is_correct: true,
+    },
+    {
+      word: 'publicly',
+      is_correct: true,
+    },
+    {
+      word: 'sieze',
+      is_correct: false,
+    },
+    {
+      word: 'separate',
+      is_correct: true,
+    },
+    {
+      word: 'definite',
+      is_correct: true,
+    },
+    {
+      word: 'immediatly',
+      is_correct: false,
+    },
+    {
+      word: 'category',
+      is_correct: true,
+    },
+    {
+      word: 'independent',
+      is_correct: true,
+    },
+    {
+      word: 'truly',
+      is_correct: true,
+    },
+    {
+      word: 'acceptible',
+      is_correct: false,
+    },
+    {
+      word: 'recommendation',
+      is_correct: true,
+    },
+    {
+      word: 'facinating',
+      is_correct: false,
+    },
+    {
+      word: 'grateful',
+      is_correct: true,
+    },
+    {
+      word: 'until',
+      is_correct: false,
+    },
+    {
+      word: 'acknowledge',
+      is_correct: true,
+    },
+    {
+      word: 'neccessary',
+      is_correct: false,
+    },
+    {
+      word: 'environment',
+      is_correct: true,
+    },
+    {
+      word: 'occuring',
+      is_correct: false,
+    },
+    {
+      word: 'their',
+      is_correct: true,
+    },
+    {
+      word: 'truly',
+      is_correct: false,
+    },
+    {
+      word: 'pharaoh',
+      is_correct: true,
+    },
+    {
+      word: 'occuring',
+      is_correct: false,
+    },
+    {
+      word: 'pronunciation',
+      is_correct: true,
+    },
+    {
+      word: 'until',
+      is_correct: false,
+    },
+    {
+      word: 'pastime',
+      is_correct: true,
+    },
+    {
+      word: 'calender',
+      is_correct: false,
+    },
+    {
+      word: 'occurance',
+      is_correct: false,
+    },
+    {
+      word: 'accommodate',
+      is_correct: true,
+    },
+    {
+      word: 'separate',
+      is_correct: true,
+    },
+    {
+      word: 'calendar',
+      is_correct: true,
+    },
+    {
+      word: 'believe',
+      is_correct: true,
+    },
+    {
+      word: 'recieve',
+      is_correct: false,
+    },
+    {
+      word: 'prejudice',
+      is_correct: true,
+    },
+    {
+      word: 'immediate',
+      is_correct: true,
+    },
+    {
+      word: 'existance',
+      is_correct: false,
+    },
+    {
+      word: 'humorous',
+      is_correct: true,
+    },
+    {
+      word: 'colleague',
+      is_correct: true,
+    },
+    {
+      word: 'refered',
+      is_correct: false,
+    },
+    {
+      word: 'knowledge',
+      is_correct: true,
+    },
+    {
+      word: 'questionnaire',
+      is_correct: true,
+    },
+    {
+      word: 'indispensible',
+      is_correct: false,
+    },
+    {
+      word: 'irresistable',
+      is_correct: false,
+    },
+    {
+      word: 'millenium',
+      is_correct: false,
+    },
+    {
+      word: 'occurence',
+      is_correct: false,
+    },
+    {
+      word: 'permanent',
+      is_correct: true,
+    },
+    {
+      word: 'occurance',
+      is_correct: true,
+    },
+    {
+      word: 'supersede',
+      is_correct: true,
+    },
+    {
+      word: 'neccessary',
+      is_correct: false,
+    },
+  ];
+});
+const ui_li_list = computed(() => {
+  return [
+    t('det_read_and_select_course.ui_li.li1'),
+    t('det_read_and_select_course.ui_li.li2'),
+    t('det_read_and_select_course.ui_li.li3'),
+    t('det_read_and_select_course.ui_li.li4'),
+    t('det_read_and_select_course.ui_li.li5'),
+    t('det_read_and_select_course.ui_li.li6'),
+    t('det_read_and_select_course.ui_li.li7'),
+    t('det_read_and_select_course.ui_li.li8'),
+  ];
+});
+const desc_img_tipsArr2 = computed(() => {
+  return [
+    {
+      h2: null,
+      descArr: [t('det_read_and_select_course.articelContent2.a1')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+    {
+      h2: null,
+      descArr: [t('det_read_and_select_course.articelContent2.a2')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+    {
+      h2: null,
+      descArr: [t('det_read_and_select_course.articelContent2.a3')],
+      imgArr: [],
+      imgTipArr: [],
+    },
+  ];
+});
+const a_list_data = computed(() => {
+  return [
+    {
+      name: t('det_read_and_select_course.a_list.a1name'),
+      url: 'https://prep.detpractice.com/tag/duolingo-english-test/',
+    },
+    {
+      name: t('det_read_and_select_course.a_list.a2name'),
+      url: 'https://prep.detpractice.com/tag/duolingo-english-test-reading/',
+    },
+    {
+      name: t('det_read_and_select_course.a_list.a3name'),
+      url: 'https://prep.detpractice.com/tag/read-and-select/',
+    },
+  ];
+});
+const openShowWrongWord = ref(false);
 </script>
 <template>
   <div class="det_read_and_select_course_wrapper">
@@ -217,14 +674,42 @@ const desc_img_tipsArr = computed(() => {
         <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr" :key="index">
           <desc_img_tips :h2="item.h2" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
         </div>
+        <div class="right_or_wrong_word_out">
+          <div class="right_or_wrong_word_out_item" v-for="(item, index) in right_or_wrong_word_out" :key="index">
+            <template v-if="openShowWrongWord">
+              <div
+                :class="
+                  item.is_correct
+                    ? 'right_or_wrong_word_out_item_is_correct'
+                    : 'right_or_wrong_word_out_item_is_correct right_or_wrong_word_out_item_is_correct_false'
+                "
+              ></div>
+              <div
+                :class="
+                  item.is_correct
+                    ? 'right_or_wrong_word_out_item_word'
+                    : 'right_or_wrong_word_out_item_word right_or_wrong_word_out_item_word_false'
+                "
+              >
+                {{ item.word }}
+              </div>
+            </template>
+            <template v-else>
+              <div class="right_or_wrong_word_out_item_is_correct"></div>
+              <div class="right_or_wrong_word_out_item_word">{{ item.word }}</div>
+            </template>
+          </div>
+        </div>
+        <div class="show_wrong_word_btn" @click="openShowWrongWord = !openShowWrongWord">Show Answer</div>
+        <p>{{ t('det_read_and_select_course.hit') }}</p>
+        <h3>{{ t('det_read_and_select_course.recap') }}</h3>
+        <ui_li :list="ui_li_list" />
+        <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr2" :key="index">
+          <desc_img_tips :h2="item.h2" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
+        </div>
+        <a_list :list="a_list_data" />
       </div>
-      <div class="det_read_and_select_course_right">
-        First, let’s introduce this question format. “Read and Select”, also known as “Word Recognition”, primarily
-        assesses the test taker’s familiarity with word spelling. The format is straightforward – during the test, you
-        will need to determine whether the word displayed on the screen is spelled correctly and click the corresponding
-        button to indicate if it is correct or not. This question type appears 15 to 18 times in the actual test. Each
-        time, a word will be shown in the center of the screen, and you will have only 5 seconds to make a judgment.
-      </div>
+      <div class="det_read_and_select_course_right"></div>
     </div>
   </div>
 </template>
@@ -263,6 +748,47 @@ const desc_img_tipsArr = computed(() => {
       }
       .video_out {
         border: 1px red solid;
+      }
+      .right_or_wrong_word_out {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+        .right_or_wrong_word_out_item {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          grid-gap: 10px;
+          margin-bottom: 10px;
+          .right_or_wrong_word_out_item_is_correct {
+            background-color: rgb(17, 17, 17);
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+          }
+          .right_or_wrong_word_out_item_is_correct_false {
+            background-color: rgb(255, 0, 0);
+          }
+          .right_or_wrong_word_out_item_word {
+            color: rgb(17, 17, 17);
+          }
+          .right_or_wrong_word_out_item_word_false {
+            color: rgb(255, 0, 0);
+          }
+        }
+      }
+      .show_wrong_word_btn {
+        background: #f66442;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 22px;
+        padding: 11px 16px;
+        cursor: pointer;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 25px;
       }
     }
     .det_read_and_select_course_right {
