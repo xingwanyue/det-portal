@@ -101,7 +101,38 @@ console.log('p_11 content:', t('det_read_and_complete_prep_course.p_11'));
         <p>{{ t('det_read_and_complete_prep_course.p_47') }}</p>
         <p>{{ t('det_read_and_complete_prep_course.p_48') }}</p>
         <p>{{ t('det_read_and_complete_prep_course.p_49') }}</p>
-        <table1></table1>
+        <table>
+          <tbody>
+            <tr>
+              <th>{{ t('det_read_and_complete_prep_course.table1.table1') }}</th>
+              <th>{{ t('det_read_and_complete_prep_course.table1.table2') }}</th>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table3') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table4') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table5') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table6') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table7') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table8') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table9') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table10') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table11') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table12') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table13') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table14') }}</td>
+            </tr>
+          </tbody>
+        </table>
         <p>{{ t('det_read_and_complete_prep_course.p_50') }}</p>
         <hr />
         <div class="title">{{ t('det_read_and_complete_prep_course.title5') }}</div>
@@ -119,7 +150,38 @@ console.log('p_11 content:', t('det_read_and_complete_prep_course.p_11'));
         <div class="html_wrapper" v-html="t('det_read_and_complete_prep_course.p_60')"></div>
         <h2>{{ t('det_read_and_complete_prep_course.h2_9') }}</h2>
         <p>{{ t('det_read_and_complete_prep_course.p_61') }}</p>
-        table*****
+        <table>
+          <tbody>
+            <tr>
+              <th>{{ t('det_read_and_complete_prep_course.table1.table1') }}</th>
+              <th>{{ t('det_read_and_complete_prep_course.table1.table2') }}</th>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table3') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table4') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table5') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table6') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table7') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table8') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table9') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table10') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table19') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table20') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table21') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table1.table22') }}</td>
+            </tr>
+          </tbody>
+        </table>
         <p>{{ t('det_read_and_complete_prep_course.p_62') }}</p>
         <img
           src="/img/det-read-and-complete-prep-course/Screenshot2.jpg"
@@ -278,6 +340,20 @@ console.log('p_11 content:', t('det_read_and_complete_prep_course.p_11'));
       color: green;
       font-weight: bold;
     }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th {
+    background-color: #ffa500;
+    color: white;
+  }
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
   }
 }
 </style>
