@@ -142,6 +142,7 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data1.video4data.title'),
           desc: t('courses.four_change_right_data.data1.video4data.desc'),
           videoUrl: 'https://www.youtube.com/embed/YpDzyBUeOUk?si=tRtQlb7asqAXpa75',
+          prepUrl: '/det-read-and-complete-prep-course',
         },
       ],
     },
@@ -154,6 +155,7 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data2.video1data.title'),
           desc: t('courses.four_change_right_data.data2.video1data.desc'),
           videoUrl: 'https://www.youtube.com/embed/8vbJAoDrIx0',
+          prepUrl: '/det-prep-course-listen-and-type-questions',
         },
         {
           title: t('courses.four_change_right_data.data2.video2data.title'),

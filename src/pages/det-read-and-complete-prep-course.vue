@@ -9,7 +9,6 @@ const video_data = computed(() => {
     video_url: 'https://www.youtube.com/embed/8UYh_8Co2vo?si=hKXnkiQ-bUtOZJeg',
   };
 });
-console.log('p_11 content:', t('det_read_and_complete_prep_course.p_11'));
 </script>
 <template>
   <div class="common_prep_wrapper det_read_and_complete_prep_course">
@@ -273,37 +272,7 @@ console.log('p_11 content:', t('det_read_and_complete_prep_course.p_11'));
   </div>
 </template>
 <style lang="scss" scoped>
-.common_prep_wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 10vh;
-  overflow: hidden;
-  .common_prep_out {
-    display: grid;
-    grid-template-columns: 1fr 340px;
-    grid-gap: 28px;
-    .common_prep_left {
-      flex-grow: 0;
-      .banner_img {
-        border-radius: 26px;
-        overflow: hidden;
-        margin-bottom: 2vh;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-    .common_prep_right {
-      flex-grow: 0;
-      border: 1px red solid;
-    }
-  }
-}
+@import '@/assets/prep.scss';
 </style>
 <style lang="scss">
 .det_read_and_complete_prep_course {
