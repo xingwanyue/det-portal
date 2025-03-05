@@ -27,5 +27,26 @@
             flex-grow: 0;
             border: 1px red solid;
         }
+        .gray {
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        p,
+        .html_wrapper {
+            border: 1px red solid;
+            ::v-deep(a) {
+                text-decoration: underline;
+            }
+            ::v-deep(.blue) {
+                color: blue;
+            }
+            ::v-deep(.red) {
+                color: red;
+            }
+        }
+        a {
+            text-decoration: underline;
+        }
     }
 }

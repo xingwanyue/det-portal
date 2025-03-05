@@ -161,6 +161,7 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data2.video2data.title'),
           desc: t('courses.four_change_right_data.data2.video2data.desc'),
           videoUrl: 'https://www.youtube.com/embed/ptt8E7DNyFw',
+          prepUrl: '/det-prep-course-interactive-listening',
         },
       ],
     },

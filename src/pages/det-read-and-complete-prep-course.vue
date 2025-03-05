@@ -281,10 +281,6 @@ const video_data = computed(() => {
     font-weight: bold;
     font-size: 1.5em;
   }
-  p,
-  .html_wrapper {
-    border: 1px red solid;
-  }
 
   .html_wrapper {
     margin-top: 1em;
