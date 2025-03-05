@@ -1,7 +1,15 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
-import { reactive } from 'vue';
+import my_video from '@/components/prepCompoment/video.vue';
+
+const video_data = computed(() => {
+  return {
+    video_title: 'det-read-and-complete-prep-course',
+    video_url: 'https://www.youtube.com/embed/8UYh_8Co2vo?si=hKXnkiQ-bUtOZJeg',
+  };
+});
+console.log('p_11 content:', t('det_read_and_complete_prep_course.p_11'));
 </script>
 <template>
   <div class="common_prep_wrapper det_read_and_complete_prep_course">
@@ -14,7 +22,9 @@ import { reactive } from 'vue';
         <h2>{{ t('det_read_and_complete_prep_course.h2_1') }}</h2>
         <p>{{ t('det_read_and_complete_prep_course.p_1') }}</p>
         <p>{{ t('det_read_and_complete_prep_course.p_2') }}</p>
-        <div class="video_out"></div>
+        <div class="video_out">
+          <my_video :title="video_data.video_title" :video_url="video_data.video_url" />
+        </div>
         <h2>{{ t('det_read_and_complete_prep_course.h2_2') }}</h2>
         <ul>
           <li>{{ t('det_read_and_complete_prep_course.li1') }}</li>
@@ -30,7 +40,10 @@ import { reactive } from 'vue';
         <p>{{ t('det_read_and_complete_prep_course.p_3') }}</p>
         <h2>{{ t('det_read_and_complete_prep_course.h2_4') }}</h2>
         <p>{{ t('det_read_and_complete_prep_course.p_4') }}</p>
-        <img src="/img/det-read-and-complete-prep-course/read-and-complete-lesson.jpg" alt="" />
+        <img
+          src="/img/det-read-and-complete-prep-course/Screenshot.png"
+          :alt="t('det_read_and_complete_prep_course.h2_4')"
+        />
         <p>{{ t('det_read_and_complete_prep_course.p_5') }}</p>
         <h2>{{ t('det_read_and_complete_prep_course.h2_5') }}</h2>
         <p>{{ t('det_read_and_complete_prep_course.p_6') }}</p>
@@ -108,7 +121,10 @@ import { reactive } from 'vue';
         <p>{{ t('det_read_and_complete_prep_course.p_61') }}</p>
         table*****
         <p>{{ t('det_read_and_complete_prep_course.p_62') }}</p>
-        <img src="/img/det-read-and-complete-prep-course/read-and-complete-lesson.jpg" alt="" />
+        <img
+          src="/img/det-read-and-complete-prep-course/Screenshot2.jpg"
+          :alt="t('det_read_and_complete_prep_course.h2_9')"
+        />
         <p>{{ t('det_read_and_complete_prep_course.p_63') }}</p>
         <p>{{ t('det_read_and_complete_prep_course.p_64') }}</p>
         <p>{{ t('det_read_and_complete_prep_course.p_65') }}</p>
@@ -215,9 +231,14 @@ import { reactive } from 'vue';
           height: auto;
         }
       }
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
     .common_prep_right {
       flex-grow: 0;
+      border: 1px red solid;
     }
   }
 }
