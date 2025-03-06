@@ -9,10 +9,14 @@
 
   <body>
     <script>
+      window.onloa
       window.onload = () => {
-        fetch(`https://www.duolingopractice.com/weapp/api/common/logPath?path=${encodeURIComponent(window.location.pathname)}`);
         window.localStorage['20180428_InviteCode'] = '52';
-        window.location.href = '/';
+        fetch(`https://www.duolingopractice.com/weapp/api/common/logPath?path=${encodeURIComponent('/yt')}`).finally(
+          () => {
+            window.location.href = '/';
+          },
+        );
       };
     </script>
   </body>
