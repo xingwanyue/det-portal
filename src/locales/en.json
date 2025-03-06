@@ -2724,7 +2724,7 @@
     "p84": "Okay, this is our explanation of the Duolingo English Test Read Aloud question type. Welcome everyone to come back to our <a href=\"https://prep.detpractice.com\" target=\"_blank\" rel=\"noreferrer noopener\">prep hub</a> frequently and follow our <a href=\"https://www.youtube.com/{'@'}duolingoenglishtestpractices\" target=\"_blank\" rel=\"noreferrer noopener\">DET YouTube channel</a> to get the latest test information and materials. Today’s lesson ends here. Thank you everyone for reading. See you next time, bye.",
     "p85": "If you need more practice, you can find additional exercises in the <a href=\"https://www.detpractice.com\" target=\"_blank\" rel=\"noreferrer noopener\">DET Practice Test question bank</a>. Also, you can watch more practice videos for DET Read Aloud questions here:",
   },
-  "det-course-speaking-sample": {
+  "det_course_speaking_sample": {
     "img1": "A cover of speaking sample lesson video.",
     "h11": "DET Prep Course: Speaking Sample Questions",
     "p1": "This comprehensive guide to the Duolingo English Test speaking sample covers question types, response strategies, and essential tips. It provides templates for descriptive, argumentative, comparative, and hypothetical questions, with a focus on the subjunctive mood for hypothetical scenarios. The article offers practical advice on preparation, delivery, and grammar, equipping test-takers with the tools to excel in the speaking section.",
@@ -2972,8 +2972,5 @@
     "p204": "Good luck with your test preparation!",
     "p205": "<strong>Further reading: </strong>",
     "ul16": "<li>Official question introduction: <a href=\"https://englishtest.duolingo.com/prepare/question_types#Speaking-Sample\">https://englishtest.duolingo.com/prepare/question_types#Speaking-Sample</a></li>",
-    "p206": "",
-    "p207": "",
-    "img9": "https://pixel.wp.com/g.gif?v=ext&blog=235476584&post=67&tz=0&srv=prep.detpractice.com&j=1%3A14.3&host=prep.detpractice.com&ref=https%3A%2F%2Fprep.detpractice.com%2Fcategory%2Fdet-speaking%2F&fcp=1508&rand=0.5541721087047187"
   }
 }
