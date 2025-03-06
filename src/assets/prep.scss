@@ -3,6 +3,11 @@
     margin: 0 auto;
     padding-top: 10vh;
     overflow: hidden;
+    .audio-player {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .common_prep_out {
         display: grid;
         grid-template-columns: 1fr 340px;
@@ -49,5 +54,21 @@
         a {
             text-decoration: underline;
         }
+    }
+    figcaption {
+        font-size: 12px;
+        color: #666;
+    }
+    .prep_button {
+        background: #f66442;
+        border-radius: 4px;
+        padding: 11px 16px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 22px;
+        width: fit-content;
+        margin: 0 auto;
+        cursor: pointer;
     }
 }

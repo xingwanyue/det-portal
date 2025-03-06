@@ -487,11 +487,7 @@ const video_data = computed(() => {
       }
     }
   }
-  .audio-player {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .gray {
     padding: 10px;
     border-radius: 4px;
