@@ -174,6 +174,7 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data3.video1data.title'),
           desc: t('courses.four_change_right_data.data3.video1data.desc'),
           videoUrl: 'https://www.youtube.com/embed/oTyjWsblbYk',
+          prepUrl: '/det-course-speak-about-the-photo',
         },
         {
           title: t('courses.four_change_right_data.data3.video2data.title'),

@@ -35,6 +35,7 @@
         p,
         .html_wrapper {
             border: 1px red solid;
+            margin-top: 14px;
             ::v-deep(a) {
                 text-decoration: underline;
             }
