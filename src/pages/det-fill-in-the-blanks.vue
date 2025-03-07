@@ -347,9 +347,9 @@ const a_list_data = computed(() => {
 });
 </script>
 <template>
-  <div class="det_read_and_select_course_wrapper">
-    <div class="det_read_and_select_course">
-      <div class="det_read_and_select_course_left">
+  <div class="common_prep_wrapper det_read_and_select_course_wrapper">
+    <div class="common_prep_out det_read_and_select_course">
+      <div class="common_prep_left det_read_and_select_course_left">
         <div class="banner_img">
           <img src="/img/det-fill-in-the-blanks/fill-in-the-blanks-lesson.jpg" alt="" />
         </div>
@@ -430,73 +430,11 @@ const a_list_data = computed(() => {
         </div>
         <a_list :list="a_list_data" />
       </div>
-      <div class="det_read_and_select_course_right"></div>
+      <div class="common_prep_right"></div>
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-.det_read_and_select_course_wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 10vh;
-  overflow: hidden;
-  .det_read_and_select_course {
-    display: grid;
-    grid-template-columns: 1fr 340px;
-
-    grid-gap: 28px;
-    .det_read_and_select_course_left {
-      flex-grow: 0;
-      .banner_img {
-        border-radius: 26px;
-        overflow: hidden;
-        margin-bottom: 2vh;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-      .h1 {
-      }
-      .Summary {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 28px;
-      }
-      .summayr_content {
-      }
-      .video_font {
-      }
-      .video_out {
-        border: 1px red solid;
-      }
-    }
-    .det_read_and_select_course_right {
-      border: 1px blue solid;
-      flex-shrink: 0;
-    }
-  }
-}
-</style>
+<style lang="scss" scoped></style>
 <style lang="scss">
-.p_h1 {
-  font-size: 56px;
-  font-weight: 600;
-  line-height: 64px;
-}
-.p_h2 {
-  font-size: 40px;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-}
-.p_text_center {
-  text-align: center;
-}
-.p_mgt_20 {
-  margin-top: 20px;
-}
-.p_mgb_20 {
-  margin-bottom: 20px;
-}
+@import '@/assets/prep.scss';
 </style>
