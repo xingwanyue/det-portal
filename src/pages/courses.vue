@@ -235,13 +235,13 @@ const four_change_right_data = computed(() => {
         {
           title: t('courses.four_change_right_data.data5.video1data.title'),
           desc: t('courses.four_change_right_data.data5.video1data.desc'),
-          imgUrl: '/img/courses/video_hack.png',
+          imgUrl: '/img/courses/Red-White-Modern-Youtube-Thumbnail.jpg',
           prepUrl: '/boost-det-vocabulary-7-adv-photo-desc-tech',
         },
         {
           title: t('courses.four_change_right_data.data5.video2data.title'),
           desc: t('courses.four_change_right_data.data5.video2data.desc'),
-          imgUrl: '/img/courses/video_hack.png',
+          imgUrl: '/img/courses/det-voc-post.jpg',
           prepUrl: '/det-listening-words',
         },
       ],
