@@ -6,7 +6,9 @@ const { t } = useI18n();
   <div class="common_prep_wrapper det-listening-words">
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <img /> ******img
+        <div class="banner_img">
+          <img src="/img/det_listening_words/det-voc-post.jpg" />
+        </div>
         <h1>{{ t('det_listening_words.h11') }}</h1>
         <h2>{{ t('det_listening_words.h21') }}</h2>
         <p>{{ t('det_listening_words.p1') }}</p>
@@ -15,10 +17,7 @@ const { t } = useI18n();
         <p>{{ t('det_listening_words.p4') }}</p>
         <p>{{ t('det_listening_words.p5') }}</p>
         <p>{{ t('det_listening_words.p6') }}</p>
-        ***
         <p>{{ t('det_listening_words.p7') }}</p>
-        <!-- <p>{{ t('det_listening_words.p8') }}</p> -->
-        ***iframe
         <iframe
           class="lazyload"
           data-src="https://creators.spotify.com/pod/show/duolingoenglishtest/embed/episodes/Unlocking-DET-Interactive-Listening-with-Scenario-Specific-Vocabulary-e2r14kq/a-abko2cv"
@@ -27,7 +26,6 @@ const { t } = useI18n();
           frameborder="0"
           scrolling="no"
         ></iframe>
-        ***iframe
         <h2>{{ t('det_listening_words.h22') }}</h2>
         <p>{{ t('det_listening_words.p9') }}</p>
         <p>{{ t('det_listening_words.p10') }}</p>
@@ -145,7 +143,6 @@ const { t } = useI18n();
           <figcaption>{{ t('det_listening_words.figcaption1') }}</figcaption>
         </figure>
 
-        <p>{{ t('det_listening_words.p116') }}</p>
         <p>{{ t('det_listening_words.p117') }}</p>
         <p>{{ t('det_listening_words.p118') }}</p>
         <p>{{ t('det_listening_words.p119') }}</p>
