@@ -1,6 +1,19 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
+import my_video from '@/components/prepCompoment/video.vue';
+
+const video_data = computed(() => {
+  return {
+    video_title: 'det-listening-words',
+    video_url: 'https://www.youtube.com/embed/AALAtaSQUkc?si=SGrKhGddQvF4eUR-',
+  };
+});
+const show_answer1 = ref(false);
+const show_answer2 = ref(false);
+const show_answer3 = ref(false);
+const show_answer4 = ref(false);
+const show_answer5 = ref(false);
 </script>
 <template>
   <div class="common_prep_wrapper det-listening-words">
@@ -60,6 +73,8 @@ const { t } = useI18n();
         <p>{{ t('det_listening_words.p37') }}</p>
         <p>{{ t('det_listening_words.p38') }}</p>
         <p>{{ t('det_listening_words.p39') }}</p>
+        <div class="prep_button" @click="show_answer1 = !show_answer1">{{ t('det_listening_words.sta') }}</div>
+        <div v-if="show_answer1" class="answer_out">Answers: 1-B, 2-A, 3-D, 4-C</div>
         <p>{{ t('det_listening_words.p40') }}</p>
         <p>{{ t('det_listening_words.p41') }}</p>
         <p>{{ t('det_listening_words.p42') }}</p>
@@ -124,6 +139,8 @@ const { t } = useI18n();
         <p>{{ t('det_listening_words.p100') }}</p>
         <p>{{ t('det_listening_words.p101') }}</p>
         <p>{{ t('det_listening_words.p102') }}</p>
+        <div class="prep_button" @click="show_answer2 = !show_answer2">{{ t('det_listening_words.sta') }}</div>
+        <div v-if="show_answer2" class="answer_out">Answers: 1-b, 2-b, 3-b, 4-a</div>
         <p>{{ t('det_listening_words.p103') }}</p>
         <p>{{ t('det_listening_words.p104') }}</p>
         <h2>{{ t('det_listening_words.h25') }}</h2>
@@ -138,11 +155,30 @@ const { t } = useI18n();
         <p>{{ t('det_listening_words.p113') }}</p>
         <div class="html_wrapper" v-html="t('det_listening_words.p114')"></div>
         <div class="html_wrapper" v-html="t('det_listening_words.p115')"></div>
-
+        <div class="audio-player">
+          <audio id="audio-3" preload="none" controls>
+            <source
+              src="https://prep.detpractice.com/wp-content/uploads/2024/08/interactive-listening-sample-audio-1.mp3"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
         <figure>
           <figcaption>{{ t('det_listening_words.figcaption1') }}</figcaption>
         </figure>
-
+        <div class="prep_button" @click="show_answer3 = !show_answer3">{{ t('det_listening_words.stls') }}</div>
+        <div v-if="show_answer3" class="answer_out">
+          Student: “Professor Johnson, I’m having trouble understanding the concept of opportunity cost from yesterday’s
+          lecture. Could you explain it again?” Professor: “Of course. Opportunity cost is the value of the next best
+          alternative that you give up when making a choice. For instance, if you choose to study for an exam instead of
+          going to a party, the fun you miss out on at the party is your opportunity cost of studying.” Student: “I see.
+          So it’s about what we sacrifice when we make a decision?” Professor: “Exactly. It’s a fundamental concept in
+          economics that helps us understand the true cost of our choices.” Student: “Thank you, that makes much more
+          sense now. Would you recommend any additional resources for me to review this concept?” Professor: “Certainly.
+          I’d suggest reading Chapter 3 in your textbook and watching the video series on opportunity cost that I posted
+          on our class website.” Student: “Great, I’ll do that. Thanks again for your help, Professor Johnson.”
+        </div>
         <p>{{ t('det_listening_words.p117') }}</p>
         <p>{{ t('det_listening_words.p118') }}</p>
         <p>{{ t('det_listening_words.p119') }}</p>
@@ -155,9 +191,40 @@ const { t } = useI18n();
         <p>{{ t('det_listening_words.p126') }}</p>
         <div class="html_wrapper" v-html="t('det_listening_words.p127')"></div>
         <p>{{ t('det_listening_words.p128') }}</p>
-        <p>{{ t('det_listening_words.p129') }}</p>
-        <h2>{{ t('det_listening_words.h26') }}</h2>
+        <div class="audio-player">
+          <audio id="audio-3" preload="none" controls>
+            <source
+              src="https://prep.detpractice.com/wp-content/uploads/2024/08/interactive-listening-sample-conversation-audio-2.mp3"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="prep_button" @click="show_answer4 = !show_answer4">{{ t('det_listening_words.stls') }}</div>
+        <div v-if="show_answer4" class="answer_out">
+          Student A: “Hey Sarah, have you started working on the group presentation for Professor Lee’s class?” Student
+          B: “Hi Alex. Yes, I’ve begun researching our topic on renewable energy sources. How about you?” Student A:
+          “I’ve gathered some data on solar power, but I’m struggling to find recent statistics on wind energy. Do you
+          have any good sources?” Student B: “Actually, I came across a great report from the International Energy
+          Agency. I can share the link with you.” Student A: “That would be fantastic, thanks! By the way, when do you
+          think we should meet to put everything together?” Student B: “How about next Tuesday after class? We can use
+          the library’s group study room.” Student A: “Sounds good to me. I’ll book the room for us. See you then!”
+        </div>
+
         <p>{{ t('det_listening_words.p130') }}</p>
+        <div class="prep_button" @click="show_answer5 = !show_answer5">{{ t('det_listening_words.stsa') }}</div>
+        <div v-if="show_answer5" class="answer_out">
+          I spoke with Sarah about our group presentation on renewable energy for Professor Lee's class. I've collected
+          data on solar power but needed help finding recent wind energy statistics. Sarah has started researching and
+          offered to share a helpful report from the International Energy Agency. We decided to meet next Tuesday after
+          class in the library's group study room to compile our work. I'll book the room for us. I'm glad we made
+          progress on organizing our project. I spoke with Sarah about our group presentation on renewable energy for
+          Professor Lee's class. I've collected data on solar power but needed help finding recent wind energy
+          statistics. Sarah has started researching and offered to share a helpful report from the International Energy
+          Agency. We decided to meet next Tuesday after class in the library's group study room to compile our work.
+          I'll book the room for us. I'm glad we made progress on organizing our project.
+        </div>
+
         <p>{{ t('det_listening_words.p131') }}</p>
         <h2>{{ t('det_listening_words.h27') }}</h2>
         <p>{{ t('det_listening_words.p132') }}</p>
@@ -167,6 +234,9 @@ const { t } = useI18n();
         <div class="html_wrapper" v-html="t('det_listening_words.ul1')"></div>
         <!-- <div class="html_wrapper" v-html="t('det_listening_words.ul2')"></div> -->
         <!-- <div class="html_wrapper" v-html="t('det_listening_words.p136')"></div> -->
+        <div class="video_out">
+          <my_video :title="video_data.video_title" :video_url="video_data.video_url" />
+        </div>
       </div>
       <div class="common_prep_right"></div>
     </div>

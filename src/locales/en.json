@@ -3959,6 +3959,9 @@
     "img25": "https://pixel.wp.com/g.gif?v=ext&blog=235476584&post=398&tz=0&srv=prep.detpractice.com&j=1%3A14.3&host=prep.detpractice.com&ref=https%3A%2F%2Fprep.detpractice.com%2Fcategory%2Fdet-vocabulary%2F&fcp=0&rand=0.14168292867882282"
   },
   "det_listening_words": {
+    "sta": "Show the Answers",
+    "stls": "Show the Listening Script",
+    "stsa": "Show the Sample Answer",
     "img1": "A featured image of the blog post:\"Unlocking DET Interactive Listening with Scenario-Specific Vocabulary\"",
     "h11": "Unlocking DET Interactive Listening with Scenario-Specific Vocabulary",
     "h21": "Introduction:",
@@ -4095,8 +4098,6 @@
     "p126": "Example Practice Exercise:",
     "p127": "<strong>Scenario</strong>:<br>You are Alex, a student working on a group presentation about renewable energy for Professor Lee’s class. You see your classmate Sarah in the cafeteria and decide to discuss the project with her.",
     "p128": "Listen to this short conversation and then summarize it within 75 seconds:",
-    "p129": "[75-second timer]",
-    "h26": "75-second Timer",
     "p130": "Sample Summary:",
     "p131": "By consistently practicing these summarization techniques and exercises, you'll develop the skills needed to quickly and accurately capture the essence of conversations in the DET's Interactive Listening section.",
     "h27": "Conclusion:",
