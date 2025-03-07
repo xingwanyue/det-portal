@@ -1,7 +1,35 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
+import { domain } from '@/utils';
 import my_video from '@/components/prepCompoment/video.vue';
+
+useSeoMeta({
+  title: t('det_write_about_the_photo_course.seometa.title'),
+  description: t('det_write_about_the_photo_course.seometa.description'),
+});
+
+const localePath = useLocalePath();
+useHead({
+  meta: [
+    { name: 'DC.title', content: t('det_write_about_the_photo_course.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('det_write_about_the_photo_course.seometa.title') },
+    { property: 'og:description', content: t('tos.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/det-read-and-select-course')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('det_write_about_the_photo_course.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('det_write_about_the_photo_course.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+  ],
+});
 
 const video_data = computed(() => {
   return {
@@ -14,10 +42,13 @@ const video_data = computed(() => {
   <div class="common_prep_wrapper det-write-about-the-photo-course">
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <img
-          src="/img/det_write_about_the_photo_course/write-about-the-photo-course-YT.jpg"
-          alt="write-about-the-photo-course-YT"
-        />
+        <div class="banner_img">
+          <img
+            src="/img/det_write_about_the_photo_course/write-about-the-photo-course-YT.jpg"
+            alt="write-about-the-photo-course-YT"
+          />
+        </div>
+
         <h1>{{ t('det_write_about_the_photo_course.h11') }}</h1>
         <div class="html_wrapper" v-html="t('det_write_about_the_photo_course.p1')"></div>
         <p>{{ t('det_write_about_the_photo_course.p2') }}</p>

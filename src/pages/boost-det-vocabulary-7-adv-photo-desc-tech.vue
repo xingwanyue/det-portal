@@ -1,13 +1,33 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
-import my_video from '@/components/prepCompoment/video.vue';
+import { domain } from '@/utils';
 
-const video_data = computed(() => {
-  return {
-    video_title: 'boost-det-vocabulary-7-adv-photo-desc-tech',
-    video_url: 'https://www.youtube.com/embed/4FMRfkIKsvQ?si=eaVIa3b7vbRNGvam',
-  };
+useSeoMeta({
+  title: t('boost_det_vocabulary_7_adv_photo_desc_tech.seometa.title'),
+  description: t('boost_det_vocabulary_7_adv_photo_desc_tech.seometa.description'),
+});
+
+const localePath = useLocalePath();
+useHead({
+  meta: [
+    { name: 'DC.title', content: t('boost_det_vocabulary_7_adv_photo_desc_tech.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('boost_det_vocabulary_7_adv_photo_desc_tech.seometa.title') },
+    { property: 'og:description', content: t('tos.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/det-read-and-select-course')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('boost_det_vocabulary_7_adv_photo_desc_tech.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('boost_det_vocabulary_7_adv_photo_desc_tech.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+  ],
 });
 </script>
 <template>

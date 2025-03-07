@@ -1,7 +1,35 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
+import { domain } from '@/utils';
 const { t } = useI18n();
 import my_video from '@/components/prepCompoment/video.vue';
+
+useSeoMeta({
+  title: t('det_listening_words.seometa.title'),
+  description: t('det_listening_words.seometa.description'),
+});
+
+const localePath = useLocalePath();
+useHead({
+  meta: [
+    { name: 'DC.title', content: t('det_listening_words.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('det_listening_words.seometa.title') },
+    { property: 'og:description', content: t('tos.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/det-read-and-select-course')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('det_listening_words.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('det_listening_words.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+  ],
+});
 
 const video_data = computed(() => {
   return {

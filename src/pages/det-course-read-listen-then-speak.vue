@@ -1,15 +1,45 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
+import { domain } from '@/utils';
 const { t } = useI18n();
 const showAnswer1 = ref(false);
 const showAnswer2 = ref(false);
 const showAnswer3 = ref(false);
+
+useSeoMeta({
+  title: t('det-course-read-listen-then-speak.seometa.title'),
+  description: t('det-course-read-listen-then-speak.seometa.description'),
+});
+
+const localePath = useLocalePath();
+useHead({
+  meta: [
+    { name: 'DC.title', content: t('det-course-read-listen-then-speak.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('det-course-read-listen-then-speak.seometa.title') },
+    { property: 'og:description', content: t('tos.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/det-read-and-select-course')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('det-course-read-listen-then-speak.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('det-course-read-listen-then-speak.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+  ],
+});
 </script>
 <template>
   <div class="common_prep_wrapper det-course-read-listen-then-speak">
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <img src="/img/det-course-read-listen-then-speak/read-listen-then-speak.jpg" alt="read-listen-then-speak" />
+        <div class="banner_img">
+          <img src="/img/det-course-read-listen-then-speak/read-listen-then-speak.jpg" alt="read-listen-then-speak" />
+        </div>
         <h1>{{ t('det-course-read-listen-then-speak.h11') }}</h1>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p1')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p2') }}</p>

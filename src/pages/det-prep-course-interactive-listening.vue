@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
+import { domain } from '@/utils';
 import my_video from '@/components/prepCompoment/video.vue';
 
 const video_data = computed(() => {
@@ -8,6 +9,31 @@ const video_data = computed(() => {
     video_title: 'det-prep-course-interactive-listening',
     video_url: 'https://www.youtube.com/embed/ptt8E7DNyFw?start=15&feature=oembed',
   };
+});
+useSeoMeta({
+  title: t('det_prep_course_interactive_listening.seometa.title'),
+  description: t('det_prep_course_interactive_listening.seometa.description'),
+});
+const localePath = useLocalePath();
+useHead({
+  meta: [
+    { name: 'DC.title', content: t('det_prep_course_interactive_listening.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('det_prep_course_interactive_listening.seometa.title') },
+    { property: 'og:description', content: t('tos.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/det-read-and-select-course')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('det_prep_course_interactive_listening.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('det_prep_course_interactive_listening.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+  ],
 });
 </script>
 <template>

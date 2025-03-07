@@ -1,7 +1,35 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
+import { domain } from '@/utils';
 import my_video from '@/components/prepCompoment/video.vue';
+
+useSeoMeta({
+  title: t('det_interactive_writing.seometa.title'),
+  description: t('det_interactive_writing.seometa.description'),
+});
+
+const localePath = useLocalePath();
+useHead({
+  meta: [
+    { name: 'DC.title', content: t('det_interactive_writing.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('det_interactive_writing.seometa.title') },
+    { property: 'og:description', content: t('tos.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/det-read-and-select-course')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('det_interactive_writing.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('det_interactive_writing.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+  ],
+});
 
 const video_data = computed(() => {
   return {
@@ -14,7 +42,9 @@ const video_data = computed(() => {
   <div class="common_prep_wrapper det-interactive-writing">
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <img src="/img/det_interactive_writing/IWC-cover-1.jpg" alt="det-interactive-writing" />
+        <div class="banner_img">
+          <img src="/img/det_interactive_writing/IWC-cover-1.jpg" alt="det-interactive-writing" />
+        </div>
         <h1>{{ t('det_interactive_writing.h11') }}</h1>
         <h2>{{ t('det_interactive_writing.h21') }}</h2>
         <p>{{ t('det_interactive_writing.p1') }}</p>

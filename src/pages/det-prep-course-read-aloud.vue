@@ -1,7 +1,36 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
+import { domain } from '@/utils';
 import my_video from '@/components/prepCompoment/video.vue';
+
+useSeoMeta({
+  title: t('det-prep-course-read-aloud.seometa.title'),
+  description: t('det-prep-course-read-aloud.seometa.description'),
+});
+
+const localePath = useLocalePath();
+useHead({
+  meta: [
+    { name: 'DC.title', content: t('det-prep-course-read-aloud.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('det-prep-course-read-aloud.seometa.title') },
+    { property: 'og:description', content: t('tos.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/det-read-and-select-course')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('det-prep-course-read-aloud.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('det-prep-course-read-aloud.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+  ],
+});
+
 const showAnswer = ref(false);
 const video_data = computed(() => {
   return {
@@ -20,7 +49,12 @@ const video_data2 = computed(() => {
   <div class="common_prep_wrapper det-prep-course-read-aloud">
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <img src="/img/det-prep-course-read-aloud/read-aloud-course.jpg" :alt="t('det-prep-course-read-aloud.img1')" />
+        <div class="banner_img">
+          <img
+            src="/img/det-prep-course-read-aloud/read-aloud-course.jpg"
+            :alt="t('det-prep-course-read-aloud.img1')"
+          />
+        </div>
         <h1>{{ t('det-prep-course-read-aloud.h11') }}</h1>
         <p v-html="t('det-prep-course-read-aloud.p1')"></p>
         <p>{{ t('det-prep-course-read-aloud.p2') }}</p>

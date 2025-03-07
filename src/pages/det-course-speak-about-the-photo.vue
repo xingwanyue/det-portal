@@ -1,7 +1,35 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
+import { domain } from '@/utils';
 import my_video from '@/components/prepCompoment/video.vue';
+
+useSeoMeta({
+  title: t('det_course_speak_about_the_photo.seometa.title'),
+  description: t('det_course_speak_about_the_photo.seometa.description'),
+});
+
+const localePath = useLocalePath();
+useHead({
+  meta: [
+    { name: 'DC.title', content: t('det_course_speak_about_the_photo.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('det_course_speak_about_the_photo.seometa.title') },
+    { property: 'og:description', content: t('tos.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/det-read-and-select-course')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('det_course_speak_about_the_photo.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('det_course_speak_about_the_photo.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+  ],
+});
 
 const video_data = computed(() => {
   return {
@@ -14,10 +42,13 @@ const video_data = computed(() => {
   <div class="common_prep_wrapper det-course-speak-about-the-photo">
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <img
-          src="/img/det-course-speak-about-the-photo/Ultimate-Duolingo-Course-Speak-About-the-Photo-Templates-for-Success.jpg"
-          alt="Ultimate Duolingo Course Speak About the Photo Templates for Success"
-        />
+        <div class="banner_img">
+          <img
+            src="/img/det-course-speak-about-the-photo/Ultimate-Duolingo-Course-Speak-About-the-Photo-Templates-for-Success.jpg"
+            alt="Ultimate Duolingo Course Speak About the Photo Templates for Success"
+          />
+        </div>
+
         <h1>{{ t('det_course_speak_about_the_photo.h11') }}</h1>
         <p v-html="t('det_course_speak_about_the_photo.p1')"></p>
         <p v-html="t('det_course_speak_about_the_photo.p2')"></p>
