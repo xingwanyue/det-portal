@@ -364,9 +364,9 @@ const a_list_data = computed(() => {
 });
 </script>
 <template>
-  <div class="det_read_and_select_course_wrapper">
-    <div class="det_read_and_select_course">
-      <div class="det_read_and_select_course_left">
+  <div class="common_prep_wrapper det_read_and_select_course_wrapper">
+    <div class="common_prep_out det_read_and_select_course">
+      <div class="common_prep_left det_read_and_select_course_left">
         <div class="banner_img">
           <img src="/img/det-interactive-reading-course/interactive-reading-course.jpg" alt="" />
         </div>
@@ -514,55 +514,14 @@ const a_list_data = computed(() => {
 
         <a_list :list="a_list_data" />
       </div>
-      <div class="det_read_and_select_course_right"></div>
+      <div class="common_prep_right"></div>
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-.det_read_and_select_course_wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 10vh;
-  overflow: hidden;
-  .det_read_and_select_course {
-    display: grid;
-    grid-template-columns: 1fr 340px;
-
-    grid-gap: 28px;
-    .det_read_and_select_course_left {
-      flex-grow: 0;
-      .banner_img {
-        border-radius: 26px;
-        overflow: hidden;
-        margin-bottom: 2vh;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-      .h1 {
-      }
-      .Summary {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 28px;
-      }
-      .summayr_content {
-      }
-      .video_font {
-      }
-      .video_out {
-        border: 1px red solid;
-      }
-    }
-    .det_read_and_select_course_right {
-      border: 1px blue solid;
-      flex-shrink: 0;
-    }
-  }
-}
-</style>
+<style lang="scss" scoped></style>
 <style lang="scss">
+@import '@/assets/prep.scss';
+
 .p_h1 {
   font-size: 56px;
   font-weight: 600;
