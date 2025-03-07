@@ -4,7 +4,7 @@ const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain } from '@/utils';
 import desc_img_tips from '@/components/prepCompoment/desc_img_tips.vue';
-import ui_li from '@/components/prepCompoment/ui_li.vue';
+
 import a_list from '@/components/prepCompoment/a_list.vue';
 import Summary from '@/components/prepCompoment/summary.vue';
 import my_video from '@/components/prepCompoment/video.vue';
@@ -681,9 +681,9 @@ const a_list_data = computed(() => {
 const openShowWrongWord = ref(false);
 </script>
 <template>
-  <div class="det_read_and_select_course_wrapper">
-    <div class="det_read_and_select_course">
-      <div class="det_read_and_select_course_left">
+  <div class="common_prep_wrapper det_read_and_select_course_wrapper">
+    <div class="common_prep_out det_read_and_select_course">
+      <div class="common_prep_left det_read_and_select_course_left">
         <div class="banner_img">
           <img src="/img/det-read-and-select-course/read_select_course.jpg" alt="" />
         </div>
@@ -720,7 +720,7 @@ const openShowWrongWord = ref(false);
             </template>
           </div>
         </div>
-        <div class="show_wrong_word_btn" @click="openShowWrongWord = !openShowWrongWord">Show Answer</div>
+        <div class="prep_button" @click="openShowWrongWord = !openShowWrongWord">Show Answer</div>
         <p>{{ t('det_read_and_select_course.hit') }}</p>
         <table_of_con :title="table_of_con_data2.title" :list="table_of_con_data2.list" />
         <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr2" :key="index">
@@ -728,46 +728,22 @@ const openShowWrongWord = ref(false);
         </div>
         <a_list :list="a_list_data" />
       </div>
-      <div class="det_read_and_select_course_right"></div>
+      <div class="common_prep_right"></div>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .det_read_and_select_course_wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 10vh;
-  overflow: hidden;
   .det_read_and_select_course {
-    display: grid;
-    grid-template-columns: 1fr 340px;
-
-    grid-gap: 28px;
     .det_read_and_select_course_left {
       flex-grow: 0;
-      .banner_img {
-        border-radius: 26px;
-        overflow: hidden;
-        margin-bottom: 2vh;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-      .h1 {
-      }
+
       .Summary {
         font-size: 20px;
         font-weight: 600;
         line-height: 28px;
       }
-      .summayr_content {
-      }
-      .video_font {
-      }
-      .video_out {
-        border: 1px red solid;
-      }
+
       .right_or_wrong_word_out {
         margin-top: 20px;
         display: grid;
@@ -796,46 +772,10 @@ const openShowWrongWord = ref(false);
           }
         }
       }
-      .show_wrong_word_btn {
-        background: #f66442;
-        border-radius: 4px;
-        font-weight: 500;
-        font-size: 16px;
-        color: #ffffff;
-        line-height: 22px;
-        padding: 11px 16px;
-        cursor: pointer;
-        width: fit-content;
-        margin: 0 auto;
-        margin-top: 25px;
-      }
-    }
-    .det_read_and_select_course_right {
-      border: 1px blue solid;
-      flex-shrink: 0;
     }
   }
 }
 </style>
-<style lang="scss">
-.p_h1 {
-  font-size: 56px;
-  font-weight: 600;
-  line-height: 64px;
-}
-.p_h2 {
-  font-size: 40px;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-}
-.p_text_center {
-  text-align: center;
-}
-.p_mgt_20 {
-  margin-top: 20px;
-}
-.p_mgb_20 {
-  margin-bottom: 20px;
-}
+<style>
+@import '@/assets/prep.scss';
 </style>
