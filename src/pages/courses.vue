@@ -781,7 +781,7 @@ onMounted(() => {
             .right_click {
               margin-top: 42px;
               display: flex;
-              justify-content: flex-start;
+              justify-content: center;
               align-items: center;
               grid-gap: 8px;
               cursor: pointer;
@@ -796,10 +796,9 @@ onMounted(() => {
                 color: #ff7c0e;
                 height: 28px;
                 line-height: 28px;
-                border-bottom: 1px white solid;
 
                 &:hover {
-                  border-bottom: 1px #ff7c0e solid;
+                  text-decoration: underline;
                 }
               }
 
@@ -808,6 +807,7 @@ onMounted(() => {
                 height: 24px;
                 position: relative;
                 top: 2px;
+                flex-shrink: 0;
 
                 img {
                   width: 100%;

@@ -21,6 +21,5 @@ const localePath = useLocalePath();
 <style lang="scss" scoped>
 .common_table_of_con_out {
   margin-top: 20px;
-  border: 1px blue solid;
 }
 </style>

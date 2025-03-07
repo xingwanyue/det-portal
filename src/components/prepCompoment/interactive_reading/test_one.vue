@@ -37,7 +37,6 @@ const state = reactive({
 .common_interactive_reading_test_one_wrapper {
   margin-top: 20px;
   .common_interactive_reading_test_one_out {
-    border: 1px yellow solid;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;

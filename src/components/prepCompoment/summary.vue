@@ -20,7 +20,6 @@ const localePath = useLocalePath();
 </template>
 <style lang="scss" scoped>
 .common_summary_out {
-  border: 1px pink solid;
   margin-top: 20px;
   .common_summary_title {
     font-size: 24px;

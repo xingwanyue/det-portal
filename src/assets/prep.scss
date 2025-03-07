@@ -5,7 +5,7 @@
     overflow: hidden;
     margin: 0 auto;
     padding: 0 30px;
-    border: 1px red solid;
+
     // padding: 120px 0px;
     @media screen and (max-width: 1200px) {
         padding: 120px 20px;
@@ -46,7 +46,6 @@
         }
         .common_prep_right {
             flex-grow: 0;
-            border: 1px red solid;
         }
         .gray {
             padding: 10px;
@@ -55,7 +54,6 @@
         }
         p,
         .html_wrapper {
-            border: 1px red solid;
             margin-top: 14px;
             ::v-deep(a) {
                 text-decoration: underline;
@@ -91,7 +89,6 @@
         margin: 14px 0;
     }
     .banner_img {
-        border: 10px red solid;
         img {
             width: 100% !important;
             max-width: 100% !important;

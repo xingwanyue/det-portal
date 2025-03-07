@@ -26,7 +26,6 @@ const localePath = useLocalePath();
 </template>
 <style lang="scss" scoped>
 .desc_img_tips {
-  border: 1px green solid;
   .desc {
     margin-top: 20px;
   }

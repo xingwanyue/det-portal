@@ -11,7 +11,6 @@ const props = defineProps({
 </template>
 <style lang="scss" scoped>
 .complete_the_sen {
-  border: 1px red solid;
   margin-top: 30px;
   margin-bottom: 30px;
   .complete_the_sen_title {

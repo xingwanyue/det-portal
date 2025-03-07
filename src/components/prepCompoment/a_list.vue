@@ -16,7 +16,6 @@ const localePath = useLocalePath();
 </template>
 <style lang="scss" scoped>
 .common_a_li_out {
-  border: 1px yellow solid;
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;

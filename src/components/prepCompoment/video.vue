@@ -24,7 +24,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 .common_video_out {
   margin-top: 20px;
-  border: 1px orange solid;
+
   iframe {
     width: 100%;
     height: 500px;
