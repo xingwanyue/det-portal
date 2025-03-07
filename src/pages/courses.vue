@@ -424,7 +424,15 @@ onMounted(() => {
                     <a target="_blank" href="/duolingo-practice-test"> Duolingo Practice Test </a>
                     <a target="_blank" href="/blog"> DET Practice Learning Blog </a>
                   </div>
-                  <NuxtLink :to="localePath(`${item2.prepUrl}`)"> {{ item2.title }} Prep Course</NuxtLink>
+                  <!-- <NuxtLink class="prepUrl_dom" :to="localePath(`${item2.prepUrl}`)">
+                    {{ item2.title }} Prep Course</NuxtLink
+                  > -->
+                  <NuxtLink class="right_click" :to="localePath(`${item2.prepUrl}`)">
+                    <div class="font">{{ item2.title }} Prep Course</div>
+                    <div class="arrow">
+                      <img src="/img/products/yellow_arrow_right.svg" alt="yellow_arrow_right" />
+                    </div>
+                  </NuxtLink>
                 </div>
               </div>
             </div>
@@ -767,6 +775,54 @@ onMounted(() => {
                 text-decoration: underline;
                 &:hover {
                   color: #f66442;
+                }
+              }
+            }
+            .right_click {
+              margin-top: 42px;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              grid-gap: 8px;
+              cursor: pointer;
+
+              @media (max-width: 450px) {
+                margin-top: 21px;
+              }
+
+              .font {
+                font-weight: 500;
+                font-size: 20px;
+                color: #ff7c0e;
+                height: 28px;
+                line-height: 28px;
+                border-bottom: 1px white solid;
+
+                &:hover {
+                  border-bottom: 1px #ff7c0e solid;
+                }
+              }
+
+              .arrow {
+                width: 24px;
+                height: 24px;
+                position: relative;
+                top: 2px;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+
+              &:hover {
+                .arrow {
+                  transform: translateX(8px);
+                  transition: all 0.2s;
                 }
               }
             }
