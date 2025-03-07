@@ -223,6 +223,7 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data4.video4data.title'),
           desc: '',
           imgUrl: '/img/courses/video_hack.png',
+          prepUrl: '/det-listening-words',
         },
       ],
     },

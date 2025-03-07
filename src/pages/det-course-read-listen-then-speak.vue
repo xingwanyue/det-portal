@@ -62,8 +62,9 @@ const showAnswer3 = ref(false);
           src="/img/det-course-read-listen-then-speak/Question-Categories-of-DET-Speaking-Questions.png"
           alt="Question-Categories-of-DET-Speaking-Questions"
         />
-
-        <figcaption>{{ t('det-course-read-listen-then-speak.figcaption1') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('det-course-read-listen-then-speak.figcaption1') }}</figcaption>
+        </figure>
 
         <p>{{ t('det-course-read-listen-then-speak.p30') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p31') }}</p>
@@ -102,7 +103,9 @@ const showAnswer3 = ref(false);
           src="/img/det-course-read-listen-then-speak/structure-of-DET-speaking-questions.png"
           alt="structure-of-DET-speaking-questions"
         />
-        <figcaption>{{ t('det-course-read-listen-then-speak.figcaption2') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('det-course-read-listen-then-speak.figcaption2') }}</figcaption>
+        </figure>
 
         <p>{{ t('det-course-read-listen-then-speak.p53') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p54') }}</p>
@@ -143,8 +146,9 @@ const showAnswer3 = ref(false);
             Your browser does not support the audio element.
           </audio>
         </div>
-
-        <figcaption>{{ t('det-course-read-listen-then-speak.figcaption3') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('det-course-read-listen-then-speak.figcaption3') }}</figcaption>
+        </figure>
 
         <p>{{ t('det-course-read-listen-then-speak.p79') }}</p>
         <div class="prep_button" @click="showAnswer1 = !showAnswer1">
@@ -219,8 +223,9 @@ const showAnswer3 = ref(false);
             Your browser does not support the audio element.
           </audio>
         </div>
-
-        <figcaption>{{ t('det-course-read-listen-then-speak.figcaption4') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('det-course-read-listen-then-speak.figcaption4') }}</figcaption>
+        </figure>
 
         <p>{{ t('det-course-read-listen-then-speak.p127') }}</p>
         <!-- <button>Click to show/hide the question.</button> -->
@@ -290,8 +295,9 @@ const showAnswer3 = ref(false);
             Your browser does not support the audio element.
           </audio>
         </div>
-
-        <figcaption>{{ t('det-course-read-listen-then-speak.figcaption5') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('det-course-read-listen-then-speak.figcaption5') }}</figcaption>
+        </figure>
 
         <p>{{ t('det-course-read-listen-then-speak.p176') }}</p>
 

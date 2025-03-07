@@ -49,20 +49,26 @@ const video_data = computed(() => {
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/001.png"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption1')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption1') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption1') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul2')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/002.png"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption2')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption2') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption2') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul3')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p8')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/003.jpg"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption3')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption3') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption3') }}</figcaption>
+        </figure>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p9') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p10')"></div>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p11') }}</p>
@@ -76,20 +82,26 @@ const video_data = computed(() => {
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/004.jpg"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption4')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption4') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption4') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul5')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/005.png"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption5')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption5') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption5') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul6')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p16')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/006.jpg"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption6')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption6') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption6') }}</figcaption>
+        </figure>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p17') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p18')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p19')"></div>
@@ -102,20 +114,26 @@ const video_data = computed(() => {
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/007.jpg"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption7')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption7') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption7') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul8')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/008.jpg"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption8')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption8') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption8') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul9')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p23')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/009.jpg"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption9')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption9') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption9') }}</figcaption>
+        </figure>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p24') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p25')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p26')"></div>
@@ -128,20 +146,26 @@ const video_data = computed(() => {
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/010.jpg"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption10')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption10') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption10') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul11')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/011.jpg"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption11')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption11') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption11') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul12')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p30')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/012.jpg"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption12')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption12') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption12') }}</figcaption>
+        </figure>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p31') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p32')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p33')"></div>
@@ -153,20 +177,26 @@ const video_data = computed(() => {
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/013.png"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption13')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption13') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption13') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul14')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/014.png"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption14')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption14') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption14') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul15')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p37')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/015.png"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption15')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption15') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption15') }}</figcaption>
+        </figure>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p38') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p39')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p40')"></div>
@@ -179,20 +209,26 @@ const video_data = computed(() => {
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/016.png"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption16')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption16') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption16') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul17')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/017.png"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption17')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption17') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption17') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul18')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p44')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/018.png"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption18')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption18') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption18') }}</figcaption>
+        </figure>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p45') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p46')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p47')"></div>
@@ -205,20 +241,26 @@ const video_data = computed(() => {
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/019.png"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption19')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption19') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption19') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul20')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/020.jpg"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption20')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption20') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption20') }}</figcaption>
+        </figure>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul21')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p51')"></div>
         <img
           src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/021.png"
           :alt="t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption21')"
         />
-        <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption21') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.figcaption21') }}</figcaption>
+        </figure>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p52') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p53')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p54')"></div>

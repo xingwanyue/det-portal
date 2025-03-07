@@ -48,7 +48,9 @@ const video_data = computed(() => {
 
         <p>{{ t('det_interactive_writing.p5') }}</p>
         <img src="/img/det_interactive_writing/question-intro-2.png" alt="question-intro" />
-        <figcaption>{{ t('det_interactive_writing.figcaption1') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('det_interactive_writing.figcaption1') }}</figcaption>
+        </figure>
         <p>{{ t('det_interactive_writing.p6') }}</p>
         <h2>{{ t('det_interactive_writing.h24') }}</h2>
         <p>{{ t('det_interactive_writing.p7') }}</p>
@@ -62,7 +64,9 @@ const video_data = computed(() => {
           src="/img/det_interactive_writing/Interactive-Writing-Categories-3.png"
           alt="Interactive-Writing-Categories"
         />
-        <figcaption>{{ t('det_interactive_writing.figcaption2') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('det_interactive_writing.figcaption2') }}</figcaption>
+        </figure>
         <p>{{ t('det_interactive_writing.p13') }}</p>
         <h2>{{ t('det_interactive_writing.h26') }}</h2>
         <p>{{ t('det_interactive_writing.p14') }}</p>

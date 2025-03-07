@@ -84,7 +84,9 @@ const showAnswer16 = ref(false);
         <h2>{{ t('det_prep_course_writing_sample.h23') }}</h2>
         <p>{{ t('det_prep_course_writing_sample.p11') }}</p>
         <img src="/img/det_prep_course_writing_sample/DET-Writing-Sample-UI-2.png" alt="DET-Writing-Sample-UI" />
-        <figcaption>{{ t('det_prep_course_writing_sample.figcaption1') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('det_prep_course_writing_sample.figcaption1') }}</figcaption>
+        </figure>
         <p>{{ t('det_prep_course_writing_sample.p12') }}</p>
         <h2>{{ t('det_prep_course_writing_sample.h24') }}</h2>
         <p>{{ t('det_prep_course_writing_sample.p13') }}</p>
@@ -96,7 +98,9 @@ const showAnswer16 = ref(false);
         <h2>{{ t('det_prep_course_writing_sample.h25') }}</h2>
         <p>{{ t('det_prep_course_writing_sample.p19') }}</p>
         <img src="/img/det_prep_course_writing_sample/writing-sample-category-3.png" alt="writing-sample-category" />
-        <figcaption>{{ t('det_prep_course_writing_sample.figcaption2') }}</figcaption>
+        <figure>
+          <figcaption>{{ t('det_prep_course_writing_sample.figcaption2') }}</figcaption>
+        </figure>
         <h2>{{ t('det_prep_course_writing_sample.h26') }}</h2>
         <p>{{ t('det_prep_course_writing_sample.p20') }}</p>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p21')"></div>
