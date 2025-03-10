@@ -706,7 +706,7 @@ onMounted(() => {
         .change_left_sticky {
           @media screen and (min-width: 761px) {
             position: fixed;
-            top: 20px;
+            top: 80px;
             width: 300px; // 根据实际布局调整宽度
             max-width: 300px;
           }
