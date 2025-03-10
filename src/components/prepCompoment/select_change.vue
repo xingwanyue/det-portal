@@ -91,7 +91,7 @@ const tree_data = computed(() => {
       <div v-for="item in tree_data" :key="item.id" class="one_part">
         <div class="father_name_out">{{ item.name }}</div>
         <nuxt-link
-          :to="itemin.path"
+          :to="localePath(itemin.path)"
           :class="routername === itemin.path ? 'child_name_out child_name_out_selected' : 'child_name_out'"
           v-for="(itemin, indexin) in item.chikldren"
           :key="indexin"
