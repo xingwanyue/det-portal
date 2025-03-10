@@ -230,7 +230,7 @@ const four_change_right_data = computed(() => {
     {
       title: t('courses.four_change_right_data.data5.title'),
       desc: t('courses.four_change_right_data.data5.desc'),
-      desc2: t('courses.four_change_right_data.data5.desc2'),
+
       videoUrlArr: [
         {
           title: t('courses.four_change_right_data.data5.video1data.title'),
