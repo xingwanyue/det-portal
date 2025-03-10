@@ -86,7 +86,7 @@ const tree_data = computed(() => {
 </script>
 <template>
   <div class="common_tree_select_out">
-    <div class="top_title">Duolingo English Test Prep Course</div>
+    <div class="top_title">Duolingo English Test {{ t('courses.prepCourse') }}</div>
     <div class="tree_out">
       <div v-for="item in tree_data" :key="item.id" class="one_part">
         <div class="father_name_out">{{ item.name }}</div>
