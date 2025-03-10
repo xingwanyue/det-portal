@@ -79,7 +79,7 @@ const four_change_left_active_index_change = (index: number) => {
   }
 };
 
-const four_change_left_data = computed(() => {
+const five_change_left_data = computed(() => {
   return [
     {
       index: 0,
@@ -105,6 +105,12 @@ const four_change_left_data = computed(() => {
       icon: '/img/courses/writing_icon.svg',
       icon_active: '/img/courses/writing_active_icon.svg',
     },
+    {
+      index: 4,
+      title: t('courses.changeleftfont.vocabulary'),
+      icon: '/img/courses/writing_icon.svg',
+      icon_active: '/img/courses/writing_active_icon.svg',
+    },
   ];
 });
 const four_change_right_data = computed(() => {
@@ -118,21 +124,25 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data1.video1data.title'),
           desc: t('courses.four_change_right_data.data1.video1data.desc'),
           videoUrl: 'https://www.youtube.com/embed/8UYh_8Co2vo',
+          prepUrl: '/det-read-and-select-course',
         },
         {
           title: t('courses.four_change_right_data.data1.video2data.title'),
           desc: t('courses.four_change_right_data.data1.video2data.desc'),
           videoUrl: 'https://www.youtube.com/embed/k7kIedxU9og',
+          prepUrl: '/det-fill-in-the-blanks',
         },
         {
           title: t('courses.four_change_right_data.data1.video3data.title'),
           desc: t('courses.four_change_right_data.data1.video3data.desc'),
           videoUrl: 'https://www.youtube.com/embed/J7ymVabfTJk?si=qy-P02K7ly1faKNf',
+          prepUrl: '/det-interactive-reading-course',
         },
         {
           title: t('courses.four_change_right_data.data1.video4data.title'),
           desc: t('courses.four_change_right_data.data1.video4data.desc'),
           videoUrl: 'https://www.youtube.com/embed/YpDzyBUeOUk?si=tRtQlb7asqAXpa75',
+          prepUrl: '/det-read-and-complete-prep-course',
         },
       ],
     },
@@ -145,11 +155,13 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data2.video1data.title'),
           desc: t('courses.four_change_right_data.data2.video1data.desc'),
           videoUrl: 'https://www.youtube.com/embed/8vbJAoDrIx0',
+          prepUrl: '/det-prep-course-listen-and-type-questions',
         },
         {
           title: t('courses.four_change_right_data.data2.video2data.title'),
           desc: t('courses.four_change_right_data.data2.video2data.desc'),
           videoUrl: 'https://www.youtube.com/embed/ptt8E7DNyFw',
+          prepUrl: '/det-prep-course-interactive-listening',
         },
       ],
     },
@@ -162,21 +174,25 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data3.video1data.title'),
           desc: t('courses.four_change_right_data.data3.video1data.desc'),
           videoUrl: 'https://www.youtube.com/embed/oTyjWsblbYk',
+          prepUrl: '/det-course-speak-about-the-photo',
         },
         {
           title: t('courses.four_change_right_data.data3.video2data.title'),
           desc: t('courses.four_change_right_data.data3.video2data.desc'),
           videoUrl: 'https://www.youtube.com/embed/2bj3ViAPkMY',
+          prepUrl: '/det-course-read-listen-then-speak',
         },
         {
           title: t('courses.four_change_right_data.data3.video3data.title'),
           desc: t('courses.four_change_right_data.data3.video3data.desc'),
           videoUrl: 'https://www.youtube.com/embed/rqPV8cP9EPo?si=mMTNCeu4Jl3zjFeC',
+          prepUrl: '/det-prep-course-read-aloud',
         },
         {
           title: t('courses.four_change_right_data.data3.video4data.title'),
           desc: t('courses.four_change_right_data.data3.video4data.desc'),
           videoUrl: 'https://www.youtube.com/embed/sf8FN3GAuHI',
+          prepUrl: '/det-course-speaking-sample',
         },
       ],
     },
@@ -189,21 +205,44 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data4.video1data.title'),
           desc: t('courses.four_change_right_data.data4.video1data.desc'),
           videoUrl: 'https://www.youtube.com/embed/4FMRfkIKsvQ',
+          prepUrl: '/det-write-about-the-photo-course',
         },
         {
           title: t('courses.four_change_right_data.data4.video2data.title'),
           desc: t('courses.four_change_right_data.data4.video2data.desc'),
           videoUrl: 'https://www.youtube.com/embed/BgQ5dxC72WY',
+          prepUrl: '/det-interactive-writing',
         },
         {
           title: t('courses.four_change_right_data.data4.video3data.title'),
           desc: t('courses.four_change_right_data.data4.video3data.desc'),
           videoUrl: 'https://www.youtube.com/embed/hJpe-FvLH9I',
+          prepUrl: '/det-prep-course-writing-sample',
         },
         {
           title: t('courses.four_change_right_data.data4.video4data.title'),
           desc: '',
-          videoUrl: '',
+          imgUrl: '/img/courses/video_hack.png',
+          // prepUrl: '/det-listening-words',
+        },
+      ],
+    },
+    {
+      title: t('courses.four_change_right_data.data5.title'),
+      desc: t('courses.four_change_right_data.data5.desc'),
+
+      videoUrlArr: [
+        {
+          title: t('courses.four_change_right_data.data5.video1data.title'),
+          desc: t('courses.four_change_right_data.data5.video1data.desc'),
+          imgUrl: '/img/courses/Red-White-Modern-Youtube-Thumbnail.jpg',
+          prepUrl: '/boost-det-vocabulary-7-adv-photo-desc-tech',
+        },
+        {
+          title: t('courses.four_change_right_data.data5.video2data.title'),
+          desc: t('courses.four_change_right_data.data5.video2data.desc'),
+          imgUrl: '/img/courses/det-voc-post.jpg',
+          prepUrl: '/det-listening-words',
         },
       ],
     },
@@ -325,7 +364,7 @@ onMounted(() => {
           <div class="four_changes_out_left">
             <div ref="changeLeftRef" :class="['change_left', { change_left_sticky: isSticky }]">
               <div
-                v-for="(item, index) in four_change_left_data"
+                v-for="(item, index) in five_change_left_data"
                 :key="index"
                 :class="
                   four_change_left_active_index === item.index
@@ -358,8 +397,9 @@ onMounted(() => {
               <h2 class="change_right_title" :id="`section-${index}`">{{ item.title }}</h2>
               <div class="change_right_desc">{{ item.desc }}</div>
               <div class="change_right_desc">{{ item.desc2 }}</div>
+
               <div class="change_right_video">
-                <div v-for="(item2, index) in item.videoUrlArr" :key="index">
+                <div v-for="(item2, index) in item.videoUrlArr" :key="index" class="one_dom">
                   <div v-if="item2.videoUrl" class="change_right_video_iframe">
                     <iframe
                       width="100%"
@@ -373,17 +413,27 @@ onMounted(() => {
                     ></iframe>
                   </div>
                   <div v-else class="change_right_video_iframe">
-                    <img src="/img/courses/video_hack.png" alt="video_hack" />
+                    <img :src="`${item2.imgUrl}`" :alt="item2.title" />
                   </div>
 
                   <h3 class="change_right_video_title">{{ item2.title }}</h3>
                   <div v-if="item2.desc" class="change_right_video_desc">{{ item2.desc }}</div>
-                  <div v-if="!item2.videoUrl" class="video_hack">
+                  <div v-if="!item2.videoUrl && index === 3" class="video_hack">
                     <a target="_blank" href="/"> DET Practice | One-stop Duolingo English Test Prep Platform </a>
                     <a target="_blank" href="/practice"> Duolingo English Test Practice Question Bank </a>
                     <a target="_blank" href="/duolingo-practice-test"> Duolingo Practice Test </a>
                     <a target="_blank" href="/blog"> DET Practice Learning Blog </a>
                   </div>
+                  <!-- <NuxtLink class="prepUrl_dom" :to="localePath(`${item2.prepUrl}`)">
+                    {{ item2.title }} Prep Course</NuxtLink
+                  > -->
+                  <div class="height_hack"></div>
+                  <NuxtLink v-if="item2.prepUrl" class="right_click" :to="localePath(`${item2.prepUrl}`)">
+                    <div class="font">{{ item2.title }} Prep Course</div>
+                    <div class="arrow">
+                      <img src="/img/products/yellow_arrow_right.svg" alt="yellow_arrow_right" />
+                    </div>
+                  </NuxtLink>
                 </div>
               </div>
             </div>
@@ -666,6 +716,15 @@ onMounted(() => {
           display: flex;
           flex-direction: column;
           gap: 120px;
+          .one_dom {
+            // border: 1px red solid;
+            display: flex;
+            flex-direction: column;
+            // gap: 16px;
+            .height_hack {
+              height: 20px;
+            }
+          }
           .change_right_title {
             font-weight: 500;
             font-size: 32px;
@@ -726,6 +785,55 @@ onMounted(() => {
                 text-decoration: underline;
                 &:hover {
                   color: #f66442;
+                }
+              }
+            }
+            .right_click {
+              // margin-top: 42px;
+              margin-top: auto;
+              display: flex;
+              justify-content: flex-start;
+              // align-items: center;
+              grid-gap: 8px;
+              cursor: pointer;
+
+              @media (max-width: 450px) {
+                margin-top: 21px;
+              }
+
+              .font {
+                font-weight: 500;
+                font-size: 20px;
+                color: #ff7c0e;
+                height: 28px;
+                line-height: 28px;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+
+              .arrow {
+                width: 24px;
+                height: 24px;
+                position: relative;
+                top: 2px;
+                flex-shrink: 0;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+
+              &:hover {
+                .arrow {
+                  transform: translateX(8px);
+                  transition: all 0.2s;
                 }
               }
             }

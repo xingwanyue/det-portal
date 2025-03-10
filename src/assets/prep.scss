@@ -1,0 +1,121 @@
+.common_prep_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 30px;
+    padding-top: 30px;
+
+    // padding: 120px 0px;
+    @media screen and (max-width: 1200px) {
+        padding: 20px 20px;
+    }
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    .audio-player {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .common_prep_out {
+        display: grid;
+        grid-template-columns: 340px 1fr;
+        grid-template-areas: "common_prep_right common_prep_left";
+        grid-gap: 80px;
+        @media screen and (max-width: 1200px) {
+            grid-template-columns: 1fr;
+            grid-template-areas: "common_prep_left" "common_prep_right";
+        }
+        .common_prep_left {
+            grid-area: common_prep_left;
+            flex-grow: 0;
+            margin-top: 64px;
+            @media screen and (max-width: 1200px) {
+                margin-top: 0;
+            }
+            .banner_img {
+                border-radius: 20px;
+                overflow: hidden;
+                margin-bottom: 2vh;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .common_prep_right {
+            grid-area: common_prep_right;
+            flex-grow: 0;
+            a {
+                text-decoration: none;
+            }
+            .top {
+                a {
+                    &:hover {
+                        text-decoration: underline;
+                        color: #f66442;
+                    }
+                }
+            }
+            .tree_out {
+                // border: 1px red solid;
+            }
+        }
+        .gray {
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        p,
+        .html_wrapper {
+            margin-top: 14px;
+            ::v-deep(a) {
+                text-decoration: underline;
+            }
+            ::v-deep(.blue) {
+                color: blue;
+            }
+            ::v-deep(.red) {
+                color: red;
+            }
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    figcaption {
+        font-size: 12px;
+        color: #666;
+    }
+    .prep_button {
+        background: #f66442;
+        border-radius: 4px;
+        padding: 11px 16px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 22px;
+        width: fit-content;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    .html_wrapper {
+        margin: 14px 0;
+    }
+    .banner_img {
+        img {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: auto !important;
+        }
+    }
+}
