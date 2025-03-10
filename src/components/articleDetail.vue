@@ -51,7 +51,17 @@ const getSelect = async () => {
   const { name } = head(data.value) as any;
   state.selectName = name;
 };
-getSelect();
+
+watch(
+  () => props.categoryId,
+  (newVal, oldVal) => {
+    console.log(oldVal);
+    if (newVal) {
+      getSelect();
+    }
+  },
+  { immediate: true },
+);
 
 const rateChange = async () => {
   const rateArr = JSON.parse(getStorage('det_rate') || '[]');
