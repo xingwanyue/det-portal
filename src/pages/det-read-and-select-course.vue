@@ -4,11 +4,10 @@ const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain } from '@/utils';
 import desc_img_tips from '@/components/prepCompoment/desc_img_tips.vue';
-
-import a_list from '@/components/prepCompoment/a_list.vue';
 import Summary from '@/components/prepCompoment/summary.vue';
 import my_video from '@/components/prepCompoment/video.vue';
 import table_of_con from '@/components/prepCompoment/table_of_con.vue';
+import select_change from '@/components/prepCompoment/select_change.vue';
 
 const state = reactive({});
 useSeoMeta({
@@ -726,9 +725,20 @@ const openShowWrongWord = ref(false);
         <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr2" :key="index">
           <desc_img_tips :h2="item.h2" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
         </div>
-        <a_list :list="a_list_data" />
+        <!-- <a_list :list="a_list_data" /> -->
       </div>
-      <div class="common_prep_right"></div>
+      <div class="common_prep_right">
+        <div class="top">
+          <nuxt-link :to="localePath('/')" class="hoverGiveBorder">Home</nuxt-link>
+          >
+
+          <nuxt-link :to="localePath('/courses')" class="hoverGiveBorder">Courses</nuxt-link>
+          >{{ t('courses.four_change_right_data.data1.video1data.title') }}{{ t('courses.prepCourse') }}
+        </div>
+        <div class="tree_out">
+          <select_change />
+        </div>
+      </div>
     </div>
   </div>
 </template>

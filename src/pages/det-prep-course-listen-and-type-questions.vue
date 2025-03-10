@@ -3,6 +3,7 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { domain } from '@/utils';
 import my_video from '@/components/prepCompoment/video.vue';
+import select_change from '@/components/prepCompoment/select_change.vue';
 
 const video_data = computed(() => {
   return {
@@ -457,7 +458,18 @@ useHead({
         <p>{{ t('det_prep_course_listen_and_type_questions.p_48') }}</p>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_49') }}</p>
       </div>
-      <div class="common_prep_right"></div>
+      <div class="common_prep_right">
+        <div class="top">
+          <nuxt-link :to="localePath('/')" class="hoverGiveBorder">Home</nuxt-link>
+          >
+
+          <nuxt-link :to="localePath('/courses')" class="hoverGiveBorder">Courses</nuxt-link>
+          >{{ t('courses.four_change_right_data.data1.video1data.title') }}{{ t('courses.prepCourse') }}
+        </div>
+        <div class="tree_out">
+          <select_change />
+        </div>
+      </div>
     </div>
   </div>
 </template>

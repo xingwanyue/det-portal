@@ -143,6 +143,10 @@ const tree_data = computed(() => {
       .child_name_out_selected {
         background: rgba(246, 100, 66, 0.05);
         color: #f66442;
+        &:hover {
+          background: rgba(246, 100, 66, 0.05);
+          color: #f66442;
+        }
       }
     }
   }

@@ -5,6 +5,7 @@ const { t } = useI18n();
 const showAnswer1 = ref(false);
 const showAnswer2 = ref(false);
 const showAnswer3 = ref(false);
+import select_change from '@/components/prepCompoment/select_change.vue';
 
 useSeoMeta({
   title: t('det-course-read-listen-then-speak.seometa.title'),
@@ -356,7 +357,18 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p189') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p190') }}</p>
       </div>
-      <div class="common_prep_right"></div>
+      <div class="common_prep_right">
+        <div class="top">
+          <nuxt-link :to="localePath('/')" class="hoverGiveBorder">Home</nuxt-link>
+          >
+
+          <nuxt-link :to="localePath('/courses')" class="hoverGiveBorder">Courses</nuxt-link>
+          >{{ t('courses.four_change_right_data.data1.video1data.title') }}{{ t('courses.prepCourse') }}
+        </div>
+        <div class="tree_out">
+          <select_change />
+        </div>
+      </div>
     </div>
   </div>
 </template>

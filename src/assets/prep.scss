@@ -1,14 +1,15 @@
 .common_prep_wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 40px;
+
     overflow: hidden;
     margin: 0 auto;
     padding: 0 30px;
+    padding-top: 30px;
 
     // padding: 120px 0px;
     @media screen and (max-width: 1200px) {
-        padding: 120px 20px;
+        padding: 20px 20px;
     }
 
     h2 {
@@ -23,15 +24,22 @@
     }
     .common_prep_out {
         display: grid;
-        grid-template-columns: 1fr 340px;
-        grid-gap: 28px;
+        grid-template-columns: 340px 1fr;
+        grid-template-areas: "common_prep_right common_prep_left";
+        grid-gap: 80px;
         @media screen and (max-width: 1200px) {
             grid-template-columns: 1fr;
+            grid-template-areas: "common_prep_left" "common_prep_right";
         }
         .common_prep_left {
+            grid-area: common_prep_left;
             flex-grow: 0;
+            margin-top: 64px;
+            @media screen and (max-width: 1200px) {
+                margin-top: 0;
+            }
             .banner_img {
-                border-radius: 26px;
+                border-radius: 20px;
                 overflow: hidden;
                 margin-bottom: 2vh;
                 img {
@@ -45,7 +53,22 @@
             }
         }
         .common_prep_right {
+            grid-area: common_prep_right;
             flex-grow: 0;
+            a {
+                text-decoration: none;
+            }
+            .top {
+                a {
+                    &:hover {
+                        text-decoration: underline;
+                        color: #f66442;
+                    }
+                }
+            }
+            .tree_out {
+                // border: 1px red solid;
+            }
         }
         .gray {
             padding: 10px;
