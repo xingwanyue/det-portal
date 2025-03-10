@@ -675,9 +675,9 @@
         }
       },
       "data5": {
-        "title": "DET Course: Duolingo English Test Vocabulary",
-        "desc": "777777",
-        "desc2": "8888",
+        "title": "DET Vocabulary Course: Mastering Language Skills for Test Success",
+        "desc": "Our comprehensive Duolingo English Test (DET) Vocabulary Courses target the most challenging aspects of DET vocabulary, designed to enhance your language capabilities and maximize your test success.",
+        "desc2": "",
         "video1data": {
           "title": "Boost Your DET Vocabulary: 7 Advanced Photo Description Techniques",
           "desc": "Summary: This comprehensive post offers advanced strategies and vocabulary for excelling in the “Speak and Write About the Photo” sections of the Duolingo English Test. It covers seven key areas: color descriptions, nature scenes, urban landscapes, human activity, everyday life, technology and science, and weather and climate. Each section provides advanced vocabulary, examples, and practice…"
@@ -720,7 +720,8 @@
         "name": "Are there sample answers included in the DET course?",
         "content": "Yes, the DET course includes high-scoring sample responses for both Speaking and Writing sections, along with detailed breakdowns of what makes these responses effective. This helps you understand the scoring criteria and improves your performance."
       }
-    ]
+    ],
+    "prepCourse": "Prep Course"
   },
   "forget": {
     "Please_enter": "Please enter your email address",
