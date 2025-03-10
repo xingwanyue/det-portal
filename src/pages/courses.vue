@@ -399,7 +399,7 @@ onMounted(() => {
               <div class="change_right_desc">{{ item.desc2 }}</div>
 
               <div class="change_right_video">
-                <div v-for="(item2, index) in item.videoUrlArr" :key="index">
+                <div v-for="(item2, index) in item.videoUrlArr" :key="index" class="one_dom">
                   <div v-if="item2.videoUrl" class="change_right_video_iframe">
                     <iframe
                       width="100%"
@@ -427,6 +427,7 @@ onMounted(() => {
                   <!-- <NuxtLink class="prepUrl_dom" :to="localePath(`${item2.prepUrl}`)">
                     {{ item2.title }} Prep Course</NuxtLink
                   > -->
+                  <div class="height_hack"></div>
                   <NuxtLink class="right_click" :to="localePath(`${item2.prepUrl}`)">
                     <div class="font">{{ item2.title }} Prep Course</div>
                     <div class="arrow">
@@ -715,6 +716,15 @@ onMounted(() => {
           display: flex;
           flex-direction: column;
           gap: 120px;
+          .one_dom {
+            // border: 1px red solid;
+            display: flex;
+            flex-direction: column;
+            // gap: 16px;
+            .height_hack {
+              height: 20px;
+            }
+          }
           .change_right_title {
             font-weight: 500;
             font-size: 32px;
@@ -779,10 +789,11 @@ onMounted(() => {
               }
             }
             .right_click {
-              margin-top: 42px;
+              // margin-top: 42px;
+              margin-top: auto;
               display: flex;
-              justify-content: center;
-              align-items: center;
+              justify-content: flex-start;
+              // align-items: center;
               grid-gap: 8px;
               cursor: pointer;
 
