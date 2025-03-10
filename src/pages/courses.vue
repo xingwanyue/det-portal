@@ -108,8 +108,8 @@ const five_change_left_data = computed(() => {
     {
       index: 4,
       title: t('courses.changeleftfont.vocabulary'),
-      icon: '/img/courses/writing_icon.svg',
-      icon_active: '/img/courses/writing_active_icon.svg',
+      icon: '/img/courses/vocabulary_icon.svg',
+      icon_active: '/img/courses/vocabulary_active_icon.svg',
     },
   ];
 });
