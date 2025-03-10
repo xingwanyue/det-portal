@@ -223,7 +223,7 @@ const four_change_right_data = computed(() => {
           title: t('courses.four_change_right_data.data4.video4data.title'),
           desc: '',
           imgUrl: '/img/courses/video_hack.png',
-          prepUrl: '/det-listening-words',
+          // prepUrl: '/det-listening-words',
         },
       ],
     },
@@ -428,7 +428,7 @@ onMounted(() => {
                     {{ item2.title }} Prep Course</NuxtLink
                   > -->
                   <div class="height_hack"></div>
-                  <NuxtLink class="right_click" :to="localePath(`${item2.prepUrl}`)">
+                  <NuxtLink v-if="item2.prepUrl" class="right_click" :to="localePath(`${item2.prepUrl}`)">
                     <div class="font">{{ item2.title }} Prep Course</div>
                     <div class="arrow">
                       <img src="/img/products/yellow_arrow_right.svg" alt="yellow_arrow_right" />
