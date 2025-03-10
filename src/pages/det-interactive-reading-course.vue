@@ -4,7 +4,7 @@ const { t } = useI18n();
 import { reactive } from 'vue';
 import { domain } from '@/utils';
 import desc_img_tips from '@/components/prepCompoment/desc_img_tips.vue';
-import a_list from '@/components/prepCompoment/a_list.vue';
+// import a_list from '@/components/prepCompoment/a_list.vue';
 import Summary from '@/components/prepCompoment/summary.vue';
 import my_video from '@/components/prepCompoment/video.vue';
 import table_of_con from '@/components/prepCompoment/table_of_con.vue';
@@ -513,7 +513,7 @@ const a_list_data = computed(() => {
           <desc_img_tips :h3="item.h3" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
         </div>
 
-        <a_list :list="a_list_data" />
+        <!-- <a_list :list="a_list_data" /> -->
       </div>
       <div class="common_prep_right">
         <div class="top">

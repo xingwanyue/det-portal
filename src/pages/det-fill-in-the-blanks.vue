@@ -5,7 +5,7 @@ import { reactive } from 'vue';
 import { domain } from '@/utils';
 import desc_img_tips from '@/components/prepCompoment/desc_img_tips.vue';
 import ui_li from '@/components/prepCompoment/ui_li.vue';
-import a_list from '@/components/prepCompoment/a_list.vue';
+// import a_list from '@/components/prepCompoment/a_list.vue';
 import Summary from '@/components/prepCompoment/summary.vue';
 import my_video from '@/components/prepCompoment/video.vue';
 import table_of_con from '@/components/prepCompoment/table_of_con.vue';
@@ -429,7 +429,7 @@ const a_list_data = computed(() => {
         <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr15" :key="index">
           <desc_img_tips :h2="item.h2" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
         </div>
-        <a_list :list="a_list_data" />
+        <!-- <a_list :list="a_list_data" /> -->
       </div>
       <div class="common_prep_right">
         <div class="top">
