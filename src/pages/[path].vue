@@ -51,17 +51,7 @@ useHead({
 </script>
 <template>
   <NuxtLayout name="default" :type="article?.type">
-    <div v-if="false" class="article_detail">
-      <div class="detail_hader">
-        <div class="detail_hader_content">
-          <h1>{{ article.name }}</h1>
-        </div>
-      </div>
-      <div class="article" v-if="article?.content">
-        <div class="articleContent" v-html="article?.content"></div>
-      </div>
-    </div>
-    <div v-else>
+    <div v-if="article?.categoryId">
       <LearnDetail
         :allData="article"
         :id="article?.id"
