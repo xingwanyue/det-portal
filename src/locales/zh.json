@@ -673,6 +673,19 @@
           "title": "额外DET备考资源",
           "desc": ""
         }
+      },
+      "data5": {
+        "title": "DET词汇课程：掌握语言技能，助力考试成功",
+        "desc": "我们全面的多邻国英语考试(DET)词汇课程针对DET词汇中最具挑战性的方面，旨在提升您的语言能力并最大化您的考试成功率。",
+        "desc2": "",
+        "video1data": {
+          "title": "提升您的DET词汇：7种高级图片描述技巧",
+          "desc": "概要：这篇全面的文章为多邻国英语考试中的\"口语和写作描述图片\"部分提供了高级策略和词汇。文章涵盖七个关键领域：颜色描述、自然场景、城市景观、人类活动、日常生活、科技与科学以及天气与气候。每个部分都提供了高级词汇、示例和练习..."
+        },
+        "video2data": {
+          "title": "通过场景特定词汇解锁DET互动听力",
+          "desc": "简介：多邻国英语考试(DET)的互动听力部分对考生和教育工作者都提出了独特的挑战。这个部分不仅要求语言熟练度，还需要能够应对特定场景下的对话，这使其成为备考学生和设计有效备考策略的教师的重点关注领域。在..."
+        }
       }
     },
     "package_out": {
@@ -707,7 +720,8 @@
         "name": "DET课程是否包含示例答案？",
         "content": "是的，DET课程包含口语和写作部分的高分示例答案，并详细分析这些答案的优秀之处。这有助于你理解评分标准并提高表现。"
       }
-    ]
+    ],
+    "prepCourse": "备考课程"
   },
   "forget": {
     "Please_enter": "请输入您的邮箱地址",
@@ -1364,7 +1378,8 @@
         }
       ]
     }
-  }, "det_read_and_select_course": {
+  },
+  "det_read_and_select_course": {
     "seometa": {
       "title": "DET Prep Course: Read and Select Questions - DET Practice",
       "description": "Master the DET Read and Select with our practice course. Get targeted strategies and practice questions to boost your score on the Duolingo English Test."

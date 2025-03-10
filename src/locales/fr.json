@@ -673,6 +673,19 @@
           "title": "Additional DET Prep Resources",
           "desc": ""
         }
+      },
+      "data5": {
+        "title": "Cours de Vocabulaire DET : Maîtriser les Compétences Linguistiques pour Réussir l'Examen",
+        "desc": "Nos cours complets de vocabulaire pour le Duolingo English Test (DET) ciblent les aspects les plus difficiles du vocabulaire DET, conçus pour améliorer vos capacités linguistiques et maximiser votre réussite à l'examen.",
+        "desc2": "",
+        "video1data": {
+          "title": "Améliorez votre Vocabulaire DET : 7 Techniques Avancées de Description de Photos",
+          "desc": "Résumé : Cet article complet propose des stratégies avancées et du vocabulaire pour exceller dans les sections 'Parler et Écrire sur la Photo' du Duolingo English Test. Il couvre sept domaines clés : descriptions des couleurs, scènes naturelles, paysages urbains, activité humaine, vie quotidienne, technologie et science, et météo et climat. Chaque section fournit du vocabulaire avancé, des exemples et des exercices..."
+        },
+        "video2data": {
+          "title": "Maîtriser l'Écoute Interactive DET avec un Vocabulaire Spécifique aux Scénarios",
+          "desc": "Introduction : La section d'écoute interactive du Duolingo English Test (DET) présente un défi unique pour les candidats et les éducateurs. Cette section nécessite non seulement une maîtrise de la langue mais aussi la capacité à naviguer dans des conversations contextuelles, ce qui en fait un domaine d'attention crucial pour les étudiants et les enseignants qui conçoivent des stratégies de préparation efficaces. À..."
+        }
       }
     },
     "package_out": {
@@ -707,7 +720,8 @@
         "name": "Y a-t-il des réponses exemples incluses dans le cours DET ?",
         "content": "Oui, le cours DET inclut des réponses exemples bien notées pour les sections d'Expression Orale et d'Écriture, avec des analyses détaillées de ce qui rend ces réponses efficaces. Cela vous aide à comprendre les critères de notation et à améliorer vos performances."
       }
-    ]
+    ],
+    "prepCourse": "Cours de préparation"
   },
   "forget": {
     "Please_enter": "Veuillez saisir votre adresse e-mail",

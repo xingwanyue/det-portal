@@ -673,6 +673,19 @@
           "title": "Recursos Adicionais de Preparação DET",
           "desc": ""
         }
+      },
+      "data5": {
+        "title": "Curso de Vocabulário DET: Dominando Habilidades Linguísticas para o Sucesso no Teste",
+        "desc": "Nossos cursos abrangentes de vocabulário para o Duolingo English Test (DET) focam nos aspectos mais desafiadores do vocabulário DET, projetados para aprimorar suas capacidades linguísticas e maximizar seu sucesso no teste.",
+        "desc2": "",
+        "video1data": {
+          "title": "Aprimore seu Vocabulário DET: 7 Técnicas Avançadas de Descrição de Fotos",
+          "desc": "Resumo: Este post abrangente oferece estratégias avançadas e vocabulário para se destacar nas seções 'Falar e Escrever sobre a Foto' do Duolingo English Test. Abrange sete áreas principais: descrições de cores, cenas naturais, paisagens urbanas, atividade humana, vida cotidiana, tecnologia e ciência, e clima e tempo. Cada seção fornece vocabulário avançado, exemplos e prática..."
+        },
+        "video2data": {
+          "title": "Dominando a Compreensão Auditiva Interativa do DET com Vocabulário Específico de Cenários",
+          "desc": "Introdução: A seção de compreensão auditiva interativa do Duolingo English Test (DET) apresenta um desafio único tanto para os candidatos quanto para os educadores. Esta seção requer não apenas proficiência no idioma, mas também a capacidade de navegar em conversas específicas do contexto, tornando-a uma área de foco crítica para estudantes e professores que desenvolvem estratégias eficazes de preparação. Em..."
+        }
       }
     },
     "package_out": {
@@ -707,7 +720,8 @@
         "name": "Existem respostas de exemplo incluídas no curso DET?",
         "content": "Sim, o curso DET inclui respostas de exemplo de alta pontuação para as seções de Fala e Escrita, junto com análises detalhadas do que torna essas respostas eficazes. Isso ajuda você a entender os critérios de pontuação e melhora seu desempenho."
       }
-    ]
+    ],
+    "prepCourse": "Curso preparatório"
   },
   "forget": {
     "Please_enter": "Por favor, digite seu endereço de email",
@@ -1357,7 +1371,8 @@
         }
       ]
     }
-  }, "det_read_and_select_course": {
+  },
+  "det_read_and_select_course": {
     "seometa": {
       "title": "DET Prep Course: Read and Select Questions - DET Practice",
       "description": "Master the DET Read and Select with our practice course. Get targeted strategies and practice questions to boost your score on the Duolingo English Test."
