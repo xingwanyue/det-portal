@@ -663,6 +663,19 @@
           "title": "Additional DET Prep Resources",
           "desc": ""
         }
+      },
+      "data5": {
+        "title": "Kursus Kosakata DET: Menguasai Keterampilan Bahasa untuk Kesuksesan Ujian",
+        "desc": "Kursus Kosakata Duolingo English Test (DET) kami yang komprehensif menargetkan aspek-aspek paling menantang dari kosakata DET, dirancang untuk meningkatkan kemampuan bahasa Anda dan memaksimalkan kesuksesan ujian Anda.",
+        "desc2": "",
+        "video1data": {
+          "title": "Tingkatkan Kosakata DET Anda: 7 Teknik Lanjutan Mendeskripsikan Foto",
+          "desc": "Ringkasan: Artikel komprehensif ini menawarkan strategi lanjutan dan kosakata untuk unggul dalam bagian 'Berbicara dan Menulis tentang Foto' dari Duolingo English Test. Mencakup tujuh area utama: deskripsi warna, pemandangan alam, lanskap perkotaan, aktivitas manusia, kehidupan sehari-hari, teknologi dan sains, serta cuaca dan iklim. Setiap bagian menyediakan kosakata lanjutan, contoh, dan latihan..."
+        },
+        "video2data": {
+          "title": "Menguasai Listening Interaktif DET dengan Kosakata Khusus Skenario",
+          "desc": "Pendahuluan: Bagian Listening Interaktif dari Duolingo English Test (DET) menghadirkan tantangan unik bagi peserta ujian dan pendidik. Bagian ini tidak hanya membutuhkan kemahiran bahasa tetapi juga kemampuan untuk menavigasi percakapan dalam konteks tertentu, menjadikannya area fokus penting bagi siswa dan guru yang merancang strategi persiapan yang efektif. Pada..."
+        }
       }
     },
     "package_out": {
@@ -697,7 +710,8 @@
         "name": "Apakah ada contoh jawaban yang termasuk dalam kursus DET?",
         "content": "Ya, kursus DET mencakup contoh respons dengan skor tinggi untuk bagian Speaking dan Writing, beserta penjelasan rinci tentang apa yang membuat respons ini efektif. Ini membantu Anda memahami kriteria penilaian dan meningkatkan performa Anda."
       }
-    ]
+    ],
+    "prepCourse": "Kursus Persiapan"
   },
   "forget": {
     "Please_enter": "Silakan masukkan alamat email Anda",

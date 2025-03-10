@@ -669,6 +669,19 @@
           "title": "Additional DET Prep Resources",
           "desc": ""
         }
+      },
+      "data5": {
+        "title": "DET Kelime Kursu: Sınav Başarısı için Dil Becerilerinde Uzmanlaşma",
+        "desc": "Kapsamlı Duolingo English Test (DET) Kelime kurslarımız, DET kelime bilgisinin en zorlu yönlerini hedefleyerek, dil yeteneklerinizi geliştirmek ve sınav başarınızı en üst düzeye çıkarmak için tasarlanmıştır.",
+        "desc2": "",
+        "video1data": {
+          "title": "DET Kelime Bilginizi Geliştirin: 7 İleri Düzey Fotoğraf Açıklama Tekniği",
+          "desc": "Özet: Bu kapsamlı yazı, Duolingo English Test'in 'Fotoğraf Hakkında Konuşma ve Yazma' bölümleri için ileri düzey stratejiler ve kelime bilgisi sunmaktadır. Yedi ana alanı kapsar: renk açıklamaları, doğa manzaraları, şehir manzaraları, insan aktiviteleri, günlük yaşam, teknoloji ve bilim, hava durumu ve iklim. Her bölüm ileri düzey kelime bilgisi, örnekler ve alıştırmalar sunar..."
+        },
+        "video2data": {
+          "title": "Senaryo Odaklı Kelime Bilgisiyle DET İnteraktif Dinlemeyi Kavrama",
+          "desc": "Giriş: Duolingo English Test (DET)'in interaktif dinleme bölümü, hem adaylar hem de eğitimciler için benzersiz bir zorluk sunar. Bu bölüm sadece dil yeterliliği değil, aynı zamanda bağlama özel konuşmaları yönetme becerisini de gerektiriyor, bu da onu etkili hazırlık stratejileri geliştiren öğrenciler ve öğretmenler için kritik bir odak alanı haline getiriyor. ..."
+        }
       }
     },
     "package_out": {
@@ -703,7 +716,8 @@
         "name": "DET kursunda örnek cevaplar var mı?",
         "content": "Evet, DET kursu hem Konuşma hem de Yazma bölümleri için yüksek puan alan örnek yanıtlar ve bu yanıtları etkili kılan şeylerin ayrıntılı açıklamalarını içerir. Bu, puanlama kriterlerini anlamanıza ve performansınızı geliştirmenize yardımcı olur."
       }
-    ]
+    ],
+    "prepCourse": "Hazırlık Kursu"
   },
   "forget": {
     "Please_enter": "Lütfen e-posta adresinizi girin",

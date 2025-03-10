@@ -662,6 +662,19 @@
           "title": "Additional DET Prep Resources",
           "desc": ""
         }
+      },
+      "data5": {
+        "title": "DET-Vokabelkurs: Sprachkenntnisse für Prüfungserfolg meistern",
+        "desc": "Unsere umfassenden Duolingo English Test (DET) Vokabelkurse zielen auf die anspruchsvollsten Aspekte des DET-Vokabulars ab und sind darauf ausgerichtet, Ihre Sprachfähigkeiten zu verbessern und Ihren Prüfungserfolg zu maximieren.",
+        "desc2": "",
+        "video1data": {
+          "title": "Verbessern Sie Ihr DET-Vokabular: 7 fortgeschrittene Fotobeschreibungstechniken",
+          "desc": "Zusammenfassung: Dieser umfassende Beitrag bietet fortgeschrittene Strategien und Vokabeln für die Bereiche 'Sprechen und Schreiben über Fotos' im Duolingo English Test. Er behandelt sieben Schlüsselbereiche: Farbbeschreibungen, Naturszenen, Stadtlandschaften, menschliche Aktivitäten, Alltagsleben, Technologie und Wissenschaft sowie Wetter und Klima. Jeder Abschnitt bietet fortgeschrittenes Vokabular, Beispiele und Übungen..."
+        },
+        "video2data": {
+          "title": "Erschließen Sie das DET-interaktive Hören mit szenariospezifischem Vokabular",
+          "desc": "Einführung: Der interaktive Hörteil des Duolingo English Test (DET) stellt sowohl für Prüflinge als auch für Pädagogen eine besondere Herausforderung dar. Dieser Abschnitt erfordert nicht nur Sprachkenntnisse, sondern auch die Fähigkeit, kontextspezifische Gespräche zu navigieren, was ihn zu einem wichtigen Schwerpunkt für Studierende und Lehrer macht, die effektive Vorbereitungsstrategien entwickeln. Bei..."
+        }
       }
     },
     "package_out": {
@@ -696,7 +709,8 @@
         "name": "Sind Beispielantworten im DET-Kurs enthalten?",
         "content": "Ja, der DET-Kurs enthält hochbewertete Beispielantworten sowohl für die Sprech- als auch für die Schreibbereiche, zusammen mit detaillierten Erläuterungen, was diese Antworten effektiv macht. Dies hilft Ihnen, die Bewertungskriterien zu verstehen und Ihre Leistung zu verbessern."
       }
-    ]
+    ],
+    "prepCourse": "Vorbereitungskurs"
   },
   "forget": {
     "Please_enter": "Bitte geben Sie Ihre E-Mail-Adresse ein",

@@ -661,6 +661,19 @@
           "title": "Additional DET Prep Resources",
           "desc": ""
         }
+      },
+      "data5": {
+        "title": "Curso de Vocabulario DET: Dominando Habilidades Lingüísticas para el Éxito en el Examen",
+        "desc": "Nuestros cursos completos de vocabulario para el Duolingo English Test (DET) se centran en los aspectos más desafiantes del vocabulario DET, diseñados para mejorar sus capacidades lingüísticas y maximizar su éxito en el examen.",
+        "desc2": "",
+        "video1data": {
+          "title": "Mejore su Vocabulario DET: 7 Técnicas Avanzadas de Descripción de Fotos",
+          "desc": "Resumen: Esta publicación completa ofrece estrategias avanzadas y vocabulario para destacar en las secciones 'Hablar y Escribir sobre la Foto' del Duolingo English Test. Cubre siete áreas clave: descripciones de colores, escenas naturales, paisajes urbanos, actividad humana, vida cotidiana, tecnología y ciencia, y clima. Cada sección proporciona vocabulario avanzado, ejemplos y práctica..."
+        },
+        "video2data": {
+          "title": "Dominando la Comprensión Auditiva Interactiva del DET con Vocabulario Específico",
+          "desc": "Introducción: La sección de comprensión auditiva interactiva del Duolingo English Test (DET) presenta un desafío único tanto para los estudiantes como para los educadores. Esta sección requiere no solo dominio del idioma sino también la capacidad de navegar conversaciones específicas del contexto, lo que la convierte en un área de enfoque crítico para los estudiantes y profesores que diseñan estrategias de preparación efectivas. En..."
+        }
       }
     },
     "package_out": {
@@ -695,7 +708,8 @@
         "name": "¿Hay respuestas de ejemplo incluidas en el curso DET?",
         "content": "Sí, el curso DET incluye respuestas de ejemplo con alta puntuación tanto para las secciones de Habla como de Escritura, junto con análisis detallados de lo que hace efectivas a estas respuestas. Esto te ayuda a entender los criterios de calificación y mejorar tu rendimiento."
       }
-    ]
+    ],
+    "prepCourse": "Curso de preparación"
   },
   "forget": {
     "Please_enter": "Por favor ingrese su dirección de correo electrónico",

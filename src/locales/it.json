@@ -655,6 +655,19 @@
           "title": "Additional DET Prep Resources",
           "desc": ""
         }
+      },
+      "data5": {
+        "title": "Corso di Vocabolario DET: Padroneggiare le Abilità Linguistiche per il Successo nel Test",
+        "desc": "I nostri corsi completi di vocabolario per il Duolingo English Test (DET) si concentrano sugli aspetti più impegnativi del vocabolario DET, progettati per migliorare le tue capacità linguistiche e massimizzare il tuo successo nel test.",
+        "desc2": "",
+        "video1data": {
+          "title": "Migliora il tuo Vocabolario DET: 7 Tecniche Avanzate di Descrizione delle Foto",
+          "desc": "Sommario: Questo post completo offre strategie avanzate e vocabolario per eccellere nelle sezioni 'Parlare e Scrivere della Foto' del Duolingo English Test. Copre sette aree chiave: descrizioni dei colori, scene naturali, paesaggi urbani, attività umane, vita quotidiana, tecnologia e scienza, e meteo e clima. Ogni sezione fornisce vocabolario avanzato, esempi e pratica..."
+        },
+        "video2data": {
+          "title": "Padroneggiare l'Ascolto Interattivo DET con Vocabolario Specifico per Scenari",
+          "desc": "Introduzione: La sezione di ascolto interattivo del Duolingo English Test (DET) presenta una sfida unica sia per i candidati che per gli educatori. Questa sezione richiede non solo la padronanza della lingua ma anche la capacità di navigare conversazioni specifiche del contesto, rendendola un'area di focus critica per gli studenti e gli insegnanti che progettano strategie di preparazione efficaci. A..."
+        }
       }
     },
     "package_out": {
@@ -689,7 +702,8 @@
         "name": "Ci sono risposte di esempio incluse nel corso DET?",
         "content": "Sì, il corso DET include risposte di esempio con punteggio elevato sia per le sezioni di Conversazione che di Scrittura, insieme ad analisi dettagliate di ciò che rende queste risposte efficaci. Questo ti aiuta a comprendere i criteri di valutazione e migliorare le tue prestazioni."
       }
-    ]
+    ],
+    "prepCourse": "Corso di preparazione"
   },
   "forget": {
     "Please_enter": "Per favore inserisci il tuo indirizzo email",
