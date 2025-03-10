@@ -56,13 +56,7 @@
     "LearnTitle": "Sumber Daya Persiapan",
     "BlogTitle": "Blog",
     "CompanyTitle": "Perusahaan",
-    "Products": [
-      "Latihan Soal DET",
-      "Koreksi Writing AI",
-      "Penilaian Speaking AI",
-      "Simulasi Ujian",
-      "Kursus DET"
-    ],
+    "Products": ["Latihan Soal DET", "Koreksi Writing AI", "Penilaian Speaking AI", "Simulasi Ujian", "Kursus DET"],
     "Company": [
       "Tentang Kami",
       "Hubungi Kami",
@@ -101,12 +95,7 @@
     "power_by": "Didukung oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
-    "one_small_title": [
-      "DET Latihan",
-      "Koreksi AI",
-      "Ujian Palsu Lengkap",
-      "DET Kursus"
-    ],
+    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -1465,7 +1454,7 @@
     "articelContent2": {
       "a1": "Alright, that concludes our practice for today. Remember, consistent practice is key to improving your performance on the \"Read and Select\" question type.",
       "a2": "As you continue to study, pay attention to word patterns, common spelling rules, and exceptions in English. Don't be discouraged if you make mistakes - they're a natural part of the learning process. Use them as opportunities to identify areas for improvement.",
-      "a3": "Lastly, maintain a positive attitude and stay focused during the actual test. Trust in your preparation, manage your time wisely, and approach each question with confidence. With dedication and the right strategies, you'll be well-equipped to tackle the \"Read and Select\" questions and excel in your Duolingo English Test. Good luck with your test!",
+      "a3": "Lastly, maintain a positive attitude and stay focused during the actual test. Trust in your preparation, manage your time wisely, and approach each question with confidence. With dedication and the right strategies, you'll be well-equipped to tackle the \"Read and Select\" questions and excel in your Duolingo English Test. Good luck with your test!"
     },
     "a_list": {
       "a1name": "duolingo english test",
@@ -1571,7 +1560,7 @@
     },
     "articelContent7": {
       "a1": "We can interpret this as: Despite heavy rain, a large number of something showed up to support the local soccer team. Here, we can infer that in stormy weather, a large group of people appeared to support the local soccer team. Therefore, “crowd” is the appropriate answer.",
-      "a2": "Let’s look at the next question: ",
+      "a2": "Let’s look at the next question: "
     },
     "articelContent8": {
       "a1": "This sentence means that having a hearty meal always makes me feel something for the rest of the day. From the context, we can infer that a hearty meal always makes “me” feel something that lasts all day. The word “energize” means to give energy or invigorate, which fits the logic, indicating that a hearty meal provides “me” with the energy needed for the entire day."
@@ -1663,7 +1652,7 @@
       "a6": "Through our quick reading, we find that the passage is about a protagonist named Lenore, who wants to take on significant responsibilities within the company. However, it appears that the team members do not particularly recognize her efforts and might turn her down. The passage also mentions some possible reasons, such as “she always seems stressed out,” implying she often appears very stressed.",
       "a6_1": "One day, the manager talks to her about something, suggesting that if she sought the company’s interest, they should consider giving her a bigger role. This means giving her a more important position within the team. Lenore would be thrilled if she could play a significant role in the team, indicating she is quite eager to take on such a responsibility.",
       "a6_2": "So, the passage talks about this scenario. Now, let’s list all the options for the missing words. You may try to select the words yourself. Then, we’ll review the correct answers together. ",
-      "a7_h3": "First Question Type (1st of 6 sub-questions): Complete the Sentences",
+      "a7_h3": "First Question Type (1st of 6 sub-questions): Complete the Sentences"
     },
     "articelContent2": {
       "a1": "Now, let’s discuss how to solve this question. For example, in the first part, ‘wanted to’, we commonly use expressions like ‘wanted to do’ or ‘want to be’. Therefore, options like ‘someone’, ‘became’, and ‘are’ can be ruled out. Considering the context, ‘want to be’ fits better than ‘want to find’ because this isn’t about finding something. In the context of the whole sentence, it should be ‘Lenore wanted to be an important part of the team.’",
@@ -1686,7 +1675,7 @@
       "a3_5": "When you turn your attention to the answer options, it’s time to put on your detective hat. Pay close attention to the details in each potential answer. Check if the tense matches the rest of the passage. Look for specific topic words that align with the text you’ve just read. Consider the pronouns – do they correctly refer to what’s been mentioned? Also, keep an eye out for transitional words that might smoothly connect ideas.",
       "a3_6": "Here’s a useful strategy: start by eliminating answers that clearly don’t fit. This narrows down your options and increases your chances of selecting the correct answer. It’s often easier to identify what’s wrong than what’s right, so use this to your advantage.",
       "a3_7": "After you’ve made your choice, don’t forget to do a quick review. Read the passage again with your selected answer in place. Ask yourself: Does it flow naturally? Does it make logical sense in the context of the whole piece? This final check can save you from simple mistakes that are easy to overlook.",
-      "a3_8": "Remember, this task isn’t just about filling in a sentence. It’s about understanding how good writing flows and connects ideas. With practice, you’ll start to develop an intuition for what “sounds right” in well-constructed passages. This skill will serve you well not just in the exam, but in your reading and writing in general.",
+      "a3_8": "Remember, this task isn’t just about filling in a sentence. It’s about understanding how good writing flows and connects ideas. With practice, you’ll start to develop an intuition for what “sounds right” in well-constructed passages. This skill will serve you well not just in the exam, but in your reading and writing in general."
     },
     "articelContent3": {
       "a1": "Alright, let’s continue with our explanation of the sample question. The first paragraph is a bit long, but it’s the one we’ve already worked on. The final paragraph includes a new short sentence: ‘Lenore was overjoyed.’ This shows that the outcome was positive, and Lenore was very happy. ",
@@ -1704,12 +1693,12 @@
       "a3_3": "Next, you’ll want to focus on the keywords in the question. These are the important content words that relate directly to the topic of the passage. Your task is to find where these words, or their synonyms, appear in the original text. This is a critical skill because sometimes the passage won’t use the exact same words as the question, but rather synonyms or related terms. By quickly locating these keywords or their equivalents, you can efficiently pinpoint the area of the text where the answer is likely to be found.",
       "a3_4": "It’s important to note that the answer you’re looking for should be accurate and complete in addressing the question. However, don’t get caught up in trying to find or formulate a full sentence as the answer. Sometimes the correct response might be just a phrase, a name, or even a single word. The key is that it fully answers the question asked, regardless of its length or grammatical structure.",
       "a3_5": "This type of question tests your ability to quickly scan and comprehend text, to recognize synonyms and related concepts, and to extract precise information from a larger context. It’s a valuable skill not just for this test, but for efficient reading and information gathering in general.",
-      "a3_6": "Remember, practice is key to developing this skill. The more you work with these types of questions, the better you’ll become at quickly identifying the relevant information in a passage. This will not only improve your test performance but also enhance your overall reading comprehension abilities.",
+      "a3_6": "Remember, practice is key to developing this skill. The more you work with these types of questions, the better you’ll become at quickly identifying the relevant information in a passage. This will not only improve your test performance but also enhance your overall reading comprehension abilities."
     },
     "articelContent4": {
       "a1": "Alright, let’s continue with the sample question. First, let’s look at the question: ‘What was Lenore’s goal at her company?’ It asks about Lenore’s goal, which refers to what she wanted to achieve. Understanding it this way makes it easier to find the answer.",
       "a1_1": "Where is the answer to this question? We need to find a corresponding relationship. Here, ‘goal’ corresponds to ‘wanted to be’ in the text. This helps us identify the answer. It should be a part of the first sentence: ‘Lenore wanted to be an important part of her company’s contract management team.’",
-      "a1_2": "Alright, let’s move on to the next question: ‘How did Lenore respond when her manager asked her if she wanted an expanded role?’",
+      "a1_2": "Alright, let’s move on to the next question: ‘How did Lenore respond when her manager asked her if she wanted an expanded role?’"
     },
     "articelContent5": {
       "a1": "This question asks about Lenore’s response. We can identify more keywords in the question to help locate the answer, such as ‘manager’ and ‘an expanded role,’ which corresponds to ‘a big role.’ By understanding this correspondence, we can find the answer: ‘she said she would be thrilled if they did.’",
@@ -1722,17 +1711,17 @@
       "a3_3": "To tackle this effectively, make sure you locate the corresponding content in the text for each answer option. This means you’ll need to read the passage carefully and match each possible answer to a specific part of the text. Look for options that capture the main idea or key point of the relevant section, even if they use different words to express it.",
       "a3_4": "A crucial point to remember is to avoid taking things out of context or making unfounded assumptions. Stick closely to what the text actually says, rather than inferring or extrapolating beyond the information given. The correct answer should be firmly grounded in the passage itself.",
       "a3_5": "This question type tests your reading comprehension at a higher level, assessing your ability to synthesize information and recognize ideas expressed in different ways. It’s not just about finding matching words, but about understanding and identifying core concepts.",
-      "a3_6": "Developing this skill requires practice in paraphrasing and summarizing texts. As you prepare, try restating passages in your own words to get better at recognizing when two differently-worded statements are expressing the same idea. This will not only help you with these questions but also improve your overall reading and analytical skills.",
+      "a3_6": "Developing this skill requires practice in paraphrasing and summarizing texts. As you prepare, try restating passages in your own words to get better at recognizing when two differently-worded statements are expressing the same idea. This will not only help you with these questions but also improve your overall reading and analytical skills."
     },
     "articelContent6": {
       "a1": "Alright, let’s get back to the question. Here we have four options, and we’ll see which one is the correct answer. For this type of question, the process of elimination is the best approach. As we mentioned earlier, do not choose options that are not supported by the text or that contradict the text.",
       "a1_1": "For example, the first option, ‘get a new job,’ is not mentioned in the text. The second option, ‘new team,’ is also not mentioned in the text. Now, let’s look at the third option, ‘her assistant,’ which is not mentioned in the text either. This makes it easy to determine that the fourth option is the correct answer.",
-      "a1_2": "Let’s double-check: the fourth option actually corresponds to the third and fourth sentences of the passage: ‘Often when she requested a larger role on the team, they turned her down. Perhaps that was because even though Lenore worked hard and got all her assignments done on time, she always seemed stressed out.’ So, even though this option doesn’t summarize the entire passage, it is indeed the correct answer.",
+      "a1_2": "Let’s double-check: the fourth option actually corresponds to the third and fourth sentences of the passage: ‘Often when she requested a larger role on the team, they turned her down. Perhaps that was because even though Lenore worked hard and got all her assignments done on time, she always seemed stressed out.’ So, even though this option doesn’t summarize the entire passage, it is indeed the correct answer."
     },
     "articelContent7": {
       "a1_h2": "6. Title the Passage",
       "a1": "Alright, let’s look at the final question: Title the Passage. In the actual exam, this question will appear once per set, and the recommended time to answer is also one minute. This question is quite simple; we just need to choose the title of the passage.",
-      "t1": "DET Interactive Reading: Title the Passage",
+      "t1": "DET Interactive Reading: Title the Passage"
     },
     "articelContent8": {
       "a1": "When answering this question, focus on identifying the core topic of the passage. Use the process of elimination first, carefully read all the options, and make sure to review your choice before clicking ‘Next.’",
@@ -1741,7 +1730,7 @@
       "a1_3": "However, don’t just focus on individual words. The most crucial aspect is to identify the main idea conveyed in the article. A good title should encapsulate the overarching theme or central message of the entire passage. It’s not just about finding a phrase that appears in the text, but about summarizing the essence of what the author is trying to communicate.",
       "a1_4": "Be cautious of options that, while perhaps using words from the text, are unfounded or inconsistent with the original content. A title should accurately represent the passage, not mislead or exaggerate certain aspects. Avoid selecting options that only focus on minor details or tangential points mentioned in the text.",
       "a1_5": "This question type requires you to step back and look at the big picture. It tests your ability to synthesize information and identify the core message amidst all the details. As you read the passage, try to continuously ask yourself, “What is this text primarily about?” or “What’s the author’s main point?”",
-      "a1_6": "Developing this skill is not only useful for the test but also enhances your overall reading comprehension and analytical abilities. It forces you to engage with the text at a deeper level, understanding not just what is being said, but why it’s being said and what the overall purpose of the passage is.",
+      "a1_6": "Developing this skill is not only useful for the test but also enhances your overall reading comprehension and analytical abilities. It forces you to engage with the text at a deeper level, understanding not just what is being said, but why it’s being said and what the overall purpose of the passage is."
     },
     "articelContent9": {
       "a1": "Let’s look at the final question. First, let’s review the possible titles. The first one, ‘Lenore’s New Job,’ talks about her new job, which is definitely incorrect. The second one, ‘The Challenging Contract,’ does not mention anything about a contract. The third one, ‘The Client’s Complaint,’ also does not relate to anything mentioned in the passage. Therefore, the fourth one, ‘Lenore’s Big Chance,’ is the correct answer. This ‘big chance’ refers to the ‘big role’ that Lenore is about to have. Alright, that concludes our discussion of the questions."
@@ -1987,7 +1976,7 @@
       "li_2": "Proper handling of numbers and years",
       "li_3": "Efficient utilization of the three audio plays",
       "li_4": "Awareness of common phonetic phenomena in spoken English",
-      "li_5": "Strategies for tackling questions of varying difficulty levels",
+      "li_5": "Strategies for tackling questions of varying difficulty levels"
     },
     "p_3": "The course provides practical tips for improving performance, such as focusing on content words first, leveraging grammatical knowledge, and enhancing typing speed. It also emphasizes the importance of vocabulary expansion and familiarity with phonetic phenomena like linking, assimilation, and weak forms.",
     "p_4": "A video version of this course:",
@@ -2216,7 +2205,7 @@
       "li_5": "Practicing with sample questions and answers to familiarize oneself with the test format."
     },
     "p_83": "By following these guidelines and regularly practicing, test-takers can significantly improve their performance in the Interactive Listening section of the DET. Remember to adapt strategies to your personal strengths and continue refining your skills through consistent practice.",
-    "p_84": "This concludes the content of our lesson today. See you in our next post!",
+    "p_84": "This concludes the content of our lesson today. See you in our next post!"
   },
   "det_course_speak_about_the_photo": {
     "seometa": {
@@ -2394,7 +2383,7 @@
       "li4": "Practicing with example questions and answers",
       "li5": "Focusing on key aspects such as overall impression, specific details, actions or emotions, and personal observations"
     },
-    "p99": "By implementing these strategies and consistently practicing, test-takers can significantly improve their ability to describe images fluently and comprehensively. Remember that mastering this question type not only boosts your performance on the Duolingo English Test but also enhances your overall English speaking skills. With dedication and the right approach, you can confidently tackle the “Speak about the Photo” question and excel in your test.",
+    "p99": "By implementing these strategies and consistently practicing, test-takers can significantly improve their ability to describe images fluently and comprehensively. Remember that mastering this question type not only boosts your performance on the Duolingo English Test but also enhances your overall English speaking skills. With dedication and the right approach, you can confidently tackle the “Speak about the Photo” question and excel in your test."
   },
   "det-course-read-listen-then-speak": {
     "seometa": {
@@ -2740,7 +2729,7 @@
     "ol1": "<li>The basic format and frequency of these questions</li><li>Key considerations for answering, such as volume, clarity, and fluency</li><li>An introduction to the International Phonetic Alphabet (IPA)</li><li>The concept of word stress and its importance</li><li>Sentence stress and how to emphasize important information</li><li>Advanced pronunciation techniques like linking, assimilation, and weak forms</li><li>Practical examples and exercises for each concept</li><li>Tips for applying these skills in the actual test</li>",
     "p83": "<strong>Conclusion</strong>: Mastering the “Read Aloud” question type is crucial for success in the Duolingo English Test. By understanding and practicing the concepts presented in this guide, you can significantly improve your pronunciation, fluency, and overall performance. The key is to focus on clear pronunciation, proper stress patterns, and natural speech flow. Regular practice with the provided examples and techniques will help build confidence and proficiency in reading aloud, ultimately leading to better test scores and improved English speaking skills.",
     "p84": "Okay, this is our explanation of the Duolingo English Test Read Aloud question type. Welcome everyone to come back to our <a href=\"https://www.detpractice.com\" target=\"_blank\" rel=\"noreferrer noopener\">prep hub</a> frequently and follow our <a href=\"https://www.youtube.com/{'@'}duolingoenglishtestpractices\" target=\"_blank\" rel=\"noreferrer noopener\">DET YouTube channel</a> to get the latest test information and materials. Today’s lesson ends here. Thank you everyone for reading. See you next time, bye.",
-    "p85": "If you need more practice, you can find additional exercises in the <a href=\"https://www.detpractice.com\" target=\"_blank\" rel=\"noreferrer noopener\">DET Practice Test question bank</a>. Also, you can watch more practice videos for DET Read Aloud questions here:",
+    "p85": "If you need more practice, you can find additional exercises in the <a href=\"https://www.detpractice.com\" target=\"_blank\" rel=\"noreferrer noopener\">DET Practice Test question bank</a>. Also, you can watch more practice videos for DET Read Aloud questions here:"
   },
   "det_course_speaking_sample": {
     "seometa": {
@@ -2993,7 +2982,7 @@
     "p203": "Remember, the key to excelling in the Duolingo English Test speaking sample is a combination of thorough preparation, strategic thinking, and confident delivery. Continue to practice regularly, focusing on areas where you feel less confident. With dedication and the strategies learned in this course, you’ll be well-equipped to showcase your English-speaking skills effectively.",
     "p204": "Good luck with your test preparation!",
     "p205": "<strong>Further reading: </strong>",
-    "ul16": "<li>Official question introduction: <a href=\"https://englishtest.duolingo.com/prepare/question_types#Speaking-Sample\">https://englishtest.duolingo.com/prepare/question_types#Speaking-Sample</a></li>",
+    "ul16": "<li>Official question introduction: <a href=\"https://englishtest.duolingo.com/prepare/question_types#Speaking-Sample\">https://englishtest.duolingo.com/prepare/question_types#Speaking-Sample</a></li>"
   },
   "det_write_about_the_photo_course": {
     "seometa": {
@@ -3322,7 +3311,7 @@
     "p223": "Remember:",
     "ul31": "<li>Use vivid, specific language</li><li>Balance detail with conciseness</li><li>Practice applying templates to various images</li><li>Adapt descriptions to each unique photo</li><li>Consider both visible elements and their broader implications</li>",
     "p224": "By mastering these techniques, test-takers can improve their ability to provide rich, insightful descriptions of various types of images, enhancing their performance on the Duolingo English Test. Thank you for joining us for this comprehensive guide on photo description. We hope that these templates and exercises will help you improve your descriptive skills. Good luck with your test.",
-    "p225": "Further reading: <a href=\"https://englishtest.duolingo.com/prepare/question_types#Write-About-the-Photo\" target=\"_blank\" rel=\"noreferrer noopener\">https://englishtest.duolingo.com/prepare/question_types#Write-About-the-Photo</a>",
+    "p225": "Further reading: <a href=\"https://englishtest.duolingo.com/prepare/question_types#Write-About-the-Photo\" target=\"_blank\" rel=\"noreferrer noopener\">https://englishtest.duolingo.com/prepare/question_types#Write-About-the-Photo</a>"
   },
   "det_interactive_writing": {
     "seometa": {
@@ -4147,6 +4136,6 @@
     "p133": "Consistent practice is key to developing these skills. Regularly exposing yourself to diverse academic scenarios and expanding your context-specific vocabulary will improve your ability to respond appropriately in different situations. This practice not only prepares you for the DET but also equips you with valuable communication skills for your academic and professional future.",
     "p134": "Remember, by focusing on scenario-based vocabulary and honing your skills in context-specific communication, you're cultivating a valuable skill set that extends beyond the test. Keep practicing, stay curious about different academic contexts, and approach each interaction as an opportunity to refine your language skills. Your efforts will pay off in both your DET performance and future academic endeavors.",
     "p135": "Additional Resources:",
-    "ul1": "<li><strong>DET Interactive Listening Introduction from Duolingo English Test:</strong> The official DET video provides a detailed overview of the Interactive Listening question type and offers practical preparation strategies and tips.</li>",
+    "ul1": "<li><strong>DET Interactive Listening Introduction from Duolingo English Test:</strong> The official DET video provides a detailed overview of the Interactive Listening question type and offers practical preparation strategies and tips.</li>"
   }
 }
