@@ -42,11 +42,6 @@ state.checkId = props.id;
 const { rate, averageScore } = (find(state.rateArr, { id: props.id }) || {}) as any;
 state.rate = rate;
 state.averageScore = averageScore;
-watch(props.categoryId, (val) => {
-  if (val) {
-    getSelect();
-  }
-});
 
 const getSelect = async () => {
   const { data = {} } = (await useFetch(`${articleCategoryGet}?id=${props.categoryId}`, {
@@ -56,6 +51,7 @@ const getSelect = async () => {
   const { name } = head(data.value) as any;
   state.selectName = name;
 };
+getSelect();
 
 const rateChange = async () => {
   const rateArr = JSON.parse(getStorage('det_rate') || '[]');
