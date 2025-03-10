@@ -65,7 +65,6 @@ const tree_data = computed(() => {
         { name: t('courses.four_change_right_data.data4.video1data.title'), path: '/det-write-about-the-photo-course' },
         { name: t('courses.four_change_right_data.data4.video2data.title'), path: '/det-interactive-writing' },
         { name: t('courses.four_change_right_data.data4.video3data.title'), path: '/det-prep-course-writing-sample' },
-        { name: t('courses.four_change_right_data.data4.video4data.title'), path: '' },
       ],
     },
     {
@@ -116,6 +115,7 @@ const tree_data = computed(() => {
     line-height: 25px;
     margin-bottom: 25px;
     margin-left: 24px;
+    margin-top: 16px;
   }
   .tree_out {
     .one_part {
@@ -125,6 +125,8 @@ const tree_data = computed(() => {
         font-weight: 500;
         font-size: 18px;
         color: #999999;
+        margin-top: 16px;
+        margin-bottom: 6px;
       }
       .child_name_out {
         padding: 11px 24px;
