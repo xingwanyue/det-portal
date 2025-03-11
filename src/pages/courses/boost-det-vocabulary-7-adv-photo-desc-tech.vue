@@ -16,7 +16,10 @@ useHead({
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: t('boost_det_vocabulary_7_adv_photo_desc_tech.seometa.title') },
     { property: 'og:description', content: t('tos.seometa.description') },
-    { property: 'og:url', content: `https://www.${domain}${localePath('/det-read-and-select-course')}` },
+    {
+      property: 'og:url',
+      content: `https://www.${domain}${localePath('/courses/boost-det-vocabulary-7-adv-photo-desc-tech')}`,
+    },
     { property: 'og:site_name', content: 'DET Practice' },
     { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
     { name: 'twitter:card', content: 'summary_large_image' },

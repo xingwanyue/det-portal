@@ -17,7 +17,7 @@ useHead({
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: t('det_course_speak_about_the_photo.seometa.title') },
     { property: 'og:description', content: t('tos.seometa.description') },
-    { property: 'og:url', content: `https://www.${domain}${localePath('/det-read-and-select-course')}` },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/courses/det-course-speak-about-the-photo')}` },
     { property: 'og:site_name', content: 'DET Practice' },
     { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
     { name: 'twitter:card', content: 'summary_large_image' },

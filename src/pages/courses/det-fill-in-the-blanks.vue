@@ -25,7 +25,7 @@ useHead({
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: t('det_read_and_select_course.seometa.title') },
     { property: 'og:description', content: t('tos.seometa.description') },
-    { property: 'og:url', content: `https://www.${domain}${localePath('/det-fill-in-the-blanks')}` },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/courses/det-fill-in-the-blanks')}` },
     { property: 'og:site_name', content: 'DET Practice' },
     { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
     { name: 'twitter:card', content: 'summary_large_image' },

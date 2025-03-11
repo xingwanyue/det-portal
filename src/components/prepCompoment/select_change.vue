@@ -13,6 +13,7 @@ const routername = ref(' ');
 onMounted(() => {
   const route = useRoute();
   console.log(route.path);
+  console.log(route.path);
   routername.value = route.path;
 });
 
@@ -22,12 +23,18 @@ const tree_data = computed(() => {
       id: 0,
       name: t('courses.changeleftfont.read'),
       chikldren: [
-        { name: t('courses.four_change_right_data.data1.video1data.title'), path: '/det-read-and-select-course' },
-        { name: t('courses.four_change_right_data.data1.video2data.title'), path: '/det-fill-in-the-blanks' },
-        { name: t('courses.four_change_right_data.data1.video3data.title'), path: '/det-interactive-reading-course' },
+        {
+          name: t('courses.four_change_right_data.data1.video1data.title'),
+          path: '/courses/det-read-and-select-course',
+        },
+        { name: t('courses.four_change_right_data.data1.video2data.title'), path: '/courses/det-fill-in-the-blanks' },
+        {
+          name: t('courses.four_change_right_data.data1.video3data.title'),
+          path: '/courses/det-interactive-reading-course',
+        },
         {
           name: t('courses.four_change_right_data.data1.video4data.title'),
-          path: '/det-read-and-complete-prep-course',
+          path: '/courses/det-read-and-complete-prep-course',
         },
       ],
     },
@@ -37,11 +44,11 @@ const tree_data = computed(() => {
       chikldren: [
         {
           name: t('courses.four_change_right_data.data2.video1data.title'),
-          path: '/det-prep-course-listen-and-type-questions',
+          path: '/courses/det-prep-course-listen-and-type-questions',
         },
         {
           name: t('courses.four_change_right_data.data2.video2data.title'),
-          path: '/det-prep-course-interactive-listening',
+          path: '/courses/det-prep-course-interactive-listening',
         },
       ],
     },
@@ -49,22 +56,37 @@ const tree_data = computed(() => {
       id: 2,
       name: t('courses.changeleftfont.spe'),
       chikldren: [
-        { name: t('courses.four_change_right_data.data3.video1data.title'), path: '/det-course-speak-about-the-photo' },
+        {
+          name: t('courses.four_change_right_data.data3.video1data.title'),
+          path: '/courses/det-course-speak-about-the-photo',
+        },
         {
           name: t('courses.four_change_right_data.data3.video2data.title'),
-          path: '/det-course-read-listen-then-speak',
+          path: '/courses/det-course-read-listen-then-speak',
         },
-        { name: t('courses.four_change_right_data.data3.video3data.title'), path: '/det-prep-course-read-aloud' },
-        { name: t('courses.four_change_right_data.data3.video4data.title'), path: '/det-course-speaking-sample' },
+        {
+          name: t('courses.four_change_right_data.data3.video3data.title'),
+          path: '/courses/det-prep-course-read-aloud',
+        },
+        {
+          name: t('courses.four_change_right_data.data3.video4data.title'),
+          path: '/courses/det-course-speaking-sample',
+        },
       ],
     },
     {
       id: 3,
       name: t('courses.changeleftfont.wri'),
       chikldren: [
-        { name: t('courses.four_change_right_data.data4.video1data.title'), path: '/det-write-about-the-photo-course' },
-        { name: t('courses.four_change_right_data.data4.video2data.title'), path: '/det-interactive-writing' },
-        { name: t('courses.four_change_right_data.data4.video3data.title'), path: '/det-prep-course-writing-sample' },
+        {
+          name: t('courses.four_change_right_data.data4.video1data.title'),
+          path: '/courses/det-write-about-the-photo-course',
+        },
+        { name: t('courses.four_change_right_data.data4.video2data.title'), path: '/courses/det-interactive-writing' },
+        {
+          name: t('courses.four_change_right_data.data4.video3data.title'),
+          path: '/courses/det-prep-course-writing-sample',
+        },
       ],
     },
     {
@@ -73,11 +95,11 @@ const tree_data = computed(() => {
       chikldren: [
         {
           name: t('courses.four_change_right_data.data5.video1data.title'),
-          path: '/boost-det-vocabulary-7-adv-photo-desc-tech',
+          path: '/courses/boost-det-vocabulary-7-adv-photo-desc-tech',
         },
         {
           name: t('courses.four_change_right_data.data5.video2data.title'),
-          path: '/det-listening-words',
+          path: '/courses/det-listening-words',
         },
       ],
     },
@@ -92,7 +114,7 @@ const tree_data = computed(() => {
         <div class="father_name_out">{{ item.name }}</div>
         <nuxt-link
           :to="localePath(itemin.path)"
-          :class="routername === itemin.path ? 'child_name_out child_name_out_selected' : 'child_name_out'"
+          :class="routername === `${itemin.path}` ? 'child_name_out child_name_out_selected' : 'child_name_out'"
           v-for="(itemin, indexin) in item.chikldren"
           :key="indexin"
         >

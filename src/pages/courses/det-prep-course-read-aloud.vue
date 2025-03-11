@@ -17,7 +17,7 @@ useHead({
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: t('det-prep-course-read-aloud.seometa.title') },
     { property: 'og:description', content: t('tos.seometa.description') },
-    { property: 'og:url', content: `https://www.${domain}${localePath('/det-read-and-select-course')}` },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/courses/det-prep-course-read-aloud')}` },
     { property: 'og:site_name', content: 'DET Practice' },
     { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
     { name: 'twitter:card', content: 'summary_large_image' },

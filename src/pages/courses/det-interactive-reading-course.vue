@@ -26,7 +26,7 @@ useHead({
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: t('det_interactive_reading_course.seometa.title') },
     { property: 'og:description', content: t('det_interactive_reading_course.seometa.description') },
-    { property: 'og:url', content: `https://www.${domain}${localePath('/det-interactive-reading-course')}` },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/courses/det-interactive-reading-course')}` },
     { property: 'og:site_name', content: 'DET Practice' },
     { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
     { name: 'twitter:card', content: 'summary_large_image' },
