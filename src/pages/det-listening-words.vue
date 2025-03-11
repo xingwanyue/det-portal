@@ -238,13 +238,15 @@ const show_answer5 = ref(false);
         </div>
         <div class="prep_button" @click="show_answer4 = !show_answer4">{{ t('det_listening_words.stls') }}</div>
         <div v-if="show_answer4" class="answer_out">
-          Student A: “Hey Sarah, have you started working on the group presentation for Professor Lee’s class?” Student
-          B: “Hi Alex. Yes, I’ve begun researching our topic on renewable energy sources. How about you?” Student A:
-          “I’ve gathered some data on solar power, but I’m struggling to find recent statistics on wind energy. Do you
-          have any good sources?” Student B: “Actually, I came across a great report from the International Energy
-          Agency. I can share the link with you.” Student A: “That would be fantastic, thanks! By the way, when do you
-          think we should meet to put everything together?” Student B: “How about next Tuesday after class? We can use
-          the library’s group study room.” Student A: “Sounds good to me. I’ll book the room for us. See you then!”
+          Student A: “Hey Sarah, have you started working on the group presentation for Professor Lee’s class?”<br />
+          Student B: “Hi Alex. Yes, I’ve begun researching our topic on renewable energy sources. How about you?”<br />
+          Student A: “I’ve gathered some data on solar power, but I’m struggling to find recent statistics on wind
+          energy. Do you have any good sources?” <br />Student B: “Actually, I came across a great report from the
+          International Energy Agency. I can share the link with you.”<br />
+          Student A: “That would be fantastic, thanks! By the way, when do you think we should meet to put everything
+          together?”<br />
+          Student B: “How about next Tuesday after class? We can use the library’s group study room.” <br />Student A:
+          “Sounds good to me. I’ll book the room for us. See you then!”
         </div>
 
         <p>{{ t('det_listening_words.p130') }}</p>
