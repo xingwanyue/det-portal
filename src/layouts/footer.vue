@@ -95,7 +95,7 @@ const Learn = computed(() => {
 
 const Blog = ref([]);
 const getBlob = async () => {
-  let args = { type: '1', flag: '1' } as any;
+  let args = { flag: '1' } as any;
   if (!state.isMore1) {
     args = { ...args, page: 1, pageSize: 4 };
   }

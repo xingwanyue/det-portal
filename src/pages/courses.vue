@@ -429,7 +429,7 @@ onMounted(() => {
                   > -->
                   <div class="height_hack"></div>
                   <NuxtLink v-if="item2.prepUrl" class="right_click" :to="localePath(`${item2.prepUrl}`)">
-                    <div class="font">{{ item2.title }} Prep Course</div>
+                    <div class="font">{{ item2.title }} {{ t('courses.prepCourse') }}</div>
                     <div class="arrow">
                       <img src="/img/products/yellow_arrow_right.svg" alt="yellow_arrow_right" />
                     </div>

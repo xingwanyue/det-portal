@@ -46,26 +46,28 @@ const { data: category } = (await useFetch(`${api}/common/article/category`, {
   query: {},
   headers: { locale: locale.value },
 })) as any;
-leftList.value = category.value;
-if (route.params.path[0]) {
+leftList.value = category?.value;
+
+if (route?.params?.path[0]) {
   categoryPath.value = route.params.path[0];
 } else {
   categoryPath.value = category.value[0]?.path;
 }
-if (route.params.path[1]) {
-  currentPage.value = Number(route.params.path[1]);
+if (route?.params?.path[1]) {
+  currentPage.value = Number(route?.params?.path[1]);
 }
 
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   key: 'blog_article',
   server: true,
   query: {
-    page: route.params.path[1] || 1,
+    page: route?.params?.path[1] || 1,
     pageSize: 10,
-    categoryPath: route.query.categoryPath || categoryPath.value,
+    categoryPath: route?.query?.categoryPath || categoryPath.value,
   },
   headers: { locale: locale.value },
   transform: (data: any) => {
+    if (!data) return { data: [], total: 0 };
     data.data = data.data.map((item: any) => {
       item.category = (category.value.find((cate: any) => cate.id === item.categoryId) || {}).name;
       return item;
@@ -74,30 +76,33 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   },
 })) as any;
 
-blogs.value = blogsjk.value?.data;
-total.value = blogsjk.value?.total;
+blogs.value = blogsjk.value?.data || [];
+total.value = blogsjk.value?.total || 0;
 allPageNum.value = Math.ceil(total.value / 10);
 
 const handleCurrentChange = async (val: number) => {
   currentPage.value = val;
-  const { data: blogsjkk } = (await useFetch(`${api}/common/article`, {
-    key: 'blog_article_change',
-    server: true,
-    query: {
-      page: val,
-      pageSize: 10,
-      categoryPath: route.query.categoryPath || categoryPath.value,
-    },
-    headers: { locale: locale.value },
-    transform: (data: any) => {
-      data.data = data.data.map((item: any) => {
-        item.category = (category.value.find((cate: any) => cate.id === item.categoryId) || {}).name;
-        return item;
-      });
-      return { data: data.data, total: data.total };
-    },
-  })) as any;
-  blogs.value = blogsjkk?.value.data;
+  try {
+    const { data: blogsjkk, error } = (await useFetch(`${api}/common/article`, {
+      key: 'blog_article_change',
+      server: true,
+      query: {
+        page: val,
+        pageSize: 10,
+        categoryPath: route.query.categoryPath || categoryPath.value,
+      },
+      headers: { locale: locale.value },
+      onResponseError: (error) => {
+        console.error('分页请求失败:', error);
+        return { data: [], total: 0 };
+      },
+    })) as any;
+
+    blogs.value = blogsjkk?.value?.data || [];
+  } catch (err) {
+    console.error('处理分页时发生错误:', err);
+    blogs.value = [];
+  }
 };
 // const findCategory = (id: Number) => {
 //   console.log(id);
@@ -119,10 +124,10 @@ const handleCurrentChange = async (val: number) => {
         <NuxtLink
           v-for="item in leftList"
           :key="item.id"
-          :class="categoryPath === item.path ? 'one_pdom one_pdom_active' : 'one_pdom'"
-          :to="localePath(`/blog/${item.path}`)"
+          :class="categoryPath === item?.path ? 'one_pdom one_pdom_active' : 'one_pdom'"
+          :to="localePath(`/blog/${item?.path}`)"
         >
-          {{ item.name }}
+          {{ item?.name }}
         </NuxtLink>
       </div>
       <div class="blog_right_list">
@@ -133,14 +138,16 @@ const handleCurrentChange = async (val: number) => {
             :class="index === 0 ? 'one_blog border_top' : 'one_blog'"
             data-aos="fade-up"
             data-aos-duration="1000"
-            :to="localePath(`/${item.path}`)"
+            :to="localePath(`/${item?.path}`)"
           >
-            <h2 class="title">{{ item.name }}</h2>
+            <h2 class="title">{{ item?.name }}</h2>
             <div class="content">
-              {{ item.content }}
+              {{ item?.content }}
             </div>
             <div class="bottom">
-              <div class="date">{{ dayjs(item.createTime).format('YYYY-MM-DD') }}&nbsp;|&nbsp;{{ item.category }}</div>
+              <div class="date">
+                {{ dayjs(item?.createTime).format('YYYY-MM-DD') }}&nbsp;|&nbsp;{{ item?.category }}
+              </div>
             </div>
           </NuxtLink>
         </div>
