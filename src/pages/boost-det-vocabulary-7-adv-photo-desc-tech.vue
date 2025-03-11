@@ -58,7 +58,7 @@ useHead({
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p2') }}</p>
 
         <iframe
-          data-src="https://podcasters.spotify.com/pod/show/duolingoenglishtest/embed/episodes/Boost-Your-DET-Vocabulary-7-Advanced-Photo-Description-Techniques-e2qtpst/a-abkjvuv"
+          src="https://podcasters.spotify.com/pod/show/duolingoenglishtest/embed/episodes/Boost-Your-DET-Vocabulary-7-Advanced-Photo-Description-Techniques-e2qtpst/a-abkjvuv"
           height="102px"
           frameborder="0"
           scrolling="no"

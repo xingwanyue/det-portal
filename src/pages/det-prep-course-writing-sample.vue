@@ -670,9 +670,9 @@ const showAnswer16 = ref(false);
         <h3>{{ t('det_prep_course_writing_sample.h37') }}</h3>
         <p>{{ t('det_prep_course_writing_sample.p150') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p151') }}</p>
-        <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p152')"></div>
+        <div class="html_wrapper" style="color: blue" v-html="t('det_prep_course_writing_sample.p152')"></div>
         <p>{{ t('det_prep_course_writing_sample.p153') }}</p>
-        <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p154')"></div>
+        <div class="html_wrapper" style="color: blue" v-html="t('det_prep_course_writing_sample.p154')"></div>
         <p>{{ t('det_prep_course_writing_sample.p155') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p156') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p157') }}</p>
@@ -887,9 +887,9 @@ const showAnswer16 = ref(false);
         <p>{{ t('det_prep_course_writing_sample.p204') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p205') }}</p>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p206')"></div>
-        <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p207')"></div>
+        <div class="html_wrapper" style="color: blue" v-html="t('det_prep_course_writing_sample.p207')"></div>
         <p>{{ t('det_prep_course_writing_sample.p208') }}</p>
-        <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p209')"></div>
+        <div class="html_wrapper" style="color: blue" v-html="t('det_prep_course_writing_sample.p209')"></div>
         <p>{{ t('det_prep_course_writing_sample.p210') }}</p>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p211')"></div>
         <p>{{ t('det_prep_course_writing_sample.p212') }}</p>
