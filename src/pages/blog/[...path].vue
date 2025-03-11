@@ -46,14 +46,14 @@ const { data: category } = (await useFetch(`${api}/common/article/category`, {
   headers: { locale: locale.value },
 })) as any;
 leftList.value = category?.value;
-// if (route.params.path[0]) {
-//   categoryPath.value = route.params.path[0];
-// } else {
-//   categoryPath.value = category.value[0]?.path;
-// }
-// if (route.params.path[1]) {
-//   currentPage.value = Number(route.params.path[1]);
-// }
+if (route.params.path[0]) {
+  categoryPath.value = route.params.path[0];
+} else {
+  categoryPath.value = category.value[0]?.path;
+}
+if (route.params.path[1]) {
+  currentPage.value = Number(route.params.path[1]);
+}
 
 const { data: blogsjk, error } = (await useFetch(`${api}/common/article`, {
   server: true,
@@ -113,7 +113,7 @@ const handleCurrentChange = async (val: number) => {
 </script>
 <template>
   <div class="blogs">
-    1
+    2
     <div class="bolgs_hader">
       <div class="bolgs_hader_content">
         <h1>{{ $t('blog.h1') }}</h1>
