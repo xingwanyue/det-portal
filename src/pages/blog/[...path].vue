@@ -55,7 +55,7 @@ if (route.params.path[1]) {
   currentPage.value = Number(route.params.path[1]);
 }
 
-const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
+const { data: blogsjk, error } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
     page: route.params.path[1] || 1,
@@ -64,37 +64,45 @@ const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   },
   headers: { locale: locale.value },
   transform: (data: any) => {
+    if (!data) return { data: [], total: 0 };
     data.data = data.data.map((item: any) => {
       item.category = (category.value.find((cate: any) => cate.id === item.categoryId) || {}).name;
       return item;
     });
     return { data: data.data, total: data.total };
   },
+  onResponseError: (error) => {
+    console.error('API 请求失败:', error);
+    return { data: [], total: 0 };
+  },
 })) as any;
 
-blogs.value = blogsjk.value?.data;
-total.value = blogsjk.value?.total;
+blogs.value = blogsjk.value?.data || [];
+total.value = blogsjk.value?.total || 0;
 allPageNum.value = Math.ceil(total.value / 10);
 
 const handleCurrentChange = async (val: number) => {
   currentPage.value = val;
-  const { data: blogsjkk } = (await useFetch(`${api}/common/article`, {
-    server: true,
-    query: {
-      page: val,
-      pageSize: 10,
-      categoryPath: route.query.categoryPath || categoryPath.value,
-    },
-    headers: { locale: locale.value },
-    transform: (data: any) => {
-      data.data = data.data.map((item: any) => {
-        item.category = (category.value.find((cate: any) => cate.id === item.categoryId) || {}).name;
-        return item;
-      });
-      return { data: data.data, total: data.total };
-    },
-  })) as any;
-  blogs.value = blogsjkk?.value.data;
+  try {
+    const { data: blogsjkk, error } = (await useFetch(`${api}/common/article`, {
+      server: true,
+      query: {
+        page: val,
+        pageSize: 10,
+        categoryPath: route.query.categoryPath || categoryPath.value,
+      },
+      headers: { locale: locale.value },
+      onResponseError: (error) => {
+        console.error('分页请求失败:', error);
+        return { data: [], total: 0 };
+      },
+    })) as any;
+
+    blogs.value = blogsjkk?.value?.data || [];
+  } catch (err) {
+    console.error('处理分页时发生错误:', err);
+    blogs.value = [];
+  }
 };
 // const findCategory = (id: Number) => {
 //   console.log(id);
