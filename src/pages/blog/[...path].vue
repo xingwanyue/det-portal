@@ -41,6 +41,7 @@ let leftList = ref([]) as any;
 let categoryPath = ref();
 
 const { data: category } = (await useFetch(`${api}/common/article/category`, {
+  key: 'blog_article_category',
   server: true,
   query: {},
   headers: { locale: locale.value },
@@ -56,6 +57,7 @@ if (route.params.path[1]) {
 }
 
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
+  key: 'blog_article',
   server: true,
   query: {
     page: route.params.path[1] || 1,
@@ -79,6 +81,7 @@ allPageNum.value = Math.ceil(total.value / 10);
 const handleCurrentChange = async (val: number) => {
   currentPage.value = val;
   const { data: blogsjkk } = (await useFetch(`${api}/common/article`, {
+    key: 'blog_article_change',
     server: true,
     query: {
       page: val,
