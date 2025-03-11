@@ -5,6 +5,7 @@
   "Learn": "Apprendre",
   "Pricing": "Tarification",
   "Blog": "Blog",
+  "courses_title": "Cours",
   "header": {
     "home_logo_title": "DET Pratique",
     "path_practice_title": "Duolingo Test de pratique d'anglais en ligne",
@@ -674,13 +675,13 @@
         "desc": "Nos cours complets de vocabulaire pour le Duolingo English Test (DET) ciblent les aspects les plus difficiles du vocabulaire DET, conçus pour améliorer vos capacités linguistiques et maximiser votre réussite à l'examen.",
         "desc2": "",
         "video1data": {
-          "title": "Améliorez votre Vocabulaire DET : 7 Techniques Avancées de Description de Photos",
-          "desc": "Résumé : Cet article complet propose des stratégies avancées et du vocabulaire pour exceller dans les sections 'Parler et Écrire sur la Photo' du Duolingo English Test. Il couvre sept domaines clés : descriptions des couleurs, scènes naturelles, paysages urbains, activité humaine, vie quotidienne, technologie et science, et météo et climat. Chaque section fournit du vocabulaire avancé, des exemples et des exercices..."
-        },
-        "video2data": {
-          "title": "Maîtriser l'Écoute Interactive DET avec un Vocabulaire Spécifique aux Scénarios",
-          "desc": "Introduction : La section d'écoute interactive du Duolingo English Test (DET) présente un défi unique pour les candidats et les éducateurs. Cette section nécessite non seulement une maîtrise de la langue mais aussi la capacité à naviguer dans des conversations contextuelles, ce qui en fait un domaine d'attention crucial pour les étudiants et les enseignants qui conçoivent des stratégies de préparation efficaces. À..."
-        }
+          "title": "7 Description Avancée de Photos",
+          "desc": "Ce cours propose des stratégies avancées et du vocabulaire pour les sections de description orale et écrite de photos du Duolingo English Test. Apprenez à améliorer vos descriptions, à exprimer des idées complexes et à améliorer votre performance globale grâce à des conseils pratiques et un vocabulaire enrichi."
+      },
+      "video2data": {
+          "title": "Vocabulaire des Scénarios d'Écoute Interactive",
+          "desc": "Ce cours se concentre sur le vocabulaire des scénarios pour la section d'écoute interactive du Duolingo English Test (DET). Il aide les étudiants à maîtriser les dialogues spécifiques aux situations avec précision et confiance, tout en fournissant aux éducateurs des stratégies d'enseignement structurées."
+      }
       }
     },
     "package_out": {

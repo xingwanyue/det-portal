@@ -5,6 +5,7 @@
   "Learn": "Materiali Didattici",
   "Pricing": "Tariffe",
   "Blog": "Guida allo Studio",
+  "courses_title": "Corso",
   "header": {
     "home_logo_title": "DET Pratica",
     "path_practice_title": "Duolingo Test di Pratica di Inglese Online",
@@ -56,8 +57,22 @@
     "LearnTitle": "Risorse di preparazione",
     "BlogTitle": "Blog",
     "CompanyTitle": "Azienda",
-    "Products": ["Esercizi DET", "Correzione IA Scrittura", "Valutazione IA Speaking", "Simulazioni", "Corsi Completi"],
-    "Company": ["Chi siamo", "Contattaci", "Condizioni", "Privacy", "Mappa del sito", "Partnership", "Rimborsi"],
+    "Products": [
+      "Esercizi DET",
+      "Correzione IA Scrittura",
+      "Valutazione IA Speaking",
+      "Simulazioni",
+      "Corsi Completi"
+    ],
+    "Company": [
+      "Chi siamo",
+      "Contattaci",
+      "Condizioni",
+      "Privacy",
+      "Mappa del sito",
+      "Partnership",
+      "Rimborsi"
+    ],
     "show_more": "Leggi di più",
     "alt": "DET Pratica:La migliore piattaforma di Duolingo English Test Pratica",
     "cookie_contenr": "DET La pratica utilizza i cookie per migliorare i contenuti in base alle impostazioni del browser. Per ulteriori dettagli, vedere",
@@ -87,7 +102,12 @@
     "power_by": "Basato su AI",
     "h1Mobile": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
     "h1PC": "Ottieni facilmente un punteggio più alto al Duolingo English Test",
-    "one_small_title": ["DET Pratica", "Correzione AI", "Simulazione Completa", "DET Corsi"],
+    "one_small_title": [
+      "DET Pratica",
+      "Correzione AI",
+      "Simulazione Completa",
+      "DET Corsi"
+    ],
     "Start_free_with_Google": "Inizia gratis con Google",
     "Start_free_with_email": "Inizia gratis con email",
     "Start_for_free": "Inizia gratis",
@@ -661,12 +681,12 @@
         "desc": "I nostri corsi completi di vocabolario per il Duolingo English Test (DET) si concentrano sugli aspetti più impegnativi del vocabolario DET, progettati per migliorare le tue capacità linguistiche e massimizzare il tuo successo nel test.",
         "desc2": "",
         "video1data": {
-          "title": "Migliora il tuo Vocabolario DET: 7 Tecniche Avanzate di Descrizione delle Foto",
-          "desc": "Sommario: Questo post completo offre strategie avanzate e vocabolario per eccellere nelle sezioni 'Parlare e Scrivere della Foto' del Duolingo English Test. Copre sette aree chiave: descrizioni dei colori, scene naturali, paesaggi urbani, attività umane, vita quotidiana, tecnologia e scienza, e meteo e clima. Ogni sezione fornisce vocabolario avanzato, esempi e pratica..."
+          "title": "7 Descrizione Avanzata delle Foto",
+          "desc": "Questo corso offre strategie avanzate e vocabolario per le sezioni di descrizione orale e scritta delle foto del Duolingo English Test. Impara come migliorare le tue descrizioni, esprimere idee complesse e migliorare le tue prestazioni generali con suggerimenti pratici e vocabolario arricchito."
         },
         "video2data": {
-          "title": "Padroneggiare l'Ascolto Interattivo DET con Vocabolario Specifico per Scenari",
-          "desc": "Introduzione: La sezione di ascolto interattivo del Duolingo English Test (DET) presenta una sfida unica sia per i candidati che per gli educatori. Questa sezione richiede non solo la padronanza della lingua ma anche la capacità di navigare conversazioni specifiche del contesto, rendendola un'area di focus critica per gli studenti e gli insegnanti che progettano strategie di preparazione efficaci. A..."
+          "title": "Vocabolario degli Scenari di Ascolto Interattivo",
+          "desc": "Questo corso si concentra sul vocabolario degli scenari per la sezione di ascolto interattivo del Duolingo English Test (DET). Aiuta gli studenti a padroneggiare i dialoghi specifici delle situazioni con precisione e sicurezza, fornendo agli educatori strategie di insegnamento strutturate."
         }
       }
     },

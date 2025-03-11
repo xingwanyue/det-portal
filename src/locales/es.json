@@ -5,6 +5,7 @@
   "Learn": "Materiales",
   "Pricing": "Precios",
   "Blog": "Consejos",
+  "courses_title": "Curso",
   "header": {
     "home_logo_title": "DET Práctica",
     "path_practice_title": "Duolingo Prueba de práctica de inglés en línea",
@@ -63,7 +64,15 @@
       "Simuladores",
       "Cursos Completos"
     ],
-    "Company": ["Nosotros", "Contacto", "Términos", "Privacidad", "Mapa del sitio", "Colaboraciones", "Devoluciones"],
+    "Company": [
+      "Nosotros",
+      "Contacto",
+      "Términos",
+      "Privacidad",
+      "Mapa del sitio",
+      "Colaboraciones",
+      "Devoluciones"
+    ],
     "show_more": "Ver más",
     "alt": "DET Práctica:La mejor Duolingo English Test plataforma de Práctica",
     "cookie_contenr": "DET La práctica utiliza cookies para mejorar el contenido según la configuración de su navegador. Para obtener más detalles, consulte",
@@ -93,7 +102,12 @@
     "power_by": "Con tecnología IA",
     "h1Mobile": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
     "h1PC": "Obtén una puntuación más alta fácilmente en el Duolingo English Test",
-    "one_small_title": ["DET Práctica", "Corrección de IA", "Simulacro Completo", "DET Cursos"],
+    "one_small_title": [
+      "DET Práctica",
+      "Corrección de IA",
+      "Simulacro Completo",
+      "DET Cursos"
+    ],
     "Start_free_with_Google": "Comienza gratis con Google",
     "Start_free_with_email": "Comienza gratis con correo electrónico",
     "Start_for_free": "Empieza gratis",
@@ -667,12 +681,12 @@
         "desc": "Nuestros cursos completos de vocabulario para el Duolingo English Test (DET) se centran en los aspectos más desafiantes del vocabulario DET, diseñados para mejorar sus capacidades lingüísticas y maximizar su éxito en el examen.",
         "desc2": "",
         "video1data": {
-          "title": "Mejore su Vocabulario DET: 7 Técnicas Avanzadas de Descripción de Fotos",
-          "desc": "Resumen: Esta publicación completa ofrece estrategias avanzadas y vocabulario para destacar en las secciones 'Hablar y Escribir sobre la Foto' del Duolingo English Test. Cubre siete áreas clave: descripciones de colores, escenas naturales, paisajes urbanos, actividad humana, vida cotidiana, tecnología y ciencia, y clima. Cada sección proporciona vocabulario avanzado, ejemplos y práctica..."
+          "title": "7 Descripción Avanzada de Fotos",
+          "desc": "Este curso ofrece estrategias avanzadas y vocabulario para las secciones de habla y escritura de fotos del Duolingo English Test. Aprende cómo mejorar tus descripciones, expresar ideas complejas y mejorar tu rendimiento general con consejos prácticos y vocabulario enriquecido."
         },
         "video2data": {
-          "title": "Dominando la Comprensión Auditiva Interactiva del DET con Vocabulario Específico",
-          "desc": "Introducción: La sección de comprensión auditiva interactiva del Duolingo English Test (DET) presenta un desafío único tanto para los estudiantes como para los educadores. Esta sección requiere no solo dominio del idioma sino también la capacidad de navegar conversaciones específicas del contexto, lo que la convierte en un área de enfoque crítico para los estudiantes y profesores que diseñan estrategias de preparación efectivas. En..."
+          "title": "Vocabulario de Escenarios de Escucha Interactiva",
+          "desc": "Este curso se centra en el vocabulario de escenarios para la sección de escucha interactiva del Duolingo English Test (DET). Ayuda a los estudiantes a dominar diálogos específicos de situaciones con precisión y confianza, mientras proporciona a los educadores estrategias de enseñanza estructuradas."
         }
       }
     },

@@ -5,6 +5,7 @@
   "Learn": "Materi Belajar",
   "Pricing": "Belajar",
   "Blog": "Panduan Persiapan",
+  "courses_title": "Kursus",
   "header": {
     "home_logo_title": "DET Latihan",
     "path_practice_title": "Duolingo Tes Latihan Bahasa Inggris Online",
@@ -56,7 +57,13 @@
     "LearnTitle": "Sumber Daya Persiapan",
     "BlogTitle": "Blog",
     "CompanyTitle": "Perusahaan",
-    "Products": ["Latihan Soal DET", "Koreksi Writing AI", "Penilaian Speaking AI", "Simulasi Ujian", "Kursus DET"],
+    "Products": [
+      "Latihan Soal DET",
+      "Koreksi Writing AI",
+      "Penilaian Speaking AI",
+      "Simulasi Ujian",
+      "Kursus DET"
+    ],
     "Company": [
       "Tentang Kami",
       "Hubungi Kami",
@@ -95,7 +102,12 @@
     "power_by": "Didukung oleh AI",
     "h1Mobile": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
     "h1PC": "Dapatkan Skor Lebih Tinggi dengan Mudah pada Duolingo English Test",
-    "one_small_title": ["DET Latihan", "Koreksi AI", "Ujian Palsu Lengkap", "DET Kursus"],
+    "one_small_title": [
+      "DET Latihan",
+      "Koreksi AI",
+      "Ujian Palsu Lengkap",
+      "DET Kursus"
+    ],
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan email",
     "Start_for_free": "Mulai gratis",
@@ -669,12 +681,12 @@
         "desc": "Kursus Kosakata Duolingo English Test (DET) kami yang komprehensif menargetkan aspek-aspek paling menantang dari kosakata DET, dirancang untuk meningkatkan kemampuan bahasa Anda dan memaksimalkan kesuksesan ujian Anda.",
         "desc2": "",
         "video1data": {
-          "title": "Tingkatkan Kosakata DET Anda: 7 Teknik Lanjutan Mendeskripsikan Foto",
-          "desc": "Ringkasan: Artikel komprehensif ini menawarkan strategi lanjutan dan kosakata untuk unggul dalam bagian 'Berbicara dan Menulis tentang Foto' dari Duolingo English Test. Mencakup tujuh area utama: deskripsi warna, pemandangan alam, lanskap perkotaan, aktivitas manusia, kehidupan sehari-hari, teknologi dan sains, serta cuaca dan iklim. Setiap bagian menyediakan kosakata lanjutan, contoh, dan latihan..."
+          "title": "7 Deskripsi Foto Tingkat Lanjut",
+          "desc": "Kursus ini menawarkan strategi dan kosakata tingkat lanjut untuk bagian berbicara dan menulis foto dalam Duolingo English Test. Pelajari cara meningkatkan deskripsi Anda, mengungkapkan ide-ide kompleks, dan meningkatkan kinerja keseluruhan dengan tips praktis dan kosakata yang diperkaya."
         },
         "video2data": {
-          "title": "Menguasai Listening Interaktif DET dengan Kosakata Khusus Skenario",
-          "desc": "Pendahuluan: Bagian Listening Interaktif dari Duolingo English Test (DET) menghadirkan tantangan unik bagi peserta ujian dan pendidik. Bagian ini tidak hanya membutuhkan kemahiran bahasa tetapi juga kemampuan untuk menavigasi percakapan dalam konteks tertentu, menjadikannya area fokus penting bagi siswa dan guru yang merancang strategi persiapan yang efektif. Pada..."
+          "title": "Kosakata Skenario Mendengarkan Interaktif",
+          "desc": "Kursus ini berfokus pada kosakata skenario untuk bagian mendengarkan interaktif dari Duolingo English Test (DET). Membantu siswa menguasai dialog situasi spesifik dengan akurat dan percaya diri, sambil memberikan strategi pengajaran terstruktur kepada pendidik."
         }
       }
     },

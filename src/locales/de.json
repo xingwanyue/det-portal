@@ -5,6 +5,7 @@
   "Learn": "Lernmaterialien",
   "Pricing": "Preise",
   "Blog": "Prüfungsvorbereitung",
+  "courses_title": "Kurs",
   "header": {
     "home_logo_title": "DET Übung",
     "path_practice_title": "Duolingo Englisch Übungstest Online",
@@ -56,7 +57,13 @@
     "LearnTitle": "Vorbereitungsressourcen",
     "BlogTitle": "Blog",
     "CompanyTitle": "Unternehmen",
-    "Products": ["DET-Übungen", "KI-Schreibtraining", "KI-Sprechtraining", "Prüfungssimulation", "DET-Kurse"],
+    "Products": [
+      "DET-Übungen",
+      "KI-Schreibtraining",
+      "KI-Sprechtraining",
+      "Prüfungssimulation",
+      "DET-Kurse"
+    ],
     "Company": [
       "Über uns",
       "Kontakt",
@@ -94,7 +101,12 @@
     "power_by": "KI-basiert",
     "h1Mobile": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
     "h1PC": "Erzielen Sie mühelos höhere Ergebnisse im Duolingo English Test",
-    "one_small_title": ["DET Übung", "KI-Korrektur", "Ganzlängen-Mock", "DET Kurse"],
+    "one_small_title": [
+      "DET Übung",
+      "KI-Korrektur",
+      "Ganzlängen-Mock",
+      "DET Kurse"
+    ],
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos starten mit E-Mail",
     "Start_for_free": "Kostenlos starten",
@@ -668,12 +680,12 @@
         "desc": "Unsere umfassenden Duolingo English Test (DET) Vokabelkurse zielen auf die anspruchsvollsten Aspekte des DET-Vokabulars ab und sind darauf ausgerichtet, Ihre Sprachfähigkeiten zu verbessern und Ihren Prüfungserfolg zu maximieren.",
         "desc2": "",
         "video1data": {
-          "title": "Verbessern Sie Ihr DET-Vokabular: 7 fortgeschrittene Fotobeschreibungstechniken",
-          "desc": "Zusammenfassung: Dieser umfassende Beitrag bietet fortgeschrittene Strategien und Vokabeln für die Bereiche 'Sprechen und Schreiben über Fotos' im Duolingo English Test. Er behandelt sieben Schlüsselbereiche: Farbbeschreibungen, Naturszenen, Stadtlandschaften, menschliche Aktivitäten, Alltagsleben, Technologie und Wissenschaft sowie Wetter und Klima. Jeder Abschnitt bietet fortgeschrittenes Vokabular, Beispiele und Übungen..."
+          "title": "7 Fortgeschrittene Fotobeschreibung",
+          "desc": "Dieser Kurs bietet fortgeschrittene Strategien und Vokabeln für die Foto-Sprech- und Schreibabschnitte des Duolingo English Tests. Lernen Sie, wie Sie Ihre Beschreibungen verbessern, komplexe Ideen ausdrücken und Ihre Gesamtleistung durch praktische Tipps und erweitertes Vokabular steigern können."
         },
         "video2data": {
-          "title": "Erschließen Sie das DET-interaktive Hören mit szenariospezifischem Vokabular",
-          "desc": "Einführung: Der interaktive Hörteil des Duolingo English Test (DET) stellt sowohl für Prüflinge als auch für Pädagogen eine besondere Herausforderung dar. Dieser Abschnitt erfordert nicht nur Sprachkenntnisse, sondern auch die Fähigkeit, kontextspezifische Gespräche zu navigieren, was ihn zu einem wichtigen Schwerpunkt für Studierende und Lehrer macht, die effektive Vorbereitungsstrategien entwickeln. Bei..."
+          "title": "Interaktives Hörverstehen Szenario-Vokabular",
+          "desc": "Dieser Kurs konzentriert sich auf das Szenario-Vokabular für den interaktiven Hörverstehensteil des Duolingo English Tests (DET). Er hilft Studenten, situationsspezifische Dialoge mit Genauigkeit und Selbstvertrauen zu meistern, während er Lehrenden strukturierte Unterrichtsstrategien bietet."
         }
       }
     },

@@ -5,6 +5,7 @@
   "Learn": "Aprender",
   "Pricing": "Preços",
   "Blog": "Blog",
+  "courses_title": "Curso",
   "header": {
     "home_logo_title": "Prática DET",
     "path_practice_title": "Teste de Prática de Inglês Duolingo Online",
@@ -100,7 +101,12 @@
     "power_by": "Alimentado por IA",
     "h1Mobile": "Consiga uma Pontuação Mais Alta<br />Facilmente no Teste <br />de Inglês Duolingo Com: <span class=\"seo_hack\">Prática DET</span>",
     "h1PC": "Consiga uma Pontuação Mais Alta Facilmente no <br />Teste de Inglês Duolingo Com:<span class=\"seo_hack\">Prática DET</span>",
-    "one_small_title": ["Prática DET", "Correção por IA", "Simulado Completo", "Cursos DET"],
+    "one_small_title": [
+      "Prática DET",
+      "Correção por IA",
+      "Simulado Completo",
+      "Cursos DET"
+    ],
     "Start_free_with_Google": "Comece grátis com Google",
     "Start_free_with_email": "Comece grátis com email",
     "Start_for_free": "Comece grátis",
@@ -674,12 +680,12 @@
         "desc": "Nossos cursos abrangentes de vocabulário para o Duolingo English Test (DET) focam nos aspectos mais desafiadores do vocabulário DET, projetados para aprimorar suas capacidades linguísticas e maximizar seu sucesso no teste.",
         "desc2": "",
         "video1data": {
-          "title": "Aprimore seu Vocabulário DET: 7 Técnicas Avançadas de Descrição de Fotos",
-          "desc": "Resumo: Este post abrangente oferece estratégias avançadas e vocabulário para se destacar nas seções 'Falar e Escrever sobre a Foto' do Duolingo English Test. Abrange sete áreas principais: descrições de cores, cenas naturais, paisagens urbanas, atividade humana, vida cotidiana, tecnologia e ciência, e clima e tempo. Cada seção fornece vocabulário avançado, exemplos e prática..."
+          "title": "7 Descrição Avançada de Fotos",
+          "desc": "Este curso oferece estratégias avançadas e vocabulário para as seções de fala e escrita de fotos do Duolingo English Test. Aprenda como melhorar suas descrições, expressar ideias complexas e melhorar seu desempenho geral com dicas práticas e vocabulário enriquecido."
         },
         "video2data": {
-          "title": "Dominando a Compreensão Auditiva Interativa do DET com Vocabulário Específico de Cenários",
-          "desc": "Introdução: A seção de compreensão auditiva interativa do Duolingo English Test (DET) apresenta um desafio único tanto para os candidatos quanto para os educadores. Esta seção requer não apenas proficiência no idioma, mas também a capacidade de navegar em conversas específicas do contexto, tornando-a uma área de foco crítica para estudantes e professores que desenvolvem estratégias eficazes de preparação. Em..."
+          "title": "Vocabulário de Cenários de Escuta Interativa",
+          "desc": "Este curso concentra-se no vocabulário de cenários para a seção de escuta interativa do Duolingo English Test (DET). Ajuda os alunos a dominar diálogos específicos de situações com precisão e confiança, enquanto fornece aos educadores estratégias de ensino estruturadas."
         }
       }
     },

@@ -5,6 +5,7 @@
   "Learn": "Eğitim Materyalleri",
   "Pricing": "Ücretler",
   "Blog": "Başarı Kılavuzu",
+  "courses_title": "Kurs",
   "header": {
     "home_logo_title": "DET Alıştırma",
     "path_practice_title": "Duolingo İngilizce Pratik Testi Online",
@@ -101,7 +102,12 @@
     "power_by": "Yapay Zeka Destekli",
     "h1Mobile": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
     "h1PC": "Duolingo English Test'te kolayca daha yüksek bir puan alın",
-    "one_small_title": ["DET Uygulama", "AI Düzeltme", "Tam Uzunlukta Deneme", "DET Kurslar"],
+    "one_small_title": [
+      "DET Uygulama",
+      "AI Düzeltme",
+      "Tam Uzunlukta Deneme",
+      "DET Kurslar"
+    ],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "e-posta ile ücretsiz başlayın",
     "Start_for_free": "Ücretsiz başla",
@@ -675,12 +681,12 @@
         "desc": "Kapsamlı Duolingo English Test (DET) Kelime kurslarımız, DET kelime bilgisinin en zorlu yönlerini hedefleyerek, dil yeteneklerinizi geliştirmek ve sınav başarınızı en üst düzeye çıkarmak için tasarlanmıştır.",
         "desc2": "",
         "video1data": {
-          "title": "DET Kelime Bilginizi Geliştirin: 7 İleri Düzey Fotoğraf Açıklama Tekniği",
-          "desc": "Özet: Bu kapsamlı yazı, Duolingo English Test'in 'Fotoğraf Hakkında Konuşma ve Yazma' bölümleri için ileri düzey stratejiler ve kelime bilgisi sunmaktadır. Yedi ana alanı kapsar: renk açıklamaları, doğa manzaraları, şehir manzaraları, insan aktiviteleri, günlük yaşam, teknoloji ve bilim, hava durumu ve iklim. Her bölüm ileri düzey kelime bilgisi, örnekler ve alıştırmalar sunar..."
+          "title": "7 İleri Düzey Fotoğraf Açıklaması",
+          "desc": "Bu kurs, Duolingo English Test'in fotoğraf konuşma ve yazma bölümleri için ileri düzey stratejiler ve kelime bilgisi sunar. Pratik ipuçları ve zenginleştirilmiş kelime hazinesiyle açıklamalarınızı nasıl geliştirebileceğinizi, karmaşık fikirleri nasıl ifade edebileceğinizi ve genel performansınızı nasıl artırabileceğinizi öğrenin."
         },
         "video2data": {
-          "title": "Senaryo Odaklı Kelime Bilgisiyle DET İnteraktif Dinlemeyi Kavrama",
-          "desc": "Giriş: Duolingo English Test (DET)'in interaktif dinleme bölümü, hem adaylar hem de eğitimciler için benzersiz bir zorluk sunar. Bu bölüm sadece dil yeterliliği değil, aynı zamanda bağlama özel konuşmaları yönetme becerisini de gerektiriyor, bu da onu etkili hazırlık stratejileri geliştiren öğrenciler ve öğretmenler için kritik bir odak alanı haline getiriyor. ..."
+          "title": "Etkileşimli Dinleme Senaryo Kelime Bilgisi",
+          "desc": "Bu kurs, Duolingo English Test'in (DET) etkileşimli dinleme bölümü için senaryo kelime bilgisine odaklanır. Öğrencilerin duruma özel diyalogları doğruluk ve güvenle öğrenmelerine yardımcı olurken, eğitimcilere yapılandırılmış öğretim stratejileri sunar."
         }
       }
     },

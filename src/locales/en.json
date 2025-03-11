@@ -5,6 +5,7 @@
   "Learn": "Learn",
   "Pricing": "Pricing",
   "Blog": "Blog",
+  "courses_title": "Course",
   "header": {
     "home_logo_title": "DET Practice",
     "path_practice_title": "Duolingo English Practice Test Online",
@@ -100,7 +101,12 @@
     "power_by": "AI-Powered",
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With: <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Get a Higher Score Easily on the <br />Duolingo English Test With:<span class=\"seo_hack\">DET Practice</span>",
-    "one_small_title": ["DET Practice", "AI Correction", "Full-Length Mock", "DET Courses"],
+    "one_small_title": [
+      "DET Practice",
+      "AI Correction",
+      "Full-Length Mock",
+      "DET Courses"
+    ],
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with email",
     "Start_for_free": "Start for free",
@@ -674,12 +680,12 @@
         "desc": "Our comprehensive Duolingo English Test (DET) Vocabulary Courses target the most challenging aspects of DET vocabulary, designed to enhance your language capabilities and maximize your test success.",
         "desc2": "",
         "video1data": {
-          "title": "Boost Your DET Vocabulary: 7 Advanced Photo Description Techniques",
-          "desc": "Summary: This comprehensive post offers advanced strategies and vocabulary for excelling in the “Speak and Write About the Photo” sections of the Duolingo English Test. It covers seven key areas: color descriptions, nature scenes, urban landscapes, human activity, everyday life, technology and science, and weather and climate. Each section provides advanced vocabulary, examples, and practice…"
+          "title": "7 Advanced Photo Description",
+          "desc": "This course provides advanced strategies and vocabulary for the“Speak about the Photo” and “Write about the Photo” sections of the Duolingo English Test. Learn how to enhance your descriptions, express complex ideas, and improve your overall performance with practical techniques and rich vocabulary."
         },
         "video2data": {
-          "title": "Unlocking DET Interactive Listening with Scenario-Specific Vocabulary",
-          "desc": "Introduction: The Interactive Listening section of the Duolingo English Test (DET) presents a unique challenge to test-takers and educators alike. This section demands not just language proficiency but also the ability to navigate context-specific conversations, making it a critical focus area for both students preparing for the test and teachers designing effective preparation strategies. At…"
+          "title": "Interactive Listening Scene Vocabulary",
+          "desc": "This course focuses on mastering scenario-based vocabulary for the Interactive Listening section of the Duolingo English Test (DET). It helps students navigate context-specific conversations with precision and confidence while providing educators with structured teaching strategies. Through practical exercises, role-playing, and summarization techniques, learners will develop essential communication skills for both the test and real-world situations."
         }
       }
     },
