@@ -49,8 +49,10 @@ const getSelect = async () => {
     server: true,
     headers: { locale: locale.value },
   })) as any;
-  const { name } = head(data.value) as any;
-  state.selectName = name;
+  if (data?.value) {
+    const { name } = head(data.value) as any;
+    state.selectName = name;
+  }
 };
 
 watch(
