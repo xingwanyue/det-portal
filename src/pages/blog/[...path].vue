@@ -52,20 +52,20 @@ leftList.value = category?.value;
 if (route?.params?.path[0]) {
   categoryPath.value = route.params.path[0];
 } else {
-  categoryPath.value = category.value[0]?.path;
+  categoryPath.value = category?.value?.[0]?.path || '';
 }
-if (route?.params?.path[1]) {
-  currentPage.value = Number(route?.params?.path[1]);
-}
+
+const currentPageFromRoute = route?.params?.path[1];
+currentPage.value = currentPageFromRoute ? Number(currentPageFromRoute) : 1;
 
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   key: 'blog_article',
   server: true,
   lazy: true,
   query: {
-    page: route?.params?.path[1] || 1,
+    page: currentPage.value,
     pageSize: 10,
-    categoryPath: route?.query?.categoryPath || categoryPath.value,
+    categoryPath: route?.query?.categoryPath || categoryPath.value || '',
   },
   headers: { locale: locale.value },
   transform: (data: any) => {
