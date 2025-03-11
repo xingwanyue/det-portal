@@ -43,6 +43,7 @@ let categoryPath = ref();
 const { data: category } = (await useFetch(`${api}/common/article/category`, {
   key: 'blog_article_category',
   server: true,
+  lazy: true,
   query: {},
   headers: { locale: locale.value },
 })) as any;
@@ -60,6 +61,7 @@ if (route?.params?.path[1]) {
 const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   key: 'blog_article',
   server: true,
+  lazy: true,
   query: {
     page: route?.params?.path[1] || 1,
     pageSize: 10,
@@ -86,6 +88,7 @@ const handleCurrentChange = async (val: number) => {
     const { data: blogsjkk, error } = (await useFetch(`${api}/common/article`, {
       key: 'blog_article_change',
       server: true,
+      lazy: true,
       query: {
         page: val,
         pageSize: 10,
