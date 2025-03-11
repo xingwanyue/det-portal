@@ -11,7 +11,9 @@ definePageMeta({
   layout: 'empty',
 });
 const { data: article, error } = (await useFetch(`${api}/common/article?path=${route.params.path}`, {
+  key: 'path_article',
   server: true,
+  lazy: true,
   headers: { locale: locale.value },
 })) as any;
 if (error.value) {
