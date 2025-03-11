@@ -100,10 +100,10 @@ const getBlob = async () => {
     args = { ...args, page: 1, pageSize: 4 };
   }
   const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
+    key: 'footer_article',
     server: true,
     query: { ...args },
     headers: { locale: locale.value },
-    key: 'blog',
   })) as any;
   Blog.value = [...(blogsjk.value?.data || []), { name: showmorefont, path: 'blog' }].map((item: any) => {
     return {
