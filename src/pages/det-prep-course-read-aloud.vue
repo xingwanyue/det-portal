@@ -66,11 +66,11 @@ const video_data2 = computed(() => {
         <h1>{{ t('det-prep-course-read-aloud.h11') }}</h1>
         <p v-html="t('det-prep-course-read-aloud.p1')"></p>
         <p>{{ t('det-prep-course-read-aloud.p2') }}</p>
-        <h2>{{ t('det-prep-course-read-aloud.h21') }}</h2>
 
         <div class="video_out">
           <my_video :title="video_data.video_title" :video_url="video_data.video_url" />
         </div>
+        <h2>{{ t('det-prep-course-read-aloud.h21') }}</h2>
         <p>{{ t('det-prep-course-read-aloud.p3') }}</p>
         <ul v-html="t('det-prep-course-read-aloud.ul1')"></ul>
         <p>{{ t('det-prep-course-read-aloud.p4') }}</p>
