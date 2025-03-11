@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { reactive } from 'vue';
-import { domain } from '@/utils';
+import { domain, getAnchorId } from '@/utils';
 const state = reactive({});
 const props = defineProps({
   descArr: Array,
@@ -15,7 +15,9 @@ const localePath = useLocalePath();
 </script>
 <template>
   <div class="desc_img_tips">
-    <h2 class="p_h2 p_mgt_20" v-if="props.h2">{{ props.h2 }}</h2>
+    <h2 class="p_h2 p_mgt_20" v-if="props.h2" :id="`perp_${getAnchorId(props.h2)}`">
+      {{ props.h2 }}
+    </h2>
     <h3 class="p_h3 p_mgt_20" v-if="props.h3">{{ props.h3 }}</h3>
     <div class="desc" v-for="item in props.descArr" :key="item">{{ item }}</div>
     <div class="desc_img" v-for="item in props.imgArr" :key="item">
@@ -26,6 +28,9 @@ const localePath = useLocalePath();
 </template>
 <style lang="scss" scoped>
 .desc_img_tips {
+  [id^='perp_'] {
+    scroll-margin-top: 80px; // 根据您的导航栏高度调整这个值
+  }
   .desc {
     margin-top: 20px;
   }

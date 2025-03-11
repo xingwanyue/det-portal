@@ -174,3 +174,16 @@ export const getDeviceType = () => {
   // 默认返回PC
   return 'pc';
 };
+
+export const getAnchorId = (str: string): number => {
+  if (!str) return 0;
+
+  // 只保留字母并转换为小写
+  const lettersOnly = str.replace(/[^a-zA-Z]/g, '').toLowerCase();
+
+  // 使用字符串的哈希值来生成唯一数字
+  return lettersOnly.split('').reduce((acc, char) => {
+    const code = char.charCodeAt(0);
+    return ((acc << 5) - acc + code) | 0; // 使用简单的哈希算法
+  }, 0);
+};
