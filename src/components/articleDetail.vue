@@ -45,6 +45,7 @@ state.averageScore = averageScore;
 
 const getSelect = async () => {
   const { data = {} } = (await useFetch(`${articleCategoryGet}?id=${props.categoryId}`, {
+    key: 'head_article',
     server: true,
     headers: { locale: locale.value },
   })) as any;
