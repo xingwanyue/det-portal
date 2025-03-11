@@ -100,12 +100,12 @@ const saveCaculate = (item: any) => {
         <div
           v-for="item in props.membershipArr"
           :key="item.id"
-          :class="item.day === 365 ? 'one_card_new one_card_new_365' : 'one_card_new'"
+          :class="item.day === 90 ? 'one_card_new one_card_new_365' : 'one_card_new'"
         >
           <div>
             <div class="title_out">
               <div class="title">{{ item.tag }}</div>
-              <div v-if="item.day === 365" class="save_tag">
+              <div v-if="item.day === 90" class="save_tag">
                 {{ $t('pricing.pagefont.bestvalue') }}
               </div>
             </div>
@@ -120,18 +120,18 @@ const saveCaculate = (item: any) => {
                 <div class="price">{{ formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
                 <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
-              <template v-if="item.day === 365">
+              <template v-if="item.day === 90">
                 <div class="price">
-                  {{ formatCashfixed2(Number(item.price) / 12 + Number(item.correctPrice || 0)) }}
+                  {{ formatCashfixed2(Number(item.price) / 3 + Number(item.correctPrice || 0)) }}
                 </div>
                 <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
             </div>
             <div class="bill">
-              <span v-if="item.day === 365">
+              <span v-if="item.day === 90">
                 {{
                   $t('pricing.pagefont.BilledThreeMonth', {
-                    num: formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0) * 12),
+                    num: formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0) * 3),
                   })
                 }}
               </span>
