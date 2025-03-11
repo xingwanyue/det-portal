@@ -69,7 +69,7 @@ const show_answer5 = ref(false);
         <p>{{ t('det_listening_words.p7') }}</p>
         <iframe
           class="lazyload"
-          data-src="https://creators.spotify.com/pod/show/duolingoenglishtest/embed/episodes/Unlocking-DET-Interactive-Listening-with-Scenario-Specific-Vocabulary-e2r14kq/a-abko2cv"
+          src="https://creators.spotify.com/pod/show/duolingoenglishtest/embed/episodes/Unlocking-DET-Interactive-Listening-with-Scenario-Specific-Vocabulary-e2r14kq/a-abko2cv"
           height="102px"
           width="400px"
           frameborder="0"
