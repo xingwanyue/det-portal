@@ -47,21 +47,21 @@ const { data: category } = (await useFetch(`${api}/common/article/category`, {
 })) as any;
 leftList.value = category?.value;
 
-if (route?.params?.path[0]) {
-  categoryPath.value = route.params.path[0];
-} else {
-  categoryPath.value = category.value[0]?.path;
-}
-if (route?.params?.path[1]) {
-  currentPage.value = Number(route?.params?.path[1]);
-}
+// if (route?.params?.path[0]) {
+//   categoryPath.value = route.params.path[0];
+// } else {
+//   categoryPath.value = category.value[0]?.path;
+// }
+// if (route?.params?.path[1]) {
+//   currentPage.value = Number(route?.params?.path[1]);
+// }
 
-const { data: blogsjk, error } = (await useFetch(`${api}/common/article`, {
+const { data: blogsjk } = (await useFetch(`${api}/common/article`, {
   server: true,
   query: {
     page: route?.params?.path[1] || 1,
     pageSize: 10,
-    categoryPath: route?.query?.categoryPath || categoryPath.value,
+    // categoryPath: route?.query?.categoryPath || categoryPath.value,
   },
   headers: { locale: locale.value },
   transform: (data: any) => {
@@ -71,10 +71,6 @@ const { data: blogsjk, error } = (await useFetch(`${api}/common/article`, {
       return item;
     });
     return { data: data.data, total: data.total };
-  },
-  onResponseError: (error) => {
-    console.error('API 请求失败:', error);
-    return { data: [], total: 0 };
   },
 })) as any;
 
