@@ -121,10 +121,10 @@ const handleCurrentChange = async (val: number) => {
         <NuxtLink
           v-for="item in leftList"
           :key="item.id"
-          :class="categoryPath === item.path ? 'one_pdom one_pdom_active' : 'one_pdom'"
-          :to="localePath(`/blog/${item.path}`)"
+          :class="categoryPath === item?.path ? 'one_pdom one_pdom_active' : 'one_pdom'"
+          :to="localePath(`/blog/${item?.path}`)"
         >
-          {{ item.name }}
+          {{ item?.name }}
         </NuxtLink>
       </div>
       <div class="blog_right_list">
@@ -135,14 +135,16 @@ const handleCurrentChange = async (val: number) => {
             :class="index === 0 ? 'one_blog border_top' : 'one_blog'"
             data-aos="fade-up"
             data-aos-duration="1000"
-            :to="localePath(`/${item.path}`)"
+            :to="localePath(`/${item?.path}`)"
           >
-            <h2 class="title">{{ item.name }}</h2>
+            <h2 class="title">{{ item?.name }}</h2>
             <div class="content">
-              {{ item.content }}
+              {{ item?.content }}
             </div>
             <div class="bottom">
-              <div class="date">{{ dayjs(item.createTime).format('YYYY-MM-DD') }}&nbsp;|&nbsp;{{ item?.category }}</div>
+              <div class="date">
+                {{ dayjs(item?.createTime).format('YYYY-MM-DD') }}&nbsp;|&nbsp;{{ item?.category }}
+              </div>
             </div>
           </NuxtLink>
         </div>
