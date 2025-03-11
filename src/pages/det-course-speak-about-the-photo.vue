@@ -63,7 +63,7 @@ const video_data = computed(() => {
 
         <p v-html="t('det_course_speak_about_the_photo.p3')"></p>
 
-        <my_video :video_data="video_data.video_url" :title="video_data.video_title" />
+        <my_video :video_url="video_data.video_url" :title="video_data.video_title" />
         <h2>{{ t('det_course_speak_about_the_photo.h21') }}</h2>
         <p>{{ t('det_course_speak_about_the_photo.p4') }}</p>
         <ul>
