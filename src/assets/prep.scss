@@ -119,4 +119,12 @@
             height: auto !important;
         }
     }
+    [id^="prep_"] {
+        scroll-margin-top: 80px !important; // 根据您的导航栏高度调整这个值
+    }
+    .toc_ol {
+        a {
+            text-decoration: none;
+        }
+    }
 }

@@ -65,12 +65,15 @@ const video_data = computed(() => {
 
         <my_video :video_url="video_data.video_url" :title="video_data.video_title" />
         <h2>{{ t('det_course_speak_about_the_photo.h21') }}</h2>
-        <p>{{ t('det_course_speak_about_the_photo.p4') }}</p>
-        <ul>
-          <li>{{ t('det_course_speak_about_the_photo.ul.li1') }}</li>
-          <li>{{ t('det_course_speak_about_the_photo.ul.li2') }}</li>
+        <ul class="toc_ol">
           <li>
-            {{ t('det_course_speak_about_the_photo.ul.li3') }}
+            <a :href="`#prep_1`">{{ t('det_course_speak_about_the_photo.ul.li1') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_2`">{{ t('det_course_speak_about_the_photo.ul.li2') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_3`">{{ t('det_course_speak_about_the_photo.ul.li3') }}</a>
             <ul class="sub-item">
               <li>{{ t('det_course_speak_about_the_photo.ul.li3_1') }}</li>
               <li>{{ t('det_course_speak_about_the_photo.ul.li3_2') }}</li>
@@ -78,28 +81,30 @@ const video_data = computed(() => {
             </ul>
           </li>
           <li>
-            {{ t('det_course_speak_about_the_photo.ul.li4') }}
+            <a :href="`#prep_4`">{{ t('det_course_speak_about_the_photo.ul.li4') }}</a>
             <ul class="sub-item">
               <li>{{ t('det_course_speak_about_the_photo.ul.li4_1') }}</li>
               <li>{{ t('det_course_speak_about_the_photo.ul.li4_2') }}</li>
             </ul>
           </li>
           <li>
-            {{ t('det_course_speak_about_the_photo.ul.li5') }}
+            <a :href="`#prep_5`">{{ t('det_course_speak_about_the_photo.ul.li5') }}</a>
             <ul class="sub-item">
               <li>{{ t('det_course_speak_about_the_photo.ul.li5_1') }}</li>
               <li>{{ t('det_course_speak_about_the_photo.ul.li5_2') }}</li>
             </ul>
           </li>
-          <li>{{ t('det_course_speak_about_the_photo.ul.li6') }}</li>
+          <li>
+            <a :href="`#prep_6`">{{ t('det_course_speak_about_the_photo.ul.li6') }}</a>
+          </li>
         </ul>
-        <h2>{{ t('det_course_speak_about_the_photo.h22') }}</h2>
+        <h2 id="prep_1">{{ t('det_course_speak_about_the_photo.h22') }}</h2>
         <p>{{ t('det_course_speak_about_the_photo.p5') }}</p>
         <img src="/img/det-course-speak-about-the-photo/speak-about-the-photo-UI.png" alt="speak-about-the-photo-UI" />
         <figure>
           <figcaption>{{ t('det_course_speak_about_the_photo.figcaption1') }}</figcaption>
         </figure>
-        <h2>{{ t('det_course_speak_about_the_photo.h23') }}</h2>
+        <h2 id="prep_2">{{ t('det_course_speak_about_the_photo.h23') }}</h2>
         <p>{{ t('det_course_speak_about_the_photo.p6') }}</p>
         <img
           src="/img/det-course-speak-about-the-photo/speak-about-the-photo-demo-questions.jpg"
@@ -117,7 +122,7 @@ const video_data = computed(() => {
           <figcaption>{{ t('det_course_speak_about_the_photo.figcaption3') }}</figcaption>
         </figure>
         <p>{{ t('det_course_speak_about_the_photo.p8') }}</p>
-        <h2>{{ t('det_course_speak_about_the_photo.h24') }}</h2>
+        <h2 id="prep_3">{{ t('det_course_speak_about_the_photo.h24') }}</h2>
         <p>{{ t('det_course_speak_about_the_photo.p9') }}</p>
         <p>{{ t('det_course_speak_about_the_photo.p10') }}</p>
         <p>{{ t('det_course_speak_about_the_photo.p11') }}</p>
@@ -199,7 +204,7 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speak_about_the_photo.p45') }}</p>
         <div class="html_wrapper" v-html="t('det_course_speak_about_the_photo.p46')"></div>
         <p>{{ t('det_course_speak_about_the_photo.p47') }}</p>
-        <h2>{{ t('det_course_speak_about_the_photo.h25') }}</h2>
+        <h2 id="prep_4">{{ t('det_course_speak_about_the_photo.h25') }}</h2>
 
         <p>{{ t('det_course_speak_about_the_photo.p48') }}</p>
         <p>{{ t('det_course_speak_about_the_photo.p49') }}</p>
@@ -238,7 +243,7 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speak_about_the_photo.p67') }}</p>
         <div class="html_wrapper" v-html="t('det_course_speak_about_the_photo.p68')"></div>
         <p>{{ t('det_course_speak_about_the_photo.p69') }}</p>
-        <h2>{{ t('det_course_speak_about_the_photo.h26') }}</h2>
+        <h2 id="prep_5">{{ t('det_course_speak_about_the_photo.h26') }}</h2>
         <p>{{ t('det_course_speak_about_the_photo.p70') }}</p>
         <p>{{ t('det_course_speak_about_the_photo.p71') }}</p>
         <p>{{ t('det_course_speak_about_the_photo.p72') }}</p>
@@ -293,7 +298,7 @@ const video_data = computed(() => {
 
         <div class="html_wrapper" v-html="t('det_course_speak_about_the_photo.p96')"></div>
         <p>{{ t('det_course_speak_about_the_photo.p97') }}</p>
-        <h2>{{ t('det_course_speak_about_the_photo.h27') }}</h2>
+        <h2 id="prep_6">{{ t('det_course_speak_about_the_photo.h27') }}</h2>
         <p>{{ t('det_course_speak_about_the_photo.p98') }}</p>
 
         <ul class="wp-block-list">

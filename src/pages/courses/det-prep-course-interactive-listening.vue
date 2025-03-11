@@ -62,28 +62,42 @@ useHead({
           <my_video :title="video_data.video_title" :video_url="video_data.video_url" />
         </div>
         <h2>{{ t('det_prep_course_interactive_listening.h2_2') }}</h2>
-        <ol>
-          <li>{{ t('det_prep_course_interactive_listening.ol_1.li_1') }}</li>
-          <li>{{ t('det_prep_course_interactive_listening.ol_1.li_2') }}</li>
-          <li>{{ t('det_prep_course_interactive_listening.ol_1.li_3') }}</li>
-          <li>{{ t('det_prep_course_interactive_listening.ol_1.li_4') }}</li>
-          <li>{{ t('det_prep_course_interactive_listening.ol_1.li_5') }}</li>
-          <li>{{ t('det_prep_course_interactive_listening.ol_1.li_6') }}</li>
-          <li>{{ t('det_prep_course_interactive_listening.ol_1.li_7') }}</li>
+        <ol class="toc_ol">
+          <li>
+            <a :href="`#prep_1`">{{ t('det_prep_course_interactive_listening.ol_1.li_1') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_2`">{{ t('det_prep_course_interactive_listening.ol_1.li_2') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_3`">{{ t('det_prep_course_interactive_listening.ol_1.li_3') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_4`">{{ t('det_prep_course_interactive_listening.ol_1.li_4') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_5`">{{ t('det_prep_course_interactive_listening.ol_1.li_5') }} </a>
+          </li>
+          <li>
+            <a :href="`#prep_6`">{{ t('det_prep_course_interactive_listening.ol_1.li_6') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_7`">{{ t('det_prep_course_interactive_listening.ol_1.li_7') }}</a>
+          </li>
         </ol>
-        <h2>{{ t('det_prep_course_interactive_listening.h2_3') }}</h2>
+        <h2 id="prep_1">{{ t('det_prep_course_interactive_listening.h2_3') }}</h2>
         <p>{{ t('det_prep_course_interactive_listening.p_3') }}</p>
-        <h2>{{ t('det_prep_course_interactive_listening.h2_4') }}</h2>
+        <h2 id="prep_2">{{ t('det_prep_course_interactive_listening.h2_4') }}</h2>
         <p>{{ t('det_prep_course_interactive_listening.p_4') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_5') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_6') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_7') }}</p>
-        <h2>{{ t('det_prep_course_interactive_listening.h2_5') }}</h2>
+        <h2 id="prep_3">{{ t('det_prep_course_interactive_listening.h2_5') }}</h2>
         <p>{{ t('det_prep_course_interactive_listening.p_8') }}</p>
         <img src="/img/det-prep-course-interactive-listening/interactive-listening-category.png" alt="" />
         <p class="gray">{{ t('det_prep_course_interactive_listening.gray1') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_9') }}</p>
-        <h2>{{ t('det_prep_course_interactive_listening.h2_6') }}</h2>
+        <h2 id="prep_4">{{ t('det_prep_course_interactive_listening.h2_6') }}</h2>
         <div class="html_wrapper" v-html="t('det_prep_course_interactive_listening.p_10')"></div>
         <p>{{ t('det_prep_course_interactive_listening.p_11') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_12') }}</p>
@@ -114,10 +128,10 @@ useHead({
         <p>{{ t('det_prep_course_interactive_listening.p_35') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_36') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_37') }}</p>
-        <h2>{{ t('det_prep_course_interactive_listening.h2_7') }}</h2>
+        <h2 id="prep_5">{{ t('det_prep_course_interactive_listening.h2_7') }}</h2>
         <p>{{ t('det_prep_course_interactive_listening.p_38') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_39') }}</p>
-        <h2>{{ t('det_prep_course_interactive_listening.h2_8') }}</h2>
+        <h2 id="prep_6">{{ t('det_prep_course_interactive_listening.h2_8') }}</h2>
         <p>{{ t('det_prep_course_interactive_listening.p_40') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_41') }}</p>
         <p>
@@ -151,7 +165,7 @@ useHead({
         <p>{{ t('det_prep_course_interactive_listening.p_46') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_47') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_48') }}</p>
-        <h2>{{ t('det_prep_course_interactive_listening.h2_9') }}</h2>
+        <h2 id="prep_7">{{ t('det_prep_course_interactive_listening.h2_9') }}</h2>
         <p>{{ t('det_prep_course_interactive_listening.p_49') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_50') }}</p>
         <div class="html_wrapper" v-html="t('det_prep_course_interactive_listening.p_51')"></div>

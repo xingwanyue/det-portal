@@ -70,27 +70,42 @@ useHead({
         <div class="video_out">
           <my_video :title="video_data.video_title" :video_url="video_data.video_url" />
         </div>
-        <h2>{{ t('det_prep_course_listen_and_type_questions.h2_2') }}</h2>
-        <p>{{ t('det_prep_course_listen_and_type_questions.p_5') }}</p>
+
         <h1>{{ t('det_prep_course_listen_and_type_questions.h1_2') }}</h1>
-        <ol>
-          <li>{{ t('det_prep_course_listen_and_type_questions.ol_2.li_1') }}</li>
-          <li>{{ t('det_prep_course_listen_and_type_questions.ol_2.li_2') }}</li>
-          <li>{{ t('det_prep_course_listen_and_type_questions.ol_2.li_3') }}</li>
-          <li>{{ t('det_prep_course_listen_and_type_questions.ol_2.li_4') }}</li>
-          <li>{{ t('det_prep_course_listen_and_type_questions.ol_2.li_5') }}</li>
-          <li>{{ t('det_prep_course_listen_and_type_questions.ol_2.li_6') }}</li>
+        <ol class="toc_ol">
           <li>
-            {{ t('det_prep_course_listen_and_type_questions.ol_2.li_7') }}
+            <a :href="`#prep_1`">{{ t('det_prep_course_listen_and_type_questions.ol_2.li_1') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_2`">{{ t('det_prep_course_listen_and_type_questions.ol_2.li_2') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_3`">{{ t('det_prep_course_listen_and_type_questions.ol_2.li_3') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_4`"> {{ t('det_prep_course_listen_and_type_questions.ol_2.li_4') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_5`">{{ t('det_prep_course_listen_and_type_questions.ol_2.li_5') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_6`">{{ t('det_prep_course_listen_and_type_questions.ol_2.li_6') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_7`">{{ t('det_prep_course_listen_and_type_questions.ol_2.li_7') }}</a>
             <ul>
               <li>{{ t('det_prep_course_listen_and_type_questions.ol_2.li_7_1') }}</li>
               <li>{{ t('det_prep_course_listen_and_type_questions.ol_2.li_7_2') }}</li>
               <li>{{ t('det_prep_course_listen_and_type_questions.ol_2.li_7_3') }}</li>
             </ul>
           </li>
-          <li>{{ t('det_prep_course_listen_and_type_questions.ol_2.li_8') }}</li>
+          <li>
+            <a :href="`#prep_8`">{{ t('det_prep_course_listen_and_type_questions.ol_2.li_8') }}</a>
+          </li>
         </ol>
-        <h2>{{ t('det_prep_course_listen_and_type_questions.h2_3') }}</h2>
+        <h2 id="prep_1">{{ t('det_prep_course_listen_and_type_questions.h2_2') }}</h2>
+        <p>{{ t('det_prep_course_listen_and_type_questions.p_5') }}</p>
+        <h2 id="prep_2">{{ t('det_prep_course_listen_and_type_questions.h2_3') }}</h2>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_6') }}</p>
         <img src="/img/det-prep-course-listen-and-type-questions/listen-and-type-UI.png" alt="" />
         <div class="gray">{{ t('det_prep_course_listen_and_type_questions.gray1') }}</div>
@@ -98,20 +113,20 @@ useHead({
         <img src="/img/det-prep-course-listen-and-type-questions/listen-and-type-UI2.jpg" alt="" />
         <div class="gray">{{ t('det_prep_course_listen_and_type_questions.gray2') }}</div>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_8') }}</p>
-        <h2>{{ t('det_prep_course_listen_and_type_questions.h2_4') }}</h2>
+        <h2 id="prep_3">{{ t('det_prep_course_listen_and_type_questions.h2_4') }}</h2>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_9') }}</p>
         <img src="/img/det-prep-course-listen-and-type-questions/listen-and-type-intro.jpg" alt="" />
         <div class="gray">{{ t('det_prep_course_listen_and_type_questions.gray3') }}</div>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_10') }}</p>
-        <h2>{{ t('det_prep_course_listen_and_type_questions.h2_5') }}</h2>
+        <h2 id="prep_4">{{ t('det_prep_course_listen_and_type_questions.h2_5') }}</h2>
         <img src="/img/det-prep-course-listen-and-type-questions/DET-answering-strategies.jpg" alt="" />
         <div class="gray">{{ t('det_prep_course_listen_and_type_questions.gray4') }}</div>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_11') }}</p>
-        <h2>{{ t('det_prep_course_listen_and_type_questions.h2_6') }}</h2>
+        <h2 id="prep_5">{{ t('det_prep_course_listen_and_type_questions.h2_6') }}</h2>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_12') }}</p>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_13') }}</p>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_14') }}</p>
-        <h2>{{ t('det_prep_course_listen_and_type_questions.h2_7') }}</h2>
+        <h2 id="prep_6">{{ t('det_prep_course_listen_and_type_questions.h2_7') }}</h2>
         <ul>
           <li class="header">• Types of Linking</li>
           <li class="blue">– Consonant + Vowel:</li>
@@ -241,7 +256,7 @@ useHead({
         </table>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_17') }}</p>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_18') }}</p>
-        <h2>{{ t('det_prep_course_listen_and_type_questions.h2_8') }}</h2>
+        <h2 id="prep_7">{{ t('det_prep_course_listen_and_type_questions.h2_8') }}</h2>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_19') }}</p>
         <div class="audio-player">
           <audio id="audio" preload="none" controls>

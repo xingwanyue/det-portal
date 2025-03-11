@@ -52,20 +52,38 @@ useHead({
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p1')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p2') }}</p>
         <h2>{{ t('det-course-read-listen-then-speak.h21') }}</h2>
-        <ol>
-          <li>{{ t('det-course-read-listen-then-speak.ol1.li1') }}</li>
-          <li>{{ t('det-course-read-listen-then-speak.ol1.li2') }}</li>
-          <li>{{ t('det-course-read-listen-then-speak.ol1.li3') }}</li>
-          <li>{{ t('det-course-read-listen-then-speak.ol1.li4') }}</li>
-          <li>{{ t('det-course-read-listen-then-speak.ol1.li5') }}</li>
-          <li>{{ t('det-course-read-listen-then-speak.ol1.li6') }}</li>
-          <li>{{ t('det-course-read-listen-then-speak.ol1.li7') }}</li>
-          <li>{{ t('det-course-read-listen-then-speak.ol1.li8') }}</li>
-          <li>{{ t('det-course-read-listen-then-speak.ol1.li9') }}</li>
+        <ol class="toc_ol">
+          <li>
+            {{ t('det-course-read-listen-then-speak.ol1.li1') }}
+          </li>
+          <li>
+            <a :href="`#prep_2`">{{ t('det-course-read-listen-then-speak.ol1.li2') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_3`">{{ t('det-course-read-listen-then-speak.ol1.li3') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_4`">{{ t('det-course-read-listen-then-speak.ol1.li4') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_5`">{{ t('det-course-read-listen-then-speak.ol1.li5') }}</a>
+          </li>
+          <li>
+            {{ t('det-course-read-listen-then-speak.ol1.li6') }}
+          </li>
+          <li>
+            {{ t('det-course-read-listen-then-speak.ol1.li7') }}
+          </li>
+          <li>
+            {{ t('det-course-read-listen-then-speak.ol1.li8') }}
+          </li>
+          <li>
+            {{ t('det-course-read-listen-then-speak.ol1.li9') }}
+          </li>
         </ol>
 
         <p>{{ t('det-course-read-listen-then-speak.p3') }}</p>
-        <h2>{{ t('det-course-read-listen-then-speak.h22') }}</h2>
+        <h2 id="prep_2">{{ t('det-course-read-listen-then-speak.h22') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p4') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p5') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p6') }}</p>
@@ -73,7 +91,7 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p8') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p9') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p10') }}</p>
-        <h2>{{ t('det-course-read-listen-then-speak.h23') }}</h2>
+        <h2 id="prep_3">{{ t('det-course-read-listen-then-speak.h23') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p11') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p12') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p13') }}</p>
@@ -84,7 +102,7 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p18') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p19') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p20') }}</p>
-        <h2>{{ t('det-course-read-listen-then-speak.h24') }}</h2>
+        <h2 id="prep_4">{{ t('det-course-read-listen-then-speak.h24') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p21') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p22') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p23') }}</p>
@@ -93,7 +111,7 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p26') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p27') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p28') }}</p>
-        <h2>{{ t('det-course-read-listen-then-speak.h25') }}</h2>
+        <h2 id="prep_5">{{ t('det-course-read-listen-then-speak.h25') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p29') }}</p>
 
         <img
