@@ -39,6 +39,13 @@ useHead({
 </script>
 <template>
   <div class="common_prep_wrapper det-prep-course-interactive-listening">
+    <div class="top">
+      <nuxt-link :to="localePath('/')" class="hoverGiveBorder">Home</nuxt-link>
+      >
+
+      <nuxt-link :to="localePath('/courses')" class="hoverGiveBorder">Courses</nuxt-link>
+      > {{ t('courses.four_change_right_data.data2.video2data.title') }} {{ t('courses.prepCourse') }}
+    </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
         <div class="banner_img">
@@ -200,13 +207,6 @@ useHead({
         <p>{{ t('det_prep_course_interactive_listening.p_84') }}</p>
       </div>
       <div class="common_prep_right">
-        <div class="top">
-          <nuxt-link :to="localePath('/')" class="hoverGiveBorder">Home</nuxt-link>
-          >
-
-          <nuxt-link :to="localePath('/courses')" class="hoverGiveBorder">Courses</nuxt-link>
-          >{{ t('courses.four_change_right_data.data1.video1data.title') }}{{ t('courses.prepCourse') }}
-        </div>
         <div class="tree_out">
           <select_change />
         </div>

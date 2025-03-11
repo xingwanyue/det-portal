@@ -41,6 +41,13 @@ const video_data = computed(() => {
 </script>
 <template>
   <div class="common_prep_wrapper det-write-about-the-photo-course">
+    <div class="top">
+      <nuxt-link :to="localePath('/')" class="hoverGiveBorder">Home</nuxt-link>
+      >
+
+      <nuxt-link :to="localePath('/courses')" class="hoverGiveBorder">Courses</nuxt-link>
+      > {{ t('courses.four_change_right_data.data4.video1data.title') }} {{ t('courses.prepCourse') }}
+    </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
         <div class="banner_img">
@@ -463,13 +470,6 @@ const video_data = computed(() => {
         <div class="html_wrapper" v-html="t('det_write_about_the_photo_course.p225')"></div>
       </div>
       <div class="common_prep_right">
-        <div class="top">
-          <nuxt-link :to="localePath('/')" class="hoverGiveBorder">Home</nuxt-link>
-          >
-
-          <nuxt-link :to="localePath('/courses')" class="hoverGiveBorder">Courses</nuxt-link>
-          >{{ t('courses.four_change_right_data.data1.video1data.title') }}{{ t('courses.prepCourse') }}
-        </div>
         <div class="tree_out">
           <select_change />
         </div>
