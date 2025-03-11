@@ -35,7 +35,7 @@ useHead({
 const video_data = computed(() => {
   return {
     video_title: 'det-course-speak-about-the-photo',
-    video_url: 'https://www.youtube.com/embed/ptt8E7DNyFw?start=15&feature=oembed',
+    video_url: 'https://www.youtube.com/embed/oTyjWsblbYk?si=yRk3ncyXzVkxVDqo',
   };
 });
 </script>
