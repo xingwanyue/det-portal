@@ -204,32 +204,48 @@ const video_data = computed(() => {
         <table>
           <tbody>
             <tr>
-              <th>{{ t('det_read_and_complete_prep_course.table1.table1') }}</th>
-              <th>{{ t('det_read_and_complete_prep_course.table1.table2') }}</th>
+              <th>{{ t('det_read_and_complete_prep_course.table2.table1') }}</th>
+              <th>{{ t('det_read_and_complete_prep_course.table2.table2') }}</th>
             </tr>
             <tr>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table3') }}</td>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table4') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table3') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table4') }}</td>
             </tr>
             <tr>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table5') }}</td>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table6') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table5') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table6') }}</td>
             </tr>
             <tr>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table7') }}</td>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table8') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table7') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table8') }}</td>
             </tr>
             <tr>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table9') }}</td>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table10') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table9') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table10') }}</td>
             </tr>
             <tr>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table19') }}</td>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table20') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table11') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table12') }}</td>
             </tr>
             <tr>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table21') }}</td>
-              <td>{{ t('det_read_and_complete_prep_course.table1.table22') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table13') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table14') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table15') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table16') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table17') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table18') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table19') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table20') }}</td>
+            </tr>
+            <tr>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table21') }}</td>
+              <td>{{ t('det_read_and_complete_prep_course.table2.table22') }}</td>
             </tr>
           </tbody>
         </table>

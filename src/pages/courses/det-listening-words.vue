@@ -71,7 +71,7 @@ const show_answer5 = ref(false);
           class="lazyload"
           src="https://creators.spotify.com/pod/show/duolingoenglishtest/embed/episodes/Unlocking-DET-Interactive-Listening-with-Scenario-Specific-Vocabulary-e2r14kq/a-abko2cv"
           height="102px"
-          width="400px"
+          max-width="400px"
           frameborder="0"
           scrolling="no"
         ></iframe>
