@@ -445,7 +445,7 @@ useHead({
         </details>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_46') }}</p>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_47') }}</p>
-        <h3>{{ t('det_prep_course_listen_and_type_questions.h3_1') }}</h3>
+        <h3 id="prep_8">{{ t('det_prep_course_listen_and_type_questions.h3_1') }}</h3>
         <h4>{{ t('det_prep_course_listen_and_type_questions.h4_1') }}</h4>
         <ul class="wp-block-list">
           <li>{{ t('det_prep_course_listen_and_type_questions.ul_1.li_1') }}</li>

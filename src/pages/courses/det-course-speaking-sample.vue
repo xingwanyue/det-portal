@@ -60,29 +60,67 @@ const video_data = computed(() => {
           <my_video :video_url="video_data.video_url" :title="video_data.video_title" />
         </div>
         <h2>{{ t('det_course_speaking_sample.h21') }}</h2>
-        <div class="html_wrapper" v-html="t('det_course_speaking_sample.p3')"></div>
+        <div class="html_wrapper">
+          <a href="#prep_1">
+            <strong>{{ t('det_course_speaking_sample.p3') }}</strong>
+          </a>
+        </div>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.ul1')"></div>
-        <div class="html_wrapper" v-html="t('det_course_speaking_sample.p4')"></div>
+        <div class="html_wrapper">
+          <a href="#prep_2">
+            <strong>{{ t('det_course_speaking_sample.p4') }}</strong>
+          </a>
+        </div>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.ul2')"></div>
-        <div class="html_wrapper" v-html="t('det_course_speaking_sample.p5')"></div>
-        <div class="html_wrapper" v-html="t('det_course_speaking_sample.p6')"></div>
+        <div class="html_wrapper">
+          <a href="#prep_3">
+            <strong>{{ t('det_course_speaking_sample.p5') }}</strong>
+          </a>
+        </div>
+        <div class="html_wrapper">
+          <a href="#prep_4">
+            <strong>{{ t('det_course_speaking_sample.p6') }}</strong>
+          </a>
+        </div>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.ul3')"></div>
-        <div class="html_wrapper" v-html="t('det_course_speaking_sample.p7')"></div>
+        <div class="html_wrapper">
+          <a href="#prep_5">
+            <strong>{{ t('det_course_speaking_sample.p7') }}</strong>
+          </a>
+        </div>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.ul4')"></div>
-        <div class="html_wrapper" v-html="t('det_course_speaking_sample.p8')"></div>
+        <div class="html_wrapper">
+          <a href="#prep_6">
+            <strong>{{ t('det_course_speaking_sample.p8') }}</strong>
+          </a>
+        </div>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.ul5')"></div>
-        <div class="html_wrapper" v-html="t('det_course_speaking_sample.p9')"></div>
+        <div class="html_wrapper">
+          <a href="#prep_7">
+            <strong>{{ t('det_course_speaking_sample.p9') }}</strong>
+          </a>
+        </div>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.ul6')"></div>
-        <div class="html_wrapper" v-html="t('det_course_speaking_sample.p10')"></div>
+        <div class="html_wrapper">
+          <a href="#prep_8">
+            <strong>{{ t('det_course_speaking_sample.p10') }}</strong>
+          </a>
+        </div>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.ul7')"></div>
-        <div class="html_wrapper" v-html="t('det_course_speaking_sample.p11')"></div>
+        <div class="html_wrapper">
+          <strong>{{ t('det_course_speaking_sample.p11') }}</strong>
+        </div>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.ul8')"></div>
-        <div class="html_wrapper" v-html="t('det_course_speaking_sample.p12')"></div>
+        <div class="html_wrapper">
+          <a href="#prep_10">
+            <strong>{{ t('det_course_speaking_sample.p12') }}</strong>
+          </a>
+        </div>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.ul9')"></div>
-        <h2>{{ t('det_course_speaking_sample.h22') }}</h2>
+        <h2 id="prep_1">{{ t('det_course_speaking_sample.h22') }}</h2>
         <p>{{ t('det_course_speaking_sample.p13') }}</p>
         <p>{{ t('det_course_speaking_sample.p14') }}</p>
-        <h2>{{ t('det_course_speaking_sample.h23') }}</h2>
+        <h2 id="prep_2">{{ t('det_course_speaking_sample.h23') }}</h2>
         <p>{{ t('det_course_speaking_sample.p15') }}</p>
         <p>{{ t('det_course_speaking_sample.p16') }}</p>
         <img src="/img/det-course-speaking-sample/speaking-sample-quick-tips.jpg" alt="det-course-speaking-sample" />
@@ -104,7 +142,7 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speaking_sample.p25') }}</p>
         <p>{{ t('det_course_speaking_sample.p26') }}</p>
         <p>{{ t('det_course_speaking_sample.p27') }}</p>
-        <h2>{{ t('det_course_speaking_sample.h24') }}</h2>
+        <h2 id="prep_3">{{ t('det_course_speaking_sample.h24') }}</h2>
         <p>{{ t('det_course_speaking_sample.p28') }}</p>
         <img src="/img/det-course-speaking-sample/speaking-sample-categories.png" alt="det-course-speaking-sample" />
         <figure>
@@ -114,7 +152,7 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speaking_sample.p30') }}</p>
         <p>{{ t('det_course_speaking_sample.p31') }}</p>
         <p>{{ t('det_course_speaking_sample.p32') }}</p>
-        <h2>{{ t('det_course_speaking_sample.h25') }}</h2>
+        <h2 id="prep_4">{{ t('det_course_speaking_sample.h25') }}</h2>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.p33')"></div>
         <p>{{ t('det_course_speaking_sample.p34') }}</p>
         <p>{{ t('det_course_speaking_sample.p35') }}</p>
@@ -155,7 +193,7 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speaking_sample.p59') }}</p>
         <p>{{ t('det_course_speaking_sample.p60') }}</p>
         <p>{{ t('det_course_speaking_sample.p61') }}</p>
-        <h2>{{ t('det_course_speaking_sample.h26') }}</h2>
+        <h2 id="prep_5">{{ t('det_course_speaking_sample.h26') }}</h2>
         <p>{{ t('det_course_speaking_sample.p62') }}</p>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.p63')"></div>
         <p>{{ t('det_course_speaking_sample.p64') }}</p>
@@ -184,7 +222,7 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speaking_sample.p87') }}</p>
         <p>{{ t('det_course_speaking_sample.p88') }}</p>
         <p>{{ t('det_course_speaking_sample.p89') }}</p>
-        <h2>{{ t('det_course_speaking_sample.h27') }}</h2>
+        <h2 id="prep_6">{{ t('det_course_speaking_sample.h27') }}</h2>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.p90')"></div>
         <img
           src="/img/det-course-speaking-sample/speaking-sample-question-demos.jpg"
@@ -220,14 +258,14 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speaking_sample.p115') }}</p>
         <p>{{ t('det_course_speaking_sample.p116') }}</p>
         <p>{{ t('det_course_speaking_sample.p117') }}</p>
-        <h2>{{ t('det_course_speaking_sample.h28') }}</h2>
+        <h2 id="prep_7">{{ t('det_course_speaking_sample.h28') }}</h2>
         <p>{{ t('det_course_speaking_sample.p118') }}</p>
         <img src="/img/det-course-speaking-sample/hypothetical-questions-demos.jpg" alt="det-course-speaking-sample" />
         <figure>
           <figcaption>{{ t('det_course_speaking_sample.figcaption7') }}</figcaption>
         </figure>
         <p>{{ t('det_course_speaking_sample.p119') }}</p>
-        <h3>{{ t('det_course_speaking_sample.h31') }}</h3>
+        <h3 id="prep_8">{{ t('det_course_speaking_sample.h31') }}</h3>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.p120')"></div>
         <p>{{ t('det_course_speaking_sample.p121') }}</p>
         <p>{{ t('det_course_speaking_sample.p122') }}</p>
@@ -293,7 +331,7 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speaking_sample.p182') }}</p>
         <p>{{ t('det_course_speaking_sample.p183') }}</p>
         <p>{{ t('det_course_speaking_sample.p184') }}</p>
-        <h2>{{ t('det_course_speaking_sample.h29') }}</h2>
+        <h2 id="prep_10">{{ t('det_course_speaking_sample.h29') }}</h2>
         <p>{{ t('det_course_speaking_sample.p185') }}</p>
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.ul10')"></div>
         <p>{{ t('det_course_speaking_sample.p186') }}</p>

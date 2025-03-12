@@ -58,30 +58,36 @@ const video_data = computed(() => {
         <p>{{ t('det_interactive_writing.p1') }}</p>
         <h2>{{ t('det_interactive_writing.h22') }}</h2>
 
-        <div class="html_wrapper" v-html="t('det_interactive_writing.ul1')"></div>
-        <div class="html_wrapper" v-html="t('det_interactive_writing.ul2')"></div>
-        <ul>
-          <li>{{ t('det_interactive_writing.ui1.li1') }}</li>
-          <li>{{ t('det_interactive_writing.ui1.li2') }}</li>
-          <li>{{ t('det_interactive_writing.ui1.li3') }}</li>
+        <!-- <div class="html_wrapper" v-html="t('det_interactive_writing.ul1')"></div>
+        <div class="html_wrapper" v-html="t('det_interactive_writing.ul2')"></div> -->
+        <ul class="html_wrapper">
           <li>
-            {{ t('det_interactive_writing.ui1.li4') }}
+            <a :href="`#prep_1`">{{ t('det_interactive_writing.ui1.li1') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_2`">{{ t('det_interactive_writing.ui1.li2') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_3`">{{ t('det_interactive_writing.ui1.li3') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_4`">{{ t('det_interactive_writing.ui1.li4') }}</a>
             <ul>
               <li>{{ t('det_interactive_writing.ui1.li4_1') }}</li>
               <li>{{ t('det_interactive_writing.ui1.li4_2') }}</li>
               <li>{{ t('det_interactive_writing.ui1.li4_3') }}</li>
             </ul>
           </li>
-          <li>{{ t('det_interactive_writing.ui1.li5') }}</li>
-          <li>{{ t('det_interactive_writing.ui1.li6') }}</li>
-          <li>{{ t('det_interactive_writing.ui1.li7') }}</li>
+          <li>
+            <a :href="`#prep_5`">{{ t('det_interactive_writing.ui1.li5') }}</a>
+          </li>
         </ul>
         <p>{{ t('det_interactive_writing.p2') }}</p>
         <div class="video_out">
           <my_video :title="video_data.video_title" :video_url="video_data.video_url" />
         </div>
-        <p>{{ t('det_interactive_writing.p3') }}</p>
-        <h2>{{ t('det_interactive_writing.h23') }}</h2>
+        <p id="prep_1">{{ t('det_interactive_writing.p3') }}</p>
+        <h2 id="prep_2">{{ t('det_interactive_writing.h23') }}</h2>
         <p>{{ t('det_interactive_writing.p4') }}</p>
 
         <p>{{ t('det_interactive_writing.p5') }}</p>
@@ -90,13 +96,13 @@ const video_data = computed(() => {
           <figcaption>{{ t('det_interactive_writing.figcaption1') }}</figcaption>
         </figure>
         <p>{{ t('det_interactive_writing.p6') }}</p>
-        <h2>{{ t('det_interactive_writing.h24') }}</h2>
+        <h2 id="prep_3">{{ t('det_interactive_writing.h24') }}</h2>
         <p>{{ t('det_interactive_writing.p7') }}</p>
         <p>{{ t('det_interactive_writing.p8') }}</p>
         <p>{{ t('det_interactive_writing.p9') }}</p>
         <p>{{ t('det_interactive_writing.p10') }}</p>
         <p>{{ t('det_interactive_writing.p11') }}</p>
-        <h2>{{ t('det_interactive_writing.h25') }}</h2>
+        <h2 id="prep_4">{{ t('det_interactive_writing.h25') }}</h2>
         <p>{{ t('det_interactive_writing.p12') }}</p>
         <img
           src="/img/det_interactive_writing/Interactive-Writing-Categories-3.png"
@@ -319,7 +325,7 @@ const video_data = computed(() => {
         <p>{{ t('det_interactive_writing.p221') }}</p>
         <p>{{ t('det_interactive_writing.p222') }}</p>
         <p>{{ t('det_interactive_writing.p223') }}</p>
-        <h2>{{ t('det_interactive_writing.h29') }}</h2>
+        <h2 id="prep_5">{{ t('det_interactive_writing.h29') }}</h2>
         <p>{{ t('det_interactive_writing.p224') }}</p>
         <div class="html_wrapper" v-html="t('det_interactive_writing.ol1')"></div>
         <p>{{ t('det_interactive_writing.p225') }}</p>

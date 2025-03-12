@@ -54,7 +54,7 @@ useHead({
         <h2>{{ t('det-course-read-listen-then-speak.h21') }}</h2>
         <ol class="toc_ol">
           <li>
-            {{ t('det-course-read-listen-then-speak.ol1.li1') }}
+            <a :href="`#prep_1`">{{ t('det-course-read-listen-then-speak.ol1.li1') }}</a>
           </li>
           <li>
             <a :href="`#prep_2`">{{ t('det-course-read-listen-then-speak.ol1.li2') }}</a>
@@ -69,20 +69,20 @@ useHead({
             <a :href="`#prep_5`">{{ t('det-course-read-listen-then-speak.ol1.li5') }}</a>
           </li>
           <li>
-            {{ t('det-course-read-listen-then-speak.ol1.li6') }}
+            <a :href="`#prep_6`">{{ t('det-course-read-listen-then-speak.ol1.li6') }}</a>
           </li>
           <li>
-            {{ t('det-course-read-listen-then-speak.ol1.li7') }}
+            <a :href="`#prep_7`">{{ t('det-course-read-listen-then-speak.ol1.li7') }}</a>
           </li>
           <li>
-            {{ t('det-course-read-listen-then-speak.ol1.li8') }}
+            <a :href="`#prep_8`">{{ t('det-course-read-listen-then-speak.ol1.li8') }}</a>
           </li>
           <li>
-            {{ t('det-course-read-listen-then-speak.ol1.li9') }}
+            <a :href="`#prep_9`">{{ t('det-course-read-listen-then-speak.ol1.li9') }}</a>
           </li>
         </ol>
 
-        <p>{{ t('det-course-read-listen-then-speak.p3') }}</p>
+        <p id="prep_1">{{ t('det-course-read-listen-then-speak.p3') }}</p>
         <h2 id="prep_2">{{ t('det-course-read-listen-then-speak.h22') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p4') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p5') }}</p>
@@ -128,7 +128,7 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p33') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p34') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p35') }}</p>
-        <h2>{{ t('det-course-read-listen-then-speak.h26') }}</h2>
+        <h2 id="prep_6">{{ t('det-course-read-listen-then-speak.h26') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p36') }}</p>
         <ol class="wp-block-list">
           <li>
@@ -220,7 +220,7 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p83') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p84') }}</p>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p85')"></div>
-        <h2>{{ t('det-course-read-listen-then-speak.h27') }}</h2>
+        <h2 id="prep_7">{{ t('det-course-read-listen-then-speak.h27') }}</h2>
 
         <p>{{ t('det-course-read-listen-then-speak.p86') }}</p>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.ol3')"></div>
@@ -294,7 +294,7 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p132') }}</p>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p133')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p134') }}</p>
-        <h2>{{ t('det-course-read-listen-then-speak.h28') }}</h2>
+        <h2 id="prep_8">{{ t('det-course-read-listen-then-speak.h28') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p135') }}</p>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.ol4')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p136') }}</p>
@@ -374,7 +374,7 @@ useHead({
 
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p187')"></div>
 
-        <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p188')"></div>
+        <div id="prep_9" class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p188')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p189') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p190') }}</p>
       </div>

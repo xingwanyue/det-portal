@@ -22,9 +22,6 @@ const localePath = useLocalePath();
 <style lang="scss" scoped>
 .common_table_of_con_out {
   margin-top: 20px;
-  a {
-    text-decoration: none !important;
-  }
 }
 // 添加目标元素的偏移量，确保跳转位置正确
 </style>

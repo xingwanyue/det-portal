@@ -71,27 +71,41 @@ const video_data2 = computed(() => {
           <my_video :title="video_data.video_title" :video_url="video_data.video_url" />
         </div>
         <h2>{{ t('det-prep-course-read-aloud.h21') }}</h2>
-        <p>{{ t('det-prep-course-read-aloud.p3') }}</p>
+        <p>
+          <a :href="`#prep_1`">{{ t('det-prep-course-read-aloud.p3') }}</a>
+        </p>
         <ul v-html="t('det-prep-course-read-aloud.ul1')"></ul>
-        <p>{{ t('det-prep-course-read-aloud.p4') }}</p>
+        <p>
+          <a :href="`#prep_2`">{{ t('det-prep-course-read-aloud.p4') }}</a>
+        </p>
         <ul v-html="t('det-prep-course-read-aloud.ul2')"></ul>
-        <p>{{ t('det-prep-course-read-aloud.p5') }}</p>
+        <p>
+          <a :href="`#prep_3`">{{ t('det-prep-course-read-aloud.p5') }}</a>
+        </p>
         <ul v-html="t('det-prep-course-read-aloud.ul3')"></ul>
-        <p>{{ t('det-prep-course-read-aloud.p6') }}</p>
+        <p>
+          <a :href="`#prep_4`">{{ t('det-prep-course-read-aloud.p6') }}</a>
+        </p>
         <ul v-html="t('det-prep-course-read-aloud.ul4')"></ul>
-        <p>{{ t('det-prep-course-read-aloud.p7') }}</p>
+        <p>
+          <a :href="`#prep_5`">{{ t('det-prep-course-read-aloud.p7') }}</a>
+        </p>
         <ul v-html="t('det-prep-course-read-aloud.ul5')"></ul>
-        <p>{{ t('det-prep-course-read-aloud.p8') }}</p>
+        <p>
+          <a :href="`#prep_6`">{{ t('det-prep-course-read-aloud.p8') }}</a>
+        </p>
         <ul v-html="t('det-prep-course-read-aloud.ul6')"></ul>
-        <p>{{ t('det-prep-course-read-aloud.p9') }}</p>
-        <h2>{{ t('det-prep-course-read-aloud.h22') }}</h2>
+        <p>
+          <a :href="`#prep_7`">{{ t('det-prep-course-read-aloud.p9') }}</a>
+        </p>
+        <h2 id="prep_1">{{ t('det-prep-course-read-aloud.h22') }}</h2>
         <p>{{ t('det-prep-course-read-aloud.p10') }}</p>
         <p>{{ t('det-prep-course-read-aloud.p11') }}</p>
         <p>{{ t('det-prep-course-read-aloud.p12') }}</p>
         <p>{{ t('det-prep-course-read-aloud.p13') }}</p>
         <p>{{ t('det-prep-course-read-aloud.p14') }}</p>
         <p>{{ t('det-prep-course-read-aloud.p15') }}</p>
-        <h2>{{ t('det-prep-course-read-aloud.h23') }}</h2>
+        <h2 id="prep_2">{{ t('det-prep-course-read-aloud.h23') }}</h2>
         <p>{{ t('det-prep-course-read-aloud.p16') }}</p>
         <img src="/img/det-prep-course-read-aloud/Screenshot.jpg" :alt="t('det-prep-course-read-aloud.img2')" />
         <p>{{ t('det-prep-course-read-aloud.p17') }}</p>
@@ -102,7 +116,7 @@ const video_data2 = computed(() => {
         <p>{{ t('det-prep-course-read-aloud.p22') }}</p>
         <p>{{ t('det-prep-course-read-aloud.p23') }}</p>
         <p>{{ t('det-prep-course-read-aloud.p24') }}</p>
-        <h2>{{ t('det-prep-course-read-aloud.h24') }}</h2>
+        <h2 id="prep_3">{{ t('det-prep-course-read-aloud.h24') }}</h2>
         <p>{{ t('det-prep-course-read-aloud.p25') }}</p>
         <p>{{ t('det-prep-course-read-aloud.p26') }}</p>
         <p>{{ t('det-prep-course-read-aloud.p27') }}</p>
@@ -192,7 +206,7 @@ const video_data2 = computed(() => {
           </audio>
         </div>
         <p>{{ t('det-prep-course-read-aloud.p43') }}</p>
-        <h2>{{ t('det-prep-course-read-aloud.h25') }}</h2>
+        <h2 id="prep_4">{{ t('det-prep-course-read-aloud.h25') }}</h2>
         <p>{{ t('det-prep-course-read-aloud.p44') }}</p>
         <div class="html_wrapper" v-html="t('det-prep-course-read-aloud.p45')"></div>
 
@@ -207,7 +221,7 @@ const video_data2 = computed(() => {
         <div class="html_wrapper" v-html="t('det-prep-course-read-aloud.p54')"></div>
         <p>{{ t('det-prep-course-read-aloud.p55') }}</p>
         <div class="html_wrapper" v-html="t('det-prep-course-read-aloud.p56')"></div>
-        <h2>{{ t('det-prep-course-read-aloud.h26') }}</h2>
+        <h2 id="prep_5">{{ t('det-prep-course-read-aloud.h26') }}</h2>
         <h3>{{ t('det-prep-course-read-aloud.h31') }}</h3>
         <p>{{ t('det-prep-course-read-aloud.p57') }}</p>
         <img src="/img/det-prep-course-read-aloud/Screenshot2.png" :alt="t('det-prep-course-read-aloud.img3')" />
@@ -228,7 +242,7 @@ const video_data2 = computed(() => {
         <p>{{ t('det-prep-course-read-aloud.p69') }}</p>
         <div class="html_wrapper" v-html="t('det-prep-course-read-aloud.p70')"></div>
         <p>{{ t('det-prep-course-read-aloud.p71') }}</p>
-        <h2>{{ t('det-prep-course-read-aloud.h27') }}</h2>
+        <h2 id="prep_6">{{ t('det-prep-course-read-aloud.h27') }}</h2>
         <p>{{ t('det-prep-course-read-aloud.p72') }}</p>
         <div class="html_wrapper" v-html="t('det-prep-course-read-aloud.p73')"></div>
 
@@ -241,7 +255,7 @@ const video_data2 = computed(() => {
         <p>{{ t('det-prep-course-read-aloud.p79') }}</p>
         <div class="html_wrapper" v-html="t('det-prep-course-read-aloud.p80')"></div>
         <p>{{ t('det-prep-course-read-aloud.p81') }}</p>
-        <h2>{{ t('det-prep-course-read-aloud.h28') }}</h2>
+        <h2 id="prep_7">{{ t('det-prep-course-read-aloud.h28') }}</h2>
         <p>{{ t('det-prep-course-read-aloud.p82') }}</p>
         <ol v-html="t('det-prep-course-read-aloud.ol1')"></ol>
         <div class="html_wrapper" v-html="t('det-prep-course-read-aloud.p83')"></div>

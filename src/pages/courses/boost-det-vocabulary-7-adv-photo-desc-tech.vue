@@ -55,8 +55,40 @@ useHead({
         <h1>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h11') }}</h1>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p1')"></div>
         <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h21') }}</h2>
-        <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ol1')"></div>
-        <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h22') }}</h2>
+        <ol>
+          <li>
+            <a :href="`#prep_1`">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.oo1') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_2`">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.oo2') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_3`">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.oo3') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_4`">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.oo4') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_5`">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.oo5') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_6`">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.oo6') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_7`">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.oo7') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_8`">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.oo8') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_9`">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.oo9') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_10`">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.oo10') }}</a>
+          </li>
+        </ol>
+
+        <h2 id="prep_1">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h22') }}</h2>
 
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p2') }}</p>
 
@@ -67,11 +99,11 @@ useHead({
           scrolling="no"
         ></iframe>
 
-        <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h23') }}</h2>
+        <h2 id="prep_2">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h23') }}</h2>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p3') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ol2')"></div>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p4') }}</p>
-        <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h24') }}</h2>
+        <h2 id="prep_3">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h24') }}</h2>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p5') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p6')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul1')"></div>
@@ -104,7 +136,7 @@ useHead({
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p10')"></div>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p11') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p12')"></div>
-        <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h25') }}</h2>
+        <h2 id="prep_4">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h25') }}</h2>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p13') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p14')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul4')"></div>
@@ -136,7 +168,7 @@ useHead({
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p17') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p18')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p19')"></div>
-        <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h26') }}</h2>
+        <h2 id="prep_5">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h26') }}</h2>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p20') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p21')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul7')"></div>
@@ -168,7 +200,7 @@ useHead({
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p24') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p25')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p26')"></div>
-        <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h27') }}</h2>
+        <h2 id="prep_6">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h27') }}</h2>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p27') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p28')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul10')"></div>
@@ -200,7 +232,7 @@ useHead({
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p31') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p32')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p33')"></div>
-        <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h28') }}</h2>
+        <h2 id="prep_7">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h28') }}</h2>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p34') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p35')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul13')"></div>
@@ -231,7 +263,7 @@ useHead({
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p38') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p39')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p40')"></div>
-        <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h29') }}</h2>
+        <h2 id="prep_8">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h29') }}</h2>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p41') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p42')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul16')"></div>
@@ -263,7 +295,7 @@ useHead({
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p45') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p46')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p47')"></div>
-        <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h210') }}</h2>
+        <h2 id="prep_9">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h210') }}</h2>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p48') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p49')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ul19')"></div>
@@ -296,7 +328,7 @@ useHead({
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p53')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p54')"></div>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p55')"></div>
-        <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h211') }}</h2>
+        <h2 id="prep_10">{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h211') }}</h2>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p56') }}</p>
         <p>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.p57') }}</p>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.ol3')"></div>

@@ -111,6 +111,9 @@
     }
     .html_wrapper {
         margin: 14px 0;
+        ul {
+            margin-top: 14px;
+        }
     }
     .banner_img {
         img {
@@ -123,8 +126,5 @@
         scroll-margin-top: 80px !important; // 根据您的导航栏高度调整这个值
     }
     .toc_ol {
-        a {
-            text-decoration: none;
-        }
     }
 }

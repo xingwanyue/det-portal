@@ -69,10 +69,57 @@ const video_data = computed(() => {
         </div>
         <h2>{{ t('det_write_about_the_photo_course.h21') }}</h2>
 
-        <ol class="html_wrapper" v-html="t('det_write_about_the_photo_course.ol1')"></ol>
-        <h2>{{ t('det_write_about_the_photo_course.h22') }}</h2>
+        <ol class="html_wrapper">
+          <li>
+            <a :href="`#prep_1`">{{ t('det_write_about_the_photo_course.newol1') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_2`">{{ t('det_write_about_the_photo_course.newol2') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_3`">{{ t('det_write_about_the_photo_course.newol3') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_4`">{{ t('det_write_about_the_photo_course.newol4') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_5`">{{ t('det_write_about_the_photo_course.newol5') }}</a>
+            <ul>
+              <li>{{ t('det_write_about_the_photo_course.newol5_1') }}</li>
+              <li>{{ t('det_write_about_the_photo_course.newol5_2') }}</li>
+              <li>{{ t('det_write_about_the_photo_course.newol5_3') }}</li>
+            </ul>
+          </li>
+          <li>
+            <a :href="`#prep_6`">{{ t('det_write_about_the_photo_course.newol6') }}</a>
+            <ul>
+              <li>{{ t('det_write_about_the_photo_course.newol6_1') }}</li>
+              <li>{{ t('det_write_about_the_photo_course.newol6_2') }}</li>
+              <li>{{ t('det_write_about_the_photo_course.newol6_3') }}</li>
+            </ul>
+          </li>
+          <li>
+            <a :href="`#prep_7`">{{ t('det_write_about_the_photo_course.newol7') }}</a>
+            <ul>
+              <li>{{ t('det_write_about_the_photo_course.newol7_1') }}</li>
+              <li>{{ t('det_write_about_the_photo_course.newol7_2') }}</li>
+              <li>{{ t('det_write_about_the_photo_course.newol7_3') }}</li>
+            </ul>
+          </li>
+          <li>
+            <a :href="`#prep_8`">{{ t('det_write_about_the_photo_course.newol8') }}</a>
+            <ul>
+              <li>{{ t('det_write_about_the_photo_course.newol8_1') }}</li>
+              <li>{{ t('det_write_about_the_photo_course.newol8_2') }}</li>
+            </ul>
+          </li>
+          <li>
+            <a :href="`#prep_9`">{{ t('det_write_about_the_photo_course.newol9') }}</a>
+          </li>
+        </ol>
+        <h2 id="prep_1">{{ t('det_write_about_the_photo_course.h22') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p6') }}</p>
-        <h2>{{ t('det_write_about_the_photo_course.h23') }}</h2>
+        <h2 id="prep_2">{{ t('det_write_about_the_photo_course.h23') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p7') }}</p>
 
         <img src="/img/det_write_about_the_photo_course/scoring-criteria-1.jpg" alt="scoring-criteria-1" />
@@ -85,7 +132,7 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p10') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p11') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p12') }}</p>
-        <h2>{{ t('det_write_about_the_photo_course.h24') }}</h2>
+        <h2 id="prep_3">{{ t('det_write_about_the_photo_course.h24') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p13') }}</p>
         <img src="/img/det_write_about_the_photo_course/Screenshot-2.jpg" alt="Screenshot-2" />
 
@@ -98,7 +145,7 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p17') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p18') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p19') }}</p>
-        <h2>{{ t('det_write_about_the_photo_course.h25') }}</h2>
+        <h2 id="prep_4">{{ t('det_write_about_the_photo_course.h25') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p20') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p21') }}</p>
         <img src="/img/det_write_about_the_photo_course/category-3.png" alt="category-3" />
@@ -111,7 +158,7 @@ const video_data = computed(() => {
         <div class="html_wrapper" v-html="t('det_write_about_the_photo_course.p24')"></div>
         <div class="html_wrapper" v-html="t('det_write_about_the_photo_course.p25')"></div>
         <p>{{ t('det_write_about_the_photo_course.p26') }}</p>
-        <h2>{{ t('det_write_about_the_photo_course.h26') }}</h2>
+        <h2 id="prep_5">{{ t('det_write_about_the_photo_course.h26') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p27') }}</p>
         <img src="/img/det_write_about_the_photo_course/people-4.jpg" alt="people-4" />
 
@@ -255,7 +302,7 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p97') }}</p>
         <div class="html_wrapper" v-html="t('det_write_about_the_photo_course.ul21')"></div>
         <p>{{ t('det_write_about_the_photo_course.p98') }}</p>
-        <h2>{{ t('det_write_about_the_photo_course.h27') }}</h2>
+        <h2 id="prep_6">{{ t('det_write_about_the_photo_course.h27') }}</h2>
         <img src="/img/det_write_about_the_photo_course/animals-15.jpg" alt="animals-15" />
 
         <figure>
@@ -316,7 +363,7 @@ const video_data = computed(() => {
         </figure>
         <p>{{ t('det_write_about_the_photo_course.p132') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p133') }}</p>
-        <h2>{{ t('det_write_about_the_photo_course.h28') }}</h2>
+        <h2 id="prep_7">{{ t('det_write_about_the_photo_course.h28') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p134') }}</p>
         <img src="/img/det_write_about_the_photo_course/views-19.jpg" alt="views-19" />
 
@@ -381,7 +428,7 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p169') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p170') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p171') }}</p>
-        <h2>{{ t('det_write_about_the_photo_course.h29') }}</h2>
+        <h2 id="prep_8">{{ t('det_write_about_the_photo_course.h29') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p172') }}</p>
         <img src="/img/det_write_about_the_photo_course/objects-24.jpg" alt="objects-24" />
 
@@ -444,7 +491,7 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p209') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p210') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p211') }}</p>
-        <h2>{{ t('det_write_about_the_photo_course.h210') }}</h2>
+        <h2 id="prep_9">{{ t('det_write_about_the_photo_course.h210') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p212') }}</p>
         <img src="/img/det_write_about_the_photo_course/exercise-28.jpg" alt="exercise-28" />
 

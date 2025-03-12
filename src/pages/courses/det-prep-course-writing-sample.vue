@@ -77,11 +77,17 @@ const showAnswer16 = ref(false);
         <h2>{{ t('det_prep_course_writing_sample.h21') }}</h2>
 
         <ol>
-          <li>{{ t('det_prep_course_writing_sample.ol1.li1') }}</li>
-          <li>{{ t('det_prep_course_writing_sample.ol1.li2') }}</li>
-          <li>{{ t('det_prep_course_writing_sample.ol1.li3') }}</li>
           <li>
-            {{ t('det_prep_course_writing_sample.ol1.li4') }}
+            <a :href="`#prep_1`">{{ t('det_prep_course_writing_sample.ol1.li1') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_2`">{{ t('det_prep_course_writing_sample.ol1.li2') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_3`">{{ t('det_prep_course_writing_sample.ol1.li3') }}</a>
+          </li>
+          <li>
+            <a :href="`#prep_4`">{{ t('det_prep_course_writing_sample.ol1.li4') }}</a>
             <ul>
               <li>{{ t('det_prep_course_writing_sample.ol1.li4_1') }}</li>
               <li>{{ t('det_prep_course_writing_sample.ol1.li4_2') }}</li>
@@ -89,7 +95,7 @@ const showAnswer16 = ref(false);
             </ul>
           </li>
           <li>
-            {{ t('det_prep_course_writing_sample.ol1.li5') }}
+            <a :href="`#prep_5`">{{ t('det_prep_course_writing_sample.ol1.li5') }}</a>
             <ul>
               <li>{{ t('det_prep_course_writing_sample.ol1.li5_1') }}</li>
               <li>{{ t('det_prep_course_writing_sample.ol1.li5_2') }}</li>
@@ -97,7 +103,7 @@ const showAnswer16 = ref(false);
             </ul>
           </li>
           <li>
-            {{ t('det_prep_course_writing_sample.ol1.li6') }}
+            <a :href="`#prep_6`">{{ t('det_prep_course_writing_sample.ol1.li6') }}</a>
             <ul>
               <li>{{ t('det_prep_course_writing_sample.ol1.li6_1') }}</li>
               <li>{{ t('det_prep_course_writing_sample.ol1.li6_2') }}</li>
@@ -105,41 +111,41 @@ const showAnswer16 = ref(false);
               <li>{{ t('det_prep_course_writing_sample.ol1.li6_4') }}</li>
             </ul>
           </li>
-          <li>{{ t('det_prep_course_writing_sample.ol1.li7') }}</li>
-          <li>{{ t('det_prep_course_writing_sample.ol1.li8') }}</li>
-          <li>{{ t('det_prep_course_writing_sample.ol1.li9') }}</li>
+          <li>
+            <a :href="`#prep_7`">{{ t('det_prep_course_writing_sample.ol1.li7') }}</a>
+          </li>
         </ol>
         <p>{{ t('det_prep_course_writing_sample.p3') }}</p>
         <my_video :video_url="video_data.video_url" :title="video_data.video_title" />
         <p>{{ t('det_prep_course_writing_sample.p4') }}</p>
-        <h2>{{ t('det_prep_course_writing_sample.h22') }}</h2>
+        <h2 id="prep_1">{{ t('det_prep_course_writing_sample.h22') }}</h2>
         <p>{{ t('det_prep_course_writing_sample.p5') }}</p>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p6')"></div>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p7')"></div>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p8')"></div>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p9')"></div>
         <p>{{ t('det_prep_course_writing_sample.p10') }}</p>
-        <h2>{{ t('det_prep_course_writing_sample.h23') }}</h2>
+        <h2 id="prep_2">{{ t('det_prep_course_writing_sample.h23') }}</h2>
         <p>{{ t('det_prep_course_writing_sample.p11') }}</p>
         <img src="/img/det_prep_course_writing_sample/DET-Writing-Sample-UI-2.png" alt="DET-Writing-Sample-UI" />
         <figure>
           <figcaption>{{ t('det_prep_course_writing_sample.figcaption1') }}</figcaption>
         </figure>
         <p>{{ t('det_prep_course_writing_sample.p12') }}</p>
-        <h2>{{ t('det_prep_course_writing_sample.h24') }}</h2>
+        <h2 id="prep_3">{{ t('det_prep_course_writing_sample.h24') }}</h2>
         <p>{{ t('det_prep_course_writing_sample.p13') }}</p>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p14')"></div>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p15')"></div>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p16')"></div>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p17')"></div>
         <p>{{ t('det_prep_course_writing_sample.p18') }}</p>
-        <h2>{{ t('det_prep_course_writing_sample.h25') }}</h2>
+        <h2 id="prep_4">{{ t('det_prep_course_writing_sample.h25') }}</h2>
         <p>{{ t('det_prep_course_writing_sample.p19') }}</p>
         <img src="/img/det_prep_course_writing_sample/writing-sample-category-3.png" alt="writing-sample-category" />
         <figure>
           <figcaption>{{ t('det_prep_course_writing_sample.figcaption2') }}</figcaption>
         </figure>
-        <h2>{{ t('det_prep_course_writing_sample.h26') }}</h2>
+        <h2 id="prep_5">{{ t('det_prep_course_writing_sample.h26') }}</h2>
         <p>{{ t('det_prep_course_writing_sample.p20') }}</p>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p21')"></div>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.ul4')"></div>
@@ -389,7 +395,7 @@ const showAnswer16 = ref(false);
         <p>{{ t('det_prep_course_writing_sample.p74') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p75') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p76') }}</p>
-        <h2>{{ t('det_prep_course_writing_sample.h27') }}</h2>
+        <h2 id="prep_6">{{ t('det_prep_course_writing_sample.h27') }}</h2>
         <p>{{ t('det_prep_course_writing_sample.p77') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p78') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p79') }}</p>
@@ -766,7 +772,7 @@ const showAnswer16 = ref(false);
         <!-- <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p176')"></div> -->
         <p>{{ t('det_prep_course_writing_sample.p177') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p178') }}</p>
-        <h2>{{ t('det_prep_course_writing_sample.h28') }}</h2>
+        <h2 id="prep_7">{{ t('det_prep_course_writing_sample.h28') }}</h2>
         <p>{{ t('det_prep_course_writing_sample.p179') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p180') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p181') }}</p>
