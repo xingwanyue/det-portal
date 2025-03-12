@@ -206,14 +206,17 @@ const show_answer5 = ref(false);
         <div class="prep_button" @click="show_answer3 = !show_answer3">{{ t('det_listening_words.stls') }}</div>
         <div v-if="show_answer3" class="answer_out">
           Student: “Professor Johnson, I’m having trouble understanding the concept of opportunity cost from yesterday’s
-          lecture. Could you explain it again?” Professor: “Of course. Opportunity cost is the value of the next best
-          alternative that you give up when making a choice. For instance, if you choose to study for an exam instead of
-          going to a party, the fun you miss out on at the party is your opportunity cost of studying.” Student: “I see.
-          So it’s about what we sacrifice when we make a decision?” Professor: “Exactly. It’s a fundamental concept in
-          economics that helps us understand the true cost of our choices.” Student: “Thank you, that makes much more
-          sense now. Would you recommend any additional resources for me to review this concept?” Professor: “Certainly.
-          I’d suggest reading Chapter 3 in your textbook and watching the video series on opportunity cost that I posted
-          on our class website.” Student: “Great, I’ll do that. Thanks again for your help, Professor Johnson.”
+          lecture. Could you explain it again?”<br />
+          Professor: “Of course. Opportunity cost is the value of the next best alternative that you give up when making
+          a choice. For instance, if you choose to study for an exam instead of going to a party, the fun you miss out
+          on at the party is your opportunity cost of studying.”
+          <br />Student: “I see. So it’s about what we sacrifice when we make a decision?”<br />
+          Professor: “Exactly. It’s a fundamental concept in economics that helps us understand the true cost of our
+          choices.”<br />
+          Student: “Thank you, that makes much more sense now. Would you recommend any additional resources for me to
+          review this concept?” <br />Professor: “Certainly. I’d suggest reading Chapter 3 in your textbook and watching
+          the video series on opportunity cost that I posted on our class website.” <br />Student: “Great, I’ll do that.
+          Thanks again for your help, Professor Johnson.”
         </div>
         <p>{{ t('det_listening_words.p117') }}</p>
         <p>{{ t('det_listening_words.p118') }}</p>
