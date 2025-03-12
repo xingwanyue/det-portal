@@ -505,9 +505,9 @@ const showAnswer16 = ref(false);
         <h3>{{ t('det_prep_course_writing_sample.h35') }}</h3>
         <p>{{ t('det_prep_course_writing_sample.p107') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p108') }}</p>
-        <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p109')"></div>
+        <div class="html_wrapper" style="color: blue" v-html="t('det_prep_course_writing_sample.p109')"></div>
         <p>{{ t('det_prep_course_writing_sample.p110') }}</p>
-        <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p111')"></div>
+        <div class="html_wrapper"  style="color: blue" v-html="t('det_prep_course_writing_sample.p111')"></div>
         <p>{{ t('det_prep_course_writing_sample.p112') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p113') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p114') }}</p>
