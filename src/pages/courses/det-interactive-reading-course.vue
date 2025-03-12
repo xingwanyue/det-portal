@@ -537,7 +537,6 @@ const a_list_data = computed(() => {
 .p_h1 {
   font-size: 56px;
   font-weight: 600;
-  line-height: 64px;
 }
 .p_h2 {
   font-size: 40px;

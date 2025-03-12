@@ -681,6 +681,13 @@ const openShowWrongWord = ref(false);
 </script>
 <template>
   <div class="common_prep_wrapper det_read_and_select_course_wrapper">
+    <div class="top">
+      <nuxt-link :to="localePath('/')" class="hoverGiveBorder">Home</nuxt-link>
+      >
+
+      <nuxt-link :to="localePath('/courses')" class="hoverGiveBorder">Courses</nuxt-link>
+      > {{ t('courses.four_change_right_data.data1.video1data.title') }} {{ t('courses.prepCourse') }}
+    </div>
     <div class="common_prep_out det_read_and_select_course">
       <div class="common_prep_left det_read_and_select_course_left">
         <div class="banner_img">
@@ -721,20 +728,13 @@ const openShowWrongWord = ref(false);
         </div>
         <div class="prep_button" @click="openShowWrongWord = !openShowWrongWord">Show Answer</div>
         <p>{{ t('det_read_and_select_course.hit') }}</p>
-        <table_of_con :title="table_of_con_data2.title" :list="table_of_con_data2.list" />
+        <table_of_con :nohref="true" :title="table_of_con_data2.title" :list="table_of_con_data2.list" />
         <div class="desc_img_tips_out" v-for="(item, index) in desc_img_tipsArr2" :key="index">
           <desc_img_tips :h2="item.h2" :descArr="item.descArr" :imgArr="item.imgArr" :imgTipArr="item.imgTipArr" />
         </div>
         <!-- <a_list :list="a_list_data" /> -->
       </div>
       <div class="common_prep_right">
-        <div class="top">
-          <nuxt-link :to="localePath('/')" class="hoverGiveBorder">Home</nuxt-link>
-          >
-
-          <nuxt-link :to="localePath('/courses')" class="hoverGiveBorder">Courses</nuxt-link>
-          >{{ t('courses.four_change_right_data.data1.video1data.title') }}{{ t('courses.prepCourse') }}
-        </div>
         <div class="tree_out">
           <select_change />
         </div>
