@@ -652,6 +652,7 @@ onMounted(() => {
           display: flex;
           flex-direction: column;
           gap: 16px;
+          flex-wrap: wrap;
 
           @media screen and (max-width: 760px) {
             display: flex;
