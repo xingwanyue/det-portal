@@ -104,19 +104,31 @@ useHead({
         <p>{{ t('det_prep_course_listen_and_type_questions.p_5') }}</p>
         <h2 id="prep_2">{{ t('det_prep_course_listen_and_type_questions.h2_3') }}</h2>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_6') }}</p>
-        <img src="/img/det-prep-course-listen-and-type-questions/listen-and-type-UI.png" alt="" />
+        <img
+          src="/img/det-prep-course-listen-and-type-questions/listen-and-type-UI.png"
+          alt="UI of the DET Listen and Type Question"
+        />
         <div class="gray">{{ t('det_prep_course_listen_and_type_questions.gray1') }}</div>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_7') }}</p>
-        <img src="/img/det-prep-course-listen-and-type-questions/listen-and-type-UI2.jpg" alt="" />
+        <img
+          src="/img/det-prep-course-listen-and-type-questions/listen-and-type-UI2.jpg"
+          alt="A close look of Listen and Type UI."
+        />
         <div class="gray">{{ t('det_prep_course_listen_and_type_questions.gray2') }}</div>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_8') }}</p>
         <h2 id="prep_3">{{ t('det_prep_course_listen_and_type_questions.h2_4') }}</h2>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_9') }}</p>
-        <img src="/img/det-prep-course-listen-and-type-questions/listen-and-type-intro.jpg" alt="" />
+        <img
+          src="/img/det-prep-course-listen-and-type-questions/listen-and-type-intro.jpg"
+          alt="Introduction of Listen and Type questions."
+        />
         <div class="gray">{{ t('det_prep_course_listen_and_type_questions.gray3') }}</div>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_10') }}</p>
         <h2 id="prep_4">{{ t('det_prep_course_listen_and_type_questions.h2_5') }}</h2>
-        <img src="/img/det-prep-course-listen-and-type-questions/DET-answering-strategies.jpg" alt="" />
+        <img
+          src="/img/det-prep-course-listen-and-type-questions/DET-answering-strategies.jpg"
+          alt="DET Answering Strategies: How to handle numbers?"
+        />
         <div class="gray">{{ t('det_prep_course_listen_and_type_questions.gray4') }}</div>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_11') }}</p>
         <h2 id="prep_5">{{ t('det_prep_course_listen_and_type_questions.h2_6') }}</h2>

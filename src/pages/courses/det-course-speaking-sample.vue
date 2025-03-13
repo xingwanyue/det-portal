@@ -120,7 +120,10 @@ const video_data = computed(() => {
         <h2 id="prep_2">{{ t('det_course_speaking_sample.h23') }}</h2>
         <p>{{ t('det_course_speaking_sample.p15') }}</p>
         <p>{{ t('det_course_speaking_sample.p16') }}</p>
-        <img src="/img/det-course-speaking-sample/speaking-sample-quick-tips.jpg" alt="det-course-speaking-sample" />
+        <img
+          src="/img/det-course-speaking-sample/speaking-sample-quick-tips.jpg"
+          alt="Tips and introduction to DET speaking sample questions."
+        />
         <figure>
           <figcaption>{{ t('det_course_speaking_sample.figcaption1') }}</figcaption>
         </figure>
@@ -129,7 +132,10 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speaking_sample.p19') }}</p>
         <p>{{ t('det_course_speaking_sample.p20') }}</p>
         <p>{{ t('det_course_speaking_sample.p21') }}</p>
-        <img src="/img/det-course-speaking-sample/det-scoring-criteria.jpg" alt="det-course-speaking-sample" />
+        <img
+          src="/img/det-course-speaking-sample/det-scoring-criteria.jpg"
+          alt="A screeenshot of DET scoring criteria."
+        />
         <figure>
           <figcaption>{{ t('det_course_speaking_sample.figcaption2') }}</figcaption>
         </figure>
@@ -141,7 +147,10 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speaking_sample.p27') }}</p>
         <h2 id="prep_3">{{ t('det_course_speaking_sample.h24') }}</h2>
         <p>{{ t('det_course_speaking_sample.p28') }}</p>
-        <img src="/img/det-course-speaking-sample/speaking-sample-categories.png" alt="det-course-speaking-sample" />
+        <img
+          src="/img/det-course-speaking-sample/speaking-sample-categories.png"
+          alt="Categories  of DET Speaking Sample questions."
+        />
         <figure>
           <figcaption>{{ t('det_course_speaking_sample.figcaption3') }}</figcaption>
         </figure>
@@ -155,7 +164,7 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speaking_sample.p35') }}</p>
         <img
           src="/img/det-course-speaking-sample/response-approach-desc-question.jpg"
-          alt="det-course-speaking-sample"
+          alt="Response approach of DET descriptive questions."
         />
         <figure>
           <figcaption>{{ t('det_course_speaking_sample.figcaption4') }}</figcaption>
@@ -173,7 +182,10 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speaking_sample.p46') }}</p>
         <p>{{ t('det_course_speaking_sample.p47') }}</p>
         <p>{{ t('det_course_speaking_sample.p48') }}</p>
-        <img src="/img/det-course-speaking-sample/speaking-sample-demo-question.png" alt="det-course-speaking-sample" />
+        <img
+          src="/img/det-course-speaking-sample/speaking-sample-demo-question.png"
+          alt="A demo question of DET speaking sample."
+        />
         <figure>
           <figcaption>{{ t('det_course_speaking_sample.figcaption5') }}</figcaption>
         </figure>
@@ -223,7 +235,7 @@ const video_data = computed(() => {
         <div class="html_wrapper" v-html="t('det_course_speaking_sample.p90')"></div>
         <img
           src="/img/det-course-speaking-sample/speaking-sample-question-demos.jpg"
-          alt="det-course-speaking-sample"
+          alt="Comparative questions of DET speaking sample."
         />
         <figure>
           <figcaption>{{ t('det_course_speaking_sample.figcaption6') }}</figcaption>
@@ -257,7 +269,7 @@ const video_data = computed(() => {
         <p>{{ t('det_course_speaking_sample.p117') }}</p>
         <h2 id="prep_7">{{ t('det_course_speaking_sample.h28') }}</h2>
         <p>{{ t('det_course_speaking_sample.p118') }}</p>
-        <img src="/img/det-course-speaking-sample/hypothetical-questions-demos.jpg" alt="det-course-speaking-sample" />
+        <img src="/img/det-course-speaking-sample/hypothetical-questions-demos.jpg" alt="Hypothetical question demos of DET speaking sample ." />
         <figure>
           <figcaption>{{ t('det_course_speaking_sample.figcaption7') }}</figcaption>
         </figure>

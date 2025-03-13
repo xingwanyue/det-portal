@@ -96,12 +96,22 @@ const desc_img_tipsArr = computed(() => {
     {
       h2: t('det_read_and_select_course.articelContent.a1_h2'),
       descArr: [t('det_read_and_select_course.articelContent.a1')],
-      imgArr: ['/img/det-read-and-select-course/read-select-ui.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/read-select-ui.png',
+          alt: 'The UI of Duolingo English Test "Read and Select" Questions.',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t1')],
     },
     {
       descArr: [t('det_read_and_select_course.articelContent.a2')],
-      imgArr: ['/img/det-read-and-select-course/read-select-intro-tips.jpg'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/read-select-intro-tips.jpg',
+          alt: 'Tips and introduction to DET read and select questions.',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t2')],
     },
     {
@@ -116,7 +126,12 @@ const desc_img_tipsArr = computed(() => {
     {
       h2: t('det_read_and_select_course.articelContent.a4_h2'),
       descArr: [t('det_read_and_select_course.articelContent.a4'), t('det_read_and_select_course.articelContent.a4_1')],
-      imgArr: ['/img/det-read-and-select-course/roots-affixes-difference.jpg'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/roots-affixes-difference.jpg',
+          alt: 'The differences between word roots and affixes, with examples and illustrations.',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t4')],
     },
     {
@@ -133,37 +148,67 @@ const desc_img_tipsArr = computed(() => {
     {
       h2: t('det_read_and_select_course.articelContent.a6_h2'),
       descArr: [t('det_read_and_select_course.articelContent.a6')],
-      imgArr: ['/img/det-read-and-select-course/slush.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/slush.png',
+          alt: 'An example of common patterns of frequently misspelled words: snush',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t6')],
     },
     {
       h2: '',
       descArr: [t('det_read_and_select_course.articelContent.a7')],
-      imgArr: ['/img/det-read-and-select-course/carriage.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/carriage.png',
+          alt: 'An example of common patterns of frequently misspelled words: carriage.',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t7')],
     },
     {
       h2: '',
       descArr: [t('det_read_and_select_course.articelContent.a8')],
-      imgArr: ['/img/det-read-and-select-course/bunny.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/bunny.png',
+          alt: 'An example of common patterns of frequently misspelled words: bunny',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t8')],
     },
     {
       h2: '',
       descArr: [t('det_read_and_select_course.articelContent.a9')],
-      imgArr: ['/img/det-read-and-select-course/man-1.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/man-1.png',
+          alt: 'An example of common patterns of frequently misspelled words: man',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t9')],
     },
     {
       h2: '',
       descArr: [t('det_read_and_select_course.articelContent.a10')],
-      imgArr: ['/img/det-read-and-select-course/guide.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/guide.png',
+          alt: 'An example of common patterns of frequently misspelled words: guide',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t10')],
     },
     {
       h2: '',
       descArr: [t('det_read_and_select_course.articelContent.a11')],
-      imgArr: ['/img/det-read-and-select-course/intend.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/intend.png',
+          alt: 'An example of common patterns of frequently misspelled words: intend',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t11')],
     },
     {
@@ -172,31 +217,56 @@ const desc_img_tipsArr = computed(() => {
         t('det_read_and_select_course.articelContent.a12'),
         t('det_read_and_select_course.articelContent.a12_1'),
       ],
-      imgArr: ['/img/det-read-and-select-course/informal.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/informal.png',
+          alt: 'An example of common patterns of frequently misspelled words: informal',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t12')],
     },
     {
       h2: '',
       descArr: [t('det_read_and_select_course.articelContent.a13')],
-      imgArr: ['/img/det-read-and-select-course/warning.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/warning.png',
+          alt: 'An example of common patterns of frequently misspelled words: warning',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t13')],
     },
     {
       h2: '',
       descArr: [t('det_read_and_select_course.articelContent.a14')],
-      imgArr: ['/img/det-read-and-select-course/south-out.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/south-out.png',
+          alt: 'An example of common patterns of frequently misspelled words: south + out',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t14')],
     },
     {
       h2: '',
       descArr: [t('det_read_and_select_course.articelContent.a15')],
-      imgArr: ['/img/det-read-and-select-course/pop-again.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/pop-again.png',
+          alt: 'An example of common patterns of frequently misspelled words: pop + again',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t15')],
     },
     {
       h2: '',
       descArr: [t('det_read_and_select_course.articelContent.a16')],
-      imgArr: ['/img/det-read-and-select-course/grape-man.png'],
+      imgArr: [
+        {
+          url: '/img/det-read-and-select-course/grape-man.png',
+          alt: 'An example of common patterns of frequently misspelled words: grape + man',
+        },
+      ],
       imgTipArr: [t('det_read_and_select_course.articelContent.t16')],
     },
     {

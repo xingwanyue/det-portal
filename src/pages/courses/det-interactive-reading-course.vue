@@ -79,7 +79,12 @@ const desc_img_tipsArr = computed(() => {
     {
       h2: t('det_interactive_reading_course.articelContent.a2_h2'),
       descArr: [t('det_interactive_reading_course.articelContent.a2')],
-      imgArr: ['/img/det-interactive-reading-course/interactive-reading.png'],
+      imgArr: [
+        {
+          url: '/img/det-interactive-reading-course/interactive-reading.png',
+          alt: 'The first screen of Interactive Reading questions from Duolingo English Test.',
+        },
+      ],
       imgTipArr: [t('det_interactive_reading_course.articelContent.t2')],
     },
     {
@@ -94,7 +99,12 @@ const desc_img_tipsArr = computed(() => {
     {
       h2: t('det_interactive_reading_course.articelContent.a4_h2'),
       descArr: [t('det_interactive_reading_course.articelContent.a4')],
-      imgArr: ['/img/det-interactive-reading-course/interactive-reading.png'],
+      imgArr: [
+        {
+          url: '/img/det-interactive-reading-course/complete-the-sentence.png',
+          alt: 'A screenshot of DET Interactive Reading: Complete the Sentence.',
+        },
+      ],
       imgTipArr: [t('det_interactive_reading_course.articelContent.t4')],
     },
     {
@@ -106,7 +116,12 @@ const desc_img_tipsArr = computed(() => {
         t('det_interactive_reading_course.articelContent.a5_3'),
         t('det_interactive_reading_course.articelContent.a5_4'),
       ],
-      imgArr: ['/img/det-interactive-reading-course/interactive-reading-sample-question.jpg'],
+      imgArr: [
+        {
+          url: '/img/det-interactive-reading-course/interactive-reading-sample-question.jpg',
+          alt: 'Sample question 1 of DET interactive reading questions.',
+        },
+      ],
       imgTipArr: [t('det_interactive_reading_course.articelContent.t5')],
     },
     {
@@ -151,7 +166,12 @@ const desc_img_tipsArr2 = computed(() => {
         t('det_interactive_reading_course.articelContent2.a2'),
         t('det_interactive_reading_course.articelContent2.a2_1'),
       ],
-      imgArr: ['/img/det-interactive-reading-course/complete-the-passage.png'],
+      imgArr: [
+        {
+          url: '/img/det-interactive-reading-course/complete-the-passage.png',
+          alt: 'A screenshot of DET Interactive Reading: Complete the Passage.',
+        },
+      ],
       imgTipArr: [t('det_interactive_reading_course.articelContent2.t2')],
     },
     {
@@ -190,7 +210,12 @@ const desc_img_tipsArr3 = computed(() => {
     {
       h2: t('det_interactive_reading_course.articelContent3.a2_h2'),
       descArr: [t('det_interactive_reading_course.articelContent3.a2')],
-      imgArr: ['/img/det-interactive-reading-course/highlight-the-answer.png'],
+      imgArr: [
+        {
+          url: '/img/det-interactive-reading-course/highlight-the-answer.png',
+          alt: 'A screenshot of DET Interactive Reading: Highlight the Answer.',
+        },
+      ],
       imgTipArr: [t('det_interactive_reading_course.articelContent3.t2')],
     },
     {
@@ -234,7 +259,12 @@ const desc_img_tipsArr5 = computed(() => {
     {
       h2: t('det_interactive_reading_course.articelContent5.a2_h2'),
       descArr: [t('det_interactive_reading_course.articelContent5.a2')],
-      imgArr: ['/img/det-interactive-reading-course/identify-the-idea.png'],
+      imgArr: [
+        {
+          url: '/img/det-interactive-reading-course/identify-the-idea.png',
+          alt: 'A screenshot of DET Interactive Reading: Identify the Idea.',
+        },
+      ],
       imgTipArr: [t('det_interactive_reading_course.articelContent5.t2')],
     },
     {
@@ -272,7 +302,12 @@ const desc_img_tipsArr7 = computed(() => {
     {
       h2: t('det_interactive_reading_course.articelContent7.a1_h2'),
       descArr: [t('det_interactive_reading_course.articelContent7.a1')],
-      imgArr: ['/img/det-interactive-reading-course/title-the-passage.png'],
+      imgArr: [
+        {
+          url: '/img/det-interactive-reading-course/title-the-passage.png',
+          alt: 'A screenshot of DET Interactive Reading: Title the Passage.',
+        },
+      ],
       imgTipArr: [t('det_interactive_reading_course.articelContent7.t1')],
     },
   ];

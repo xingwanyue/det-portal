@@ -115,7 +115,10 @@ const video_data = computed(() => {
         <h2 id="prep_2">{{ t('det_write_about_the_photo_course.h23') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p7') }}</p>
 
-        <img src="/img/det_write_about_the_photo_course/scoring-criteria-1.jpg" alt="scoring-criteria-1" />
+        <img
+          src="/img/det_write_about_the_photo_course/scoring-criteria-1.jpg"
+          alt="A screenshot of Det writing scoring criteria."
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption1') }}</figcaption>
@@ -127,7 +130,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p12') }}</p>
         <h2 id="prep_3">{{ t('det_write_about_the_photo_course.h24') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p13') }}</p>
-        <img src="/img/det_write_about_the_photo_course/Screenshot-2.jpg" alt="Screenshot-2" />
+        <img
+          src="/img/det_write_about_the_photo_course/Screenshot-2.jpg"
+          alt="Intro and tips of DET write about the photo questions."
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption2') }}</figcaption>
@@ -141,7 +147,10 @@ const video_data = computed(() => {
         <h2 id="prep_4">{{ t('det_write_about_the_photo_course.h25') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p20') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p21') }}</p>
-        <img src="/img/det_write_about_the_photo_course/category-3.png" alt="category-3" />
+        <img
+          src="/img/det_write_about_the_photo_course/category-3.png"
+          alt="Categories of the DET Write about the Photo questions."
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption3') }}</figcaption>
@@ -153,7 +162,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p26') }}</p>
         <h2 id="prep_5">{{ t('det_write_about_the_photo_course.h26') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p27') }}</p>
-        <img src="/img/det_write_about_the_photo_course/people-4.jpg" alt="people-4" />
+        <img
+          src="/img/det_write_about_the_photo_course/people-4.jpg"
+          alt="DET Write about the Photo Images: People sample pictures."
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption4') }}</figcaption>
@@ -180,7 +192,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p46') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p47') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p48') }}</p>
-        <img src="/img/det_write_about_the_photo_course/v1-5.jpg" alt="v1-5" />
+        <img
+          src="/img/det_write_about_the_photo_course/v1-5.jpg"
+          alt="DET useful descriptive vocabulary for writing people."
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption5') }}</figcaption>
@@ -189,7 +204,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p50') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p51') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p52') }}</p>
-        <img src="/img/det_write_about_the_photo_course/v2-6.png" alt="v2-6" />
+        <img
+          src="/img/det_write_about_the_photo_course/v2-6.png"
+          alt="A table list many descriptive words of emotions."
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption6') }}</figcaption>
@@ -197,20 +215,23 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p53') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p54') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p55') }}</p>
-        <img src="/img/det_write_about_the_photo_course/v3-7.png" alt="v3-7" />
+        <img src="/img/det_write_about_the_photo_course/v3-7.png" alt="A wordlist of clothing and accessories." />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption7') }}</figcaption>
         </figure>
         <p>{{ t('det_write_about_the_photo_course.p56') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p57') }}</p>
-        <img src="/img/det_write_about_the_photo_course/v4-8.png" alt="v4-8" />
+        <img src="/img/det_write_about_the_photo_course/v4-8.png" alt="A wordlist to describe enviornments." />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption8') }}</figcaption>
         </figure>
         <p>{{ t('det_write_about_the_photo_course.p58') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s1t1-9.jpg" alt="s1t1-9" />
+        <img
+          src="/img/det_write_about_the_photo_course/s1t1-9.jpg"
+          alt="Sample Question 1 of Write about the Photo, with Template 1"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption9') }}</figcaption>
@@ -222,7 +243,10 @@ const video_data = computed(() => {
         <div class="html_wrapper" v-html="t('det_write_about_the_photo_course.ul7')"></div>
         <p>{{ t('det_write_about_the_photo_course.p63') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p64') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s1t2-10.jpg" alt="s1t2-10" />
+        <img
+          src="/img/det_write_about_the_photo_course/s1t2-10.jpg"
+          alt="Sample Question 1 of Write about the Photo, with Template 2"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption10') }}</figcaption>
@@ -240,7 +264,10 @@ const video_data = computed(() => {
         <div class="html_wrapper" v-html="t('det_write_about_the_photo_course.ul10')"></div>
         <p>{{ t('det_write_about_the_photo_course.p73') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p74') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s2t1-11.jpg" alt="s2t1-11" />
+        <img
+          src="/img/det_write_about_the_photo_course/s2t1-11.jpg"
+          alt="Sample Question 2 of Write about the Photo, with Template 1"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption11') }}</figcaption>
@@ -255,7 +282,10 @@ const video_data = computed(() => {
         <div class="html_wrapper" v-html="t('det_write_about_the_photo_course.ul14')"></div>
         <p>{{ t('det_write_about_the_photo_course.p79') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p80') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s2t2-12.jpg" alt="s2t2-12" />
+        <img
+          src="/img/det_write_about_the_photo_course/s2t2-12.jpg"
+          alt="Sample Question 2 of Write about the Photo, with Template 2"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption12') }}</figcaption>
@@ -273,7 +303,10 @@ const video_data = computed(() => {
         <div class="html_wrapper" v-html="t('det_write_about_the_photo_course.ul18')"></div>
         <p>{{ t('det_write_about_the_photo_course.p88') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p89') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s3t1-13.jpg" alt="s3t1-13" />
+        <img
+          src="/img/det_write_about_the_photo_course/s3t1-13.jpg"
+          alt="Sample Question 3 of Write about the Photo, with Template 1"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption13') }}</figcaption>
@@ -285,7 +318,10 @@ const video_data = computed(() => {
         <div class="html_wrapper" v-html="t('det_write_about_the_photo_course.ul20')"></div>
         <p>{{ t('det_write_about_the_photo_course.p93') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p94') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s3t2-14.jpg" alt="s3t2-14" />
+        <img
+          src="/img/det_write_about_the_photo_course/s3t2-14.jpg"
+          alt="Sample Question 3 of Write about the Photo, with Template 2"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption14') }}</figcaption>
@@ -296,7 +332,10 @@ const video_data = computed(() => {
         <div class="html_wrapper" v-html="t('det_write_about_the_photo_course.ul21')"></div>
         <p>{{ t('det_write_about_the_photo_course.p98') }}</p>
         <h2 id="prep_6">{{ t('det_write_about_the_photo_course.h27') }}</h2>
-        <img src="/img/det_write_about_the_photo_course/animals-15.jpg" alt="animals-15" />
+        <img
+          src="/img/det_write_about_the_photo_course/animals-15.jpg"
+          alt="Some demo pics of DET Write about the Photo questions: Animals"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption15') }}</figcaption>
@@ -322,7 +361,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p112') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p113') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p114') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s4t1-16.jpg" alt="s4t1-16" />
+        <img
+          src="/img/det_write_about_the_photo_course/s4t1-16.jpg"
+          alt="Sample Question 4 of Write about the Photo, with Template 1"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption16') }}</figcaption>
@@ -339,7 +381,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p124') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p125') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p126') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s4t2-17.jpg" alt="s4t2-17" />
+        <img
+          src="/img/det_write_about_the_photo_course/s4t2-17.jpg"
+          alt="Sample Question 5 of Write about the Photo, with Template 2"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption17') }}</figcaption>
@@ -349,7 +394,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p129') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p130') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p131') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s4t3-18.jpg" alt="s4t3-18" />
+        <img
+          src="/img/det_write_about_the_photo_course/s4t3-18.jpg"
+          alt="Sample Question 6 of Write about the Photo, with Template 3"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption18') }}</figcaption>
@@ -358,7 +406,7 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p133') }}</p>
         <h2 id="prep_7">{{ t('det_write_about_the_photo_course.h28') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p134') }}</p>
-        <img src="/img/det_write_about_the_photo_course/views-19.jpg" alt="views-19" />
+        <img src="/img/det_write_about_the_photo_course/views-19.jpg" alt="Demo of DET Scenery Type Questions" />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption19') }}</figcaption>
@@ -368,7 +416,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p137') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p138') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p139') }}</p>
-        <img src="/img/det_write_about_the_photo_course/v5-20.png" alt="v5-20" />
+        <img
+          src="/img/det_write_about_the_photo_course/v5-20.png"
+          alt="Vocabulary supplement for describing scenery."
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption20') }}</figcaption>
@@ -382,7 +433,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p145') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p146') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p147') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s5t1-21.jpg" alt="s5t1-21" />
+        <img
+          src="/img/det_write_about_the_photo_course/s5t1-21.jpg"
+          alt="Sample Question 7 of Write about the Photo, with Template 1"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption21') }}</figcaption>
@@ -395,7 +449,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p153') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p154') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p155') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s5t2-22.jpg" alt="s5t2-22" />
+        <img
+          src="/img/det_write_about_the_photo_course/s5t2-22.jpg"
+          alt="Sample Question 8 of Write about the Photo, with Template 2"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption22') }}</figcaption>
@@ -409,7 +466,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p162') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p163') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p164') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s5t3-23.jpg" alt="s5t3-23" />
+        <img
+          src="/img/det_write_about_the_photo_course/s5t3-23.jpg"
+          alt="Sample Question 9 of Write about the Photo, with Template 3"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption23') }}</figcaption>
@@ -423,7 +483,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p171') }}</p>
         <h2 id="prep_8">{{ t('det_write_about_the_photo_course.h29') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p172') }}</p>
-        <img src="/img/det_write_about_the_photo_course/objects-24.jpg" alt="objects-24" />
+        <img
+          src="/img/det_write_about_the_photo_course/objects-24.jpg"
+          alt="Demo pictures of DET write about photo questions, objects."
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption24') }}</figcaption>
@@ -444,7 +507,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p184') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p185') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p186') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s6t1-25.jpg" alt="s6t1-25" />
+        <img
+          src="/img/det_write_about_the_photo_course/s6t1-25.jpg"
+          alt="Sample Question 10 of Write about the Photo, with Template 1"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption25') }}</figcaption>
@@ -457,7 +523,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p192') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p193') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p194') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s6t2-26.jpg" alt="s6t2-26" />
+        <img
+          src="/img/det_write_about_the_photo_course/s6t2-26.jpg"
+          alt="Sample Question 11 of Write about the Photo, with Template 2"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption26') }}</figcaption>
@@ -470,7 +539,10 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p200') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p201') }}</p>
         <p>{{ t('det_write_about_the_photo_course.p202') }}</p>
-        <img src="/img/det_write_about_the_photo_course/s6t3-27.jpg" alt="s6t3-27" />
+        <img
+          src="/img/det_write_about_the_photo_course/s6t3-27.jpg"
+          alt="Sample Question 12 of Write about the Photo, with Template 3"
+        />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption27') }}</figcaption>
@@ -486,7 +558,7 @@ const video_data = computed(() => {
         <p>{{ t('det_write_about_the_photo_course.p211') }}</p>
         <h2 id="prep_9">{{ t('det_write_about_the_photo_course.h210') }}</h2>
         <p>{{ t('det_write_about_the_photo_course.p212') }}</p>
-        <img src="/img/det_write_about_the_photo_course/exercise-28.jpg" alt="exercise-28" />
+        <img src="/img/det_write_about_the_photo_course/exercise-28.jpg" alt="A screenshot of DET writing exercise question." />
 
         <figure>
           <figcaption>{{ t('det_write_about_the_photo_course.figcaption28') }}</figcaption>

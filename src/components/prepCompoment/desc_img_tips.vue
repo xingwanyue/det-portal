@@ -21,7 +21,7 @@ const localePath = useLocalePath();
     <h3 class="p_h3 p_mgt_20" v-if="props.h3">{{ props.h3 }}</h3>
     <div class="desc" v-for="item in props.descArr" :key="item">{{ item }}</div>
     <div class="desc_img" v-for="item in props.imgArr" :key="item">
-      <img :src="`${item}`" alt="" />
+      <img :src="`${item.url}`" :alt="`${item.alt}`" />
     </div>
     <div class="img_tips" v-for="item in props.imgTipArr" :key="item">{{ item }}</div>
   </div>

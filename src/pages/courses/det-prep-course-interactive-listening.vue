@@ -91,14 +91,20 @@ useHead({
         <p>{{ t('det_prep_course_interactive_listening.p_7') }}</p>
         <h2 id="prep_3">{{ t('det_prep_course_interactive_listening.h2_5') }}</h2>
         <p>{{ t('det_prep_course_interactive_listening.p_8') }}</p>
-        <img src="/img/det-prep-course-interactive-listening/interactive-listening-category.png" alt="" />
+        <img
+          src="/img/det-prep-course-interactive-listening/interactive-listening-category.png"
+          alt="A diagram shows the categories of DET interactive listening questions."
+        />
         <p class="gray">{{ t('det_prep_course_interactive_listening.gray1') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_9') }}</p>
         <h2 id="prep_4">{{ t('det_prep_course_interactive_listening.h2_6') }}</h2>
         <div class="html_wrapper" v-html="t('det_prep_course_interactive_listening.p_10')"></div>
         <p>{{ t('det_prep_course_interactive_listening.p_11') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_12') }}</p>
-        <img src="/img/det-prep-course-interactive-listening/scenario1.png" alt="" />
+        <img
+          src="/img/det-prep-course-interactive-listening/scenario1.png"
+          alt="A screenshot of DET interactive listening scenario."
+        />
         <p class="gray">{{ t('det_prep_course_interactive_listening.gray2') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_13') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_14') }}</p>
@@ -170,7 +176,10 @@ useHead({
         <div class="html_wrapper" v-html="t('det_prep_course_interactive_listening.p_53')"></div>
         <div class="html_wrapper" v-html="t('det_prep_course_interactive_listening.p_54')"></div>
         <p>{{ t('det_prep_course_interactive_listening.p_55') }}</p>
-        <img src="/img/det-prep-course-interactive-listening/scenario2.png" alt="" />
+        <img
+          src="/img/det-prep-course-interactive-listening/scenario2.png"
+          alt="A screenshot of DET interactive listening scenario 2."
+        />
         <p class="gray">{{ t('det_prep_course_interactive_listening.gray3') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_56') }}</p>
         <p>{{ t('det_prep_course_interactive_listening.p_57') }}</p>

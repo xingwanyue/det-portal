@@ -88,7 +88,12 @@ const desc_img_tipsArr = computed(() => {
     {
       h2: t('det_fill_in_the_blanks.articelContent.a1_h2'),
       descArr: [t('det_fill_in_the_blanks.articelContent.a1')],
-      imgArr: ['/img/det-fill-in-the-blanks/fill-in-the-blanks.png'],
+      imgArr: [
+        {
+          url: '/img/det-fill-in-the-blanks/fill-in-the-blanks.png',
+          alt: 'A screenshot of DET fill in the blanks questions.',
+        },
+      ],
       imgTipArr: [t('det_fill_in_the_blanks.articelContent.t1')],
     },
     {
@@ -104,7 +109,12 @@ const desc_img_tipsArr = computed(() => {
     {
       h2: t('det_fill_in_the_blanks.articelContent.a3_h2'),
       descArr: [t('det_fill_in_the_blanks.articelContent.a3')],
-      imgArr: ['/img/det-fill-in-the-blanks/intro-page-fill-in-the-blanks.png'],
+      imgArr: [
+        {
+          url: '/img/det-fill-in-the-blanks/intro-page-fill-in-the-blanks.png',
+          alt: 'A screenshot of fill in the blanks intro page.',
+        },
+      ],
       imgTipArr: [t('det_fill_in_the_blanks.articelContent.t3')],
     },
     {
