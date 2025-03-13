@@ -690,9 +690,6 @@ const openShowWrongWord = ref(false);
     </div>
     <div class="common_prep_out det_read_and_select_course">
       <div class="common_prep_left det_read_and_select_course_left">
-        <div class="banner_img">
-          <img src="/img/det-read-and-select-course/read_select_course.jpg" alt="" />
-        </div>
         <h1 class="h1 p_h1">{{ t('det_read_and_select_course.h1') }}</h1>
         <Summary :title="summary_data.title" :desc="summary_data.desc" :video_title="summary_data.video_title" />
         <my_video :title="video_data.video_title" :video_url="video_data.video_url" />

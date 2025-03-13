@@ -51,9 +51,6 @@ useHead({
     </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <div class="banner_img">
-          <img src="/img/det-prep-course-listen-and-type-questions/listen-and-type-course.jpg" alt="" />
-        </div>
         <h1>{{ t('det_prep_course_listen_and_type_questions.h1_1') }}</h1>
         <h2>{{ t('det_prep_course_listen_and_type_questions.h2_1') }}</h2>
         <p>{{ t('det_prep_course_listen_and_type_questions.p_1') }}</p>

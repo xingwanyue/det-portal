@@ -50,9 +50,6 @@ const video_data = computed(() => {
     </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <div class="banner_img">
-          <img src="/img/det_interactive_writing/IWC-cover-1.jpg" alt="det-interactive-writing" />
-        </div>
         <h1>{{ t('det_interactive_writing.h11') }}</h1>
         <h2>{{ t('det_interactive_writing.h21') }}</h2>
         <p>{{ t('det_interactive_writing.p1') }}</p>

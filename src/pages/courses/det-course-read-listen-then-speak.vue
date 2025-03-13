@@ -45,9 +45,6 @@ useHead({
     </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <div class="banner_img">
-          <img src="/img/det-course-read-listen-then-speak/read-listen-then-speak.jpg" alt="read-listen-then-speak" />
-        </div>
         <h1>{{ t('det-course-read-listen-then-speak.h11') }}</h1>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p1')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p2') }}</p>

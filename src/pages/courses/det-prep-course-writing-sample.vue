@@ -66,12 +66,6 @@ const showAnswer16 = ref(false);
     </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <div class="banner_img">
-          <img
-            src="/img/det_prep_course_writing_sample/writing-sample-lesson-cover-1.jpg"
-            alt="writing sample lesson cover"
-          />
-        </div>
         <h1>{{ t('det_prep_course_writing_sample.h11') }}</h1>
         <div class="html_wrapper" v-html="t('det_prep_course_writing_sample.p1')"></div>
         <h2>{{ t('det_prep_course_writing_sample.h21') }}</h2>
@@ -507,7 +501,7 @@ const showAnswer16 = ref(false);
         <p>{{ t('det_prep_course_writing_sample.p108') }}</p>
         <div class="html_wrapper" style="color: blue" v-html="t('det_prep_course_writing_sample.p109')"></div>
         <p>{{ t('det_prep_course_writing_sample.p110') }}</p>
-        <div class="html_wrapper"  style="color: blue" v-html="t('det_prep_course_writing_sample.p111')"></div>
+        <div class="html_wrapper" style="color: blue" v-html="t('det_prep_course_writing_sample.p111')"></div>
         <p>{{ t('det_prep_course_writing_sample.p112') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p113') }}</p>
         <p>{{ t('det_prep_course_writing_sample.p114') }}</p>

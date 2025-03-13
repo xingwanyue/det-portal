@@ -51,9 +51,6 @@ useHead({
     </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <div class="banner_img">
-          <img src="/img/det-prep-course-interactive-listening/interactive-listening-lesson.jpg" alt="" />
-        </div>
         <h1>{{ t('det_prep_course_interactive_listening.h1_1') }}</h1>
         <h2>{{ t('det_prep_course_interactive_listening.h2_1') }}</h2>
         <p>{{ t('det_prep_course_interactive_listening.p_1') }}</p>

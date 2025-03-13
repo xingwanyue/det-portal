@@ -358,9 +358,6 @@ const a_list_data = computed(() => {
     </div>
     <div class="common_prep_out det_read_and_select_course">
       <div class="common_prep_left det_read_and_select_course_left">
-        <div class="banner_img">
-          <img src="/img/det-fill-in-the-blanks/fill-in-the-blanks-lesson.jpg" alt="" />
-        </div>
         <h1 class="h1 p_h1">{{ t('det_fill_in_the_blanks.h1') }}</h1>
         <Summary :title="summary_data.title" :desc="summary_data.desc" :video_title="summary_data.video_title" />
 

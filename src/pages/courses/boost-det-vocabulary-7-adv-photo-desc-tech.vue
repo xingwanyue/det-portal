@@ -45,13 +45,6 @@ useHead({
     </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <div class="banner_img">
-          <img
-            src="/img/boost_det_vocabulary_7_adv_photo_desc_tech/Red-White-Modern-Youtube-Thumbnail-1.jpg"
-            alt="boost-det-vocabulary-7-adv-photo-desc-tech"
-          />
-        </div>
-
         <h1>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h11') }}</h1>
         <div class="html_wrapper" v-html="t('boost_det_vocabulary_7_adv_photo_desc_tech.p1')"></div>
         <h2>{{ t('boost_det_vocabulary_7_adv_photo_desc_tech.h21') }}</h2>

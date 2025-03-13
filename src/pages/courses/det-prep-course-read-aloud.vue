@@ -57,12 +57,6 @@ const video_data2 = computed(() => {
     </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <div class="banner_img">
-          <img
-            src="/img/det-prep-course-read-aloud/read-aloud-course.jpg"
-            :alt="t('det-prep-course-read-aloud.img1')"
-          />
-        </div>
         <h1>{{ t('det-prep-course-read-aloud.h11') }}</h1>
         <p v-html="t('det-prep-course-read-aloud.p1')"></p>
         <p>{{ t('det-prep-course-read-aloud.p2') }}</p>

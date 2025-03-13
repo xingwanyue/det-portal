@@ -55,9 +55,6 @@ const show_answer5 = ref(false);
     </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <div class="banner_img">
-          <img src="/img/det_listening_words/det-voc-post.jpg" />
-        </div>
         <h1>{{ t('det_listening_words.h11') }}</h1>
         <h2>{{ t('det_listening_words.h21') }}</h2>
         <p>{{ t('det_listening_words.p1') }}</p>

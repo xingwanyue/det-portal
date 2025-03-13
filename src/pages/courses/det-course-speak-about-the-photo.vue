@@ -50,13 +50,6 @@ const video_data = computed(() => {
     </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <div class="banner_img">
-          <img
-            src="/img/det-course-speak-about-the-photo/Ultimate-Duolingo-Course-Speak-About-the-Photo-Templates-for-Success.jpg"
-            alt="Ultimate Duolingo Course Speak About the Photo Templates for Success"
-          />
-        </div>
-
         <h1>{{ t('det_course_speak_about_the_photo.h11') }}</h1>
         <p v-html="t('det_course_speak_about_the_photo.p1')"></p>
         <p v-html="t('det_course_speak_about_the_photo.p2')"></p>

@@ -50,9 +50,6 @@ const video_data = computed(() => {
     </div>
     <div class="common_prep_out">
       <div class="common_prep_left">
-        <div class="banner_img">
-          <img src="/img/det-read-and-complete-prep-course/read-and-complete-lesson.jpg" alt="" />
-        </div>
         <h1>{{ t('det_read_and_complete_prep_course.h1_1') }}</h1>
         <h2>{{ t('det_read_and_complete_prep_course.h2_1') }}</h2>
         <p>{{ t('det_read_and_complete_prep_course.p_1') }}</p>
