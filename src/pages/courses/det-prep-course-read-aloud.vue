@@ -192,10 +192,7 @@ const video_data2 = computed(() => {
         <p>{{ t('det-prep-course-read-aloud.p42') }}</p>
         <div class="audio-player">
           <audio id="audio-3" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/09/5-sentence-recording.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/5-sentence-recording.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>

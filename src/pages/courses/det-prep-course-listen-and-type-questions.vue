@@ -257,10 +257,7 @@ useHead({
         <p>{{ t('det_prep_course_listen_and_type_questions.p_19') }}</p>
         <div class="audio-player">
           <audio id="audio" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/07/Questions-worth-100-points-or-less.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/Questions-worth-100-points-or-less.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -277,10 +274,7 @@ useHead({
         <p>{{ t('det_prep_course_listen_and_type_questions.p_22') }}</p>
         <div class="audio-player" id="audio-player-2">
           <audio id="audio-2" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/07/Question2-worth-100-points-or-less.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/Question2-worth-100-points-or-less.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -302,10 +296,7 @@ useHead({
         <p>{{ t('det_prep_course_listen_and_type_questions.p_25') }}</p>
         <div class="audio-player" id="audio-player-3">
           <audio id="audio-3" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/07/Question3-worth-100-points-or-less.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/Question3-worth-100-points-or-less.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -322,10 +313,7 @@ useHead({
         <p>{{ t('det_prep_course_listen_and_type_questions.p_28') }}</p>
         <div class="audio-player" id="audio-player-4">
           <audio id="audio-4" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/07/Question-worth-between-105-and-115-points.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/Question-worth-between-105-and-115-points.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -342,10 +330,7 @@ useHead({
         <p>{{ t('det_prep_course_listen_and_type_questions.p_31') }}</p>
         <div class="audio-player" id="audio-player-5">
           <audio id="audio-5" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/07/Question2-worth-between-105-and-115-points.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/Question2-worth-between-105-and-115-points.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -362,10 +347,7 @@ useHead({
         <p>{{ t('det_prep_course_listen_and_type_questions.p_34') }}</p>
         <div class="audio-player" id="audio-player-6">
           <audio id="audio-6" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/07/Question3-worth-between-105-and-115-points.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/Question3-worth-between-105-and-115-points.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -383,10 +365,7 @@ useHead({
         <p>{{ t('det_prep_course_listen_and_type_questions.p_38') }}</p>
         <div class="audio-player" id="audio-player-7">
           <audio id="audio-7" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/07/Question-worth-120-points-or-more.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/Question-worth-120-points-or-more.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -404,10 +383,7 @@ useHead({
         <p>{{ t('det_prep_course_listen_and_type_questions.p_41') }}</p>
         <div class="audio-player" id="audio-player-8">
           <audio id="audio-8" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/07/Question2-worth-120-points-or-more.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/Question2-worth-120-points-or-more.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -424,10 +400,7 @@ useHead({
         <p>{{ t('det_prep_course_listen_and_type_questions.p_44') }}</p>
         <div class="audio-player" id="audio-player-9" controls>
           <audio id="audio-9" preload="none">
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/07/Question3-worth-120-points-or-more.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/Question3-worth-120-points-or-more.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>

@@ -190,10 +190,7 @@ const show_answer5 = ref(false);
         <div class="html_wrapper" v-html="t('det_listening_words.p115')"></div>
         <div class="audio-player">
           <audio id="audio-3" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/08/interactive-listening-sample-audio-1.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/interactive-listening-sample-audio-1.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -229,10 +226,7 @@ const show_answer5 = ref(false);
         <p>{{ t('det_listening_words.p128') }}</p>
         <div class="audio-player">
           <audio id="audio-3" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/08/interactive-listening-sample-conversation-audio-2.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/interactive-listening-sample-conversation-audio-2.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>

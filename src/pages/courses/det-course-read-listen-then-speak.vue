@@ -192,10 +192,7 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p78') }}</p>
         <div class="audio-player">
           <audio id="audio-3" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/08/listen-then-speak-question-1.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/listen-then-speak-question-1.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -265,10 +262,7 @@ useHead({
 
         <div class="audio-player">
           <audio id="audio-3" preload="none" controls>
-            <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/08/listen-then-speak-question-2.mp3"
-              type="audio/mp3"
-            />
+            <source src="/audio/listen-then-speak-question-2.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -338,7 +332,7 @@ useHead({
         <div class="audio-player">
           <audio id="audio-3" preload="none" controls>
             <source
-              src="https://prep.detpractice.com/wp-content/uploads/2024/08/listen-then-speak-question-3.mp3"
+              src="/audio/listen-then-speak-question-3.mp3"
               type="audio/mp3"
             />
             Your browser does not support the audio element.
