@@ -130,7 +130,7 @@ const saveCaculate = (item: any) => {
             <div class="bill">
               <span v-if="item.day === 365">
                 {{
-                  $t('pricing.pagefont.BilledThreeMonth', {
+                  $t('pricing.pagefont.Billed', {
                     num: formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0) * 12),
                   })
                 }}
