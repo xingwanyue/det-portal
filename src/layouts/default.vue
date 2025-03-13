@@ -22,24 +22,52 @@ const store = useStore();
 const layouProps = useAttrs();
 
 const currentPathWithoutLocale = route.path.replace(new RegExp(`^/${locale.value}`), '') || '/';
-
+const sameLanguagePages = [
+  '/courses/det-prep-course-interactive-listening',
+  '/courses/det-prep-course-listen-and-type-questions',
+  '/courses/det-read-and-complete-prep-course',
+  '/courses/det-fill-in-the-blanks',
+  '/courses/det-interactive-reading-course',
+  '/courses/det-read-and-select-course',
+  '/courses/det-prep-course-read-aloud',
+  '/courses/det-course-read-listen-then-speak',
+  '/courses/det-course-speak-about-the-photo',
+  '/courses/det-course-speaking-sample',
+  '/courses/boost-det-vocabulary-7-adv-photo-desc-tech',
+  '/courses/det-listening-words',
+  '/courses/det-prep-course-writing-sample',
+  '/courses/det-interactive-writing',
+  '/courses/det-write-about-the-photo-course',
+];
 const alternates = locales.map((l: string) => ({
   rel: 'alternate',
-  hreflang: l,
-  href: () => `https://www.${domain}${l === 'en' ? '' : `/${l}`}${currentPathWithoutLocale}`,
+  hreflang: sameLanguagePages.includes(currentPathWithoutLocale) ? '' : l,
+  href: () =>
+    sameLanguagePages.includes(currentPathWithoutLocale)
+      ? `https://www.${domain}${currentPathWithoutLocale}`
+      : `https://www.${domain}${l === 'en' ? '' : `/${l}`}${currentPathWithoutLocale}`,
 }));
+
 const country = countries[locales.indexOf(locale.value)];
 const meta = [{ property: 'og:locale', content: () => `${locale.value}_${country}` }] as any;
 if (url.host !== 'www.detpractice.com') {
   meta.push({ name: 'robots', content: 'noindex' });
 }
+
 useHead({
   htmlAttrs: { lang: () => locale.value },
   script: [{ src: 'https://accounts.google.com/gsi/client', async: true }],
   link: props.errorPage
     ? []
     : [
-        { rel: 'canonical', href: () => `https://www.${domain}${localePath(currentPathWithoutLocale)}` },
+        // 如果当前路径是sameLanguagePages中的一个，则不添加canonical链接
+        {
+          rel: 'canonical',
+          href: () =>
+            sameLanguagePages.includes(currentPathWithoutLocale)
+              ? `https://www.${domain}${currentPathWithoutLocale}`
+              : `https://www.${domain}${localePath(currentPathWithoutLocale)}`,
+        },
         ...alternates,
         {
           rel: 'alternate',
