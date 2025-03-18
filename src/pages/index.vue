@@ -2,15 +2,12 @@
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 import vSlogen from '../components/slogen.vue';
-// import vSubscribe from '../components/subscribe.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
-import { useStore } from '@/store';
 import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
 import { platformData, portalData } from '@/api';
 import { useRoute } from 'vue-router';
 const route = useRoute();
 
-// const videoPosterUrl = `${cdn}/store/portal/banner-poster.bg`
 useSeoMeta({
   title: t('index.seometa.title'),
   description: t('index.seometa.description'),
@@ -38,8 +35,7 @@ useHead({
   ],
 });
 
-const store = useStore();
-const user = computed(() => store.user);
+const token = await getToken();
 const userPingLunResponse = computed(() => {
   const pinglunArr = [] as any;
   let pinglunMid = [] as any;
@@ -52,7 +48,6 @@ const userPingLunResponse = computed(() => {
   }
   return pinglunArr;
 });
-const haveCookie = ref(false);
 const isMobile = ref(false);
 onMounted(async () => {
   // 如果是在浏览器环境下，执行movePingLun
@@ -67,11 +62,6 @@ onMounted(async () => {
     if (code) {
       saveStorage('InviteCode', code, true);
     }
-  }
-
-  const token = await getToken();
-  if (token) {
-    haveCookie.value = true;
   }
 });
 
@@ -170,7 +160,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             </div>
           </div>
         </div>
-        <div v-if="!user.id && !haveCookie" class="two_btn_out">
+        <div v-if="!token" class="two_btn_out">
           <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
             <img src="/img/home/google_icon.svg" :alt="$t('index.Start_free_with_Google')" />
             {{ $t('index.Start_free_with_Google') }}
@@ -402,7 +392,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h3> <NuxtLink :to="localePath('/courses')">{{ $t('index.article5.title') }}</NuxtLink></h3>
+              <h3>
+                <NuxtLink :to="localePath('/courses')">{{ $t('index.article5.title') }}</NuxtLink>
+              </h3>
             </div>
             <div class="tips">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
@@ -1353,14 +1345,6 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 :deep(.el-icon) {
                   width: 15px;
                 }
-                // .custom_rate {
-                //   .el-rate__icon {
-                //     margin-right: 100px !important;
-                //   }
-                // }
-                // :deep(.el-rate) {
-                //   --el-rate-icon-margin: 0px;
-                // }
               }
             }
             .one_card_font {
