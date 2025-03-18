@@ -49,18 +49,19 @@ const submit = async () => {
     errMessage.value = t('register2.pts');
     return false;
   }
-  const temp = {
+  const registerData = {
     email,
     nickname,
     code,
     password,
+    invite_code: getStorage('invite_code') || '',
   };
   loading.value = true;
-  const InviteCode = getStorage('InviteCode');
-  if (InviteCode) {
-    temp.channel = `${InviteCode}-1`;
+  const channel_code = getStorage('channel_code');
+  if (channel_code) {
+    registerData.channel = `${channel_code}-1`;
   }
-  const { err } = await register(temp);
+  const { err } = await register(registerData);
   loading.value = false;
   if (!err) {
     router.push('/login');

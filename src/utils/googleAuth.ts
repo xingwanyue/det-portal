@@ -53,17 +53,18 @@ export const loginBycredential = async (credential: string) => {
     body: JSON.stringify({ credential }),
   });
   const { email, picture, name } = data;
-  const InviteCode = getStorage('InviteCode');
+  const channel_code = getStorage('channel_code');
   const args = {
     channel: '',
+    invite_code: getStorage('invite_code') || '',
     email,
     avatar: picture,
     nickname: name,
     google: true,
     type: 'pc',
   };
-  if (InviteCode) {
-    args.channel = `${InviteCode}-1`;
+  if (channel_code) {
+    args.channel = `${channel_code}-1`;
   }
   return fetchmy(`${api}/common/login`, {
     method: 'post',
@@ -90,7 +91,7 @@ export const oauthLogin = async () => {
     });
     const data = await res.json();
     const { email, picture, name } = data;
-    const InviteCode = getStorage('InviteCode');
+    const channel_code = getStorage('channel_code');
     const args = {
       channel: '',
       email,
@@ -99,8 +100,8 @@ export const oauthLogin = async () => {
       google: true,
       type: 'pc',
     } as any;
-    if (InviteCode) {
-      args.channel = `${InviteCode}-1`;
+    if (channel_code) {
+      args.channel = `${channel_code}-1`;
     }
     if (getCookie('_fbc')) {
       args.fbc = getCookie('_fbc');

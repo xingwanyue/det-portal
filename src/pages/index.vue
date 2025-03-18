@@ -60,7 +60,11 @@ onMounted(async () => {
     // 获取路由参数code
     const code = route.query.code as string;
     if (code) {
-      saveStorage('InviteCode', code, true);
+      saveStorage('channel_code', code, true);
+    }
+    const invite_code = route.query.invite_code as string;
+    if (invite_code) {
+      saveStorage('invite_code', invite_code, true);
     }
   }
 });
