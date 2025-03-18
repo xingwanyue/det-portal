@@ -87,6 +87,9 @@ export const setCatchePrefix = (prefix: String) => {
 };
 
 export const saveStorage = (key: String, value: String, remeber?: Boolean) => {
+  if (!process.client) {
+    return;
+  }
   (remeber ? localStorage : sessionStorage)[`${defaultCachePrefix}${key}`] = value;
 };
 export const getStorage = (key: String) => {
