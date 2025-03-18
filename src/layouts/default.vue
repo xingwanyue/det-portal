@@ -4,6 +4,7 @@ import { saveToken, getToken, locales, countries } from '@/utils';
 import { useRouter, useRoute } from 'vue-router';
 import { useStore } from '@/store';
 import { sinupEvent } from '@/utils/gtag';
+import schemas from '@/schemas';
 import { useI18n } from 'vue-i18n';
 import vHeader from './header.vue';
 import vFooter from './footer.vue';
@@ -54,9 +55,17 @@ if (url.host !== 'www.detpractice.com') {
   meta.push({ name: 'robots', content: 'noindex' });
 }
 
+const schema = schemas[currentPathWithoutLocale] || schemas['/'];
+
 useHead({
   htmlAttrs: { lang: () => locale.value },
-  script: [{ src: 'https://accounts.google.com/gsi/client', async: true }],
+  script: [
+    { src: 'https://accounts.google.com/gsi/client', async: true },
+    ...schema.map((s: any) => ({
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(s),
+    })),
+  ],
   link: props.errorPage
     ? []
     : [
