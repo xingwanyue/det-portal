@@ -205,32 +205,6 @@ const menus = computed(() => [
                   </div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/courses')" :title="$t('header.path_course_title')" class="one_card card4">
-                <div class="icon">
-                  <img src="/img/home/head_course.svg" :alt="$t('header.prod3.alt')" />
-                </div>
-                <div class="right">
-                  <div class="title">{{ $t('header.prod3.title') }}</div>
-                  <div class="font">
-                    {{ $t('header.prod4.font') }}
-                  </div>
-                </div>
-              </NuxtLink>
-              <NuxtLink
-                :to="localePath('/duolingo-practice-test')"
-                title="Duolingo Practice Test"
-                class="one_card card4"
-              >
-                <div class="icon">
-                  <img src="/img/home/head_practice.svg" :alt="$t('header.dpt.alt')" />
-                </div>
-                <div class="right">
-                  <div class="title">{{ $t('header.dpt.title') }}</div>
-                  <div class="font">
-                    {{ $t('header.dpt.font') }}
-                  </div>
-                </div>
-              </NuxtLink>
             </div>
             <template #reference>
               <div
