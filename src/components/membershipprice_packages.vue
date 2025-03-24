@@ -63,8 +63,8 @@ watch(
   () => props.mockSelectBuyTimes,
   (newVal) => {
     if (newVal.length) {
-      state.mockBuyTimsId = newVal[0].id;
-      state.mockBuyItem = newVal[0];
+      state.mockBuyTimsId = newVal[2].id;
+      state.mockBuyItem = newVal[2];
     }
   },
 );
@@ -83,8 +83,9 @@ const buyMembership = (item: any) => {
 const buyMockTimes = () => {
   store.stripePay({ vipId: state.mockBuyTimsId });
 };
-const changeMockBuyTimes = () => {
-  state.mockBuyItem = props.mockSelectBuyTimes.find((item: any) => item.id === state.mockBuyTimsId) || {};
+const changeMockBuyTimes = (item: any) => {
+  state.mockBuyItem = item;
+  state.mockBuyTimsId = item.id;
 };
 const saveCaculate = (item: any) => {
   const { price = 0, originalPrice = 0, correctPrice = 0, correctOriginalPrice = 0 } = item;
@@ -105,7 +106,12 @@ const saveCaculate = (item: any) => {
         >
           <div>
             <div class="title_out">
-              <div class="title">{{ item.tag }}</div>
+              <div class="title">
+                <div class="icon">
+                  <img src="/img/pricing/stars.svg" />
+                </div>
+                {{ item.tag }}
+              </div>
               <div v-if="item.tag === 'Pro'" class="save_tag">
                 {{ $t('pricing.pagefont.save', { num: savetagnumber }) }}
               </div>
@@ -130,6 +136,12 @@ const saveCaculate = (item: any) => {
             </div>
             <div class="line_throw">
               ${{ formatCashfixed2(Number(item.originalPrice)) }}{{ $t('pricing.pagefont.month') }}
+            </div>
+            <div class="save_open">
+              <div class="save_tips">Save 20% with 3 months</div>
+              <div class="switch_out">
+                <el-switch type="primary" v-model="item.saveOpen" />
+              </div>
             </div>
             <!-- <div class="bill">
               <span v-if="item.day === 365">
@@ -168,17 +180,13 @@ const saveCaculate = (item: any) => {
           </div>
           <div class="but_btn_new">
             <div v-if="user?.id">
-              <div class="card_price_buy_btn common_btn_hover_bgColor" @click="buyMembership(item)">
+              <div class="card_price_buy_btn" @click="buyMembership(item)">
                 {{ $t('pricing.pagefont.Buy_Now') }}
                 <div class="scroll-line"></div>
               </div>
             </div>
             <div v-else>
-              <NuxtLink
-                class="card_price_buy_btn common_btn_hover_bgColor"
-                :to="localePath(`/login?url=/pricing`)"
-                rel="nofollow"
-              >
+              <NuxtLink class="card_price_buy_btn" :to="localePath(`/login?url=/pricing`)" rel="nofollow">
                 {{ $t('pricing.pagefont.Buy_Now') }}
                 <div class="scroll-line"></div>
               </NuxtLink>
@@ -192,6 +200,7 @@ const saveCaculate = (item: any) => {
               <div class="font" v-html="itemqy"></div>
             </div>
           </div>
+          <div class="bg_hack"></div>
         </div>
 
         <div v-if="!props.membershipArr.length" class="one_card_new">
@@ -221,32 +230,25 @@ const saveCaculate = (item: any) => {
           </div>
           <div class="price_out">
             <div class="do price_blue">{{ $t('pricing.pagefont.do') }}</div>
-            <div class="price price_blue">{{ formatCashfixed2(state.mockBuyItem.price) }}</div>
+            <div class="price price_blue min_width_105">{{ formatCashfixed2(state.mockBuyItem.price) }}</div>
             <!-- <div class="unit">/week</div> -->
+            <div class="save_tag2">Save 20%</div>
           </div>
-          <div class="bill"></div>
+          <!-- <div class="bill">99999</div> -->
         </div>
 
-        <div class="select_out_new">
-          <div class="select_out_new_font">{{ $t('pricing.pagefont.apmt') }}</div>
-          <div class="sleect_out_wrapper">
-            <div class="select_out">
-              <el-select v-model="state.mockBuyTimsId" placeholder="Select" @change="changeMockBuyTimes()">
-                <el-option
-                  v-for="itemTimes in props.mockSelectBuyTimes"
-                  :key="itemTimes.id"
-                  :label="`${itemTimes.examNum} ${$t('pricing.pagefont.times')}`"
-                  :value="itemTimes.id"
-                >
-                  <span style="float: left">{{ itemTimes.examNum }} {{ $t('pricing.pagefont.times') }}</span>
-                  <span style="float: right; font-size: 13px; margin-left: 60px">
-                    ${{ formatCashfixed2(itemTimes.price) }}
-                  </span>
-                </el-option>
-              </el-select>
+        <div class="time_out">
+          <div
+            v-for="item in props.mockSelectBuyTimes"
+            :key="item.id"
+            :class="state.mockBuyTimsId === item.id ? 'one_times one_times_active' : 'one_times'"
+          >
+            <div class="time_font" @click="changeMockBuyTimes(item)">
+              {{ item.examNum }} {{ $t('pricing.pagefont.times') }}
             </div>
           </div>
         </div>
+
         <div class="but_btn_new">
           <div v-if="user?.id">
             <div class="card_price_buy_btn card_price_buy_btn_mock" @click="buyMockTimes()">
@@ -265,11 +267,12 @@ const saveCaculate = (item: any) => {
             </NuxtLink>
           </div>
         </div>
+        <div class="bgcolor_hack"></div>
       </div>
       <div v-if="!props.membershipArr.length" class="one_card_new">
         <el-skeleton :rows="6" animated />
       </div>
-      <div v-if="props.membershipArr.length" class="mock_quanyi_list_packages">
+      <div v-if="props.membershipArr.length" style="padding: 0 20px" class="mock_quanyi_list_packages">
         <div v-for="item in state.mockQuanYiList" class="one_quanyi">
           <div class="icon">
             <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.bci')" />
@@ -298,11 +301,11 @@ const saveCaculate = (item: any) => {
   // border: 1px red solid;
   grid-gap: 16px;
   .new_mb_price_left {
-    border: 1px solid #e9e9e9;
-    padding: 20px;
+    // border: 1px solid #e9e9e9;
+    // padding: 20px;
     flex-grow: 1;
-    background: white;
-    border-radius: 8px;
+    // background: white;
+    // border-radius: 8px;
     .new_mb_price_left_top {
       grid-gap: 16px;
       display: flex;
@@ -358,12 +361,70 @@ const saveCaculate = (item: any) => {
     }
   }
   .new_mb_price_right {
-    padding: 20px;
+    // padding: 24px 16px;
     background: white;
-    border: 1px solid #e9e9e9;
+    // border: 1px solid #e9e9e9;
     border-radius: 8px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
     .one_card_new {
-      background: rgba(255, 225, 188, 0.1) !important;
+      // background: rgba(255, 225, 188, 0.1) !important;
+      border: 0px red solid;
+      box-shadow: none !important;
+      position: relative;
+      .time_out {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8px;
+        margin-top: 8px;
+        .one_times {
+          background: #ffffff;
+          border-radius: 4px;
+          border: 1px solid #e9e9e9;
+          padding: 8px 0px;
+          text-align: center;
+          cursor: pointer;
+
+          .time_font {
+            font-weight: 400;
+            font-size: 16px;
+            color: #333333;
+          }
+        }
+        .one_times_active {
+          border: 1px solid #ff7c0e;
+          background: rgba(255, 124, 14, 0.1);
+          .time_font {
+            color: #ff7c0e;
+          }
+        }
+      }
+      .card_price_buy_btn {
+        margin-top: 20px;
+      }
+    }
+    .bgcolor_hack {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 200px;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(255, 225, 188, 0.3) 0%, rgba(255, 225, 188, 0) 100%);
+      pointer-events: none;
+    }
+    .min_width_105 {
+      min-width: 105px;
+    }
+    .save_tag2 {
+      // border: 1px red solid;
+      position: relative;
+      top: -8px;
+      background: #ffe1bc;
+      border-radius: 4px;
+      font-weight: 400;
+      font-size: 12px;
+      color: #ff7c0e;
+      padding: 0px 5px;
+      // margin-left: auto;
     }
   }
 }
@@ -371,6 +432,8 @@ const saveCaculate = (item: any) => {
 .one_card_new {
   width: 100%;
   box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
   @media (max-width: 1100px) {
     display: grid;
     grid-template-columns: 0.8fr 1fr;
@@ -380,15 +443,31 @@ const saveCaculate = (item: any) => {
     display: block;
   }
   padding: 24px 16px;
-  background: rgba(250, 250, 250, 0.05);
+
   border-radius: 8px;
-  border: 1px solid #e9e9e9;
+  // border: 1px solid red;
   .title_out {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     grid-gap: 20px;
+
     .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      grid-gap: 6px;
+      .icon {
+        width: 16px;
+        height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
       font-weight: 600;
       font-size: 20px;
       color: #333333;
@@ -397,12 +476,14 @@ const saveCaculate = (item: any) => {
       color: #063156;
     }
     .save_tag {
+      margin-left: auto;
       padding: 4px 10px;
-      background: #edc295;
-      border-radius: 16px;
-      font-weight: 500;
-      font-size: 14px;
-      color: #4c2929;
+
+      background: linear-gradient(90deg, #f66442 0%, #fda334 100%);
+      border-radius: 4px;
+      font-weight: 400;
+      font-size: 12px;
+      color: #ffffff;
     }
   }
 
@@ -434,10 +515,25 @@ const saveCaculate = (item: any) => {
   .line_throw {
     font-size: 14px;
     color: #333333;
-    text-decoration: line-through;
+    // text-decoration: line-through;
     margin-top: 8px;
-    text-decoration-thickness: 1px; // 添加这行来增加中划线的粗细
+    // text-decoration-thickness: 1px; // 添加这行来增加中划线的粗细
     // 修改 text-decoration 横线宽度
+  }
+  .save_open {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-gap: 8px;
+    .save_tips {
+      font-weight: 600;
+      font-size: 14px;
+      color: #f66442;
+      line-height: 20px;
+    }
+    .switch_out {
+    }
   }
   .bill {
     margin-top: 12px;
@@ -474,11 +570,11 @@ const saveCaculate = (item: any) => {
   .but_btn_new {
     .card_price_buy_btn {
       padding: 11px 0px;
-      background: #f66442;
+      border: 1px solid #f66442;
       border-radius: 4px;
       font-weight: 500;
       font-size: 16px;
-      color: white;
+      color: #f66442;
       text-align: center;
       margin-top: 32px;
       position: relative;
@@ -487,18 +583,25 @@ const saveCaculate = (item: any) => {
       a {
         color: white;
       }
+      // &:hover {
+      //   background: #f6f5f5;
+      // }
     }
     .card_price_buy_btn_mock {
       background: #ffe1bc;
       color: #3c5d86;
+      border: 0px solid #ffe1bc;
       &:hover {
-        background: #f2d5b2;
+        background: #ffe1bc;
       }
     }
   }
 }
 .one_card_new_365 {
-  background: rgba(246, 100, 66, 0.05);
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 2px solid #f66442;
+  position: relative;
   .title {
     color: #4c2929 !important;
   }
@@ -515,10 +618,21 @@ const saveCaculate = (item: any) => {
     color: #4c2929 !important;
   }
   .card_price_buy_btn {
-    background: #4c2929 !important;
-    &:hover {
-      background: #412323 !important;
-    }
+    background: #f66442;
+    border: 1px solid #f66442;
+    color: white !important;
+    // &:hover {
+    //   background: #412323 !important;
+    // }
+  }
+  .bg_hack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(246, 100, 66, 0.1) 0%, rgba(255, 225, 188, 0) 100%);
+    pointer-events: none;
   }
 }
 /* 左右滚动效果 */
@@ -595,5 +709,9 @@ const saveCaculate = (item: any) => {
 }
 .el-select-dropdown__item.is-hovering {
   background-color: rgba(246, 100, 66, 0.05);
+}
+.el-switch.is-checked .el-switch__core {
+  background-color: #f66442;
+  border-color: #f66442;
 }
 </style>
