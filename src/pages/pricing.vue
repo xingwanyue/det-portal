@@ -3,7 +3,7 @@ import { useI18n } from 'vue-i18n';
 import { getToken } from '@/utils';
 const { t } = useI18n();
 import { getVipdataNoToken, getVipdataWithToken, getSetting } from '@/api';
-import vMembershipprice from '../components/membershipprice.vue';
+
 import vMembershippricepackages from '../components/membershipprice_packages.vue';
 import { domain, cdn } from '@/utils';
 import { useStore } from '@/store';
@@ -193,11 +193,6 @@ watch(
   },
 );
 
-const switchType = ref('1');
-const changeSwitchType = (type: string) => {
-  switchType.value = type;
-};
-
 const CurrentMembershipId = ref(0);
 const changeCurrentMembershipId = (id: number) => {
   CurrentMembershipId.value = id;
@@ -317,16 +312,11 @@ const changeBuyCorrectTimes = () => {
           <h1>{{ $t('pricing.pagefont.h1') }}</h1>
         </div>
 
-        <div class="switch_out">
-          <div @click="changeSwitchType('1')" :class="[switchType === '1' ? 'switch_btn yellow ' : 'switch_btn']">
-            {{ $t('pricing.pagefont.switch1') }}
-            <div class="save_tag_tag">{{ $t('pricing.pagefont.saveup', { num: savetagnumber }) }}</div>
-          </div>
-          <div @click="changeSwitchType('2')" :class="[switchType === '2' ? 'switch_btn yellow ' : 'switch_btn']">
-            {{ $t('pricing.pagefont.switch2') }}
-          </div>
-        </div>
         <div class="three_out_new">
+          <div class="one">
+            <div class="one_icon"><img :src="circle_check_icon" :alt="$t('pricing.pagefont.circle_check_icon')" /></div>
+            <div class="one_font">{{ $t('pricing.pagefont.atde') }}</div>
+          </div>
           <div class="one">
             <div class="one_icon"><img :src="circle_check_icon" :alt="$t('pricing.pagefont.circle_check_icon')" /></div>
             <div class="one_font">{{ $t('pricing.pagefont.sep') }}</div>
@@ -335,32 +325,9 @@ const changeBuyCorrectTimes = () => {
             <div class="one_icon"><img :src="circle_check_icon" :alt="$t('pricing.pagefont.circle_check_icon')" /></div>
             <div class="one_font">{{ $t('pricing.pagefont.ca') }}</div>
           </div>
-          <div class="one">
-            <div class="one_icon"><img :src="circle_check_icon" :alt="$t('pricing.pagefont.circle_check_icon')" /></div>
-            <div class="one_font">{{ $t('pricing.pagefont.atde') }}</div>
-          </div>
         </div>
-        <div v-if="!user.id" class="free_white_dom">
-          <div class="free_white_dom_left">
-            <div class="free_font">{{ $t('pricing.pagefont.free_font') }}</div>
-            <div class="free_tips">
-              {{ $t('pricing.pagefont.free_tips') }}
-            </div>
-          </div>
-          <div class="free_white_dom_right">
-            <NuxtLink class="try_btn" :to="localePath(`/login`)" rel="nofollow">{{
-              $t('pricing.pagefont.tff')
-            }}</NuxtLink>
-          </div>
-        </div>
-        <div v-show="switchType === '2'" class="Membership_dom">
-          <v-membershipprice
-            :membershipArr="vipsData?.practiceArr || []"
-            :correctSelectBuyTimes="vipsData?.correctSelectBuyTimes || []"
-            :mockSelectBuyTimes="vipsData?.mockSelectBuyTimes || []"
-          ></v-membershipprice>
-        </div>
-        <div v-show="switchType === '1'" class="Service_dom">
+
+        <div class="Service_dom">
           <!-- packages -->
           <v-membershippricepackages
             :membershipArr="vipsData?.packagesArr || []"
@@ -594,55 +561,6 @@ const changeBuyCorrectTimes = () => {
             font-weight: 400;
             font-size: 16px;
             color: #403f3e;
-          }
-        }
-      }
-      .free_white_dom {
-        border: 1px red solid;
-        background: white;
-        padding: 16px 24px;
-        border-radius: 8px;
-        border: 1px solid #e9e9e9;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 32px;
-        grid-gap: 12px;
-
-        .free_white_dom_left {
-          .free_font {
-            font-weight: 600;
-            font-size: 20px;
-            color: #333333;
-          }
-          .free_tips {
-            font-weight: 400;
-            font-size: 14px;
-            color: #403f3e;
-            margin-top: 4px;
-          }
-        }
-        .free_white_dom_right {
-          @media (max-width: 450px) {
-            flex-grow: 1;
-          }
-
-          .try_btn {
-            padding: 11px;
-            text-align: center;
-            border-radius: 4px;
-            border: 1px solid #201515;
-            font-weight: 500;
-            font-size: 16px;
-            color: #201515;
-
-            display: block;
-            cursor: pointer;
-            &:hover {
-              border: 2px solid #201515;
-              padding: 10px;
-            }
           }
         }
       }
