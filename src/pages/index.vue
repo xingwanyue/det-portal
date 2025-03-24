@@ -7,15 +7,6 @@ import { oauth2SignIn } from '@/utils/googleAuth';
 import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
 import { platformData, portalData } from '@/api';
 import { useRoute } from 'vue-router';
-const route = useRoute();
-const state = reactive({
-  modeSelectValue: 'Standard',
-  textarea: '',
-  options: [
-    { value: 'Standard', label: 'Standard' },
-    { value: 'Advanced', label: 'Advanced' },
-  ],
-});
 
 useSeoMeta({
   title: t('index.seometa.title'),
@@ -43,6 +34,39 @@ useHead({
     { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
   ],
 });
+
+const route = useRoute();
+const state = reactive({
+  // 1 chat 2 det tutor
+  zhuti: '1',
+  modeSelectCode: '1',
+  userQuestion: '',
+  modeSelectShow: false,
+  online: false,
+});
+const modeList = computed(() => {
+  return [
+    { name: 'Standard', desc: 'Powered by ChatGPT 4o-mini', imgSrc: '/img/home/standard_icon.svg', tag: '', code: '1' },
+    {
+      name: 'DeepSeek R1',
+      desc: 'Top-level open source reasoningLLM. Support Deep Think',
+      imgSrc: '/img/home/deepseek_r1_icon.svg',
+      tag: '',
+      code: '2',
+    },
+    {
+      name: 'ChatGPT 4o',
+      desc: 'High-intelligence model for complex tasks',
+      imgSrc: '/img/home/chatgpt_4o_icon.svg',
+      tag: 'Premium',
+      code: '3',
+    },
+  ];
+});
+const sendMsg = () => {
+  console.log('sendMsg');
+  console.log(state.userQuestion);
+};
 
 const token = await getToken();
 const userPingLunResponse = computed(() => {
@@ -76,22 +100,13 @@ onMounted(async () => {
     }
   }
 });
+const changeMode = (code: string) => {
+  state.modeSelectCode = code;
+  state.modeSelectShow = false;
+};
 
 // 将数字格式化 306281变为306k 3062811变为3061k
-const toThousands = (num: any) => {
-  if (!num) {
-    return 0;
-  }
-  let result = '';
-  const numStr = num.toString();
-  for (let i = 0; i < numStr.length; i++) {
-    if (i % 3 === 0 && i !== 0) {
-      result = ``;
-    }
-    result = numStr[numStr.length - i - 1] + result;
-  }
-  return result;
-};
+
 const googleLogin = () => {
   oauth2SignIn(urlGet('/home'));
 };
@@ -137,29 +152,71 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 
         <div class="chat_dom_out">
           <div class="two_switch_out">
-            <div class="one_switch one_switch_active">Chat</div>
-            <div class="one_switch">DET Tutor</div>
+            <div class="one_switch" :class="state.zhuti === '1' ? 'one_switch_active' : ''" @click="state.zhuti = '1'">
+              Chat
+            </div>
+            <div class="one_switch" :class="state.zhuti === '2' ? 'one_switch_active' : ''" @click="state.zhuti = '2'">
+              DET Tutor
+            </div>
           </div>
           <div class="white_input_out">
             <div class="input_area_out">
-              <el-input class="el_input" v-model="state.textarea" type="textarea" placeholder="Please input" />
+              <el-input class="el_input" v-model="state.userQuestion" type="textarea" placeholder="Ask Anything Here" />
             </div>
             <div class="white_input_bottom">
               <div class="mode_select_out">
-                <div class="icon"></div>
-                <div class="mode_font">Standard</div>
-                <div class="arrow_icon">2</div>
-                <div class="mode_select_list">
-                  <div class="mode_select_list_item">Standard</div>
-                  <div class="mode_select_list_item">Advanced</div>
+                <div class="icon" @click="state.modeSelectShow = !state.modeSelectShow">
+                  <img :src="modeList.find((item) => item.code === state.modeSelectCode)?.imgSrc" alt="mode_icon" />
+                </div>
+                <div class="mode_font" @click="state.modeSelectShow = !state.modeSelectShow">
+                  {{ modeList.find((item) => item.code === state.modeSelectCode)?.name }}
+                </div>
+                <div
+                  :class="state.modeSelectShow ? 'arrow_icon arrow_icon_active' : 'arrow_icon'"
+                  @click="state.modeSelectShow = !state.modeSelectShow"
+                >
+                  <img src="/img/home/arrow_down.svg" alt="arrow_down" />
+                </div>
+                <div v-if="state.modeSelectShow" class="mode_select_list">
+                  <div
+                    v-for="item in modeList"
+                    :key="item.code"
+                    :class="
+                      state.modeSelectCode === item.code
+                        ? 'mode_select_list_item mode_select_list_item_active'
+                        : 'mode_select_list_item'
+                    "
+                    @click="changeMode(item.code)"
+                  >
+                    <div class="left_icon">
+                      <img :src="item.imgSrc" :alt="item.name" />
+                    </div>
+                    <div class="right">
+                      <div class="name">{{ item.name }}</div>
+                      <div class="desc">{{ item.desc }}</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="online_btn">
-                <div class="icon"></div>
+              <div
+                :class="state.online ? 'online_btn online_btn_active' : 'online_btn'"
+                @click="state.online = !state.online"
+              >
+                <div class="icon">
+                  <img
+                    :src="state.online ? '/img/home/erath_active_icon.svg' : '/img/home/earth_icon.svg'"
+                    alt="online_icon"
+                  />
+                </div>
                 <div class="online_font">Online</div>
               </div>
-              <div class="send_btn_gray">
-                <div class="icon"></div>
+              <div
+                :class="state.userQuestion.length ? 'send_btn_gray send_btn_active' : 'send_btn_gray'"
+                @click="sendMsg"
+              >
+                <div class="icon">
+                  <img src="/img/home/fly_icon.svg" alt="send_icon" />
+                </div>
                 <div class="send_font">Send</div>
               </div>
             </div>
@@ -542,11 +599,18 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 .chat_dom_out {
   .white_input_out {
     .input_area_out {
+      padding-bottom: 16px;
+
       .el_input {
         .el-textarea__inner {
+          height: 166px;
           border: none;
           box-shadow: none;
           border-radius: 0px;
+          font-weight: 400;
+          font-size: 16px;
+          color: #201515;
+          line-height: 22px;
         }
       }
     }
@@ -619,8 +683,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       .chat_dom_out {
         padding: 0px 0px;
         margin-top: 40px;
+        padding-bottom: 200px;
         @media (max-width: 730px) {
           padding: 0px 0px;
+          padding-bottom: 50px;
         }
         .two_switch_out {
           width: fit-content;
@@ -637,6 +703,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             font-weight: 400;
             font-size: 18px;
             color: #403f3e;
+            cursor: pointer;
+            @media (max-width: 450px) {
+              padding: 8px 30px;
+            }
           }
           .one_switch_active {
             background: rgba(246, 100, 66, 0.1);
@@ -657,6 +727,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
             .mode_select_out {
               background: #f3f4f6;
               border-radius: 4px;
@@ -671,7 +742,6 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               .icon {
                 width: 20px;
                 height: 20px;
-                border: 1px red solid;
                 margin-left: 6px;
                 img {
                   width: 100%;
@@ -682,24 +752,75 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 font-weight: 400;
                 font-size: 14px;
                 color: #403f3e;
+                min-width: 102px;
               }
               .arrow_icon {
                 width: 16px;
                 height: 16px;
-                border: 1px red solid;
                 margin-left: 16px;
                 img {
                   width: 100%;
                   height: 100%;
                 }
               }
+              .arrow_icon_active {
+                transform: rotate(180deg);
+              }
               .mode_select_list {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
                 background: #ffffff;
-                border: 1px red solid;
+                box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
+                border-radius: 8px;
+                position: absolute;
+                top: calc(100% + 8px);
+                left: 0;
+                background: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 4px;
+                padding: 8px;
+                .mode_select_list_item {
+                  border-radius: 8px;
+                  padding: 8px;
+                  padding-top: 12px;
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-start;
+                  grid-gap: 6px;
+                  &:hover {
+                    background: #f3f4f6;
+                  }
+                  .left_icon {
+                    width: 20px;
+                    height: 20px;
+                    img {
+                      width: 100%;
+                      height: 100%;
+                    }
+                  }
+                  .right {
+                    min-width: 242px;
+                    .name {
+                      font-weight: 600;
+                      font-size: 14px;
+                      color: #201515;
+                    }
+                    .desc {
+                      font-weight: 400;
+                      font-size: 12px;
+                      color: #666666;
+                      line-height: 20px;
+                    }
+                  }
+                }
+                .mode_select_list_item_active {
+                  background: #feefec;
+                  &:hover {
+                    background: #feefec;
+                  }
+                }
               }
             }
             .online_btn {
@@ -709,7 +830,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               display: flex;
               justify-content: center;
               align-items: center;
-              grid-gap: 8px;
+              grid-gap: 6px;
               margin-left: 8px;
               cursor: pointer;
               &:hover {
@@ -718,7 +839,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               .icon {
                 width: 20px;
                 height: 20px;
-                border: 1px red solid;
+
                 img {
                   width: 100%;
                   height: 100%;
@@ -728,6 +849,17 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 font-weight: 400;
                 font-size: 14px;
                 color: #666666;
+              }
+            }
+            .online_btn_active {
+              border: 1px solid rgba(246, 100, 66, 0.2);
+              background: #fff4f1;
+
+              .online_font {
+                color: #f66442;
+              }
+              &:hover {
+                background: #fff4f1;
               }
             }
             .send_btn_gray {
@@ -745,7 +877,6 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               .icon {
                 width: 16px;
                 height: 16px;
-                border: 1px red solid;
                 img {
                   width: 100%;
                   height: 100%;
@@ -769,11 +900,15 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             font-weight: 600;
             font-size: 18px;
             color: #403f3e;
+            margin-bottom: 16px;
           }
           .we_also_have_list {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 16px;
+            @media (max-width: 450px) {
+              grid-template-columns: repeat(1, 1fr);
+            }
             .one_card {
               padding: 16px 24px;
               border-radius: 8px;
@@ -866,7 +1001,8 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
     }
     .three_nums_wrapper {
       padding: 100px 0px;
-      margin-top: 96px;
+      padding-top: 0px;
+
       margin-bottom: 120px;
       @media (max-width: 450px) {
         margin-bottom: 10px;
