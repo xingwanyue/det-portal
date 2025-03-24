@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { reactive } from 'vue';
 const { t, locale } = useI18n();
 import vSlogen from '../components/slogen.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
@@ -7,6 +8,14 @@ import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '
 import { platformData, portalData } from '@/api';
 import { useRoute } from 'vue-router';
 const route = useRoute();
+const state = reactive({
+  modeSelectValue: 'Standard',
+  textarea: '',
+  options: [
+    { value: 'Standard', label: 'Standard' },
+    { value: 'Advanced', label: 'Advanced' },
+  ],
+});
 
 useSeoMeta({
   title: t('index.seometa.title'),
@@ -52,7 +61,6 @@ const isMobile = ref(false);
 onMounted(async () => {
   // 如果是在浏览器环境下，执行movePingLun
   if (process.client) {
-    moveAnamit();
     // 监听窗口大小 改变isMobile
     window.addEventListener('resize', () => {
       isMobile.value = window.innerWidth < 450;
@@ -68,30 +76,6 @@ onMounted(async () => {
     }
   }
 });
-
-const moveAnamit = () => {
-  const small_title_wrap = document.querySelector('.small_title_wrap');
-  const small_title = document.querySelectorAll('.one_small_title');
-  let index = 0;
-  let timer = null;
-  timer = setInterval(() => {
-    small_title.forEach((item) => {
-      item.classList.remove('current');
-      item.classList.remove('per');
-      item.classList.remove('start');
-    });
-    small_title[index].classList.add('current');
-    if (index === 0) {
-      small_title[small_title.length - 1].classList.add('per');
-    } else {
-      small_title[index - 1].classList.add('per');
-    }
-    index++;
-    if (index === small_title.length) {
-      index = 0;
-    }
-  }, 2000);
-};
 
 // 将数字格式化 306281变为306k 3062811变为3061k
 const toThousands = (num: any) => {
@@ -133,7 +117,6 @@ const onLoad5 = () => {
 };
 
 // 引入cdn图片
-const bannerImg = `${cdn}/store/portal/home/banner.svg`;
 const home1 = `${cdn}/store/portal/home/home1.png`;
 const home2 = `${cdn}/store/portal/home/home3.png`;
 const home3 = `${cdn}/store/portal/home/home2.png`;
@@ -145,95 +128,117 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 <template>
   <div class="home">
     <div class="part1_wrapper">
-      <div class="bg_handle"></div>
       <div class="part1">
-        <div class="power_by">{{ $t('index.power_by') }}</div>
         <div class="page_title">
-          <div v-if="isMobile" class="h_one isMobile">
-            <h1 v-html="$t('index.h1Mobile')"></h1>
-          </div>
-          <div v-if="!isMobile" class="h_one isnoMobile">
+          <div class="h_one isnoMobile">
             <h1 v-html="$t('index.h1PC')"></h1>
           </div>
-          <div class="animat_wrap">
-            <div class="small_title_wrap">
-              <div class="one_small_title current">{{ $t('index.one_small_title[0]') }}</div>
-              <div class="one_small_title">{{ locale === 'zh' ? 'AI批改' : $t('index.one_small_title[1]') }}</div>
-              <div class="one_small_title">{{ locale === 'zh' ? '全真模拟' : $t('index.one_small_title[2]') }}</div>
-              <div class="one_small_title">{{ $t('index.one_small_title[3]') }}</div>
+        </div>
+
+        <div class="chat_dom_out">
+          <div class="two_switch_out">
+            <div class="one_switch one_switch_active">Chat</div>
+            <div class="one_switch">DET Tutor</div>
+          </div>
+          <div class="white_input_out">
+            <div class="input_area_out">
+              <el-input class="el_input" v-model="state.textarea" type="textarea" placeholder="Please input" />
+            </div>
+            <div class="white_input_bottom">
+              <div class="mode_select_out">
+                <div class="icon"></div>
+                <div class="mode_font">Standard</div>
+                <div class="arrow_icon">2</div>
+                <div class="mode_select_list">
+                  <div class="mode_select_list_item">Standard</div>
+                  <div class="mode_select_list_item">Advanced</div>
+                </div>
+              </div>
+              <div class="online_btn">
+                <div class="icon"></div>
+                <div class="online_font">Online</div>
+              </div>
+              <div class="send_btn_gray">
+                <div class="icon"></div>
+                <div class="send_font">Send</div>
+              </div>
+            </div>
+          </div>
+          <div class="we_also_have">
+            <div class="we_also_have_title">We also have</div>
+            <div class="we_also_have_list">
+              <NuxtLink :to="localePath('/practice')" :title="$t('header.path_practice_title')" class="one_card card1">
+                <div class="icon">
+                  <img src="/img/home/product_icon1.svg" :alt="$t('header.prod1.alt')" />
+                </div>
+                <div class="right">
+                  <div class="title">DET Question Bank</div>
+                  <div class="font">The Largest Question Bank 18,000+ Practice Questions</div>
+                </div>
+              </NuxtLink>
+              <NuxtLink :to="localePath('/mock-exam')" :title="$t('header.path_mock_title')" class="one_card card3">
+                <div class="icon">
+                  <img src="/img/home/product_icon3.svg" :alt="$t('header.prod4.alt')" />
+                </div>
+                <div class="right">
+                  <div class="title">DET Mock</div>
+                  <div class="font">Close to Real DET Exam 40000+ mock exam takers</div>
+                </div>
+              </NuxtLink>
+              <NuxtLink
+                :to="localePath('/writing-ai-correction')"
+                :title="$t('header.path_correction_title')"
+                class="one_card card2"
+              >
+                <div class="icon">
+                  <img src="/img/home/product_icon2.svg" :alt="$t('header.prodwriting.alt')" />
+                </div>
+                <div class="right">
+                  <div class="title">AI Correction</div>
+                  <div class="font">Accurate Assessment Scores 300000+ reports</div>
+                </div>
+              </NuxtLink>
+
+              <NuxtLink
+                :to="localePath('/speaking-ai-correction')"
+                :title="$t('header.path_correction_title')"
+                class="one_card card5"
+              >
+                <div class="icon">
+                  <img src="/img/home/head_speak.svg" :alt="$t('header.prodspeaking.alt')" />
+                </div>
+                <div class="right">
+                  <div class="title">Free DET Courses</div>
+                  <div class="font">All the courses is free Learn from ESL Experts</div>
+                </div>
+              </NuxtLink>
             </div>
           </div>
         </div>
-        <div v-if="!token" class="two_btn_out">
-          <div class="common_btn common_btn_hover_bgColor yellow" @click="googleLogin">
-            <img src="/img/home/google_icon.svg" :alt="$t('index.Start_free_with_Google')" />
-            {{ $t('index.Start_free_with_Google') }}
+      </div>
+      <div class="three_nums_wrapper">
+        <div class="three_nums_out">
+          <div class="title1" data-aos="fade-up" data-aos-duration="1000">
+            <h2>{{ $t('index.The_Best_Platform') }}</h2>
           </div>
-          <NuxtLink :to="localePath(`/login`)" class="common_btn common_btn_hover_borderCu white" rel="nofollow">
-            {{ $t('index.Start_free_with_email') }}
-          </NuxtLink>
-        </div>
-        <div v-else class="two_btn_out">
-          <NuxtLink :href="urlGet('/home')" class="common_btn common_btn_hover_borderCu white">
-            {{ $t('index.Start_for_free') }}
-          </NuxtLink>
-        </div>
-        <div
-          class="all_stu_nums"
-          v-html="
-            $t('index.trustedByWorldwide', {
-              path: `<span class='yellow'>
-              ${platformData?.userTotal ? formatNumber(platformData?.userTotal) : '300,000'} 
-              </span>`,
-            })
-          "
-        ></div>
-        <div class="big_img_out">
-          <div class="big_img">
-            <video
-              width="100%"
-              height="100%"
-              muted
-              autoplay
-              loop
-              controlslist="nodownload"
-              webkit-playsinline="true"
-              playsinline="true"
-              x5-video-player-fullscreen="true"
-              x5-video-orientation="portraint"
-              x5-video-player-type="h5"
-              title="detpractice-platform-demo"
-              src="/img/home/detpractice-platform-demo.mp4"
-              poster="/img/home/detpractice-platform-demo.png"
-              preload="auto"
-              duration="PT40S"
-            ></video>
-            <!-- <img :src="bannerImg" /> -->
+          <div class="three_nums" data-aos="fade-up" data-aos-duration="1000">
+            <div class="one_nums">
+              <div class="one_nums_top">400,000+</div>
+              <div class="one_nums_bottom">{{ $t('index.Tu') }}</div>
+            </div>
+            <div class="one_nums">
+              <div class="one_nums_top">18,000+</div>
+              <div class="one_nums_bottom">{{ $t('index.questions') }}</div>
+            </div>
+            <div class="one_nums">
+              <div class="one_nums_top">10,000+</div>
+              <div class="one_nums_bottom">{{ $t('index.mockTest') }}</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="three_nums_wrapper">
-      <div class="three_nums_out">
-        <div class="title1" data-aos="fade-up" data-aos-duration="1000">
-          <h2>{{ $t('index.The_Best_Platform') }}</h2>
-        </div>
-        <div class="three_nums" data-aos="fade-up" data-aos-duration="1000">
-          <div class="one_nums">
-            <div class="one_nums_top">400,000+</div>
-            <div class="one_nums_bottom">{{ $t('index.Tu') }}</div>
-          </div>
-          <div class="one_nums">
-            <div class="one_nums_top">18,000+</div>
-            <div class="one_nums_bottom">{{ $t('index.questions') }}</div>
-          </div>
-          <div class="one_nums">
-            <div class="one_nums_top">10,000+</div>
-            <div class="one_nums_bottom">{{ $t('index.mockTest') }}</div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <div class="part2_wrapper">
       <div class="part2">
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
@@ -534,6 +539,19 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
     }
   }
 }
+.chat_dom_out {
+  .white_input_out {
+    .input_area_out {
+      .el_input {
+        .el-textarea__inner {
+          border: none;
+          box-shadow: none;
+          border-radius: 0px;
+        }
+      }
+    }
+  }
+}
 </style>
 <style lang="scss" scoped>
 .home {
@@ -541,52 +559,30 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
   overflow: hidden;
 
   .part1_wrapper {
+    background: linear-gradient(0, #ffffff 0%, #fff4f1 100%);
     padding: 0px 30px;
     @media (max-width: 450px) {
       padding: 0px 15px;
     }
     position: relative;
-    .bg_handle {
-      position: absolute;
-      top: 0px;
-      left: 0;
-      width: 100%;
-      height: 808px;
-      z-index: -1;
-      background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 100%);
-      @media (max-width: 1290px) {
-        height: 100%;
-        padding-bottom: 40px;
-      }
-    }
 
     .part1 {
       max-width: 1200px;
       overflow: hidden;
-      // border: 1px red solid;
       margin: 0 auto;
       height: 100%;
-      .power_by {
-        padding: 5px 15px;
-        background: #fddfd7;
-        border-radius: 16px;
-        font-weight: 600;
-        font-size: 16px;
-        color: #f66442;
-        width: fit-content;
-        margin: 0 auto;
-        margin-top: 56px;
-      }
+
       .page_title {
+        margin-top: 56px;
         .h_one {
           font-weight: 600;
           font-size: 56px;
           color: #201515;
           h1 {
             text-align: center;
-            font-weight: 600;
+            font-weight: bold;
             font-size: 56px;
-            color: #201515;
+            color: #f66442;
             padding: 0px;
             margin: 0px;
             @media (max-width: 906px) {
@@ -602,8 +598,8 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               font-size: 24px;
             }
           }
-          :deep(.seo_hack) {
-            display: none;
+          :deep(.black_font) {
+            color: #201515;
           }
         }
         // .isMobile {
@@ -618,205 +614,322 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         //     display: none;
         //   }
         // }
-        .animat_wrap {
-          text-align: center;
-          font-weight: 600;
-          font-size: 56px;
-          color: #f66442;
-          padding: 0px;
-          margin: 0px;
-          // height: 1em;
-          @media (max-width: 906px) {
-            font-size: 46px;
-          }
-          @media (max-width: 744px) {
-            font-size: 36px;
-          }
-          @media (max-width: 570px) {
-            font-size: 26px;
-          }
-          @media (max-width: 450px) {
-            font-size: 22px;
-          }
-
-          .small_title_wrap {
-            height: 1em;
-            @media (max-width: 570px) {
-              height: 0.5em;
-            }
-            position: relative;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 26px;
-            overflow: hidden;
-          }
-          .one_small_title {
-            color: #ff4f00;
-            position: absolute;
-            // bottom: -1em;
-            z-index: 1;
-            opacity: 0;
-            transform: rotate(10deg);
-            transform-origin: left;
-            transition: none;
-          }
-
-          .current {
-            color: #ff4f00;
-            position: absolute;
-            bottom: -1em;
-            z-index: 1;
-            opacity: 0;
-            transform: rotate(10deg);
-            transform-origin: left;
-            transition: none;
-            bottom: 0.1em;
-            opacity: 1;
-            transform: none;
-            transition: all 500ms cubic-bezier(0.65, 0, 0.35, 1);
-          }
-          .per {
-            color: #ff4f00;
-            position: absolute;
-            bottom: -1em;
-            z-index: 1;
-            opacity: 0;
-            transform: rotate(10deg);
-            transform-origin: left;
-            transition: none;
-            bottom: 1em;
-            opacity: 0;
-            transform: rotate(-10deg);
-            transition: all 500ms cubic-bezier(0.65, 0, 0.35, 1);
-          }
-        }
       }
-      .two_btn_out {
-        clear: both;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-        grid-gap: 16px;
-        @media (max-width: 730px) {
-          flex-direction: column;
-        }
 
-        .yellow {
-          background: #f66442;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          grid-column-gap: 8px;
-          img {
-            width: 26px;
-            height: 26px;
-          }
-        }
-        .white {
-          border: 1px solid #201515;
-          color: #201515;
-        }
-      }
-      .all_stu_nums {
-        font-weight: 400;
-        font-size: 16px;
-        color: #201515;
-        text-align: center;
-        margin-top: 40px;
-        :deep(.yellow) {
-          color: #f66442;
-        }
-      }
-      .big_img_out {
-        padding: 0px 60px;
+      .chat_dom_out {
+        padding: 0px 0px;
         margin-top: 40px;
         @media (max-width: 730px) {
           padding: 0px 0px;
         }
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .big_img {
-          max-width: 1080px;
-          // width: calc(100% - 80px);
-          // border: 1px red solid;
-          img {
-            width: 100%;
-            height: auto;
+        .two_switch_out {
+          width: fit-content;
+          background: #ffffff;
+          padding: 4px;
+          border-radius: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          .one_switch {
+            border-radius: 24px;
+            padding: 8px 57px;
+            font-weight: 400;
+            font-size: 18px;
+            color: #403f3e;
           }
-        }
-      }
-    }
-  }
-  .three_nums_wrapper {
-    background: #f2f4f6;
-    padding: 100px 0px;
-    margin-top: 96px;
-    margin-bottom: 120px;
-    @media (max-width: 450px) {
-      margin-bottom: 10px;
-    }
-    .three_nums_out {
-      max-width: 1200px;
-      @media (max-width: 1200px) {
-        padding: 0px 30px;
-      }
-      margin: 0 auto;
-      .title1 {
-        h2 {
-          font-weight: 500;
-          font-size: 40px;
-          color: #201515;
-          text-align: center;
-          padding: 0px;
-          margin: 0px;
-          @media (max-width: 906px) {
-            font-size: 36px;
-          }
-          @media (max-width: 744px) {
-            font-size: 36px;
-          }
-          @media (max-width: 570px) {
-            font-size: 30px;
-          }
-          @media (max-width: 450px) {
-            font-size: 23px;
-          }
-          @media (max-width: 450px) {
-            font-size: 22px;
-          }
-        }
-      }
-      .three_nums {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-column-gap: 100px;
-        grid-row-gap: 40px;
-        flex-wrap: wrap;
-        margin-top: 64px;
-        @media (max-width: 450px) {
-          grid-column-gap: 16px;
-        }
-        .one_nums {
-          text-align: center;
-          .one_nums_top {
-            font-weight: 600;
-            font-size: 48px;
+          .one_switch_active {
+            background: rgba(246, 100, 66, 0.1);
+            border-radius: 24px;
             color: #f66442;
+          }
+        }
+        .white_input_out {
+          background: #ffffff;
+          border-radius: 16px;
+          padding: 16px 16px;
+          margin-top: 16px;
+          &:hover {
+            box-shadow: 0px 0px 16px 0px rgba(246, 100, 66, 0.05);
+          }
+
+          .white_input_bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .mode_select_out {
+              background: #f3f4f6;
+              border-radius: 4px;
+              padding: 6px 8px;
+              width: fit-content;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              grid-gap: 8px;
+              cursor: pointer;
+              position: relative;
+              .icon {
+                width: 20px;
+                height: 20px;
+                border: 1px red solid;
+                margin-left: 6px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .mode_font {
+                font-weight: 400;
+                font-size: 14px;
+                color: #403f3e;
+              }
+              .arrow_icon {
+                width: 16px;
+                height: 16px;
+                border: 1px red solid;
+                margin-left: 16px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .mode_select_list {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #ffffff;
+                border: 1px red solid;
+              }
+            }
+            .online_btn {
+              padding: 6px 8px;
+              border-radius: 4px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              grid-gap: 8px;
+              margin-left: 8px;
+              cursor: pointer;
+              &:hover {
+                background: rgba(0, 0, 0, 0.05);
+              }
+              .icon {
+                width: 20px;
+                height: 20px;
+                border: 1px red solid;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .online_font {
+                font-weight: 400;
+                font-size: 14px;
+                color: #666666;
+              }
+            }
+            .send_btn_gray {
+              background: #f66442;
+              border-radius: 4px;
+              opacity: 0.5;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: fit-content;
+              padding: 5px 7px;
+              gap: 8px;
+              margin-left: auto;
+              cursor: not-allowed;
+              .icon {
+                width: 16px;
+                height: 16px;
+                border: 1px red solid;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .send_font {
+                font-weight: 400;
+                font-size: 14px;
+                color: #ffffff;
+              }
+            }
+            .send_btn_active {
+              opacity: 1;
+              cursor: pointer;
+            }
+          }
+        }
+        .we_also_have {
+          margin-top: 32px;
+          .we_also_have_title {
+            font-weight: 600;
+            font-size: 18px;
+            color: #403f3e;
+          }
+          .we_also_have_list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 16px;
+            .one_card {
+              padding: 16px 24px;
+              border-radius: 8px;
+              display: flex;
+
+              align-items: center;
+              grid-column-gap: 16px;
+              background: #ffffff;
+              cursor: pointer;
+              .icon {
+                width: 48px;
+                height: 48px;
+                flex-shrink: 0;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .right {
+                .title {
+                  font-weight: 600;
+                  font-size: 18px;
+                  color: #201515;
+                }
+                .font {
+                  font-weight: 400;
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #666666;
+                  margin-top: 4px;
+                }
+              }
+            }
+            .card1 {
+              &:hover {
+                .right {
+                  .title {
+                    color: #3e8bf8;
+                  }
+                }
+                background: linear-gradient(0, #f5fcff 0%, #ecf7ff 100%);
+              }
+            }
+            .card2 {
+              &:hover {
+                .right {
+                  .title {
+                    color: #f66442;
+                  }
+                }
+                background: linear-gradient(0, #fff8f5 0%, #fff0ec 100%);
+              }
+            }
+            .card3 {
+              &:hover {
+                .right {
+                  .title {
+                    color: #ff7c0e;
+                  }
+                }
+                background: linear-gradient(0, #fffaf4 0%, #ffefe1 100%);
+                color: #fff;
+              }
+            }
+            .card4 {
+              &:hover {
+                .right {
+                  .title {
+                    color: #06cc76;
+                  }
+                }
+                background: linear-gradient(0, #f2fff6 0%, #e7fdec 100%);
+                color: #fff;
+              }
+            }
+            .card5 {
+              &:hover {
+                .right {
+                  .title {
+                    color: #201515ff;
+                  }
+                }
+                background: linear-gradient(180deg, #eaeafe 0%, #fbf9ff 100%);
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .three_nums_wrapper {
+      padding: 100px 0px;
+      margin-top: 96px;
+      margin-bottom: 120px;
+      @media (max-width: 450px) {
+        margin-bottom: 10px;
+      }
+      .three_nums_out {
+        max-width: 1200px;
+        @media (max-width: 1200px) {
+          padding: 0px 30px;
+        }
+        margin: 0 auto;
+        .title1 {
+          h2 {
+            font-weight: 500;
+            font-size: 40px;
+            color: #201515;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            @media (max-width: 906px) {
+              font-size: 36px;
+            }
+            @media (max-width: 744px) {
+              font-size: 36px;
+            }
+            @media (max-width: 570px) {
+              font-size: 30px;
+            }
             @media (max-width: 450px) {
               font-size: 23px;
             }
-          }
-          .one_nums_bottom {
-            font-weight: 400;
-            font-size: 20px;
-            color: #201515;
             @media (max-width: 450px) {
-              font-size: 18px;
+              font-size: 22px;
+            }
+          }
+        }
+        .three_nums {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-column-gap: 100px;
+          grid-row-gap: 40px;
+          flex-wrap: wrap;
+          margin-top: 64px;
+          @media (max-width: 450px) {
+            grid-column-gap: 16px;
+          }
+          .one_nums {
+            text-align: center;
+            .one_nums_top {
+              font-weight: 600;
+              font-size: 48px;
+              color: #f66442;
+              @media (max-width: 450px) {
+                font-size: 23px;
+              }
+            }
+            .one_nums_bottom {
+              font-weight: 400;
+              font-size: 20px;
+              color: #201515;
+              @media (max-width: 450px) {
+                font-size: 18px;
+              }
             }
           }
         }
