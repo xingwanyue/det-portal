@@ -906,7 +906,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 16px;
-            @media (max-width: 450px) {
+            @media (max-width: 1200px) {
+              grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 750px) {
               grid-template-columns: repeat(1, 1fr);
             }
             .one_card {
