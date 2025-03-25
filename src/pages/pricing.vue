@@ -40,6 +40,7 @@ const user = computed(() => store.user);
 const userChangeFlag = ref(() => store.user);
 const isVip = computed(() => store.isVip);
 const savetagnumber = ref('');
+const tableSwitchOpen = ref(false);
 
 const onlycorrectTimesid = ref(0);
 const onlycorrectTimesprice = ref(0);
@@ -370,6 +371,853 @@ const changeBuyCorrectTimes = () => {
         </div>
       </div>
     </div>
+    <div class="Feature_wrapper">
+      <div class="Feature_in">
+        <div class="Feature_title">
+          <h2>Feature Introduction</h2>
+        </div>
+        <div class="Feature_content">
+          <div class="one_feature">
+            <div class="one_feature_item havepadding">
+              <div class="title">Premium</div>
+              <div class="switch_out">
+                <div class="font">Save 25% with 3 months</div>
+                <div><el-switch v-model="tableSwitchOpen" /></div>
+              </div>
+            </div>
+            <div class="one_feature_item havepadding">
+              <div class="title">Free</div>
+              <div class="price_out">0</div>
+              <div class="buy_btn_new">Try for free</div>
+            </div>
+            <div class="one_feature_item havepadding">
+              <div class="title">Basic</div>
+              <div class="price_out">$9.9/month</div>
+              <div class="buy_btn_new">Buy Now</div>
+            </div>
+            <div class="one_feature_item havepadding">
+              <div class="title">Plus</div>
+              <div class="price_out">$9.9/month</div>
+              <div class="buy_btn_new">Buy Now</div>
+            </div>
+            <div class="one_feature_item havepadding one_feature_item_last">
+              <div class="title">Pro</div>
+              <div class="price_out">$9.9/month</div>
+              <div class="buy_btn_new">Buy Now</div>
+            </div>
+          </div>
+          <!-- 表内的title**************************** -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="img_font">
+                <div class="img_icon">
+                  <img src="/img/pricing/table1_mock_icon.svg" />
+                </div>
+                <div class="font">Mock Exam</div>
+              </div>
+            </div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item one_feature_item_last"></div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">Full-Length mock exams</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_heng_icon.svg" />
+                </div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_heng_icon.svg" /></div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums">3</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums">10</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内的title***************************** -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="img_font">
+                <div class="img_icon">
+                  <img src="/img/pricing/table_2_correction_icon.svg" />
+                </div>
+                <div class="font">AI Correction</div>
+              </div>
+            </div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item one_feature_item_last"></div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">AI-powered Correction Service</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_heng_icon.svg" />
+                </div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums">10</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums">60</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">DET Speaking AI Correction</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_heng_icon.svg" />
+                </div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">DET Writing AI Correction</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_heng_icon.svg" />
+                </div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内的title***************************** -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="img_font">
+                <div class="img_icon">
+                  <img src="/img/pricing/table3_practice_icon.svg" />
+                </div>
+                <div class="font">Practice</div>
+              </div>
+            </div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item one_feature_item_last"></div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">Practice Questions</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div>
+                <div class="have_nums">300</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums">18000+</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums">18000+</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums">18000+</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">All types of questions</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <div class="have_nums"></div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">AI-Powered Speaking Evaluations (Read Aloud)</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div> -->
+                <div class="have_nums">Limited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">Browse High-scoring Sample Answers</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div> -->
+                <div class="have_nums">Limited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">In-depth Question Analysis</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div> -->
+                <div class="have_nums">Limited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">High-Frequency Exam Vocabulary</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">Smart Plan</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">Get Instant Feedback</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div> -->
+                <div class="have_nums">Limited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内的title***************************** -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="img_font">
+                <div class="img_icon">
+                  <img src="/img/pricing/table4_askai_icon.svg" />
+                </div>
+                <div class="font">Ask AI</div>
+              </div>
+            </div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item one_feature_item_last"></div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">Standard</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div> -->
+                <div class="have_nums">Limited-50 Daily</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">Deepseek R1</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div> -->
+                <div class="have_nums">Limited-50 Daily</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">ChatGPT 4o</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_heng_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited-50 Daily</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">100/Month</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">300/Month</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">ASK AI Tutor</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_heng_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited-50 Daily</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Unlimited</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内的title***************************** -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="img_font">
+                <div class="img_icon">
+                  <img src="/img/pricing/table5_guide_icon.svg" />
+                </div>
+                <div class="font">DET Guide</div>
+              </div>
+            </div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item one_feature_item_last"></div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">DET Speaking Exam Guide</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_heng_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited-50 Daily</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_heng_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Free Gift</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Free Gift</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">DET Writing Exam Guide</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_heng_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited-50 Daily</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_heng_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Free Gift</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">Free Gift</div>
+              </div>
+            </div>
+          </div>
+          <!-- 表内的title***************************** -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="img_font">
+                <div class="img_icon">
+                  <img src="/img/pricing/table6_course_icon.svg" />
+                </div>
+                <div class="font">DET Course</div>
+              </div>
+            </div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item one_feature_item_last"></div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">Courses</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited-50 Daily</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">Learning Materials</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited-50 Daily</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+          </div>
+          <!-- 表内的title***************************** -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="img_font">
+                <div class="img_icon">
+                  <img src="/img/pricing/table7_others_icon.svg" />
+                </div>
+                <div class="font">Others</div>
+              </div>
+            </div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item"></div>
+            <div class="one_feature_item one_feature_item_last"></div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">New Features</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_heng_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited-50 Daily</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature no_border_bottom">
+            <div class="one_feature_item padding1">
+              <div class="regular_font">Priority Suppor</div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_heng_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited-50 Daily</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="part2_wrapper">
       <div class="part2">
         <h2 class="title">{{ $t('pricing.pagefont.faq') }}</h2>
@@ -511,52 +1359,6 @@ const changeBuyCorrectTimes = () => {
         }
       }
 
-      .switch_out {
-        background: #ffffff;
-        border-radius: 22px;
-        margin: 0 auto;
-        // border: 1px red solid;
-        width: fit-content;
-        margin-top: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-gap: 16px;
-        padding: 4px;
-        position: relative;
-
-        .switch_btn {
-          padding: 8px 32px;
-          font-weight: 500;
-          font-size: 16px;
-          color: #ffffff;
-          border-radius: 22px;
-          color: #484848;
-          cursor: pointer;
-
-          @media (max-width: 450px) {
-            font-size: 14px;
-          }
-          .save_tag_tag {
-            padding: 2px 8px;
-            background: #ffeae5;
-            border-radius: 10px;
-            position: absolute;
-            font-weight: 400;
-            font-size: 12px;
-            color: #f66442;
-            top: -10px;
-            left: 20%;
-            transform: translateX(-50%);
-            width: fit-content;
-          }
-        }
-
-        .yellow {
-          background: #f66442;
-          color: #ffffff;
-        }
-      }
       .three_out_new {
         margin-top: 26px;
         display: flex;
@@ -1185,9 +1987,12 @@ const changeBuyCorrectTimes = () => {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 32px;
+        margin-top: 124px;
         grid-gap: 6px;
         flex-wrap: wrap;
+        @media (max-width: 450px) {
+          margin-top: 60px;
+        }
 
         .title {
           font-weight: 400;
@@ -1203,6 +2008,144 @@ const changeBuyCorrectTimes = () => {
             width: 100%;
             height: auto;
           }
+        }
+      }
+    }
+  }
+  .Feature_wrapper {
+    padding: 0px 30px;
+    @media screen and (max-width: 450px) {
+      padding: 0px 15px;
+    }
+    margin-top: 112px;
+    @media (max-width: 450px) {
+      margin-top: 60px;
+    }
+    // border: 1px red solid;
+    .Feature_in {
+      max-width: 1200px;
+      margin: 0 auto;
+      .Feature_title {
+        font-weight: 600;
+        font-size: 40px;
+        color: #201515;
+        text-align: center;
+      }
+    }
+    .Feature_content {
+      .one_feature {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border-bottom: 1px solid #e9e9e9;
+        .one_feature_item {
+          .title {
+            font-weight: 600;
+            font-size: 20px;
+            color: #201515;
+          }
+          .price_out {
+            font-weight: 600;
+            font-size: 18px;
+            color: #484848;
+            margin-top: 8px;
+          }
+          .buy_btn_new {
+            padding: 9px 20px;
+            border-radius: 8px;
+            border: 1px solid #201515;
+            font-weight: 400;
+            font-size: 16px;
+            color: #201515;
+            width: fit-content;
+            cursor: pointer;
+            margin-top: 16px;
+          }
+          .img_font {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            grid-gap: 8px;
+            .img_icon {
+              width: 32px;
+              height: 32px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .font {
+              font-weight: 600;
+              font-size: 20px;
+              color: #201515;
+            }
+          }
+          .regular_font {
+            font-weight: 400;
+            font-size: 16px;
+            color: #484848;
+          }
+          .have_or_no {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            grid-gap: 8px;
+            .icon {
+              width: 16px;
+              height: 16px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .have_nums {
+              font-weight: 400;
+              font-size: 16px;
+              color: #484848;
+            }
+          }
+          .switch_out {
+            margin-top: 11px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            grid-gap: 8px;
+            .font {
+              font-weight: 400;
+              font-size: 14px;
+              color: #f66442;
+            }
+          }
+        }
+      }
+      .havepadding {
+        padding: 32px 24px;
+      }
+      .padding1 {
+        margin-top: 24px;
+        padding-bottom: 16px;
+      }
+      .center_show {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 24px;
+      }
+      .no_border_bottom {
+        border-bottom: none;
+      }
+      .one_feature_item_last {
+        background: #fef7f5;
+        .title {
+          color: #f66442 !important;
+        }
+        .price_out {
+          color: #f66442 !important;
+        }
+        .buy_btn_new {
+          background: #f66442 !important;
+          color: #ffffff !important;
+          border: 1px solid #f66442 !important;
         }
       }
     }
