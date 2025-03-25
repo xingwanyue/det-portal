@@ -102,26 +102,38 @@ const getData = async () => {
         item.correctPrice = correctSelectBuyTimes[1].price;
         item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
         practiceArr.push(item);
-      } else if (item.type === '2') {
+      } else if (item.type === '5' && item.day === 30) {
         packagesArr.push({
           ...item,
+          originalPrice90: data.find(
+            (itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag,
+          ).originalPrice,
+          price90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag)
+            .price,
+          id90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag).id,
+          saveOpen: false,
           qylist: [
-            t('pricing.packagesallQy.qy1', { times: item.examNum }),
             t('pricing.packagesallQy.qy2', { times: item.correctNum }),
+            t('pricing.packagesallQy.qy1', { times: item.examNum }),
             t('pricing.packagesallQy.qy3'),
             t('pricing.packagesallQy.qy4'),
             t('pricing.packagesallQy.qy5'),
             t('pricing.packagesallQy.qy6'),
             t('pricing.packagesallQy.qy7'),
             t('pricing.packagesallQy.qy8'),
+            t('pricing.packagesallQy.qy9'),
+            t('pricing.packagesallQy.qy10'),
+            t('pricing.packagesallQy.qy11'),
+            t('pricing.packagesallQy.qyspeak'),
+            t('pricing.packagesallQy.qywrite'),
           ],
         });
         // 如果item.tag = Pro 向qylist 第4 5 位置插入
         console.log(item);
-        if (item.tag === 'Pro') {
-          packagesArr[packagesArr.length - 1].qylist.splice(3, 0, t('pricing.packagesallQy.qyspeak'));
-          packagesArr[packagesArr.length - 1].qylist.splice(4, 0, t('pricing.packagesallQy.qywrite'));
-        }
+        // if (item.tag === 'Pro') {
+        //   packagesArr[packagesArr.length - 1].qylist.splice(3, 0, t('pricing.packagesallQy.qyspeak'));
+        //   packagesArr[packagesArr.length - 1].qylist.splice(4, 0, t('pricing.packagesallQy.qywrite'));
+        // }
       }
     });
     vipsData.value = { practiceArr, packagesArr, correctSelectBuyTimes, mockSelectBuyTimes };
@@ -144,25 +156,38 @@ const getData = async () => {
         item.correctOriginalPrice = correctSelectBuyTimes[1].originalPrice;
 
         practiceArr.push(item);
-      } else if (item.type === '2') {
+      } else if (item.type === '5' && item.day === 30) {
         packagesArr.push({
           ...item,
+          originalPrice90: data.find(
+            (itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag,
+          ).originalPrice,
+          price90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag)
+            .price,
+          id90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag).id,
+          saveOpen: false,
           qylist: [
+            t('pricing.packagesallQy.qy2', { times: item.correctNum > 1000 ? 'Unlimited' : item.correctNum }),
             t('pricing.packagesallQy.qy1', { times: item.examNum }),
-            t('pricing.packagesallQy.qy2', { times: item.correctNum }),
+
             t('pricing.packagesallQy.qy3'),
             t('pricing.packagesallQy.qy4'),
             t('pricing.packagesallQy.qy5'),
             t('pricing.packagesallQy.qy6'),
             t('pricing.packagesallQy.qy7'),
             t('pricing.packagesallQy.qy8'),
+            t('pricing.packagesallQy.qy9'),
+            t('pricing.packagesallQy.qy10'),
+            t('pricing.packagesallQy.qy11'),
+            t('pricing.packagesallQy.qyspeak'),
+            t('pricing.packagesallQy.qywrite'),
           ],
         });
         // 如果item.tag = Pro 向qylist 第4 5 位置插入
-        if (item.tag === 'Pro') {
-          packagesArr[packagesArr.length - 1].qylist.splice(3, 0, t('pricing.packagesallQy.qyspeak'));
-          packagesArr[packagesArr.length - 1].qylist.splice(4, 0, t('pricing.packagesallQy.qywrite'));
-        }
+        // if (item.tag === 'Pro') {
+        //   packagesArr[packagesArr.length - 1].qylist.splice(3, 0, t('pricing.packagesallQy.qyspeak'));
+        //   packagesArr[packagesArr.length - 1].qylist.splice(4, 0, t('pricing.packagesallQy.qywrite'));
+        // }
       }
     });
     vipsData.value = { practiceArr, packagesArr, correctSelectBuyTimes, mockSelectBuyTimes };

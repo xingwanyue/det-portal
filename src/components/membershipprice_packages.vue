@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 import { reactive } from 'vue';
-import { formatCashfixed2 } from '@/utils';
+import { formatCashfixed2, formatCash } from '@/utils';
 
 // import subscribe from '@/components/subscribe.vue';
 import { useStore } from '@/store';
@@ -54,6 +54,7 @@ const state = reactive({
     { key: 'm4', font: t('pricing.mockQuanYiList[3]') },
     { key: 'm5', font: t('pricing.mockQuanYiList[4]') },
     { key: 'm6', font: t('pricing.mockQuanYiList[5]') },
+    { key: 'm7', font: t('pricing.mockQuanYiList[6]') },
   ],
   mockBuyTimsId: '',
   mockBuyItem: {} as any,
@@ -76,8 +77,12 @@ const changeBuyCorrectTimes = (item: any) => {
 };
 
 const buyMembership = (item: any) => {
-  const { id } = item;
-  store.stripePay({ vipId: `${id}` });
+  const { id, saveOpen, id90 } = item;
+  if (saveOpen) {
+    store.stripePay({ vipId: `${id90}` });
+  } else {
+    store.stripePay({ vipId: `${id}` });
+  }
 };
 
 const buyMockTimes = () => {
@@ -112,33 +117,40 @@ const saveCaculate = (item: any) => {
                 </div>
                 {{ item.tag }}
               </div>
-              <div v-if="item.tag === 'Pro'" class="save_tag">
-                {{ $t('pricing.pagefont.save', { num: savetagnumber }) }}
+              <div v-if="item.saveOpen" class="save_tag">
+                {{ $t('pricing.pagefont.save', { num: ((1 - item.price90 / item.originalPrice90) * 100).toFixed(0) }) }}
               </div>
             </div>
 
             <div class="price_out">
               <div class="do">{{ $t('pricing.pagefont.do') }}</div>
               <template v-if="item.tag === 'Basic'">
-                <div class="price">{{ formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
+                <div class="price">{{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
                 <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
               <template v-if="item.tag === 'Pro'">
-                <div class="price">{{ formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
+                <div class="price">{{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}</div>
                 <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
               <template v-if="item.tag === 'Plus'">
                 <div class="price">
-                  {{ formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0)) }}
+                  {{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}
                 </div>
                 <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
             </div>
-            <div class="line_throw">
-              ${{ formatCashfixed2(Number(item.originalPrice)) }}{{ $t('pricing.pagefont.month') }}
+            <div :class="item.saveOpen ? 'line_throw line_throw_active' : 'line_throw'">
+              {{
+                $t('pricing.pagefont.BilledThreeMonth', {
+                  num: formatCash(Number(item.price90)),
+                })
+              }}
             </div>
             <div class="save_open">
-              <div class="save_tips">Save 20% with 3 months</div>
+              <div :class="item.saveOpen ? 'save_tips save_tips_active' : 'save_tips'">
+                Save
+                {{ (Number(1 - item.price90 / item.originalPrice90) * 100).toFixed(0) }}% with 3 months
+              </div>
               <div class="switch_out">
                 <el-switch type="primary" v-model="item.saveOpen" />
               </div>
@@ -193,8 +205,11 @@ const saveCaculate = (item: any) => {
             </div>
           </div>
           <div v-if="props.membershipArr.length" class="mock_quanyi_list_packages">
-            <div v-for="itemqy in item.qylist" class="one_quanyi">
-              <div class="icon">
+            <div v-for="(itemqy, index) in item.qylist" :key="index" class="one_quanyi">
+              <div v-if="(index === 1 || index === 11 || index === 12) && item.tag === 'Basic'" class="icon">
+                <img src="/img/pricing/black_heng_icon.svg" :alt="$t('pricing.pagefont.bci')" />
+              </div>
+              <div v-else class="icon">
                 <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.bci')" />
               </div>
               <div class="font" v-html="itemqy"></div>
@@ -232,7 +247,9 @@ const saveCaculate = (item: any) => {
             <div class="do price_blue">{{ $t('pricing.pagefont.do') }}</div>
             <div class="price price_blue min_width_105">{{ formatCashfixed2(state.mockBuyItem.price) }}</div>
             <!-- <div class="unit">/week</div> -->
-            <div class="save_tag2">Save 20%</div>
+            <div v-if="state.mockBuyItem.examNum !== 1" class="save_tag2">
+              Save {{ ((1 - state.mockBuyItem.price / state.mockBuyItem.originalPrice) * 100).toFixed(0) }}%
+            </div>
           </div>
           <!-- <div class="bill">99999</div> -->
         </div>
@@ -519,6 +536,10 @@ const saveCaculate = (item: any) => {
     margin-top: 8px;
     // text-decoration-thickness: 1px; // 添加这行来增加中划线的粗细
     // 修改 text-decoration 横线宽度
+    opacity: 0;
+  }
+  .line_throw_active {
+    opacity: 1;
   }
   .save_open {
     margin-top: 24px;
@@ -529,8 +550,11 @@ const saveCaculate = (item: any) => {
     .save_tips {
       font-weight: 600;
       font-size: 14px;
-      color: #f66442;
+      color: #484848;
       line-height: 20px;
+    }
+    .save_tips_active {
+      color: #f66442;
     }
     .switch_out {
     }
