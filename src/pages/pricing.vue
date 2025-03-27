@@ -41,6 +41,8 @@ const userChangeFlag = ref(() => store.user);
 const isVip = computed(() => store.isVip);
 const savetagnumber = ref('');
 const tableSwitchOpen = ref(false);
+// 2 Free 3 Basic 4 Plus 5 Pro
+const mobileShowWhich = ref(2);
 
 const onlycorrectTimesid = ref(0);
 const onlycorrectTimesprice = ref(0);
@@ -201,9 +203,32 @@ const getsavenum = async () => {
   savetagnumber.value = data[0].data;
 };
 
+// 检查窗口宽度的函数
+const checkWindowWidth = () => {
+  const elements = ['shu3', 'shu4', 'shu5'];
+  elements.forEach((className) => {
+    const els = document.getElementsByClassName(className);
+    for (let i = 0; i < els.length; i++) {
+      const el = els[i] as HTMLElement;
+      if (window.innerWidth <= 750) {
+        el.style.display = 'none';
+      } else {
+        el.style.display = 'flex';
+      }
+    }
+  });
+};
+
 onMounted(async () => {
   getData();
   getsavenum();
+  checkWindowWidth();
+  window.addEventListener('resize', checkWindowWidth);
+  // 监听窗口宽度 小于等于 750  将shu3 shu4 shu5 display:no
+  // 监听窗口宽度 大于 750  将shu3 shu4 shu5 display:flex
+});
+onUnmounted(() => {
+  window.removeEventListener('resize', checkWindowWidth);
 });
 
 watch(
@@ -234,6 +259,23 @@ const handleCloseCoursrBuyed = () => {
 
 const openOrCloseOneQuestion = (item: any) => {
   item.open = !item.open;
+};
+const changeMobileShowWhich = (which: number) => {
+  mobileShowWhich.value = which;
+  // 隐藏所有元素
+  const allElements = ['shu2', 'shu3', 'shu4', 'shu5'];
+  allElements.forEach((className) => {
+    const elements = document.getElementsByClassName(className);
+    for (let i = 0; i < elements.length; i++) {
+      (elements[i] as HTMLElement).style.display = 'none';
+    }
+  });
+
+  // 只显示选中的元素
+  const selectedElements = document.getElementsByClassName(`shu${which}`);
+  for (let i = 0; i < selectedElements.length; i++) {
+    (selectedElements[i] as HTMLElement).style.display = 'block';
+  }
 };
 
 const contaceUsList = ref([
@@ -374,50 +416,83 @@ const buyCorrectNum = () => {
     <div class="Feature_wrapper">
       <div class="Feature_in">
         <div class="Feature_title">
-          <h2>Feature Introduction</h2>
+          <h2>{{ $t('pricing.pagefont.Feature') }}</h2>
         </div>
+
+        <div class="Feature_content_mobile">
+          <div class="change_wrapper">
+            <div
+              :class="mobileShowWhich === 2 ? 'one_type one_type_active' : 'one_type'"
+              @click="changeMobileShowWhich(2)"
+            >
+              Free
+            </div>
+            <div
+              :class="mobileShowWhich === 3 ? 'one_type one_type_active' : 'one_type'"
+              @click="changeMobileShowWhich(3)"
+            >
+              Basic
+            </div>
+            <div
+              :class="mobileShowWhich === 4 ? 'one_type one_type_active' : 'one_type'"
+              @click="changeMobileShowWhich(4)"
+            >
+              Plus
+            </div>
+            <div
+              :class="mobileShowWhich === 5 ? 'one_type one_type_active' : 'one_type'"
+              @click="changeMobileShowWhich(5)"
+            >
+              Pro
+            </div>
+          </div>
+          <!-- <div class="switch_out">
+            <div class="font">Save with 3 months</div>
+            <div><el-switch v-model="tableSwitchOpen" /></div>
+          </div> -->
+        </div>
+        <!-- pc展示 -->
         <div class="Feature_content">
           <div class="one_feature">
-            <div class="one_feature_item havepadding">
-              <div class="title">Premium</div>
+            <div class="one_feature_item havepadding shu1">
+              <div class="title">{{ $t('pricing.pagefont.pre') }}</div>
               <div class="switch_out">
                 <div class="font">Save with 3 months</div>
                 <div><el-switch v-model="tableSwitchOpen" /></div>
               </div>
             </div>
-            <div class="one_feature_item havepadding">
+            <div class="one_feature_item havepadding shu2">
               <div class="title">Free</div>
               <div class="price_out">0</div>
               <div class="buy_btn_new">Try for free</div>
             </div>
-            <div class="one_feature_item havepadding">
+            <div class="one_feature_item havepadding shu3">
               <div class="title">Basic</div>
               <div v-if="!tableSwitchOpen" class="price_out">
                 <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[0].price) }}</span>
                 /month
               </div>
               <div v-else class="price_out">
-                $ <span v-if="vipsData?.packagesArr"> {{ formatCash(vipsData.packagesArr[0].price90) }}</span>
+                $<span v-if="vipsData?.packagesArr"> {{ formatCash(vipsData.packagesArr[0].price90) }}</span>
                 /3 month
               </div>
               <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[0])">Buy Now</div>
               <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new"> Buy Now </NuxtLink>
             </div>
-            <div class="one_feature_item havepadding">
+            <div class="one_feature_item havepadding shu4">
               <div class="title">Plus</div>
               <div v-if="!tableSwitchOpen" class="price_out">
                 <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[1].price) }}</span>
                 /month
               </div>
               <div v-else class="price_out">
-                <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[1].price90) }}</span>
-
+                <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[1].price90) }}</span>
                 /3 month
               </div>
               <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[1])">Buy Now</div>
               <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new"> Buy Now </NuxtLink>
             </div>
-            <div class="one_feature_item havepadding one_feature_item_last">
+            <div class="one_feature_item havepadding one_feature_item_last shu5">
               <div class="title">Pro</div>
               <div v-if="!tableSwitchOpen" class="price_out">
                 <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[2].price) }}</span>
@@ -425,7 +500,6 @@ const buyCorrectNum = () => {
               </div>
               <div v-else class="price_out">
                 <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[2].price90) }}</span>
-
                 /3 month
               </div>
               <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[2])">Buy Now</div>
@@ -434,7 +508,7 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内的title**************************** -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="img_font">
                 <div class="img_icon">
                   <img src="/img/pricing/table1_mock_icon.svg" />
@@ -442,17 +516,17 @@ const buyCorrectNum = () => {
                 <div class="font">Mock Exam</div>
               </div>
             </div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item one_feature_item_last"></div>
+            <div class="one_feature_item shu2"></div>
+            <div class="one_feature_item shu3"></div>
+            <div class="one_feature_item shu4"></div>
+            <div class="one_feature_item one_feature_item_last shu5"></div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">Full-Length mock exams</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_heng_icon.svg" />
@@ -460,19 +534,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_heng_icon.svg" /></div>
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums">3</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums">10</div>
@@ -481,7 +555,7 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内的title***************************** -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="img_font">
                 <div class="img_icon">
                   <img src="/img/pricing/table_2_correction_icon.svg" />
@@ -489,17 +563,17 @@ const buyCorrectNum = () => {
                 <div class="font">AI Correction</div>
               </div>
             </div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item one_feature_item_last"></div>
+            <div class="one_feature_item shu2"></div>
+            <div class="one_feature_item shu3"></div>
+            <div class="one_feature_item shu4"></div>
+            <div class="one_feature_item one_feature_item_last shu5"></div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">AI-powered Correction Service</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_heng_icon.svg" />
@@ -507,19 +581,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums">10</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums">60</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums">Unlimited</div>
@@ -528,10 +602,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">DET Speaking AI Correction</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_heng_icon.svg" />
@@ -539,19 +613,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums"></div>
@@ -560,10 +634,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">DET Writing AI Correction</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_heng_icon.svg" />
@@ -571,19 +645,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums"></div>
@@ -592,7 +666,7 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内的title***************************** -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="img_font">
                 <div class="img_icon">
                   <img src="/img/pricing/table3_practice_icon.svg" />
@@ -600,17 +674,17 @@ const buyCorrectNum = () => {
                 <div class="font">Practice</div>
               </div>
             </div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item one_feature_item_last"></div>
+            <div class="one_feature_item shu2"></div>
+            <div class="one_feature_item shu3"></div>
+            <div class="one_feature_item shu4"></div>
+            <div class="one_feature_item one_feature_item_last shu5"></div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">Practice Questions</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -618,19 +692,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums">300</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums">18000+</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums">18000+</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums">18000+</div>
@@ -639,10 +713,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">All types of questions</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -650,19 +724,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums"></div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <div class="have_nums"></div>
@@ -671,10 +745,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">AI-Powered Speaking Evaluations (Read Aloud)</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -682,19 +756,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums">Limited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
@@ -703,10 +777,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">Browse High-scoring Sample Answers</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -714,19 +788,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums">Limited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
@@ -735,10 +809,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">In-depth Question Analysis</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -746,19 +820,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums">Limited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
@@ -767,10 +841,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">High-Frequency Exam Vocabulary</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -778,19 +852,19 @@ const buyCorrectNum = () => {
                 <!-- <div class="have_nums">Limited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
@@ -799,10 +873,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">Smart Plan</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -810,19 +884,19 @@ const buyCorrectNum = () => {
                 <!-- <div class="have_nums">Limited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
@@ -831,10 +905,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">Get Instant Feedback</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -842,19 +916,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums">Limited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
@@ -863,7 +937,7 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内的title***************************** -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="img_font">
                 <div class="img_icon">
                   <img src="/img/pricing/table4_askai_icon.svg" />
@@ -871,17 +945,17 @@ const buyCorrectNum = () => {
                 <div class="font">Ask AI</div>
               </div>
             </div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item one_feature_item_last"></div>
+            <div class="one_feature_item shu2"></div>
+            <div class="one_feature_item shu3"></div>
+            <div class="one_feature_item shu4"></div>
+            <div class="one_feature_item one_feature_item_last shu5"></div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">Standard</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -889,19 +963,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums">Limited-50 Daily</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
@@ -910,10 +984,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">Deepseek R1</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -921,19 +995,19 @@ const buyCorrectNum = () => {
                 <div class="have_nums">Limited-50 Daily</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
@@ -942,10 +1016,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">ChatGPT 4o</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_heng_icon.svg" />
@@ -953,19 +1027,19 @@ const buyCorrectNum = () => {
                 <!-- <div class="have_nums">Limited-50 Daily</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">100/Month</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">300/Month</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
@@ -974,10 +1048,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">ASK AI Tutor</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_heng_icon.svg" />
@@ -985,19 +1059,19 @@ const buyCorrectNum = () => {
                 <!-- <div class="have_nums">Limited-50 Daily</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Unlimited</div>
@@ -1006,7 +1080,7 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内的title***************************** -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="img_font">
                 <div class="img_icon">
                   <img src="/img/pricing/table5_guide_icon.svg" />
@@ -1014,17 +1088,17 @@ const buyCorrectNum = () => {
                 <div class="font">DET Guide</div>
               </div>
             </div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item one_feature_item_last"></div>
+            <div class="one_feature_item shu2"></div>
+            <div class="one_feature_item shu3"></div>
+            <div class="one_feature_item shu4"></div>
+            <div class="one_feature_item one_feature_item_last shu5"></div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">DET Speaking Exam Guide</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_heng_icon.svg" />
@@ -1032,19 +1106,19 @@ const buyCorrectNum = () => {
                 <!-- <div class="have_nums">Limited-50 Daily</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_heng_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Free Gift</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Free Gift</div>
@@ -1053,10 +1127,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">DET Writing Exam Guide</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_heng_icon.svg" />
@@ -1064,19 +1138,19 @@ const buyCorrectNum = () => {
                 <!-- <div class="have_nums">Limited-50 Daily</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_heng_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Free Gift</div>
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
                 <div class="have_nums">Free Gift</div>
@@ -1085,7 +1159,7 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内的title***************************** -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="img_font">
                 <div class="img_icon">
                   <img src="/img/pricing/table6_course_icon.svg" />
@@ -1093,17 +1167,17 @@ const buyCorrectNum = () => {
                 <div class="font">DET Course</div>
               </div>
             </div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item one_feature_item_last"></div>
+            <div class="one_feature_item shu2"></div>
+            <div class="one_feature_item shu3"></div>
+            <div class="one_feature_item shu4"></div>
+            <div class="one_feature_item one_feature_item_last shu5"></div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">Courses</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -1111,19 +1185,19 @@ const buyCorrectNum = () => {
                 <!-- <div class="have_nums">Limited-50 Daily</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
@@ -1132,10 +1206,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">Learning Materials</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
@@ -1143,19 +1217,19 @@ const buyCorrectNum = () => {
                 <!-- <div class="have_nums">Limited-50 Daily</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
@@ -1164,7 +1238,7 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内的title***************************** -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="img_font">
                 <div class="img_icon">
                   <img src="/img/pricing/table7_others_icon.svg" />
@@ -1172,17 +1246,17 @@ const buyCorrectNum = () => {
                 <div class="font">Others</div>
               </div>
             </div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item"></div>
-            <div class="one_feature_item one_feature_item_last"></div>
+            <div class="one_feature_item shu2"></div>
+            <div class="one_feature_item shu3"></div>
+            <div class="one_feature_item shu4"></div>
+            <div class="one_feature_item one_feature_item_last shu5"></div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">New Features</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_heng_icon.svg" />
@@ -1190,19 +1264,19 @@ const buyCorrectNum = () => {
                 <!-- <div class="have_nums">Limited-50 Daily</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
@@ -1211,10 +1285,10 @@ const buyCorrectNum = () => {
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature no_border_bottom">
-            <div class="one_feature_item padding1">
+            <div class="one_feature_item padding1 shu1">
               <div class="regular_font">Priority Suppor</div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <div class="icon">
                   <img src="/img/pricing/black_heng_icon.svg" />
@@ -1222,19 +1296,19 @@ const buyCorrectNum = () => {
                 <!-- <div class="have_nums">Limited-50 Daily</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show">
+            <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last">
+            <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
@@ -1242,6 +1316,7 @@ const buyCorrectNum = () => {
             </div>
           </div>
         </div>
+        <!-- 窄屏幕展示 -->
       </div>
     </div>
     <div class="part2_wrapper">
@@ -2056,13 +2131,62 @@ const buyCorrectNum = () => {
         font-size: 40px;
         color: #201515;
         text-align: center;
+        @media (max-width: 750px) {
+          font-size: 24px;
+        }
+      }
+    }
+    .Feature_content_mobile {
+      display: none;
+      margin-top: 12px;
+      @media (max-width: 750px) {
+        display: block;
+      }
+      .change_wrapper {
+        padding: 4px;
+        background: #ffffff;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 8px;
+        .one_type {
+          padding: 6px 12px;
+          font-weight: 600;
+          font-size: 16px;
+          color: #f66442;
+          border-radius: 24px;
+        }
+        .one_type_active {
+          background: #feefec;
+        }
+      }
+      .switch_out {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 8px;
+        .font {
+          font-weight: 400;
+          font-size: 14px;
+          color: #f66442;
+        }
+      }
+      .mobileShowWhich_detail {
+        border: 1px red solid;
+        margin-top: 12px;
       }
     }
     .Feature_content {
       .one_feature {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        @media (max-width: 750px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
         border-bottom: 1px solid #e9e9e9;
+
         .one_feature_item {
           .title {
             font-weight: 600;
@@ -2145,8 +2269,19 @@ const buyCorrectNum = () => {
           }
         }
       }
+      .shu3 {
+        // border: 1px red solid;
+      }
+      .shu4 {
+        // border: 1px blue solid;
+      }
+      .shu5 {
+        // border: 1px yellow solid;
+      }
+
       .havepadding {
         padding: 32px 24px;
+        flex-direction: column;
       }
       .padding1 {
         margin-top: 24px;
