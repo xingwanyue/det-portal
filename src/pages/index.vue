@@ -6,7 +6,12 @@ import vSlogen from '../components/slogen.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
 import { platformData, portalData } from '@/api';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
+const router = useRouter();
+
+const route = useRoute();
+
+const url = route.query.url ? decodeURIComponent(route.query.url as string) : urlGet('/AskAI');
 
 useSeoMeta({
   title: t('index.seometa.title'),
@@ -35,7 +40,6 @@ useHead({
   ],
 });
 
-const route = useRoute();
 const state = reactive({
   // 1 chat 2 det tutor
   zhuti: '1',
@@ -66,6 +70,14 @@ const modeList = computed(() => {
 const sendMsg = () => {
   console.log('sendMsg');
   console.log(state.userQuestion);
+  console.log(url);
+  if (url.startsWith('http')) {
+    // window.location.href = `${url}?talkid=123`;
+    window.location.href = `http://192.168.1.211:8080/#/AskAI?id=123`;
+    return;
+  }
+
+  router.push(`${url}?talkid=123`);
 };
 
 const token = await getToken();
@@ -222,51 +234,43 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             </div>
           </div>
           <div class="we_also_have">
-            <div class="we_also_have_title">We also have</div>
+            <div class="we_also_have_title">{{ $t('index.wealsohave') }}</div>
             <div class="we_also_have_list">
-              <NuxtLink :to="localePath('/practice')" :title="$t('header.path_practice_title')" class="one_card card1">
+              <NuxtLink :href="urlGet('/questions')" :title="$t('index.have1_title')" class="one_card card1">
                 <div class="icon">
-                  <img src="/img/home/product_icon1.svg" :alt="$t('header.prod1.alt')" />
+                  <img src="/img/home/product_icon1.svg" :alt="$t('index.have1_title')" />
                 </div>
                 <div class="right">
-                  <div class="title">DET Question Bank</div>
-                  <div class="font">The Largest Question Bank 18,000+ Practice Questions</div>
+                  <div class="title">{{ $t('index.have1_title') }}</div>
+                  <div class="font">{{ $t('index.have1_desc') }}</div>
                 </div>
               </NuxtLink>
-              <NuxtLink :to="localePath('/mock-exam')" :title="$t('header.path_mock_title')" class="one_card card3">
+              <NuxtLink :href="urlGet('/exam')" :title="$t('index.have2_title')" class="one_card card3">
                 <div class="icon">
-                  <img src="/img/home/product_icon3.svg" :alt="$t('header.prod4.alt')" />
+                  <img src="/img/home/product_icon3.svg" :alt="$t('index.have2_title')" />
                 </div>
                 <div class="right">
-                  <div class="title">DET Mock</div>
-                  <div class="font">Close to Real DET Exam 40000+ mock exam takers</div>
+                  <div class="title">{{ $t('index.have2_title') }}</div>
+                  <div class="font">{{ $t('index.have2_desc') }}</div>
                 </div>
               </NuxtLink>
-              <NuxtLink
-                :to="localePath('/writing-ai-correction')"
-                :title="$t('header.path_correction_title')"
-                class="one_card card2"
-              >
+              <NuxtLink :href="urlGet('/correct')" :title="$t('index.have3_title')" class="one_card card2">
                 <div class="icon">
-                  <img src="/img/home/product_icon2.svg" :alt="$t('header.prodwriting.alt')" />
+                  <img src="/img/home/product_icon2.svg" :alt="$t('index.have3_title')" />
                 </div>
                 <div class="right">
-                  <div class="title">AI Correction</div>
-                  <div class="font">Accurate Assessment Scores 300000+ reports</div>
+                  <div class="title">{{ $t('index.have3_title') }}</div>
+                  <div class="font">{{ $t('index.have3_desc') }}</div>
                 </div>
               </NuxtLink>
 
-              <NuxtLink
-                :to="localePath('/speaking-ai-correction')"
-                :title="$t('header.path_correction_title')"
-                class="one_card card5"
-              >
+              <NuxtLink :to="localePath('/courses')" :title="$t('index.have4_title')" class="one_card card5">
                 <div class="icon">
-                  <img src="/img/home/head_speak.svg" :alt="$t('header.prodspeaking.alt')" />
+                  <img src="/img/home/head_speak.svg" :alt="$t('index.have4_title')" />
                 </div>
                 <div class="right">
-                  <div class="title">Free DET Courses</div>
-                  <div class="font">All the courses is free Learn from ESL Experts</div>
+                  <div class="title">{{ $t('index.have4_title') }}</div>
+                  <div class="font">{{ $t('index.have4_desc') }}</div>
                 </div>
               </NuxtLink>
             </div>
