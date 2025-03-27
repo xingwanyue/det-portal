@@ -5,7 +5,7 @@ const { t } = useI18n();
 import { getVipdataNoToken, getVipdataWithToken, getSetting } from '@/api';
 
 import vMembershippricepackages from '../components/membershipprice_packages.vue';
-import { domain, cdn } from '@/utils';
+import { domain, cdn, formatCash } from '@/utils';
 import { useStore } from '@/store';
 useSeoMeta({
   title: t('pricing.seometa.title'),
@@ -223,10 +223,6 @@ const CurrentMembershipId = ref(0);
 const changeCurrentMembershipId = (id: number) => {
   CurrentMembershipId.value = id;
 };
-const buyMembership = (item: any) => {
-  const { id } = item;
-  store.stripePay({ vipId: id });
-};
 
 const coursrBuyedVisible = ref(false);
 const openCoursrBuyed = () => {
@@ -303,6 +299,14 @@ const formateMinToHour = (min: number) => {
   }
   return `${hour}h ${minute}mins ago`;
 };
+const buyMembership = (item: any) => {
+  const { id, id90 } = item;
+  if (tableSwitchOpen.value) {
+    store.stripePay({ vipId: `${id90}` });
+  } else {
+    store.stripePay({ vipId: `${id}` });
+  }
+};
 
 const buyCorrectNum = () => {
   if (!isVip.value) {
@@ -324,10 +328,6 @@ const buyCorrectNum = () => {
     return;
   }
   store.stripePay({ vipId: onlycorrectTimesid.value });
-};
-const changeBuyCorrectTimes = () => {
-  const correctTimes = vipsData.value.correctSelectBuyTimes.find((item: any) => item.id === onlycorrectTimesid.value);
-  onlycorrectTimesprice.value = correctTimes.price;
 };
 </script>
 <template>
@@ -381,7 +381,7 @@ const changeBuyCorrectTimes = () => {
             <div class="one_feature_item havepadding">
               <div class="title">Premium</div>
               <div class="switch_out">
-                <div class="font">Save 25% with 3 months</div>
+                <div class="font">Save with 3 months</div>
                 <div><el-switch v-model="tableSwitchOpen" /></div>
               </div>
             </div>
@@ -392,18 +392,44 @@ const changeBuyCorrectTimes = () => {
             </div>
             <div class="one_feature_item havepadding">
               <div class="title">Basic</div>
-              <div class="price_out">$9.9/month</div>
-              <div class="buy_btn_new">Buy Now</div>
+              <div v-if="!tableSwitchOpen" class="price_out">
+                <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[0].price) }}</span>
+                /month
+              </div>
+              <div v-else class="price_out">
+                $ <span v-if="vipsData?.packagesArr"> {{ formatCash(vipsData.packagesArr[0].price90) }}</span>
+                /3 month
+              </div>
+              <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[0])">Buy Now</div>
+              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new"> Buy Now </NuxtLink>
             </div>
             <div class="one_feature_item havepadding">
               <div class="title">Plus</div>
-              <div class="price_out">$9.9/month</div>
-              <div class="buy_btn_new">Buy Now</div>
+              <div v-if="!tableSwitchOpen" class="price_out">
+                <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[1].price) }}</span>
+                /month
+              </div>
+              <div v-else class="price_out">
+                <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[1].price90) }}</span>
+
+                /3 month
+              </div>
+              <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[1])">Buy Now</div>
+              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new"> Buy Now </NuxtLink>
             </div>
             <div class="one_feature_item havepadding one_feature_item_last">
               <div class="title">Pro</div>
-              <div class="price_out">$9.9/month</div>
-              <div class="buy_btn_new">Buy Now</div>
+              <div v-if="!tableSwitchOpen" class="price_out">
+                <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[2].price) }}</span>
+                /month
+              </div>
+              <div v-else class="price_out">
+                <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[2].price90) }}</span>
+
+                /3 month
+              </div>
+              <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[2])">Buy Now</div>
+              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new"> Buy Now </NuxtLink>
             </div>
           </div>
           <!-- 表内的title**************************** -->
@@ -2059,6 +2085,7 @@ const changeBuyCorrectTimes = () => {
             width: fit-content;
             cursor: pointer;
             margin-top: 16px;
+            display: block;
           }
           .img_font {
             display: flex;
