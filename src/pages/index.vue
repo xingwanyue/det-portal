@@ -5,7 +5,7 @@ const { t, locale } = useI18n();
 import vSlogen from '../components/slogen.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
-import { platformData, portalData } from '@/api';
+import { platformData, portalData, completion } from '@/api';
 import { useRoute, useRouter } from 'vue-router';
 const router = useRouter();
 
@@ -67,17 +67,30 @@ const modeList = computed(() => {
     },
   ];
 });
-const sendMsg = () => {
-  console.log('sendMsg');
-  console.log(state.userQuestion);
-  console.log(url);
+const sendMsg = async () => {
+  const args = {
+    content: state.userQuestion,
+    type: state.zhuti === '1' ? 'chat' : 'detTutor',
+    model: '',
+  };
+  if (state.modeSelectCode === '1') {
+    args.model = 'standard';
+  } else if (state.modeSelectCode === '2') {
+    args.model = 'deepseekR1';
+  } else if (state.modeSelectCode === '3') {
+    args.model = 'chatGpt4o';
+  }
+  const {
+    data: { id },
+  } = await completion({ ...args });
+
   if (url.startsWith('http')) {
-    // window.location.href = `${url}?talkid=123`;
-    window.location.href = `http://192.168.1.211:8080/#/AskAI?id=123`;
+    window.location.href = `${url}?talkid=${id}`;
+    // window.location.href = `http://192.168.1.211:8080/#/AskAI?id=${id}`;
     return;
   }
 
-  router.push(`${url}?talkid=123`);
+  router.push(`${url}?talkid=${id}`);
 };
 
 const token = await getToken();

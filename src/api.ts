@@ -65,6 +65,13 @@ export const register = (args: any) =>
     method: 'post',
     body: JSON.stringify(args),
   });
+// /tutor/completion
+
+export const completion = (args: any) =>
+  fetchmy(`${api}/common/tutor/completion`, {
+    method: 'post',
+    body: JSON.stringify(args),
+  });
 
 export const portalData = [
   [
