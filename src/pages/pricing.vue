@@ -274,7 +274,7 @@ const changeMobileShowWhich = (which: number) => {
   // 只显示选中的元素
   const selectedElements = document.getElementsByClassName(`shu${which}`);
   for (let i = 0; i < selectedElements.length; i++) {
-    (selectedElements[i] as HTMLElement).style.display = 'block';
+    (selectedElements[i] as HTMLElement).style.display = 'flex';
   }
 };
 
