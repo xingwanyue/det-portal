@@ -425,25 +425,25 @@ const buyCorrectNum = () => {
               :class="mobileShowWhich === 2 ? 'one_type one_type_active' : 'one_type'"
               @click="changeMobileShowWhich(2)"
             >
-              Free
+              {{ $t('pricing.pagefont.four_vips_name.name1') }}
             </div>
             <div
               :class="mobileShowWhich === 3 ? 'one_type one_type_active' : 'one_type'"
               @click="changeMobileShowWhich(3)"
             >
-              Basic
+              {{ $t('pricing.pagefont.four_vips_name.name2') }}
             </div>
             <div
               :class="mobileShowWhich === 4 ? 'one_type one_type_active' : 'one_type'"
               @click="changeMobileShowWhich(4)"
             >
-              Plus
+              {{ $t('pricing.pagefont.four_vips_name.name3') }}
             </div>
             <div
               :class="mobileShowWhich === 5 ? 'one_type one_type_active' : 'one_type'"
               @click="changeMobileShowWhich(5)"
             >
-              Pro
+              {{ $t('pricing.pagefont.four_vips_name.name4') }}
             </div>
           </div>
           <!-- <div class="switch_out">
@@ -462,7 +462,7 @@ const buyCorrectNum = () => {
               </div>
             </div>
             <div class="one_feature_item havepadding shu2">
-              <div class="title">Free</div>
+              <div class="title">{{ $t('pricing.pagefont.four_vips_name.name1') }}</div>
               <div class="price_out">0</div>
               <div class="buy_btn_new">Try for free</div>
             </div>
