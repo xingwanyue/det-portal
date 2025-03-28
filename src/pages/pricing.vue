@@ -451,7 +451,7 @@ const buyCorrectNum = () => {
             <div><el-switch v-model="tableSwitchOpen" /></div>
           </div> -->
         </div>
-        <!-- pc展示 -->
+        <!-- pc展示1 -->
         <div class="Feature_content">
           <div class="one_feature">
             <div class="one_feature_item havepadding shu1">
