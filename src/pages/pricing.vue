@@ -5,7 +5,7 @@ const { t } = useI18n();
 import { getVipdataNoToken, getVipdataWithToken, getSetting } from '@/api';
 
 import vMembershippricepackages from '../components/membershipprice_packages.vue';
-import { domain, cdn, formatCash } from '@/utils';
+import { domain, cdn, formatCash, urlGet } from '@/utils';
 import { useStore } from '@/store';
 useSeoMeta({
   title: t('pricing.seometa.title'),
@@ -457,53 +457,67 @@ const buyCorrectNum = () => {
             <div class="one_feature_item havepadding shu1">
               <div class="title">{{ $t('pricing.pagefont.pre') }}</div>
               <div class="switch_out">
-                <div class="font">Save with 3 months</div>
+                <div class="font">{{ $t('pricing.pagefont.sw3m') }}</div>
                 <div><el-switch v-model="tableSwitchOpen" /></div>
               </div>
             </div>
             <div class="one_feature_item havepadding shu2">
               <div class="title">{{ $t('pricing.pagefont.four_vips_name.name1') }}</div>
               <div class="price_out">0</div>
-              <div class="buy_btn_new">Try for free</div>
+
+              <NuxtLink class="buy_btn_new" :href="urlGet(`/home`)"> Try for free </NuxtLink>
             </div>
             <div class="one_feature_item havepadding shu3">
-              <div class="title">Basic</div>
+              <div class="title">{{ $t('pricing.pagefont.four_vips_name.name2') }}</div>
               <div v-if="!tableSwitchOpen" class="price_out">
                 <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[0].price) }}</span>
-                /month
+                /{{ $t('pricing.pagefont.month1') }}
               </div>
               <div v-else class="price_out">
                 $<span v-if="vipsData?.packagesArr"> {{ formatCash(vipsData.packagesArr[0].price90) }}</span>
-                /3 month
+                /
+                {{ $t('pricing.pagefont.3month') }}
               </div>
-              <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[0])">Buy Now</div>
-              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new"> Buy Now </NuxtLink>
+              <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[0])">
+                {{ $t('pricing.pagefont.Buy_Now') }}
+              </div>
+              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new">
+                {{ $t('pricing.pagefont.Buy_Now') }}
+              </NuxtLink>
             </div>
             <div class="one_feature_item havepadding shu4">
-              <div class="title">Plus</div>
+              <div class="title">{{ $t('pricing.pagefont.four_vips_name.name3') }}</div>
               <div v-if="!tableSwitchOpen" class="price_out">
                 <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[1].price) }}</span>
-                /month
+                /{{ $t('pricing.pagefont.month1') }}
               </div>
               <div v-else class="price_out">
                 <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[1].price90) }}</span>
-                /3 month
+                /{{ $t('pricing.pagefont.3month') }}
               </div>
-              <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[1])">Buy Now</div>
-              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new"> Buy Now </NuxtLink>
+              <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[1])">
+                {{ $t('pricing.pagefont.Buy_Now') }}
+              </div>
+              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new">
+                {{ $t('pricing.pagefont.Buy_Now') }}
+              </NuxtLink>
             </div>
             <div class="one_feature_item havepadding one_feature_item_last shu5">
-              <div class="title">Pro</div>
+              <div class="title">{{ $t('pricing.pagefont.four_vips_name.name4') }}</div>
               <div v-if="!tableSwitchOpen" class="price_out">
                 <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[2].price) }}</span>
-                /month
+                /{{ $t('pricing.pagefont.month1') }}
               </div>
               <div v-else class="price_out">
                 <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[2].price90) }}</span>
-                /3 month
+                /{{ $t('pricing.pagefont.3month') }}
               </div>
-              <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[2])">Buy Now</div>
-              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new"> Buy Now </NuxtLink>
+              <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[2])">
+                {{ $t('pricing.pagefont.Buy_Now') }}
+              </div>
+              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new">
+                {{ $t('pricing.pagefont.Buy_Now') }}
+              </NuxtLink>
             </div>
           </div>
           <!-- 表内的title**************************** -->
@@ -513,7 +527,7 @@ const buyCorrectNum = () => {
                 <div class="img_icon">
                   <img src="/img/pricing/table1_mock_icon.svg" />
                 </div>
-                <div class="font">Mock Exam</div>
+                <div class="font">{{ $t('pricing.pagefont.mockexam') }}</div>
               </div>
             </div>
             <div class="one_feature_item shu2"></div>
@@ -524,7 +538,7 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">Full-Length mock exams</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.full_len') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -560,7 +574,7 @@ const buyCorrectNum = () => {
                 <div class="img_icon">
                   <img src="/img/pricing/table_2_correction_icon.svg" />
                 </div>
-                <div class="font">AI Correction</div>
+                <div class="font">{{ $t('pricing.pagefont.ai_correct') }}</div>
               </div>
             </div>
             <div class="one_feature_item shu2"></div>
@@ -571,7 +585,7 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">AI-powered Correction Service</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.ai_p_c_s') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -596,14 +610,14 @@ const buyCorrectNum = () => {
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">DET Speaking AI Correction</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.det_s_ai_c') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -635,7 +649,7 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">DET Writing AI Correction</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.det_w_ai_c') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -671,7 +685,7 @@ const buyCorrectNum = () => {
                 <div class="img_icon">
                   <img src="/img/pricing/table3_practice_icon.svg" />
                 </div>
-                <div class="font">Practice</div>
+                <div class="font">{{ $t('pricing.pagefont.Practice') }}</div>
               </div>
             </div>
             <div class="one_feature_item shu2"></div>
@@ -682,7 +696,7 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">Practice Questions</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.pr_que') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -714,7 +728,7 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">All types of questions</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.a_t_o_q') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -746,135 +760,103 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">AI-Powered Speaking Evaluations (Read Aloud)</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.a_p_s_e_r_a') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
                 </div> -->
-                <div class="have_nums">Limited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Limited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">Browse High-scoring Sample Answers</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.b_h_s_s_a') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
                 </div> -->
-                <div class="have_nums">Limited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Limited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">In-depth Question Analysis</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.i_d_q_a') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
                 </div> -->
-                <div class="have_nums">Limited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Limited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">High-Frequency Exam Vocabulary</div>
-            </div>
-            <div class="one_feature_item center_show shu2">
-              <div class="have_or_no">
-                <div class="icon">
-                  <img src="/img/pricing/black_check_icon.svg" />
-                </div>
-                <!-- <div class="have_nums">Limited</div> -->
-              </div>
-            </div>
-            <div class="one_feature_item center_show shu3">
-              <div class="have_or_no">
-                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
-                <!-- <div class="have_nums">Unlimited</div> -->
-              </div>
-            </div>
-            <div class="one_feature_item center_show shu4">
-              <div class="have_or_no">
-                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
-                <!-- <div class="have_nums">Unlimited</div> -->
-              </div>
-            </div>
-            <div class="one_feature_item center_show one_feature_item_last shu5">
-              <div class="have_or_no">
-                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
-                <!-- <div class="have_nums">Unlimited</div> -->
-              </div>
-            </div>
-          </div>
-          <!-- 表内title下的一个内容 -->
-          <div class="one_feature">
-            <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">Smart Plan</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.h_f_e_v') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -906,32 +888,64 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">Get Instant Feedback</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.smart_p') }}</div>
+            </div>
+            <div class="one_feature_item center_show shu2">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_check_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show shu3">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show shu4">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last shu5">
+              <div class="have_or_no">
+                <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
+                <!-- <div class="have_nums">Unlimited</div> -->
+              </div>
+            </div>
+          </div>
+          <!-- 表内title下的一个内容 -->
+          <div class="one_feature">
+            <div class="one_feature_item padding1 shu1">
+              <div class="regular_font">{{ $t('pricing.pagefont.g_i_f') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
                 </div> -->
-                <div class="have_nums">Limited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Limited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
           </div>
@@ -942,7 +956,7 @@ const buyCorrectNum = () => {
                 <div class="img_icon">
                   <img src="/img/pricing/table4_askai_icon.svg" />
                 </div>
-                <div class="font">Ask AI</div>
+                <div class="font">{{ $t('pricing.pagefont.askai') }}</div>
               </div>
             </div>
             <div class="one_feature_item shu2"></div>
@@ -953,71 +967,71 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">Standard</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.Standard') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
                 </div> -->
-                <div class="have_nums">Limited-50 Daily</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.lim_x_daily', { times: 50 }) }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">Deepseek R1</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.deepseekr1') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
                 <!-- <div class="icon">
                   <img src="/img/pricing/black_check_icon.svg" />
                 </div> -->
-                <div class="have_nums">Limited-50 Daily</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.lim_x_daily', { times: 50 }) }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">ChatGPT 4o</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.chatgpt4o') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -1030,26 +1044,26 @@ const buyCorrectNum = () => {
             <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">100/Month</div>
+                <div class="have_nums">100/{{ $t('pricing.pagefont.Month') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">300/Month</div>
+                <div class="have_nums">300/{{ $t('pricing.pagefont.Month') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">ASK AI Tutor</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.ask_ai_tutor') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -1062,19 +1076,19 @@ const buyCorrectNum = () => {
             <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Unlimited</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
               </div>
             </div>
           </div>
@@ -1083,9 +1097,9 @@ const buyCorrectNum = () => {
             <div class="one_feature_item padding1 shu1">
               <div class="img_font">
                 <div class="img_icon">
-                  <img src="/img/pricing/table5_guide_icon.svg" />
+                  <img src="/img/pricing/table5_guide_icon.svg" :alt="$t('pricing.pagefont.DET_Guide')" />
                 </div>
-                <div class="font">DET Guide</div>
+                <div class="font">{{ $t('pricing.pagefont.DET_Guide') }}</div>
               </div>
             </div>
             <div class="one_feature_item shu2"></div>
@@ -1096,7 +1110,7 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">DET Speaking Exam Guide</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.DET_Speaking_Exam_Guide') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -1115,20 +1129,20 @@ const buyCorrectNum = () => {
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Free Gift</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Free_Gift') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Free Gift</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Free_Gift') }}</div>
               </div>
             </div>
           </div>
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">DET Writing Exam Guide</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.DET_Writing_Exam_Guide') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -1147,13 +1161,13 @@ const buyCorrectNum = () => {
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Free Gift</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Free_Gift') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">Free Gift</div>
+                <div class="have_nums">{{ $t('pricing.pagefont.Free_Gift') }}</div>
               </div>
             </div>
           </div>
@@ -1164,7 +1178,7 @@ const buyCorrectNum = () => {
                 <div class="img_icon">
                   <img src="/img/pricing/table6_course_icon.svg" />
                 </div>
-                <div class="font">DET Course</div>
+                <div class="font">{{ $t('pricing.pagefont.DET_Course') }}</div>
               </div>
             </div>
             <div class="one_feature_item shu2"></div>
@@ -1175,7 +1189,7 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">Courses</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.Courses') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -1207,7 +1221,7 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">Learning Materials</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.learn_ma') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -1243,7 +1257,7 @@ const buyCorrectNum = () => {
                 <div class="img_icon">
                   <img src="/img/pricing/table7_others_icon.svg" />
                 </div>
-                <div class="font">Others</div>
+                <div class="font">{{ $t('pricing.pagefont.Others') }}</div>
               </div>
             </div>
             <div class="one_feature_item shu2"></div>
@@ -1254,7 +1268,7 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">New Features</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.new_f') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -1286,7 +1300,7 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature no_border_bottom">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">Priority Suppor</div>
+              <div class="regular_font">{{ $t('pricing.pagefont.peri_su') }}</div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
