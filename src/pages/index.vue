@@ -2,6 +2,7 @@
 import { useI18n } from 'vue-i18n';
 import { reactive } from 'vue';
 const { t, locale } = useI18n();
+import { useStore } from '@/store';
 import vSlogen from '../components/slogen.vue';
 import { oauth2SignIn } from '@/utils/googleAuth';
 import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
@@ -10,6 +11,9 @@ import { useRoute, useRouter } from 'vue-router';
 const router = useRouter();
 
 const route = useRoute();
+const store = useStore();
+const user = computed(() => store.user);
+const isVip = computed(() => store.isVip);
 
 const url = route.query.url ? decodeURIComponent(route.query.url as string) : urlGet('/AskAI');
 
@@ -48,21 +52,28 @@ const state = reactive({
   modeSelectShow: false,
   online: false,
 });
+const haveCookie = ref(false);
 const modeList = computed(() => {
   return [
-    { name: 'Standard', desc: 'Powered by ChatGPT 4o-mini', imgSrc: '/img/home/standard_icon.svg', tag: '', code: '1' },
     {
-      name: 'DeepSeek R1',
-      desc: 'Top-level open source reasoningLLM. Support Deep Think',
+      name: t('index.mode.mode1name'),
+      desc: t('index.mode.mode1desc'),
+      imgSrc: '/img/home/standard_icon.svg',
+      tag: '',
+      code: '1',
+    },
+    {
+      name: t('index.mode.mode2name'),
+      desc: t('index.mode.mode2desc'),
       imgSrc: '/img/home/deepseek_r1_icon.svg',
       tag: '',
       code: '2',
     },
     {
-      name: 'ChatGPT 4o',
-      desc: 'High-intelligence model for complex tasks',
+      name: t('index.mode.mode3name'),
+      desc: t('index.mode.mode3desc'),
       imgSrc: '/img/home/chatgpt_4o_icon.svg',
-      tag: 'Premium',
+      tag: t('index.mode.mode3tag'),
       code: '3',
     },
   ];
@@ -85,8 +96,8 @@ const sendMsg = async () => {
   } = await completion({ ...args });
 
   if (url.startsWith('http')) {
-    window.location.href = `${url}?talkid=${id}`;
-    // window.location.href = `http://192.168.1.211:8080/#/AskAI?id=${id}`;
+    // window.location.href = `${url}?talkid=${id}`;
+    window.location.href = `http://192.168.1.211:8080/#/AskAI?id=${id}`;
     return;
   }
 
@@ -108,6 +119,10 @@ const userPingLunResponse = computed(() => {
 });
 const isMobile = ref(false);
 onMounted(async () => {
+  const token = await getToken();
+  if (token) {
+    haveCookie.value = true;
+  }
   // 如果是在浏览器环境下，执行movePingLun
   if (process.client) {
     // 监听窗口大小 改变isMobile
@@ -126,6 +141,19 @@ onMounted(async () => {
   }
 });
 const changeMode = (code: string) => {
+  if (code === '3') {
+    // mode3 需要判断是否是vip 不是vip 跳转到pricing页面
+    // 没有登陆 跳转到login页面
+    if (user.value.id || haveCookie.value) {
+      if (!isVip.value) {
+        router.push(localePath('/pricing'));
+        return;
+      }
+    } else {
+      router.push(localePath('/login'));
+      return;
+    }
+  }
   state.modeSelectCode = code;
   state.modeSelectShow = false;
 };
@@ -178,10 +206,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         <div class="chat_dom_out">
           <div class="two_switch_out">
             <div class="one_switch" :class="state.zhuti === '1' ? 'one_switch_active' : ''" @click="state.zhuti = '1'">
-              Chat
+              {{ $t('index.twoswitchname.chat') }}
             </div>
             <div class="one_switch" :class="state.zhuti === '2' ? 'one_switch_active' : ''" @click="state.zhuti = '2'">
-              DET Tutor
+              {{ $t('index.twoswitchname.dettutor') }}
             </div>
           </div>
           <div class="white_input_out">
@@ -217,7 +245,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                       <img :src="item.imgSrc" :alt="item.name" />
                     </div>
                     <div class="right">
-                      <div class="name">{{ item.name }}</div>
+                      <div class="name">
+                        {{ item.name }} <span v-if="item.tag" class="Premium_tag">{{ item.tag }}</span>
+                      </div>
                       <div class="desc">{{ item.desc }}</div>
                     </div>
                   </div>
@@ -233,7 +263,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                     alt="online_icon"
                   />
                 </div>
-                <div class="online_font">Online</div>
+                <div class="online_font">{{ $t('index.Online') }}</div>
               </div>
               <div
                 :class="state.userQuestion.length ? 'send_btn_gray send_btn_active' : 'send_btn_gray'"
@@ -242,7 +272,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 <div class="icon">
                   <img src="/img/home/fly_icon.svg" alt="send_icon" />
                 </div>
-                <div class="send_font">Send</div>
+                <div class="send_font">{{ $t('index.Send') }}</div>
               </div>
             </div>
           </div>
@@ -823,6 +853,14 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                       font-weight: 600;
                       font-size: 14px;
                       color: #201515;
+                      .Premium_tag {
+                        padding: 1px 8px;
+                        background: linear-gradient(270deg, #e7c39b 0%, #fbe2c1 100%);
+                        border-radius: 8px;
+                        font-weight: 500;
+                        font-size: 10px;
+                        color: #482b2a;
+                      }
                     }
                     .desc {
                       font-weight: 400;
