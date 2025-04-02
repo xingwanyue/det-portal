@@ -97,7 +97,7 @@ const sendMsg = async () => {
 
   if (url.startsWith('http')) {
     // window.location.href = `${url}?talkid=${id}`;
-    window.location.href = `http://192.168.1.211:8080/#/AskAI?id=${id}`;
+    window.location.href = urlGet(`/AskAI?id=${id}`);
     return;
   }
 
