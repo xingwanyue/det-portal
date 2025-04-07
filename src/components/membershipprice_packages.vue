@@ -212,7 +212,12 @@ const saveCaculate = (item: any) => {
               <div v-else class="icon">
                 <img src="/img/pricing/black_check_icon.svg" :alt="$t('pricing.pagefont.bci')" />
               </div>
-              <div class="font" v-html="itemqy"></div>
+              <div
+                v-if="(index === 1 || index === 11 || index === 12) && item.tag === 'Basic'"
+                class="font fontallgray"
+                v-html="itemqy"
+              ></div>
+              <div v-else class="font" v-html="itemqy"></div>
             </div>
           </div>
           <div class="bg_hack"></div>
@@ -369,6 +374,16 @@ const saveCaculate = (item: any) => {
           ::v-deep(.strongfont) {
             font-weight: 650;
             color: #f66442;
+          }
+          ::v-deep(.yellow) {
+            font-weight: 650;
+          }
+        }
+        .fontallgray {
+          color: #999999;
+          ::v-deep(.strongfont) {
+            font-weight: 650;
+            color: #999999;
           }
           ::v-deep(.yellow) {
             font-weight: 650;
@@ -716,6 +731,17 @@ const saveCaculate = (item: any) => {
       ::v-deep(.yellow) {
         color: #f66442;
         font-weight: 650;
+      }
+    }
+    .fontallgray {
+      color: #999999;
+      ::v-deep(.strongfont) {
+        font-weight: 650;
+        color: #999999;
+      }
+      ::v-deep(.yellow) {
+        font-weight: 650;
+        color: #999999;
       }
     }
   }
