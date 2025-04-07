@@ -4,7 +4,6 @@ import { reactive } from 'vue';
 const { t, locale } = useI18n();
 import { useStore } from '@/store';
 import vSlogen from '../components/slogen.vue';
-import { oauth2SignIn } from '@/utils/googleAuth';
 import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
 import { platformData, portalData, completion } from '@/api';
 import { useRoute, useRouter } from 'vue-router';
@@ -163,9 +162,7 @@ const changeMode = (code: string) => {
 
 // 将数字格式化 306281变为306k 3062811变为3061k
 
-const googleLogin = () => {
-  oauth2SignIn(urlGet('/home'));
-};
+
 const isLoad = ref(false);
 const onLoad = () => {
   isLoad.value = true;

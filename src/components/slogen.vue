@@ -1,13 +1,21 @@
 <script setup lang="ts">
 import { useStore } from '@/store';
-import { oauth2SignIn } from '@/utils/googleAuth';
-import { urlGet } from '@/utils';
+import { googlePopupLogin } from '@/utils/googleAuth';
+import { urlGet, saveToken } from '@/utils';
 
 const localePath = useLocalePath();
 const store = useStore();
 const user = computed(() => store.user);
 const googleLogin = () => {
-  oauth2SignIn(urlGet('/home'));
+  googlePopupLogin(async (res: any) => {
+    const { err, data: { token = '' } = {} } = res;
+    if (!err) {
+      await saveToken(token);
+      await store.getUserInfo();
+
+      window.location.href = urlGet('/home');
+    }
+  });
 };
 </script>
 
@@ -20,11 +28,7 @@ const googleLogin = () => {
           <img src="/img/home/google_icon.svg" :alt="$t('slogen.Start_free_with_Google')" />
           {{ $t('slogen.Start_free_with_Google') }}
         </div>
-        <NuxtLink
-          :to="localePath(`/login`)"
-          class="common_btn common_btn_hover_borderCu white"
-          rel="nofollow"
-        >
+        <NuxtLink :to="localePath(`/login`)" class="common_btn common_btn_hover_borderCu white" rel="nofollow">
           {{ $t('slogen.Start_free_with_email') }}
         </NuxtLink>
       </div>

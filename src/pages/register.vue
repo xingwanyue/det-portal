@@ -1,10 +1,12 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
-import { oauth2SignIn } from '@/utils/googleAuth';
-import { urlGet } from '@/utils';
+import { googlePopupLogin } from '@/utils/googleAuth';
+import { urlGet, saveToken } from '@/utils';
 const { t } = useI18n();
 import { useRouter } from 'vue-router';
 import { sesCodeSend } from '@/api';
+import { useStore } from '@/store';
+
 definePageMeta({
   layout: 'noheaderfooter',
 });
@@ -12,6 +14,7 @@ useHead({
   meta: [{ name: 'robots', content: 'noindex' }],
 });
 const router = useRouter();
+const store = useStore();
 
 const formData = ref({});
 const loading = ref(false);
@@ -50,7 +53,15 @@ const goLogin = () => {
 };
 
 const googleRegister = async () => {
-  return oauth2SignIn(urlGet('/home'));
+  googlePopupLogin(async (res) => {
+    const { err, data: { token = '' } = {} } = res;
+    if (!err) {
+      await saveToken(token);
+      await store.getUserInfo();
+
+      window.location.href = urlGet('/home');
+    }
+  });
 };
 </script>
 <template>

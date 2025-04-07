@@ -4,10 +4,11 @@ const { t } = useI18n();
 import { ref } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { register } from '@/api';
-import { oauth2SignIn } from '@/utils/googleAuth';
+import { googlePopupLogin } from '@/utils/googleAuth';
 
 import { sinupEvent } from '@/utils/gtag';
 import { getStorage, urlGet } from '@/utils';
+import { useStore } from '@/store';
 
 definePageMeta({
   layout: 'noheaderfooter',
@@ -17,6 +18,7 @@ useHead({
 });
 const router = useRouter();
 const route = useRoute();
+const store = useStore();
 
 const formData = ref({});
 const loading = ref(false);
@@ -77,7 +79,15 @@ const goLogin = () => {
 };
 
 const googleRegister = async () => {
-  return oauth2SignIn(urlGet('/home'));
+  googlePopupLogin(async (res) => {
+    const { err, data: { token = '' } = {} } = res;
+    if (!err) {
+      await saveToken(token);
+      await store.getUserInfo();
+
+      window.location.href = urlGet('/home');
+    }
+  });
 };
 </script>
 
