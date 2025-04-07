@@ -538,7 +538,20 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">{{ $t('pricing.pagefont.full_len') }}</div>
+              <div class="regular_font">
+                {{ $t('pricing.pagefont.full_len') }}
+
+                <el-tooltip
+                  class="box-item"
+                  effect="dark"
+                  :content="$t('pricing.pagefont.full_len_tips')"
+                  placement="top-start"
+                >
+                  <div class="t_icon">
+                    <img src="/img/pricing/tip.svg" />
+                  </div>
+                </el-tooltip>
+              </div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -617,7 +630,18 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">{{ $t('pricing.pagefont.det_s_ai_c') }}</div>
+              <div class="regular_font">
+                {{ $t('pricing.pagefont.det_s_ai_c') }}
+
+                <el-tooltip
+                  class="box-item"
+                  effect="dark"
+                  :content="$t('pricing.pagefont.det_s_ai_c_tips')"
+                  placement="top-start"
+                >
+                  <div class="t_icon"><img src="/img/pricing/tip.svg" /></div>
+                </el-tooltip>
+              </div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -649,7 +673,17 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">{{ $t('pricing.pagefont.det_w_ai_c') }}</div>
+              <div class="regular_font">
+                {{ $t('pricing.pagefont.det_w_ai_c') }}
+                <el-tooltip
+                  class="box-item"
+                  effect="dark"
+                  :content="$t('pricing.pagefont.det_w_ai_c_tips')"
+                  placement="top-start"
+                >
+                  <div class="t_icon"><img src="/img/pricing/tip.svg" /></div>
+                </el-tooltip>
+              </div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -1221,7 +1255,18 @@ const buyCorrectNum = () => {
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">{{ $t('pricing.pagefont.learn_ma') }}</div>
+              <div class="regular_font">
+                {{ $t('pricing.pagefont.learn_ma') }}
+
+                <el-tooltip
+                  class="box-item"
+                  effect="dark"
+                  :content="$t('pricing.pagefont.learn_ma_tips')"
+                  placement="top-start"
+                >
+                  <div class="t_icon"><img src="/img/pricing/tip.svg" /></div>
+                </el-tooltip>
+              </div>
             </div>
             <div class="one_feature_item center_show shu2">
               <div class="have_or_no">
@@ -2255,6 +2300,20 @@ const buyCorrectNum = () => {
             font-weight: 400;
             font-size: 16px;
             color: #484848;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+          }
+          .box-item {
+          }
+          .t_icon {
+            width: 16px;
+            height: 16px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
           .have_or_no {
             display: flex;
@@ -2299,7 +2358,7 @@ const buyCorrectNum = () => {
         // border: 1px yellow solid;
       }
       .lt_rt_radio {
-        border-radius:  16px 16px 0 0;
+        border-radius: 16px 16px 0 0;
       }
       .lb_rb_radio {
         border-radius: 0 0 16px 16px;
