@@ -393,8 +393,8 @@ onMounted(() => {
           </div>
 
           <div ref="changeRightRef" class="change_right">
-            <div v-for="(item, index) in four_change_right_data" :key="index">
-              <h2 class="change_right_title" :id="`section-${index}`">{{ item.title }}</h2>
+            <div v-for="(item, index) in four_change_right_data" :key="index" :id="`section-${index}`">
+              <h2 class="change_right_title">{{ item.title }}</h2>
               <div class="change_right_desc">{{ item.desc }}</div>
               <div class="change_right_desc">{{ item.desc2 }}</div>
 

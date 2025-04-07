@@ -67,27 +67,27 @@ const Learn = computed(() => {
     // },
     {
       id: '1',
-      url: 'https://prep.detpractice.com/category/det-reading/',
+      url: '/courses#section-0',
       name: t('footer.resourcesNew[0]'),
     },
     {
       id: '2',
-      url: 'https://prep.detpractice.com/category/det-writing/',
+      url: '/courses#section-3',
       name: t('footer.resourcesNew[1]'),
     },
     {
       id: '3',
-      url: 'https://prep.detpractice.com/category/det-speaking/',
+      url: '/courses#section-2',
       name: t('footer.resourcesNew[2]'),
     },
     {
       id: '4',
-      url: 'https://prep.detpractice.com/category/det-listening/',
+      url: '/courses#section-1',
       name: t('footer.resourcesNew[3]'),
     },
     {
       id: '5',
-      url: 'https://prep.detpractice.com/',
+      url: '/courses',
       name: t('footer.show_more'),
     },
   ];
@@ -216,7 +216,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
             <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink>
           </template>
           <template v-else>
-            <NuxtLink :to="`${itemin.url}`" :title="itemin.name" target="_blank"> {{ itemin.name }}</NuxtLink></template
+            <NuxtLink :to="localePath(`${itemin.url}`)" :title="itemin.name"> {{ itemin.name }}</NuxtLink></template
           >
         </div>
       </div>
