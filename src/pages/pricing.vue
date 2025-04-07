@@ -1721,7 +1721,7 @@ const buyCorrectNum = () => {
       }
 
       .Service_dom {
-        margin-top: 16px;
+        margin-top: 40px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
         grid-gap: 16px;
