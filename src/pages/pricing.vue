@@ -502,7 +502,7 @@ const buyCorrectNum = () => {
                 {{ $t('pricing.pagefont.Buy_Now') }}
               </NuxtLink>
             </div>
-            <div class="one_feature_item havepadding one_feature_item_last shu5">
+            <div class="one_feature_item havepadding one_feature_item_last shu5 lt_rt_radio">
               <div class="title">{{ $t('pricing.pagefont.four_vips_name.name4') }}</div>
               <div v-if="!tableSwitchOpen" class="price_out">
                 <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[2].price) }}</span>
@@ -1322,7 +1322,7 @@ const buyCorrectNum = () => {
                 <!-- <div class="have_nums">Unlimited</div> -->
               </div>
             </div>
-            <div class="one_feature_item center_show one_feature_item_last shu5">
+            <div class="one_feature_item center_show one_feature_item_last shu5 lb_rb_radio">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
                 <!-- <div class="have_nums">Unlimited</div> -->
@@ -2145,6 +2145,7 @@ const buyCorrectNum = () => {
         font-size: 40px;
         color: #201515;
         text-align: center;
+        margin-bottom: 56px;
         @media (max-width: 750px) {
           font-size: 24px;
         }
@@ -2296,6 +2297,11 @@ const buyCorrectNum = () => {
       }
       .shu5 {
         // border: 1px yellow solid;
+      }
+      .lt_rt_radio {
+      }
+      .lb_rb_radio {
+        border-radius: 0 0 16px 16px;
       }
 
       .havepadding {
