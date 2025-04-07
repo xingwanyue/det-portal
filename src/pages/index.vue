@@ -79,6 +79,9 @@ const modeList = computed(() => {
   ];
 });
 const sendMsg = async () => {
+  if (!state.userQuestion.length) {
+    return;
+  }
   const args = {
     content: state.userQuestion,
     type: state.zhuti === '1' ? 'chat' : 'detTutor',
@@ -214,7 +217,13 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="white_input_out">
             <div class="input_area_out">
-              <el-input class="el_input" v-model="state.userQuestion" type="textarea" placeholder="Ask Anything Here" />
+              <el-input
+                class="el_input"
+                v-model="state.userQuestion"
+                type="textarea"
+                placeholder="Ask Anything Here"
+                @keydown.enter.native.prevent="sendMsg"
+              />
             </div>
             <div class="white_input_bottom">
               <div class="mode_select_out">
