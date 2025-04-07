@@ -4,7 +4,7 @@ import { reactive } from 'vue';
 const { t, locale } = useI18n();
 import { useStore } from '@/store';
 import vSlogen from '../components/slogen.vue';
-import { staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
+import { urlGet, staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
 import { platformData, portalData, completion } from '@/api';
 import { useRoute, useRouter } from 'vue-router';
 const router = useRouter();
@@ -165,7 +165,6 @@ const changeMode = (code: string) => {
 };
 
 // 将数字格式化 306281变为306k 3062811变为3061k
-
 
 const isLoad = ref(false);
 const onLoad = () => {
@@ -669,6 +668,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           font-size: 16px;
           color: #201515;
           line-height: 22px;
+          outline: none;
         }
       }
     }
