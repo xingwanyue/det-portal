@@ -408,7 +408,7 @@ const buyCorrectNum = () => {
         <div class="bank_card">
           <div class="title">{{ $t('pricing.pagefont.Secure_Payment') }}</div>
           <div class="img_self">
-            <img src="/img/pricing/payment.png" :alt="$t('pricing.pagefont.Secure_Payment')" />
+            <img src="/img/pricing/payment.svg" :alt="$t('pricing.pagefont.Secure_Payment')" />
           </div>
         </div>
       </div>

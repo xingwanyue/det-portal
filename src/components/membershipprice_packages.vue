@@ -99,6 +99,11 @@ const saveCaculate = (item: any) => {
     ((Number(price) + Number(correctPrice) * 12) / (Number(originalPrice) + Number(correctOriginalPrice) * 12)) * 100
   );
 };
+const switchchange = (val: any) => {
+  props.membershipArr.forEach((item: any) => {
+    item.saveOpen = val;
+  });
+};
 </script>
 <template>
   <div class="new_mb_price_out">
@@ -152,7 +157,7 @@ const saveCaculate = (item: any) => {
                 {{ (Number(1 - item.price90 / item.originalPrice90) * 100).toFixed(0) }}% with 3 months
               </div>
               <div class="switch_out">
-                <el-switch type="primary" v-model="item.saveOpen" />
+                <el-switch type="primary" @change="switchchange" v-model="item.saveOpen" />
               </div>
             </div>
             <!-- <div class="bill">
