@@ -1,5 +1,7 @@
 import { fetchmy } from './request';
-import { api, saveStorage, getStorage, getCookie } from '@/utils';
+import { api, getStorage, getCookie } from '@/utils';
+import { useStore } from '@/store';
+import { useRouter } from 'vue-router';
 
 const YOUR_CLIENT_ID = '1044858520955-9ua24gpj8m98avtbp030t6dp624fi689.apps.googleusercontent.com';
 // secret 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
@@ -8,6 +10,7 @@ const YOUR_REDIRECT_URI = '/oauth';
 /*
  * Create form to request access token from Google's OAuth 2.0 server.
  */
+
 export function oauth2SignIn(url?: string) {
   // Google's OAuth 2.0 endpoint for requesting an access token
   const oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';
@@ -115,5 +118,34 @@ export const oauthLogin = async () => {
     });
   }
 };
-
+const loginByAccessToken = async (accessToken: string) => {
+  const res = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+    },
+  });
+  const data = await res.json();
+  const { email, picture, name } = data;
+  const args = { email, avatar: picture, nickname: name, google: true, type: 'pc' } as any;
+  if (getCookie('_fbc')) {
+    args.fbc = getCookie('_fbc');
+  }
+  if (getCookie('_fbp')) {
+    args.fbp = getCookie('_fbp');
+  }
+  return fetchmy(`${api}/common/login`, { method: 'post', body: JSON.stringify(args) });
+};
+export const googlePopupLogin = (onSuccess: any) => {
+  const client = window.google.accounts.oauth2.initTokenClient({
+    client_id: YOUR_CLIENT_ID,
+    scope: 'https://www.googleapis.com/auth/userinfo.profile email',
+    callback: async (res: any) => {
+      const data = await loginByAccessToken(res.access_token);
+      if (onSuccess) {
+        onSuccess(data);
+      }
+    },
+  });
+  client.requestAccessToken();
+};
 export default {};

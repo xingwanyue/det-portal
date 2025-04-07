@@ -60,7 +60,6 @@ const schema = schemas[currentPathWithoutLocale] || [];
 useHead({
   htmlAttrs: { lang: () => locale.value },
   script: [
-    { src: 'https://accounts.google.com/gsi/client', async: true },
     ...schema.map((s: any) => ({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(s),

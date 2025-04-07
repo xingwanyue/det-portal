@@ -5,7 +5,7 @@ import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 import { useStore } from '@/store';
-import { oauth2SignIn } from '@/utils/googleAuth';
+import { googlePopupLogin } from '@/utils/googleAuth';
 import { getToken, saveToken, getCookie, urlGet } from '@/utils';
 useHead({
   meta: [{ name: 'robots', content: 'noindex' }],
@@ -87,7 +87,18 @@ const submit = async () => {
 };
 
 const googleLogin = async () => {
-  return oauth2SignIn(url);
+  googlePopupLogin(async (res: any) => {
+    const { err, data: { token = '' } = {} } = res;
+    if (!err) {
+      await saveToken(token);
+      await store.getUserInfo();
+      if (url.startsWith('http')) {
+        window.location.href = url;
+        return;
+      }
+      router.push(url);
+    }
+  });
 };
 </script>
 

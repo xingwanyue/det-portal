@@ -56,6 +56,10 @@ export default defineNuxtConfig({
           async: true,
         },
         {
+          src: 'https://accounts.google.com/gsi/client',
+          async: true,
+        },
+        {
           src: '/js/googleAnalytics.js',
           async: true,
         },
