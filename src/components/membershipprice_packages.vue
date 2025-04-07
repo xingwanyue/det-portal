@@ -152,7 +152,7 @@ const switchchange = (val: any) => {
               }}
             </div>
             <div class="save_open">
-              <div :class="item.saveOpen ? 'save_tips save_tips_active' : 'save_tips'">
+              <div :class="item.saveOpen ? 'save_tips save_tips_active' : 'save_tips save_tips_active'">
                 Save
                 {{ (Number(1 - item.price90 / item.originalPrice90) * 100).toFixed(0) }}% with 3 months
               </div>
