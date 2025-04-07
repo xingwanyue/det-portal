@@ -50,6 +50,7 @@ const state = reactive({
   userQuestion: '',
   modeSelectShow: false,
   online: false,
+  isclient: false,
 });
 const haveCookie = ref(false);
 const modeList = computed(() => {
@@ -131,6 +132,7 @@ onMounted(async () => {
   }
   // 如果是在浏览器环境下，执行movePingLun
   if (process.client) {
+    state.isclient = true;
     // 监听窗口大小 改变isMobile
     window.addEventListener('resize', () => {
       isMobile.value = window.innerWidth < 450;
@@ -289,7 +291,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           <div class="we_also_have">
             <div class="we_also_have_title">{{ $t('index.wealsohave') }}</div>
             <div class="we_also_have_list">
-              <NuxtLink :href="urlGet('/questions')" :title="$t('index.have1_title')" class="one_card card1">
+              <NuxtLink
+                :href="state.isclient ? urlGet('/questions') : ''"
+                :title="$t('index.have1_title')"
+                class="one_card card1"
+              >
                 <div class="icon">
                   <img src="/img/home/product_icon1.svg" :alt="$t('index.have1_title')" />
                 </div>
@@ -298,7 +304,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                   <div class="font">{{ $t('index.have1_desc') }}</div>
                 </div>
               </NuxtLink>
-              <NuxtLink :href="urlGet('/exam')" :title="$t('index.have2_title')" class="one_card card3">
+              <NuxtLink
+                :href="state.isclient ? urlGet('/exam') : ''"
+                :title="$t('index.have2_title')"
+                class="one_card card3"
+              >
                 <div class="icon">
                   <img src="/img/home/product_icon3.svg" :alt="$t('index.have2_title')" />
                 </div>
@@ -307,7 +317,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                   <div class="font">{{ $t('index.have2_desc') }}</div>
                 </div>
               </NuxtLink>
-              <NuxtLink :href="urlGet('/correct')" :title="$t('index.have3_title')" class="one_card card2">
+              <NuxtLink
+                :href="state.isclient ? urlGet('/correct') : ''"
+                :title="$t('index.have3_title')"
+                class="one_card card2"
+              >
                 <div class="icon">
                   <img src="/img/home/product_icon2.svg" :alt="$t('index.have3_title')" />
                 </div>
@@ -317,7 +331,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 </div>
               </NuxtLink>
 
-              <NuxtLink :to="localePath('/courses')" :title="$t('index.have4_title')" class="one_card card5">
+              <NuxtLink
+                :to="state.isclient ? urlGet('/courses') : ''"
+                :title="$t('index.have4_title')"
+                class="one_card card5"
+              >
                 <div class="icon">
                   <img src="/img/home/head_speak.svg" :alt="$t('index.have4_title')" />
                 </div>
