@@ -418,7 +418,7 @@ const buyCorrectNum = () => {
         <div class="Feature_title">
           <h2>{{ $t('pricing.pagefont.Feature') }}</h2>
         </div>
-
+        <!-- 手机端展示 -->
         <div class="Feature_content_mobile">
           <div class="change_wrapper">
             <div
@@ -453,7 +453,7 @@ const buyCorrectNum = () => {
         </div>
         <!-- pc展示1 -->
         <div class="Feature_content">
-          <div class="one_feature">
+          <div class="one_feature static_css">
             <div class="one_feature_item havepadding shu1">
               <div class="title">{{ $t('pricing.pagefont.pre') }}</div>
               <div class="switch_out">
@@ -2193,6 +2193,11 @@ const buyCorrectNum = () => {
       }
     }
     .Feature_content {
+      .static_css {
+        position: sticky !important;
+        top: 10px;
+        border: 1px;
+      }
       .one_feature {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -2332,9 +2337,9 @@ const buyCorrectNum = () => {
     @media screen and (max-width: 450px) {
       padding: 0px 15px;
     }
-    margin-top: 60px;
+    margin-top: 120px;
     @media (max-width: 450px) {
-      margin-top: 30px;
+      margin-top: 60px;
     }
 
     .part2 {

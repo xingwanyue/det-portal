@@ -490,7 +490,7 @@ const saveCaculate = (item: any) => {
       color: #333333;
     }
     .title_blue {
-      color: #063156;
+      color: #333333;
     }
     .save_tag {
       margin-left: auto;
@@ -521,7 +521,7 @@ const saveCaculate = (item: any) => {
       color: #333333;
     }
     .price_blue {
-      color: #063156;
+      color: #333333;
     }
     .unit {
       font-weight: 600;
@@ -711,7 +711,7 @@ const saveCaculate = (item: any) => {
       color: #403f3e;
       ::v-deep(.strongfont) {
         font-weight: 650;
-        color: #f66442;
+        color: #063156;
       }
       ::v-deep(.yellow) {
         color: #f66442;
