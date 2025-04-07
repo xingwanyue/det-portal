@@ -86,6 +86,7 @@ const sendMsg = async () => {
     content: state.userQuestion,
     type: state.zhuti === '1' ? 'chat' : 'detTutor',
     model: '',
+    online: state.online,
   };
   if (state.modeSelectCode === '1') {
     args.model = 'standard';
@@ -93,6 +94,9 @@ const sendMsg = async () => {
     args.model = 'deepseekR1';
   } else if (state.modeSelectCode === '3') {
     args.model = 'chatGpt4o';
+  }
+  if (state.zhuti === '2') {
+    args.online = false;
   }
   const {
     data: { id },
@@ -263,6 +267,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 </div>
               </div>
               <div
+                v-if="state.zhuti === '1'"
                 :class="state.online ? 'online_btn online_btn_active' : 'online_btn'"
                 @click="state.online = !state.online"
               >
