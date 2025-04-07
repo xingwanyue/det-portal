@@ -642,19 +642,19 @@ const saveCaculate = (item: any) => {
   border: 2px solid #f66442;
   position: relative;
   .title {
-    color: #4c2929 !important;
+    color: #f66442 !important;
   }
   .do {
-    color: #4c2929 !important;
+    color: #f66442 !important;
   }
   .price {
-    color: #4c2929 !important;
+    color: #f66442 !important;
   }
   .line_throw {
     color: #4c2929 !important;
   }
   .unit {
-    color: #4c2929 !important;
+    color: #f66442 !important;
   }
   .card_price_buy_btn {
     background: #f66442;
