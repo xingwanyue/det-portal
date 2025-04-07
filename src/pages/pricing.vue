@@ -2299,6 +2299,7 @@ const buyCorrectNum = () => {
         // border: 1px yellow solid;
       }
       .lt_rt_radio {
+        border-radius:  16px 16px 0 0;
       }
       .lb_rb_radio {
         border-radius: 0 0 16px 16px;
