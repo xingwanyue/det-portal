@@ -114,7 +114,7 @@ const getData = async () => {
           price90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag)
             .price,
           id90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag).id,
-          saveOpen: false,
+          saveOpen: true,
           qylist: [
             t('pricing.packagesallQy.qy2', { times: item.correctNum }),
             t('pricing.packagesallQy.qy1', { times: item.examNum }),
@@ -168,11 +168,10 @@ const getData = async () => {
           price90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag)
             .price,
           id90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag).id,
-          saveOpen: false,
+          saveOpen: true,
           qylist: [
             t('pricing.packagesallQy.qy2', { times: item.correctNum > 1000 ? 'Unlimited' : item.correctNum }),
             t('pricing.packagesallQy.qy1', { times: item.examNum }),
-
             t('pricing.packagesallQy.qy3'),
             t('pricing.packagesallQy.qy4'),
             t('pricing.packagesallQy.qy5'),
