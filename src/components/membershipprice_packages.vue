@@ -122,7 +122,7 @@ const switchchange = (val: any) => {
                 </div>
                 {{ item.tag }}
               </div>
-              <div v-if="item.saveOpen" class="save_tag">
+              <div v-if="item.saveOpen && item.tag === 'Pro'" class="save_tag">
                 {{ $t('pricing.pagefont.save', { num: ((1 - item.price90 / item.originalPrice90) * 100).toFixed(0) }) }}
               </div>
             </div>
@@ -405,9 +405,11 @@ const switchchange = (val: any) => {
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
     .one_card_new {
       // background: rgba(255, 225, 188, 0.1) !important;
-      border: 0px red solid;
+      border: 0cqb red solid;
       box-shadow: none !important;
       position: relative;
+      // z-index: 2 !important;
+      background: linear-gradient(180deg, rgba(255, 225, 188, 0.3) 0%, rgba(255, 225, 188, 0) 90%);
       .time_out {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -441,12 +443,18 @@ const switchchange = (val: any) => {
     }
     .bgcolor_hack {
       position: absolute;
+      display: none;
       top: 0;
       left: 0;
       height: 200px;
       width: 100%;
-      background: linear-gradient(180deg, rgba(255, 225, 188, 0.3) 0%, rgba(255, 225, 188, 0) 100%);
+      // background: linear-gradient(180deg, rgba(255, 225, 188, 0.3) 0%, rgba(255, 225, 188, 0) 100%);
+      // background: red;
+      // 背景色不要挡住文字颜色
+      z-index: 1;
+
       pointer-events: none;
+      border: 1px red solid;
     }
     .min_width_105 {
       min-width: 105px;

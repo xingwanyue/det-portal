@@ -2186,10 +2186,13 @@ const buyCorrectNum = () => {
       max-width: 1200px;
       margin: 0 auto;
       .Feature_title {
-        font-weight: 600;
-        font-size: 40px;
-        color: #201515;
-        text-align: center;
+        h2 {
+          font-weight: 600;
+          font-size: 40px;
+          color: #201515;
+          text-align: center;
+        }
+
         margin-bottom: 56px;
         @media (max-width: 750px) {
           font-size: 24px;
