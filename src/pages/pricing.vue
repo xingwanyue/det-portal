@@ -2371,6 +2371,11 @@ const buyCorrectNum = () => {
           }
         }
       }
+      .shu1 {
+        .regular_font {
+          justify-content: flex-start !important;
+        }
+      }
       .shu3 {
         // border: 1px red solid;
       }
