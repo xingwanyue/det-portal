@@ -990,6 +990,37 @@ const buyCorrectNum = () => {
               </div>
             </div>
           </div>
+          <div class="one_feature">
+            <div class="one_feature_item padding1 shu1">
+              <div class="regular_font">{{ $t('pricing.pagefont.ask_ai_tutor') }}</div>
+            </div>
+            <div class="one_feature_item center_show shu2">
+              <div class="have_or_no">
+                <div class="icon">
+                  <img src="/img/pricing/black_heng_icon.svg" />
+                </div>
+                <!-- <div class="have_nums">Limited-50 Daily</div> -->
+              </div>
+            </div>
+            <div class="one_feature_item center_show shu3">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show shu4">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
+              </div>
+            </div>
+            <div class="one_feature_item center_show one_feature_item_last shu5">
+              <div class="have_or_no">
+                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
+                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
+              </div>
+            </div>
+          </div>
           <!-- 表内的title***************************** -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
@@ -1102,37 +1133,7 @@ const buyCorrectNum = () => {
             </div>
           </div>
           <!-- 表内title下的一个内容 -->
-          <div class="one_feature">
-            <div class="one_feature_item padding1 shu1">
-              <div class="regular_font">{{ $t('pricing.pagefont.ask_ai_tutor') }}</div>
-            </div>
-            <div class="one_feature_item center_show shu2">
-              <div class="have_or_no">
-                <div class="icon">
-                  <img src="/img/pricing/black_heng_icon.svg" />
-                </div>
-                <!-- <div class="have_nums">Limited-50 Daily</div> -->
-              </div>
-            </div>
-            <div class="one_feature_item center_show shu3">
-              <div class="have_or_no">
-                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
-              </div>
-            </div>
-            <div class="one_feature_item center_show shu4">
-              <div class="have_or_no">
-                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
-              </div>
-            </div>
-            <div class="one_feature_item center_show one_feature_item_last shu5">
-              <div class="have_or_no">
-                <!-- <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div> -->
-                <div class="have_nums">{{ $t('pricing.pagefont.Unlimited') }}</div>
-              </div>
-            </div>
-          </div>
+
           <!-- 表内的title***************************** -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
