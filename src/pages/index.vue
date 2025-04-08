@@ -829,6 +829,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 font-size: 14px;
                 color: #403f3e;
                 min-width: 102px;
+                @media (max-width: 450px) {
+                  min-width: 0px;
+                }
               }
               .arrow_icon {
                 width: 16px;
