@@ -42,7 +42,7 @@ const isVip = computed(() => store.isVip);
 const savetagnumber = ref('');
 const tableSwitchOpen = ref(true);
 // 2 Free 3 Basic 4 Plus 5 Pro
-const mobileShowWhich = ref(2);
+const mobileShowWhich = ref(5);
 
 const onlycorrectTimesid = ref(0);
 const onlycorrectTimesprice = ref(0);
@@ -204,7 +204,7 @@ const getsavenum = async () => {
 
 // 检查窗口宽度的函数
 const checkWindowWidth = () => {
-  const elements = ['shu3', 'shu4', 'shu5'];
+  const elements = ['shu2', 'shu3', 'shu4'];
   elements.forEach((className) => {
     const els = document.getElementsByClassName(className);
     for (let i = 0; i < els.length; i++) {
@@ -2239,12 +2239,12 @@ const buyCorrectNum = () => {
           font-size: 40px;
           color: #201515;
           text-align: center;
+          @media (max-width: 750px) {
+            font-size: 24px;
+          }
         }
 
         margin-bottom: 56px;
-        @media (max-width: 750px) {
-          font-size: 24px;
-        }
       }
     }
     .Feature_content_mobile {
