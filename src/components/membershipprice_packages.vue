@@ -117,8 +117,14 @@ const switchchange = (val: any) => {
           <div>
             <div class="title_out">
               <div class="title">
-                <div class="icon">
-                  <img src="/img/pricing/stars.svg" />
+                <div v-if="item.tag === 'Basic'" class="icon">
+                  <img src="/img/pricing/stars1.svg" />
+                </div>
+                <div v-if="item.tag === 'Plus'" class="icon">
+                  <img src="/img/pricing/stars2.svg" />
+                </div>
+                <div v-if="item.tag === 'Pro'" class="icon">
+                  <img src="/img/pricing/stars3.svg" />
                 </div>
                 {{ item.tag }}
               </div>
