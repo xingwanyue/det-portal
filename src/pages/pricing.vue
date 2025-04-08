@@ -2273,7 +2273,7 @@ const buyCorrectNum = () => {
             font-size: 20px;
             color: #201515;
             .save_tag_fer {
-              padding: 0 8px;
+              padding: 4px 8px;
               font-weight: 400;
               font-size: 12px;
               color: #ffffff;
