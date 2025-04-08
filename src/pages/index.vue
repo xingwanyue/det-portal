@@ -87,7 +87,7 @@ const sendMsg = async () => {
     type: state.zhuti === '1' ? 'chat' : 'detTutor',
     model: '',
     online: state.online,
-  };
+  } as any;
   if (state.modeSelectCode === '1') {
     args.model = 'standard';
   } else if (state.modeSelectCode === '2') {
@@ -98,6 +98,8 @@ const sendMsg = async () => {
   if (state.zhuti === '2') {
     args.online = false;
   }
+  // online 参数 改为 '0' '1'
+  args.online = state.online ? '1' : '0';
   const {
     data: { id },
   } = await completion({ ...args });
