@@ -470,9 +470,9 @@ const buyCorrectNum = () => {
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
               <div v-else class="price_out">
-                $<span v-if="vipsData?.packagesArr"> {{ formatCash(vipsData.packagesArr[0].price90) }}</span>
+                $<span v-if="vipsData?.packagesArr"> {{ formatCash(vipsData.packagesArr[0].price90 / 3) }}</span>
                 /
-                {{ $t('pricing.pagefont.3month') }}
+                {{ $t('pricing.pagefont.month1') }}
               </div>
               <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[0])">
                 {{ $t('pricing.pagefont.Buy_Now') }}
@@ -488,8 +488,8 @@ const buyCorrectNum = () => {
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
               <div v-else class="price_out">
-                <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[1].price90) }}</span>
-                /{{ $t('pricing.pagefont.3month') }}
+                <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[1].price90 / 3) }}</span>
+                /{{ $t('pricing.pagefont.month1') }}
               </div>
               <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[1])">
                 {{ $t('pricing.pagefont.Buy_Now') }}
@@ -517,8 +517,8 @@ const buyCorrectNum = () => {
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
               <div v-else class="price_out">
-                <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[2].price90) }}</span>
-                /{{ $t('pricing.pagefont.3month') }}
+                <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[2].price90 / 3) }}</span>
+                /{{ $t('pricing.pagefont.month1') }}
               </div>
               <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[2])">
                 {{ $t('pricing.pagefont.Buy_Now') }}
