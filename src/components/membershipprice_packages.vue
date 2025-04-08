@@ -261,7 +261,7 @@ const switchchange = (val: any) => {
       </div>
     </div>
     <div class="new_mb_price_right">
-      <div v-if="props.membershipArr.length" class="one_card_new">
+      <div v-if="props.membershipArr.length" class="one_card_new one_card_new_exam">
         <div>
           <div class="title_out">
             <div class="title title_blue">
@@ -666,6 +666,9 @@ const switchchange = (val: any) => {
       }
     }
   }
+}
+.one_card_new_exam {
+  padding-bottom: 0px;
 }
 .one_card_new_365 {
   background: #ffffff;
