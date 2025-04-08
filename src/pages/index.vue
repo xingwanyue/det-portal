@@ -331,11 +331,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 </div>
               </NuxtLink>
 
-              <NuxtLink
-                :to="state.isclient ? urlGet('/courses') : ''"
-                :title="$t('index.have4_title')"
-                class="one_card card5"
-              >
+              <NuxtLink :to="localePath('/courses')" :title="$t('index.have4_title')" class="one_card card5">
                 <div class="icon">
                   <img src="/img/home/head_speak.svg" :alt="$t('index.have4_title')" />
                 </div>
