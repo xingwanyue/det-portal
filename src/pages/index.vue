@@ -937,6 +937,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 font-weight: 400;
                 font-size: 14px;
                 color: #666666;
+                @media (max-width: 450px) {
+                  display: none;
+                }
               }
             }
             .online_btn_active {
