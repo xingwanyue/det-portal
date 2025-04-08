@@ -296,27 +296,54 @@ const isSticky = ref(false);
 const changeLeftRef = ref<HTMLElement | null>(null);
 const changeRightRef = ref<HTMLElement | null>(null);
 
+const handleScroll = () => {
+  if (!changeLeftRef.value || !changeRightRef.value) return;
+
+  const rightRect = changeRightRef.value.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  // 当右侧内容开始进入视口时，设置左侧为固定定位
+  if (rightRect.top <= 20 && rightRect.bottom >= windowHeight * 0.5) {
+    isSticky.value = true;
+  } else {
+    isSticky.value = false;
+  }
+};
+
 onMounted(() => {
-  const handleScroll = () => {
-    if (!changeLeftRef.value || !changeRightRef.value) return;
-
-    const rightRect = changeRightRef.value.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-
-    // 当右侧内容开始进入视口时，设置左侧为固定定位
-    if (rightRect.top <= 20 && rightRect.bottom >= windowHeight * 0.5) {
-      isSticky.value = true;
-    } else {
-      isSticky.value = false;
-    }
-  };
-
   window.addEventListener('scroll', handleScroll);
 
-  // 清理事件监听
-  onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll);
-  });
+  // 处理 URL 中的锚点
+  const hash = window.location.hash;
+
+  if (hash) {
+    const sectionIndex = parseInt(hash.replace('#section-', ''));
+    if (!isNaN(sectionIndex)) {
+      // 使用 nextTick 确保 DOM 更新完成
+      nextTick(() => {
+        setTimeout(() => {
+          four_change_left_active_index.value = sectionIndex;
+          four_change_right_active_index.value = sectionIndex;
+
+          const element = document.getElementById(`section-${sectionIndex}`);
+          if (element) {
+            const offset = 120; // 增加偏移量，确保标题不会被遮挡
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth',
+            });
+          }
+        }, 100);
+      });
+    }
+  }
+});
+// 清理事件监听
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
 });
 </script>
 
