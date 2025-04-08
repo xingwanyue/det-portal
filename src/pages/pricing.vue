@@ -40,7 +40,7 @@ const user = computed(() => store.user);
 const userChangeFlag = ref(() => store.user);
 const isVip = computed(() => store.isVip);
 const savetagnumber = ref('');
-const tableSwitchOpen = ref(false);
+const tableSwitchOpen = ref(true);
 // 2 Free 3 Basic 4 Plus 5 Pro
 const mobileShowWhich = ref(2);
 
@@ -446,10 +446,6 @@ const buyCorrectNum = () => {
               {{ $t('pricing.pagefont.four_vips_name.name4') }}
             </div>
           </div>
-          <!-- <div class="switch_out">
-            <div class="font">Save with 3 months</div>
-            <div><el-switch v-model="tableSwitchOpen" /></div>
-          </div> -->
         </div>
         <!-- pc展示1 -->
         <div class="Feature_content">
@@ -503,7 +499,19 @@ const buyCorrectNum = () => {
               </NuxtLink>
             </div>
             <div class="one_feature_item havepadding one_feature_item_last shu5 lt_rt_radio">
-              <div class="title">{{ $t('pricing.pagefont.four_vips_name.name4') }}</div>
+              <div class="title">
+                {{ $t('pricing.pagefont.four_vips_name.name4') }}
+                <div v-if="vipsData?.packagesArr && tableSwitchOpen" class="save_tag_fer">
+                  {{
+                    $t('pricing.pagefont.only_save', {
+                      num: (
+                        (1 - vipsData.packagesArr[2].price90 / vipsData.packagesArr[2].originalPrice90) *
+                        100
+                      ).toFixed(0),
+                    })
+                  }}
+                </div>
+              </div>
               <div v-if="!tableSwitchOpen" class="price_out">
                 <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[2].price) }}</span>
                 /{{ $t('pricing.pagefont.month1') }}
@@ -2257,9 +2265,21 @@ const buyCorrectNum = () => {
 
         .one_feature_item {
           .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            grid-gap: 8px;
             font-weight: 600;
             font-size: 20px;
             color: #201515;
+            .save_tag_fer {
+              padding: 0 8px;
+              font-weight: 400;
+              font-size: 12px;
+              color: #ffffff;
+              background: linear-gradient(270deg, #fb9d77 0%, #f66442 100%);
+              border-radius: 4px;
+            }
           }
           .price_out {
             font-weight: 600;

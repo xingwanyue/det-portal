@@ -254,6 +254,7 @@
       "arrow_down": "Down Arrow",
       "save": "Flash Sale {num}% ",
       "saveup": "Save up to {num}%",
+      "only_save": "Save {num}%",
       "week": "/week",
       "month": "/month",
       "Billed": "Billed ${num} /year",
