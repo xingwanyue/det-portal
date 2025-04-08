@@ -334,14 +334,14 @@ const menus = computed(() => [
               {{ $t('header.prodspeaking.title') }}
             </nuxt-link>
 
-            <nuxt-link
+            <!-- <nuxt-link
               v-if="isProductsMobile"
               :class="`product-child`"
               :to="localePath('/courses')"
               @click="handleClose"
             >
               {{ $t('header.prod3.title') }}
-            </nuxt-link>
+            </nuxt-link> -->
           </div>
           <nuxt-link v-else :class="`asideMeun`" :href="menu.path" @click="handleClose" :title="menu.name">
             {{ menu.name }}
