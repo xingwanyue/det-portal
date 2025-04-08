@@ -104,7 +104,9 @@ const sendMsg = async () => {
 
   if (url.startsWith('http')) {
     // window.location.href = `${url}?talkid=${id}`;
-    window.location.href = urlGet(`/AskAI?id=${id}`);
+    window.location.href = urlGet(
+      `/AskAI?id=${id}&talkmode=${args.type}&modeSelectCode=${state.modeSelectCode}&online=${state.online}`,
+    );
     return;
   }
 
