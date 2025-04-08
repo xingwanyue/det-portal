@@ -8,6 +8,7 @@ import schemas from '@/schemas';
 import { useI18n } from 'vue-i18n';
 import vHeader from './header.vue';
 import vFooter from './footer.vue';
+import ScrollToTop from '@/components/scrolltotop.vue';
 
 const props = defineProps({
   errorPage: Boolean,
@@ -133,6 +134,7 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
     <el-footer class="footer_wrap">
       <v-footer :errorPage="props.errorPage" />
     </el-footer>
+    <ScrollToTop />
   </el-container>
   <noscript v-html="htmlText"> </noscript>
 </template>
