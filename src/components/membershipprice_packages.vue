@@ -251,7 +251,12 @@ const switchchange = (val: any) => {
       <div v-if="props.membershipArr.length" class="one_card_new">
         <div>
           <div class="title_out">
-            <div class="title title_blue">{{ $t('pricing.pagefont.mt') }}</div>
+            <div class="title title_blue">
+              <div class="icon">
+                <img src="/img/pricing/mockicon.svg" />
+              </div>
+              {{ $t('pricing.pagefont.mt') }}
+            </div>
           </div>
           <div class="price_out">
             <div class="do price_blue">{{ $t('pricing.pagefont.do') }}</div>
