@@ -411,6 +411,10 @@ const buyCorrectNum = () => {
           </div>
         </div>
       </div>
+      <div class="circle_items">
+        <div class="circle_01"></div>
+        <div class="circle_02"></div>
+      </div>
     </div>
     <div class="Feature_wrapper">
       <div class="Feature_in">
@@ -1482,16 +1486,21 @@ const buyCorrectNum = () => {
 <style lang="scss" scoped>
 .pricing {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 604px, #ffffff 604px);
+  // background: linear-gradient(to bottom, #fff4f1 0%, #fff4f1 604px, #ffffff 604px);
 
   .part1_wrapper {
+    // border: 1px red solid;
+    // overflow: hidden;
     padding: 0px 30px;
+    position: relative;
     @media screen and (max-width: 450px) {
       padding: 0px 15px;
     }
     .part1 {
       max-width: 1200px;
       margin: 0 auto;
+      position: relative;
+      z-index: 10;
       // overflow-x: hidden;
       // overflow-y: auto;
 
@@ -2177,6 +2186,37 @@ const buyCorrectNum = () => {
             height: auto;
           }
         }
+      }
+    }
+    .circle_items {
+      width: 944px;
+      height: 660px;
+      position: absolute;
+      top: 290px;
+      left: 50%;
+      margin-left: -472px;
+      z-index: 0;
+      .circle_01 {
+        width: 660px;
+        height: 460px;
+        border-radius: 660px;
+        background: #ffa08b;
+        -webkit-filter: blur(300px);
+        filter: blur(300px);
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .circle_02 {
+        width: 440px;
+        height: 240px;
+        border-radius: 440px;
+        background: #ffca42;
+        -webkit-filter: blur(300px);
+        filter: blur(300px);
+        position: absolute;
+        right: 0;
+        top: 110px;
       }
     }
   }

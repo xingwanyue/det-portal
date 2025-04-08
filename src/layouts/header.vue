@@ -73,6 +73,9 @@ const changeHeaderColor = (pathname: string) => {
     case '/courses':
       headerColor.value = '#E7FDEC';
       break;
+    case '/pricing':
+      headerColor.value = 'rgba(0,0,0,0)';
+      break;
     case '/speaking-ai-correction':
       headerColor.value = '#EAEAFEFF';
       break;
