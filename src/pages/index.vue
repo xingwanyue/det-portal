@@ -908,7 +908,8 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               }
             }
             .online_btn {
-              padding: 6px 8px;
+              padding: 5px 8px;
+
               border-radius: 4px;
               border: 1px solid rgba(0, 0, 0, 0.1);
               display: flex;
