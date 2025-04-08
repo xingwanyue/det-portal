@@ -493,7 +493,7 @@ const switchchange = (val: any) => {
       font-size: 12px;
       color: #ff7c0e;
       padding: 0px 5px;
-      // margin-left: auto;
+      margin-left: 8px;
     }
   }
 }
