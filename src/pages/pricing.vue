@@ -128,7 +128,9 @@ const getData = async () => {
           saveOpen: true,
           qylist: [
             t('pricing.packagesallQy.qy2', { times: item.correctNum }),
-            t('pricing.packagesallQy.qy1', { times: item.examNum }),
+            item.examNum === 0
+              ? t('pricing.packagesallQy.qy1_1')
+              : t('pricing.packagesallQy.qy1', { times: item.examNum }),
             t('pricing.packagesallQy.qy3'),
             t('pricing.packagesallQy.qy4'),
             t('pricing.packagesallQy.qy5'),
@@ -182,7 +184,9 @@ const getData = async () => {
           saveOpen: true,
           qylist: [
             t('pricing.packagesallQy.qy2', { times: item.correctNum > 1000 ? 'Unlimited' : item.correctNum }),
-            t('pricing.packagesallQy.qy1', { times: item.examNum }),
+            item.examNum === 0
+              ? t('pricing.packagesallQy.qy1_1')
+              : t('pricing.packagesallQy.qy1', { times: item.examNum }),
             t('pricing.packagesallQy.qy3'),
             t('pricing.packagesallQy.qy4'),
             t('pricing.packagesallQy.qy5'),

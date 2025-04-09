@@ -421,6 +421,7 @@
     ],
     "packagesallQy": {
       "qy1": "<span class='yellow'>{times} Times</span> Mock Exam",
+      "qy1_1": "Mock Exam",
       "qy2": "<span class='yellow'>{times} Times</span> AI Correction",
       "qy3": "Ask AI",
       "qy4": "Access 18000+ Practice Questions",
@@ -431,8 +432,8 @@
       "qy9": "Smart Plan",
       "qy10": "High-Frequency Exam Vocabulary",
       "qy11": "Free Courses",
-      "qyspeak": "DET <span class='yellow'>Speaking Exam guide</span>",
-      "qywrite": "DET <span class='yellow'>Writing Exam Guide</span>"
+      "qyspeak": "<span class='yellow'>DET Speaking Exam guide</span>",
+      "qywrite": "<span class='yellow'>DET Writing Exam Guide</span>"
     }
   },
   "blog": {
