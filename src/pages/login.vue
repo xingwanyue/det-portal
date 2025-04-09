@@ -15,6 +15,8 @@ const route = useRoute();
 const router = useRouter();
 const store = useStore();
 
+const user = computed(() => store.user);
+
 const url = route.query.url ? decodeURIComponent(route.query.url as string) : urlGet('/home');
 const formData = ref({}) as any;
 const loading = ref(false);
@@ -27,7 +29,7 @@ definePageMeta({
 
 onMounted(async () => {
   const token = await getToken();
-  if (token) {
+  if (token && !user.value.temp) {
     await store.getUserInfo();
     if (url.startsWith('http')) {
       window.location.href = url;

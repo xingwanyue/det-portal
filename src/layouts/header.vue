@@ -246,16 +246,7 @@ const menus = computed(() => [
           <span class="icon iconfont icon-logo mobileLogo"></span>
         </nuxt-link>
       </div>
-      <div v-if="user.id || haveCookie" href="/app">
-        <!-- <el-popover placement="top-start" trigger="hover" class="111">
-          <div class="logout_btn" @click="logout">Log out</div>
-          <template #reference>
-            <div class="userInfo">
-              <div class="nickname">{{ user.nickname }}</div>
-              <el-image v-if="user.avatar" :src="staticUrlGet(user.avatar)" class="avatar"></el-image>
-            </div>
-          </template>
-        </el-popover> -->
+      <div v-if="(user.id || haveCookie) && !user.temp" href="/app">
         <div class="loginbtn">
           <nuxt-link :href="urlGet('/home')" class="try_free common_btn_hover_bgColor">{{
             $t('header.Get_started')
