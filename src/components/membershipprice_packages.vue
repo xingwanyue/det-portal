@@ -656,7 +656,9 @@ const switchchange = (val: any) => {
     }
     .card_price_buy_btn_mock {
       background: #ffe1bc;
-      color: #3c5d86;
+      font-weight: 500;
+      font-size: 16px;
+      color: #063156;
       border: 0px solid #ffe1bc;
       &:hover {
         background: #ffe1bc;
