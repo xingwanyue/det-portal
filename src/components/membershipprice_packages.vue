@@ -179,15 +179,6 @@ const switchchange = (val: any) => {
                 <el-switch type="primary" @change="switchchange" v-model="item.saveOpen" />
               </div>
             </div>
-            <!-- <div class="bill">
-              <span v-if="item.day === 365">
-                {{
-                  $t('pricing.pagefont.Billed', {
-                    num: formatCashfixed2(Number(item.price) + Number(item.correctPrice || 0) * 12),
-                  })
-                }}
-              </span>
-            </div> -->
           </div>
 
           <div v-if="false" class="select_out_new">
