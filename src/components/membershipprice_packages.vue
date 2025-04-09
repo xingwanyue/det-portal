@@ -136,28 +136,28 @@ const switchchange = (val: any) => {
             <div class="price_out">
               <div class="do">{{ $t('pricing.pagefont.do') }}</div>
               <template v-if="item.tag === 'Basic'">
-                <div v-if="item.saveOpen" class="price">
+                <div v-if="item.saveOpen" class="price common_price_number_animate">
                   {{ formatCash(Number(item.price90 / 3) + Number(item.correctPrice || 0)) }}
                 </div>
-                <div v-else class="price">
+                <div v-else class="price common_price_number_animate">
                   {{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}
                 </div>
                 <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
               <template v-if="item.tag === 'Pro'">
-                <div v-if="item.saveOpen" class="price">
+                <div v-if="item.saveOpen" class="price common_price_number_animate">
                   {{ formatCash(Number(item.price90 / 3) + Number(item.correctPrice || 0)) }}
                 </div>
-                <div v-else class="price">
+                <div v-else class="price common_price_number_animate">
                   {{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}
                 </div>
                 <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
               </template>
               <template v-if="item.tag === 'Plus'">
-                <div v-if="item.saveOpen" class="price">
+                <div v-if="item.saveOpen" class="price common_price_number_animate">
                   {{ formatCash(Number(item.price90 / 3) + Number(item.correctPrice || 0)) }}
                 </div>
-                <div v-else class="price">
+                <div v-else class="price common_price_number_animate">
                   {{ formatCash(Number(item.price) + Number(item.correctPrice || 0)) }}
                 </div>
                 <div class="unit">{{ $t('pricing.pagefont.month') }}</div>
@@ -804,4 +804,7 @@ const switchchange = (val: any) => {
   background-color: #f66442;
   border-color: #f66442;
 }
+</style>
+<style scoped>
+@import '@/assets/numberchangeanimate.scss';
 </style>

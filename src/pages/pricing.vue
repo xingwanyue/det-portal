@@ -468,14 +468,15 @@ const buyCorrectNum = () => {
             </div>
             <div class="one_feature_item havepadding shu3">
               <div class="title">{{ $t('pricing.pagefont.four_vips_name.name2') }}</div>
-              <div v-if="!tableSwitchOpen" class="price_out">
-                <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[0].price) }}</span>
+              <div v-if="!tableSwitchOpen" class="price_out common_price_number_animate">
+                <span v-if="vipsData?.packagesArr" class=""> ${{ formatCash(vipsData.packagesArr[0].price) }}</span>
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
-              <div v-else class="price_out">
-                $<span v-if="vipsData?.packagesArr"> {{ formatCash(vipsData.packagesArr[0].price90 / 3) }}</span> /{{
-                  $t('pricing.pagefont.month1')
-                }}
+              <div v-else class="price_out common_price_number_animate">
+                $<span v-if="vipsData?.packagesArr" class="">
+                  {{ formatCash(vipsData.packagesArr[0].price90 / 3) }}</span
+                >
+                /{{ $t('pricing.pagefont.month1') }}
               </div>
               <div v-if="user?.id" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[0])">
                 {{ $t('pricing.pagefont.Buy_Now') }}
@@ -486,11 +487,11 @@ const buyCorrectNum = () => {
             </div>
             <div class="one_feature_item havepadding shu4">
               <div class="title">{{ $t('pricing.pagefont.four_vips_name.name3') }}</div>
-              <div v-if="!tableSwitchOpen" class="price_out">
+              <div v-if="!tableSwitchOpen" class="price_out common_price_number_animate">
                 <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[1].price) }}</span>
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
-              <div v-else class="price_out">
+              <div v-else class="price_out common_price_number_animate">
                 <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[1].price90 / 3) }}</span>
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
@@ -515,11 +516,11 @@ const buyCorrectNum = () => {
                   }}
                 </div>
               </div>
-              <div v-if="!tableSwitchOpen" class="price_out">
+              <div v-if="!tableSwitchOpen" class="price_out common_price_number_animate">
                 <span v-if="vipsData?.packagesArr"> ${{ formatCash(vipsData.packagesArr[2].price) }}</span>
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
-              <div v-else class="price_out">
+              <div v-else class="price_out common_price_number_animate">
                 <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[2].price90 / 3) }}</span>
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
@@ -2700,4 +2701,7 @@ const buyCorrectNum = () => {
 .el-button:focus-visible {
   outline: 0px;
 }
+</style>
+<style scoped>
+@import '@/assets/numberchangeanimate.scss';
 </style>
