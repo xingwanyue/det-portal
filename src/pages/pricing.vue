@@ -46,6 +46,17 @@ const mobileShowWhich = ref(5);
 
 const onlycorrectTimesid = ref(0);
 const onlycorrectTimesprice = ref(0);
+const isSticky = ref(false);
+const handleScroll = () => {
+  const scrollTop = window.scrollY;
+  const feature = document.querySelector('.Feature_wrapper');
+  const featureRect = feature?.getBoundingClientRect();
+  if (featureRect?.top <= 10) {
+    isSticky.value = true;
+  } else {
+    isSticky.value = false;
+  }
+};
 
 const aqList = ref([
   {
@@ -223,6 +234,7 @@ onMounted(async () => {
   getsavenum();
   checkWindowWidth();
   window.addEventListener('resize', checkWindowWidth);
+  window.addEventListener('scroll', handleScroll);
   // 监听窗口宽度 小于等于 750  将shu3 shu4 shu5 display:no
   // 监听窗口宽度 大于 750  将shu3 shu4 shu5 display:flex
 });
@@ -452,7 +464,7 @@ const buyCorrectNum = () => {
         </div>
         <!-- pc展示1 -->
         <div class="Feature_content">
-          <div class="one_feature static_css">
+          <div :class="['one_feature', { static_css: isSticky }]">
             <div class="one_feature_item havepadding shu1">
               <div class="title">{{ $t('pricing.pagefont.pre') }}</div>
               <div class="switch_out">
@@ -2286,15 +2298,24 @@ const buyCorrectNum = () => {
         }
       }
       .mobileShowWhich_detail {
-        border: 1px red solid;
         margin-top: 12px;
       }
     }
     .Feature_content {
       .static_css {
-        position: sticky !important;
-        top: 10px;
-        border: 1px;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        background: #ffffff;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        @media screen and (max-width: 1200px) {
+          padding: 0px 30px;
+        }
+
+        box-sizing: border-box;
       }
       .one_feature {
         display: grid;
