@@ -265,8 +265,8 @@
         "content": "채팅이나 이메일로 문의해 주세요: <span class='email_address'>support{'@'}detpractice.com</span>. 이것이 가장 간단하고 빠른 해결 방법입니다."
       },
       {
-        "name": "강좌를 구매했는데 볼 수 없어요, 왜 그런가요?",
-        "content": "강좌 구매 완료 후, 강좌 설명 페이지 https://www.detpractice.com/courses 에서 강좌 정보를 확인하고 다운로드할 수 있습니다. 강좌 정보를 찾을 수 없는 경우, 채팅이나 이메일로 문의해 주세요: <span class='email_address'>support{'@'}detpractice.com</span>."
+        "name": "구독을 어떻게 취소해야 합니까?",
+        "content": "계정의 \"청구 관리\" 섹션을 통해 언제든지 취소할 수 있습니다. 귀하의 혜택은 현재 청구 기간이 종료될 때까지 유지됩니다."
       },
       {
         "name": "피드백은 어디로 보내나요?",
