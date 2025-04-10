@@ -569,7 +569,7 @@ const buyCorrectNum = () => {
               <div class="regular_font">
                 {{ $t('pricing.pagefont.full_len') }}
 
-                <el-popover class="box-item" :content="$t('pricing.pagefont.full_len_tips')" placement="top-start">
+                <el-popover class="box-item" :content="$t('pricing.pagefont.full_len_tips')" placement="top">
                   <template #reference>
                     <div class="t_icon">
                       <img src="/img/pricing/tip.svg" />
@@ -666,7 +666,7 @@ const buyCorrectNum = () => {
                 >
                   <div class="t_icon"><img src="/img/pricing/tip.svg" /></div>
                 </el-tooltip> -->
-                <el-popover class="box-item" :content="$t('pricing.pagefont.det_s_ai_c_tips')" placement="top-start">
+                <el-popover class="box-item" :content="$t('pricing.pagefont.det_s_ai_c_tips')" placement="top">
                   <template #reference>
                     <div class="t_icon">
                       <img src="/img/pricing/tip.svg" />
@@ -715,7 +715,7 @@ const buyCorrectNum = () => {
                 >
                   <div class="t_icon"><img src="/img/pricing/tip.svg" /></div>
                 </el-tooltip> -->
-                <el-popover class="box-item" :content="$t('pricing.pagefont.det_w_ai_c_tips')" placement="top-start">
+                <el-popover class="box-item" :content="$t('pricing.pagefont.det_w_ai_c_tips')" placement="top">
                   <template #reference>
                     <div class="t_icon">
                       <img src="/img/pricing/tip.svg" />
@@ -1307,7 +1307,7 @@ const buyCorrectNum = () => {
                   <div class="t_icon"><img src="/img/pricing/tip.svg" /></div>
                 </el-tooltip> -->
 
-                <el-popover class="box-item" :content="$t('pricing.pagefont.learn_ma_tips')" placement="top-start">
+                <el-popover class="box-item" :content="$t('pricing.pagefont.learn_ma_tips')" placement="top">
                   <template #reference>
                     <div class="t_icon">
                       <img src="/img/pricing/tip.svg" />
