@@ -99,6 +99,7 @@ export const useStore = defineStore({
       if (!err) {
         const { code, vipEndTime, vipDays, examNum, correctNum, id, amount, write, speak, type, tag } = data;
         if (code === 1) {
+          await this.getUserInfo();
           payEvent(id, amount);
           this.user.vipEndTime = vipEndTime;
           if (examNum) {
@@ -108,38 +109,20 @@ export const useStore = defineStore({
             this.user.correctNum = (this.user.correctNum || 0) + correctNum;
           }
           const message = [];
-          if (type === '2') {
-            message.push(` Your "${tag}" membership is now active! Open the app to explore your exclusive features.`);
+          if (type === '4') {
+            message.push(` ${examNum} mock exams activated successfully!`);
           } else {
-            if (examNum) {
-              message.push(`${examNum} mock exams purchased successfully !`);
-            }
-            if (correctNum) {
-              message.push(`${correctNum} correction services purchased successfully !`);
-            }
+            message.push(`Your Premium Plan has been activated!`);
             if (vipDays) {
-              message.push(`${vipDays}
-              days premium package purchased successfully! Membership valid until 
-              ${dayjs(vipEndTime).format('YYYY-MM-DD')}.`);
+              message.push(`VIP Expires at: ${dayjs(this.user.freeVipEndTime).format('YYYY-MM-DD')}`);
             }
-            if (write && speak) {
-              this.user.write = 1;
-              this.user.speak = 1;
-              message.push(
-                `"Speaking Guide" and "Writing Guide" purchase successful. You can view or download them directly from the course page.`,
-              );
+            if (examNum) {
+              message.push(`Mock Exam: ${examNum}`);
             }
-            if (write && !speak) {
-              this.user.write = 1;
-              message.push(
-                `"Writing Guide" purchase successful. You can view or download it directly from the course page.`,
-              );
-            }
-            if (speak && !write) {
-              this.user.speak = 1;
-              message.push(
-                `"Speaking Guide" purchase successful. You can view or download it directly from the course page.`,
-              );
+            if (tag === 'Pro') {
+              message.push('AI Correction: Unlimited');
+            } else {
+              message.push(`AI Correction: ${correctNum}`);
             }
           }
 
@@ -149,7 +132,7 @@ export const useStore = defineStore({
             //   message: message.join('<br>'),
             //   type: 'success',
             // });
-            ElMessageBox.alert(`${message.join('<br>')}`, '', {
+            ElMessageBox.alert(`${message.join('<br>')}`, 'Purchased Successfully', {
               confirmButtonText: 'Confirm',
               dangerouslyUseHTMLString: true,
               confirmButtonClass: 'confirmBtn',
