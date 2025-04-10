@@ -2750,6 +2750,9 @@ const buyCorrectNum = () => {
   min-width: 350px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 15px 2px !important;
   margin-left: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.65);
 }
 </style>
 <style scoped>
