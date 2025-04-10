@@ -420,11 +420,12 @@ const switchchange = (val: any) => {
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
     .one_card_new {
       // background: rgba(255, 225, 188, 0.1) !important;
-      border: 0cqb red solid;
+      border: 0px red solid;
       box-shadow: none !important;
       position: relative;
       // z-index: 2 !important;
       background: linear-gradient(180deg, rgba(255, 225, 188, 0.3) 0%, rgba(255, 225, 188, 0) 90%);
+      border-radius: 16px;
       .time_out {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
