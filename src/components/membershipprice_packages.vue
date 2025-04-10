@@ -292,7 +292,7 @@ const switchchange = (val: any) => {
         </div>
 
         <div class="but_btn_new">
-          <div v-if="user?.id">
+          <div v-if="user?.id && !user?.temp">
             <div class="card_price_buy_btn card_price_buy_btn_mock" @click="buyMockTimes()">
               {{ $t('pricing.pagefont.Buy_Now') }}
               <div class="scroll-line"></div>
