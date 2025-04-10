@@ -227,7 +227,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 class="el_input"
                 v-model="state.userQuestion"
                 type="textarea"
-                placeholder="Ask Anything Here"
+                :placeholder="state.zhuti === '1' ? 'Ask Anything Here.' : 'A professional Duolingo English Test AI Tutor.'"
                 @keydown.enter.native.prevent="sendMsg"
               />
             </div>
