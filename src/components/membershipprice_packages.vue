@@ -416,7 +416,7 @@ const switchchange = (val: any) => {
     // padding: 24px 16px;
     background: white;
     // border: 1px solid #e9e9e9;
-    border-radius: 8px;
+    border-radius: 16px;
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
     .one_card_new {
       // background: rgba(255, 225, 188, 0.1) !important;
@@ -504,7 +504,7 @@ const switchchange = (val: any) => {
   }
   padding: 24px 16px;
 
-  border-radius: 8px;
+  border-radius: 16px;
   // border: 1px solid red;
   .title_out {
     display: flex;
