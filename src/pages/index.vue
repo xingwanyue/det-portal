@@ -203,7 +203,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 </script>
 
 <template>
-  <div class="home">
+  <div class="home" @click.stop="state.modeSelectShow = false">
     <div class="part1_wrapper">
       <div class="part1">
         <div class="page_title">
@@ -233,15 +233,15 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             </div>
             <div class="white_input_bottom">
               <div class="mode_select_out">
-                <div class="icon" @click="state.modeSelectShow = !state.modeSelectShow">
+                <div class="icon" @click.stop="state.modeSelectShow = !state.modeSelectShow">
                   <img :src="modeList.find((item) => item.code === state.modeSelectCode)?.imgSrc" alt="mode_icon" />
                 </div>
-                <div class="mode_font" @click="state.modeSelectShow = !state.modeSelectShow">
+                <div class="mode_font" @click.stop="state.modeSelectShow = !state.modeSelectShow">
                   {{ modeList.find((item) => item.code === state.modeSelectCode)?.name }}
                 </div>
                 <div
                   :class="state.modeSelectShow ? 'arrow_icon arrow_icon_active' : 'arrow_icon'"
-                  @click="state.modeSelectShow = !state.modeSelectShow"
+                  @click.stop="state.modeSelectShow = !state.modeSelectShow"
                 >
                   <img src="/img/home/arrow_down.svg" alt="arrow_down" />
                 </div>
