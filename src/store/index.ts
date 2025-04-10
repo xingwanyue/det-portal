@@ -62,7 +62,7 @@ export const useStore = defineStore({
     async getUserInfo() {
       try {
         const token = await getToken(false);
-        if (!token || !isEmpty(this.user)) {
+        if (!token) {
           return;
         }
         const res = await fetch(`${api}/userInfo`, {
