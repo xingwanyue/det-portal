@@ -494,7 +494,7 @@ const buyCorrectNum = () => {
                 >
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
-              <div v-if="user?.id&& !user?.temp" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[0])">
+              <div v-if="user?.id && !user?.temp" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[0])">
                 {{ $t('pricing.pagefont.Buy_Now') }}
               </div>
               <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new">
@@ -2753,6 +2753,9 @@ const buyCorrectNum = () => {
   font-weight: 400;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.65);
+  @media screen and (max-width: 524px) {
+    min-width: 200px;
+  }
 }
 </style>
 <style scoped>
