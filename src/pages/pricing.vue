@@ -569,16 +569,13 @@ const buyCorrectNum = () => {
               <div class="regular_font">
                 {{ $t('pricing.pagefont.full_len') }}
 
-                <el-tooltip
-                  class="box-item"
-                  effect="dark"
-                  :content="$t('pricing.pagefont.full_len_tips')"
-                  placement="top-start"
-                >
-                  <div class="t_icon">
-                    <img src="/img/pricing/tip.svg" />
-                  </div>
-                </el-tooltip>
+                <el-popover class="box-item" :content="$t('pricing.pagefont.full_len_tips')" placement="top-start">
+                  <template #reference>
+                    <div class="t_icon">
+                      <img src="/img/pricing/tip.svg" />
+                    </div>
+                  </template>
+                </el-popover>
               </div>
             </div>
             <div class="one_feature_item center_show shu2">
@@ -661,14 +658,21 @@ const buyCorrectNum = () => {
               <div class="regular_font">
                 {{ $t('pricing.pagefont.det_s_ai_c') }}
 
-                <el-tooltip
+                <!-- <el-tooltip
                   class="box-item"
                   effect="dark"
                   :content="$t('pricing.pagefont.det_s_ai_c_tips')"
                   placement="top-start"
                 >
                   <div class="t_icon"><img src="/img/pricing/tip.svg" /></div>
-                </el-tooltip>
+                </el-tooltip> -->
+                <el-popover class="box-item" :content="$t('pricing.pagefont.det_s_ai_c_tips')" placement="top-start">
+                  <template #reference>
+                    <div class="t_icon">
+                      <img src="/img/pricing/tip.svg" />
+                    </div>
+                  </template>
+                </el-popover>
               </div>
             </div>
             <div class="one_feature_item center_show shu2">
@@ -703,14 +707,21 @@ const buyCorrectNum = () => {
             <div class="one_feature_item padding1 shu1">
               <div class="regular_font">
                 {{ $t('pricing.pagefont.det_w_ai_c') }}
-                <el-tooltip
+                <!-- <el-tooltip
                   class="box-item"
                   effect="dark"
                   :content="$t('pricing.pagefont.det_w_ai_c_tips')"
                   placement="top-start"
                 >
                   <div class="t_icon"><img src="/img/pricing/tip.svg" /></div>
-                </el-tooltip>
+                </el-tooltip> -->
+                <el-popover class="box-item" :content="$t('pricing.pagefont.det_w_ai_c_tips')" placement="top-start">
+                  <template #reference>
+                    <div class="t_icon">
+                      <img src="/img/pricing/tip.svg" />
+                    </div>
+                  </template>
+                </el-popover>
               </div>
             </div>
             <div class="one_feature_item center_show shu2">
@@ -1287,14 +1298,22 @@ const buyCorrectNum = () => {
               <div class="regular_font">
                 {{ $t('pricing.pagefont.learn_ma') }}
 
-                <el-tooltip
+                <!-- <el-tooltip
                   class="box-item"
                   effect="dark"
                   :content="$t('pricing.pagefont.learn_ma_tips')"
                   placement="top-start"
                 >
                   <div class="t_icon"><img src="/img/pricing/tip.svg" /></div>
-                </el-tooltip>
+                </el-tooltip> -->
+
+                <el-popover class="box-item" :content="$t('pricing.pagefont.learn_ma_tips')" placement="top-start">
+                  <template #reference>
+                    <div class="t_icon">
+                      <img src="/img/pricing/tip.svg" />
+                    </div>
+                  </template>
+                </el-popover>
               </div>
             </div>
             <div class="one_feature_item center_show shu2">
@@ -2725,6 +2744,12 @@ const buyCorrectNum = () => {
 }
 .el-button:focus-visible {
   outline: 0px;
+}
+
+.el-popover.el-popper {
+  min-width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 15px 2px !important;
+  margin-left: 6px;
 }
 </style>
 <style scoped>
