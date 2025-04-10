@@ -363,7 +363,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="one_nums_bottom">{{ $t('index.questions') }}</div>
             </div>
             <div class="one_nums">
-              <div class="one_nums_top">10,000+</div>
+              <div class="one_nums_top">40,000+</div>
               <div class="one_nums_bottom">{{ $t('index.mockTest') }}</div>
             </div>
           </div>

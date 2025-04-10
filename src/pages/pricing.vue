@@ -469,7 +469,7 @@ const buyCorrectNum = () => {
         <!-- pc展示1 -->
         <div class="Feature_content">
           <div :class="['one_feature', { static_css: isSticky }]">
-            <div class="one_feature_item havepadding shu1">
+            <div class="one_feature_item havepadding shu1" style="padding-left: 0px">
               <div class="title">{{ $t('pricing.pagefont.pre') }}</div>
               <div class="switch_out">
                 <div class="font">{{ $t('pricing.pagefont.sw3m') }}</div>
@@ -2200,7 +2200,7 @@ const buyCorrectNum = () => {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 124px;
+        margin-top: 50px;
         grid-gap: 6px;
         flex-wrap: wrap;
         @media (max-width: 450px) {
