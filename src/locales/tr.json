@@ -329,7 +329,8 @@
       "learn_ma_tips": "Lütfen WhatsApp üzerinden bize ulaşın.",
       "Others": "Diğerleri",
       "new_f": "Yeni Özellikler",
-      "peri_su": "Öncelikli Destek"
+      "peri_su": "Öncelikli Destek",
+      "timemonth": "Kez / Ay"
     },
     "aqList": [
       {
@@ -434,10 +435,11 @@
       "90 gün içinde istediğiniz zaman test yapın"
     ],
     "packagesallQy": {
-      "unlimited": "Sınırsız",
-      "qy1": "<span class='yellow'>{times} Kez</span> Deneme Sınavı",
+      "mmonth": "/ Ay",
+      "unlimited": "<span class='yellow'>Sınırsız</span> AI Düzeltme",
+      "qy1": "<span class='yellow'>{times} Kez / Ay</span> Deneme Sınavı",
       "qy1_1": "Deneme Sınavı",
-      "qy2": "<span class='yellow'>{times} Kez</span> AI Düzeltme",
+      "qy2": "<span class='yellow'>{times} Kez / Ay</span> AI Düzeltme",
       "qy3": "AI'ya Sorun",
       "qy4": "18.000+ Alıştırma Sorusuna Erişim",
       "qy5": "Anında Geri Bildirim Alın",

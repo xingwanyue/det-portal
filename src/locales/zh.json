@@ -328,7 +328,8 @@
       "learn_ma_tips": "请通过WhatsApp联系我们。",
       "Others": "其他",
       "new_f": "新功能",
-      "peri_su": "优先支持"
+      "peri_su": "优先支持",
+      "timemonth": "次 / 月"
     },
     "aqList": [
       {
@@ -433,10 +434,11 @@
       "90天内随时测试"
     ],
     "packagesallQy": {
-      "unlimited": "无限制",
-      "qy1": "<span class='yellow'>{times}次</span>模考",
+      "mmonth": "/ 月",
+      "unlimited": "<span class='yellow'>无限次</span>AI批改",
+      "qy1": "<span class='yellow'>{times}次 / 月</span>模拟考试",
       "qy1_1": "模考",
-      "qy2": "<span class='yellow'>{times}次</span>AI批改",
+      "qy2": "<span class='yellow'>{times}次 / 月</span>AI批改",
       "qy3": "咨询AI",
       "qy4": "访问18,000+练习题",
       "qy5": "获取即时反馈",

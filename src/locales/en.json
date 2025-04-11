@@ -315,7 +315,8 @@
       "learn_ma_tips": "Please contact us via WhatsApp to claim.",
       "Others": "Others",
       "new_f": "New Features",
-      "peri_su": "Priority Suppor"
+      "peri_su": "Priority Suppor",
+      "timemonth": "Times / Month"
     },
     "aqList": [
       {
@@ -420,10 +421,11 @@
       "Test at any time within 90 days"
     ],
     "packagesallQy": {
-      "unlimited": "Unlimited",
-      "qy1": "<span class='yellow'>{times} Times</span> Mock Exam",
+      "mmonth": "/ Month",
+      "unlimited": "<span class='yellow'>Unlimited Times</span> AI Correction",
+      "qy1": "<span class='yellow'>{times} Times / Month</span> Mock Exam",
       "qy1_1": "Mock Exam",
-      "qy2": "<span class='yellow'>{times} Times</span> AI Correction",
+      "qy2": "<span class='yellow'>{times} Times / Month</span> AI Correction",
       "qy3": "Ask AI",
       "qy4": "Access 18000+ Practice Questions",
       "qy5": "Get Instant Feedback",

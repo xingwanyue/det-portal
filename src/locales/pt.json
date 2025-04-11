@@ -328,7 +328,8 @@
       "learn_ma_tips": "Por favor, contate-nos via WhatsApp para reivindicar.",
       "Others": "Outros",
       "new_f": "Novos Recursos",
-      "peri_su": "Suporte Prioritário"
+      "peri_su": "Suporte Prioritário",
+      "timemonth": "Vezes / Mês"
     },
     "aqList": [
       {
@@ -433,10 +434,11 @@
       "Faça o teste a qualquer momento dentro de 90 dias"
     ],
     "packagesallQy": {
-      "unlimited": "Ilimitado",
-      "qy1": "Simulado <span class='yellow'>{times} vezes</span>",
+      "mmonth": "/ Mês",
+      "unlimited": "Correção de IA <span class='yellow'>Ilimitada</span>",
+      "qy1": "<span class='yellow'>{times} Vezes / Mês</span> Simulado",
       "qy1_1": "Simulado",
-      "qy2": "Correção por IA <span class='yellow'>{times} vezes</span>",
+      "qy2": "<span class='yellow'>{times} Vezes / Mês</span> Correção de IA",
       "qy3": "Pergunte à IA",
       "qy4": "Acesso a mais de 18.000 questões de prática",
       "qy5": "Obtenha Feedback Instantâneo",

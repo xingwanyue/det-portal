@@ -329,7 +329,8 @@
       "learn_ma_tips": "Per favore contattaci tramite WhatsApp per reclamare.",
       "Others": "Altri",
       "new_f": "Nuove funzionalità",
-      "peri_su": "Supporto prioritario"
+      "peri_su": "Supporto prioritario",
+      "timemonth": "Volte / Mese",
     },
     "aqList": [
       {
@@ -434,10 +435,11 @@
       "Fai il test in qualsiasi momento entro 90 giorni"
     ],
     "packagesallQy": {
-      "unlimited": "Illimitato",
-      "qy1": "Test di pratica <span class='yellow'>{times} volte</span>",
+      "mmonth": "/ Mese",
+      "unlimited": "Correzione AI <span class='yellow'>Illimitata</span>",
+      "qy1": "<span class='yellow'>{times} Volte / Mese</span> Esame Simulato",
       "qy1_1": "Test di pratica",
-      "qy2": "Correzione IA <span class='yellow'>{times} volte</span>",
+      "qy2": "<span class='yellow'>{times} Volte / Mese</span> Correzione AI",
       "qy3": "Chiedi all'IA",
       "qy4": "Accesso a oltre 18.000 domande di esercitazione",
       "qy5": "Ottieni feedback istantaneo",

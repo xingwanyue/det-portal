@@ -329,7 +329,8 @@
       "learn_ma_tips": "Por favor, contáctenos a través de WhatsApp para reclamar.",
       "Others": "Otros",
       "new_f": "Nuevas Funciones",
-      "peri_su": "Soporte Prioritario"
+      "peri_su": "Soporte Prioritario",
+      "timemonth": "Veces / Mes",
     },
     "aqList": [
       {
@@ -434,10 +435,11 @@
       "Haz el examen en cualquier momento dentro de los 90 días"
     ],
     "packagesallQy": {
-      "unlimited": "Ilimitado",
-      "qy1": "Examen de Práctica <span class='yellow'>{times} veces</span>",
+      "mmonth": "/ Mes",
+      "unlimited": "Corrección de IA <span class='yellow'>Ilimitada</span>",
+      "qy1": "<span class='yellow'>{times} Veces / Mes</span> Examen de Prueba",
       "qy1_1": "Examen de Práctica",
-      "qy2": "Corrección por IA <span class='yellow'>{times} veces</span>",
+      "qy2": "<span class='yellow'>{times} Veces / Mes</span> Corrección de IA",
       "qy3": "Pregunta a la IA",
       "qy4": "Acceso a más de 18.000 preguntas de práctica",
       "qy5": "Obtén Retroalimentación Instantánea",

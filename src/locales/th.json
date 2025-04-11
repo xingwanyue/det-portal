@@ -329,7 +329,8 @@
       "learn_ma_tips": "กรุณาติดต่อเราผ่าน WhatsApp เพื่อรับของขวัญ",
       "Others": "อื่นๆ",
       "new_f": "คุณสมบัติใหม่",
-      "peri_su": "การสนับสนุนแบบเร่งด่วน"
+      "peri_su": "การสนับสนุนแบบเร่งด่วน",
+      "timemonth": "ครั้ง / เดือน"
     },
     "aqList": [
       {
@@ -434,10 +435,11 @@
       "ทำการทดสอบได้ทุกเมื่อภายใน 90 วัน"
     ],
     "packagesallQy": {
-      "unlimited": "ไม่จำกัด",
-      "qy1": "แบบทดสอบจำลอง <span class='yellow'>{times} ครั้ง</span>",
+      "mmonth": "/ เดือน",
+      "unlimited": "การตรวจแก้ AI <span class='yellow'>ไม่จำกัด</span>",
+      "qy1": "<span class='yellow'>{times} ครั้ง / เดือน</span> การสอบจำลอง",
       "qy1_1": "แบบทดสอบจำลอง",
-      "qy2": "การตรวจโดย AI <span class='yellow'>{times} ครั้ง</span>",
+      "qy2": "<span class='yellow'>{times} ครั้ง / เดือน</span> การตรวจแก้ AI",
       "qy3": "ถาม AI",
       "qy4": "เข้าถึงข้อสอบฝึกฝนมากกว่า 18,000 ข้อ",
       "qy5": "รับข้อเสนอแนะทันที",

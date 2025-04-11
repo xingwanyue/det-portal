@@ -329,7 +329,8 @@
       "learn_ma_tips": "WhatsApp으로 문의하세요.",
       "Others": "기타",
       "new_f": "새로운 기능",
-      "peri_su": "우선 지원"
+      "peri_su": "우선 지원",
+      "timemonth": "회 / 월"
     },
     "aqList": [
       {
@@ -434,10 +435,11 @@
       "90일 이내 언제든지 테스트 가능"
     ],
     "packagesallQy": {
-      "unlimited": "무제한",
-      "qy1": "모의고사 <span class='yellow'>{times}회</span>",
+      "mmonth": "/ 월",
+      "unlimited": "<span class='yellow'>무제한</span> AI 교정",
+      "qy1": "<span class='yellow'>{times}회 / 월</span> 모의고사",
       "qy1_1": "모의고사",
-      "qy2": "AI 첨삭 <span class='yellow'>{times}회</span>",
+      "qy2": "<span class='yellow'>{times}회 / 월</span> AI 교정",
       "qy3": "AI에게 질문하기",
       "qy4": "18,000개 이상의 연습 문제 접근",
       "qy5": "즉각적인 피드백 받기",

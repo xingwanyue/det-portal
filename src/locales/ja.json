@@ -328,7 +328,8 @@
       "learn_ma_tips": "WhatsAppでお問い合わせください。",
       "Others": "その他",
       "new_f": "新機能",
-      "peri_su": "優先サポート"
+      "peri_su": "優先サポート",
+      "timemonth": "回 / 月"
     },
     "aqList": [
       {
@@ -433,10 +434,11 @@
       "90日以内ならいつでもテスト可能"
     ],
     "packagesallQy": {
-      "unlimited": "無制限",
-      "qy1": "模擬テスト <span class='yellow'>{times}回</span>",
+      "mmonth": "/ 月",
+      "unlimited": "<span class='yellow'>無制限</span>のAI添削",
+      "qy1": "<span class='yellow'>{times}回 / 月</span>の模擬試験",
       "qy1_1": "模擬テスト",
-      "qy2": "AI添削 <span class='yellow'>{times}回</span>",
+      "qy2": "<span class='yellow'>{times}回 / 月</span>のAI添削",
       "qy3": "AIに質問",
       "qy4": "18,000+以上の練習問題へのアクセス",
       "qy5": "即時フィードバック",

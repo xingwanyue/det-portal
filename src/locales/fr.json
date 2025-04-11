@@ -328,7 +328,8 @@
       "learn_ma_tips": "Veuillez nous contacter via WhatsApp pour réclamer.",
       "Others": "Autres",
       "new_f": "Nouvelles fonctionnalités",
-      "peri_su": "Support prioritaire"
+      "peri_su": "Support prioritaire",
+      "timemonth": "Fois / Mois"
     },
     "aqList": [
       {
@@ -433,10 +434,11 @@
       "Passez le test à tout moment dans les 90 jours"
     ],
     "packagesallQy": {
-      "unlimited": "Illimité",
-      "qy1": "Test pratique <span class='yellow'>{times} fois</span>",
+      "mmonth": "/ Mois",
+      "unlimited": "Correction IA <span class='yellow'>Illimitée</span>",
+      "qy1": "<span class='yellow'>{times} Fois / Mois</span> Examen Blanc",
       "qy1_1": "Test pratique",
-      "qy2": "Correction par IA <span class='yellow'>{times} fois</span>",
+      "qy2": "<span class='yellow'>{times} Fois / Mois</span> Correction IA",
       "qy3": "Interrogez l'IA",
       "qy4": "Accès à plus de 18 000 questions d'entraînement",
       "qy5": "Obtenez des commentaires instantanés",

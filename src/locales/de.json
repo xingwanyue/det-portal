@@ -319,7 +319,8 @@
       "learn_ma_tips": "Bitte kontaktieren Sie uns über WhatsApp, um das Geschenk zu beanspruchen.",
       "Others": "Sonstiges",
       "new_f": "Neue Funktionen",
-      "peri_su": "Prioritäts-Support"
+      "peri_su": "Prioritäts-Support",
+      "timemonth": "Mal / Monat",
     },
     "aqList": [
       {
@@ -424,10 +425,11 @@
       "Testen Sie jederzeit innerhalb von 90 Tagen"
     ],
     "packagesallQy": {
-      "unlimited": "Unbegrenzt",
-      "qy1": "<span class='yellow'>{times} Mal</span> Übungstest",
+      "mmonth": "/ Monat",
+      "unlimited": "<span class='yellow'>Unbegrenzte</span> KI-Korrektur",
+      "qy1": "<span class='yellow'>{times} Mal / Monat</span> Probeprüfung",
       "qy1_1": "Übungstest",
-      "qy2": "<span class='yellow'>{times} Mal</span> KI-Korrektur",
+      "qy2": "<span class='yellow'>{times} Mal / Monat</span> KI-Korrektur",
       "qy3": "KI fragen",
       "qy4": "Zugriff auf 18.000+ Übungsfragen",
       "qy5": "Sofortiges Feedback erhalten",

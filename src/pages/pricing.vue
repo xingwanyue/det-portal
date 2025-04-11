@@ -127,9 +127,14 @@ const getData = async () => {
           id90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag).id,
           saveOpen: true,
           qylist: [
-            t('pricing.packagesallQy.qy2', {
-              times: item.tag === 'Pro' ? t('pricing.packagesallQy.unlimited') : item.correctNum,
-            }),
+            // t('pricing.packagesallQy.qy2', {
+            //   times: item.tag === 'Pro' ? t('pricing.packagesallQy.unlimited') : item.correctNum,
+            // }),
+            item.tag === 'Pro'
+              ? t('pricing.packagesallQy.unlimited')
+              : t('pricing.packagesallQy.qy2', {
+                  times: item.correctNum,
+                }),
             item.examNum === 0
               ? t('pricing.packagesallQy.qy1_1')
               : t('pricing.packagesallQy.qy1', { times: item.examNum }),
@@ -185,9 +190,12 @@ const getData = async () => {
           id90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag).id,
           saveOpen: true,
           qylist: [
-            t('pricing.packagesallQy.qy2', {
-              times: item.tag === 'Pro' ? t('pricing.packagesallQy.unlimited') : item.correctNum,
-            }),
+            // t('pricing.packagesallQy.qy2', {
+            //   times: item.tag === 'Pro' ? t('pricing.packagesallQy.unlimited') : item.correctNum,
+            // }),
+            item.tag === 'Pro'
+              ? t('pricing.packagesallQy.unlimited')
+              : t('pricing.packagesallQy.qy2', { times: item.correctNum }),
             item.examNum === 0
               ? t('pricing.packagesallQy.qy1_1')
               : t('pricing.packagesallQy.qy1', { times: item.examNum }),
@@ -599,13 +607,13 @@ const buyCorrectNum = () => {
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
-                <div class="have_nums">3</div>
+                <div class="have_nums">3 {{ $t('pricing.pagefont.timemonth') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
-                <div class="have_nums">10</div>
+                <div class="have_nums">10 {{ $t('pricing.pagefont.timemonth') }}</div>
               </div>
             </div>
           </div>
@@ -640,13 +648,13 @@ const buyCorrectNum = () => {
             <div class="one_feature_item center_show shu3">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
-                <div class="have_nums">10</div>
+                <div class="have_nums">10 {{ $t('pricing.pagefont.timemonth') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show shu4">
               <div class="have_or_no">
                 <div class="icon"><img src="/img/pricing/black_check_icon.svg" /></div>
-                <div class="have_nums">60</div>
+                <div class="have_nums">60 {{ $t('pricing.pagefont.timemonth') }}</div>
               </div>
             </div>
             <div class="one_feature_item center_show one_feature_item_last shu5">

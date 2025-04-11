@@ -329,7 +329,8 @@
       "learn_ma_tips": "Silakan hubungi kami melalui WhatsApp untuk mengklaim.",
       "Others": "Lainnya",
       "new_f": "Fitur Baru",
-      "peri_su": "Dukungan Prioritas"
+      "peri_su": "Dukungan Prioritas",
+      "timemonth": "Kali / Bulan"
     },
     "aqList": [
       {
@@ -434,10 +435,11 @@
       "Uji kapan saja dalam 90 hari"
     ],
     "packagesallQy": {
-      "unlimited": "Tak Terbatas",
-      "qy1": "Tes Simulasi <span class='yellow'>{times} kali</span>",
+      "mmonth": "/ Bulan",
+      "unlimited": "Koreksi AI <span class='yellow'>Tak Terbatas</span>",
+      "qy1": "<span class='yellow'>{times} Kali / Bulan</span> Ujian Simulasi",
       "qy1_1": "Tes Simulasi",
-      "qy2": "Koreksi AI <span class='yellow'>{times} kali</span>",
+      "qy2": "<span class='yellow'>{times} Kali / Bulan</span> Koreksi AI",
       "qy3": "Tanya AI",
       "qy4": "Akses ke 18.000+ soal latihan",
       "qy5": "Dapatkan Umpan Balik Instan",
