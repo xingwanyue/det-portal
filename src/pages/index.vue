@@ -78,12 +78,22 @@ const modeList = computed(() => {
     },
   ];
 });
+const handleKeydown = (e: any) => {
+  if (e.isComposing || e.keyCode === 229) {
+    return;
+  }
+  if (e.shiftKey) {
+    state.userQuestion += '\n';
+    return;
+  }
+  sendMsg();
+};
 const sendMsg = async () => {
   if (!state.userQuestion.length) {
     return;
   }
   const args = {
-    content: state.userQuestion,
+    content: state.userQuestion.replace(/\n/g, '<br />'),
     type: state.zhuti === '1' ? 'chat' : 'detTutor',
     model: '',
     online: state.online,
@@ -230,7 +240,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 :placeholder="
                   state.zhuti === '1' ? 'Ask Anything Here.' : 'A professional Duolingo English Test AI Tutor.'
                 "
-                @keydown.enter.native.prevent="sendMsg"
+                @keydown.enter.native.prevent="handleKeydown"
               />
             </div>
             <div class="white_input_bottom">
