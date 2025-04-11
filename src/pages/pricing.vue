@@ -127,7 +127,9 @@ const getData = async () => {
           id90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag).id,
           saveOpen: true,
           qylist: [
-            t('pricing.packagesallQy.qy2', { times: item.correctNum }),
+            t('pricing.packagesallQy.qy2', {
+              times: item.tag === 'Pro' ? t('pricing.packagesallQy.unlimited') : item.correctNum,
+            }),
             item.examNum === 0
               ? t('pricing.packagesallQy.qy1_1')
               : t('pricing.packagesallQy.qy1', { times: item.examNum }),
@@ -183,7 +185,9 @@ const getData = async () => {
           id90: data.find((itemin: any) => itemin.type === '5' && itemin.day === 90 && itemin.tag === item.tag).id,
           saveOpen: true,
           qylist: [
-            t('pricing.packagesallQy.qy2', { times: item.tag === 'Pro' ? 'Unlimited' : item.correctNum }),
+            t('pricing.packagesallQy.qy2', {
+              times: item.tag === 'Pro' ? t('pricing.packagesallQy.unlimited') : item.correctNum,
+            }),
             item.examNum === 0
               ? t('pricing.packagesallQy.qy1_1')
               : t('pricing.packagesallQy.qy1', { times: item.examNum }),

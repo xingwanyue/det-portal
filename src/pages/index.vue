@@ -227,7 +227,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 class="el_input"
                 v-model="state.userQuestion"
                 type="textarea"
-                :placeholder="state.zhuti === '1' ? 'Ask Anything Here.' : 'A professional Duolingo English Test AI Tutor.'"
+                :placeholder="
+                  state.zhuti === '1' ? 'Ask Anything Here.' : 'A professional Duolingo English Test AI Tutor.'
+                "
                 @keydown.enter.native.prevent="sendMsg"
               />
             </div>
@@ -305,7 +307,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 </div>
                 <div class="right">
                   <div class="title">{{ $t('index.have1_title') }}</div>
-                  <div class="font">{{ $t('index.have1_desc') }}</div>
+                  <div class="font" v-html="$t('index.have1_desc')" />
                 </div>
               </NuxtLink>
               <NuxtLink
@@ -318,7 +320,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 </div>
                 <div class="right">
                   <div class="title">{{ $t('index.have2_title') }}</div>
-                  <div class="font">{{ $t('index.have2_desc') }}</div>
+                  <div class="font" v-html="$t('index.have2_desc')" />
                 </div>
               </NuxtLink>
               <NuxtLink
@@ -331,7 +333,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 </div>
                 <div class="right">
                   <div class="title">{{ $t('index.have3_title') }}</div>
-                  <div class="font">{{ $t('index.have3_desc') }}</div>
+                  <div class="font" v-html="$t('index.have3_desc')" />
                 </div>
               </NuxtLink>
 
@@ -341,7 +343,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 </div>
                 <div class="right">
                   <div class="title">{{ $t('index.have4_title') }}</div>
-                  <div class="font">{{ $t('index.have4_desc') }}</div>
+                  <div class="font" v-html="$t('index.have4_desc')" />
                 </div>
               </NuxtLink>
             </div>
