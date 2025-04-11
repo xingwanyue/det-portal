@@ -278,7 +278,7 @@
         "name4": "Pro"
       },
       "times": "Mal",
-      "sw3m": "Sparen Sie mit 3 Monaten",
+      "sw3m": "Sparen Sie {times}% bei 3 Monaten",
       "month1": "Monat",
       "3month": "3 Monate",
       "mocktest": "Übungstests",

@@ -484,7 +484,7 @@ const buyCorrectNum = () => {
             <div class="one_feature_item havepadding shu1" style="padding-left: 0px">
               <div class="title">{{ $t('pricing.pagefont.pre') }}</div>
               <div class="switch_out">
-                <div class="font">{{ $t('pricing.pagefont.sw3m') }}</div>
+                <div class="font">{{ $t('pricing.pagefont.sw3m', { times: 25 }) }}</div>
                 <div><el-switch v-model="tableSwitchOpen" /></div>
               </div>
             </div>

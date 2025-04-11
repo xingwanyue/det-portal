@@ -288,7 +288,7 @@
         "name4": "Pro"
       },
       "times": "volte",
-      "sw3m": "Risparmia con il piano di 3 mesi",
+      "sw3m": "Risparmia {times}% con 3 mesi",
       "month1": "mese",
       "3month": "3 mesi",
       "mocktest": "Test di pratica",

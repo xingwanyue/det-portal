@@ -288,7 +288,7 @@
         "name4": "Pro"
       },
       "times": "Kez",
-      "sw3m": "3 aylık planla tasarruf edin",
+      "sw3m": "3 aylık abonelikte {times}% tasarruf",
       "month1": "ay",
       "3month": "3 ay",
       "mocktest": "Deneme Sınavları",

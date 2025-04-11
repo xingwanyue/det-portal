@@ -288,7 +288,7 @@
         "name4": "Pro"
       },
       "times": "veces",
-      "sw3m": "Ahorra con el plan de 3 meses",
+      "sw3m": "Ahorre {times}% con 3 meses",
       "month1": "mes",
       "3month": "3 meses",
       "mocktest": "Exámenes de Práctica",

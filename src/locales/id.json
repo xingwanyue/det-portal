@@ -288,7 +288,7 @@
         "name4": "Pro"
       },
       "times": "kali",
-      "sw3m": "Hemat dengan paket 3 bulan",
+      "sw3m": "Hemat {times}% untuk 3 bulan",
       "month1": "bulan",
       "3month": "3 bulan",
       "mocktest": "Tes Simulasi",

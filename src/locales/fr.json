@@ -287,7 +287,7 @@
         "name4": "Pro"
       },
       "times": "fois",
-      "sw3m": "Économisez avec le forfait 3 mois",
+      "sw3m": "Économisez {times}% sur 3 mois",
       "month1": "mois",
       "3month": "3 mois",
       "mocktest": "Tests pratiques",

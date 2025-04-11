@@ -275,7 +275,7 @@
         "name3": "Plus",
         "name4": "Pro"
       },
-      "sw3m": "Save with 3 months",
+      "sw3m": "Save {times}% with 3 months",
       "month1": "month",
       "3month": "3 month",
       "mockexam": "Mock Exam",
