@@ -7,7 +7,19 @@ import speakingAiCorrection from './speakingAiCorrection';
 import writingAiCorrection from './writingAiCorrection';
 
 export default {
-  '/courses': course,
+  '/courses': course.en,
+  '/de/courses': course.de,
+  '/es/courses': course.es,
+  '/fr/courses': course.fr,
+  '/id/courses': course.id,
+  '/it/courses': course.it,
+  '/ja/courses': course.ja,
+  '/ko/courses': course.ko,
+  '/pt/courses': course.pt,
+  '/ru/courses': course.ru,
+  '/th/courses': course.th,
+  '/tr/courses': course.tr,
+  '/zh/courses': course.zh,
   '/': home,
   '/mock-exam': mockExam,
   '/duolingo-practice-test': duolingoPracticeTest,
