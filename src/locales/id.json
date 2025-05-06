@@ -131,7 +131,7 @@
       "tips1": "Tes Simulasi Terlengkap, Mendekati Ujian DET Sebenarnya",
       "tips2": "Ujian Adaptif dan Penilaian AI",
       "tips3": "Skor Penilaian Akurat, Laporan Evaluasi Mendetail",
-      "tips4": "Hasil akan tersedia dalam <span class='yellow'>5-30</span> menit",
+      "tips4": "Hasil akan tersedia dalam <span class='yellow'>1-5</span> menit",
       "btn_font": "Cari tahu lebih lanjut",
       "btn_img_alt": "Panah Kuning Kanan"
     },
@@ -140,7 +140,7 @@
       "tips1": "Mendukung \"Write about the Photo\", \"Interactive Writing\", \"Writing Sample\"",
       "tips2": "Penilaian AI, Koreksi AI, Bimbingan Guru",
       "tips3": "Skor Penilaian Akurat, Laporan Evaluasi Mendetail",
-      "tips4": "Hasil akan tersedia dalam <span class='yellow'>1-5 </span>menit",
+      "tips4": "Hasil akan tersedia dalam <span class='yellow'>1 </span>menit",
       "btn_font": "Pelajari lebih lanjut",
       "btn_img_alt": "Anak Panah Kuning Kanan"
     },
@@ -149,7 +149,7 @@
       "tips1": "Mendukung \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\"",
       "tips2": "Penilaian AI, Evaluasi AI, Bimbingan Guru",
       "tips3": "Skor Penilaian Akurat, Laporan Evaluasi Mendetail",
-      "tips4": "Hasil akan tersedia dalam 1-5 </span>menit",
+      "tips4": "Hasil akan tersedia dalam 1 </span>menit",
       "btn_font": "Pelajari lebih lanjut",
       "btn_img_alt": "Panah Kuning Kanan"
     },
@@ -398,7 +398,7 @@
       "Penilaian AI, Skor akurat",
       "Hasil Evaluasi AI",
       "Laporan Evaluasi Terperinci",
-      "Hasil akan tersedia dalam <span class='strongfont'>1-5 menit</span>"
+      "Hasil akan tersedia dalam <span class='strongfont'>1 menit</span>"
     ],
     "contaceUsList": {
       "type1": {
@@ -431,7 +431,7 @@
       "<span class='strongfont'>Mirip dengan tes DET asli</span>",
       "<span class='strongfont'>Penilaian skor akurat (Akurasi skor ≤10 poin)</span>",
       "Laporan penilaian terperinci",
-      "Hasil akan tersedia dalam <span class='strongfont'>1-30 menit</span>",
+      "Hasil akan tersedia dalam <span class='strongfont'>1-5 menit</span>",
       "Uji kapan saja dalam 90 hari"
     ],
     "packagesallQy": {
@@ -607,7 +607,7 @@
     },
     "h1": "Koreksi AI Tulisan Duolingo Instan oleh DET Practice",
     "descnew": "Penilaian Tulisan DET Tingkat Profesional dalam Hitungan Menit",
-    "desc": "Dapatkan umpan balik tingkat ahli untuk tugas menulis Duolingo Anda melalui sistem AI canggih kami. Esai Anda dianalisis menggunakan kriteria penilaian DET resmi, memberikan koreksi komprehensif dan saran detail dalam waktu 1-5 menit.",
+    "desc": "Dapatkan umpan balik tingkat ahli untuk tugas menulis Duolingo Anda melalui sistem AI canggih kami. Esai Anda dianalisis menggunakan kriteria penilaian DET resmi, memberikan koreksi komprehensif dan saran detail dalam waktu 1 menit.",
     "alt": "DET Practice: Platform Latihan Duolingo English Test Terbaik",
     "useralt": "User Icon",
     "white_arrow_right": "white_arrow_right",
@@ -618,7 +618,7 @@
     "Get_Scored_Now": "Mulai Mencoba",
     "h2_1": {
       "h2": "Analisis Skor Tulisan Duolingo yang Akurat",
-      "right_desc": "Kirimkan tugas menulis DET Anda dari bank soal kami dan terima laporan skor terperinci dalam waktu 5 menit. Setiap penilaian mengikuti kriteria penilaian DET asli."
+      "right_desc": "Kirimkan tugas menulis DET Anda dari bank soal kami dan terima laporan skor terperinci dalam waktu 1 menit. Setiap penilaian mengikuti kriteria penilaian DET asli."
     },
     "h2_2": {
       "h2": "Koreksi Kesalahan Real-time",
@@ -877,7 +877,7 @@
     },
     "article4": {
       "h2": "Laporan Umpan Balik Tes Simulasi DET yang Cepat",
-      "right_desc": "Dapatkan hasil tes simulasi DET detail Anda hanya dalam <span class='zdfont'>5-30 menit</span>. Sistem penilaian super cepat kami memberikan umpan balik langsung, memungkinkan Anda melacak kemajuan dan menyesuaikan strategi persiapan secara efisien."
+      "right_desc": "Dapatkan hasil tes simulasi DET detail Anda hanya dalam <span class='zdfont'>1-5 menit</span>. Sistem penilaian super cepat kami memberikan umpan balik langsung, memungkinkan Anda melacak kemajuan dan menyesuaikan strategi persiapan secara efisien."
     },
     "vs1": "Skor Tes Simulasi DET Kami VS Skor Tes DET Sebenarnya",
     "vs2": "Perbandingan skor peserta tes yang mengambil tes simulasi DET kami dan Tes Bahasa Inggris Duolingo",
@@ -893,7 +893,7 @@
       },
       {
         "q": "Kapan saya akan menerima hasil tes simulasi Duolingo saya?",
-        "a": "Hasil tes simulasi Anda akan dikirimkan dalam waktu 5-30 menit setelah selesai. Laporan mencakup analisis detail bagian per bagian dan area spesifik untuk peningkatan."
+        "a": "Hasil tes simulasi Anda akan dikirimkan dalam waktu 1-5 menit setelah selesai. Laporan mencakup analisis detail bagian per bagian dan area spesifik untuk peningkatan."
       },
       {
         "q": "Bisakah saya mengambil tes simulasi Duolingo beberapa kali?",
@@ -1403,7 +1403,7 @@
         },
         {
           "title": "Dapatkan Hasil Instan",
-          "desc": "Terima skor dan umpan balik terperinci dalam 5-30 menit."
+          "desc": "Terima skor dan umpan balik terperinci dalam 1-5 menit."
         },
         {
           "title": "Pelajari & Tingkatkan",

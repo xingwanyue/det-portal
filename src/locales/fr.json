@@ -130,7 +130,7 @@
       "tips1": "Le test blanc le plus complet, proche du véritable examen DET",
       "tips2": "Examens adaptatifs et évaluation par IA",
       "tips3": "Scores d'évaluation précis, rapport d'évaluation détaillé",
-      "tips4": "Les résultats seront disponibles en <span class='yellow'>5 à 30</span> minutes",
+      "tips4": "Les résultats seront disponibles en <span class='yellow'>1 à 5</span> minutes",
       "btn_font": "En savoir plus",
       "btn_img_alt": "Flèche Jaune Droite"
     },
@@ -139,7 +139,7 @@
       "tips1": "Supporte \"Write about the Photo\", \"Interactive Writing\", \"Writing Sample\"",
       "tips2": "Évaluation par IA, Correction par IA, Accompagnement d'un enseignant",
       "tips3": "Scores d'évaluation précis, rapport d'évaluation détaillé",
-      "tips4": "Les résultats seront disponibles en <span class='yellow'>1 à 5 </span>minutes",
+      "tips4": "Les résultats seront disponibles en <span class='yellow'>1</span>minutes",
       "btn_font": "En savoir plus",
       "btn_img_alt": "Flèche Droite Jaune"
     },
@@ -148,7 +148,7 @@
       "tips1": "Supporte \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\"",
       "tips2": "Évaluation par IA, Résultats d'évaluation IA, Accompagnement d'un enseignant",
       "tips3": "Scores d'évaluation précis, rapport d'évaluation détaillé",
-      "tips4": "Les résultats seront disponibles en <span class='yellow'>1 à 5 </span>minutes",
+      "tips4": "Les résultats seront disponibles en <span class='yellow'>1</span>minutes",
       "btn_font": "En savoir plus",
       "btn_img_alt": "Flèche Jaune Droite"
     },
@@ -397,7 +397,7 @@
       "Évaluation par IA, score précis",
       "Résultats de l'évaluation de l'IA",
       "Rapport d'évaluation détaillé",
-      "Les résultats seront disponibles dans <span class='strongfont'>1-5 minutes</span>"
+      "Les résultats seront disponibles dans <span class='strongfont'>1 minutes</span>"
     ],
     "contaceUsList": {
       "type1": {
@@ -430,7 +430,7 @@
       "<span class='strongfont'>Similaire au vrai test DET</span>",
       "<span class='strongfont'>Scores d'évaluation précis (Précision des scores ≤10 points)</span>",
       "Rapport d'évaluation détaillé",
-      "Les résultats seront disponibles en <span class='strongfont'>1 à 30 minutes</span>",
+      "Les résultats seront disponibles en <span class='strongfont'>1 à 5 minutes</span>",
       "Passez le test à tout moment dans les 90 jours"
     ],
     "packagesallQy": {
@@ -606,7 +606,7 @@
     },
     "h1": "Correction IA Instantanée des Écrits Duolingo par DET Practice",
     "descnew": "Évaluation Professionnelle des Écrits DET en Minutes",
-    "desc": "Obtenez des retours d'expert sur vos tâches d'écriture Duolingo grâce à notre système IA avancé. Vos essais sont analysés selon les critères officiels d'évaluation DET, fournissant des corrections complètes et des suggestions détaillées en 1-5 minutes.",
+    "desc": "Obtenez des retours d'expert sur vos tâches d'écriture Duolingo grâce à notre système IA avancé. Vos essais sont analysés selon les critères officiels d'évaluation DET, fournissant des corrections complètes et des suggestions détaillées en 1 minutes.",
     "alt": "DET Practice : La Meilleure Plateforme d'Entraînement pour le Duolingo English Test",
     "useralt": "User Icon",
     "white_arrow_right": "white_arrow_right",
@@ -617,7 +617,7 @@
     "Get_Scored_Now": "Essayer Maintenant",
     "h2_1": {
       "h2": "Analyse Précise des Notes d'Écriture Duolingo",
-      "right_desc": "Soumettez votre tâche d'écriture DET depuis notre banque de questions et recevez un rapport détaillé de notation en 5 minutes. Chaque évaluation suit les critères authentiques du DET."
+      "right_desc": "Soumettez votre tâche d'écriture DET depuis notre banque de questions et recevez un rapport détaillé de notation en 1 minutes. Chaque évaluation suit les critères authentiques du DET."
     },
     "h2_2": {
       "h2": "Correction d'Erreurs en Temps Réel",
@@ -876,7 +876,7 @@
     },
     "article4": {
       "h2": "Rapport Rapide de Retour sur le Test d'Entraînement DET",
-      "right_desc": "Recevez vos résultats détaillés du test d'entraînement DET en seulement <span class='zdfont'>5-30 minutes</span>. Notre système de notation ultra-rapide fournit un retour immédiat, vous permettant de suivre vos progrès et d'ajuster votre stratégie de préparation efficacement."
+      "right_desc": "Recevez vos résultats détaillés du test d'entraînement DET en seulement <span class='zdfont'>1-5 minutes</span>. Notre système de notation ultra-rapide fournit un retour immédiat, vous permettant de suivre vos progrès et d'ajuster votre stratégie de préparation efficacement."
     },
     "vs1": "Nos Scores de Tests d'Entraînement DET VS Scores Réels DET",
     "vs2": "Comparaison des scores des candidats ayant passé nos tests d'entraînement DET et le Test d'Anglais Duolingo",
@@ -892,7 +892,7 @@
       },
       {
         "q": "Quand recevrai-je mes résultats du test d'entraînement Duolingo ?",
-        "a": "Vos résultats du test d'entraînement seront livrés dans les 5-30 minutes après l'achèvement. Le rapport inclut une analyse détaillée section par section et des domaines spécifiques à améliorer."
+        "a": "Vos résultats du test d'entraînement seront livrés dans les 1-5 minutes après l'achèvement. Le rapport inclut une analyse détaillée section par section et des domaines spécifiques à améliorer."
       },
       {
         "q": "Puis-je passer le test d'entraînement Duolingo plusieurs fois ?",
@@ -1403,7 +1403,7 @@
         },
         {
           "title": "Obtenez des résultats instantanés",
-          "desc": "Recevez votre score et un feedback détaillé en 5-30 minutes."
+          "desc": "Recevez votre score et un feedback détaillé en 1-5 minutes."
         },
         {
           "title": "Analysez et améliorez",
