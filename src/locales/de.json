@@ -140,7 +140,7 @@
       "tips1": "Der umfassendste Übungstest, nahe am echten DET-Examen",
       "tips2": "Adaptive Prüfungen und KI-Bewertung",
       "tips3": "Präzise Bewertungsergebnisse, detaillierter Bewertungsbericht",
-      "tips4": "Ergebnisse innerhalb von <span class='yellow'>5-30 </span>Minuten verfügbar",
+      "tips4": "Ergebnisse innerhalb von <span class='yellow'>1-5 </span>Minuten verfügbar",
       "btn_font": "Mehr erfahren",
       "btn_img_alt": "Gelber Pfeil nach rechts"
     },
@@ -149,7 +149,7 @@
       "tips1": "Unterstützt \"Write about the Photo\", \"Interactive Writing\", \"Writing Sample\"",
       "tips2": "KI-Bewertung, KI-Korrektur, Lehreranleitung",
       "tips3": "Präzise Bewertungsergebnisse, detaillierter Bewertungsbericht",
-      "tips4": "Ergebnisse innerhalb von <span class='yellow'>1-5</span> Minuten verfügbar",
+      "tips4": "Ergebnisse innerhalb von <span class='yellow'>1</span> Minuten verfügbar",
       "btn_font": "Mehr erfahren",
       "btn_img_alt": "Gelber Pfeil nach rechts"
     },
@@ -388,7 +388,7 @@
       "KI-Bewertung, Genaues Ergebnis",
       "Ergebnisse der KI-Bewertung",
       "Detaillierter Bewertungsbericht",
-      "Ergebnisse werden innerhalb von <span class='strongfont'>1-5 Minuten</span> verfügbar sein."
+      "Ergebnisse werden innerhalb von <span class='strongfont'>1 Minuten</span> verfügbar sein."
     ],
     "contaceUsList": {
       "type1": {
@@ -421,7 +421,7 @@
       "<span class='strongfont'>Ähnlich wie der echte DET-Test</span>",
       "<span class='strongfont'>Genaue Bewertungspunkte (Genauigkeit ≤10 Punkte)</span>",
       "Detaillierter Bewertungsbericht",
-      "Ergebnisse sind innerhalb von <span class='strongfont'>1-30 Minuten</span> verfügbar",
+      "Ergebnisse sind innerhalb von <span class='strongfont'>1-5 Minuten</span> verfügbar",
       "Testen Sie jederzeit innerhalb von 90 Tagen"
     ],
     "packagesallQy": {
@@ -597,7 +597,7 @@
     },
     "h1": "Sofortige Duolingo Schreib-KI-Korrektur von DET Practice",
     "descnew": "Professionelle DET-Schreibbewertung in Minuten",
-    "desc": "Erhalten Sie Experten-Feedback für Ihre Duolingo-Schreibaufgaben durch unser fortschrittliches KI-System. Ihre Aufsätze werden nach offiziellen DET-Bewertungskriterien analysiert und liefern umfassende Korrekturen und detaillierte Vorschläge innerhalb von 1-5 Minuten.",
+    "desc": "Erhalten Sie Experten-Feedback für Ihre Duolingo-Schreibaufgaben durch unser fortschrittliches KI-System. Ihre Aufsätze werden nach offiziellen DET-Bewertungskriterien analysiert und liefern umfassende Korrekturen und detaillierte Vorschläge innerhalb von 1 Minuten.",
     "alt": "DET Practice: Die beste Duolingo English Test Übungsplattform",
     "useralt": "User Icon",
     "white_arrow_right": "white_arrow_right",
@@ -608,7 +608,7 @@
     "Get_Scored_Now": "Jetzt ausprobieren",
     "h2_1": {
       "h2": "Präzise Duolingo-Schreibbewertungsanalyse",
-      "right_desc": "Reichen Sie Ihre DET-Schreibaufgabe aus unserer Fragenbank ein und erhalten Sie innerhalb von 5 Minuten einen detaillierten Bewertungsbericht. Jede Bewertung folgt authentischen DET-Kriterien."
+      "right_desc": "Reichen Sie Ihre DET-Schreibaufgabe aus unserer Fragenbank ein und erhalten Sie innerhalb von 1 Minuten einen detaillierten Bewertungsbericht. Jede Bewertung folgt authentischen DET-Kriterien."
     },
     "h2_2": {
       "h2": "Echtzeit-Fehlerkorrektur",
@@ -867,7 +867,7 @@
     },
     "article4": {
       "h2": "Schneller DET Übungstest-Feedback-Bericht",
-      "right_desc": "Erhalten Sie Ihre detaillierten DET Übungstestergebnisse in nur <span class='zdfont'>5-30 Minuten</span>. Unser blitzschnelles Bewertungssystem liefert sofortiges Feedback, sodass Sie Ihren Fortschritt verfolgen und Ihre Vorbereitungsstrategie effizient anpassen können."
+      "right_desc": "Erhalten Sie Ihre detaillierten DET Übungstestergebnisse in nur <span class='zdfont'>1-5 Minuten</span>. Unser blitzschnelles Bewertungssystem liefert sofortiges Feedback, sodass Sie Ihren Fortschritt verfolgen und Ihre Vorbereitungsstrategie effizient anpassen können."
     },
     "vs1": "Unsere DET Übungstest-Ergebnisse VS Echte DET-Testergebnisse",
     "vs2": "Punktevergleich von Teilnehmern, die unsere DET Übungstests und den Duolingo English Test absolviert haben",
@@ -883,7 +883,7 @@
       },
       {
         "q": "Wann erhalte ich meine Duolingo Übungstestergebnisse?",
-        "a": "Ihre Übungstestergebnisse werden innerhalb von 5-30 Minuten nach Abschluss zugestellt. Der Bericht enthält detaillierte Analysen für jeden Abschnitt und spezifische Verbesserungsbereiche."
+        "a": "Ihre Übungstestergebnisse werden innerhalb von 1-5 Minuten nach Abschluss zugestellt. Der Bericht enthält detaillierte Analysen für jeden Abschnitt und spezifische Verbesserungsbereiche."
       },
       {
         "q": "Kann ich den Duolingo Übungstest mehrmals absolvieren?",
@@ -1394,7 +1394,7 @@
         },
         {
           "title": "Sofortige Ergebnisse",
-          "desc": "Erhalten Sie Ihre Punktzahl und detailliertes Feedback innerhalb von 5-30 Minuten."
+          "desc": "Erhalten Sie Ihre Punktzahl und detailliertes Feedback innerhalb von 1-5 Minuten."
         },
         {
           "title": "Analysieren & Verbessern",

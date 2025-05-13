@@ -140,7 +140,7 @@
       "tips1": "The Most <span class='yellow'>Powerful</span> Mock Test, Close to <span class='yellow'>Real DET Exam</span>",
       "tips2": "Adaptive Exams, and AI Scoring",
       "tips3": "Accurate Assessment Scores, Detailed Evaluation Report",
-      "tips4": "Results will be available within <span class='yellow'>5-30 minutes</span>",
+      "tips4": "Results will be available within <span class='yellow'>1-5 minutes</span>",
       "btn_font": "Find out more",
       "btn_img_alt": "Yellow Arrow Right"
     },
@@ -149,7 +149,7 @@
       "tips1": "Support \"Write about the Photo\",\"Interactice Writing\",\"Writing Sample\"",
       "tips2": "AI Scoring, AI Correction, Teacher Guidance",
       "tips3": "Accurate Assessment Scores, Detailed Evaluation Report",
-      "tips4": "Results will be available within <span class='yellow'>1-5 minutes</span>",
+      "tips4": "Results will be available within <span class='yellow'>1 minutes</span>",
       "btn_font": "Learn more",
       "btn_img_alt": "Yellow Arrow Right"
     },
@@ -158,7 +158,7 @@
       "tips1": "Support \"Listen,Then Speak\",\"Speak About the Photo\",\"Read,then Speak\",\"Speaking Sample\"",
       "tips2": "AI Scoring, AI Evaluation Results, Teacher Guidance",
       "tips3": "Accurate Assessment Scores, Detailed Evaluation Report",
-      "tips4": "Results will be available within <span class='yellow'>1-5 minutes</span>",
+      "tips4": "Results will be available within <span class='yellow'>1 minutes</span>",
       "btn_font": "Learn more",
       "btn_img_alt": "Yellow Arrow Right"
     },
@@ -384,7 +384,7 @@
       "AI Scoring, Accurate score",
       "AI Evaluation Results",
       "Detailed Evaluation Report",
-      "Results will be available within <span class='strongfont'>1-5 minutes</span>"
+      "Results will be available within <span class='strongfont'>1 minutes</span>"
     ],
     "contaceUsList": {
       "type1": {
@@ -417,7 +417,7 @@
       "<span class='strongfont'>Similar to real DET test</span>",
       "<span class='strongfont'>Accurate assessment scores (Score accuracy≤10 Points)</span>",
       "Detailed evaluation report",
-      "Results will be available within <span class='strongfont'>1-30 minutes</span>",
+      "Results will be available within <span class='strongfont'>1-5 minutes</span>",
       "Test at any time within 90 days"
     ],
     "packagesallQy": {
@@ -593,7 +593,7 @@
     },
     "h1": "Instant Duolingo Writing AI Correction by DET Practice",
     "descnew": "Professional-Grade DET Writing Scoring in Minutes",
-    "desc": "Get expert-level feedback on your Duolingo Writing tasks through our advanced AI system. Your essays are analyzed using official DET scoring criteria, delivering comprehensive corrections and detailed suggestions within 1-5 minutes.",
+    "desc": "Get expert-level feedback on your Duolingo Writing tasks through our advanced AI system. Your essays are analyzed using official DET scoring criteria, delivering comprehensive corrections and detailed suggestions within 1 minutes.",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",
     "useralt": "User Icon",
     "white_arrow_right": "white_arrow_right",
@@ -604,7 +604,7 @@
     "Get_Scored_Now": "Start experiencing",
     "h2_1": {
       "h2": "Accurate Duolingo Writing Score Analysis",
-      "right_desc": "Submit your DET Writing task from our question bank and receive a detailed score report within 5 minutes. Each assessment follows authentic DET scoring criteria."
+      "right_desc": "Submit your DET Writing task from our question bank and receive a detailed score report within 1 minutes. Each assessment follows authentic DET scoring criteria."
     },
     "h2_2": {
       "h2": "Real-time Error Correction",
@@ -863,7 +863,7 @@
     },
     "article4": {
       "h2": "Rapid DET Mock Feedback Report",
-      "right_desc": "Get your detailed DET mock test results in just <span class='zdfont'>5-30 minutes</span>. Our lightening-fast scoring system provides immediate feedback, allowing you to track your progress and adjust your preparation strategy efficiently."
+      "right_desc": "Get your detailed DET mock test results in just <span class='zdfont'>1-5 minutes</span>. Our lightening-fast scoring system provides immediate feedback, allowing you to track your progress and adjust your preparation strategy efficiently."
     },
     "vs1": "Our DET Mock Test Scores VS Real DET Test Scores",
     "vs2": "Score comparisons of test-takers who took our DET mock tests and Duolingo English Test",
@@ -879,7 +879,7 @@
       },
       {
         "q": "When will I receive my Duolingo mock test results?",
-        "a": "Your mock test results are delivered within 5-30 minutes after completion. The report includes detailed section-by-section analysis and specific areas for improvement."
+        "a": "Your mock test results are delivered within 1-5 minutes after completion. The report includes detailed section-by-section analysis and specific areas for improvement."
       },
       {
         "q": "Can I take the Duolingo mock test multiple times?",
@@ -1383,7 +1383,7 @@
         },
         {
           "title": "Get Instant Results",
-          "desc": "Receive your score and detailed feedback within 5-30 minutes."
+          "desc": "Receive your score and detailed feedback within 1-5 minutes."
         },
         {
           "title": "Review & Improve",

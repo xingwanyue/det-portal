@@ -56,7 +56,7 @@ if (url.host !== 'www.detpractice.com') {
   meta.push({ name: 'robots', content: 'noindex' });
 }
 
-const schema = schemas[currentPathWithoutLocale] || [];
+const schema = schemas[route.path] || schemas[currentPathWithoutLocale] || [];
 
 useHead({
   htmlAttrs: { lang: () => locale.value },

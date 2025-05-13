@@ -130,7 +130,7 @@
       "tips1": "O Simulado Mais <span class='yellow'>Poderoso</span>, Próximo ao <span class='yellow'>Exame DET Real</span>",
       "tips2": "Exames Adaptativos e Pontuação por IA",
       "tips3": "Pontuações de Avaliação Precisas, Relatório de Avaliação Detalhado",
-      "tips4": "Resultados disponíveis em <span class='yellow'>5-30 minutos</span>",
+      "tips4": "Resultados disponíveis em <span class='yellow'>1-5 minutos</span>",
       "btn_font": "Saiba mais",
       "btn_img_alt": "Seta Amarela à Direita"
     },
@@ -139,7 +139,7 @@
       "tips1": "Suporte para \"Escrever sobre a Foto\", \"Escrita Interativa\", \"Amostra de Escrita\"",
       "tips2": "Pontuação por IA, Correção por IA, Orientação de Professor",
       "tips3": "Pontuações de Avaliação Precisas, Relatório de Avaliação Detalhado",
-      "tips4": "Resultados disponíveis em <span class='yellow'>1-5 minutos</span>",
+      "tips4": "Resultados disponíveis em <span class='yellow'>1 minutos</span>",
       "btn_font": "Saiba mais",
       "btn_img_alt": "Seta Amarela à Direita"
     },
@@ -148,7 +148,7 @@
       "tips1": "Suporte para \"Ouvir e Falar\", \"Falar sobre a Foto\", \"Ler e Falar\", \"Amostra de Fala\"",
       "tips2": "Pontuação por IA, Resultados de Avaliação por IA, Orientação de Professor",
       "tips3": "Pontuações de Avaliação Precisas, Relatório de Avaliação Detalhado",
-      "tips4": "Resultados disponíveis em <span class='yellow'>1-5 minutos</span>",
+      "tips4": "Resultados disponíveis em <span class='yellow'>1 minutos</span>",
       "btn_font": "Saiba mais",
       "btn_img_alt": "Seta Amarela à Direita"
     },
@@ -397,7 +397,7 @@
       "Pontuação por IA, Pontuação precisa",
       "Resultados de Avaliação por IA",
       "Relatório de Avaliação Detalhado",
-      "Resultados disponíveis em <span class='strongfont'>1-5 minutos</span>"
+      "Resultados disponíveis em <span class='strongfont'>1 minutos</span>"
     ],
     "contaceUsList": {
       "type1": {
@@ -430,7 +430,7 @@
       "<span class='strongfont'>Similar ao teste DET real</span>",
       "<span class='strongfont'>Pontuações de avaliação precisas (Precisão da pontuação ≤10 pontos)</span>",
       "Relatório de avaliação detalhado",
-      "Os resultados estarão disponíveis em <span class='strongfont'>1-30 minutos</span>",
+      "Os resultados estarão disponíveis em <span class='strongfont'>1-5 minutos</span>",
       "Faça o teste a qualquer momento dentro de 90 dias"
     ],
     "packagesallQy": {
@@ -606,7 +606,7 @@
     },
     "h1": "Correção Instantânea de Escrita Duolingo por IA da Prática DET",
     "descnew": "Pontuação de Escrita DET de Nível Profissional em Minutos",
-    "desc": "Obtenha feedback de nível especializado em suas tarefas de escrita Duolingo através do nosso sistema avançado de IA. Suas redações são analisadas usando critérios oficiais de pontuação DET, entregando correções abrangentes e sugestões detalhadas em 1-5 minutos.",
+    "desc": "Obtenha feedback de nível especializado em suas tarefas de escrita Duolingo através do nosso sistema avançado de IA. Suas redações são analisadas usando critérios oficiais de pontuação DET, entregando correções abrangentes e sugestões detalhadas em 1 minutos.",
     "alt": "Prática DET: A melhor plataforma de prática para o Teste de Inglês Duolingo",
     "useralt": "Ícone de Usuário",
     "white_arrow_right": "seta_branca_direita",
@@ -617,7 +617,7 @@
     "Get_Scored_Now": "Comece a experimentar",
     "h2_1": {
       "h2": "Análise Precisa de Pontuação de Escrita Duolingo",
-      "right_desc": "Envie sua tarefa de escrita DET do nosso banco de questões e receba um relatório de pontuação detalhado em 5 minutos. Cada avaliação segue critérios autênticos de pontuação DET."
+      "right_desc": "Envie sua tarefa de escrita DET do nosso banco de questões e receba um relatório de pontuação detalhado em 1 minutos. Cada avaliação segue critérios autênticos de pontuação DET."
     },
     "h2_2": {
       "h2": "Correção de Erros em Tempo Real",
@@ -876,7 +876,7 @@
     },
     "article4": {
       "h2": "Relatório de Feedback Rápido do Simulado DET",
-      "right_desc": "Obtenha seus resultados detalhados do simulado DET em apenas <span class='zdfont'>5-30 minutos</span>. Nosso sistema de pontuação ultra-rápido fornece feedback imediato, permitindo que você acompanhe seu progresso e ajuste sua estratégia de preparação de forma eficiente."
+      "right_desc": "Obtenha seus resultados detalhados do simulado DET em apenas <span class='zdfont'>1-5 minutos</span>. Nosso sistema de pontuação ultra-rápido fornece feedback imediato, permitindo que você acompanhe seu progresso e ajuste sua estratégia de preparação de forma eficiente."
     },
     "vs1": "Nossas Pontuações de Simulado DET VS Pontuações Reais do Teste DET",
     "vs2": "Comparações de pontuação de participantes que fizeram nossos simulados DET e o Teste de Inglês Duolingo",
@@ -892,7 +892,7 @@
       },
       {
         "q": "Quando receberei meus resultados do simulado Duolingo?",
-        "a": "Seus resultados do simulado são entregues em 5-30 minutos após a conclusão. O relatório inclui análise detalhada seção por seção e áreas específicas para melhoria."
+        "a": "Seus resultados do simulado são entregues em 1-5 minutos após a conclusão. O relatório inclui análise detalhada seção por seção e áreas específicas para melhoria."
       },
       {
         "q": "Posso fazer o simulado Duolingo várias vezes?",
@@ -1396,7 +1396,7 @@
         },
         {
           "title": "Obtenha Resultados Instantâneos",
-          "desc": "Receba sua pontuação e feedback detalhado em 5-30 minutos."
+          "desc": "Receba sua pontuação e feedback detalhado em 1-5 minutos."
         },
         {
           "title": "Revise e Melhore",

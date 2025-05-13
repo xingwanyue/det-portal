@@ -131,7 +131,7 @@
       "tips1": "En Kapsamlı Deneme Sınavı, Gerçek DET Sınavına Yakın",
       "tips2": "Uyarlanabilir Sınavlar ve Yapay Zeka Skorlaması",
       "tips3": "Doğru Değerlendirme Puanları, Ayrıntılı Değerlendirme Raporu",
-      "tips4": "Sonuçlar <span class='yellow'>5-30</span> dakika içinde hazır olacaktır",
+      "tips4": "Sonuçlar <span class='yellow'>1-5</span> dakika içinde hazır olacaktır",
       "btn_font": "Daha fazlasını öğrenin",
       "btn_img_alt": "Sarı Ok Sağ"
     },
@@ -140,7 +140,7 @@
       "tips1": "\"Write about the Photo\", \"Interactive Writing\", \"Writing Sample\" desteklenir",
       "tips2": "Yapay Zeka Skorlaması, Yapay Zeka Düzeltme, Öğretmen Rehberliği",
       "tips3": "Doğru Değerlendirme Puanları, Ayrıntılı Değerlendirme Raporu",
-      "tips4": "Sonuçlar <span class='yellow'>1-5</span> dakika içinde hazır olacaktır",
+      "tips4": "Sonuçlar <span class='yellow'>1</span> dakika içinde hazır olacaktır",
       "btn_font": "Daha fazlasını öğrenin",
       "btn_img_alt": "Sarı Ok Sağ"
     },
@@ -149,7 +149,7 @@
       "tips1": "\"Listen, Then Speak\", \"Speak About the Photo\", \"Read, Then Speak\", \"Speaking Sample\" desteklenir",
       "tips2": "AI Puanlama, AI Değerlendirme Sonuçları, Öğretmen Rehberliği",
       "tips3": "Doğru Değerlendirme Puanları, Ayrıntılı Değerlendirme Raporu",
-      "tips4": "Sonuçlar <span class='yellow'>1-5</span>dakika içinde hazır olacaktır",
+      "tips4": "Sonuçlar <span class='yellow'>1</span>dakika içinde hazır olacaktır",
       "btn_font": "Daha fazlasını öğrenin",
       "btn_img_alt": "Sarı Ok Sağ"
     },
@@ -398,7 +398,7 @@
       "AI Puanlama, Doğru puan",
       "Yapay Zeka Değerlendirme Sonuçları",
       "Detaylı Değerlendirme Raporu",
-      "Sonuçlar <span class='strongfont'>1-5 dakika</span> içinde hazır olacak"
+      "Sonuçlar <span class='strongfont'>1 dakika</span> içinde hazır olacak"
     ],
     "contaceUsList": {
       "type1": {
@@ -431,7 +431,7 @@
       "<span class='strongfont'>Gerçek DET sınavına benzer</span>",
       "<span class='strongfont'>Doğru değerlendirme puanları (Puan doğruluğu≤10 Puan)</span>",
       "Ayrıntılı değerlendirme raporu",
-      "Sonuçlar <span class='strongfont'>1-30 dakika içinde</span> erişilebilir olacak",
+      "Sonuçlar <span class='strongfont'>1-5 dakika içinde</span> erişilebilir olacak",
       "90 gün içinde istediğiniz zaman test yapın"
     ],
     "packagesallQy": {
@@ -607,7 +607,7 @@
     },
     "h1": "DET Practice'den Anında Duolingo Yazma AI Düzeltmesi",
     "descnew": "Dakikalar İçinde Profesyonel Seviye DET Yazma Puanlaması",
-    "desc": "Gelişmiş AI sistemimiz aracılığıyla Duolingo Yazma görevleriniz için uzman seviyesinde geri bildirim alın. Kompozisyonlarınız resmi DET puanlama kriterlerine göre analiz edilir ve 1-5 dakika içinde kapsamlı düzeltmeler ve detaylı öneriler sunulur.",
+    "desc": "Gelişmiş AI sistemimiz aracılığıyla Duolingo Yazma görevleriniz için uzman seviyesinde geri bildirim alın. Kompozisyonlarınız resmi DET puanlama kriterlerine göre analiz edilir ve 1 dakika içinde kapsamlı düzeltmeler ve detaylı öneriler sunulur.",
     "alt": "DET Practice: En iyi Duolingo English Test Pratik platformu",
     "useralt": "Kullanıcı İkonu",
     "white_arrow_right": "white_arrow_right",
@@ -618,7 +618,7 @@
     "Get_Scored_Now": "Deneyimlemeye Başla",
     "h2_1": {
       "h2": "Hassas Duolingo Yazma Puan Analizi",
-      "right_desc": "Soru bankamızdan DET Yazma görevinizi gönderin ve 5 dakika içinde detaylı bir puan raporu alın. Her değerlendirme otantik DET puanlama kriterlerini takip eder."
+      "right_desc": "Soru bankamızdan DET Yazma görevinizi gönderin ve 1 dakika içinde detaylı bir puan raporu alın. Her değerlendirme otantik DET puanlama kriterlerini takip eder."
     },
     "h2_2": {
       "h2": "Gerçek Zamanlı Hata Düzeltme",
@@ -877,7 +877,7 @@
     },
     "article4": {
       "h2": "Hızlı DET Deneme Sınavı Geri Bildirim Raporu",
-      "right_desc": "Detaylı DET deneme sınavı sonuçlarınızı sadece <span class='zdfont'>5-30 dakika</span> içinde alın. Yıldırım hızındaki puanlama sistemimiz anında geri bildirim sağlayarak ilerlemenizi verimli bir şekilde takip etmenize ve hazırlık stratejinizi ayarlamanıza olanak tanır."
+      "right_desc": "Detaylı DET deneme sınavı sonuçlarınızı sadece <span class='zdfont'>1-5 dakika</span> içinde alın. Yıldırım hızındaki puanlama sistemimiz anında geri bildirim sağlayarak ilerlemenizi verimli bir şekilde takip etmenize ve hazırlık stratejinizi ayarlamanıza olanak tanır."
     },
     "vs1": "DET Deneme Sınavı Puanlarımız ve Gerçek DET Sınavı Puanları Karşılaştırması",
     "vs2": "DET deneme sınavlarımızı ve Duolingo İngilizce Testini alan adayların puan karşılaştırması",
@@ -893,7 +893,7 @@
       },
       {
         "q": "Duolingo deneme sınavı sonuçlarımı ne zaman alacağım?",
-        "a": "Deneme sınavı sonuçlarınız tamamlandıktan sonra 5-30 dakika içinde teslim edilir. Rapor, bölüm bazında detaylı analiz ve geliştirilmesi gereken belirli alanları içerir."
+        "a": "Deneme sınavı sonuçlarınız tamamlandıktan sonra 1-5 dakika içinde teslim edilir. Rapor, bölüm bazında detaylı analiz ve geliştirilmesi gereken belirli alanları içerir."
       },
       {
         "q": "Duolingo deneme sınavını birden fazla kez alabilir miyim?",
@@ -1405,7 +1405,7 @@
         },
         {
           "title": "Anında Sonuç Alın",
-          "desc": "5-30 dakika içinde puanınızı ve detaylı geri bildirim alın."
+          "desc": "1-5 dakika içinde puanınızı ve detaylı geri bildirim alın."
         },
         {
           "title": "Analiz Edin ve Geliştirin",
