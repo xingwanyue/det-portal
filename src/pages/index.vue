@@ -4,9 +4,10 @@ import { reactive } from 'vue';
 const { t, locale } = useI18n();
 import { useStore } from '@/store';
 import vSlogen from '../components/slogen.vue';
-import { urlGet, staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage } from '@/utils';
+import { urlGet, staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage, saveToken } from '@/utils';
 import { platformData, portalData, completion } from '@/api';
 import { useRoute, useRouter } from 'vue-router';
+import { googlePopupLogin } from '@/utils/googleAuth';
 const router = useRouter();
 
 const route = useRoute();
@@ -78,52 +79,6 @@ const modeList = computed(() => {
     },
   ];
 });
-const handleKeydown = (e: any) => {
-  if (e.isComposing || e.keyCode === 229) {
-    return;
-  }
-  if (e.shiftKey) {
-    state.userQuestion += '\n';
-    return;
-  }
-  sendMsg();
-};
-const sendMsg = async () => {
-  if (!state.userQuestion.length) {
-    return;
-  }
-  const args = {
-    content: state.userQuestion.replace(/\n/g, '<br />'),
-    type: state.zhuti === '1' ? 'chat' : 'detTutor',
-    model: '',
-    online: state.online,
-  } as any;
-  if (state.modeSelectCode === '1') {
-    args.model = 'standard';
-  } else if (state.modeSelectCode === '2') {
-    args.model = 'deepseekR1';
-  } else if (state.modeSelectCode === '3') {
-    args.model = 'chatGpt4o';
-  }
-  if (state.zhuti === '2') {
-    args.online = false;
-  }
-  // online 参数 改为 '0' '1'
-  args.online = state.online ? '1' : '0';
-  const {
-    data: { id },
-  } = await completion({ ...args });
-
-  if (url.startsWith('http')) {
-    // window.location.href = `${url}?talkid=${id}`;
-    window.location.href = urlGet(
-      `/AskAI?id=${id}&talkmode=${args.type}&modeSelectCode=${state.modeSelectCode}&online=${state.online}`,
-    );
-    return;
-  }
-
-  router.push(`${url}?talkid=${id}`);
-};
 
 const token = await getToken();
 const userPingLunResponse = computed(() => {
@@ -162,24 +117,17 @@ onMounted(async () => {
     }
   }
 });
-const changeMode = (code: string) => {
-  if (code === '3') {
-    // mode3 需要判断是否是vip 不是vip 跳转到pricing页面
-    // 没有登陆 跳转到login页面
-    if (user.value.id || haveCookie.value) {
-      if (!isVip.value) {
-        router.push(localePath('/pricing'));
-        return;
-      }
-    } else {
-      router.push(localePath('/login'));
-      return;
-    }
-  }
-  state.modeSelectCode = code;
-  state.modeSelectShow = false;
-};
+const googleLogin = () => {
+  googlePopupLogin(async (res: any) => {
+    const { err, data: { token = '' } = {} } = res;
+    if (!err) {
+      await saveToken(token);
+      await store.getUserInfo();
 
+      window.location.href = urlGet('/home');
+    }
+  });
+};
 // 将数字格式化 306281变为306k 3062811变为3061k
 
 const isLoad = ref(false);
@@ -202,13 +150,19 @@ const isLoad5 = ref(false);
 const onLoad5 = () => {
   isLoad5.value = true;
 };
+const isLoad6 = ref(false);
+const onLoad6 = () => {
+  isLoad6.value = true;
+};
 
 // 引入cdn图片
-const home1 = `${cdn}/store/portal/home/home1.png`;
+const home = `${cdn}/store/portal/home/home.png`;
+const home1 = `${cdn}/store/portal/home/home11.png`;
 const home2 = `${cdn}/store/portal/home/home3.png`;
 const home3 = `${cdn}/store/portal/home/home2.png`;
 const home4 = `${cdn}/store/portal/home/home55.png`;
 const home5 = `${cdn}/store/portal/home/home4.png`;
+const home6 = `${cdn}/store/portal/home/home6.png`;
 const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 </script>
 
@@ -222,148 +176,32 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
         </div>
 
-        <div class="chat_dom_out">
-          <div class="two_switch_out">
-            <div class="one_switch" :class="state.zhuti === '1' ? 'one_switch_active' : ''" @click="state.zhuti = '1'">
-              {{ $t('index.twoswitchname.chat') }}
-            </div>
-            <div class="one_switch" :class="state.zhuti === '2' ? 'one_switch_active' : ''" @click="state.zhuti = '2'">
-              {{ $t('index.twoswitchname.dettutor') }}
-            </div>
-          </div>
-          <div class="white_input_out">
-            <div class="input_area_out">
-              <el-input
-                class="el_input"
-                v-model="state.userQuestion"
-                type="textarea"
-                :placeholder="
-                  state.zhuti === '1' ? 'Ask Anything Here.' : 'A professional Duolingo English Test AI Tutor.'
-                "
-                @keydown.enter.native.prevent="handleKeydown"
-              />
-            </div>
-            <div class="white_input_bottom">
-              <div class="mode_select_out">
-                <div class="icon" @click.stop="state.modeSelectShow = !state.modeSelectShow">
-                  <img :src="modeList.find((item) => item.code === state.modeSelectCode)?.imgSrc" alt="mode_icon" />
-                </div>
-                <div class="mode_font" @click.stop="state.modeSelectShow = !state.modeSelectShow">
-                  {{ modeList.find((item) => item.code === state.modeSelectCode)?.name }}
-                </div>
-                <div
-                  :class="state.modeSelectShow ? 'arrow_icon arrow_icon_active' : 'arrow_icon'"
-                  @click.stop="state.modeSelectShow = !state.modeSelectShow"
-                >
-                  <img src="/img/home/arrow_down.svg" alt="arrow_down" />
-                </div>
-                <div v-if="state.modeSelectShow" class="mode_select_list">
-                  <div
-                    v-for="item in modeList"
-                    :key="item.code"
-                    :class="
-                      state.modeSelectCode === item.code
-                        ? 'mode_select_list_item mode_select_list_item_active'
-                        : 'mode_select_list_item'
-                    "
-                    @click="changeMode(item.code)"
-                  >
-                    <div class="left_icon">
-                      <img :src="item.imgSrc" :alt="item.name" />
-                    </div>
-                    <div class="right">
-                      <div class="name">
-                        {{ item.name }} <span v-if="item.tag" class="Premium_tag">{{ item.tag }}</span>
-                      </div>
-                      <div class="desc">{{ item.desc }}</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                v-if="state.zhuti === '1'"
-                :class="state.online ? 'online_btn online_btn_active' : 'online_btn'"
-                @click="state.online = !state.online"
-              >
-                <div class="icon">
-                  <img
-                    :src="state.online ? '/img/home/erath_active_icon.svg' : '/img/home/earth_icon.svg'"
-                    alt="online_icon"
-                  />
-                </div>
-                <div class="online_font">{{ $t('index.Online') }}</div>
-              </div>
-              <div
-                :class="state.userQuestion.length ? 'send_btn_gray send_btn_active' : 'send_btn_gray'"
-                @click="sendMsg"
-              >
-                <div class="icon">
-                  <img src="/img/home/fly_icon.svg" alt="send_icon" />
-                </div>
-                <div class="send_font">{{ $t('index.Send') }}</div>
-              </div>
-            </div>
-          </div>
-          <div class="we_also_have">
-            <div class="we_also_have_title">{{ $t('index.wealsohave') }}</div>
-            <div class="we_also_have_list">
-              <NuxtLink
-                :href="state.isclient ? urlGet('/questions') : ''"
-                :title="$t('index.have1_title')"
-                class="one_card card1"
-              >
-                <div class="icon">
-                  <img src="/img/home/product_icon1.svg" :alt="$t('index.have1_title')" />
-                </div>
-                <div class="right">
-                  <div class="title">{{ $t('index.have1_title') }}</div>
-                  <div class="font" v-html="$t('index.have1_desc')" />
-                </div>
-              </NuxtLink>
-              <NuxtLink
-                :href="state.isclient ? urlGet('/exam') : ''"
-                :title="$t('index.have2_title')"
-                class="one_card card3"
-              >
-                <div class="icon">
-                  <img src="/img/home/product_icon3.svg" :alt="$t('index.have2_title')" />
-                </div>
-                <div class="right">
-                  <div class="title">{{ $t('index.have2_title') }}</div>
-                  <div class="font" v-html="$t('index.have2_desc')" />
-                </div>
-              </NuxtLink>
-              <NuxtLink
-                :href="state.isclient ? urlGet('/correct') : ''"
-                :title="$t('index.have3_title')"
-                class="one_card card2"
-              >
-                <div class="icon">
-                  <img src="/img/home/product_icon2.svg" :alt="$t('index.have3_title')" />
-                </div>
-                <div class="right">
-                  <div class="title">{{ $t('index.have3_title') }}</div>
-                  <div class="font" v-html="$t('index.have3_desc')" />
-                </div>
-              </NuxtLink>
-
-              <NuxtLink :to="localePath('/courses')" :title="$t('index.have4_title')" class="one_card card5">
-                <div class="icon">
-                  <img src="/img/home/head_speak.svg" :alt="$t('index.have4_title')" />
-                </div>
-                <div class="right">
-                  <div class="title">{{ $t('index.have4_title') }}</div>
-                  <div class="font" v-html="$t('index.have4_desc')" />
-                </div>
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="three_nums_wrapper">
         <div class="three_nums_out">
           <div class="title1" data-aos="fade-up" data-aos-duration="1000">
-            <h2>{{ $t('index.The_Best_Platform') }}</h2>
+            <h2 v-html="$t('index.h2PC')"></h2>
+          </div>
+          <div class="subtitle" data-aos="fade-up" data-aos-duration="1000">
+            <p v-html="$t('index.pPC')"></p>
+          </div>
+          <div class="twoBtn">
+            <div class="left btn" @click="googleLogin">
+              <div class="img"><img src="/img/home/googleIcon.svg" :alt="$t('index.Start_free_with_Google')" /></div>
+              <div>{{ $t('index.Start_free_with_Google') }}</div>
+            </div>
+            <NuxtLink :to="localePath(`/login`)">
+              <div class="right btn">
+                <div class="img"><img src="/img/home/emailIcon.svg" :alt="$t('index.Start_free_with_email')" /></div>
+                <div>{{ $t('index.Start_free_with_email') }}</div>
+              </div>
+            </NuxtLink>
+          </div>
+          <div class="bigImg">
+            <img :src="home" :alt="$t('index.DET_Practice')">
+          </div>
+          <div class="center">
+            <h2 v-html="$t('index.h2PC1')"></h2>
           </div>
           <div class="three_nums" data-aos="fade-up" data-aos-duration="1000">
             <div class="one_nums">
@@ -383,6 +221,8 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       </div>
     </div>
 
+    <h2 class="part2_title">{{ $t('index.article1.title1') }}</h2>
+    <h3 class="part2_title2">{{ $t('index.article1.title2') }}</h3>
     <div class="part2_wrapper">
       <div class="part2">
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
@@ -573,6 +413,45 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             </NuxtLink>
           </div>
         </div>
+        <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
+          <div class="img_out">
+            <img loading="lazy" :src="home6" :alt="$t('index.article6.title')" @load="onLoad6" />
+            <el-skeleton v-show="!isLoad6" style="width: 100%" animated>
+              <template #template>
+                <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
+              </template>
+            </el-skeleton>
+          </div>
+          <div class="article_out">
+            <div class="article_out_title">
+              <h3>
+                <NuxtLink :to="urlGet('/AskAi')"> {{ $t('index.article6.title') }}</NuxtLink>
+              </h3>
+            </div>
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article6.tips1')"></span>
+            </div>
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article6.tips2')"></span>
+            </div>
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article6.tips3')"></span>
+            </div>
+            <div class="tips">
+              <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
+              <span v-html="$t('index.article6.tips4')"></span>
+            </div>
+            <NuxtLink class="get_more" :to="urlGet('/AskAi')">
+              <div class="font">{{ $t('index.article6.btn_font') }}</div>
+              <div class="icon">
+                <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article6.btn_img_alt')" />
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -733,8 +612,8 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           h1 {
             text-align: center;
             font-weight: bold;
-            font-size: 56px;
-            color: #f66442;
+            font-size: 40px;
+            color: #F66442;
             padding: 0px;
             margin: 0px;
             @media (max-width: 906px) {
@@ -1108,8 +987,6 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
     .three_nums_wrapper {
       padding: 100px 0px;
       padding-top: 0px;
-
-      margin-bottom: 120px;
       @media (max-width: 450px) {
         margin-bottom: 10px;
       }
@@ -1120,10 +997,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         }
         margin: 0 auto;
         .title1 {
+        margin: 16px 0 32px;
           h2 {
-            font-weight: 500;
-            font-size: 40px;
-            color: #201515;
+            font-weight: bold;
+            font-size: 72px;
+            color: #222222;
             text-align: center;
             padding: 0px;
             margin: 0px;
@@ -1144,6 +1022,72 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             }
           }
         }
+        .subtitle {
+          text-align: center;
+          font-weight: 500;
+          font-size: 24px;
+          color: #555555;
+          p {
+            margin: 0;
+            padding: 0;
+          }
+        }
+        .twoBtn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          margin: 48px 0 80px;
+          @media (max-width: 730px) {
+            flex-direction: column;
+          }
+          .btn {
+            width: 280px;
+            height: 50px;
+            border: 1px solid #F66442;
+            border-radius: 25px 25px 25px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-weight: 500;
+            font-size: 18px;
+            color: #FFFFFF;
+            box-sizing: border-box;
+            .img {
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              margin: 0 10px 0 24px;
+              background-color: #ffffff;
+              
+            }
+          }
+          .left {
+            background-color: #F66442;
+            cursor: pointer;
+          }
+          .right {
+            color: #F66442;
+          }
+        }
+        .bigImg {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .center {
+          text-align: center;
+          font-weight: bold;
+          margin: 120px 0 48px;
+          h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 32px;
+            font-weight: bold;
+            color: #111111;
+          }
+        }
         .three_nums {
           display: flex;
           justify-content: center;
@@ -1151,7 +1095,6 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           grid-column-gap: 100px;
           grid-row-gap: 40px;
           flex-wrap: wrap;
-          margin-top: 64px;
           @media (max-width: 450px) {
             grid-column-gap: 16px;
           }
@@ -1178,7 +1121,19 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       }
     }
   }
-
+  .part2_title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 56px;
+    color: #201515;
+  }
+  .part2_title2 {
+    margin: 16px 0 69px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #201515;
+  }
   .part2_wrapper {
     padding: 0px 30px;
     @media (max-width: 450px) {
