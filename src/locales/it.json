@@ -131,7 +131,7 @@
       "tips1": "Il test simulato più completo, vicino al vero esame DET",
       "tips2": "Esami adattivi e valutazione AI",
       "tips3": "Punteggi accurati, rapporto di valutazione dettagliato",
-      "tips4": "I risultati saranno disponibili entro <span class='yellow'>5-30</span> minuti",
+      "tips4": "I risultati saranno disponibili entro <span class='yellow'>1-5</span> minuti",
       "btn_font": "Scopri di più",
       "btn_img_alt": "Freccia Gialla Destra"
     },
@@ -140,7 +140,7 @@
       "tips1": "Supporta \"Write about the Photo\", \"Interactive Writing\", \"Writing Sample\"",
       "tips2": "Valutazione AI, Correzione AI, Guida dell'insegnante",
       "tips3": "Punteggi accurati, rapporto di valutazione dettagliato",
-      "tips4": "I risultati saranno disponibili entro <span class='yellow'>1-5 </span>minuti",
+      "tips4": "I risultati saranno disponibili entro <span class='yellow'>1 </span>minuti",
       "btn_font": "Scopri di più",
       "btn_img_alt": "Freccia Gialla Destra"
     },
@@ -149,7 +149,7 @@
       "tips1": "Supporta \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\"",
       "tips2": "Valutazione AI, Risultati AI, Guida dell'insegnante",
       "tips3": "Punteggi accurati, rapporto di valutazione dettagliato",
-      "tips4": "I risultati saranno disponibili entro <span class='yellow'>1-5</span> minuti",
+      "tips4": "I risultati saranno disponibili entro <span class='yellow'>1</span> minuti",
       "btn_font": "Scopri di più",
       "btn_img_alt": "Freccia Destra Gialla"
     },
@@ -398,7 +398,7 @@
       "Punteggio AI, Punteggio accurato",
       "Risultati della valutazione dell'IA",
       "Rapporto di Valutazione Dettagliato",
-      "I risultati saranno disponibili entro <span class='strongfont'>1-5 minuti</span>"
+      "I risultati saranno disponibili entro <span class='strongfont'>1 minuti</span>"
     ],
     "contaceUsList": {
       "type1": {
@@ -431,7 +431,7 @@
       "<span class='strongfont'>Simile al test DET reale</span>",
       "<span class='strongfont'>Punteggi di valutazione precisi (Precisione del punteggio ≤10 punti)</span>",
       "Rapporto di valutazione dettagliato",
-      "I risultati saranno disponibili entro <span class='strongfont'>1-30 minuti</span>",
+      "I risultati saranno disponibili entro <span class='strongfont'>1-5 minuti</span>",
       "Fai il test in qualsiasi momento entro 90 giorni"
     ],
     "packagesallQy": {
@@ -607,7 +607,7 @@
     },
     "h1": "Correzione IA Istantanea degli Scritti Duolingo da DET Practice",
     "descnew": "Valutazione Professionale degli Scritti DET in Minuti",
-    "desc": "Ricevi feedback da esperti per i tuoi compiti di scrittura Duolingo attraverso il nostro sistema IA avanzato. I tuoi saggi vengono analizzati secondo i criteri di valutazione DET ufficiali, fornendo correzioni complete e suggerimenti dettagliati in 1-5 minuti.",
+    "desc": "Ricevi feedback da esperti per i tuoi compiti di scrittura Duolingo attraverso il nostro sistema IA avanzato. I tuoi saggi vengono analizzati secondo i criteri di valutazione DET ufficiali, fornendo correzioni complete e suggerimenti dettagliati in 1 minuti.",
     "alt": "DET Practice: La Migliore Piattaforma di Pratica per il Duolingo English Test",
     "useralt": "User Icon",
     "white_arrow_right": "white_arrow_right",
@@ -618,7 +618,7 @@
     "Get_Scored_Now": "Prova Ora",
     "h2_1": {
       "h2": "Analisi Precisa dei Punteggi degli Scritti Duolingo",
-      "right_desc": "Invia il tuo compito di scrittura DET dal nostro database di domande e ricevi un rapporto dettagliato sulla valutazione in 5 minuti. Ogni valutazione segue i criteri DET autentici."
+      "right_desc": "Invia il tuo compito di scrittura DET dal nostro database di domande e ricevi un rapporto dettagliato sulla valutazione in 1 minuti. Ogni valutazione segue i criteri DET autentici."
     },
     "h2_2": {
       "h2": "Correzione degli Errori in Tempo Reale",
@@ -877,7 +877,7 @@
     },
     "article4": {
       "h2": "Report Rapido di Feedback del Test di Pratica DET",
-      "right_desc": "Ricevi i tuoi risultati dettagliati del test di pratica DET in soli <span class='zdfont'>5-30 minuti</span>. Il nostro sistema di valutazione ultrarapido fornisce feedback immediato, permettendoti di monitorare i tuoi progressi e adattare la tua strategia di preparazione in modo efficiente."
+      "right_desc": "Ricevi i tuoi risultati dettagliati del test di pratica DET in soli <span class='zdfont'>1-5 minuti</span>. Il nostro sistema di valutazione ultrarapido fornisce feedback immediato, permettendoti di monitorare i tuoi progressi e adattare la tua strategia di preparazione in modo efficiente."
     },
     "vs1": "I Nostri Punteggi dei Test di Pratica DET VS Punteggi Reali DET",
     "vs2": "Confronto dei punteggi dei candidati che hanno sostenuto i nostri test di pratica DET e il Test di Inglese Duolingo",
@@ -893,7 +893,7 @@
       },
       {
         "q": "Quando riceverò i miei risultati del test di pratica Duolingo?",
-        "a": "I tuoi risultati del test di pratica saranno consegnati entro 5-30 minuti dal completamento. Il report include analisi dettagliate sezione per sezione e aree specifiche da migliorare."
+        "a": "I tuoi risultati del test di pratica saranno consegnati entro 1-5 minuti dal completamento. Il report include analisi dettagliate sezione per sezione e aree specifiche da migliorare."
       },
       {
         "q": "Posso sostenere il test di pratica Duolingo più volte?",
@@ -1404,7 +1404,7 @@
         },
         {
           "title": "Ottieni risultati immediati",
-          "desc": "Ricevi il tuo punteggio e feedback dettagliato in 5-30 minuti."
+          "desc": "Ricevi il tuo punteggio e feedback dettagliato in 1-5 minuti."
         },
         {
           "title": "Analizza e migliora",

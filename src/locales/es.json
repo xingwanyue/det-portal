@@ -131,7 +131,7 @@
       "tips1": "El examen de práctica más completo, cercano al examen real DET",
       "tips2": "Exámenes adaptativos y puntuación IA",
       "tips3": "Puntuaciones de evaluación precisas, informe de evaluación detallado",
-      "tips4": "Los resultados estarán disponibles dentro de <span class='yellow'>5-30 </span>minutos",
+      "tips4": "Los resultados estarán disponibles dentro de <span class='yellow'>1-5 </span>minutos",
       "btn_font": "Más información",
       "btn_img_alt": "Flecha Amarilla Derecha"
     },
@@ -140,7 +140,7 @@
       "tips1": "Soporta \"Write about the Photo\", \"Interactive Writing\", \"Writing Sample\"",
       "tips2": "Puntuación IA, Corrección IA, Orientación del profesor",
       "tips3": "Puntuaciones de evaluación precisas, informe de evaluación detallado",
-      "tips4": "Los resultados estarán disponibles dentro de <span class='yellow'>1-5</span> minutos",
+      "tips4": "Los resultados estarán disponibles dentro de <span class='yellow'>1</span> minutos",
       "btn_font": "Aprende más",
       "btn_img_alt": "Flecha Amarilla Derecha"
     },
@@ -149,7 +149,7 @@
       "tips1": "Soporta \"Listen, Then Speak\", \"Speak About the Photo\", \"Read, then Speak\", \"Speaking Sample\"",
       "tips2": "Puntuación IA, Resultados IA, Orientación del profesor",
       "tips3": "Puntuaciones de evaluación precisas, informe de evaluación detallado",
-      "tips4": "Los resultados estarán disponibles dentro de <span class='yellow'>1-5</span> minutos",
+      "tips4": "Los resultados estarán disponibles dentro de <span class='yellow'>1</span> minutos",
       "btn_font": "Aprende más",
       "btn_img_alt": "Flecha Derecha Amarilla"
     },
@@ -398,7 +398,7 @@
       "Puntuación de IA, Puntuación precisa",
       "Resultados de la Evaluación de IA",
       "Informe de Evaluación Detallado",
-      "Los resultados estarán disponibles en <span class='strongfont'>1-5 minutos</span>"
+      "Los resultados estarán disponibles en <span class='strongfont'>1 minutos</span>"
     ],
     "contaceUsList": {
       "type1": {
@@ -431,7 +431,7 @@
       "<span class='strongfont'>Similar al examen DET real</span>",
       "<span class='strongfont'>Puntuaciones de evaluación precisas (Precisión de puntuación ≤10 puntos)</span>",
       "Informe de evaluación detallado",
-      "Los resultados estarán disponibles en <span class='strongfont'>1-30 minutos</span>",
+      "Los resultados estarán disponibles en <span class='strongfont'>1-5 minutos</span>",
       "Haz el examen en cualquier momento dentro de los 90 días"
     ],
     "packagesallQy": {
@@ -607,7 +607,7 @@
     },
     "h1": "Corrección AI Instantánea de Escritura Duolingo por DET Practice",
     "descnew": "Evaluación Profesional de Escritura DET en Minutos",
-    "desc": "Obtén retroalimentación de nivel experto para tus tareas de escritura Duolingo a través de nuestro sistema avanzado de IA. Tus ensayos son analizados usando criterios oficiales de evaluación DET, proporcionando correcciones completas y sugerencias detalladas en 1-5 minutos.",
+    "desc": "Obtén retroalimentación de nivel experto para tus tareas de escritura Duolingo a través de nuestro sistema avanzado de IA. Tus ensayos son analizados usando criterios oficiales de evaluación DET, proporcionando correcciones completas y sugerencias detalladas en 1 minutos.",
     "alt": "DET Practice: La Mejor Plataforma de Práctica para el Duolingo English Test",
     "useralt": "User Icon",
     "white_arrow_right": "white_arrow_right",
@@ -618,7 +618,7 @@
     "Get_Scored_Now": "Empezar a Probar",
     "h2_1": {
       "h2": "Análisis Preciso de Puntuación de Escritura Duolingo",
-      "right_desc": "Envía tu tarea de escritura DET desde nuestro banco de preguntas y recibe un informe detallado de puntuación en 5 minutos. Cada evaluación sigue criterios auténticos de DET."
+      "right_desc": "Envía tu tarea de escritura DET desde nuestro banco de preguntas y recibe un informe detallado de puntuación en 1 minutos. Cada evaluación sigue criterios auténticos de DET."
     },
     "h2_2": {
       "h2": "Corrección de Errores en Tiempo Real",
@@ -877,7 +877,7 @@
     },
     "article4": {
       "h2": "Informe Rápido de Retroalimentación del Examen de Práctica DET",
-      "right_desc": "Recibe tus resultados detallados del examen de práctica DET en solo <span class='zdfont'>5-30 minutos</span>. Nuestro sistema de calificación ultrarrápido proporciona retroalimentación inmediata, permitiéndote rastrear tu progreso y ajustar tu estrategia de preparación de manera eficiente."
+      "right_desc": "Recibe tus resultados detallados del examen de práctica DET en solo <span class='zdfont'>1-5 minutos</span>. Nuestro sistema de calificación ultrarrápido proporciona retroalimentación inmediata, permitiéndote rastrear tu progreso y ajustar tu estrategia de preparación de manera eficiente."
     },
     "vs1": "Nuestras Puntuaciones de Exámenes de Práctica DET VS Puntuaciones Reales DET",
     "vs2": "Comparación de puntuaciones de estudiantes que tomaron nuestros exámenes de práctica DET y el Test de Inglés Duolingo",
@@ -893,7 +893,7 @@
       },
       {
         "q": "¿Cuándo recibiré mis resultados del examen de práctica Duolingo?",
-        "a": "Tus resultados del examen de práctica se entregarán dentro de 5-30 minutos después de completarlo. El informe incluye análisis detallados sección por sección y áreas específicas para mejorar."
+        "a": "Tus resultados del examen de práctica se entregarán dentro de 1-5 minutos después de completarlo. El informe incluye análisis detallados sección por sección y áreas específicas para mejorar."
       },
       {
         "q": "¿Puedo tomar el examen de práctica Duolingo varias veces?",
@@ -1404,7 +1404,7 @@
         },
         {
           "title": "Obtén resultados instantáneos",
-          "desc": "Recibe tu puntaje y retroalimentación detallada en 5-30 minutos."
+          "desc": "Recibe tu puntaje y retroalimentación detallada en 1-5 minutos."
         },
         {
           "title": "Analiza y mejora",

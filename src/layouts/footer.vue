@@ -416,14 +416,13 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
       justify-content: flex-start;
       align-items: center;
       grid-column-gap: 20px;
-      //  border: 1px red solid;
+      flex-wrap: wrap;
       @media (max-width: 550px) {
         grid-gap: 20px;
       }
       @media (max-width: 1009px) {
         justify-content: center;
       }
-      flex-wrap: wrap;
       .footer_logo_left_left {
         // border: 1px red solid;
         display: flex;
@@ -504,8 +503,6 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
         @media (max-width: 668px) {
           text-align: center;
         }
-      }
-      .select_out {
       }
     }
   }
