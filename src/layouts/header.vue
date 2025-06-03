@@ -476,6 +476,7 @@ const menus = computed(() => [
   border-radius: 8px;
 }
 .header-scrolls {
+  display: none;
   width: 100%;
   border-bottom: 4px solid #f66442;
   animation-name: moveto;
@@ -492,6 +493,7 @@ const menus = computed(() => [
   }
 }
 .header-scrolls-move {
+  display: none;
   width: 100%;
   border-bottom: 4px solid #f66442;
   animation-name: disappear;
@@ -627,7 +629,7 @@ const menus = computed(() => [
 </style>
 <style lang="scss" scoped>
 .v-header {
-  height: 72px;
+  height: 80px;
   // width: 100vw;
   display: flex;
   align-items: center;
@@ -663,8 +665,8 @@ const menus = computed(() => [
       grid-gap: 26px;
       height: 100%;
       .meun {
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 20px;
+        font-weight: 500;
         // color: #484848;
         color: #403f3e;
         box-sizing: border-box;
@@ -770,7 +772,7 @@ const menus = computed(() => [
       background-color: #f66442;
       border-radius: 22px;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 20px;
       color: #ffffff;
       margin-left: 24px;
       @media screen and (max-width: 460px) {

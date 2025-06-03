@@ -235,7 +235,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 <NuxtLink :to="localePath('/practice')"> {{ $t('index.article1.title') }}</NuxtLink>
               </h3>
             </div>
-            <div class="tips">
+            <div class="tips tips_first">
               <div class="tips_icon">
                 <img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" />
               </div>
@@ -277,7 +277,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 <NuxtLink :to="localePath('/mock-exam')">{{ $t('index.article2.title') }}</NuxtLink>
               </h3>
             </div>
-            <div class="tips">
+            <div class="tips tips_first">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article2.tips1')"></span>
             </div>
@@ -311,7 +311,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 <NuxtLink :to="localePath('/writing-ai-correction')"> {{ $t('index.article3.title') }}</NuxtLink>
               </h3>
             </div>
-            <div class="tips">
+            <div class="tips tips_first">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article3.tips1')"></span>
             </div>
@@ -350,7 +350,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 <NuxtLink :to="localePath('/speaking-ai-correction')"> {{ $t('index.article4.title') }}</NuxtLink>
               </h3>
             </div>
-            <div class="tips">
+            <div class="tips tips_first">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article4.tips1')"></span>
             </div>
@@ -389,7 +389,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 <NuxtLink :to="localePath('/courses')">{{ $t('index.article5.title') }}</NuxtLink>
               </h3>
             </div>
-            <div class="tips">
+            <div class="tips tips_first">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article5.tips1')"></span>
             </div>
@@ -428,7 +428,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 <NuxtLink :to="urlGet('/AskAi')"> {{ $t('index.article6.title') }}</NuxtLink>
               </h3>
             </div>
-            <div class="tips">
+            <div class="tips tips_first">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article6.tips1')"></span>
             </div>
@@ -604,7 +604,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       height: 100%;
 
       .page_title {
-        margin-top: 56px;
+        margin-top: 72px;
         .h_one {
           font-weight: 600;
           font-size: 56px;
@@ -1101,17 +1101,18 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           .one_nums {
             text-align: center;
             .one_nums_top {
-              font-weight: 600;
-              font-size: 48px;
+              font-weight: bold;
+              font-size: 56px;
               color: #f66442;
               @media (max-width: 450px) {
                 font-size: 23px;
               }
             }
             .one_nums_bottom {
+              margin-top: 8px;
               font-weight: 400;
-              font-size: 20px;
-              color: #201515;
+              font-size: 18px;
+              color: #666666;
               @media (max-width: 450px) {
                 font-size: 18px;
               }
@@ -1154,7 +1155,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           grid-row-gap: 0px;
         }
         grid-template-columns: 1fr 0.75fr;
-        grid-column-gap: 40px;
+        grid-column-gap: 80px;
         grid-row-gap: 40px;
         grid-template-areas: 'img_out  article_out';
         @media (max-width: 926px) {
@@ -1208,11 +1209,14 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               }
             }
           }
+          .tips_first {
+            margin-top: 39px !important;
+          }
           .tips {
             font-weight: 400;
             font-size: 18px;
             color: #403f3e;
-            margin-top: 24px;
+            margin-top: 16px;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
@@ -1242,7 +1246,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             align-items: center;
             flex: 1;
             // border: 1px red solid;
-            margin-top: 34px;
+            margin-top: 40px;
             grid-column-gap: 8px;
             // @media (max-width: 926px) {
             //   justify-content: center;
@@ -1278,7 +1282,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           grid-row-gap: 0px;
         }
         grid-template-columns: 0.75fr 1fr;
-        grid-column-gap: 40px;
+        grid-column-gap: 105px;
         grid-row-gap: 40px;
         grid-template-areas: ' article_out img_out';
         @media (max-width: 926px) {
@@ -1333,11 +1337,14 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               }
             }
           }
+          .tips_first {
+            margin-top: 39px !important;
+          }
           .tips {
             font-weight: 400;
             font-size: 18px;
             color: #403f3e;
-            margin-top: 24px;
+            margin-top: 16px;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
@@ -1367,7 +1374,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             align-items: center;
             flex: 1;
             // border: 1px red solid;
-            margin-top: 34px;
+            margin-top: 40px;
             grid-column-gap: 8px;
             // @media (max-width: 926px) {
             //   justify-content: center;
