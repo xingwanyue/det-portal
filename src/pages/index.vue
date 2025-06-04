@@ -177,6 +177,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
 
       </div>
+      <div class="circle_items">
+        <div class="circle_01"></div>
+        <div class="circle_02"></div>
+      </div>
       <div class="three_nums_wrapper">
         <div class="three_nums_out">
           <div class="title1" data-aos="fade-up" data-aos-duration="1000">
@@ -587,10 +591,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 <style lang="scss" scoped>
 .home {
   margin: 0 auto;
-  overflow: hidden;
+  // overflow: hidden;
 
   .part1_wrapper {
-    background: linear-gradient(0, #ffffff 0%, #fff4f1 100%);
+    // background: linear-gradient(0, #ffffff 0%, #fff4f1 100%);
     padding: 0px 30px;
     @media (max-width: 450px) {
       padding: 0px 15px;
@@ -984,6 +988,37 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         }
       }
     }
+    .circle_items {
+      width: 944px;
+      height: 660px;
+      position: absolute;
+      top: 290px;
+      left: 50%;
+      margin-left: -472px;
+      z-index: -1;
+      .circle_01 {
+        width: 660px;
+        height: 460px;
+        border-radius: 660px;
+        background: #ffa08b;
+        -webkit-filter: blur(300px);
+        filter: blur(300px);
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .circle_02 {
+        width: 440px;
+        height: 240px;
+        border-radius: 440px;
+        background: #ffca42;
+        -webkit-filter: blur(300px);
+        filter: blur(300px);
+        position: absolute;
+        right: 0;
+        top: 110px;
+      }
+    }
     .three_nums_wrapper {
       padding: 100px 0px;
       padding-top: 0px;
@@ -997,7 +1032,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         }
         margin: 0 auto;
         .title1 {
-        margin: 16px 0 32px;
+          margin: 16px 0 32px;
           h2 {
             font-weight: bold;
             font-size: 72px;
@@ -1005,6 +1040,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             text-align: center;
             padding: 0px;
             margin: 0px;
+            line-height: 80px;
             @media (max-width: 906px) {
               font-size: 36px;
             }
@@ -1068,6 +1104,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           }
           .right {
             color: #F66442;
+            background-color: #FFFFFF;
           }
         }
         .bigImg {

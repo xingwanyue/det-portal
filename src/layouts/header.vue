@@ -80,7 +80,7 @@ const changeHeaderColor = (pathname: string) => {
       headerColor.value = '#EAEAFEFF';
       break;
     default:
-      headerColor.value = '#FFF4F1';
+      headerColor.value = 'rgba(0,0,0,0)';
       break;
   }
 };
