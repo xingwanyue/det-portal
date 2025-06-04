@@ -1020,7 +1020,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       }
     }
     .three_nums_wrapper {
-      padding: 100px 0px;
+      padding: 120px 0px;
       padding-top: 0px;
       @media (max-width: 450px) {
         margin-bottom: 10px;
@@ -1120,9 +1120,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           h2 {
             margin: 0;
             padding: 0;
-            font-size: 32px;
+            font-size: 40px;
             font-weight: bold;
-            color: #111111;
+            color: #222222;
           }
         }
         .three_nums {
@@ -1148,8 +1148,8 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             .one_nums_bottom {
               margin-top: 8px;
               font-weight: 400;
-              font-size: 18px;
-              color: #666666;
+              font-size: 24px;
+              color: #403F3E;
               @media (max-width: 450px) {
                 font-size: 18px;
               }
@@ -1162,15 +1162,15 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
   .part2_title {
     text-align: center;
     font-weight: 600;
-    font-size: 56px;
-    color: #201515;
+    color: #222222;
+    font-size: 40px;
   }
   .part2_title2 {
     margin: 16px 0 69px;
     text-align: center;
     font-weight: 400;
+    color: #403F3E;
     font-size: 24px;
-    color: #201515;
   }
   .part2_wrapper {
     padding: 0px 30px;
