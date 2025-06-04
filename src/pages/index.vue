@@ -1040,7 +1040,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             text-align: center;
             padding: 0px;
             margin: 0px;
-            line-height: 80px;
+            line-height: 84px;
             @media (max-width: 906px) {
               font-size: 36px;
             }
