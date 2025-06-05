@@ -128,6 +128,13 @@ const googleLogin = () => {
     }
   });
 };
+const goAskAI = () => {
+  if (url.startsWith('http')) {
+    // window.location.href = `${url}?talkid=${id}`;
+    window.location.href = urlGet('/AskAI');
+  }
+
+};
 // 将数字格式化 306281变为306k 3062811变为3061k
 
 const isLoad = ref(false);
@@ -231,7 +238,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       <div class="part2">
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <img loading="lazy" :src="home1" :alt="$t('index.article1.title')" @load="onLoad" />
+            <img loading="lazy" src="/img/home/home1.png" :alt="$t('index.article1.title')" @load="onLoad" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -419,7 +426,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <img loading="lazy" :src="home6" :alt="$t('index.article6.title')" @load="onLoad6" />
+            <img loading="lazy" src="/img/home/home6.png" :alt="$t('index.article6.title')" @load="onLoad6" />
             <el-skeleton v-show="!isLoad6" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -428,8 +435,8 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="article_out">
             <div class="article_out_title">
-              <h3>
-                <NuxtLink :to="urlGet('/AskAI')"> {{ $t('index.article6.title') }}</NuxtLink>
+              <h3 @click="goAskAI">
+                {{ $t('index.article6.title') }}
               </h3>
             </div>
             <div class="tips tips_first">
@@ -448,12 +455,12 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article6.tips4')"></span>
             </div>
-            <NuxtLink class="get_more" :to="urlGet('/AskAI')">
+            <div class="get_more" @click="goAskAI">
               <div class="font">{{ $t('index.article6.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article6.btn_img_alt')" />
               </div>
-            </NuxtLink>
+            </div>
           </div>
         </div>
       </div>
@@ -1364,6 +1371,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               color: #201515;
               margin-top: 0px;
               margin-bottom: 0px;
+              cursor: pointer;
               @media (max-width: 450px) {
                 font-size: 22px;
               }
