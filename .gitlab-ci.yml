@@ -4,12 +4,26 @@ stages:
 sync_to_github:
   stage: deploy
   only:
-    - dev
+    - dev   # 只在 dev 分支推送时触发
   script:
-    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    # 安装 ssh-agent（GitLab runner 默认没装）
+    - 'which ssh-agent || ( apt-get update -y && apt-get install -y openssh-client )'
+
+    # 启动 ssh-agent
     - eval $(ssh-agent -s)
+
+    # 加载 GitHub 私钥
     - echo "$GITHUB_SSH_KEY" | tr -d '\r' | ssh-add -
+
+    # 防止 SSH 警告：添加 GitHub 到 known_hosts
     - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
     - ssh-keyscan github.com >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+
+    # 添加 GitHub 远程地址（如果已有同名 remote，可先删除）
+    - git remote remove github || true
     - git remote add github git@github.com:xingwanyue/det-portal-i18n.git
+
+    # 推送所有分支 + tag 到 GitHub（mirror）
     - git push --mirror github
