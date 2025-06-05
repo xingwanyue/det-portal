@@ -273,7 +273,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <img loading="lazy" :src="home2" :alt="$t('index.article2.title')" @load="onLoad2" />
+            <img loading="lazy" src="/img/home/home2.png" :alt="$t('index.article2.title')" @load="onLoad2" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -307,7 +307,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <img loading="lazy" :src="home3" :alt="$t('index.article3.title')" @load="onLoad3" />
+            <img loading="lazy" src="/img/home/home3.png" :alt="$t('index.article3.title')" @load="onLoad3" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -341,7 +341,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <img loading="lazy" :src="home4" :alt="$t('index.article4.title')" @load="onLoad4" />
+            <img loading="lazy" src="/img/home/home5.png" :alt="$t('index.article4.title')" @load="onLoad4" />
             <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
@@ -429,7 +429,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           <div class="article_out">
             <div class="article_out_title">
               <h3>
-                <NuxtLink :to="urlGet('/AskAi')"> {{ $t('index.article6.title') }}</NuxtLink>
+                <NuxtLink :to="urlGet('/AskAI')"> {{ $t('index.article6.title') }}</NuxtLink>
               </h3>
             </div>
             <div class="tips tips_first">
@@ -448,7 +448,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
               <span v-html="$t('index.article6.tips4')"></span>
             </div>
-            <NuxtLink class="get_more" :to="urlGet('/AskAi')">
+            <NuxtLink class="get_more" :to="urlGet('/AskAI')">
               <div class="font">{{ $t('index.article6.btn_font') }}</div>
               <div class="icon">
                 <img src="/img/home/yellow_arrow_right.svg" :alt="$t('index.article6.btn_img_alt')" />
@@ -1043,18 +1043,23 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             line-height: 84px;
             @media (max-width: 906px) {
               font-size: 36px;
+              line-height: 44px;
             }
             @media (max-width: 744px) {
               font-size: 36px;
+              line-height: 44px;
             }
             @media (max-width: 570px) {
               font-size: 30px;
+              line-height: 38px;
             }
             @media (max-width: 450px) {
               font-size: 23px;
+              line-height: 31px;
             }
             @media (max-width: 450px) {
               font-size: 22px;
+              line-height: 30px;
             }
           }
         }
