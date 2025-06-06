@@ -108,7 +108,8 @@
       "DET 코스"
     ],
     "Start_free_with_Google": "Google로 무료 시작",
-    "Start_free_with_email": "이메일로 무료 시작",
+    "Start_free_with_email": "이메일로 무료 시작하기",
+    "DET_Practice": "DET Practice: 최고의 듀오링고 영어 시험 연습 플랫폼",
     "Start_for_free": "무료로 시작하기",
     "trustedByWorldwide": "전 세계 {path}만 명 이상의 학생들이 한 달 만에 Duolingo English Test에서 점수를 높이기 위해 신뢰합니다",
     "The_Best_Platform": "듀오링고 영어 테스트 연습 및 학습을 위한 최고의 플랫폼",
@@ -119,6 +120,8 @@
     "Leverage_Our": "우리의 포괄적인 자원을 활용하여 신속한 점수 향상을 이루세요",
     "article1": {
       "title": "Duolingo English Test 연습",
+      "title1": "더 스마트한 준비, 더 나은 점수",
+      "title2": "포괄적인 학습 자료를 활용하여 점수 향상을 가속화하세요",
       "tips1": "가장 방대한 문제 은행, {number}개 이상의 연습 문제",
       "tips2": "매일 지속적으로 업데이트",
       "tips3": "고득점 답변과 상세한 해설 제공",
@@ -162,6 +165,15 @@
       "btn_font": "더 탐색하기",
       "btn_img_alt": "노란색 화살표 오른쪽"
     },
+    "article6": {
+      "title": "당신만을 위한 올인원 AI 튜터",
+      "tips1": "높은 정확도로 문법 실수를 교정하고 여러 언어로 번역합니다.",
+      "tips2": "강력한 AI 도구를 사용하여 글을 다듬거나 처음부터 콘텐츠를 생성하세요.",
+      "tips3": "듀오링고 영어 시험에 특화된 즉각적인 답변, 설명 등을 받아보세요.",
+      "tips4": "더 스마트하게 공부하고 더 빠르게 학습할 수 있도록 도와주는 강력한 DET 튜터입니다.",
+      "btn_font": "더 알아보기",
+      "btn_img_alt": "노란색 오른쪽 화살표"
+    },
     "thousand": "k",
     "Users": "사용자",
     "Questions": "질문",
@@ -176,7 +188,10 @@
     "have3_desc": "정확한 AI 평가 300,000개 이상의 보고서 채점",
     "have4_title": "무료 DET 강좌",
     "have4_desc": "모든 강좌는 무료. ESL 전문가에게 배우세요.",
-    "h1PC": "올인원 Duolingo 영어 테스트<br /> <span class=\"black_font\">학습 플랫폼</span>",
+    "h1PC": "DET 연습을 위한 1위 플랫폼",
+    "h2PC": "듀오링고 영어 시험에서 쉽게 고득점 달성하기",
+    "h2PC1": "듀오링고 영어 시험 연습과 학습을 위한 최고의 플랫폼",
+    "pPC": "DET Practice는 듀오링고 연습 시험을 위한 올인원 플랫폼입니다. 최대 규모의 문제 은행, 전체 길이 모의고사, 전문가 첨삭 서비스, 그리고 다양한 AI 도구를 제공합니다.",
     "h2_platform_intro": "Duolingo 영어 테스트 연습과 학습을 위한 최고의 플랫폼",
     "stats": {
       "stat1_value": "400,000명+",
@@ -3708,7 +3723,7 @@
     "p224": "In this comprehensive guide to the Interactive Writing section of the Duolingo English Test (DET), we’ve covered essential strategies and techniques to help test-takers excel. Let’s recap the key points:",
     "ol1": "<li>We explored three main question types: argumentative, descriptive, and comparative.</li><li>For each question type, we provided structured templates and vocabulary-enhanced versions to guide responses.</li><li>Argumentative questions require presenting a balanced view, justifying your stance, and providing examples.</li><li>Descriptive questions focus on detailing personal experiences, actions taken, and lessons learned.</li><li>Comparative questions involve stating a preference, elaborating on reasons, and acknowledging contrasting viewpoints.</li><li>We emphasized the importance of adapting these templates to fit specific questions and time constraints.</li><li>The guide highlighted the value of using sophisticated vocabulary and complex sentence structures to demonstrate advanced language proficiency.</li><li>We provided practical examples for each question type, demonstrating how to apply the templates effectively.</li>",
     "p225": "In conclusion, mastering the Interactive Writing section of the DET requires a combination of structured thinking, adaptability, and advanced language skills. By utilizing the templates and strategies outlined in this guide, test-takers can approach the exam with confidence, knowing they have the tools to craft well-organized, sophisticated responses. Remember, practice is key to internalizing these techniques and achieving a high score on the Duolingo English Test.",
-    "p226": "As you prepare, focus on developing your ability to think critically, express ideas clearly, and showcase your English language proficiency within the given time constraints. With dedication and the right approach, you can excel in the Interactive Writing section and boost your overall DET performance.",
+    "p226": "As you prepare, focus on developing your ability to think critically, express ideas clearly, and showcase your English language proficiency within the given time constraints. With dedication and the right approach, you can excel in the Interactive Writing section and boost your overall DET performance."
   },
   "det_prep_course_writing_sample": {
     "seometa": {

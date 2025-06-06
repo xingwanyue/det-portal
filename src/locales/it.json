@@ -108,7 +108,8 @@
       "DET Corsi"
     ],
     "Start_free_with_Google": "Inizia gratis con Google",
-    "Start_free_with_email": "Inizia gratis con email",
+    "Start_free_with_email": "Inizia gratis con Email",
+    "DET_Practice": "DET Practice: La migliore piattaforma di pratica per il Duolingo English Test",
     "Start_for_free": "Inizia gratis",
     "trustedByWorldwide": "Scelto da oltre {path} studenti in tutto il mondo per migliorare il punteggio al Duolingo English Test in un mese.",
     "The_Best_Platform": "La Migliore Piattaforma per Esercitarsi e Prepararsi al Test d'Inglese Duolingo",
@@ -119,6 +120,8 @@
     "Leverage_Our": "Sfrutta le nostre risorse all-inclusive per migliorare rapidamente il punteggio",
     "article1": {
       "title": "Pratica Duolingo English Test",
+      "title1": "Preparazione Più Intelligente, Punteggi Migliori",
+      "title2": "Utilizza le nostre risorse complete per accelerare il miglioramento del tuo punteggio",
       "tips1": "La più vasta banca di domande, oltre {number} esercizi",
       "tips2": "Aggiornata continuamente ogni giorno",
       "tips3": "Fornisce risposte esemplari e spiegazioni dettagliate",
@@ -162,6 +165,15 @@
       "btn_font": "Esplora di più",
       "btn_img_alt": "Freccia Gialla Destra"
     },
+    "article6": {
+      "title": "Il Tuo Tutor AI Tutto-in-Uno",
+      "tips1": "Correggi errori grammaticali e traduci tra lingue con alta precisione.",
+      "tips2": "Perfeziona la tua scrittura o genera contenuti da zero utilizzando potenti strumenti basati su AI.",
+      "tips3": "Ottieni risposte istantanee, spiegazioni e altro ancora—personalizzate specificamente per il Duolingo English Test.",
+      "tips4": "Un potente tutor DET per aiutarti a studiare in modo più intelligente e imparare più velocemente.",
+      "btn_font": "Scopri di più",
+      "btn_img_alt": "Freccia Gialla Destra"
+    },
     "thousand": "k",
     "Users": "Utenti",
     "Questions": "Domande",
@@ -176,7 +188,10 @@
     "have3_desc": "Valutazione IA precisa Oltre 300.000 report valutati",
     "have4_title": "Corsi DET Gratuiti",
     "have4_desc": "Tutti i corsi sono gratuiti. Impara da esperti ESL.",
-    "h1PC": "Piattaforma completa<br /> <span class=\"black_font\">per il Duolingo English Test</span>",
+    "h1PC": "Classificata la piattaforma #1 per la Pratica DET",
+    "h2PC": "Ottieni Punteggi Più Alti nel Duolingo English Test con Facilità",
+    "h2PC1": "La Migliore Piattaforma per Praticare e Imparare il Duolingo English Test",
+    "pPC": "DET Practice è la piattaforma tutto-in-uno per il test di pratica Duolingo. Offriamo il più grande archivio di test, esami simulati completi, servizi di correzione da parte di esperti e una vasta gamma di strumenti AI.",
     "h2_platform_intro": "La migliore piattaforma per la pratica e l'apprendimento del Duolingo English Test",
     "stats": {
       "stat1_value": "400.000+",
@@ -330,7 +345,7 @@
       "Others": "Altri",
       "new_f": "Nuove funzionalità",
       "peri_su": "Supporto prioritario",
-      "timemonth": "Volte / Mese",
+      "timemonth": "Volte / Mese"
     },
     "aqList": [
       {
@@ -3707,7 +3722,7 @@
     "p224": "In this comprehensive guide to the Interactive Writing section of the Duolingo English Test (DET), we’ve covered essential strategies and techniques to help test-takers excel. Let’s recap the key points:",
     "ol1": "<li>We explored three main question types: argumentative, descriptive, and comparative.</li><li>For each question type, we provided structured templates and vocabulary-enhanced versions to guide responses.</li><li>Argumentative questions require presenting a balanced view, justifying your stance, and providing examples.</li><li>Descriptive questions focus on detailing personal experiences, actions taken, and lessons learned.</li><li>Comparative questions involve stating a preference, elaborating on reasons, and acknowledging contrasting viewpoints.</li><li>We emphasized the importance of adapting these templates to fit specific questions and time constraints.</li><li>The guide highlighted the value of using sophisticated vocabulary and complex sentence structures to demonstrate advanced language proficiency.</li><li>We provided practical examples for each question type, demonstrating how to apply the templates effectively.</li>",
     "p225": "In conclusion, mastering the Interactive Writing section of the DET requires a combination of structured thinking, adaptability, and advanced language skills. By utilizing the templates and strategies outlined in this guide, test-takers can approach the exam with confidence, knowing they have the tools to craft well-organized, sophisticated responses. Remember, practice is key to internalizing these techniques and achieving a high score on the Duolingo English Test.",
-    "p226": "As you prepare, focus on developing your ability to think critically, express ideas clearly, and showcase your English language proficiency within the given time constraints. With dedication and the right approach, you can excel in the Interactive Writing section and boost your overall DET performance.",
+    "p226": "As you prepare, focus on developing your ability to think critically, express ideas clearly, and showcase your English language proficiency within the given time constraints. With dedication and the right approach, you can excel in the Interactive Writing section and boost your overall DET performance."
   },
   "det_prep_course_writing_sample": {
     "seometa": {
