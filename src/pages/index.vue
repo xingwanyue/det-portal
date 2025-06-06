@@ -211,7 +211,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           <div class="partner">
             <div class="content">The official partner of</div>
             <div class="img">
-              <img src="/img/home/duolingoEnglishTest.svg" alt="">
+              <img src="/img/home/duolingo_english_test.svg" alt="duolingo_english_test">
             </div>
           </div>
           <div class="bigImg">
