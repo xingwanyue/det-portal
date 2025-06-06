@@ -188,7 +188,9 @@ const googleLogin = async () => {
     background-color: #f66442;
     border-color: #f66442;
     font-size: 18px;
-
+    .el-loading-spinner .path {
+      stroke: #f66442 !important;
+    }
     &:hover,
     &:active {
       color: #fff !important;
