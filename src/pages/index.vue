@@ -1131,12 +1131,15 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           display: flex;
           align-items: center;
           justify-content: center;
+          gap: 10px;
+          @media (max-width: 570px) {
+            flex-wrap: wrap;
+          }
           .content {
             font-size: 18px;
             color: #403f3e;
           }
           .img {
-            margin-left: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
