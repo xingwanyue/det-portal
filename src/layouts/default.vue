@@ -127,7 +127,7 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
 
 <template>
   <el-container class="wrap">
-    <el-header class="header" height="62px"> <v-header :type="layouProps.type as string" /> </el-header>
+    <el-header class="header" height="80px"> <v-header :type="layouProps.type as string" /> </el-header>
     <el-main class="main">
       <slot />
     </el-main>
@@ -150,7 +150,7 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
     border-bottom: 0px solid #ebeef5 !important;
   }
   .main {
-    padding: 60px 0 0 0;
+    padding: 80px 0 0 0;
     // min-height: calc(100vh - 60px);
   }
   .footer_wrap {

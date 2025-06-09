@@ -107,7 +107,8 @@
       "DET 课程"
     ],
     "Start_free_with_Google": "Google登录免费开始使用",
-    "Start_free_with_email": "Email注册免费开始使用",
+    "Start_free_with_email": "使用邮箱免费开始",
+    "DET_Practice": "DET Practice：最佳多邻国英语测试练习平台",
     "Start_for_free": "免费开始",
     "trustedByWorldwide": "全球超{path}万学生的共同选择，一个月助你提升多邻国英语考试成绩。",
     "The_Best_Platform": "最佳多邻国英语考试练习和学习平台",
@@ -118,6 +119,8 @@
     "Leverage_Our": "利用我们全面的资源快速提升分数",
     "article1": {
       "title": "多邻国英语考试练习",
+      "title1": "更智能的备考，更好的成绩",
+      "title2": "海量备考资源，助你极速提分",
       "tips1": "<span class='yellow'>题库</span>最全, {number} 练习题目",
       "tips2": "<span class='yellow'>每日持续更新</span>",
       "tips3": "提供高分答案和详细解析",
@@ -161,6 +164,15 @@
       "btn_font": "了解更多",
       "btn_img_alt": "黄色箭头向右"
     },
+    "article6": {
+      "title": "您的全能 AI 备考导师",
+      "tips1": "精准纠正语法，轻松实现多语言翻译。",
+      "tips2": "强大的 AI 写作助手，帮你润色文章，或从零启发灵感。",
+      "tips3": "针对多邻国英语测试的疑难点，即时获得定制化解答与深度解析。",
+      "tips4": "您的专属 DET 导师，让学习更智能，进步更迅速。",
+      "btn_font": "立即体验",
+      "btn_img_alt": "黄色右箭头"
+    },
     "thousand": "k",
     "Users": "用户",
     "Questions": "问题",
@@ -175,7 +187,10 @@
     "have3_desc": "精准AI评估 已完成超过300,000+份批改",
     "have4_title": "免费DET课程",
     "have4_desc": "所有课程免费。由ESL专家制作。",
-    "h1PC": "一站式多邻国英语测试<br /> <span class=\"black_font\">学习平台</span>",
+    "h1PC": "排名第一的多邻国英语测试练习平台",
+    "h2PC": "轻松在多邻国英语测试中获得更高分数",
+    "h2PC1": "多邻国英语测试练习和学习的最佳平台",
+    "pPC": "DET Practice是多邻国测试的一站式综合备考平台。我们提供最大的题库、全真模考、专家批改服务以及各种AI工具。",
     "h2_platform_intro": "最佳多邻国英语测试练习和学习平台",
     "stats": {
       "stat1_value": "400,000+",
@@ -3706,7 +3721,7 @@
     "p224": "In this comprehensive guide to the Interactive Writing section of the Duolingo English Test (DET), we’ve covered essential strategies and techniques to help test-takers excel. Let’s recap the key points:",
     "ol1": "<li>We explored three main question types: argumentative, descriptive, and comparative.</li><li>For each question type, we provided structured templates and vocabulary-enhanced versions to guide responses.</li><li>Argumentative questions require presenting a balanced view, justifying your stance, and providing examples.</li><li>Descriptive questions focus on detailing personal experiences, actions taken, and lessons learned.</li><li>Comparative questions involve stating a preference, elaborating on reasons, and acknowledging contrasting viewpoints.</li><li>We emphasized the importance of adapting these templates to fit specific questions and time constraints.</li><li>The guide highlighted the value of using sophisticated vocabulary and complex sentence structures to demonstrate advanced language proficiency.</li><li>We provided practical examples for each question type, demonstrating how to apply the templates effectively.</li>",
     "p225": "In conclusion, mastering the Interactive Writing section of the DET requires a combination of structured thinking, adaptability, and advanced language skills. By utilizing the templates and strategies outlined in this guide, test-takers can approach the exam with confidence, knowing they have the tools to craft well-organized, sophisticated responses. Remember, practice is key to internalizing these techniques and achieving a high score on the Duolingo English Test.",
-    "p226": "As you prepare, focus on developing your ability to think critically, express ideas clearly, and showcase your English language proficiency within the given time constraints. With dedication and the right approach, you can excel in the Interactive Writing section and boost your overall DET performance.",
+    "p226": "As you prepare, focus on developing your ability to think critically, express ideas clearly, and showcase your English language proficiency within the given time constraints. With dedication and the right approach, you can excel in the Interactive Writing section and boost your overall DET performance."
   },
   "det_prep_course_writing_sample": {
     "seometa": {

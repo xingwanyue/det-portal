@@ -108,7 +108,8 @@
       "DET Kurslar"
     ],
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
-    "Start_free_with_email": "e-posta ile ücretsiz başlayın",
+    "Start_free_with_email": "E-posta ile Ücretsiz Başlayın",
+    "DET_Practice": "DET Practice: En iyi Duolingo İngilizce Testi Pratik platformu",
     "Start_for_free": "Ücretsiz başla",
     "trustedByWorldwide": "Duolingo English Test'te 1 ay içinde puan artırmak için dünya çapında {path}'den fazla öğrenci tarafından güvenilmektedir.",
     "The_Best_Platform": "Duolingo İngilizce Testi için En İyi Pratik ve Öğrenme Platformu",
@@ -119,6 +120,8 @@
     "Leverage_Our": "Hızlı Puan Artışı İçin Kapsamlı Kaynaklarımızı Kullanın",
     "article1": {
       "title": "Duolingo English Test Alıştırması",
+      "title1": "Daha Akıllı Hazırlık, Daha İyi Puanlar",
+      "title2": "Puan gelişiminizi hızlandırmak için kapsamlı kaynaklarımızdan yararlanın",
       "tips1": "En Geniş Soru Bankası, {number}'den Fazla Alıştırma Sorusu",
       "tips2": "Her gün sürekli güncellenir",
       "tips3": "Örnek yanıtlar ve ayrıntılı açıklamalar sağlar",
@@ -162,6 +165,15 @@
       "btn_font": "Daha fazla keşfedin",
       "btn_img_alt": "Sarı Ok Sağ"
     },
+    "article6": {
+      "title": "Hepsi Bir Arada AI Öğretmeniniz",
+      "tips1": "Dilbilgisi hatalarını düzeltin ve diller arası yüksek doğrulukla çeviri yapın.",
+      "tips2": "Güçlü AI destekli araçlar kullanarak yazınızı geliştirin veya sıfırdan içerik oluşturun.",
+      "tips3": "Duolingo İngilizce Testi için özel olarak tasarlanmış anlık cevaplar, açıklamalar ve daha fazlasını alın.",
+      "tips4": "Daha akıllı çalışmanıza ve daha hızlı öğrenmenize yardımcı olan güçlü bir DET öğretmeni.",
+      "btn_font": "Daha fazlasını keşfedin",
+      "btn_img_alt": "Sarı Sağ Ok"
+    },
     "thousand": "k",
     "Users": "Kullanıcılar",
     "Questions": "Sorular",
@@ -176,7 +188,10 @@
     "have3_desc": "Hassas AI Değerlendirmesi 300.000+ rapor puanlandı",
     "have4_title": "Ücretsiz DET Kursları",
     "have4_desc": "Tüm kurslar ücretsiz. ESL Uzmanlarından öğrenin.",
-    "h1PC": "Eksiksiz Duolingo İngilizce Testi<br /> <span class=\"black_font\">Öğrenme Platformu</span>",
+    "h1PC": "DET Pratiği için #1 Sıradaki Platform",
+    "h2PC": "Duolingo İngilizce Testinde Kolayca Daha Yüksek Puan Alın",
+    "h2PC1": "Duolingo İngilizce Testi Pratiği ve Öğrenme için En İyi Platform",
+    "pPC": "DET Practice, Duolingo deneme testi için hepsi bir arada platformdur. En büyük test bankası, tam uzunlukta deneme sınavları, uzman düzeltme hizmetleri ve geniş AI araçları yelpazesi sunuyoruz.",
     "h2_platform_intro": "Duolingo İngilizce Testi Alıştırma ve Öğrenim için En İyi Platform",
     "stats": {
       "stat1_value": "400.000+",
@@ -3708,7 +3723,7 @@
     "p224": "In this comprehensive guide to the Interactive Writing section of the Duolingo English Test (DET), we’ve covered essential strategies and techniques to help test-takers excel. Let’s recap the key points:",
     "ol1": "<li>We explored three main question types: argumentative, descriptive, and comparative.</li><li>For each question type, we provided structured templates and vocabulary-enhanced versions to guide responses.</li><li>Argumentative questions require presenting a balanced view, justifying your stance, and providing examples.</li><li>Descriptive questions focus on detailing personal experiences, actions taken, and lessons learned.</li><li>Comparative questions involve stating a preference, elaborating on reasons, and acknowledging contrasting viewpoints.</li><li>We emphasized the importance of adapting these templates to fit specific questions and time constraints.</li><li>The guide highlighted the value of using sophisticated vocabulary and complex sentence structures to demonstrate advanced language proficiency.</li><li>We provided practical examples for each question type, demonstrating how to apply the templates effectively.</li>",
     "p225": "In conclusion, mastering the Interactive Writing section of the DET requires a combination of structured thinking, adaptability, and advanced language skills. By utilizing the templates and strategies outlined in this guide, test-takers can approach the exam with confidence, knowing they have the tools to craft well-organized, sophisticated responses. Remember, practice is key to internalizing these techniques and achieving a high score on the Duolingo English Test.",
-    "p226": "As you prepare, focus on developing your ability to think critically, express ideas clearly, and showcase your English language proficiency within the given time constraints. With dedication and the right approach, you can excel in the Interactive Writing section and boost your overall DET performance.",
+    "p226": "As you prepare, focus on developing your ability to think critically, express ideas clearly, and showcase your English language proficiency within the given time constraints. With dedication and the right approach, you can excel in the Interactive Writing section and boost your overall DET performance."
   },
   "det_prep_course_writing_sample": {
     "seometa": {
