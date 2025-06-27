@@ -140,10 +140,7 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
 <template>
   <el-container :class="`wrap ${showNotice ? 'showNotice' : ''}`">
     <div class="updateNotice">
-      <div class="noticeText">
-        To align with the latest official DET content, we will be upgrading our platform on
-        <span class="red">June 30th (ET).</span>
-      </div>
+      <div class="noticeText">To align with the latest official DET content, we will be upgrading our platform.</div>
       <div class="closeBtn" @click="closeNotice">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -235,9 +232,18 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
           opacity: 0.8;
         }
       }
+      @media (max-width: 900px) {
+        display: none;
+      }
     }
     .header {
       top: 48px;
+      @media (max-width: 900px) {
+        top: 0;
+      }
+    }
+    @media (max-width: 900px) {
+      padding-top: 0;
     }
   }
 }
