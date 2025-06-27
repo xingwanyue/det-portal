@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { loginBycredential } from '@/utils/googleAuth';
-import { saveToken, getToken, locales, countries } from '@/utils';
+import { saveToken, getToken, locales, countries, getStorage, saveStorage } from '@/utils';
 import { useRouter, useRoute } from 'vue-router';
 import { useStore } from '@/store';
 import { sinupEvent } from '@/utils/gtag';
@@ -23,6 +23,7 @@ const localePath = useLocalePath();
 const store = useStore();
 const layouProps = useAttrs();
 
+const showNotice = ref(false);
 const currentPathWithoutLocale = route.path.replace(new RegExp(`^/${locale.value}`), '') || '/';
 const sameLanguagePages = [
   '/courses/det-prep-course-interactive-listening',
@@ -95,7 +96,18 @@ const logFbAdd = () => {
   const fbclid = route.query.fbclid as string;
   store.logFbAdd(fbclid);
 };
+const setNotice = () => {
+  const closed = getStorage('updateNoticeClosed');
+  if (!closed) {
+    showNotice.value = true;
+  }
+};
+const closeNotice = () => {
+  showNotice.value = false;
+  saveStorage('updateNoticeClosed', '1');
+};
 onMounted(async () => {
+  setNotice();
   logFbAdd();
   const token = await getToken();
   if (token) {
@@ -126,7 +138,31 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
 </script>
 
 <template>
-  <el-container class="wrap">
+  <el-container :class="`wrap ${showNotice ? 'showNotice' : ''}`">
+    <div class="updateNotice">
+      <div class="noticeText">
+        To align with the latest official DET content, we will be upgrading our platform on
+        <span class="red">June 30th (ET).</span>
+      </div>
+      <div class="closeBtn" @click="closeNotice">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-x h-5 w-5 text-gray-400 hover:text-gray-200"
+          aria-hidden="true"
+        >
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </div>
+    </div>
     <el-header class="header" height="80px"> <v-header :type="layouProps.type as string" /> </el-header>
     <el-main class="main">
       <slot />
@@ -153,12 +189,56 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
     padding: 80px 0 0 0;
     // min-height: calc(100vh - 60px);
   }
+  .updateNotice {
+    display: none;
+  }
   .footer_wrap {
     padding: 0 30px;
     @media (max-width: 450px) {
       padding: 0px 15px;
     }
     // border: 1px red solid;
+  }
+  &.showNotice {
+    padding-top: 48px;
+    .updateNotice {
+      width: calc(100% - 28px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(28, 28, 28);
+      height: 24px;
+      padding: 12px 14px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      color: oklch(92.8% 0.006 264.531);
+      .noticeText {
+        text-align: center;
+        width: 100%;
+        .red {
+          color: #f66442;
+        }
+      }
+      .closeBtn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        width: 48px;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .header {
+      top: 48px;
+    }
   }
 }
 </style>
