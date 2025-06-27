@@ -140,7 +140,10 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
 <template>
   <el-container :class="`wrap ${showNotice ? 'showNotice' : ''}`">
     <div class="updateNotice">
-      <div class="noticeText">To align with the latest official DET content, we will be upgrading our platform.</div>
+      <div class="noticeText">
+        To align with the latest official DET content, we will be upgrading our platform on
+        <span class="red"> June 30th (ET) </span>
+      </div>
       <div class="closeBtn" @click="closeNotice">
         <svg
           xmlns="http://www.w3.org/2000/svg"
