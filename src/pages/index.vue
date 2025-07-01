@@ -208,6 +208,12 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               </div>
             </NuxtLink>
           </div>
+          <div class="partner">
+            <div class="content">Global Partner Network Member of</div>
+            <div class="img">
+              <img src="/img/home/duolingo_english_test.svg" alt="duolingo_english_test">
+            </div>
+          </div>
           <div class="bigImg">
             <img :src="home" :alt="$t('index.DET_Practice')">
           </div>
@@ -1119,8 +1125,27 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             background-color: #FFFFFF;
           }
         }
+        .partner {
+          margin-top: 48px;
+          margin-bottom: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          @media (max-width: 570px) {
+            flex-wrap: wrap;
+          }
+          .content {
+            font-size: 18px;
+            color: #403f3e;
+          }
+          .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
         .bigImg {
-          margin-top: 80px;
           img {
             width: 100%;
             height: auto;
