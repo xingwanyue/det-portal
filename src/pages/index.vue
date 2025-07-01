@@ -1002,7 +1002,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       }
     }
     .circle_items {
-      width: 944px;
+      width: 100%;
       height: 660px;
       position: absolute;
       top: 290px;
