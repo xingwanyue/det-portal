@@ -286,7 +286,7 @@ const switchchange = (val: any) => {
             :class="state.mockBuyTimsId === item.id ? 'one_times one_times_active' : 'one_times'"
           >
             <div class="time_font" @click="changeMockBuyTimes(item)">
-              {{ item.examNum }} {{ $t('pricing.pagefont.times') }}
+              {{ item.examNum }} {{ item.examNum === 1 ? $t('pricing.pagefont.time1') : $t('pricing.pagefont.times') }}
             </div>
           </div>
         </div>
