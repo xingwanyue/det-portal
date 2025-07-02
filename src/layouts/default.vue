@@ -141,8 +141,8 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
   <el-container :class="`wrap ${showNotice ? 'showNotice' : ''}`">
     <div class="updateNotice">
       <div class="noticeText">
-        To align with the latest official DET content, we will be upgrading our platform on
-        <span class="red">June 30th (ET).</span>
+        New speaking and listening question types have been updated for practice.
+        <a class="red" href="https://www.detpractice.com/det-july-2025">Learn more</a>
       </div>
       <div class="closeBtn" @click="closeNotice">
         <svg
@@ -219,6 +219,9 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
         width: 100%;
         .red {
           color: #f66442;
+        }
+        @media (max-width: 720px) {
+          padding-right: 24px;
         }
       }
       .closeBtn {
