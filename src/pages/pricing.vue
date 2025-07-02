@@ -2206,7 +2206,7 @@ const buyCorrectNum = () => {
       }
     }
     .circle_items {
-      width: 944px;
+      width: 100%;
       height: 660px;
       position: absolute;
       top: 290px;
