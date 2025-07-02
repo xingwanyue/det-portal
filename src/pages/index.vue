@@ -616,7 +616,6 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       padding: 0px 15px;
     }
     position: relative;
-    overflow-x: hidden;
 
     .part1 {
       max-width: 1200px;

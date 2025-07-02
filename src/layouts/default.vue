@@ -188,6 +188,7 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
   .main {
     padding: 80px 0 0 0;
     // min-height: calc(100vh - 60px);
+    overflow-x: hidden;
   }
   .updateNotice {
     display: none;
