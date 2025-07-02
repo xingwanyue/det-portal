@@ -616,6 +616,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       padding: 0px 15px;
     }
     position: relative;
+    overflow-x: hidden;
 
     .part1 {
       max-width: 1200px;
@@ -1134,7 +1135,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           align-items: center;
           justify-content: center;
           gap: 10px;
-          @media (max-width: 570px) {
+          @media (max-width: 730px) {
             flex-wrap: wrap;
           }
           .content {
