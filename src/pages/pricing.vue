@@ -1510,6 +1510,7 @@ const buyCorrectNum = () => {
     // overflow: hidden;
     padding: 0px 30px;
     position: relative;
+
     @media screen and (max-width: 450px) {
       padding: 0px 15px;
     }

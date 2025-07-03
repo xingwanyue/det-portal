@@ -133,7 +133,6 @@ const goAskAI = () => {
     // window.location.href = `${url}?talkid=${id}`;
     window.location.href = urlGet('/AskAI');
   }
-
 };
 // 将数字格式化 306281变为306k 3062811变为3061k
 
@@ -182,7 +181,6 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             <h1 v-html="$t('index.h1PC')"></h1>
           </div>
         </div>
-
       </div>
       <div class="circle_items">
         <div class="circle_01"></div>
@@ -211,11 +209,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           <div class="partner">
             <div class="content">Global Partner Network Member of</div>
             <div class="img">
-              <img src="/img/home/duolingo_english_test.svg" alt="duolingo_english_test">
+              <img src="/img/home/duolingo_english_test.svg" alt="duolingo_english_test" />
             </div>
           </div>
           <div class="bigImg">
-            <img :src="home" :alt="$t('index.DET_Practice')">
+            <img :src="home" :alt="$t('index.DET_Practice')" />
           </div>
           <div class="center">
             <h2 v-html="$t('index.h2PC1')"></h2>
@@ -244,7 +242,12 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       <div class="part2">
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <img loading="lazy" src="/img/home/home1.png" :alt="$t('index.article1.title')" @load="onLoad" />
+            <img
+              loading="lazy"
+              src="https://www.detpractice.com/img/home/home1.png"
+              :alt="$t('index.article1.title')"
+              @load="onLoad"
+            />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -355,11 +358,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
             <img loading="lazy" src="/img/home/home5.png" :alt="$t('index.article4.title')" @load="onLoad4" />
-            <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
+            <!-- <el-skeleton v-show="!isLoad4" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
               </template>
-            </el-skeleton>
+            </el-skeleton> -->
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -393,12 +396,12 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <el-image v-show="isLoad5" src="/img/home/home4.png" :alt="$t('index.article3.title')" @load="onLoad5" />
-            <el-skeleton v-show="!isLoad5" style="width: 100%" animated>
+            <img loading="lazy" src="/img/home/home4.png" :alt="$t('index.article3.title')" @load="onLoad5" />
+            <!-- <el-skeleton v-show="!isLoad5" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
               </template>
-            </el-skeleton>
+            </el-skeleton> -->
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -433,11 +436,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         <div class="one_article_img" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
             <img loading="lazy" src="/img/home/home6.png" :alt="$t('index.article6.title')" @load="onLoad6" />
-            <el-skeleton v-show="!isLoad6" style="width: 100%" animated>
+            <!-- <el-skeleton v-show="!isLoad6" style="width: 100%" animated>
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
               </template>
-            </el-skeleton>
+            </el-skeleton> -->
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -630,7 +633,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             text-align: center;
             font-weight: bold;
             font-size: 40px;
-            color: #F66442;
+            color: #f66442;
             padding: 0px;
             margin: 0px;
             @media (max-width: 906px) {
@@ -1098,14 +1101,14 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           .btn {
             width: 280px;
             height: 50px;
-            border: 1px solid #F66442;
+            border: 1px solid #f66442;
             border-radius: 25px 25px 25px 25px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
             font-weight: 500;
             font-size: 18px;
-            color: #FFFFFF;
+            color: #ffffff;
             box-sizing: border-box;
             .img {
               width: 32px;
@@ -1113,16 +1116,15 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               border-radius: 50%;
               margin: 0 10px 0 24px;
               background-color: #ffffff;
-              
             }
           }
           .left {
-            background-color: #F66442;
+            background-color: #f66442;
             cursor: pointer;
           }
           .right {
-            color: #F66442;
-            background-color: #FFFFFF;
+            color: #f66442;
+            background-color: #ffffff;
           }
         }
         .partner {
@@ -1132,7 +1134,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           align-items: center;
           justify-content: center;
           gap: 10px;
-          @media (max-width: 570px) {
+          @media (max-width: 730px) {
             flex-wrap: wrap;
           }
           .content {
@@ -1187,7 +1189,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               margin-top: 8px;
               font-weight: 400;
               font-size: 24px;
-              color: #403F3E;
+              color: #403f3e;
               @media (max-width: 450px) {
                 font-size: 18px;
               }
@@ -1207,7 +1209,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
     margin: 16px 0 69px;
     text-align: center;
     font-weight: 400;
-    color: #403F3E;
+    color: #403f3e;
     font-size: 24px;
   }
   .part2_wrapper {
