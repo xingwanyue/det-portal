@@ -141,8 +141,8 @@ const htmlText = `<img height="1" width="1" style="display:none" src="https://ww
   <el-container :class="`wrap ${showNotice ? 'showNotice' : ''}`">
     <div class="updateNotice">
       <div class="noticeText">
-        New speaking and listening question types have been updated for practice.
-        <a class="red" href="https://www.detpractice.com/det-july-2025">Learn more</a>
+        The latest mock tests are now available! Accurately simulate the official exam with results delivered in 1-5 minutes.
+        <a class="red" href="https://www.detpractice.com/app/#/exam">Try it now</a>
       </div>
       <div class="closeBtn" @click="closeNotice">
         <svg
