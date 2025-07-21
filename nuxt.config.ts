@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   pages: true,
   sourcemap: false,
   i18n: {
-    locales: ['en', 'id', 'ja', 'ko', 'pt', 'ru', 'tr', 'de', 'es', 'fr', 'it', 'th', 'zh'].map((locale) => ({
+    locales: ['en'].map((locale) => ({
       code: locale,
       file: `${locale}.json`,
     })),

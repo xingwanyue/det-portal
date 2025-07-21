@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n';
 import { reactive } from 'vue';
-const { t, locale } = useI18n();
 import { useStore } from '@/store';
 import vSlogen from '../components/slogen.vue';
 import { urlGet, staticUrlGet, formatNumber, cdn, domain, getToken, saveStorage, saveToken } from '@/utils';
@@ -14,6 +12,12 @@ const route = useRoute();
 const store = useStore();
 const user = computed(() => store.user);
 const isVip = computed(() => store.isVip);
+const t = (key: string) => {
+  return key;
+};
+const $t = (key: string) => {
+  return key;
+};
 
 const url = route.query.url ? decodeURIComponent(route.query.url as string) : urlGet('/AskAI');
 

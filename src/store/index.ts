@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia';
-import isEmpty from 'lodash/isEmpty';
 import dayjs from 'dayjs';
 import { useRouter } from 'vue-router';
 import { payEvent, beginCheckoutEvent, setUserData } from '@/utils/gtag';
