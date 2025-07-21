@@ -1,28 +1,12 @@
-<script setup lang="ts">
-import { useRoute } from 'vue-router';
-import { useI18n } from 'vue-i18n';
-
-const route = useRoute();
-const { locale } = useI18n();
-
-watch(
-  () => route.path,
-  (val) => {
-    if (val && process.client) {
-      try {
-        const currentPathWithoutLocale = route.path.replace(new RegExp(`^/${locale.value}`), '') || '/';
-        useFetch(
-          `https://www.duolingopractice.com/weapp/api/common/logPath?path=${encodeURIComponent(
-            currentPathWithoutLocale,
-          )}&locale=${locale.value}`,
-        );
-      } catch (e) {
-        //
-      }
-    }
-  },
-  { immediate: true },
-);
+<script lang="ts" setup>
+onMounted(() => {
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href =
+    "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"; // 换成你的字体
+  link.type = "text/css";
+  document.head.appendChild(link);
+});
 </script>
 
 <template>

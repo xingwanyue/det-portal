@@ -65,8 +65,8 @@ const checkStatus = (result) => {
     err,
   };
 };
-const hooks = {};
-export const fetchmy = (url, options) => {
+
+export const fetchMy = (url, options) => {
   const defaultHeaders = {
     'Content-Type': 'application/json; charset=utf-8',
   };
@@ -78,15 +78,12 @@ export const fetchmy = (url, options) => {
     .then(parseResponse)
     .then(checkStatus)
     .then((data) => {
-      const { err: { status } = {} } = data;
-      if (hooks.response) {
-        hooks.response(data, fullUrl, options);
-      }
-      if (status === 401) {
+      const { data: data1, res } = data;
+      if (res?.status === 401) {
         localStorage.clear();
         sessionStorage.clear();
         window.location.href = '/';
       }
-      return data;
+      return data1;
     });
 };

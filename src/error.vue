@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 useHead({
-  meta: [{ name: 'robots', content: 'noindex' }],
+  meta: [{ name: "robots", content: "noindex" }],
 });
 </script>
 
@@ -9,7 +9,7 @@ useHead({
   <NuxtLayout name="default">
     <div class="errPage">
       <div class="errContent">
-        <img src="/img/affiliate/cre_th_w_l.svg" alt="empty" class="left" />
+        <img src="/image/404.jpg" alt="empty" class="left" />
         <div class="right">
           <h1 class="text-404">404</h1>
           <div class="text-desc">Page Not Found</div>
@@ -60,14 +60,17 @@ useHead({
   }
 
   .goHomeBtn {
-    padding: 9px 12px;
+    padding: 9px 18px;
     width: fit-content;
     text-align: center;
-    background-color: #f66442;
-    border-radius: 22px;
+    background-color: #0058fe;
+    border-radius: 8px;
     font-weight: 500;
     font-size: 18px;
     color: #ffffff;
+    &:hover {
+      filter: brightness(0.9);
+    }
   }
 
   @media screen and (max-width: 600px) {
