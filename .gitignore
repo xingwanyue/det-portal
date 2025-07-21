@@ -1,4 +1,4 @@
-# Nuxt 开发/构建输出
+# Nuxt dev/build outputs
 .output
 .data
 .nuxt
@@ -6,17 +6,20 @@
 .cache
 dist
 
-# Node 依赖
+# Node dependencies
 node_modules
 
-# 日志
+# Logs
 logs
 *.log
 
-# 杂项
+# Misc
 .DS_Store
+.fleet
+.idea
 
-# 本地环境文件
+# Local env files
 .env
 .env.*
 !.env.example
+/cli
