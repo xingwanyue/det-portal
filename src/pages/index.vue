@@ -98,7 +98,7 @@ const review_list = computed(() => [
         </div>
       </div>
       <div class="bigImg">
-        <img src="/image/home/big_img.webp" :alt="$t('index.party1.p0')" fetchpriority="high" />
+        <el-image src="/image/home/big_img.webp" :alt="$t('index.party1.p0')" fetchpriority="high" />
       </div>
     </div>
     <div class="part2">

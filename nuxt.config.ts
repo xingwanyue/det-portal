@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/main.scss"],
-  modules: ["@nuxtjs/i18n"],
+  modules: ["@nuxtjs/i18n", "@element-plus/nuxt"],
   i18n: {
     locales: ["en"].map((locale) => ({
       code: locale,
