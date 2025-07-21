@@ -49,6 +49,9 @@ export default defineNuxtConfig({
     },
     detectBrowserLanguage: false,
   },
+  plugins: [
+    { src: "@/plugins/tidio.js", mode: "client" },
+  ],
   vite: {
     build: {
       rollupOptions: {
