@@ -1,90 +1,178 @@
-<script setup lang="ts">
-import { useI18n } from "vue-i18n";
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
+import { reactive } from 'vue';
+import { domain } from '@/utils';
+const state = reactive({});
 useSeoMeta({
-  title: t('refundPolicy.SeoMeta.title'),
-  description: t('refundPolicy.SeoMeta.description'),
+  title: t('refundPolicy.seometa.title'),
+  description: t('refundPolicy.seometa.description'),
+});
+const localePath = useLocalePath();
+useHead({
+  meta: [
+    { name: 'DC.title', content: t('refundPolicy.seometa.title') },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:title', content: t('refundPolicy.seometa.title') },
+    { property: 'og:description', content: t('refundPolicy.seometa.description') },
+    { property: 'og:url', content: `https://www.${domain}${localePath('/refund-policy')}` },
+    { property: 'og:site_name', content: 'DET Practice' },
+    { property: 'og:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@det_practice' },
+    { name: 'twitter:creator', content: 'DET Practice' },
+    { name: 'twitter:title', content: t('refundPolicy.seometa.title') },
+    {
+      name: 'twitter:description',
+      content: t('refundPolicy.seometa.description'),
+    },
+    { name: 'twitter:image', content: 'https://www.detpractice.com/img/footer/small_logo.svg' },
+  ],
 });
 </script>
-
 <template>
-  <div class="refundPolicy">
-    <h1 class="title">{{ $t('refundPolicy.h1') }}</h1>
-    <div class="updated">{{ $t('refundPolicy.updated') }}</div>
-    <div class="content">
-      <div>{{ $t('refundPolicy.p0') }}</div>
-      <div>
-        <div class="fontWeight">{{ $t('refundPolicy.p1.text1') }}</div>
-        <div>{{ $t('refundPolicy.p1.text2') }}</div>
-        <div>{{ $t('refundPolicy.p1.text3') }}</div>
-        <div>{{ $t('refundPolicy.p1.text4') }}</div>
+  <div class="privacyPolicy">
+    <div class="learn_hader" :style="`background-image: url(/img/aboutus/banner-aboutus.svg);`">
+      <div class="learn_hader_content">
+        <h1 class="title">{{ $t('refundPolicy.h1') }}</h1>
       </div>
-      <div>
-        <div class="fontWeight">{{ $t('refundPolicy.p2.text1') }}</div>
-        <div>{{ $t('refundPolicy.p2.text2') }}</div>
-        <div>{{ $t('refundPolicy.p2.text3') }}</div>
-        <div>{{ $t('refundPolicy.p2.text4') }}</div>
-        <div v-html="$t('refundPolicy.p2.text5')"></div>
-        <div>{{ $t('refundPolicy.p2.text6') }}</div>
+    </div>
+    <div class="bg">
+      <div class="content margin-top0" data-aos="fade-up" data-aos-duration="1000">
+        <!-- <div class="title">{{ $t('refundPolicy.q1.title') }}</div> -->
+        <div class="content1">
+          {{ $t('refundPolicy.q1.a1') }}
+        </div>
       </div>
-      <div>
-        <div class="fontWeight">{{ $t('refundPolicy.p3.text1') }}</div>
-        <div>{{ $t('refundPolicy.p3.text2') }}</div>
-        <div>{{ $t('refundPolicy.p3.text3') }}</div>
-        <div>{{ $t('refundPolicy.p3.text4') }}</div>
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="title">{{ $t('refundPolicy.q2.title') }}</div>
+        <div class="content1">
+          {{ $t('refundPolicy.q2.a1') }}
+          <div class="line-break"></div>
+          {{ $t('refundPolicy.q2.a2') }}
+          <div class="line-break"></div>
+          {{ $t('refundPolicy.q2.a3') }}
+        </div>
       </div>
-      <div>
-        <div class="fontWeight">{{ $t('refundPolicy.p4.text1') }}</div>
-        <div>{{ $t('refundPolicy.p4.text2') }}</div>
-        <div v-html="$t('refundPolicy.p5.text1')"></div>
-        <div>{{ $t('refundPolicy.p5.text2') }}</div>
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="title">{{ $t('refundPolicy.q3.title0') }}</div>
+        <div class="line-break">&nbsp;</div>
+        <div class="title">{{ $t('refundPolicy.q3.title') }}</div>
+        <div class="content1">
+          {{ $t('refundPolicy.q3.a1') }}
+          <div class="line-break"></div>
+          <span v-html="$t('refundPolicy.q3.a2')"></span>
+          <div class="line-break"></div>
+          <div v-html="$t('refundPolicy.q3.a3')"></div>
+          <div class="line-break"></div>
+          {{ $t('refundPolicy.q3.a4') }}
+        </div>
+      </div>
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="title">{{ $t('refundPolicy.q4.title') }}</div>
+        <div class="content1">
+          {{ $t('refundPolicy.q4.a1') }}
+          <div class="line-break"></div>
+          {{ $t('refundPolicy.q4.a2') }}
+          <div class="line-break"></div>
+          {{ $t('refundPolicy.q4.a3') }}
+        </div>
+      </div>
+      <div class="content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="title">{{ $t('refundPolicy.q5.title') }}</div>
+        <div class="content1">
+          {{ $t('refundPolicy.q5.a1') }}
+          <div class="line-break"></div>
+          <div v-html="$t('refundPolicy.q5.a2')"></div>
+        </div>
       </div>
     </div>
   </div>
 </template>
-<style scoped lang="scss">
-.refundPolicy {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  box-sizing: border-box;
-
-  @media screen and (max-width: 1280px) {
-    padding: 0 30px;
-  }
-
-  .title {
-    margin-top: 80px;
-    font-weight: bold;
-    font-size: 48px;
-    color: #171C1D;
-    line-height: 64px;
+<style lang="scss" scoped>
+.privacyPolicy {
+  .learn_hader {
     text-align: center;
-  }
-
-  .updated {
-    font-weight: 400;
-    font-size: 16px;
-    color: #171C1D;
-    line-height: 64px;
-    text-align: center;
-    margin: 16px 0 48px;
-  }
-
-  .content {
-    font-weight: 400;
-    font-size: 18px;
-    color: #3D3F40;
-    line-height: 28px;
-    text-align: left;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-    :deep(.email_address) {
-      color: #0058fe;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .learn_hader_content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 120px 0px;
+      .title {
+        font-weight: 600;
+        font-size: 56px;
+        color: #201515;
+        line-height: 72px;
+        margin: 0px;
+      }
     }
-    .fontWeight {
-      font-weight: bold;
+  }
+  .bg {
+    background: linear-gradient(180deg, #ffffff 0%, #fff4f1 100%);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .margin-top0 {
+    margin-top: 0 !important;
+  }
+  .content {
+    max-width: 1260px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+      color: #201515;
+    }
+    .content1 {
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.8);
+      line-height: 20px;
+      margin-top: 12px;
+      .line-break {
+        margin-top: 8px;
+      }
+      ::v-deep .website {
+        color: #f66442;
+      }
+      ::v-deep .websiteStrong {
+        color: #f66442;
+        font-weight: 650;
+      }
+      .website {
+        color: #f66442;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .privacyPolicy {
+    .learn_hader {
+      .learn_hader_content {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 30px 15px;
+        .title {
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+    }
+    .bg {
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+    .content {
+      max-width: 100%;
+      margin-top: 15px;
+      padding: 0px 15px;
     }
   }
 }

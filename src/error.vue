@@ -1,15 +1,16 @@
 <script setup lang="ts">
+import Layout from './layouts/default.vue';
 
 useHead({
-  meta: [{ name: "robots", content: "noindex" }],
+  meta: [{ name: 'robots', content: 'noindex' }],
 });
 </script>
 
 <template>
-  <NuxtLayout name="default">
+  <Layout errorPage>
     <div class="errPage">
       <div class="errContent">
-        <img src="/image/404.jpg" alt="empty" class="left" />
+        <img src="/img/affiliate/cre_th_w_l.svg" alt="empty" class="left" />
         <div class="right">
           <h1 class="text-404">404</h1>
           <div class="text-desc">Page Not Found</div>
@@ -17,7 +18,7 @@ useHead({
         </div>
       </div>
     </div>
-  </NuxtLayout>
+  </Layout>
 </template>
 
 <style lang="scss" scoped>
@@ -60,17 +61,14 @@ useHead({
   }
 
   .goHomeBtn {
-    padding: 9px 18px;
+    padding: 9px 12px;
     width: fit-content;
     text-align: center;
-    background-color: #0058fe;
-    border-radius: 8px;
+    background-color: #f66442;
+    border-radius: 22px;
     font-weight: 500;
     font-size: 18px;
     color: #ffffff;
-    &:hover {
-      filter: brightness(0.9);
-    }
   }
 
   @media screen and (max-width: 600px) {
