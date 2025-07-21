@@ -42,10 +42,10 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'stylesheet', href: '/css/main.css' },
-        {
-          rel: 'stylesheet',
-          href: '/font/index.css',
-        },
+        // {
+        //   rel: 'stylesheet',
+        //   href: '/font/index.css',
+        // },
       ],
       htmlAttrs: {
         lang: 'en',
