@@ -3,23 +3,19 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
-  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'vue3-carousel-nuxt'],
+  modules: ['@pinia/nuxt'],
   css: ['@/assets/iconfont/iconfont.css'],
   pages: true,
   sourcemap: false,
-  i18n: {
-    locales: ['en'].map((locale) => ({
-      code: locale,
-      file: `${locale}.json`,
-    })),
-    lazy: true,
-    defaultLocale: 'en',
-    langDir: 'locales',
-    compilation: {
-      strictMessage: false,
-    },
-    detectBrowserLanguage: false,
-  },
+  // i18n: {
+  //   locales: ['en'].map((locale) => `${locale}.json`),
+  //   defaultLocale: 'en',
+  //   langDir: 'locales',
+  //   compilation: {
+  //     strictMessage: false,
+  //   },
+  //   detectBrowserLanguage: false,
+  // },
   nitro: {
     prerender: {
       failOnError: false,
@@ -29,7 +25,28 @@ export default defineNuxtConfig({
     { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
     { src: '@/plugins/tidio.js', mode: 'client' },
   ],
-
+  vite: {
+    build: {
+      rollupOptions: {
+        preserveEntrySignatures: 'strict',
+        output: {
+          chunkFileNames: '_nuxt/[hash].js',
+          entryFileNames: '_nuxt/[hash].js',
+          manualChunks(id: string) {
+            if (id.includes('node_modules')) {
+              if (id.includes('nuxt')) {
+                return 'nuxt';
+              }
+              if (id.includes('vue')) {
+                return 'vue';
+              }
+              return 'vendor';
+            }
+          },
+        },
+      },
+    },
+  },
   features: {
     inlineStyles: false,
   },
@@ -42,10 +59,10 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'stylesheet', href: '/css/main.css' },
-        {
-          rel: 'stylesheet',
-          href: '/font/index.css',
-        },
+        // {
+        //   rel: 'stylesheet',
+        //   href: '/font/index.css',
+        // },
       ],
       htmlAttrs: {
         lang: 'en',
