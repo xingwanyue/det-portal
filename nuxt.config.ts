@@ -29,9 +29,7 @@ export default defineNuxtConfig({
       code: locale,
       file: `${locale}.json`,
     })),
-    lazy: true,
     defaultLocale: "en",
-    langDir: "locales",
     compilation: {
       strictMessage: false,
     },
@@ -45,14 +43,14 @@ export default defineNuxtConfig({
           chunkFileNames: "_nuxt/[hash].js",
           entryFileNames: "_nuxt/[hash].js",
           manualChunks(id: string) {
-            if (id.includes('node_modules')) {
-              if (id.includes('nuxt')) {
-                return 'nuxt';
+            if (id.includes("node_modules")) {
+              if (id.includes("nuxt")) {
+                return "nuxt";
               }
-              if (id.includes('vue')) {
-                return 'vue';
+              if (id.includes("vue")) {
+                return "vue";
               }
-              return 'vendor';
+              return "vendor";
             }
           },
         },
