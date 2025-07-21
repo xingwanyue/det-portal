@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia';
-import isEmpty from 'lodash/isEmpty';
 import dayjs from 'dayjs';
 import { useRouter } from 'vue-router';
 import { payEvent, beginCheckoutEvent, setUserData } from '@/utils/gtag';
@@ -8,8 +7,7 @@ import { api, saveToken, getToken, removeToken, delay, getDeviceType } from '@/u
 import { fetchmy } from '@/utils/request';
 import { stripePayUrlGet, stripePayStatusGet, logout, logFbAdd } from '@/api';
 
-export const useStore = defineStore({
-  id: 'base',
+export const useStore = defineStore('base', {
   state: () => {
     return {
       user: {} as any,
