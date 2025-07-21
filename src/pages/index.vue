@@ -2,6 +2,7 @@
 import { googlePopupLogin } from "@/utils/googleAuth";
 import { login } from "@/utils/api";
 import { useI18n } from "vue-i18n";
+import { QuestionFilled } from '@element-plus/icons-vue';
 const { t } = useI18n();
 useSeoMeta({
   title: t('index.SeoMeta.title'),
