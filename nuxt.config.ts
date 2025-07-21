@@ -25,7 +25,21 @@ export default defineNuxtConfig({
   css: ["@/assets/main.scss"],
   modules: ["@nuxtjs/i18n", "@element-plus/nuxt"],
   i18n: {
-    locales: ["en"].map((locale) => ({
+    locales: [
+      "en",
+      "id",
+      "ja",
+      "ko",
+      "pt",
+      "ru",
+      "tr",
+      "de",
+      "es",
+      "fr",
+      "it",
+      "th",
+      "zh",
+    ].map((locale) => ({
       code: locale,
       file: `${locale}.json`,
     })),
