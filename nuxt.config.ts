@@ -59,37 +59,7 @@ export default defineNuxtConfig({
           src: 'https://accounts.google.com/gsi/client',
           async: true,
         },
-        {
-          innerHTML: `requestIdleCallback(() => {
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("set", "linker", {
-    domains: ["detpractice.com", "app.detpractice.com"],
-  });
-  gtag("js", new Date());
-
-  gtag("config", "G-BTN96NLD4D");
-  gtag("event", "conversion_event_website_visit", {
-    event_timeout: 2000,
-  });
-
-  // 发送ads 访问成功事件
-  gtag("config", "AW-11500231799");
-  document.querySelectorAll('button[type*="submit"]').forEach(function (e) {
-    e.addEventListener("click", function () {
-      var email = document.querySelector('[class="el-input__inner"]').value;
-      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-      if (email != "" && mailformat.test(email)) {
-        gtag("set", "user_data", { email: email });
-        gtag("event", "sign_up", { send_to: "G-BTN96NLD4D" });
-      }
-    });
-  });
-});
-`,
-        },
+      
         {
           type: 'application/ld+json',
           innerHTML: JSON.stringify({
@@ -137,34 +107,7 @@ export default defineNuxtConfig({
             ],
           }),
         },
-        {
-          innerHTML: `requestIdleCallback(() => {
-  !(function (f, b, e, v, n, t, s) {
-    if (f.fbq) return;
-    n = f.fbq = function () {
-      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-    };
-    if (!f._fbq) f._fbq = n;
-    n.push = n;
-    n.loaded = !0;
-    n.version = "2.0";
-    n.queue = [];
-    t = b.createElement(e);
-    t.async = !0;
-    t.src = v;
-    s = b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t, s);
-  })(
-    window,
-    document,
-    "script",
-    "https://connect.facebook.net/en_US/fbevents.js"
-  );
-  fbq("init", "1314035249495524");
-  fbq("track", "PageView");
-});
-`,
-        },
+       
       ],
       noscript: [
         {
