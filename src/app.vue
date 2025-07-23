@@ -23,6 +23,13 @@ watch(
   },
   { immediate: true },
 );
+onMounted(() => {
+  requestIdleCallback(() => {
+    import('@/utils/append').then(({ appendJs }) => {
+      appendJs();
+    });
+  });
+})
 </script>
 
 <template>
