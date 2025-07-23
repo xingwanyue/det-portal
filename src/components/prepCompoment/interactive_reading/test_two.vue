@@ -2,7 +2,6 @@
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import { reactive } from 'vue';
-import { QuestionFilled } from '@element-plus/icons-vue';
 const props = defineProps({
   answer: Array,
   showSpace: Boolean,
