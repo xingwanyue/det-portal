@@ -25,7 +25,9 @@ watch(
   { immediate: true },
 );
 onMounted(() => {
-  apendJs();
+  requestIdleCallback(() => {
+    apendJs();
+  });
 });
 </script>
 
