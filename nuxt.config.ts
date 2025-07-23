@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
-  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'vue3-carousel-nuxt'],
+  modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'vue3-carousel-nuxt', '@nuxtjs/partytown'],
   css: ['@/assets/iconfont/iconfont.css'],
   pages: true,
   sourcemap: false,
@@ -25,10 +25,7 @@ export default defineNuxtConfig({
       failOnError: false,
     },
   },
-  plugins: [
-    { src: '@/assets/iconfont/iconfont.js', mode: 'client' },
-    { src: '@/plugins/tidio.js', mode: 'client' },
-  ],
+  plugins: [{ src: '@/assets/iconfont/iconfont.js', mode: 'client' }],
 
   features: {
     inlineStyles: false,
@@ -53,14 +50,19 @@ export default defineNuxtConfig({
       script: [
         {
           src: 'https://www.googletagmanager.com/gtag/js?id=G-BTN96NLD4D',
-          async: true,
+          type: 'text/partytown',
         },
         {
           src: 'https://accounts.google.com/gsi/client',
-          async: true,
+          type: 'text/partytown',
         },
         {
-          innerHTML: `window.addEventListener("load", function (event) {
+          src: 'https://code.tidio.co/wruqp7llixvkwsdlbkcqpid2jhxwl0cx.js',
+          type: 'text/partytown',
+        },
+        {
+          type: 'text/partytown',
+          children: `window.addEventListener("load", function (event) {
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
@@ -87,6 +89,35 @@ export default defineNuxtConfig({
       }
     });
   });
+});
+`,
+        },
+        {
+          type: 'text/partytown',
+          children: `window.addEventListener("load", function (event) {
+  !(function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = "2.0";
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s);
+  })(
+    window,
+    document,
+    "script",
+    "https://connect.facebook.net/en_US/fbevents.js"
+  );
+  fbq("init", "1314035249495524");
+  fbq("track", "PageView");
 });
 `,
         },
@@ -136,34 +167,6 @@ export default defineNuxtConfig({
               'https://www.detpractice.com/',
             ],
           }),
-        },
-        {
-          innerHTML: `window.addEventListener("load", function (event) {
-  !(function (f, b, e, v, n, t, s) {
-    if (f.fbq) return;
-    n = f.fbq = function () {
-      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-    };
-    if (!f._fbq) f._fbq = n;
-    n.push = n;
-    n.loaded = !0;
-    n.version = "2.0";
-    n.queue = [];
-    t = b.createElement(e);
-    t.async = !0;
-    t.src = v;
-    s = b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t, s);
-  })(
-    window,
-    document,
-    "script",
-    "https://connect.facebook.net/en_US/fbevents.js"
-  );
-  fbq("init", "1314035249495524");
-  fbq("track", "PageView");
-});
-`,
         },
       ],
       noscript: [
