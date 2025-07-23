@@ -39,6 +39,9 @@ importers:
       '@nuxtjs/i18n':
         specifier: 8.5.6
         version: 8.5.6(magicast@0.3.5)(rollup@4.35.0)(vue@3.5.13(typescript@5.8.2))
+      '@nuxtjs/partytown':
+        specifier: ^1.6.0
+        version: 1.6.0(magicast@0.3.5)
       nuxt:
         specifier: 3.15.4
         version: 3.15.4(@parcel/watcher@2.4.1)(@types/node@22.7.5)(db0@0.3.1)(ioredis@5.6.0)(magicast@0.3.5)(rollup@4.35.0)(sass@1.85.1)(terser@5.34.1)(typescript@5.8.2)(vite@6.2.1(@types/node@22.7.5)(jiti@2.4.2)(sass@1.85.1)(terser@5.34.1)(yaml@2.7.0))(yaml@2.7.0)
@@ -852,6 +855,9 @@ packages:
     resolution: {integrity: sha512-L+g+LygKNoaS/AXExk7tzS9wSNn9QdP1T9VdTjjEGYftpeFgv2U8AQsY0dQAhgPIbXXhIAkNYxTk4YcINj9CfA==}
     engines: {node: ^14.16.0 || >=16.11.0}
 
+  '@nuxtjs/partytown@1.6.0':
+    resolution: {integrity: sha512-pgtdqzU0WVdbkm5kAa9MJkpfujvlb2uka8c2JiLaeevzwPxdVDmVWSpnwPe22nedtC0u5THv+A0LyS0xRBlkUQ==}
+
   '@parcel/watcher-android-arm64@2.4.1':
     resolution: {integrity: sha512-LOi/WTbbh3aTn2RYddrO8pnapixAziFl6SMxHM69r3tvdSm94JtCenaKgk1GRg5FJ5wpMCpHeW+7yqPlvZv7kg==}
     engines: {node: '>= 10.0.0'}
@@ -954,6 +960,11 @@ packages:
   '@poppinss/exception@1.2.1':
     resolution: {integrity: sha512-aQypoot0HPSJa6gDPEPTntc1GT6QINrSbgRlRhadGW2WaYqUK3tK4Bw9SBMZXhmxd3GeAlZjVcODHgiu+THY7A==}
     engines: {node: '>=18'}
+
+  '@qwik.dev/partytown@0.11.2':
+    resolution: {integrity: sha512-795y49CqBiKiwKAD+QBZlzlqEK275hVcazZ7wBPSfgC23L+vWuA7PJmMpgxojOucZHzYi5rAAQ+IP1I3BKVZxw==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
 
   '@redocly/ajv@8.11.2':
     resolution: {integrity: sha512-io1JpnwtIcvojV7QKDUSIuMN/ikdOUd1ReEnUnMKGfDVridQZ31J0MmIuqwuRjWDZfmvr+Q0MqCcfHM2gTivOg==}
@@ -5212,6 +5223,17 @@ snapshots:
       - vue-i18n-bridge
       - webpack-sources
 
+  '@nuxtjs/partytown@1.6.0(magicast@0.3.5)':
+    dependencies:
+      '@nuxt/kit': 3.16.0(magicast@0.3.5)
+      '@qwik.dev/partytown': 0.11.2
+      knitwork: 1.2.0
+      serve-static: 1.16.2
+      ufo: 1.5.4
+    transitivePeerDependencies:
+      - magicast
+      - supports-color
+
   '@parcel/watcher-android-arm64@2.4.1':
     optional: true
 
@@ -5302,6 +5324,10 @@ snapshots:
       supports-color: 10.0.0
 
   '@poppinss/exception@1.2.1': {}
+
+  '@qwik.dev/partytown@0.11.2':
+    dependencies:
+      dotenv: 16.4.7
 
   '@redocly/ajv@8.11.2':
     dependencies:
