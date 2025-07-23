@@ -26,9 +26,9 @@ watch(
 );
 onMounted(() => {
   requestIdleCallback(() => {
-    setTimeout(() => {
+    import('@/utils/apend').then(({ apendJs }) => {
       apendJs();
-    }, 1000);
+    });
   });
 });
 </script>
