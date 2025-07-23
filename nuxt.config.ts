@@ -51,62 +51,6 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       script: [
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-BTN96NLD4D',
-          async: true,
-        },
-        {
-          src: 'https://accounts.google.com/gsi/client',
-          async: true,
-        },
-      
-        {
-          type: 'application/ld+json',
-          innerHTML: JSON.stringify({
-            '@context': 'http://schema.org',
-            '@type': 'LocalBusiness',
-            name: 'AITOGETHER LTD',
-            url: 'https://www.detpractice.com/',
-            logo: 'https://www.detpractice.com/img/footer/small_logo.svg',
-            image: 'https://www.detpractice.com/store/portal/products/bank_picture1.png',
-            description:
-              'DET Practice is the best platform for Duolingo English Test Practice. We have the largest test bank, full-length mock exam, correction service, and DET courses.',
-            pricerange: '£',
-            telephone: '7518886018',
-            email: 'support@detpractice.com',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: '71-75 Shelton Street, Covent Garden',
-              addressLocality: 'England',
-              addressRegion: 'London',
-              postalCode: 'WC2H 9JQ',
-              addressCountry: 'UK',
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: '880',
-            },
-            review: {
-              '@type': 'Review',
-              reviewRating: {
-                '@type': 'Rating',
-                ratingValue: '4.9',
-                bestRating: '5',
-              },
-              author: {
-                '@type': 'Person',
-                name: 'AITOGETHER LTD',
-              },
-            },
-            sameAs: [
-              'https://www.facebook.com/detpractice',
-              'https://x.com/det_practice',
-              'https://www.instagram.com/detpractice/ ',
-              'https://www.detpractice.com/',
-            ],
-          }),
-        },
        
       ],
       noscript: [
