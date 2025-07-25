@@ -123,10 +123,10 @@ const menus = computed(() => [
     name: t('Pricing'),
     path: '/pricing',
   },
-  {
-    name: t('Blog'),
-    path: '/blog',
-  },
+  // {
+  //   name: t('Blog'),
+  //   path: '/blog',
+  // },
   {
     name: t('Discount'),
     path: '/discount',
