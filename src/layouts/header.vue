@@ -79,6 +79,9 @@ const changeHeaderColor = (pathname: string) => {
     case '/speaking-ai-correction':
       headerColor.value = '#EAEAFEFF';
       break;
+    case '/discount':
+      headerColor.value = '#FFF4F1';
+      break;
     default:
       headerColor.value = 'rgba(0,0,0,0)';
       break;
@@ -123,6 +126,10 @@ const menus = computed(() => [
   {
     name: t('Blog'),
     path: '/blog',
+  },
+  {
+    name: t('Discount'),
+    path: '/discount',
   },
 ]);
 // const menus = ;
