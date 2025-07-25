@@ -5,6 +5,7 @@
   "Learn": "学習コンテンツ",
   "Pricing": "料金案内",
   "Blog": "合格ガイド",
+  "Discount": "DET Discount",
   "courses_title": "コース",
   "header": {
     "home_logo_title": "DET 練習",
@@ -4298,5 +4299,79 @@
     "p134": "Remember, by focusing on scenario-based vocabulary and honing your skills in context-specific communication, you're cultivating a valuable skill set that extends beyond the test. Keep practicing, stay curious about different academic contexts, and approach each interaction as an opportunity to refine your language skills. Your efforts will pay off in both your DET performance and future academic endeavors.",
     "p135": "Additional Resources:",
     "ul1": "<li><strong>DET Interactive Listening Introduction from Duolingo English Test:</strong> The official DET video provides a detailed overview of the Interactive Listening question type and offers practical preparation strategies and tips.</li>"
+  },
+  "discount": {
+    "seometa": {
+      "title": "Duolingo English Test Coupon & Discount {'|'} DET Practice",
+      "description": "Looking for a Duolingo English Test discount? Get the latest verified coupons and promo codes for the DET. Save money on your DET today!"
+    },
+    "part1": {
+      "btn1": "Exclusive Partner Benefits",
+      "h1_1": "Instantly Unlock Your Duolingo English Test",
+      "h1_2": "Coupons & Discounts",
+      "p": "Get your DET score faster & cheaper! DET Practice unlocks exclusive benefits: 24-hour fast DET scoring and Duolingo English Test discount.",
+      "btn2": "Learn How It Works"
+    },
+    "part2": {
+      "num1": "400,000+",
+      "text1": "Happy Students",
+      "num2": "18,000+",
+      "text2": "Practice Questions",
+      "num3": "40,000+",
+      "text3": "Mock Tests Taken",
+      "num4": "4.8/5",
+      "text4": "User Rating"
+    },
+    "part3": {
+      "h2": "Why Choose Our Partner Benefits?",
+      "p": "These unique Duolingo English Test benefits are offered exclusively through our official partnership, giving our users a clear advantage.",
+      "title1": "24-Hour Fast DET Scoring",
+      "text1": "Skip the wait! Get your DET results in just 24 hours instead of the standard 48-72 hours. Perfect for urgent applications and tight deadlines.",
+      "title2": "10% Instant DET Discount",
+      "text2": "Save on the official test fee with our exclusive 10% discount coupon. Simply apply it during the Duolingo checkout process for an instant price reduction."
+    },
+    "part4": {
+      "h2": "How to Claim Your Benefits",
+      "p": "Get your discounts in 3 simple steps - takes less than 5 minutes!",
+      "title1": "Activate Your Benefits",
+      "text1": "Use our official partner invitation link to access the Duolingo English Test registration page with special benefits activated.",
+      "title2": "Add Us as Sponsor",
+      "text2": "Add “DET Practice” as your sponsor during the checkout process to automatically activate 24-hour fast scoring.",
+      "title3": "Get Your DET Coupon",
+      "text3": "After activating your benefits, simply contact our support team with your Duolingo English Test account email to receive your unique 10% discount code."
+    },
+    "part5": {
+      "h2": "Need Extra DET Practice?",
+      "p": "Boost your preparation with our comprehensive DET practice tools and resources",
+      "title1": "18K+ AI-Graded Questions",
+      "text1": "Practice with our extensive question bank covering all DET sections. Get instant feedback and detailed explanations for every question.",
+      "title2": "Full-Length Mock Exams",
+      "text2": "Take adaptive practice tests that perfectly simulate the real DET experience with accurate score predictions and detailed analytics.",
+      "title3": "Personalized Study Plans",
+      "text3": "Get customized study schedules created by DET experts based on your current level, target score, and available time."
+    },
+    "part6": {
+      "h2": "Ready to Save Time & Money?",
+      "p": "Join 400,000+ students who chose DET Practice for their exam preparation and exclusive benefits.",
+      "btn": "Get Your Benefits Now"
+    },
+    "part7": {
+      "h2": "Frequently Asked Questions",
+      "p": "Have questions? We've got answers. Here are some common queries about DET discounts and benefits.",
+      "q1": "Are these benefits really free?",
+      "a1": "Yes, absolutely! As an official partner, we provide the 24-hour fast DET scoring upgrade and the <a href='' data-action='discount-coupon' target='_blank'>Duolingo English Test discount coupon</a> to our users completely free of charge. There are no hidden fees or obligations.",
+      "q2": "Why do you offer these Duolingo English Test benefits for free?",
+      "a2": "As an official global partner, Duolingo enables us to provide these exclusive benefits to the community. It's our way of adding value for students and introducing them to our high-quality <a href='https://www.detpractice.com/' target='_blank'>DET Practice</a> platform, where they can find free and premium tools to prepare for the Duolingo English Test.",
+      "q3": "Do I need to be a paid user of DET Practice to get the DET coupon?",
+      "a3": "Not at all. These official partner benefits are available to all our users who registers for the Duolingo English Test via our link. You do not need to purchase any of our practice plans to be eligible for the fast scoring or the <a href='' data-action='discount-coupon' target='_blank'>Duolingo English Test discount coupon</a>.",
+      "q4": "Where exactly do I enter the DET discount coupon code?",
+      "a4": "The Duolingo English Test discount coupon can be applied on the final payment page on the <a href='https://englishtest.duolingo.com/' target='_blank'>official Duolingo English Test website</a>. During the checkout process, look for a field labeled “Apply a coupon” or “Add promo code,” enter the code we provide, and the price will be updated automatically.",
+      "q5": "How do I get the DET discount coupon?",
+      "a5": "After registering through our partner link and selecting <a href='https://www.detpractice.com/' target='_blank'>“DET Practice”</a> as your sponsor, simply contact our support team via live chat, WhatsApp, or email. Provide your DET account email, and we will send you the coupon code.",
+      "q6": "What if I already have a Duolingo account?",
+      "a6": "You can still use our benefits! Just make sure to click our official partner link before you proceed to the payment page. You will then be able to select <a href='https://www.detpractice.com/' target='_blank'>“DET Practice”</a> as your sponsor to activate the fast-scoring benefit.",
+      "q7": "Can I use both the fast DET scoring and the DET discount?",
+      "a7": "Yes, you can and should use both! The 24-hour fast scoring is applied automatically at checkout when you add us as a sponsor, and you can manually enter the <a href='' target='_blank' data-action='discount-coupon'>Duolingo English Test discount coupon</a> we provide in the same checkout process."
+    }
   }
 }
