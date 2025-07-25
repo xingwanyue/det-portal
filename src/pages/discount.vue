@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { urlGet } from '@/utils';
 const { t } = useI18n();
 
 useSeoMeta({
@@ -47,6 +48,15 @@ const aqList = ref([
 ]) as any;
 const change = (item: any) => {
   item.open = !item.open;
+}
+const goDiscount = () => {
+  window.location.href = urlGet('/discount');
+}
+const go = (event: any) => {
+  if (event.target.dataset.action === 'discount-coupon') {
+    event.preventDefault();
+    window.location.href = urlGet('/discount');
+  }
 }
 </script>
 
@@ -178,7 +188,7 @@ const change = (item: any) => {
       <div class="container">
         <h2>{{ t('discount.part6.h2') }}</h2>
         <p>{{ t('discount.part6.p') }}</p>
-        <div class="btn box"><a href="https://www.detpractice.com/app">{{ t('discount.part6.btn') }}</a></div>
+        <div class="btn box" @click="goDiscount">{{ t('discount.part6.btn') }}</div>
       </div>
     </div>
     <div class="part7 ">
@@ -195,7 +205,7 @@ const change = (item: any) => {
               <h3 class="qusetion">{{ item.name }}</h3>
             </div>
             <div v-show="item.open" class="answer">
-              <div class="answer_content" v-html="item.content"></div>
+              <div class="answer_content" v-html="item.content" @click="go"></div>
             </div>
           </div>
         </div>
@@ -210,6 +220,7 @@ const change = (item: any) => {
   a {
     color: inherit;
   }
+
   p {
     margin: 0;
   }
@@ -282,7 +293,7 @@ const change = (item: any) => {
       color: #201515;
       line-height: 32px;
       text-align: left;
-      margin: 32px 40px;
+      margin: 32px 0 40px;
     }
 
     .box2 {
