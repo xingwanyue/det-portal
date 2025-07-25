@@ -50,12 +50,12 @@ const change = (item: any) => {
   item.open = !item.open;
 }
 const goDiscount = () => {
-  window.location.href = urlGet('/discount');
+  window.open(urlGet('/discount'), '_blank');
 }
 const go = (event: any) => {
   if (event.target.dataset.action === 'discount-coupon') {
     event.preventDefault();
-    window.location.href = urlGet('/discount');
+    window.open(urlGet('/discount'), '_blank');
   }
 }
 </script>
