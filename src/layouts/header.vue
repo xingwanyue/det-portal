@@ -79,7 +79,7 @@ const changeHeaderColor = (pathname: string) => {
     case '/speaking-ai-correction':
       headerColor.value = '#EAEAFEFF';
       break;
-    case '/discount':
+    case '/duolingo-english-test-coupon':
       headerColor.value = '#FFF4F1';
       break;
     default:
