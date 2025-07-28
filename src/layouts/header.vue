@@ -129,7 +129,7 @@ const menus = computed(() => [
   // },
   {
     name: t('Discount'),
-    path: '/discount',
+    path: '/duolingo-english-test-coupon',
   },
 ]);
 // const menus = ;
