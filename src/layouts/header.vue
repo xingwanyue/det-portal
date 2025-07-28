@@ -472,6 +472,7 @@ const menus = computed(() => [
       color: #ffffff;
       font-size: 16px;
       text-align: center;
+      white-space: nowrap;
     }
   }
 }
