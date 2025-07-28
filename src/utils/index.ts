@@ -5,8 +5,8 @@ export const host = `https://www.${domain}`;
 
 // export const api = `https://www.duolingopractice.com/api`;
 // export const api = `http://192.168.1.22:9000/api`;
-// export const api = `https://dev.zixuekeji.cn/i18n/weapp/api`;
-export const api = `https://www.duolingopractice.com/weapp/api`;
+export const api = `https://dev.zixuekeji.cn/i18n/weapp/api`;
+// export const api = `https://www.duolingopractice.com/weapp/api`;
 export const affurl = `https://affiliate.detpractice.com`;
 
 export const mode = import.meta.env.VITE_MODE; // 预览模式
