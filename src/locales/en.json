@@ -738,8 +738,8 @@
           "desc": "In the Speak about the Photo task, candidates describe an image in detail, which tests their ability to articulate thoughts and use descriptive language. This question typically lasts up to 90 seconds and evaluates both fluency and vocabulary."
         },
         "video2data": {
-          "title": "Read, Then Speak & Listen, Then Speak",
-          "desc": "The Read, then Speak and Listen, then Speak tasks require test-takers to respond to prompts based on written or spoken content, respectively. These formats assess comprehension and the ability to convey ideas clearly and coherently within a time limit."
+          "title": "Read, Then Speak",
+          "desc": "The Read, then Speak task requires test-takers to respond to prompts based on written content. These formats assess comprehension and the ability to convey ideas clearly and coherently within a time limit."
         },
         "video3data": {
           "title": "Interactive Speaking",
