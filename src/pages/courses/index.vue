@@ -123,25 +123,25 @@ const four_change_right_data = computed(() => {
         {
           title: t('courses.four_change_right_data.data1.video1data.title'),
           desc: t('courses.four_change_right_data.data1.video1data.desc'),
-          videoUrl: 'https://www.youtube.com/embed/8UYh_8Co2vo',
+          videoUrl: 'https://www.youtube.com/embed/J7ymVabfTJk?si=qy-P02K7ly1faKNf',
           prepUrl: '/courses/det-read-and-select-course',
         },
         {
           title: t('courses.four_change_right_data.data1.video2data.title'),
           desc: t('courses.four_change_right_data.data1.video2data.desc'),
-          videoUrl: 'https://www.youtube.com/embed/k7kIedxU9og',
+          videoUrl: 'https://www.youtube.com/embed/YpDzyBUeOUk?si=tRtQlb7asqAXpa75',
           prepUrl: '/courses/det-fill-in-the-blanks',
         },
         {
           title: t('courses.four_change_right_data.data1.video3data.title'),
           desc: t('courses.four_change_right_data.data1.video3data.desc'),
-          videoUrl: 'https://www.youtube.com/embed/J7ymVabfTJk?si=qy-P02K7ly1faKNf',
+          videoUrl: 'https://www.youtube.com/embed/k7kIedxU9og',
           prepUrl: '/courses/det-interactive-reading-course',
         },
         {
           title: t('courses.four_change_right_data.data1.video4data.title'),
           desc: t('courses.four_change_right_data.data1.video4data.desc'),
-          videoUrl: 'https://www.youtube.com/embed/YpDzyBUeOUk?si=tRtQlb7asqAXpa75',
+          videoUrl: 'https://www.youtube.com/embed/8UYh_8Co2vo',
           prepUrl: '/courses/det-read-and-complete-prep-course',
         },
       ],
@@ -160,8 +160,8 @@ const four_change_right_data = computed(() => {
         {
           title: t('courses.four_change_right_data.data2.video2data.title'),
           desc: t('courses.four_change_right_data.data2.video2data.desc'),
-          videoUrl: 'https://www.youtube.com/embed/ptt8E7DNyFw',
-          prepUrl: '/courses/det-prep-course-interactive-listening',
+          videoUrl: 'https://www.youtube.com/embed/JkgAsjcX5HM?si=y6UqdgOrTuRmMnQH',
+          prepUrl: '/det-interactive-listening-complete-guide',
         },
       ],
     },
@@ -185,8 +185,8 @@ const four_change_right_data = computed(() => {
         {
           title: t('courses.four_change_right_data.data3.video3data.title'),
           desc: t('courses.four_change_right_data.data3.video3data.desc'),
-          videoUrl: 'https://www.youtube.com/embed/rqPV8cP9EPo?si=mMTNCeu4Jl3zjFeC',
-          prepUrl: '/courses/det-prep-course-read-aloud',
+          videoUrl: 'https://www.youtube.com/embed/sX7-kGUMZs0?si=QmOfwPuz8vZNJdA7',
+          prepUrl: '/duolingo-interactive-speaking',
         },
         {
           title: t('courses.four_change_right_data.data3.video4data.title'),
@@ -204,7 +204,7 @@ const four_change_right_data = computed(() => {
         {
           title: t('courses.four_change_right_data.data4.video1data.title'),
           desc: t('courses.four_change_right_data.data4.video1data.desc'),
-          videoUrl: 'https://www.youtube.com/embed/4FMRfkIKsvQ',
+          videoUrl: 'https://www.youtube.com/embed/hJpe-FvLH9I',
           prepUrl: '/courses/det-write-about-the-photo-course',
         },
         {
@@ -216,7 +216,7 @@ const four_change_right_data = computed(() => {
         {
           title: t('courses.four_change_right_data.data4.video3data.title'),
           desc: t('courses.four_change_right_data.data4.video3data.desc'),
-          videoUrl: 'https://www.youtube.com/embed/hJpe-FvLH9I',
+          videoUrl: 'https://www.youtube.com/embed/4FMRfkIKsvQ',
           prepUrl: '/courses/det-prep-course-writing-sample',
         },
         {
@@ -450,6 +450,7 @@ onUnmounted(() => {
                     <a target="_blank" href="/practice"> Duolingo English Test Practice Question Bank </a>
                     <a target="_blank" href="/duolingo-practice-test"> Duolingo Practice Test </a>
                     <a target="_blank" href="/blog"> DET Practice Learning Blog </a>
+                    <a target="_blank" href="/duolingo-english-test-coupon"> Duolingo English Test Coupon </a>
                   </div>
                   <!-- <NuxtLink class="prepUrl_dom" :to="localePath(`${item2.prepUrl}`)">
                     {{ item2.title }} Prep Course</NuxtLink
