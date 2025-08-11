@@ -179,7 +179,7 @@ const four_change_right_data = computed(() => {
         {
           title: t('courses.four_change_right_data.data3.video2data.title'),
           desc: t('courses.four_change_right_data.data3.video2data.desc'),
-          videoUrl: 'https://www.youtube.com/embed/2bj3ViAPkMY',
+          videoUrl: 'https://www.youtube.com/embed/rqPV8cP9EPo',
           prepUrl: '/courses/det-course-read-listen-then-speak',
         },
         {
@@ -191,7 +191,7 @@ const four_change_right_data = computed(() => {
         {
           title: t('courses.four_change_right_data.data3.video4data.title'),
           desc: t('courses.four_change_right_data.data3.video4data.desc'),
-          videoUrl: 'https://www.youtube.com/embed/sf8FN3GAuHI',
+          videoUrl: 'https://www.youtube.com/embed/2bj3ViAPkMY',
           prepUrl: '/courses/det-course-speaking-sample',
         },
       ],
