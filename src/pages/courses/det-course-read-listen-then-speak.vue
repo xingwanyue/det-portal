@@ -48,6 +48,7 @@ useHead({
         <h1>{{ t('det-course-read-listen-then-speak.h11') }}</h1>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p1')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p2') }}</p>
+        <p>{{ t('det-course-read-listen-then-speak.p2s2') }}</p>
         <h2>{{ t('det-course-read-listen-then-speak.h21') }}</h2>
         <ol class="toc_ol">
           <li>
@@ -71,16 +72,10 @@ useHead({
           <li>
             <a :href="`#prep_7`">{{ t('det-course-read-listen-then-speak.ol1.li7') }}</a>
           </li>
-          <li>
-            <a :href="`#prep_8`">{{ t('det-course-read-listen-then-speak.ol1.li8') }}</a>
-          </li>
-          <li>
-            <a :href="`#prep_9`">{{ t('det-course-read-listen-then-speak.ol1.li9') }}</a>
-          </li>
         </ol>
 
-        <p id="prep_1">{{ t('det-course-read-listen-then-speak.p3') }}</p>
-        <h2 id="prep_2">{{ t('det-course-read-listen-then-speak.h22') }}</h2>
+        <p>{{ t('det-course-read-listen-then-speak.p3') }}</p>
+        <h2 id="prep_1">{{ t('det-course-read-listen-then-speak.h22') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p4') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p5') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p6') }}</p>
@@ -88,7 +83,7 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p8') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p9') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p10') }}</p>
-        <h2 id="prep_3">{{ t('det-course-read-listen-then-speak.h23') }}</h2>
+        <h2 id="prep_2">{{ t('det-course-read-listen-then-speak.h23') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p11') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p12') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p13') }}</p>
@@ -97,18 +92,8 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p16') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p17') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p18') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p19') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p20') }}</p>
-        <h2 id="prep_4">{{ t('det-course-read-listen-then-speak.h24') }}</h2>
-        <p>{{ t('det-course-read-listen-then-speak.p21') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p22') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p23') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p24') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p25') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p26') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p27') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p28') }}</p>
-        <h2 id="prep_5">{{ t('det-course-read-listen-then-speak.h25') }}</h2>
+
+        <h2 id="prep_3">{{ t('det-course-read-listen-then-speak.h25') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p29') }}</p>
 
         <img
@@ -125,7 +110,7 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p33') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p34') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p35') }}</p>
-        <h2 id="prep_6">{{ t('det-course-read-listen-then-speak.h26') }}</h2>
+        <h2 id="prep_4">{{ t('det-course-read-listen-then-speak.h26') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p36') }}</p>
         <ol class="wp-block-list">
           <li>
@@ -189,32 +174,8 @@ useHead({
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p75')"></div>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p76')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p77') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p78') }}</p>
-        <div class="audio-player">
-          <audio id="audio-3" preload="none" controls>
-            <source src="/audio/listen-then-speak-question-1.mp3" type="audio/mp3" />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-        <figure>
-          <figcaption>{{ t('det-course-read-listen-then-speak.figcaption3') }}</figcaption>
-        </figure>
 
-        <p>{{ t('det-course-read-listen-then-speak.p79') }}</p>
-        <div class="prep_button" @click="showAnswer1 = !showAnswer1">
-          {{ t('det-course-read-listen-then-speak.click') }}
-        </div>
-        <div v-if="showAnswer1" class="answer_out">
-          {{ t('det-course-read-listen-then-speak.answer1') }}
-        </div>
-        <p>{{ t('det-course-read-listen-then-speak.p80') }}</p>
-
-        <p>{{ t('det-course-read-listen-then-speak.p81') }}</p>
-        <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p82')"></div>
-        <p>{{ t('det-course-read-listen-then-speak.p83') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p84') }}</p>
-        <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p85')"></div>
-        <h2 id="prep_7">{{ t('det-course-read-listen-then-speak.h27') }}</h2>
+        <h2 id="prep_5">{{ t('det-course-read-listen-then-speak.h27') }}</h2>
 
         <p>{{ t('det-course-read-listen-then-speak.p86') }}</p>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.ol3')"></div>
@@ -236,7 +197,8 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p102') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p103') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p104') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p105') }}</p>
+
+        <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p105')"></div>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p106')"></div>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p107')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p108') }}</p>
@@ -258,34 +220,8 @@ useHead({
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p123')"></div>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p124')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p125') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p126') }}</p>
 
-        <div class="audio-player">
-          <audio id="audio-3" preload="none" controls>
-            <source src="/audio/listen-then-speak-question-2.mp3" type="audio/mp3" />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-        <figure>
-          <figcaption>{{ t('det-course-read-listen-then-speak.figcaption4') }}</figcaption>
-        </figure>
-
-        <p>{{ t('det-course-read-listen-then-speak.p127') }}</p>
-        <!-- <button>Click to show/hide the question.</button> -->
-        <div class="prep_button" @click="showAnswer2 = !showAnswer2">
-          {{ t('det-course-read-listen-then-speak.click') }}
-        </div>
-        <div v-if="showAnswer2" class="answer_out">
-          {{ t('det-course-read-listen-then-speak.answer2') }}
-        </div>
-        <p>{{ t('det-course-read-listen-then-speak.p128') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p129') }}</p>
-        <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p130')"></div>
-        <p>{{ t('det-course-read-listen-then-speak.p131') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p132') }}</p>
-        <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p133')"></div>
-        <p>{{ t('det-course-read-listen-then-speak.p134') }}</p>
-        <h2 id="prep_8">{{ t('det-course-read-listen-then-speak.h28') }}</h2>
+        <h2 id="prep_6">{{ t('det-course-read-listen-then-speak.h28') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p135') }}</p>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.ol4')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p136') }}</p>
@@ -308,7 +244,7 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p153') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p154') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p155') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p156') }}</p>
+        <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p156')"></div>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p157')"></div>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p158')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p159') }}</p>
@@ -327,45 +263,7 @@ useHead({
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p172')"></div>
         <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p173')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p174') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p175') }}</p>
-
-        <div class="audio-player">
-          <audio id="audio-3" preload="none" controls>
-            <source
-              src="/audio/listen-then-speak-question-3.mp3"
-              type="audio/mp3"
-            />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-        <figure>
-          <figcaption>{{ t('det-course-read-listen-then-speak.figcaption5') }}</figcaption>
-        </figure>
-
-        <p>{{ t('det-course-read-listen-then-speak.p176') }}</p>
-
-        <div class="prep_button" @click="showAnswer3 = !showAnswer3">
-          {{ t('det-course-read-listen-then-speak.click') }}
-        </div>
-        <div v-if="showAnswer3" class="answer_out">
-          {{ t('det-course-read-listen-then-speak.answer3') }}
-        </div>
-
-        <p>{{ t('det-course-read-listen-then-speak.p177') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p178') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p179') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p180') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p181') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p182') }}</p>
-        <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p183')"></div>
-
-        <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p184')"></div>
-        <p>{{ t('det-course-read-listen-then-speak.p185') }}</p>
-        <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p186')"></div>
-
-        <div class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p187')"></div>
-
-        <div id="prep_9" class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p188')"></div>
+        <div id="prep_7" class="html_wrapper" v-html="t('det-course-read-listen-then-speak.p188')"></div>
         <p>{{ t('det-course-read-listen-then-speak.p189') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p190') }}</p>
       </div>
