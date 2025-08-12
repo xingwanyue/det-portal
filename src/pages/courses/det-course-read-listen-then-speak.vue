@@ -108,7 +108,7 @@ useHead({
         <p>{{ t('det-course-read-listen-then-speak.p31') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p32') }}</p>
         <p>{{ t('det-course-read-listen-then-speak.p33') }}</p>
-        <p>{{ t('det-course-read-listen-then-speak.p34') }}</p>
+
         <p>{{ t('det-course-read-listen-then-speak.p35') }}</p>
         <h2 id="prep_4">{{ t('det-course-read-listen-then-speak.h26') }}</h2>
         <p>{{ t('det-course-read-listen-then-speak.p36') }}</p>
