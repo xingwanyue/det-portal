@@ -176,11 +176,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
   <div class="home" @click.stop="state.modeSelectShow = false">
     <div class="part1_wrapper">
       <div class="part1">
-        <div class="page_title">
-          <div class="h_one isnoMobile">
-            <h1 v-html="$t('index.h1PC')"></h1>
-          </div>
-        </div>
+        <img src="/img/home/duolingo_english_test.png" class="partner" alt="">
       </div>
       <div class="circle_items">
         <div class="circle_01"></div>
@@ -206,14 +202,13 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               </div>
             </NuxtLink>
           </div>
-          <div class="partner">
-            <div class="content">Gold Partner |</div>
-            <div class="img">
-              <img src="/img/home/duolingo_english_test.svg" alt="duolingo_english_test" />
-            </div>
-          </div>
           <div class="bigImg">
             <img :src="home" :alt="$t('index.DET_Practice')" />
+          </div>
+          <div class="hone">
+            <img class="img" src="/img/home/left.svg" alt="left-icon">
+            <h1 v-html="$t('index.h1PC')"></h1>
+            <img class="img" src="/img/home/right.svg" alt="right-icon">
           </div>
           <div class="center">
             <h2 v-html="$t('index.h2PC1')"></h2>
@@ -623,6 +618,15 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       margin: 0 auto;
       height: 100%;
 
+      .partner {
+        display: block;
+        margin: 56px auto 0;
+        width: 100%;
+        max-width: 560px;
+        @media (max-width: 400px) {
+          margin-top: 32px;
+        }
+      }
       .page_title {
         margin-top: 72px;
         .h_one {
@@ -1043,12 +1047,12 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       }
       .three_nums_out {
         max-width: 1200px;
-        @media (max-width: 1200px) {
-          padding: 0px 30px;
-        }
+        // @media (max-width: 1200px) {
+        //   padding: 0px 30px;
+        // }
         margin: 0 auto;
         .title1 {
-          margin: 16px 0 32px;
+          margin: 18px 0 32px;
           h2 {
             font-weight: bold;
             font-size: 72px;
@@ -1095,6 +1099,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           justify-content: center;
           gap: 16px;
           margin-top: 48px;
+          margin-bottom: 48px;
           @media (max-width: 730px) {
             flex-direction: column;
           }
@@ -1127,30 +1132,41 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             background-color: #ffffff;
           }
         }
-        .partner {
-          margin-top: 48px;
-          margin-bottom: 48px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 10px;
-          @media (max-width: 730px) {
-            flex-wrap: wrap;
-          }
-          .content {
-            font-size: 18px;
-            color: #403f3e;
-          }
-          .img {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-        }
         .bigImg {
           img {
             width: 100%;
             height: auto;
+          }
+        }
+        .hone {
+          margin-top: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 10px;
+          h1 {
+            font-weight: 500;
+            font-size: 24px;
+            color: #F66442;
+            line-height: 33px;
+            text-align: center;
+            
+          }
+          @media (max-width: 900px) {
+            h1 {
+              font-size: 18px;
+              line-height: 22px;
+            }
+            .img {
+              width: 20px;
+            }
+          }
+          @media (max-width: 470px) {
+            column-gap: 5px;
+            h1 {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
         .center {
