@@ -203,7 +203,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             </NuxtLink>
           </div>
           <div class="bigImg">
-            <img :src="home" :alt="$t('index.DET_Practice')" />
+            <img src="/img/home/bigImg.png" :alt="$t('index.DET_Practice')" />
           </div>
           <div class="hone">
             <img class="img" src="/img/home/left.svg" alt="left-icon">
