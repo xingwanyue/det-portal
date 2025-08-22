@@ -1074,8 +1074,8 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         }
         .subtitle {
           text-align: center;
-          font-weight: 400;
-          font-size: 16px;
+          font-weight: 500;
+          font-size: 24px;
           line-height: 22px;
           color: #555555;
           @media (max-width: 900px) {
@@ -1175,8 +1175,9 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             margin: 0;
             padding: 0;
             font-size: 40px;
-            font-weight: bold;
-            color: #222222;
+            font-weight: 500;
+            color: #201515;
+            line-height: 56px;
           }
         }
         .three_nums {
@@ -1215,15 +1216,16 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
   }
   .part2_title {
     text-align: center;
-    font-weight: 600;
-    color: #222222;
+    font-weight: 500;
+    color: #201515;
+    line-height: 56px;
     font-size: 40px;
   }
   .part2_title2 {
     margin: 16px 0 69px;
     text-align: center;
-    font-weight: 400;
-    color: #403f3e;
+    font-weight: 500;
+    color: #201515;
     font-size: 24px;
   }
   .part2_wrapper {
