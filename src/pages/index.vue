@@ -185,7 +185,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       <div class="three_nums_wrapper">
         <div class="three_nums_out">
           <div class="title1" data-aos="fade-up" data-aos-duration="1000">
-            <h2 v-html="$t('index.h2PC')"></h2>
+            <h1 v-html="$t('index.h2PC')"></h1>
           </div>
           <div class="subtitle" data-aos="fade-up" data-aos-duration="1000">
             <p v-html="$t('index.pPC')"></p>
@@ -207,7 +207,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           </div>
           <div class="hone">
             <img class="img" src="/img/home/left.svg" alt="left-icon">
-            <h1 v-html="$t('index.h1PC')"></h1>
+            <h2 v-html="$t('index.h1PC')"></h2>
             <img class="img" src="/img/home/right.svg" alt="right-icon">
           </div>
           <div class="center">
@@ -1053,41 +1053,39 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         margin: 0 auto;
         .title1 {
           margin: 18px 0 32px;
-          h2 {
-            font-weight: bold;
-            font-size: 72px;
+          h1 {
+            font-weight: 600;
+            font-size: 60px;
             color: #222222;
             text-align: center;
             padding: 0px;
             margin: 0px;
             line-height: 84px;
-            @media (max-width: 906px) {
-              font-size: 36px;
-              line-height: 44px;
+            @media (max-width: 900px) {
+              font-size: 48px;
+              line-height: 67px;
             }
             @media (max-width: 744px) {
               font-size: 36px;
-              line-height: 44px;
+              line-height: 50px;
             }
-            @media (max-width: 570px) {
-              font-size: 30px;
-              line-height: 38px;
-            }
-            @media (max-width: 450px) {
-              font-size: 23px;
-              line-height: 31px;
-            }
-            @media (max-width: 450px) {
-              font-size: 22px;
-              line-height: 30px;
-            }
+            
           }
         }
         .subtitle {
           text-align: center;
-          font-weight: 500;
-          font-size: 24px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
           color: #555555;
+          @media (max-width: 900px) {
+            font-size: 16px;
+            line-height: 22px;
+          }
+          @media (max-width: 744px) {
+            font-size: 14px;
+            line-height: 20px;
+          }
           p {
             margin: 0;
             padding: 0;
@@ -1144,7 +1142,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           align-items: center;
           justify-content: center;
           column-gap: 10px;
-          h1 {
+          h2 {
             font-weight: 500;
             font-size: 24px;
             color: #F66442;
@@ -1153,7 +1151,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             
           }
           @media (max-width: 900px) {
-            h1 {
+            h2 {
               font-size: 18px;
               line-height: 22px;
             }
@@ -1163,7 +1161,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           }
           @media (max-width: 470px) {
             column-gap: 5px;
-            h1 {
+            h2 {
               font-size: 16px;
               line-height: 22px;
             }
