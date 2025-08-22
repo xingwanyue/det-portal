@@ -237,12 +237,8 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       <div class="part2">
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <img
-              loading="lazy"
-              src="https://www.detpractice.com/img/home/home1.png"
-              :alt="$t('index.article1.title')"
-              @load="onLoad"
-            />
+            <img loading="lazy" src="https://www.detpractice.com/img/home/home1.png" :alt="$t('index.article1.title')"
+              @load="onLoad" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -254,13 +250,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon">
                 <img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" />
               </div>
-              <span
-                v-html="
-                  $t('index.article1.tips1', {
-                    number: `<span class='yellow'>${formatNumber(platformData?.questionTotal)}</span>`,
-                  })
-                "
-              ></span>
+              <span v-html="$t('index.article1.tips1', {
+                number: `<span class='yellow'>${formatNumber(platformData?.questionTotal)}</span>`,
+              })
+                "></span>
             </div>
             <div class="tips">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
@@ -357,7 +350,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <template #template>
                 <el-skeleton-item variant="image" style="width: 100%; height: 300px" />
               </template>
-            </el-skeleton> -->
+</el-skeleton> -->
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -477,19 +470,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
         <div class="review_scroll_out">
           <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
-            <Carousel
-              :itemsToShow="4"
-              :autoplay="2000"
-              :wrap-around="true"
-              :pauseAutoplayOnHover="true"
-              :snap-align="'center'"
-              :items-to-scroll="1"
-            >
-              <Slide
-                v-for="(item, index) in userPingLunResponse.concat(userPingLunResponse)"
-                :key="index"
-                class="two_card_out"
-              >
+            <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true"
+              :snap-align="'center'" :items-to-scroll="1">
+              <Slide v-for="(item, index) in userPingLunResponse.concat(userPingLunResponse)" :key="index"
+                class="two_card_out">
                 <div class="width100">
                   <div class="one_card">
                     <div class="one_card_top">
@@ -558,6 +542,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 .v-header {
   background: #fff4f1 !important;
 }
+
 .home {
   .scrolls {
     // border: 1px red solid;
@@ -568,15 +553,18 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
+
   @keyframes around {
     0% {
       transform: translateX(0);
     }
+
     100% {
       transform: translateX(-100%);
     }
   }
 }
+
 .chat_dom_out {
   .white_input_out {
     .input_area_out {
@@ -607,9 +595,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
   .part1_wrapper {
     // background: linear-gradient(0, #ffffff 0%, #fff4f1 100%);
     padding: 0px 30px;
+
     @media (max-width: 450px) {
       padding: 0px 15px;
     }
+
     position: relative;
 
     .part1 {
@@ -623,16 +613,20 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         margin: 56px auto 0;
         width: 100%;
         max-width: 560px;
+
         @media (max-width: 400px) {
           margin-top: 32px;
         }
       }
+
       .page_title {
         margin-top: 72px;
+
         .h_one {
           font-weight: 600;
           font-size: 56px;
           color: #201515;
+
           h1 {
             text-align: center;
             font-weight: bold;
@@ -640,23 +634,29 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             color: #f66442;
             padding: 0px;
             margin: 0px;
+
             @media (max-width: 906px) {
               font-size: 46px;
             }
+
             @media (max-width: 744px) {
               font-size: 36px;
             }
+
             @media (max-width: 570px) {
               font-size: 26px;
             }
+
             @media (max-width: 450px) {
               font-size: 24px;
             }
           }
+
           :deep(.black_font) {
             color: #201515;
           }
         }
+
         // .isMobile {
         //   display: none;
         //   @media (max-width: 450px) {
@@ -675,10 +675,12 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         padding: 0px 0px;
         margin-top: 40px;
         padding-bottom: 200px;
+
         @media (max-width: 730px) {
           padding: 0px 0px;
           padding-bottom: 50px;
         }
+
         .two_switch_out {
           width: fit-content;
           background: #ffffff;
@@ -688,6 +690,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           justify-content: center;
           align-items: center;
           margin: 0 auto;
+
           .one_switch {
             border-radius: 24px;
             padding: 8px 57px;
@@ -695,21 +698,25 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             font-size: 18px;
             color: #403f3e;
             cursor: pointer;
+
             @media (max-width: 450px) {
               padding: 8px 30px;
             }
           }
+
           .one_switch_active {
             background: rgba(246, 100, 66, 0.1);
             border-radius: 24px;
             color: #f66442;
           }
         }
+
         .white_input_out {
           background: #ffffff;
           border-radius: 16px;
           padding: 16px 16px;
           margin-top: 16px;
+
           &:hover {
             box-shadow: 0px 0px 16px 0px rgba(246, 100, 66, 0.05);
           }
@@ -719,6 +726,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+
             .mode_select_out {
               background: #f3f4f6;
               border-radius: 4px;
@@ -730,36 +738,44 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               grid-gap: 8px;
               cursor: pointer;
               position: relative;
+
               .icon {
                 width: 20px;
                 height: 20px;
                 margin-left: 6px;
+
                 img {
                   width: 100%;
                   height: 100%;
                 }
               }
+
               .mode_font {
                 font-weight: 400;
                 font-size: 14px;
                 color: #403f3e;
                 min-width: 102px;
+
                 @media (max-width: 450px) {
                   min-width: 0px;
                 }
               }
+
               .arrow_icon {
                 width: 16px;
                 height: 16px;
                 margin-left: 16px;
+
                 img {
                   width: 100%;
                   height: 100%;
                 }
               }
+
               .arrow_icon_active {
                 transform: rotate(180deg);
               }
+
               .mode_select_list {
                 background: #ffffff;
                 box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
@@ -774,6 +790,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 align-items: center;
                 gap: 4px;
                 padding: 8px;
+
                 .mode_select_list_item {
                   border-radius: 8px;
                   padding: 8px;
@@ -783,23 +800,29 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                   justify-content: center;
                   align-items: flex-start;
                   grid-gap: 6px;
+
                   &:hover {
                     background: #f3f4f6;
                   }
+
                   .left_icon {
                     width: 20px;
                     height: 20px;
+
                     img {
                       width: 100%;
                       height: 100%;
                     }
                   }
+
                   .right {
                     min-width: 242px;
+
                     .name {
                       font-weight: 600;
                       font-size: 14px;
                       color: #201515;
+
                       .Premium_tag {
                         padding: 1px 8px;
                         background: linear-gradient(270deg, #e7c39b 0%, #fbe2c1 100%);
@@ -809,6 +832,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                         color: #482b2a;
                       }
                     }
+
                     .desc {
                       font-weight: 400;
                       font-size: 12px;
@@ -817,14 +841,17 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                     }
                   }
                 }
+
                 .mode_select_list_item_active {
                   background: #feefec;
+
                   &:hover {
                     background: #feefec;
                   }
                 }
               }
             }
+
             .online_btn {
               padding: 5px 8px;
 
@@ -836,9 +863,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               grid-gap: 6px;
               margin-left: 8px;
               cursor: pointer;
+
               &:hover {
                 background: rgba(0, 0, 0, 0.05);
               }
+
               .icon {
                 width: 20px;
                 height: 20px;
@@ -848,15 +877,18 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                   height: 100%;
                 }
               }
+
               .online_font {
                 font-weight: 400;
                 font-size: 14px;
                 color: #666666;
+
                 @media (max-width: 450px) {
                   display: none;
                 }
               }
             }
+
             .online_btn_active {
               border: 1px solid rgba(246, 100, 66, 0.2);
               background: #fff4f1;
@@ -864,10 +896,12 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               .online_font {
                 color: #f66442;
               }
+
               &:hover {
                 background: #fff4f1;
               }
             }
+
             .send_btn_gray {
               background: #f66442;
               border-radius: 4px;
@@ -880,44 +914,54 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               gap: 8px;
               margin-left: auto;
               cursor: not-allowed;
+
               .icon {
                 width: 16px;
                 height: 16px;
+
                 img {
                   width: 100%;
                   height: 100%;
                 }
               }
+
               .send_font {
                 font-weight: 400;
                 font-size: 14px;
                 color: #ffffff;
               }
             }
+
             .send_btn_active {
               opacity: 1;
               cursor: pointer;
             }
           }
         }
+
         .we_also_have {
           margin-top: 32px;
+
           .we_also_have_title {
             font-weight: 600;
             font-size: 18px;
             color: #403f3e;
             margin-bottom: 16px;
           }
+
           .we_also_have_list {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 16px;
+
             @media (max-width: 1200px) {
               grid-template-columns: repeat(2, 1fr);
             }
+
             @media (max-width: 750px) {
               grid-template-columns: repeat(1, 1fr);
             }
+
             .one_card {
               padding: 16px 24px;
               border-radius: 8px;
@@ -927,21 +971,25 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               grid-column-gap: 16px;
               background: #ffffff;
               cursor: pointer;
+
               .icon {
                 width: 48px;
                 height: 48px;
                 flex-shrink: 0;
+
                 img {
                   width: 100%;
                   height: 100%;
                 }
               }
+
               .right {
                 .title {
                   font-weight: 600;
                   font-size: 18px;
                   color: #201515;
                 }
+
                 .font {
                   font-weight: 400;
                   font-weight: 400;
@@ -951,6 +999,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                 }
               }
             }
+
             .card1 {
               &:hover {
                 .right {
@@ -958,9 +1007,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                     color: #3e8bf8;
                   }
                 }
+
                 background: linear-gradient(0, #f5fcff 0%, #ecf7ff 100%);
               }
             }
+
             .card2 {
               &:hover {
                 .right {
@@ -968,9 +1019,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                     color: #f66442;
                   }
                 }
+
                 background: linear-gradient(0, #fff8f5 0%, #fff0ec 100%);
               }
             }
+
             .card3 {
               &:hover {
                 .right {
@@ -978,10 +1031,12 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                     color: #ff7c0e;
                   }
                 }
+
                 background: linear-gradient(0, #fffaf4 0%, #ffefe1 100%);
                 color: #fff;
               }
             }
+
             .card4 {
               &:hover {
                 .right {
@@ -989,10 +1044,12 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                     color: #06cc76;
                   }
                 }
+
                 background: linear-gradient(0, #f2fff6 0%, #e7fdec 100%);
                 color: #fff;
               }
             }
+
             .card5 {
               &:hover {
                 .right {
@@ -1000,6 +1057,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
                     color: #201515ff;
                   }
                 }
+
                 background: linear-gradient(180deg, #eaeafe 0%, #fbf9ff 100%);
                 color: #fff;
               }
@@ -1008,6 +1066,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         }
       }
     }
+
     .circle_items {
       width: 100%;
       height: 660px;
@@ -1016,6 +1075,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       left: 50%;
       margin-left: -472px;
       z-index: -1;
+
       .circle_01 {
         width: 660px;
         height: 460px;
@@ -1027,6 +1087,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         left: 0;
         top: 0;
       }
+
       .circle_02 {
         width: 440px;
         height: 240px;
@@ -1039,20 +1100,25 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         top: 110px;
       }
     }
+
     .three_nums_wrapper {
       padding: 120px 0px;
       padding-top: 0px;
+
       @media (max-width: 450px) {
         margin-bottom: 10px;
       }
+
       .three_nums_out {
         max-width: 1200px;
         // @media (max-width: 1200px) {
         //   padding: 0px 30px;
         // }
         margin: 0 auto;
+
         .title1 {
           margin: 18px 0 32px;
+
           h1 {
             font-weight: 600;
             font-size: 60px;
@@ -1061,36 +1127,43 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             padding: 0px;
             margin: 0px;
             line-height: 84px;
+
             @media (max-width: 900px) {
               font-size: 48px;
               line-height: 67px;
             }
+
             @media (max-width: 744px) {
               font-size: 36px;
               line-height: 50px;
             }
-            
+
           }
         }
+
         .subtitle {
           text-align: center;
           font-weight: 500;
           font-size: 24px;
-          line-height: 22px;
+          line-height: 32px;
           color: #555555;
+
           @media (max-width: 900px) {
             font-size: 16px;
             line-height: 22px;
           }
-          @media (max-width: 744px) {
+
+          @media (max-width: 400px) {
             font-size: 14px;
             line-height: 20px;
           }
+
           p {
             margin: 0;
             padding: 0;
           }
         }
+
         .twoBtn {
           display: flex;
           align-items: center;
@@ -1098,9 +1171,11 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           gap: 16px;
           margin-top: 48px;
           margin-bottom: 48px;
+
           @media (max-width: 730px) {
             flex-direction: column;
           }
+
           .btn {
             width: 280px;
             height: 50px;
@@ -1113,6 +1188,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             font-size: 18px;
             color: #ffffff;
             box-sizing: border-box;
+
             .img {
               width: 32px;
               height: 32px;
@@ -1121,56 +1197,67 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               background-color: #ffffff;
             }
           }
+
           .left {
             background-color: #f66442;
             cursor: pointer;
           }
+
           .right {
             color: #f66442;
             background-color: #ffffff;
           }
         }
+
         .bigImg {
           img {
             width: 100%;
             height: auto;
           }
         }
+
         .hone {
           margin-top: 32px;
           display: flex;
           align-items: center;
           justify-content: center;
           column-gap: 10px;
+
           h2 {
             font-weight: 500;
             font-size: 24px;
             color: #F66442;
             line-height: 33px;
             text-align: center;
-            
+
           }
+
           @media (max-width: 900px) {
             h2 {
               font-size: 18px;
               line-height: 22px;
             }
+
             .img {
               width: 20px;
             }
           }
+
           @media (max-width: 470px) {
             column-gap: 5px;
+
             h2 {
               font-size: 16px;
               line-height: 22px;
             }
           }
         }
+
         .center {
           text-align: center;
           font-weight: bold;
           margin: 120px 0 48px;
+
           h2 {
             margin: 0;
             padding: 0;
@@ -1178,8 +1265,14 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             font-weight: 500;
             color: #201515;
             line-height: 56px;
+
+            @media (max-width: 400px) {
+              font-size: 30px;
+              line-height: 42px;
+            }
           }
         }
+
         .three_nums {
           display: flex;
           justify-content: center;
@@ -1187,24 +1280,30 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           grid-column-gap: 100px;
           grid-row-gap: 40px;
           flex-wrap: wrap;
+
           @media (max-width: 450px) {
             grid-column-gap: 16px;
           }
+
           .one_nums {
             text-align: center;
+
             .one_nums_top {
               font-weight: bold;
               font-size: 56px;
               color: #f66442;
+
               @media (max-width: 450px) {
                 font-size: 23px;
               }
             }
+
             .one_nums_bottom {
               margin-top: 8px;
               font-weight: 400;
               font-size: 24px;
               color: #403f3e;
+
               @media (max-width: 450px) {
                 font-size: 18px;
               }
@@ -1214,26 +1313,51 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       }
     }
   }
+
   .part2_title {
+    padding:0 15px;
     text-align: center;
     font-weight: 500;
     color: #201515;
     line-height: 56px;
     font-size: 40px;
+
+    @media (max-width: 400px) {
+      font-size: 30px;
+      line-height: 42px;
+    }
   }
+
   .part2_title2 {
+    padding:0 15px;
     margin: 16px 0 69px;
     text-align: center;
     font-weight: 500;
-    color: #201515;
     font-size: 24px;
+    line-height: 32px;
+    color: #555555;
+
+    @media (max-width: 900px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
   }
+
   .part2_wrapper {
     padding: 0px 30px;
+
     @media (max-width: 450px) {
       padding: 0px 15px;
     }
+
     box-sizing: border-box;
+
     .part2 {
       max-width: 1200px;
       // border: 1px blue solid;
@@ -1243,29 +1367,35 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         // border:1px red solid;
         display: grid;
         margin-bottom: 120px;
+
         @media (max-width: 450px) {
           margin-bottom: 30px;
           grid-row-gap: 0px;
         }
+
         grid-template-columns: 1fr 0.75fr;
         grid-column-gap: 80px;
         grid-row-gap: 40px;
         grid-template-areas: 'img_out  article_out';
+
         @media (max-width: 926px) {
           grid-template-columns: 1fr;
           grid-template-areas:
             'img_out'
             'article_out';
         }
+
         .img_out {
           grid-area: img_out;
           min-height: 300px;
           display: flex;
           justify-content: center;
           align-items: center;
+
           :deep(.el-image) {
             box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           }
+
           img {
             box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
             width: 100%;
@@ -1273,13 +1403,16 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             border-radius: 16px;
           }
         }
+
         .article_out {
           // border: 1px red solid;
           grid-area: article_out;
           padding-top: 24px;
+
           @media (max-width: 926px) {
             padding-top: 0px;
           }
+
           .article_out_title {
             h3 {
               font-weight: 500;
@@ -1287,24 +1420,29 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               color: #201515;
               margin-top: 0px;
               margin-bottom: 0px;
+
               @media (max-width: 450px) {
                 font-size: 22px;
               }
             }
+
             h4 {
               font-weight: 500;
               font-size: 32px;
               color: #201515;
               margin-top: 0px;
               margin-bottom: 0px;
+
               @media (max-width: 450px) {
                 font-size: 22px;
               }
             }
           }
+
           .tips_first {
             margin-top: 39px !important;
           }
+
           .tips {
             font-weight: 400;
             font-size: 18px;
@@ -1314,25 +1452,30 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             justify-content: flex-start;
             align-items: flex-start;
             grid-gap: 16px;
+
             .tips_icon {
               width: 18px;
               height: 18px;
               position: relative;
               top: 2px;
               flex-shrink: 0;
+
               img {
                 width: 100%;
                 height: 100%;
               }
             }
+
             ::v-deep(.yellow) {
               font-weight: 650;
               color: #f66442;
             }
+
             @media (max-width: 450px) {
               font-size: 16px;
             }
           }
+
           .get_more {
             display: flex;
             justify-content: flex-start;
@@ -1345,15 +1488,18 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             //   justify-content: center;
             // }
             cursor: pointer;
+
             .font {
               font-weight: 500;
               font-size: 20px;
               color: #f66442;
             }
+
             .icon {
               width: 24px;
               height: 24px;
             }
+
             &:hover {
               .font {
                 border-bottom: 1px #f66442 solid;
@@ -1367,33 +1513,40 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           }
         }
       }
+
       .one_article_img {
         display: grid;
         margin-bottom: 120px;
+
         @media (max-width: 450px) {
           margin-bottom: 30px;
           grid-row-gap: 0px;
         }
+
         grid-template-columns: 0.75fr 1fr;
         grid-column-gap: 105px;
         grid-row-gap: 40px;
         grid-template-areas: ' article_out img_out';
+
         @media (max-width: 926px) {
           grid-template-columns: 1fr;
           grid-template-areas:
             'img_out'
             'article_out';
         }
+
         .img_out {
           grid-area: img_out;
           min-height: 300px;
           display: flex;
           justify-content: center;
           align-items: center;
+
           // border: 1px red solid;
           :deep(.el-image) {
             box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           }
+
           img {
             width: 100%;
             height: auto;
@@ -1401,13 +1554,16 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           }
         }
+
         .article_out {
           // border: 1px blue solid;
           grid-area: article_out;
           padding-top: 24px;
+
           @media (max-width: 926px) {
             padding-top: 0px;
           }
+
           .article_out_title {
             h3 {
               font-weight: 500;
@@ -1416,24 +1572,29 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               margin-top: 0px;
               margin-bottom: 0px;
               cursor: pointer;
+
               @media (max-width: 450px) {
                 font-size: 22px;
               }
             }
+
             h4 {
               font-weight: 500;
               font-size: 32px;
               color: #201515;
               margin-top: 0px;
               margin-bottom: 0px;
+
               @media (max-width: 450px) {
                 font-size: 22px;
               }
             }
           }
+
           .tips_first {
             margin-top: 39px !important;
           }
+
           .tips {
             font-weight: 400;
             font-size: 18px;
@@ -1443,25 +1604,30 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             justify-content: flex-start;
             align-items: flex-start;
             grid-gap: 16px;
+
             .tips_icon {
               width: 18px;
               height: 18px;
               position: relative;
               top: 2px;
               flex-shrink: 0;
+
               img {
                 width: 100%;
                 height: 100%;
               }
             }
+
             ::v-deep(.yellow) {
               font-weight: 650;
               color: #f66442;
             }
+
             @media (max-width: 450px) {
               font-size: 16px;
             }
           }
+
           .get_more {
             display: flex;
             justify-content: flex-start;
@@ -1474,19 +1640,23 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             //   justify-content: center;
             // }
             cursor: pointer;
+
             .font {
               font-weight: 500;
               font-size: 20px;
               color: #f66442;
             }
+
             .icon {
               width: 24px;
               height: 24px;
             }
+
             &:hover {
               .font {
                 border-bottom: 1px #f66442 solid;
               }
+
               .icon {
                 transform: translateX(8px);
                 transition: all 0.2s;
@@ -1497,13 +1667,16 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       }
     }
   }
+
   .part3_wrapper {
     overflow: hidden;
     background: #f2f4f6;
     padding-bottom: 72px;
+
     @media (max-width: 450px) {
       padding-bottom: 40px;
     }
+
     .part3 {
       .title {
         font-weight: 500;
@@ -1511,10 +1684,12 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         color: #201515;
         text-align: center;
         margin-top: 100px;
+
         @media (max-width: 450px) {
           font-size: 23px;
         }
       }
+
       .user_nums_out {
         display: flex;
         justify-content: center;
@@ -1530,38 +1705,46 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 
         .one_num {
           padding: 4px 32px;
+
           @media (max-width: 450px) {
             padding: 4px 16px;
           }
+
           background: #ffffff;
           border-radius: 25px;
           display: flex;
           justify-content: center;
           align-items: center;
           grid-column-gap: 16px;
+
           .bigger_num {
             font-weight: 500;
             font-size: 32px;
             color: #201515;
+
             @media (max-width: 450px) {
               font-size: 22px;
             }
           }
+
           .small_font {
             font-weight: 400;
             font-size: 18px;
             color: #201515;
+
             @media (max-width: 450px) {
               font-size: 16px;
             }
           }
         }
       }
+
       .btn_out {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 40px;
+
         .yellow {
           background: #f66442;
         }
@@ -1571,12 +1754,15 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         overflow: hidden;
         margin-top: 40px;
         position: relative;
+
         .one_score {
           width: 312px !important;
+
           @media (max-width: 450px) {
             width: 176px !important;
             margin-left: 12px;
           }
+
           box-sizing: border-box;
           height: fit-content;
           // border: 1px blue solid;
@@ -1584,6 +1770,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           background: #ffffff;
           box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
           border-radius: 8px;
+
           // height: 100px;
           .one_score_content {
             padding: 24px;
@@ -1594,47 +1781,56 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               justify-content: flex-start;
               align-items: center;
               grid-column-gap: 16px;
+
               .user_icon {
                 width: 48px;
                 height: 48px;
                 border-radius: 50%;
                 overflow: hidden;
                 flex-shrink: 0;
+
                 @media (max-width: 450px) {
                   width: 28px;
                   height: 28px;
                 }
+
                 img {
                   width: 100%;
                   height: 100%;
                 }
               }
+
               .user_detail {
                 .user_name {
                   font-weight: 500;
                   font-size: 16px;
                   color: #201515;
                   text-align: left;
+
                   @media (max-width: 450px) {
                     font-size: 12px;
                   }
                 }
+
                 .user_country {
                   font-weight: 400;
                   font-size: 14px;
                   color: #403f3e;
                   text-align: left;
+
                   @media (max-width: 450px) {
                     font-size: 10px;
                   }
                 }
               }
             }
+
             .one_score_content_img {
               width: auto;
               margin-top: 17px;
               border-radius: 8px;
               border: 2px solid #e9e9e9;
+
               img {
                 width: 100%;
                 height: auto;
@@ -1645,12 +1841,14 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       }
     }
   }
+
   .review_wrapper {
     background: #f66442;
     overflow-y: hidden;
 
     .review {
       padding-bottom: 100px;
+
       .review_title {
         margin-top: 100px;
         font-weight: 500;
@@ -1659,34 +1857,43 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         padding: 0 10px;
         text-align: center;
         margin-bottom: 64px;
+
         @media (max-width: 450px) {
           font-size: 23px;
           margin-top: 50px;
           margin-bottom: 34px;
         }
       }
+
       .review_scroll_out {
         // padding: 0 20px;
 
         scrollbar-width: none;
+
         .review_scroll_out_it {
           overflow: hidden;
+
           .two_card_out {
             // border: 1px red solid;
             padding: 0 6px; // 改用 padding 来设置间距
             width: calc(28% - 12px) !important; // 动态计算宽度，考虑间距
+
             @media (max-width: 1450px) {
               width: calc(35% - 12px) !important; // 动态计算宽度，考虑间距
             }
+
             @media (max-width: 1250px) {
               width: calc(50% - 12px) !important; // 动态计算宽度，考虑间距
             }
+
             @media (max-width: 1050px) {
               width: calc(65% - 12px) !important; // 动态计算宽度，考虑间距
             }
+
             @media (max-width: 850px) {
               width: calc(75% - 12px) !important; // 动态计算宽度，考虑间距
             }
+
             @media (max-width: 650px) {
               width: calc(85% - 12px) !important; // 动态计算宽度，考虑间距
             }
@@ -1698,94 +1905,114 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             display: flex;
             justify-content: center;
             align-items: flex-start;
+
             .width100 {
               width: 100%;
             }
           }
+
           .one_card {
             padding: 24px;
             background: #ffffff;
             border-radius: 8px;
             width: 100%;
+
             .one_card_top {
               display: flex;
               justify-content: space-between;
               align-items: center;
+
               .one_card_top_left {
                 display: flex;
                 justify-content: flex-start;
                 grid-column-gap: 16px;
                 align-items: center;
+
                 .icon_touxiang {
                   width: 48px;
                   height: 48px;
                   flex-shrink: 0;
                   border-radius: 50%;
                   overflow: hidden;
+
                   @media (max-width: 450px) {
                     width: 28px;
                     height: 28px;
                   }
+
                   img {
                     width: 100%;
                     height: 100%;
                   }
                 }
+
                 .name_out {
                   .name {
                     font-weight: 500;
                     font-size: 16px;
                     color: #201515;
                     text-align: left;
+
                     @media (max-width: 450px) {
                       font-size: 14px;
                     }
                   }
+
                   .country {
                     margin-top: 4px;
                     font-weight: 400;
                     font-size: 14px;
                     color: #403f3e;
                     text-align: left;
+
                     @media (max-width: 450px) {
                       font-size: 10px;
                     }
                   }
                 }
               }
+
               .one_card_top_right {
                 :deep(.el-rate .el-rate__icon) {
                   font-size: 28px;
                 }
+
                 :deep(.el-icon) {
                   width: 15px;
                 }
               }
             }
+
             .one_card_font {
               font-weight: 400;
               font-size: 18px;
               color: #201515;
               margin-top: 24px;
               text-align: left;
+
               @media (max-width: 450px) {
                 font-size: 16px;
               }
             }
           }
         }
+
         .min_height350 {
           height: 550px;
         }
       }
     }
   }
+
   @keyframes scroll {
     0% {
-      transform: translateX(0); /* 初始位置 */
+      transform: translateX(0);
+      /* 初始位置 */
     }
+
     100% {
-      transform: translateX(-100%); /* 向上滚动 100% 的高度 */
+      transform: translateX(-100%);
+      /* 向上滚动 100% 的高度 */
     }
   }
 }
