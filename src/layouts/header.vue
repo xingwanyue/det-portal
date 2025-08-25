@@ -20,7 +20,7 @@ const pathname = computed(() => {
   const newPathParts = pathParts[pathParts.length - 1] === locale.value ? pathParts.slice(0, -1) : pathParts;
   return `/${last(newPathParts)}` || '/';
 });
-const headerColor = ref('#FFF4F1');
+const headerColor = ref('rgba(0,0,0,0)');
 const oldPath = ref('');
 const haveCookie = ref(false);
 const isProductsMobile = ref(false);
