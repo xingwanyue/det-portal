@@ -357,7 +357,40 @@ const copy = async (text: any) => {
     ElMessage.error('Your browser does not support copying text to clipboard.');
   }
 };
+// 加载 Tidio 聊天功能
+onMounted(() => {
+  // 如果window.tidioChatApi 存在
+  if ((window as any).tidioChatApi) {
+    const tidio = document.getElementById('tidio-chat');
+    tidio!.style.display = 'none';
+    return;
+  }
+  setTimeout(() => {
+    const d = document;
+    const s = d.createElement('script');
+    s.src = 'https://code.tidio.co/wruqp7llixvkwsdlbkcqpid2jhxwl0cx.js';
+    document.body.appendChild(s);
+
+    // 写一个计时器 如果获取不到 tidio-chat 则一直获取
+    const timer = setInterval(() => {
+      const tidio = document.getElementById('tidio-chat');
+      if (tidio) {
+        clearInterval(timer);
+        tidio.style.display = 'none';
+      }
+    }, 1000);
+  }, 0);
+});
+onUnmounted(() => {
+  setTimeout(() => {
+    const tidio = document.getElementById('tidio-chat');
+    tidio!.style.display = 'none';
+  }, 0);
+});
+
 const openchat = () => {
+  const tidio = document.getElementById('tidio-chat');
+  tidio!.style.display = 'block';
   (window as any).tidioChatApi.open();
 };
 const formateMinToHour = (min: number) => {
@@ -1112,7 +1145,7 @@ const buyCorrectNum = () => {
               </div>
             </div>
           </div>
-         
+
           <!-- 表内title下的一个内容 -->
           <div class="one_feature">
             <div class="one_feature_item padding1 shu1">
