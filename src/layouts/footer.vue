@@ -509,6 +509,7 @@ const arrow_up_down = `${cdn}/store/portal/home/arrow_icon.svg`;
 
   .cookie_out {
     // border: 1px red solid;
+    display: none;
     position: fixed;
     bottom: 17px;
     left: 16px;
