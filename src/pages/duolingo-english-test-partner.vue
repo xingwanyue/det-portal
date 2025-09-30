@@ -1,9 +1,19 @@
 <script setup lang="ts">
+import { urlGet, getToken } from '@/utils';
 import { useI18n } from "vue-i18n";
+import { useStore } from '@/store';
+const localePath = useLocalePath();
 const { t } = useI18n();
 useSeoMeta({
   title: 'DET Practice - DET Official Gold Partner',
   description: 'Get your DET score with the official Gold Partner. AI mock tests, instant scoring & 18,000+ questions. Start for free!',
+});
+const haveCookie = ref(false);
+onMounted(async () => {
+  const token = await getToken();
+  if (token) {
+    haveCookie.value = true;
+  }
 });
 const faqList = ref([
   {
@@ -42,6 +52,15 @@ const faqList = ref([
     open: false,
   },
 ])
+const store = useStore();
+const user = computed(() => store.user);
+const jump = () => {
+  if ((user.value.id || haveCookie.value) && !user.value.temp) {
+    window.location.href = urlGet('/home');
+  } else {
+    window.location.href = localePath('/login');
+  }
+}
 
 </script>
 
@@ -55,7 +74,7 @@ const faqList = ref([
             24/7 tutor, full-length mock tests with instant scoring, the largest questionbank, and free expert-designed
             courses. Your all-in-one pathway to top DET scores.
           </p>
-          <div class="btn">Start Free practice</div>
+          <div class="btn" @click="jump">Start Free practice</div>
         </div>
         <img src="/img/partner/partner.webp" alt="duolingo-english-test-partner">
       </div>
@@ -147,7 +166,7 @@ const faqList = ref([
       <div class="container">
         <h2>Ready to Reach Your Dream DET Score?</h2>
         <p>Start practicing today and move one step closer to your DET success.</p>
-        <div class="btn">Start Free practice</div>
+        <div class="btn" @click="jump">Start Free practice</div>
       </div>
     </div>
     <div class="part7">
@@ -287,7 +306,7 @@ const faqList = ref([
 
     .tips {
       font-weight: 500;
-      font-size: 12px;
+      font-size: 14px;
       color: #666666;
       text-align: center;
     }
@@ -346,14 +365,14 @@ const faqList = ref([
 
         h3 {
           font-weight: 800;
-          font-size: 18px;
+          font-size: 20px;
           color: #201515;
           margin: 10px 0;
         }
 
         .text {
           font-weight: 500;
-          font-size: 14px;
+          font-size: 18px;
           color: #201515;
           text-align: center;
         }
