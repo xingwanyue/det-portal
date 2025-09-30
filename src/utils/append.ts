@@ -65,7 +65,7 @@ const fb = () => {
 };
 
 export const appendJs = () => {
-  tidio();
+  // tidio();
   ga4();
   fb();
 };

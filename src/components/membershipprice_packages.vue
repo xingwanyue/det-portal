@@ -3,9 +3,8 @@ import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 import { reactive } from 'vue';
 import { formatCashfixed2, formatCash } from '@/utils';
-
-// import subscribe from '@/components/subscribe.vue';
 import { useStore } from '@/store';
+let buyClicked = false;
 const store = useStore();
 const user = computed(() => store.user);
 const localePath = useLocalePath();
@@ -76,17 +75,27 @@ const changeBuyCorrectTimes = (item: any) => {
   item.correctOriginalPrice = correctTimes.originalPrice;
 };
 
-const buyMembership = (item: any) => {
+const buyMembership = async (item: any) => {
+  if (buyClicked) return;
+  buyClicked = true;
   const { id, saveOpen, id90 } = item;
   if (saveOpen) {
-    store.stripePay({ vipId: `${id90}` });
+    await store.stripePay({ vipId: `${id90}` });
   } else {
-    store.stripePay({ vipId: `${id}` });
+    await store.stripePay({ vipId: `${id}` });
   }
+  setTimeout(() => {
+    buyClicked = false;
+  }, 2000);
 };
 
-const buyMockTimes = () => {
-  store.stripePay({ vipId: state.mockBuyTimsId });
+const buyMockTimes = async () => {
+  if (buyClicked) return;
+  buyClicked = true;
+  await store.stripePay({ vipId: state.mockBuyTimsId });
+  setTimeout(() => {
+    buyClicked = false;
+  }, 2000);
 };
 const changeMockBuyTimes = (item: any) => {
   state.mockBuyItem = item;

@@ -6,6 +6,7 @@ const { t } = useI18n();
 useSeoMeta({
   title: t('discount.seometa.title'),
   description: t('discount.seometa.description'),
+  keywords: t('discount.seometa.keywords'),
 });
 
 const aqList = ref([
