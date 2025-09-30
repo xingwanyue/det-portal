@@ -53,7 +53,7 @@
     }
   },
   "footer": {
-    "inc": "Our product has no connection with Duolingo,Inc",
+    "inc": "Independently developed in partnership with the Duolingo English Test.",
     "ProductsTitle": "Products",
     "LearnTitle": "Prep Resources",
     "BlogTitle": "Blog",
@@ -72,7 +72,8 @@
       "Privacy Policy",
       "Sitemap",
       "Affiliate Program",
-      "Refund Policy"
+      "Refund Policy",
+      "Duolingo English Test Partner"
     ],
     "show_more": "Show more",
     "alt": "DET Practice:The best Duolingo English Test Practice platform",

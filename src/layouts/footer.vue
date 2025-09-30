@@ -125,6 +125,10 @@ const Company = computed(() => {
         url: '/contact-us',
       },
       {
+        name: t('footer.Company[7]'),
+        url: '/duolingo-english-test-partner',
+      },
+      {
         name: t('footer.Company[2]'),
         url: '/tos',
       },
