@@ -18,7 +18,7 @@ onMounted(async () => {
 const faqList = ref([
   {
     q: 'What is DET Practice and how does it help me prepare for the Duolingo English Test?',
-    a: 'DET Practice is the official DET Gold-tier Partner platform for Duolingo English Test preparation. We offer AI-powered mock tests, instant scoring, expert-designed courses, and the largest question bank with 18,000+ questions to help you achieve your target score.',
+    a: "<a href='/'>DET Practice</a> is the official DET Gold-tier Partner platform for Duolingo English Test preparation. We offer AI-powered mock tests, instant scoring, expert-designed courses, and the largest question bank with 18,000+ questions to help you achieve your target score.",
     open: false,
   },
   {
@@ -28,7 +28,7 @@ const faqList = ref([
   },
   {
     q: 'What makes DET Practice different from other test prep platforms?',
-    a: 'We are the official Duolingo English Test Partner for DET preparation, offering the most authentic test experience. Our platform features instant AI feedback, the largest question bank, and has helped 400,000+ students achieve their target scores.',
+    a: "We are the official <a href='https://englishtest.duolingo.com/'>Duolingo English Test</a> Partner for DET preparation, offering the most authentic test experience. Our platform features instant AI feedback, the largest question bank, and has helped 400,000+ students achieve their target scores.",
     open: false,
   },
   {
@@ -38,7 +38,7 @@ const faqList = ref([
   },
   {
     q: 'Can I access DET Practice on mobile devices?',
-    a: 'Yes! DET Practice is fully optimized for mobile devices, tablets, and desktops. You can practice anytime, anywhere with our responsive web platform that works seamlessly across all devices.',
+    a: "Yes! <a href='/'>DET Practice</a> is fully optimized for mobile devices, tablets, and desktops. You can practice anytime, anywhere with our responsive web platform that works seamlessly across all devices.",
     open: false,
   },
   {
@@ -180,7 +180,7 @@ const jump = () => {
               <img v-if="!item.open" src="/img/partner/down.svg" alt="down">
               <img v-else src="/img/partner/up.svg" alt="up">
             </div>
-            <div v-show="item.open" class="bottom">{{ item.a }}</div>
+            <div v-show="item.open" class="bottom" v-html="item.a"></div>
           </div>
         </div>
       </div>
