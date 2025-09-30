@@ -448,6 +448,10 @@ const jump = () => {
           font-size: 18px;
           color: #666666;
 
+          ::v-deep(a) {
+            color: #58CC02 !important;
+          }
+
           @media screen and (max-width: 768px) {
             font-size: 16px;
           }
