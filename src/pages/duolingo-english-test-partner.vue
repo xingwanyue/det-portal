@@ -74,7 +74,7 @@ const jump = () => {
             24/7 tutor, full-length mock tests with instant scoring, the largest questionbank, and free expert-designed
             courses. Your all-in-one pathway to top DET scores.
           </p>
-          <div class="btn" @click="jump">Start Free practice</div>
+          <div class="btn" @click="jump">Start Free Practice</div>
         </div>
         <img src="/img/partner/partner.webp" alt="duolingo-english-test-partner">
       </div>
@@ -166,7 +166,7 @@ const jump = () => {
       <div class="container">
         <h2>Ready to Reach Your Dream DET Score?</h2>
         <p>Start practicing today and move one step closer to your DET success.</p>
-        <div class="btn" @click="jump">Start Free practice</div>
+        <div class="btn" @click="jump">Start Free Practice</div>
       </div>
     </div>
     <div class="part7">
