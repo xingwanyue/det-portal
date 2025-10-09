@@ -6,7 +6,7 @@ const localePath = useLocalePath();
 const { t } = useI18n();
 useSeoMeta({
   title: 'DET Practice - DET Official Gold Partner',
-  description: 'Get your DET score with the official Gold Partner. AI mock tests, instant scoring & 18,000+ questions. Start for free!',
+  description: 'Get a better score with the DET official Gold Partner. AI mock tests, instant scoring & 18,000+ questions. Start for free!',
 });
 const haveCookie = ref(false);
 onMounted(async () => {
@@ -23,12 +23,12 @@ const faqList = ref([
   },
   {
     q: 'How accurate is your AI scoring system compared to the real DET?',
-    a: 'Our AI scoring system is highly accurate and closely mirrors the official DET scoring algorithm. As an official DET Partner, we have access to the latest scoring criteria and continuously update our system to ensure the most precise score predictions.',
+    a: "Our AI scoring system is highly accurate and closely mirrors the <a href='https://englishtest.duolingo.com/' target='_blank'>official DET</a> scoring algorithm. As an official DET Partner, we have access to the latest scoring criteria and continuously update our system to ensure the most precise score predictions.",
     open: false,
   },
   {
     q: 'What makes DET Practice different from other test prep platforms?',
-    a: "We are the official <a href='https://englishtest.duolingo.com/'>Duolingo English Test</a> Partner for DET preparation, offering the most authentic test experience. Our platform features instant AI feedback, the largest question bank, and has helped 400,000+ students achieve their target scores.",
+    a: "We are the <a href='https://www.detpractice.com/duolingo-english-test-partner'>Duolingo English Test official partner</a> for DET preparation, offering the most authentic test experience. Our platform features instant AI feedback, the largest question bank, and has helped 400,000+ students achieve their target scores.",
     open: false,
   },
   {
@@ -69,8 +69,8 @@ const jump = () => {
     <div class="part1">
       <div class="container">
         <div class="left">
-          <h1>Succeed on Your Duolingo EnglishTest with a DET Gold Partner</h1>
-          <p>Trusted by 400,000+ students worldwide. Get everything you need for the Duolingo EnglishTest: Al-powered
+          <h1>Succeed on Your Duolingo English Test with a DET Gold Partner</h1>
+          <p>Trusted by 400,000+ students worldwide. Get everything you need for the Duolingo English Test: Al-powered
             24/7 tutor, full-length mock tests with instant scoring, the largest questionbank, and free expert-designed
             courses. Your all-in-one pathway to top DET scores.
           </p>
