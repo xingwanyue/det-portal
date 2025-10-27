@@ -77,7 +77,7 @@ watch(
   (newVal) => {
     if (newVal.length) {
       state.membershipArrPage = JSON.parse(JSON.stringify(newVal));
-      let saveopenMid = false;
+      let saveopenMid = true;
       // 找到当前套餐
       state.membershipArrPage.forEach((item) => {
         item.isCurrent30 = false;
@@ -807,27 +807,25 @@ const switchchange = (val: any) => {
       border: 1px solid #f5f5f5 !important;
     }
   }
-   .card_price_buy_btn {
-      padding: 11px 0px;
-      border: 1px solid #f66442;
-      border-radius: 4px;
-      font-weight: 500;
-      font-size: 16px;
-      color: #f66442;
-      text-align: center;
-      margin-top: 32px;
-      position: relative;
-      display: block;
-      cursor: pointer;
-      a {
-        color: white;
-      }
-      // &:hover {
-      //   background: #f6f5f5;
-      // }
+  .card_price_buy_btn {
+    padding: 11px 0px;
+    border: 1px solid #f66442;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #f66442;
+    text-align: center;
+    margin-top: 32px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    a {
+      color: white;
     }
-   
-
+    // &:hover {
+    //   background: #f6f5f5;
+    // }
+  }
 }
 .one_card_new_exam {
   padding-bottom: 0px;

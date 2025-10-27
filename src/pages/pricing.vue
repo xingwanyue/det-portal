@@ -3002,6 +3002,10 @@ const buyCorrectNum = () => {
 .upgrade_dialog {
   padding: 0px;
   border-radius: 30px 30px 30px 30px !important;
+  width: 540px;
+  @media screen and (max-width: 524px) {
+    width: 370px;
+  }
   overflow: hidden;
   .el-dialog__body {
     padding: 0px;
@@ -3015,10 +3019,6 @@ const buyCorrectNum = () => {
   }
   .el-dialog {
     border-radius: 30px 30px 30px 30px;
-    width: 540px;
-    @media screen and (max-width: 524px) {
-      width: 370px;
-    }
   }
   .upgrade_dialog_content {
     // border: 1px red solid;
