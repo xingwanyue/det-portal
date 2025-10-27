@@ -323,8 +323,7 @@ const doUpgrade = async () => {
 const changeUpgradeId = (item: any) => {
   chosedUpgradePlan.value = item;
   // 改变差价信息
-  // 改变差价信息
-  preUpdateDataShow.value = preUpdateData.value.find((item: any) => item.id === item.id || item.id90 === item.id90);
+  preUpdateDataShow.value = preUpdateData.value.find((itemin: any) => itemin.id === item.id || itemin.id === item.id90);
   console.log(preUpdateDataShow.value);
 };
 // 关闭升级套餐弹框
