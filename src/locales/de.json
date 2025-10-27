@@ -458,6 +458,15 @@
       "qy11": "Kostenlose Kurse",
       "qyspeak": "<span class='yellow'>DET Sprechtest-Leitfaden</span>",
       "qywrite": "<span class='yellow'>DET Schreibtest-Leitfaden</span>"
+    },
+    "storeVip": {
+      "font1": "mock exams activated successfully!",
+      "font4": "times correction service activated successfully!",
+      "font5": "days premium package purchased successfully!",
+      "buysuccess": "Purchased Successfully",
+      "ok": "Confirm",
+      "Upgrade": "Upgrade",
+      "currentplan": "Current Plan"
     }
   },
   "blog": {

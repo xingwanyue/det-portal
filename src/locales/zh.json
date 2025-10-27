@@ -467,6 +467,15 @@
       "qy11": "免费课程",
       "qyspeak": "<span class='yellow'>DET口语测试指南</span>",
       "qywrite": "<span class='yellow'>DET写作测试指南</span>"
+    },
+    "storeVip": {
+      "font1": "mock exams activated successfully!",
+      "font4": "times correction service activated successfully!",
+      "font5": "days premium package purchased successfully!",
+      "buysuccess": "Purchased Successfully",
+      "ok": "Confirm",
+      "Upgrade": "Upgrade",
+      "currentplan": "Current Plan"
     }
   },
   "blog": {

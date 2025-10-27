@@ -468,6 +468,15 @@
       "qy11": "Kursus Gratis",
       "qyspeak": "<span class='yellow'>Panduan Tes Berbicara DET</span>",
       "qywrite": "<span class='yellow'>Panduan Tes Menulis DET</span>"
+    },
+    "storeVip": {
+      "font1": "mock exams activated successfully!",
+      "font4": "times correction service activated successfully!",
+      "font5": "days premium package purchased successfully!",
+      "buysuccess": "Purchased Successfully",
+      "ok": "Confirm",
+      "Upgrade": "Upgrade",
+      "currentplan": "Current Plan"
     }
   },
   "blog": {

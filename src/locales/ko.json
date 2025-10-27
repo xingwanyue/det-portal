@@ -468,6 +468,15 @@
       "qy11": "무료 강좌",
       "qyspeak": "<span class='yellow'>DET 말하기 시험 가이드</span>",
       "qywrite": "<span class='yellow'>DET 쓰기 시험 가이드</span>"
+    },
+    "storeVip": {
+      "font1": "mock exams activated successfully!",
+      "font4": "times correction service activated successfully!",
+      "font5": "days premium package purchased successfully!",
+      "buysuccess": "Purchased Successfully",
+      "ok": "Confirm",
+      "Upgrade": "Upgrade",
+      "currentplan": "Current Plan"
     }
   },
   "blog": {

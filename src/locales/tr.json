@@ -468,6 +468,15 @@
       "qy11": "Ücretsiz Kurslar",
       "qyspeak": "<span class='yellow'>DET Konuşma Testi Rehberi</span>",
       "qywrite": "<span class='yellow'>DET Yazma Testi Rehberi</span>"
+    },
+    "storeVip": {
+      "font1": "mock exams activated successfully!",
+      "font4": "times correction service activated successfully!",
+      "font5": "days premium package purchased successfully!",
+      "buysuccess": "Purchased Successfully",
+      "ok": "Confirm",
+      "Upgrade": "Upgrade",
+      "currentplan": "Current Plan"
     }
   },
   "blog": {
