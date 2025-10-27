@@ -793,12 +793,13 @@ const switchchange = (val: any) => {
     }
     .card_price_buy_btn_mock {
       background: #ffe1bc;
-      font-weight: 500;
-      font-size: 16px;
-      color: #063156;
-      border: 0px solid #ffe1bc;
+      font-weight: 500 !important;
+      font-size: 16px !important;
+      color: #063156 !important;
+      border: 0px solid #ffe1bc !important;
+      margin-top: 20px !important;
       &:hover {
-        background: #ffe1bc;
+        background: #ffe1bc !important;
       }
     }
     .gray_btn {
