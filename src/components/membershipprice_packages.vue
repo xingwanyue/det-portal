@@ -77,21 +77,25 @@ watch(
   (newVal) => {
     if (newVal.length) {
       state.membershipArrPage = JSON.parse(JSON.stringify(newVal));
+      let saveopenMid = false;
       // 找到当前套餐
       state.membershipArrPage.forEach((item) => {
         item.isCurrent30 = false;
         item.isCurrent90 = false;
         if (item.id === user.value?.vipIds) {
           item.isCurrent30 = true;
+          saveopenMid = false;
           state.currentPrice30 = item.price;
           state.currentPrice90 = 10000000;
         }
         if (item.id90 === user.value?.vipIds) {
           item.isCurrent90 = true;
+          saveopenMid = true;
           state.currentPrice30 = 10000000;
           state.currentPrice90 = item.price90;
         }
       });
+      switchchange(saveopenMid);
     }
   },
   { deep: true },
@@ -572,6 +576,21 @@ const switchchange = (val: any) => {
       }
       .card_price_buy_btn {
         margin-top: 20px;
+        display: block;
+        padding: 11px 0px;
+        border: 1px solid #f66442;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #f66442;
+        text-align: center;
+        margin-top: 32px;
+        position: relative;
+        display: block;
+        cursor: pointer;
+        a {
+          color: white;
+        }
       }
     }
     .bgcolor_hack {
@@ -788,6 +807,27 @@ const switchchange = (val: any) => {
       border: 1px solid #f5f5f5 !important;
     }
   }
+   .card_price_buy_btn {
+      padding: 11px 0px;
+      border: 1px solid #f66442;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 16px;
+      color: #f66442;
+      text-align: center;
+      margin-top: 32px;
+      position: relative;
+      display: block;
+      cursor: pointer;
+      a {
+        color: white;
+      }
+      // &:hover {
+      //   background: #f6f5f5;
+      // }
+    }
+   
+
 }
 .one_card_new_exam {
   padding-bottom: 0px;
@@ -816,6 +856,21 @@ const switchchange = (val: any) => {
     background: #f66442;
     border: 1px solid #f66442;
     color: white !important;
+    display: block;
+    padding: 11px 0px;
+    border: 1px solid #f66442;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #f66442;
+    text-align: center;
+    margin-top: 32px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    a {
+      color: white;
+    }
     // &:hover {
     //   background: #412323 !important;
     // }
