@@ -7,6 +7,7 @@ const { t } = useI18n();
 import { getVipdataNoToken, getVipdataWithToken, getSetting, getPreUpdate, postUpgrade } from '@/api';
 
 import vMembershippricepackages from '../components/membershipprice_packages.vue';
+import PricingFeatureBtn from '../components/pricing_feature_btn.vue';
 import { domain, cdn, formatCash, urlGet } from '@/utils';
 import { useStore } from '@/store';
 useSeoMeta({
@@ -76,7 +77,7 @@ const handleScroll = () => {
   const scrollTop = window.scrollY;
   const feature = document.querySelector('.Feature_wrapper');
   const featureRect = feature?.getBoundingClientRect();
-  if (featureRect?.top <= 10) {
+  if ((featureRect?.top ?? 9999) <= 10) {
     isSticky.value = true;
   } else {
     isSticky.value = false;
@@ -120,8 +121,13 @@ const aqList = ref([
     open: false,
   },
 ]) as any;
-
+const state = reactive({
+  currentPrice30: 0,
+  currentPrice90: 0,
+  packagesFortable: [] as any,
+});
 const vipsData = ref({}) as any;
+const tableInPriceData = ref([]) as any;
 
 const getData = async () => {
   if (!user.value.id) {
@@ -245,10 +251,7 @@ const getData = async () => {
       }
     });
 
-    console.log(packagesArr);
-    console.log(user.value);
     const { vipIds } = user.value;
-    console.log(vipIds);
     // 找到目前订阅的套餐
     const currentPlanmid = packagesArr.filter((item: any) => item.id === vipIds || item.id90 === vipIds);
     if (currentPlanmid.length) {
@@ -259,11 +262,8 @@ const getData = async () => {
         subscriptionMonth.value = 3;
       }
     }
-    console.log('currentPlanmidcurrentPlanmidcurrentPlanmidcurrentPlanmid');
-    console.log(currentPlanmid);
     // 找到可以升级的套餐 id不相等且price要大于当前套餐的price
     let upgradePlanmid = packagesArr.filter((item: any) => item.id !== vipIds && item.id90 !== vipIds);
-    console.log(upgradePlanmid);
     if (currentPlanmid.length) {
       upgradePlanmid = upgradePlanmid.filter((item: any) => item.price > currentPlanmid[0].price);
     }
@@ -272,7 +272,31 @@ const getData = async () => {
       chosedUpgradePlan.value = upgradePlanmid[0] || {};
     }
 
-    console.log(packagesArr);
+    const packagesArrClone = JSON.parse(JSON.stringify(packagesArr));
+    let saveopenMid = true;
+    packagesArrClone.forEach((item: any) => {
+      item.isCurrent30 = false;
+      item.isCurrent90 = false;
+      if (item.id === user.value?.vipIds) {
+        item.isCurrent30 = true;
+        saveopenMid = false;
+        state.currentPrice30 = item.price;
+        state.currentPrice90 = 10000000;
+      }
+      if (item.id90 === user.value?.vipIds) {
+        item.isCurrent90 = true;
+        saveopenMid = true;
+        state.currentPrice30 = 10000000;
+        state.currentPrice90 = item.price90;
+      }
+    });
+    console.log('787878');
+    console.log(saveopenMid);
+    tableSwitchOpen.value = saveopenMid;
+    console.log(packagesArrClone);
+    state.packagesFortable = packagesArrClone;
+
+    // tableInPriceData
     vipsData.value = { practiceArr, packagesArr, correctSelectBuyTimes, mockSelectBuyTimes };
   }
 };
@@ -302,7 +326,6 @@ const doUpgrade = async () => {
     if (day) {
       message.push(`${day}  ${t('pricing.storeVip.font5')}`);
     }
-    console.log(message);
     if (message.length) {
       ElMessageBox.alert(message.join('<br>'), t('pricing.storeVip.buysuccess'), {
         confirmButtonText: t('pricing.storeVip.ok'),
@@ -339,16 +362,13 @@ const handleCloseUpgradeDialog = () => {
 };
 // 打开升级套餐弹框
 const openUpgradeDialog = async (item: any) => {
-  console.log('opopop');
-  const { saveOpen, id, id90 } = item;
-  console.log(saveOpen, id, id90);
+  const { id, id90 } = item;
   chosedUpgradePlan.value = item;
   upgradeDialogVisible.value = true;
   // 获取升级的付费数据
   const {
     data: { vips },
   } = await getPreUpdate();
-  console.log(vips);
   preUpdateData.value = vips;
   preUpdateDataShow.value = vips.find((item: any) => item.id === id || item.id === id90);
   console.log(preUpdateDataShow.value);
@@ -671,12 +691,15 @@ const buyCorrectNum = () => {
                 >
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
-              <div v-if="user?.id && !user?.temp" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[0])">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </div>
-              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </NuxtLink>
+              <pricing-feature-btn
+                :user="user"
+                :item="state.packagesFortable[0]"
+                :currentPrice30="state.currentPrice30"
+                :currentPrice90="state.currentPrice90"
+                :tableSwitchOpen="tableSwitchOpen"
+                @buy="buyMembership"
+                @upgrade="openUpgradeDialog"
+              />
             </div>
             <div class="one_feature_item havepadding shu4">
               <div class="title">{{ $t('pricing.pagefont.four_vips_name.name3') }}</div>
@@ -688,12 +711,15 @@ const buyCorrectNum = () => {
                 <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[1].price90 / 3) }}</span>
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
-              <div v-if="user?.id && !user?.temp" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[1])">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </div>
-              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </NuxtLink>
+              <pricing-feature-btn
+                :user="user"
+                :item="state.packagesFortable[1]"
+                :currentPrice30="state.currentPrice30"
+                :currentPrice90="state.currentPrice90"
+                :tableSwitchOpen="tableSwitchOpen"
+                @buy="buyMembership"
+                @upgrade="openUpgradeDialog"
+              />
             </div>
             <div class="one_feature_item havepadding one_feature_item_last shu5 lt_rt_radio">
               <div class="title">
@@ -717,12 +743,15 @@ const buyCorrectNum = () => {
                 <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[2].price90 / 3) }}</span>
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
-              <div v-if="user?.id && !user?.temp" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[2])">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </div>
-              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </NuxtLink>
+              <pricing-feature-btn
+                :user="user"
+                :item="state.packagesFortable[2]"
+                :currentPrice30="state.currentPrice30"
+                :currentPrice90="state.currentPrice90"
+                :tableSwitchOpen="tableSwitchOpen"
+                @buy="buyMembership"
+                @upgrade="openUpgradeDialog"
+              />
             </div>
           </div>
           <!-- 表内的title**************************** -->
