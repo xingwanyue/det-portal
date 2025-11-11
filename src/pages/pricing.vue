@@ -1731,7 +1731,7 @@ const buyCorrectNum = () => {
               <div class="top_left" @click="cjDetailShow = !cjDetailShow">
                 <div class="due_title">Amount Due Today</div>
                 <div :class="cjDetailShow ? 'open_arrow open_arrow_up' : 'open_arrow'">
-                  <img src="/img/pricing/arrow_down copy.svg" />
+                  <img src="/img/pricing/arrow_down_copy.svg" />
                 </div>
               </div>
               <div class="top_right">
