@@ -107,7 +107,7 @@ const closeNotice = () => {
   saveStorage('updateNoticeClosed', '1');
 };
 onMounted(async () => {
-  setNotice();
+  // setNotice();
   logFbAdd();
   const token = await getToken();
   if (token) {
