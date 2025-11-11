@@ -467,6 +467,15 @@
       "qy11": "Cursos Gratuitos",
       "qyspeak": "<span class='yellow'>Guia do Teste de Fala DET</span>",
       "qywrite": "<span class='yellow'>Guia do Teste de Escrita DET</span>"
+    },
+    "storeVip": {
+      "font1": "mock exams activated successfully!",
+      "font4": "times correction service activated successfully!",
+      "font5": "days premium package purchased successfully!",
+      "buysuccess": "Purchased Successfully",
+      "ok": "Confirm",
+      "Upgrade": "Upgrade",
+      "currentplan": "Current Plan"
     }
   },
   "blog": {

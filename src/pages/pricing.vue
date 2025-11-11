@@ -1,10 +1,13 @@
 <script setup lang="ts">
+import { ElMessage } from 'element-plus';
+
 import { useI18n } from 'vue-i18n';
 import { getToken } from '@/utils';
 const { t } = useI18n();
-import { getVipdataNoToken, getVipdataWithToken, getSetting } from '@/api';
+import { getVipdataNoToken, getVipdataWithToken, getSetting, getPreUpdate, postUpgrade } from '@/api';
 
 import vMembershippricepackages from '../components/membershipprice_packages.vue';
+import PricingFeatureBtn from '../components/pricing_feature_btn.vue';
 import { domain, cdn, formatCash, urlGet } from '@/utils';
 import { useStore } from '@/store';
 useSeoMeta({
@@ -35,6 +38,11 @@ useHead({
 });
 
 const circle_check_icon = `${cdn}/store/portal/pricing/circle_check_icon.svg`;
+// const start1 = `${cdn}/store/portal/pricing/start1.svg`;
+// const start2 = `${cdn}/store/portal/pricing/start2.svg`;
+// const start3 = `${cdn}/store/portal/pricing/start3.svg`;
+// const arrow_down = `${cdn}/store/portal/pricing/arrow_down.svg`;
+// const close_icon = `${cdn}/store/portal/pricing/close_icon.svg`;
 const store = useStore();
 const user = computed(() => store.user);
 const userChangeFlag = ref(() => store.user);
@@ -43,6 +51,24 @@ const savetagnumber = ref('');
 const tableSwitchOpen = ref(true);
 // 2 Free 3 Basic 4 Plus 5 Pro
 const mobileShowWhich = ref(5);
+// 升级套餐需要的新数据**************************
+const upgradeDialogVisible = ref(false);
+// 选择升级的套餐
+const chosedUpgradePlan = ref({} as any);
+// 当前套餐
+const currentPlan = ref([] as any);
+// 可以升级的套餐
+const upgradePlan = ref([] as any);
+// 已有订阅 定的是1个月 还是3个月
+const subscriptionMonth = ref(1);
+// 接口请求回来的差价信息
+const preUpdateData = ref({} as any);
+// 页面显示的一个差价信息
+const preUpdateDataShow = ref({} as any);
+// 差价具体信息是否显示
+const cjDetailShow = ref(false);
+// 升级按钮loading状态
+const upbtnloading = ref(false);
 
 const onlycorrectTimesid = ref(0);
 const onlycorrectTimesprice = ref(0);
@@ -51,7 +77,7 @@ const handleScroll = () => {
   const scrollTop = window.scrollY;
   const feature = document.querySelector('.Feature_wrapper');
   const featureRect = feature?.getBoundingClientRect();
-  if (featureRect?.top <= 10) {
+  if ((featureRect?.top ?? 9999) <= 10) {
     isSticky.value = true;
   } else {
     isSticky.value = false;
@@ -95,8 +121,13 @@ const aqList = ref([
     open: false,
   },
 ]) as any;
-
+const state = reactive({
+  currentPrice30: 0,
+  currentPrice90: 0,
+  packagesFortable: [] as any,
+});
 const vipsData = ref({}) as any;
+const tableInPriceData = ref([]) as any;
 
 const getData = async () => {
   if (!user.value.id) {
@@ -219,8 +250,128 @@ const getData = async () => {
         // }
       }
     });
+
+    const { vipIds } = user.value;
+    // 找到目前订阅的套餐
+    const currentPlanmid = packagesArr.filter((item: any) => item.id === vipIds || item.id90 === vipIds);
+    if (currentPlanmid.length) {
+      currentPlan.value = currentPlanmid;
+      if (currentPlanmid[0].id === vipIds) {
+        subscriptionMonth.value = 1;
+      } else {
+        subscriptionMonth.value = 3;
+      }
+    }
+    // 找到可以升级的套餐 id不相等且price要大于当前套餐的price
+    let upgradePlanmid = packagesArr.filter((item: any) => item.id !== vipIds && item.id90 !== vipIds);
+    if (currentPlanmid.length) {
+      upgradePlanmid = upgradePlanmid.filter((item: any) => item.price > currentPlanmid[0].price);
+    }
+    upgradePlan.value = upgradePlanmid;
+    if (upgradePlanmid.length) {
+      chosedUpgradePlan.value = upgradePlanmid[0] || {};
+    }
+
+    const packagesArrClone = JSON.parse(JSON.stringify(packagesArr));
+    let saveopenMid = true;
+    packagesArrClone.forEach((item: any) => {
+      item.isCurrent30 = false;
+      item.isCurrent90 = false;
+      if (item.id === user.value?.vipIds) {
+        item.isCurrent30 = true;
+        saveopenMid = false;
+        state.currentPrice30 = item.price;
+        state.currentPrice90 = 10000000;
+      }
+      if (item.id90 === user.value?.vipIds) {
+        item.isCurrent90 = true;
+        saveopenMid = true;
+        state.currentPrice30 = 10000000;
+        state.currentPrice90 = item.price90;
+      }
+    });
+    console.log('787878');
+    console.log(saveopenMid);
+    tableSwitchOpen.value = saveopenMid;
+    console.log(packagesArrClone);
+    state.packagesFortable = packagesArrClone;
+
+    // tableInPriceData
     vipsData.value = { practiceArr, packagesArr, correctSelectBuyTimes, mockSelectBuyTimes };
   }
+};
+// 调用接口升级套餐
+const doUpgrade = async () => {
+  upbtnloading.value = true;
+  const args = { vipId: subscriptionMonth.value === 1 ? chosedUpgradePlan.value.id : chosedUpgradePlan.value.id90 };
+  const { data, err } = await postUpgrade(args);
+  if (!err) {
+    upbtnloading.value = false;
+    handleCloseUpgradeDialog();
+    // 获取billing url
+    // getBillingUrl();
+    // 更新user
+    // store.dispatch('app/getUserInfo');   ;
+
+    const message = [];
+    const { examNum, correctNum, day } = data;
+    if (examNum) {
+      message.push(`${examNum}
+            ${t('pricing.storeVip.font1')}`);
+    }
+    if (correctNum) {
+      message.push(`${correctNum}
+            ${t('pricing.storeVip.font4')}`);
+    }
+    if (day) {
+      message.push(`${day}  ${t('pricing.storeVip.font5')}`);
+    }
+    if (message.length) {
+      ElMessageBox.alert(message.join('<br>'), t('pricing.storeVip.buysuccess'), {
+        confirmButtonText: t('pricing.storeVip.ok'),
+        dangerouslyUseHTMLString: true,
+      });
+    }
+    await store.getUserInfo();
+    getData();
+  } else {
+    // 关闭升级套餐弹框
+    upbtnloading.value = false;
+    ElMessage({
+      message: err.message,
+      type: 'error',
+    });
+  }
+};
+const changeUpgradeId = (item: any) => {
+  chosedUpgradePlan.value = item;
+  // 改变差价信息
+  preUpdateDataShow.value = preUpdateData.value.find((itemin: any) => itemin.id === item.id || itemin.id === item.id90);
+  console.log(preUpdateDataShow.value);
+};
+// 关闭升级套餐弹框
+const handleCloseUpgradeDialog = () => {
+  if (upbtnloading.value) {
+    ElMessage({
+      message: 'Please wait...',
+      type: 'warning',
+    });
+    return;
+  }
+  upgradeDialogVisible.value = false;
+};
+// 打开升级套餐弹框
+const openUpgradeDialog = async (item: any) => {
+  const { id, id90 } = item;
+  chosedUpgradePlan.value = item;
+  upgradeDialogVisible.value = true;
+  // 获取升级的付费数据
+  const {
+    data: { vips },
+  } = await getPreUpdate();
+  preUpdateData.value = vips;
+  preUpdateDataShow.value = vips.find((item: any) => item.id === id || item.id === id90);
+  console.log(preUpdateDataShow.value);
 };
 const getsavenum = async () => {
   const {
@@ -462,6 +613,7 @@ const buyCorrectNum = () => {
             :correctSelectBuyTimes="vipsData?.correctSelectBuyTimes || []"
             :mockSelectBuyTimes="vipsData?.mockSelectBuyTimes || []"
             :savetagnumber="savetagnumber"
+            @openUpgradeDialog="openUpgradeDialog"
           ></v-membershippricepackages>
         </div>
 
@@ -539,12 +691,15 @@ const buyCorrectNum = () => {
                 >
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
-              <div v-if="user?.id && !user?.temp" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[0])">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </div>
-              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </NuxtLink>
+              <pricing-feature-btn
+                :user="user"
+                :item="state.packagesFortable[0]"
+                :currentPrice30="state.currentPrice30"
+                :currentPrice90="state.currentPrice90"
+                :tableSwitchOpen="tableSwitchOpen"
+                @buy="buyMembership"
+                @upgrade="openUpgradeDialog"
+              />
             </div>
             <div class="one_feature_item havepadding shu4">
               <div class="title">{{ $t('pricing.pagefont.four_vips_name.name3') }}</div>
@@ -556,12 +711,15 @@ const buyCorrectNum = () => {
                 <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[1].price90 / 3) }}</span>
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
-              <div v-if="user?.id && !user?.temp" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[1])">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </div>
-              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </NuxtLink>
+              <pricing-feature-btn
+                :user="user"
+                :item="state.packagesFortable[1]"
+                :currentPrice30="state.currentPrice30"
+                :currentPrice90="state.currentPrice90"
+                :tableSwitchOpen="tableSwitchOpen"
+                @buy="buyMembership"
+                @upgrade="openUpgradeDialog"
+              />
             </div>
             <div class="one_feature_item havepadding one_feature_item_last shu5 lt_rt_radio">
               <div class="title">
@@ -585,12 +743,15 @@ const buyCorrectNum = () => {
                 <span v-if="vipsData?.packagesArr">${{ formatCash(vipsData.packagesArr[2].price90 / 3) }}</span>
                 /{{ $t('pricing.pagefont.month1') }}
               </div>
-              <div v-if="user?.id && !user?.temp" class="buy_btn_new" @click="buyMembership(vipsData?.packagesArr[2])">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </div>
-              <NuxtLink :to="localePath(`/login?url=/pricing`)" v-else class="buy_btn_new">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-              </NuxtLink>
+              <pricing-feature-btn
+                :user="user"
+                :item="state.packagesFortable[2]"
+                :currentPrice30="state.currentPrice30"
+                :currentPrice90="state.currentPrice90"
+                :tableSwitchOpen="tableSwitchOpen"
+                @buy="buyMembership"
+                @upgrade="openUpgradeDialog"
+              />
             </div>
           </div>
           <!-- 表内的title**************************** -->
@@ -1497,6 +1658,115 @@ const buyCorrectNum = () => {
       <template #footer>
         <div class="footer_wrapp"><div class="close_btn" @click="handleCloseCoursrBuyed">I get it</div></div>
       </template>
+    </el-dialog>
+    <!-- 有购买的套餐，继续购买显示出来的升级套餐弹框 -->
+    <el-dialog v-model="upgradeDialogVisible" :before-close="handleCloseUpgradeDialog" class="upgrade_dialog">
+      <div class="upgrade_dialog_content">
+        <div class="title">Upgrade Your Subscription Plan</div>
+        <div class="close_icon" @click="handleCloseUpgradeDialog">
+          <img src="/img/pricing/close.svg" />
+        </div>
+        <div class="white_box">
+          <div v-if="currentPlan.length" class="current_plan">
+            <div class="current_plan_title">Current Plan</div>
+            <div v-for="(item, index) in currentPlan" :key="index + 'currentPlan'" class="one_price one_price_active">
+              <div class="one_price_left">
+                <div class="start_icon">
+                  <img v-if="item.tag === 'Basic'" src="/img/pricing/stars1.svg" />
+                  <img v-if="item.tag === 'Plus'" src="/img/pricing/stars2.svg" />
+                  <img v-if="item.tag === 'Pro'" src="/img/pricing/stars3.svg" />
+                </div>
+                <div class="plan_name">{{ item.tag }}</div>
+              </div>
+              <div v-if="subscriptionMonth === 3" class="one_price_right">
+                <div class="month3">
+                  <span class="big_price">${{ formatCash(Number(item.price90)) }}</span> / 3month
+                </div>
+                <div class="month1">$ {{ Number(item.price90) / 3 / 100 }} / month</div>
+              </div>
+              <div v-else class="one_price_right">
+                <div class="month3">
+                  <span class="big_price">${{ formatCash(Number(item.price)) }}</span> / month
+                </div>
+              </div>
+            </div>
+          </div>
+          <div v-if="upgradePlan.length" class="current_plan upgrade_plan">
+            <div class="current_plan_title">Upgrade to</div>
+            <div class="price_wrapper">
+              <div
+                v-for="(item, index) in upgradePlan"
+                :key="index + 'upgrade'"
+                :class="chosedUpgradePlan.id === item.id ? 'one_price one_price_active' : 'one_price'"
+                @click="changeUpgradeId(item)"
+              >
+                <div class="one_price_left">
+                  <div class="start_icon">
+                    <img v-if="item.tag === 'Basic'" src="/img/pricing/stars1.svg" />
+                    <img v-if="item.tag === 'Plus'" src="/img/pricing/stars2.svg" />
+                    <img v-if="item.tag === 'Pro'" src="/img/pricing/stars3.svg" />
+                  </div>
+                  <div class="plan_name">{{ item.tag }}</div>
+                </div>
+                <div v-if="subscriptionMonth === 3" class="one_price_right">
+                  <div class="month3">
+                    <span class="big_price">${{ formatCash(Number(item.price90)) }}</span> / 3month
+                  </div>
+                  <div class="month1">$ {{ Number(item.price90) / 3 / 100 }} / month</div>
+                </div>
+                <div v-else class="one_price_right">
+                  <div class="month3">
+                    <span class="big_price">${{ formatCash(Number(item.price)) }}</span> / month
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="today_gray_content">
+            <div class="today_top">
+              <div class="top_left" @click="cjDetailShow = !cjDetailShow">
+                <div class="due_title">Amount Due Today</div>
+                <div :class="cjDetailShow ? 'open_arrow open_arrow_up' : 'open_arrow'">
+                  <img src="/img/pricing/arrow_down copy.svg" />
+                </div>
+              </div>
+              <div class="top_right">
+                <span class="dao">$</span>{{ formatCash(preUpdateDataShow?.vipPrice - preUpdateDataShow?.remain) }}
+              </div>
+            </div>
+            <div v-if="cjDetailShow" class="can_hide_dom">
+              <div class="one_heng">
+                <div class="one_heng_left">New Plan Cost</div>
+                <div class="one_heng_right">${{ formatCash(preUpdateDataShow?.vipPrice) }}</div>
+              </div>
+              <div class="one_heng">
+                <div class="one_heng_left">Credit from Current Plan</div>
+                <div class="one_heng_right">-$ {{ formatCash(preUpdateDataShow?.remain) }}</div>
+              </div>
+              <div class="one_heng">
+                <div class="one_heng_left">Amount Due Today</div>
+                <div class="one_heng_right yellow_font">
+                  ${{ formatCash(preUpdateDataShow?.vipPrice - preUpdateDataShow?.remain) }}
+                </div>
+              </div>
+            </div>
+            <div class="tips">
+              After subscribing, your plan will be upgraded to <span class="yellow">{{ chosedUpgradePlan.tag }}</span
+              >, giving you full access to all Plus features and benefits. Future payments of ${{
+                subscriptionMonth === 1
+                  ? formatCash(Number(chosedUpgradePlan.price))
+                  : formatCash(Number(chosedUpgradePlan.price90))
+              }}
+              will be charged automatically every {{ subscriptionMonth === 1 ? null : subscriptionMonth }}
+              {{ subscriptionMonth === 1 ? 'month' : 'months' }}.
+            </div>
+            <div class="btn_confirm_out">
+              <div v-if="upbtnloading" v-loading="upbtnloading" class="up_btnn">Please wait...</div>
+              <div v-else class="up_btnn" @click="doUpgrade">Confirm Upgrade</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </el-dialog>
   </div>
 </template>
@@ -2757,6 +3027,225 @@ const buyCorrectNum = () => {
     }
   }
 }
+.upgrade_dialog {
+  padding: 0px;
+  border-radius: 30px 30px 30px 30px !important;
+  width: 540px;
+  @media screen and (max-width: 524px) {
+    width: 370px;
+  }
+  overflow: hidden;
+  .el-dialog__body {
+    padding: 0px;
+    // padding-left: 20px;
+    // border: 1px red solid;
+    border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
+  }
+  .el-dialog__header {
+    display: none;
+  }
+  .el-dialog {
+    border-radius: 30px 30px 30px 30px;
+  }
+  .upgrade_dialog_content {
+    // border: 1px red solid;
+    position: relative;
+
+    .title {
+      padding: 30px;
+      padding-bottom: 20px;
+      font-weight: bold;
+      font-size: 24px;
+      color: #333333;
+      background: linear-gradient(180deg, #f8baac 0%, #ffffff 100%);
+    }
+    .close_icon {
+      width: 24px;
+      height: 24px;
+
+      position: absolute;
+      top: 33px;
+      right: 20px;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .white_box {
+      padding: 0 30px;
+      padding-bottom: 30px;
+      .current_plan {
+        .current_plan_title {
+          font-weight: 500;
+          font-size: 20px;
+          color: #333333;
+          margin-bottom: 10px;
+        }
+        .one_price {
+          background: #f5f5f5;
+          border-radius: 20px 20px 20px 20px;
+          padding: 16px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          .one_price_left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 8px;
+            .start_icon {
+              width: 16px;
+              height: 16px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .plan_name {
+              font-weight: bold;
+              font-size: 24px;
+              color: #333333;
+            }
+          }
+          .one_price_right {
+            .month3 {
+              // font-weight: bold;
+              font-size: 18px;
+              color: #f66442;
+              .big_price {
+                font-size: 24px;
+              }
+            }
+            .month1 {
+              font-weight: 400;
+              font-size: 14px;
+              color: #333333;
+              margin-top: 6px;
+              text-align: right;
+            }
+          }
+        }
+      }
+      .upgrade_plan {
+        margin-top: 20px;
+        .price_wrapper {
+          display: flex;
+          flex-direction: column;
+          grid-gap: 10px;
+          .one_price {
+            border: 2px solid #e6e6e6;
+            cursor: pointer;
+          }
+          .one_price_active {
+            background: rgba(246, 100, 66, 0.1) !important;
+            border: 2px solid #f66442 !important;
+          }
+        }
+      }
+      .today_gray_content {
+        padding: 16px;
+        background: #f7f7f7;
+        border-radius: 20px 20px 20px 20px;
+        margin-top: 20px;
+        .today_top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .top_left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 10px;
+            cursor: pointer;
+            .due_title {
+              font-weight: 500;
+              font-size: 20px;
+              color: #333333;
+            }
+            .open_arrow {
+              width: 10px;
+              height: 6px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .open_arrow_up {
+              transform: rotate(180deg);
+            }
+          }
+          .top_right {
+            font-weight: bold;
+            font-size: 24px;
+            color: #f66442;
+            .dao {
+              font-size: 18px;
+            }
+          }
+        }
+        .can_hide_dom {
+          display: flex;
+          flex-direction: column;
+          grid-gap: 10px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          .one_heng {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .one_heng_left {
+              font-weight: 500;
+              font-size: 14px;
+              color: #333333;
+            }
+            .one_heng_right {
+              font-weight: 500;
+              font-size: 14px;
+              color: #333333;
+            }
+            .yellow_font {
+              color: #f66442;
+            }
+          }
+        }
+        .tips {
+          font-weight: 400;
+          font-size: 14px;
+          color: #999999;
+          line-height: normal;
+          // 长单词不打断
+          word-break: keep-all;
+          .yellow {
+            color: #f66442;
+          }
+        }
+        .btn_confirm_out {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-top: 14px;
+          .up_btnn {
+            padding: 14px 20px;
+            background: #f66442;
+            border-radius: 10px 10px 10px 10px;
+            // font-weight: bold;
+            font-size: 16px;
+            color: #ffffff;
+            cursor: pointer;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
+
 .el-button:focus-visible {
   outline: 0px;
 }

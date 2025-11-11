@@ -44,6 +44,32 @@ export const getSetting = () =>
     method: 'get',
   });
 
+//   // 获取升级套餐补差价信息
+// export const getPreUpdate = (data) => get('/stripe/preUpdate', data);
+// // 升级套餐
+// export const postUpgrade = async (data) => post('/stripe/update', data);
+
+export const getPreUpdate =async () => {
+  const token = await getToken(false);
+  return fetchmy(`${api}/stripe/preUpdate`, {
+    method: 'get',
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+}
+export const postUpgrade =async (args: any) => {
+  const token = await getToken(false);
+  return fetchmy(`${api}/stripe/update`, {
+    method: 'post',
+    body: JSON.stringify(args),
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+  });
+}
+
 export const findPassword = (args: any) =>
   fetchmy(`${api}/common/findPassword`, {
     method: 'post',

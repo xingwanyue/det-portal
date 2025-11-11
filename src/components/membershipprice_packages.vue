@@ -57,6 +57,9 @@ const state = reactive({
   ],
   mockBuyTimsId: '',
   mockBuyItem: {} as any,
+  membershipArrPage: [] as any[],
+  currentPrice30: 0,
+  currentPrice90: 0,
 });
 
 watch(
@@ -68,6 +71,38 @@ watch(
     }
   },
 );
+
+watch(
+  () => props.membershipArr,
+  (newVal) => {
+    if (newVal.length) {
+      state.membershipArrPage = JSON.parse(JSON.stringify(newVal));
+      let saveopenMid = true;
+      // 找到当前套餐
+      state.membershipArrPage.forEach((item) => {
+        item.isCurrent30 = false;
+        item.isCurrent90 = false;
+        if (item.id === user.value?.vipIds) {
+          item.isCurrent30 = true;
+          saveopenMid = false;
+          state.currentPrice30 = item.price;
+          state.currentPrice90 = 10000000;
+        }
+        if (item.id90 === user.value?.vipIds) {
+          item.isCurrent90 = true;
+          saveopenMid = true;
+          state.currentPrice30 = 10000000;
+          state.currentPrice90 = item.price90;
+        }
+      });
+      switchchange(saveopenMid);
+    }
+  },
+  { deep: true },
+);
+
+const emit = defineEmits(['payShowEnglish', 'openUpgradeDialog']);
+
 const changeBuyCorrectTimes = (item: any) => {
   const { id, correctTimesid } = item;
   const correctTimes = props.correctSelectBuyTimes.find((item: any) => item.id === correctTimesid);
@@ -97,6 +132,10 @@ const buyMockTimes = async () => {
     buyClicked = false;
   }, 2000);
 };
+
+const openUpgradeDialog = (item: any) => {
+  emit('openUpgradeDialog', item);
+};
 const changeMockBuyTimes = (item: any) => {
   state.mockBuyItem = item;
   state.mockBuyTimsId = item.id;
@@ -109,7 +148,7 @@ const saveCaculate = (item: any) => {
   );
 };
 const switchchange = (val: any) => {
-  props.membershipArr.forEach((item: any) => {
+  state.membershipArrPage.forEach((item: any) => {
     item.saveOpen = val;
   });
 };
@@ -119,11 +158,11 @@ const switchchange = (val: any) => {
     <div class="new_mb_price_left">
       <div class="new_mb_price_left_top">
         <div
-          v-for="item in props.membershipArr"
+          v-for="item in state.membershipArrPage"
           :key="item.id"
           :class="item.tag === 'Pro' ? 'one_card_new one_card_new_365' : 'one_card_new'"
         >
-          <div>
+          <div class="give_bg">
             <div class="title_out">
               <div class="title">
                 <div v-if="item.tag === 'Basic'" class="icon">
@@ -214,20 +253,93 @@ const switchchange = (val: any) => {
               </div>
             </div>
           </div>
-          <div class="but_btn_new">
-            <div v-if="user?.id && !user?.temp">
-              <div class="card_price_buy_btn" @click="buyMembership(item)">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-                <div class="scroll-line"></div>
+          <template v-if="user?.id && !user?.temp">
+            <template v-if="user?.vipIds && user?.vipIds.length > 33">
+              <!-- 多个vipid 全部灰色 直接打开stripe弹框-->
+              <div class="but_btn_new">
+                <div>
+                  <div class="card_price_buy_btn gray_btn" @click="buyMembership(item)">
+                    {{ $t('pricing.pagefont.Buy_Now') }}
+                    <div class="scroll-line"></div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div v-else>
-              <NuxtLink class="card_price_buy_btn" :to="localePath(`/login?url=/pricing`)" rel="nofollow">
-                {{ $t('pricing.pagefont.Buy_Now') }}
-                <div class="scroll-line"></div>
-              </NuxtLink>
-            </div>
-          </div>
+            </template>
+            <template v-else>
+              <!-- 只有一个vipid 显示升级的逻辑 -->
+              <template v-if="user?.vipIds">
+                <div v-if="item.saveOpen" class="but_btn_new">
+                  <!-- 三个月打开的按钮 -->
+                  <template v-if="item.isCurrent90">
+                    <div class="card_price_buy_btn current_btn" @click="buyMembership(item)">
+                      <!-- Current Plan -->
+                      {{ $t('pricing.storeVip.currentplan') }}
+                      <div class="scroll-line"></div>
+                    </div>
+                  </template>
+                  <template v-else>
+                    <template v-if="item.price90 > state.currentPrice90">
+                      <div class="card_price_buy_btn" @click="openUpgradeDialog(item)">
+                        <!-- Upgrade -->
+                        {{ $t('pricing.storeVip.Upgrade') }}
+                        <div class="scroll-line"></div>
+                      </div>
+                    </template>
+                    <template v-else>
+                      <div class="card_price_buy_btn gray_btn" @click="buyMembership(item)">
+                        {{ $t('pricing.pagefont.Buy_Now') }}
+                        <!-- graybtn -->
+                        <div class="scroll-line"></div>
+                      </div>
+                    </template>
+                  </template>
+                </div>
+                <div v-else class="but_btn_new">
+                  <!-- 三个月关闭的按钮 -->
+                  <template v-if="item.isCurrent30">
+                    <div class="card_price_buy_btn current_btn" @click="buyMembership(item)">
+                      <!-- Current Plan -->
+                      {{ $t('pricing.storeVip.currentplan') }}
+                      <div class="scroll-line"></div>
+                    </div>
+                  </template>
+                  <template v-else>
+                    <template v-if="item.price > state.currentPrice30">
+                      <div class="card_price_buy_btn" @click="openUpgradeDialog(item)">
+                        <!-- Upgrade -->
+                        {{ $t('pricing.storeVip.Upgrade') }}
+                        <div class="scroll-line"></div>
+                      </div>
+                    </template>
+                    <template v-else>
+                      <div class="card_price_buy_btn gray_btn" @click="buyMembership(item)">
+                        {{ $t('pricing.pagefont.Buy_Now') }}
+                        <!-- graybtn -->
+                        <div class="scroll-line"></div>
+                      </div>
+                    </template>
+                  </template>
+                </div>
+              </template>
+              <template v-else>
+                <div class="but_btn_new">
+                  <div>
+                    <div class="card_price_buy_btn" @click="buyMembership(item)">
+                      {{ $t('pricing.pagefont.Buy_Now') }}
+                      <div class="scroll-line"></div>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </template>
+          </template>
+          <template v-else>
+            <NuxtLink class="card_price_buy_btn" :to="localePath(`/login?url=/pricing`)" rel="nofollow">
+              {{ $t('pricing.pagefont.Buy_Now') }}
+              <div class="scroll-line"></div>
+            </NuxtLink>
+          </template>
+
           <div v-if="props.membershipArr.length" class="mock_quanyi_list_packages">
             <div v-for="(itemqy, index) in item.qylist" :key="index" class="one_quanyi">
               <div v-if="(index === 1 || index === 11 || index === 12) && item.tag === 'Basic'" class="icon">
@@ -464,6 +576,21 @@ const switchchange = (val: any) => {
       }
       .card_price_buy_btn {
         margin-top: 20px;
+        display: block;
+        padding: 11px 0px;
+        border: 1px solid #f66442;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #f66442;
+        text-align: center;
+        margin-top: 32px;
+        position: relative;
+        display: block;
+        cursor: pointer;
+        a {
+          color: white;
+        }
       }
     }
     .bgcolor_hack {
@@ -666,14 +793,39 @@ const switchchange = (val: any) => {
     }
     .card_price_buy_btn_mock {
       background: #ffe1bc;
-      font-weight: 500;
-      font-size: 16px;
-      color: #063156;
-      border: 0px solid #ffe1bc;
+      font-weight: 500 !important;
+      font-size: 16px !important;
+      color: #063156 !important;
+      border: 0px solid #ffe1bc !important;
+      margin-top: 20px !important;
       &:hover {
-        background: #ffe1bc;
+        background: #ffe1bc !important;
       }
     }
+    .gray_btn {
+      background: #f5f5f5 !important;
+      color: #b3b3b3 !important;
+      border: 1px solid #f5f5f5 !important;
+    }
+  }
+  .card_price_buy_btn {
+    padding: 11px 0px;
+    border: 1px solid #f66442;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #f66442;
+    text-align: center;
+    margin-top: 32px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    a {
+      color: white;
+    }
+    // &:hover {
+    //   background: #f6f5f5;
+    // }
   }
 }
 .one_card_new_exam {
@@ -703,6 +855,21 @@ const switchchange = (val: any) => {
     background: #f66442;
     border: 1px solid #f66442;
     color: white !important;
+    display: block;
+    padding: 11px 0px;
+    border: 1px solid #f66442;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #f66442;
+    text-align: center;
+    margin-top: 32px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    a {
+      color: white;
+    }
     // &:hover {
     //   background: #412323 !important;
     // }

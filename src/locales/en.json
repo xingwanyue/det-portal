@@ -479,6 +479,15 @@
       "qy11": "Free Courses",
       "qyspeak": "<span class='yellow'>DET Speaking Exam guide</span>",
       "qywrite": "<span class='yellow'>DET Writing Exam Guide</span>"
+    },
+    "storeVip": {
+      "font1": "mock exams activated successfully!",
+      "font4": "times correction service activated successfully!",
+      "font5": "days premium package purchased successfully!",
+      "buysuccess": "Purchased Successfully",
+      "ok": "Confirm",
+      "Upgrade": "Upgrade",
+      "currentplan": "Current Plan"
     }
   },
   "blog": {
