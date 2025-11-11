@@ -116,12 +116,12 @@ const menus = computed(() => [
     path: '/products',
   },
   {
-    name: t('courses_title'),
-    path: '/courses',
+    name: t('Mock'),
+    path: '/mock-exam',
   },
   {
-    name: t('Pricing'),
-    path: '/pricing',
+    name: t('courses_title'),
+    path: '/courses',
   },
   // {
   //   name: t('Blog'),
@@ -130,6 +130,10 @@ const menus = computed(() => [
   {
     name: t('Discount'),
     path: '/duolingo-english-test-coupon',
+  },
+  {
+    name: t('Pricing'),
+    path: '/pricing',
   },
 ]);
 // const menus = ;
@@ -673,7 +677,7 @@ const menus = computed(() => [
       grid-gap: 26px;
       height: 100%;
       .meun {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         // color: #484848;
         color: #403f3e;

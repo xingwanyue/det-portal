@@ -7,6 +7,7 @@
   "Blog": "Blog",
   "Discount": "DET Discount",
   "courses_title": "Course",
+  "Mock": "Mock Test",
   "header": {
     "home_logo_title": "DET Practice",
     "path_practice_title": "Duolingo English Practice Test Online",
@@ -99,7 +100,7 @@
       "keywords": "DET Duolingo, DET Test, Duolingo DET, Duolingo Test, Duolingo Test Online, Duolingo English Language Test, Duolingo English Exam, Duolingo Proficiency Exam, Duolingo Proficiency Exam In English, Duolingo English Proficiency Exam, English Proficiency Test Duolingo, Duolingo Proficiency Test, Duolingo English Proficiency Test, Duolingo English Test, English Duolingo Test"
     },
     "bigtitle1": "Number of High Scorers (130+ Points)：10000+",
-    "bigtitle2": "Exceptional 4.8/5 Rating from Over 850 Reviews!",
+    "bigtitle2": "Exceptional 4.8/5 Rating from Over 1850 Reviews!",
     "power_by": "AI-Powered",
     "wealsohave": "Why Choose Us",
     "have1_title": "DET Question Bank",
@@ -113,14 +114,37 @@
     "h1Mobile": "Get a Higher Score Easily<br />on the Duolingo <br />English Test With: <span class=\"seo_hack\">DET Practice</span>",
     "h1PC": "Ranked the #1 platform for DET Practice",
     "h2PC": "Score Higher on the Duolingo English Test with DETPractice",
-    "h2PC1": "The Best Platform for Duolingo English Test Practice and Learn",
-    "pPC": "DET Practice is the all-in-one platform for Duolingo practice test. We offer the largest test bank, full-length mock exams, expert correction services, and a wide range of AI tools.",
+    "h2PC1": "The Best Platform for Duolingo English Test Practice and Learning",
+    "pPC": "DET Practice is your all-in-one platform and official partner for Duolingo English Test preparation. We provide the largest question bank, official-standard mock tests, and the most accurate AI scoring.",
     "one_small_title": [
       "DET Practice",
       "AI Correction",
       "Full-Length Mock",
       "DET Courses"
     ],
+    "newModel": {
+      "h2": "Gold Partner of Duolingo English Test",
+      "list": {
+        "item1": {
+          "title": "Free 24-Hour DET Scoring",
+          "content1": "- Visit our invite link here",
+          "content2": "- Log in or create your Duolingo English Test account",
+          "content3": "- Add <span class='imp'>'DET Practice'</span> as your sponsor",
+          "content4": "- Get DET test results within 24 hours at no cost",
+          "content5": "*Only available through DET Practice",
+          "btn": "See Detail"
+        },
+        "item2": {
+          "title": "Exclusive 10% DET Discount",
+          "content1": "- Become a DET Practice member",
+          "content2": "- Contact us to claim your coupon",
+          "content3": "- Apply the coupon at checkout",
+          "content4": "- Enjoy an immediate 10% DET price reduction",
+          "content5": "*Save instantly on your test fee with our DET coupon.",
+          "btn": "See Detail"
+        }
+      }
+    },
     "Start_free_with_Google": "Start free with Google",
     "Start_free_with_email": "Start free with Email",
     "DET_Practice": "DET Practice: The best Duolingo English Test Practice platform",
@@ -134,8 +158,8 @@
     "yellow_check_icon_alt": "yellow_check_icon",
     "article1": {
       "title": "Duolingo English Test Practice",
-      "title1": "Smarter Prep, Better Scores",
-      "title2": "Utilize our comprehensive resources to accelerate your score improvement",
+      "title1": "Your Proven Pathway to a Top DET Score",
+      "title2": "Beyond questions, our proven system, built on official standards, helps you succeed.",
       "tips1": "The <span class='yellow'>Largest</span> Question Bank, {number} Practice Questions",
       "tips2": "Continuously <span class='yellow'>updated every day</span>",
       "tips3": "Provide high-scoring answers and detailed explanations",
@@ -1364,7 +1388,7 @@
     "hero": {
       "title": "Free Duolingo Practice Test",
       "desc": "Take full-length Duolingo English Practice Tests just like the <strong>real DET</strong>. Get <strong>instant scores</strong> and <strong>detailed feedback</strong> to improve fast and perform your best.",
-      "btn": "Mock Now"
+      "btn": "Practice Now"
     },
     "features": {
       "title": "Why Choose Our Enhanced DET Practice Test?",
