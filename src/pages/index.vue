@@ -266,12 +266,8 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       <div class="part2">
         <div class="one_img_article" data-aos="fade-up" data-aos-duration="1000">
           <div class="img_out">
-            <img
-              loading="lazy"
-              src="https://www.detpractice.com/img/home/home1.png"
-              :alt="$t('index.article1.title')"
-              @load="onLoad"
-            />
+            <img loading="lazy" src="https://www.detpractice.com/img/home/home1.png" :alt="$t('index.article1.title')"
+              @load="onLoad" />
           </div>
           <div class="article_out">
             <div class="article_out_title">
@@ -283,13 +279,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               <div class="tips_icon">
                 <img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" />
               </div>
-              <span
-                v-html="
-                  $t('index.article1.tips1', {
-                    number: `<span class='yellow'>${formatNumber(platformData?.questionTotal)}</span>`,
-                  })
-                "
-              ></span>
+              <span v-html="$t('index.article1.tips1', {
+                number: `<span class='yellow'>${formatNumber(platformData?.questionTotal)}</span>`,
+              })
+                "></span>
             </div>
             <div class="tips">
               <div class="tips_icon"><img :src="yellow_check_icon" :alt="$t('index.yellow_check_icon_alt')" /></div>
@@ -506,19 +499,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         </div>
         <div class="review_scroll_out">
           <div v-if="userPingLunResponse && userPingLunResponse.length" class="review_scroll_out_it">
-            <Carousel
-              :itemsToShow="4"
-              :autoplay="2000"
-              :wrap-around="true"
-              :pauseAutoplayOnHover="true"
-              :snap-align="'center'"
-              :items-to-scroll="1"
-            >
-              <Slide
-                v-for="(item, index) in userPingLunResponse.concat(userPingLunResponse)"
-                :key="index"
-                class="two_card_out"
-              >
+            <Carousel :itemsToShow="4" :autoplay="2000" :wrap-around="true" :pauseAutoplayOnHover="true"
+              :snap-align="'center'" :items-to-scroll="1">
+              <Slide v-for="(item, index) in userPingLunResponse.concat(userPingLunResponse)" :key="index"
+                class="two_card_out">
                 <div class="width100">
                   <div class="one_card">
                     <div class="one_card_top">
@@ -1364,9 +1348,10 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
     padding-bottom: 120px;
     max-width: 1200px;
     margin: 0 auto;
+
     @media (max-width: 1200px) {
-     padding-left: 30px;
-     padding-right: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
     h2 {
@@ -1416,7 +1401,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           }
 
           .color {
-            color: #F66442!important;
+            color: #F66442 !important;
           }
 
           .content {
@@ -1453,13 +1438,6 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
   color: #201515;
   line-height: 56px;
   font-size: 40px;
-  .part2_title {
-    padding: 0 15px;
-    text-align: center;
-    font-weight: 500;
-    color: #201515;
-    line-height: 56px;
-    font-size: 40px;
 
   @media (max-width: 400px) {
     font-size: 30px;
@@ -1475,14 +1453,6 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
   font-size: 24px;
   line-height: 32px;
   color: #555555;
-  .part2_title2 {
-    padding: 0 15px;
-    margin: 16px 0 69px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    color: #555555;
 
   @media (max-width: 900px) {
     font-size: 16px;
@@ -2119,14 +2089,15 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
               }
             }
 
-              .one_card_top_right {
-                :deep(.el-rate .el-rate__icon) {
-                  font-size: 28px;
-                }
-                :deep(.el-rate--large) {
-                  display: flex;
-                  gap: 5px;
-                }
+            .one_card_top_right {
+              :deep(.el-rate .el-rate__icon) {
+                font-size: 28px;
+              }
+
+              :deep(.el-rate--large) {
+                display: flex;
+                gap: 5px;
+              }
 
               :deep(.el-icon) {
                 width: 15px;
