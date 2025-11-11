@@ -589,6 +589,7 @@ const buyCorrectNum = () => {
       <div class="part1">
         <div class="title1">
           <h1>{{ $t('pricing.pagefont.h1') }}</h1>
+          <p>{{ $t('pricing.pagefont.p') }}</p>
         </div>
 
         <div class="three_out_new">
@@ -615,6 +616,9 @@ const buyCorrectNum = () => {
             :savetagnumber="savetagnumber"
             @openUpgradeDialog="openUpgradeDialog"
           ></v-membershippricepackages>
+        </div>
+        <div class="tips">
+          {{ $t('pricing.pagefont.tips') }}
         </div>
 
         <div class="bank_card">
@@ -1840,6 +1844,13 @@ const buyCorrectNum = () => {
             font-size: 24px;
           }
         }
+        p {
+          text-align: center;
+          font-size: 24px;
+          color: #333333;
+          line-height: 24px;
+          margin: 24px 0;
+        }
       }
 
       .title2 {
@@ -1858,7 +1869,6 @@ const buyCorrectNum = () => {
       }
 
       .three_out_new {
-        margin-top: 26px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2480,12 +2490,17 @@ const buyCorrectNum = () => {
           }
         }
       }
+      .tips {
+        margin: 14px 0;
+        font-size: 14px;
+        color: #999999;
+        line-height: 14px;
+      }
 
       .bank_card {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 50px;
         grid-gap: 6px;
         flex-wrap: wrap;
         @media (max-width: 450px) {
