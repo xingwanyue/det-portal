@@ -1425,6 +1425,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
           font-weight: 600;
           font-size: 20px;
           color: #FFFFFF;
+          cursor: pointer;
         }
       }
     }
