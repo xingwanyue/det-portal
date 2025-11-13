@@ -240,12 +240,12 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
         <div class="list">
           <div class="item">
             <div class="title">{{ $t('index.newModel.list.item1.title') }}</div>
-            <div class="content color">{{ $t('index.newModel.list.item1.content1') }}</div>
+            <div class="content color" @click="jump">{{ $t('index.newModel.list.item1.content1') }}</div>
             <div class="content">{{ $t('index.newModel.list.item1.content2') }}</div>
             <div class="content" v-html="$t('index.newModel.list.item1.content3')"></div>
             <div class="content">{{ $t('index.newModel.list.item1.content4') }}</div>
             <div class="content">{{ $t('index.newModel.list.item1.content5') }}</div>
-            <div class="btn" @click="jump">{{ $t('index.newModel.list.item1.btn') }}</div>
+            <NuxtLink :to="localePath('/duolingo-english-test-coupon')"><div class="btn">{{ $t('index.newModel.list.item1.btn') }}</div></NuxtLink>
           </div>
           <div class="item">
             <div class="title">{{ $t('index.newModel.list.item2.title') }}</div>
@@ -254,7 +254,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
             <div class="content">{{ $t('index.newModel.list.item2.content3') }}</div>
             <div class="content">{{ $t('index.newModel.list.item2.content4') }}</div>
             <div class="content">{{ $t('index.newModel.list.item2.content5') }}</div>
-            <div class="btn" @click="jump">{{ $t('index.newModel.list.item2.btn') }}</div>
+            <NuxtLink :to="localePath('/duolingo-english-test-coupon')"><div class="btn">{{ $t('index.newModel.list.item2.btn') }}</div></NuxtLink>
           </div>
         </div>
       </div>
@@ -1402,6 +1402,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
 
           .color {
             color: #F66442 !important;
+            cursor: pointer;
           }
 
           .content {
