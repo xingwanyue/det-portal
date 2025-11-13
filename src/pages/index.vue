@@ -234,7 +234,7 @@ const yellow_check_icon = `${cdn}/store/portal/home/yellow_check_icon.svg`;
       </div>
     </div>
     <div class="newModel">
-      <h2>Gold Partner of Duolingo English Test</h2>
+      <h2>{{ $t('index.newModel.h2') }}</h2>
       <div class="box">
         <img src="/img/home/partner.png" alt="partner"></img>
         <div class="list">
