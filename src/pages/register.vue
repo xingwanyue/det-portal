@@ -13,6 +13,7 @@ definePageMeta({
 useHead({
   meta: [{ name: 'robots', content: 'noindex' }],
 });
+const localePath = useLocalePath();
 const router = useRouter();
 const store = useStore();
 
@@ -48,9 +49,6 @@ const submit = async () => {
   }
 };
 
-const goLogin = () => {
-  router.push('/login');
-};
 
 const googleRegister = async () => {
   googlePopupLogin(async (res) => {
@@ -104,7 +102,7 @@ const googleRegister = async () => {
           <div class="zhuce">
             <div class="goregister">
               {{ $t('register.ahaa') }}
-              <span style="color: #f66442; cursor: pointer" @click="goLogin"> {{ $t('register.Login_here') }}</span>
+              <nuxt-link :to="localePath('/login')"><span style="color: #f66442; cursor: pointer"> {{ $t('register.Login_here') }}</span></nuxt-link>
             </div>
           </div>
         </el-form-item>
