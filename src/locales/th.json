@@ -108,6 +108,29 @@
       "การจำลองเต็มรูปแบบ",
       "DET หลักสูตร"
     ],
+    "newModel": {
+      "h2": "พาร์ทเนอร์ระดับโกลด์ของ Duolingo English Test",
+      "list": {
+        "item1": {
+          "title": "รับคะแนน DET ฟรีภายใน 24 ชั่วโมง",
+          "content1": "- เข้าชมผ่านลิงก์เชิญของเราได้ที่นี่",
+          "content2": "- เข้าสู่ระบบ หรือสร้างบัญชี Duolingo English Test ของคุณ",
+          "content3": "- เพิ่ม <span class='imp'>'DET Practice'</span> เป็นสปอนเซอร์ของคุณ",
+          "content4": "- รับผลสอบ DET ภายใน 24 ชั่วโมง โดยไม่มีค่าใช้จ่าย",
+          "content5": "*ให้บริการเฉพาะผ่าน DET Practice เท่านั้น",
+          "btn": "ดูรายละเอียด"
+        },
+        "item2": {
+          "title": "ส่วนลดพิเศษ 10% สำหรับสอบ DET",
+          "content1": "- สมัครเป็นสมาชิก DET Practice",
+          "content2": "- ติดต่อเราเพื่อรับคูปองส่วนลด",
+          "content3": "- ใช้คูปองขณะชำระเงิน",
+          "content4": "- รับส่วนลดทันที 10% สำหรับค่าสอบ DET",
+          "content5": "*ประหยัดค่าสอบได้ทันทีด้วยคูปอง DET ของเรา",
+          "btn": "ดูรายละเอียด"
+        }
+      }
+    },
     "Start_free_with_Google": "เริ่มฟรีด้วย Google",
     "Start_free_with_email": "เริ่มฟรีด้วยอีเมล",
     "DET_Practice": "DET Practice: แพลตฟอร์มฝึกสอบ Duolingo English Test ที่ดีที่สุด",

@@ -108,6 +108,29 @@
       "Ujian Palsu Lengkap",
       "DET Kursus"
     ],
+    "newModel": {
+      "h2": "Mitra Emas Ujian Bahasa Inggris Duolingo",
+      "list": {
+        "item1": {
+          "title": "Penilaian DET Gratis 24 Jam",
+          "content1": "- Kunjungi tautan undangan kami di sini",
+          "content2": "- Masuk atau buat akun Duolingo English Test Anda",
+          "content3": "- Tambahkan <span class='imp'>'DET Practice'</span> sebagai sponsor Anda",
+          "content4": "- Dapatkan hasil tes DET dalam waktu 24 jam tanpa biaya",
+          "content5": "*Hanya tersedia melalui DET Practice",
+          "btn": "Lihat Detail"
+        },
+        "item2": {
+          "title": "Diskon Eksklusif 10% DET",
+          "content1": "- Bergabunglah sebagai anggota DET Practice",
+          "content2": "- Hubungi kami untuk mengklaim kupon Anda",
+          "content3": "- Gunakan kupon saat checkout",
+          "content4": "- Nikmati potongan harga 10% secara langsung untuk produk DET",
+          "content5": "*Dapatkan diskon instan untuk biaya ujian Anda dengan kupon DET kami",
+          "btn": "Lihat Detail"
+        }
+      }
+    },
     "Start_free_with_Google": "Mulai gratis dengan Google",
     "Start_free_with_email": "Mulai gratis dengan Email",
     "DET_Practice": "DET Practice: Platform latihan Duolingo English Test terbaik",

@@ -107,6 +107,29 @@
       "Simulation complète",
       "DET Cours"
     ],
+    "newModel": {
+      "h2": "Partenaire Gold du test d'anglais Duolingo",
+      "list": {
+        "item1": {
+          "title": "Évaluation DET gratuite 24 heures sur 24",
+          "content1": "- Visitez notre lien d'invitation ici",
+          "content2": "- Connectez-vous ou créez votre compte Duolingo English Test",
+          "content3": "- Ajoutez <span class='imp'>'DET Practice'</span> comme sponsor",
+          "content4": "- Obtenez les résultats du test DET dans les 24 heures, sans frais",
+          "content5": "*Disponible uniquement via DET Practice",
+          "btn": "Voir les détails"
+        },
+        "item2": {
+          "title": "Remise exclusive de 10 % DET",
+          "content1": "- Devenez membre de DET Practice",
+          "content2": "- Contactez-nous pour obtenir votre coupon",
+          "content3": "- Appliquez le coupon lors du paiement",
+          "content4": "- Profitez immédiatement d'une réduction de 10 % sur le prix DET",
+          "content5": "*Économisez immédiatement sur vos frais d'examen grâce à notre coupon DET.",
+          "btn": "Voir les détails"
+        }
+      }
+    },
     "Start_free_with_Google": "Commencez gratuitement avec Google",
     "Start_free_with_email": "Commencer gratuitement avec l'email",
     "DET_Practice": "DET Practice : La meilleure plateforme de pratique pour le test d'anglais Duolingo",

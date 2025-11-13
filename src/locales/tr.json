@@ -108,6 +108,29 @@
       "Tam Uzunlukta Deneme",
       "DET Kurslar"
     ],
+    "newModel": {
+      "h2": "Duolingo İngilizce Testi Altın Ortağı",
+      "list": {
+        "item1": {
+          "title": "Ücretsiz 24 Saatlik DET Puanlama",
+          "content1": "- Davet bağlantımızı buradan ziyaret edin",
+          "content2": "- Giriş yapın veya Duolingo İngilizce Testi hesabınızı oluşturun",
+          "content3": "- Sponsorunuz olarak <span class='imp'>'DET Practice'</span> ekleyin",
+          "content4": "- 24 saat içinde ücretsiz olarak DET test sonuçlarını alın",
+          "content5": "*Yalnızca DET Practice aracılığıyla kullanılabilir",
+          "btn": "Ayrıntıları Gör"
+        },
+        "item2": {
+          "title": "Özel %10 DET İndirimi",
+          "content1": "- DET Uygulama üyesi olun",
+          "content2": "- Kuponunuzu almak için bizimle iletişime geçin",
+          "content3": "- Ödeme sırasında kuponu kullanın",
+          "content4": "- DET fiyatında %10'luk anında indirimden yararlanın",
+          "content5": "*DET kuponumuzla test ücretinden anında tasarruf edin",
+          "btn": "Ayrıntıları Gör"
+        }
+      }
+    },
     "Start_free_with_Google": "Google ile ücretsiz başlayın",
     "Start_free_with_email": "E-posta ile Ücretsiz Başlayın",
     "DET_Practice": "DET Practice: En iyi Duolingo İngilizce Testi Pratik platformu",

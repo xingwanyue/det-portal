@@ -108,6 +108,29 @@
       "풀-길이 모의 시험",
       "DET 코스"
     ],
+    "newModel": {
+      "h2": "듀오링고 영어 시험 골드 파트너",
+      "list": {
+        "item1": {
+          "title": "무료 24시간 DET 채점 서비스",
+          "content1": "- 초대 링크를 방문해 주세요",
+          "content2": "- 로그인하거나 듀오링고 영어 시험 계정을 만드세요",
+          "content3": "- <span class='imp'>'DET Practice'</span>를 귀하의 후원사로 추가하십시오",
+          "content4": "- 무료로 24시간 이내에 DET 검사 결과를 확인하세요",
+          "content5": "*DET Practice를 통해서만 이용 가능합니다",
+          "btn": "자세히 보기"
+        },
+        "item2": {
+          "title": "독점 10% DET 할인",
+          "content1": "- DET Practice 회원이 되세요",
+          "content2": "- 쿠폰을 받으려면 저희에게 연락하세요",
+          "content3": "- 결제 시 쿠폰을 적용하세요",
+          "content4": "- DET 가격 즉시 10% 할인 혜택을 누리세요",
+          "content5": "*DET 쿠폰으로 시험 응시료를 즉시 할인 받으세요",
+          "btn": "자세히 보기"
+        }
+      }
+    },
     "Start_free_with_Google": "Google로 무료 시작",
     "Start_free_with_email": "이메일로 무료 시작하기",
     "DET_Practice": "DET Practice: 최고의 듀오링고 영어 시험 연습 플랫폼",

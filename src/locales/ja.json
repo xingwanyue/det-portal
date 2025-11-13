@@ -107,6 +107,29 @@
       "フルレングスモック",
       "DET コース"
     ],
+    "newModel": {
+      "h2": "Duolingo English Testのゴールドパートナー",
+      "list": {
+        "item1": {
+          "title": "無料24時間DETスコアリング",
+          "content1": "- こちらの招待リンクからアクセスしてください",
+          "content2": "- Duolingo English Testアカウントにログインするか、新規作成してください",
+          "content3": "- スポンサーとして <span class='imp'>'DET Practice'</span> を追加してください",
+          "content4": "- 24時間以内に無料でDET検査結果を取得",
+          "content5": "*DET Practiceを通じてのみ利用可能です",
+          "btn": "詳細を見る"
+        },
+        "item2": {
+          "title": "限定10% DET割引",
+          "content1": "- DETプラクティスメンバーになる",
+          "content2": "- クーポンを受け取るにはお問い合わせください",
+          "content3": "- チェックアウト時にクーポンを適用してください",
+          "content4": "- DET価格を即時10%割引でお楽しみください",
+          "content5": "*DETクーポンで試験料を即座に割引",
+          "btn": "詳細を見る"
+        }
+      }
+    },
     "Start_free_with_Google": "Googleで無料で始める",
     "Start_free_with_email": "メールで無料開始",
     "DET_Practice": "DET Practice：最高のDuolingo English Test対策プラットフォーム",

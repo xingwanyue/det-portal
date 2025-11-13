@@ -120,6 +120,29 @@
       "Ganzlängen-Mock",
       "DET Kurse"
     ],
+    "newModel": {
+      "h2": "Gold-Partner des Duolingo-Englischtests",
+      "list": {
+        "item1": {
+          "title": "Kostenlose 24-Stunden-DET-Bewertung",
+          "content1": "- Besuchen Sie unseren Einladungslink hier",
+          "content2": "- Anmelden oder Duolingo English Test-Konto erstellen",
+          "content3": "- Fügen Sie <span class='imp'>'DET Practice<'/span> als Ihren Sponsor hinzu.",
+          "content4": "- Erhalten Sie Ihre DET-Testergebnisse innerhalb von 24 Stunden kostenlos",
+          "content5": "* Nur über DET Practice erhältlich",
+          "btn": "Details anzeigen"
+        },
+        "item2": {
+          "title": "Exklusiver Rabatt von 10 % für DET",
+          "content1": "- Werden Sie Mitglied bei DET Practice",
+          "content2": "- Kontaktieren Sie uns, um Ihren Gutschein einzulösen",
+          "content3": "- Wenden Sie den Gutschein an der Kasse an",
+          "content4": "- Profitieren Sie von einer sofortigen Preisreduktion von 10 % auf den DET-Preis",
+          "content5": "*Sparen Sie sofort bei Ihrer Prüfungsgebühr mit unserem DET-Gutschein.",
+          "btn": "Details anzeigen"
+        }
+      }
+    },
     "Start_free_with_Google": "Kostenlos starten mit Google",
     "Start_free_with_email": "Kostenlos mit E-Mail starten",
     "DET_Practice": "DET Practice: Die beste Übungsplattform für den Duolingo English Test",

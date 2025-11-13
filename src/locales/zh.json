@@ -107,6 +107,29 @@
       "全长模拟",
       "DET 课程"
     ],
+    "newModel": {
+      "h2": "Duolingo英语测试白金合作伙伴",
+      "list": {
+        "item1": {
+          "title": "免费24小时DET评分",
+          "content1": "- 请点击此处访问我们的邀请链接",
+          "content2": "- 登录或创建您的Duolingo英语测试账户",
+          "content3": "- 添加 <span class='imp'>'DET Practice'</span> 作为您的赞助商",
+          "content4": "- 24小时内免费获取DET检测结果",
+          "content5": "*仅可通过DET实践获取",
+          "btn": "查看详情"
+        },
+        "item2": {
+          "title": "独家10% DET折扣",
+          "content1": "- 成为DET实践会员",
+          "content2": "- 联系我们领取优惠券",
+          "content3": "- 结账时使用优惠券",
+          "content4": "- 立即享受10%的DET价格优惠",
+          "content5": "*立即使用我们的DET优惠券，享受考试费即时折扣",
+          "btn": "查看详情"
+        }
+      }
+    },
     "Start_free_with_Google": "Google登录免费开始使用",
     "Start_free_with_email": "使用邮箱免费开始",
     "DET_Practice": "DET Practice：最佳多邻国英语测试练习平台",
