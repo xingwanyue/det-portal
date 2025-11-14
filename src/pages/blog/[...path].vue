@@ -102,6 +102,10 @@ const handleCurrentChange = async (val: number) => {
     })) as any;
 
     blogs.value = blogsjkk?.value?.data || [];
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   } catch (err) {
     console.error('处理分页时发生错误:', err);
     blogs.value = [];
