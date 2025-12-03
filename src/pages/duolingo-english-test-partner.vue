@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { urlGet, getToken } from '@/utils';
-import { useI18n } from "vue-i18n";
+import { useI18n } from 'vue-i18n';
 import { useStore } from '@/store';
 const localePath = useLocalePath();
 const { t } = useI18n();
 useSeoMeta({
   title: 'DET Practice - DET Official Gold Partner',
-  description: 'Get a better score with the DET official Gold Partner. AI mock tests, instant scoring & 18,000+ questions. Start for free!',
+  description:
+    'Get a better score with the DET official Gold Partner. AI mock tests, instant scoring & 18,000+ questions. Start for free!',
 });
 const haveCookie = ref(false);
 onMounted(async () => {
@@ -18,17 +19,17 @@ onMounted(async () => {
 const faqList = ref([
   {
     q: 'What is DET Practice and how does it help me prepare for the Duolingo English Test?',
-    a: "<a href='/'>DET Practice</a> is the official DET Gold-tier Partner platform for Duolingo English Test preparation. We offer AI-powered mock tests, instant scoring, expert-designed courses, and the largest question bank with 18,000+ questions to help you achieve your target score.",
+    a: "<a href='/'>DET Practice</a> is a Gold-tier Partner in the Duolingo Global Partner Network and a leading platform for Duolingo English Test preparation. With AI-powered mock tests, instant scoring, expert-designed courses, and 18,000+ practice questions, we help you achieve your target score.",
     open: false,
   },
   {
     q: 'How accurate is your AI scoring system compared to the real DET?',
-    a: "Our AI scoring system is highly accurate and closely mirrors the <a href='https://englishtest.duolingo.com/' target='_blank'>official DET</a> scoring algorithm. As an official DET Partner, we have access to the latest scoring criteria and continuously update our system to ensure the most precise score predictions.",
+    a: "Our AI scoring system is highly accurate and aligned with the DET scoring framework. We continuously refine it to deliver the most precise score predictions.",
     open: false,
   },
   {
     q: 'What makes DET Practice different from other test prep platforms?',
-    a: "We are the <a href='https://www.detpractice.com/duolingo-english-test-partner'>Duolingo English Test official partner</a> for DET preparation, offering the most authentic test experience. Our platform features instant AI feedback, the largest question bank, and has helped 400,000+ students achieve their target scores.",
+    a: "As a <a href='https://www.detpractice.com/duolingo-english-test-partner'>Gold Partner in the Duolingo English Test Global Partner Network</a>, DET Practice delivers the most authentic preparation experience. With instant AI feedback, 18,000+ practice questions, and proven success for 400,000+ students, we help you achieve your target score.",
     open: false,
   },
   {
@@ -51,7 +52,7 @@ const faqList = ref([
     a: 'While we cannot guarantee specific score improvements due to individual learning differences, our track record shows that 95% of students who complete our full course achieve their target scores.',
     open: false,
   },
-])
+]);
 const store = useStore();
 const user = computed(() => store.user);
 const jump = () => {
@@ -60,8 +61,7 @@ const jump = () => {
   } else {
     window.location.href = localePath('/login');
   }
-}
-
+};
 </script>
 
 <template>
@@ -70,19 +70,20 @@ const jump = () => {
       <div class="container">
         <div class="left">
           <h1>Succeed on Your Duolingo English Test with a DET Gold Partner</h1>
-          <p>Trusted by 400,000+ students worldwide. Get everything you need for the Duolingo English Test: Al-powered
+          <p>
+            Trusted by 400,000+ students worldwide. Get everything you need for the Duolingo English Test: Al-powered
             24/7 tutor, full-length mock tests with instant scoring, the largest questionbank, and free expert-designed
             courses. Your all-in-one pathway to top DET scores.
           </p>
           <div class="btn" @click="jump">Start Free Practice</div>
         </div>
-        <img src="/img/partner/partner.webp" alt="duolingo-english-test-partner">
+        <img src="/img/partner/partner.webp" alt="duolingo-english-test-partner" />
       </div>
     </div>
     <div class="part2">
       <div class="container">
         <h2>The Best Prep Platform for Duolingo English Test</h2>
-        <img src="/img/partner/practice.png" alt="practice">
+        <img src="/img/partner/practice.png" alt="practice" />
       </div>
     </div>
     <div class="part3">
@@ -118,8 +119,9 @@ const jump = () => {
             <div>SKKU</div>
           </div>
         </div>
-        <div class="tips">*Our platform is used by students who attend these universities. This does not represent an
-          official endorsement by the institutions.</div>
+        <div class="tips">
+          *Our platform is used by students from these universities. This does not imply endorsement by institutions.
+        </div>
       </div>
     </div>
     <div class="part4">
@@ -127,12 +129,12 @@ const jump = () => {
         <h2>Real Students, Real High DET Scores</h2>
         <p>See how DET Practice is making a difference.</p>
         <div class="list">
-          <img src="/img/partner/photo-1.png" alt="scores">
-          <img src="/img/partner/photo-2.png" alt="scores">
-          <img src="/img/partner/photo-3.png" alt="scores">
-          <img src="/img/partner/photo-4.png" alt="scores">
-          <img src="/img/partner/photo-5.png" alt="scores">
-          <img src="/img/partner/photo-6.png" alt="scores">
+          <img src="/img/partner/photo-1.png" alt="scores" />
+          <img src="/img/partner/photo-2.png" alt="scores" />
+          <img src="/img/partner/photo-3.png" alt="scores" />
+          <img src="/img/partner/photo-4.png" alt="scores" />
+          <img src="/img/partner/photo-5.png" alt="scores" />
+          <img src="/img/partner/photo-6.png" alt="scores" />
         </div>
       </div>
     </div>
@@ -142,22 +144,27 @@ const jump = () => {
         <p>Powerful tools designed for your Duolingo English Test success.</p>
         <div class="list">
           <div class="item">
-            <img src="/img/partner/1.svg" alt="al-powered-1:1-mock-tests">
+            <img src="/img/partner/1.svg" alt="al-powered-1:1-mock-tests" />
             <h3>Al-Powered 1:1 Mock Tests</h3>
-            <div class="text">Practice in the real exam format and know exactly where youstand-so you walk into test day
-              with confidence.</div>
+            <div class="text">
+              Practice in the real exam format and know exactly where youstand-so you walk into test day with
+              confidence.
+            </div>
           </div>
           <div class="item">
-            <img src="/img/partner/2.svg" alt="instant-feedback">
+            <img src="/img/partner/2.svg" alt="instant-feedback" />
             <h3>Instant Feedback</h3>
-            <div class="text">Fix mistakes instantly and improve your speaking and writing faster — no waiting, no
-              guessing.</div>
+            <div class="text">
+              Fix mistakes instantly and improve your speaking and writing faster — no waiting, no guessing.
+            </div>
           </div>
           <div class="item">
-            <img src="/img/partner/3.svg" alt="largest-question-bank">
+            <img src="/img/partner/3.svg" alt="largest-question-bank" />
             <h3>Largest Question Bank</h3>
-            <div class="text">18,000+ practice questions ensure you’ll never run out of material — master every section
-              with complete coverage.</div>
+            <div class="text">
+              18,000+ practice questions ensure you’ll never run out of material — master every section with complete
+              coverage.
+            </div>
           </div>
         </div>
       </div>
@@ -177,8 +184,8 @@ const jump = () => {
           <div class="item" v-for="item in faqList">
             <div class="top" @click="item.open = !item.open">
               <h3>{{ item.q }}</h3>
-              <img v-if="!item.open" src="/img/partner/down.svg" alt="down">
-              <img v-else src="/img/partner/up.svg" alt="up">
+              <img v-if="!item.open" src="/img/partner/down.svg" alt="down" />
+              <img v-else src="/img/partner/up.svg" alt="up" />
             </div>
             <div v-show="item.open" class="bottom" v-html="item.a"></div>
           </div>
@@ -260,11 +267,11 @@ const jump = () => {
         .btn {
           width: max-content;
           padding: 12px 16px;
-          background: #58CC02;
+          background: #58cc02;
           border-radius: 8px 8px 8px 8px;
           font-weight: 600;
           font-size: 20px;
-          color: #FFFFFF;
+          color: #ffffff;
         }
       }
 
@@ -276,7 +283,7 @@ const jump = () => {
   }
 
   .part2 {
-    background: #F9FAFB;
+    background: #f9fafb;
     margin-top: 50px;
     padding: 80px 0;
 
@@ -315,7 +322,7 @@ const jump = () => {
   .part4 {
     margin-top: 80px;
     padding: 80px 0;
-    background: #F9FAFB;
+    background: #f9fafb;
 
     h2 {
       margin-bottom: 10px;
@@ -332,7 +339,6 @@ const jump = () => {
         border-radius: 8px 8px 8px 8px;
       }
     }
-
   }
 
   .part5 {
@@ -383,7 +389,7 @@ const jump = () => {
   .part6 {
     margin-top: 80px;
     padding: 80px 0;
-    background: #F9FAFB;
+    background: #f9fafb;
 
     h2 {
       margin-bottom: 10px;
@@ -394,9 +400,9 @@ const jump = () => {
       padding: 12px 16px;
       font-weight: 600;
       font-size: 20px;
-      color: #FFFFFF;
+      color: #ffffff;
       width: max-content;
-      background: #58CC02;
+      background: #58cc02;
       border-radius: 8px 8px 8px 8px;
     }
   }
@@ -418,7 +424,7 @@ const jump = () => {
       .item {
         padding: 30px;
         border-radius: 30px 30px 30px 30px;
-        border: 1px solid #CCCCCC;
+        border: 1px solid #cccccc;
 
         .top {
           display: flex;
@@ -449,7 +455,7 @@ const jump = () => {
           color: #666666;
 
           ::v-deep(a) {
-            color: #58CC02 !important;
+            color: #58cc02 !important;
           }
 
           @media screen and (max-width: 768px) {
@@ -459,7 +465,6 @@ const jump = () => {
       }
     }
   }
-
 }
 </style>
 <style scoped lang="scss"></style>
