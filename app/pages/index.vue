@@ -97,13 +97,16 @@ const handleSubmit = async () => {
   errorMessage.value = ''
   pending.value = true
   try {
-    await $fetch('/api/login', {
+    const response = await $fetch('/api/login', {
       method: 'POST',
       body: {
         username: form.username,
         password: form.password
       }
     })
+    if (process.client && response?.token) {
+      localStorage.setItem('token', response.token)
+    }
     await router.push('/console')
   } catch (error: any) {
     errorMessage.value = error?.statusMessage || '登录失败，请稍后重试'

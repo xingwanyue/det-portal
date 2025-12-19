@@ -47,3 +47,33 @@ export const signJwt = (
     .replace(/=+$/g, '');
   return `${encodedHeader}.${encodedPayload}.${signature}`;
 };
+
+const base64UrlDecode = (input: string) => {
+  const normalized = input.replace(/-/g, '+').replace(/_/g, '/');
+  const padded = normalized.padEnd(
+    normalized.length + ((4 - (normalized.length % 4)) % 4),
+    '='
+  );
+  return Buffer.from(padded, 'base64').toString('utf-8');
+};
+
+export const verifyJwt = (token: string) => {
+  const parts = token.split('.');
+  if (parts.length !== 3) return null;
+  const [encodedHeader, encodedPayload, signature] = parts;
+  const expected = crypto
+    .createHmac('sha256', config.secret)
+    .update(`${encodedHeader}.${encodedPayload}`)
+    .digest('base64')
+    .replace(/\+/g, '-')
+    .replace(/\//g, '_')
+    .replace(/=+$/g, '');
+  if (expected !== signature) return null;
+  const payload = JSON.parse(base64UrlDecode(encodedPayload)) as Record<
+    string,
+    unknown
+  >;
+  const exp = typeof payload.exp === 'number' ? payload.exp : undefined;
+  if (exp && exp < Math.floor(Date.now() / 1000)) return null;
+  return payload;
+};

@@ -86,8 +86,9 @@
               <td class="px-4 py-4 text-right">
                 <button
                   class="text-sm font-medium text-slate-700 hover:text-slate-900"
+                  @click="openRoleEditor(user)"
                 >
-                  编辑
+                  编辑角色
                 </button>
               </td>
             </tr>
@@ -194,10 +195,84 @@
         </div>
       </form>
     </section>
+    <div
+      v-if="roleEditor.open"
+      class="fixed inset-0 z-40 flex items-center justify-center bg-slate-900/40 px-4"
+    >
+      <div class="w-full max-w-2xl rounded-3xl bg-white p-6 shadow-xl">
+        <div class="flex items-start justify-between">
+          <div>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
+              用户角色
+            </p>
+            <h3 class="mt-2 text-xl font-semibold text-slate-900">
+              编辑角色绑定
+            </h3>
+            <p class="mt-2 text-sm text-slate-500">
+              当前用户：{{ roleEditor.user?.username || "-" }}
+            </p>
+          </div>
+          <button
+            class="rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-500"
+            @click="closeRoleEditor"
+          >
+            关闭
+          </button>
+        </div>
+
+        <div class="mt-6">
+          <p class="text-sm font-medium text-slate-700">选择角色</p>
+          <div
+            class="mt-3 grid max-h-60 grid-cols-1 gap-3 overflow-y-auto rounded-2xl border border-slate-200 p-4 sm:grid-cols-2"
+          >
+            <label
+              v-for="role in roles"
+              :key="role.id"
+              class="flex items-center gap-3 rounded-xl border border-slate-200 px-3 py-2 text-sm text-slate-700"
+            >
+              <input
+                v-model="roleEditor.roleIds"
+                type="checkbox"
+                :value="role.id"
+                class="h-4 w-4 rounded border-slate-300 text-slate-900"
+              />
+              <div>
+                <p class="font-medium text-slate-900">{{ role.name }}</p>
+                <p class="text-xs text-slate-500">{{ role.code }}</p>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <p v-if="roleEditor.error" class="mt-4 text-sm text-rose-600">
+          {{ roleEditor.error }}
+        </p>
+
+        <div class="mt-6 flex justify-end gap-3">
+          <button
+            class="rounded-xl border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700"
+            @click="closeRoleEditor"
+          >
+            取消
+          </button>
+          <button
+            class="rounded-xl bg-slate-900 px-6 py-2 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-400"
+            :disabled="roleEditor.loading"
+            @click="saveRoleEditor"
+          >
+            {{ roleEditor.loading ? "保存中..." : "保存角色" }}
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
+definePageMeta({ layout: "console" });
+
+const { $authFetch } = useNuxtApp();
+
 const filters = reactive({
   keyword: "",
   status: "",
@@ -213,7 +288,9 @@ const queryParams = computed(() => ({
 }));
 
 const { data, refresh } = await useFetch("/api/users", {
+  $fetch: $authFetch,
   query: queryParams,
+  server: false,
 });
 
 watch(queryParams, () => {
@@ -221,6 +298,60 @@ watch(queryParams, () => {
 });
 
 const users = computed(() => data.value?.data || []);
+
+const { data: roleData } = await useFetch("/api/roles", {
+  $fetch: $authFetch,
+  server: false,
+});
+const roles = computed(() => roleData.value?.data || []);
+
+const roleEditor = reactive({
+  open: false,
+  loading: false,
+  error: "",
+  user: null as null | { id: string; username?: string },
+  roleIds: [] as string[],
+});
+
+const openRoleEditor = async (user: { id: string; username?: string }) => {
+  roleEditor.open = true;
+  roleEditor.loading = true;
+  roleEditor.error = "";
+  roleEditor.user = user;
+  roleEditor.roleIds = [];
+  try {
+    const res = await $authFetch(`/api/users/${user.id}/roles`);
+    roleEditor.roleIds = res.data?.map((item: { id: string }) => item.id) || [];
+  } catch (error: any) {
+    roleEditor.error = error?.statusMessage || "获取角色失败，请稍后重试";
+  } finally {
+    roleEditor.loading = false;
+  }
+};
+
+const closeRoleEditor = () => {
+  roleEditor.open = false;
+  roleEditor.error = "";
+  roleEditor.user = null;
+  roleEditor.roleIds = [];
+};
+
+const saveRoleEditor = async () => {
+  if (!roleEditor.user?.id) return;
+  roleEditor.loading = true;
+  roleEditor.error = "";
+  try {
+    await $authFetch(`/api/users/${roleEditor.user.id}/roles`, {
+      method: "PUT",
+      body: { roleIds: roleEditor.roleIds },
+    });
+    closeRoleEditor();
+  } catch (error: any) {
+    roleEditor.error = error?.statusMessage || "保存失败，请稍后重试";
+  } finally {
+    roleEditor.loading = false;
+  }
+};
 
 const statusText = (status: string) => {
   if (status === "1") return "启用";

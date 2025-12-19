@@ -97,32 +97,117 @@
 </template>
 
 <script setup lang="ts">
+import { defineComponent, h } from "vue";
+
+const iconOverview = defineComponent({
+  name: "IconOverview",
+  render() {
+    return h(
+      "svg",
+      { viewBox: "0 0 20 20", fill: "currentColor", "aria-hidden": "true" },
+      [
+        h("path", {
+          d: "M2 3.5A1.5 1.5 0 0 1 3.5 2h3A1.5 1.5 0 0 1 8 3.5v3A1.5 1.5 0 0 1 6.5 8h-3A1.5 1.5 0 0 1 2 6.5v-3zM12 3.5A1.5 1.5 0 0 1 13.5 2h3A1.5 1.5 0 0 1 18 3.5v3A1.5 1.5 0 0 1 16.5 8h-3A1.5 1.5 0 0 1 12 6.5v-3zM2 13.5A1.5 1.5 0 0 1 3.5 12h3A1.5 1.5 0 0 1 8 13.5v3A1.5 1.5 0 0 1 6.5 18h-3A1.5 1.5 0 0 1 2 16.5v-3zM12 13.5a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5v-3z"
+        })
+      ]
+    );
+  }
+});
+
+const iconApprovals = defineComponent({
+  name: "IconApprovals",
+  render() {
+    return h(
+      "svg",
+      { viewBox: "0 0 20 20", fill: "currentColor", "aria-hidden": "true" },
+      [
+        h("path", {
+          "fill-rule": "evenodd",
+          d: "M10 2a1 1 0 0 1 .894.553l2.382 4.764 5.263.765a1 1 0 0 1 .554 1.705l-3.807 3.71.899 5.243a1 1 0 0 1-1.451 1.054L10 16.347l-4.734 2.487a1 1 0 0 1-1.45-1.054l.898-5.243-3.807-3.71A1 1 0 0 1 1.46 8.082l5.263-.765 2.383-4.764A1 1 0 0 1 10 2z",
+          "clip-rule": "evenodd"
+        })
+      ]
+    );
+  }
+});
+
+const iconWorkflows = defineComponent({
+  name: "IconWorkflows",
+  render() {
+    return h(
+      "svg",
+      { viewBox: "0 0 20 20", fill: "currentColor", "aria-hidden": "true" },
+      [
+        h("path", {
+          d: "M4 4a2 2 0 0 1 2-2h2.5a2 2 0 0 1 0 4H6a2 2 0 0 1-2-2zM4 16a2 2 0 0 1 2-2h8a2 2 0 1 1 0 4H6a2 2 0 0 1-2-2zM12.5 6a2 2 0 1 1 0-4H14a2 2 0 1 1 0 4h-1.5zM4 10a2 2 0 0 1 2-2h8a2 2 0 1 1 0 4H6a2 2 0 0 1-2-2z"
+        })
+      ]
+    );
+  }
+});
+
+const iconUsers = defineComponent({
+  name: "IconUsers",
+  render() {
+    return h(
+      "svg",
+      { viewBox: "0 0 20 20", fill: "currentColor", "aria-hidden": "true" },
+      [
+        h("path", {
+          d: "M10 10a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm-7 8a7 7 0 0 1 14 0z"
+        })
+      ]
+    );
+  }
+});
+
+const iconLogs = defineComponent({
+  name: "IconLogs",
+  render() {
+    return h(
+      "svg",
+      { viewBox: "0 0 20 20", fill: "currentColor", "aria-hidden": "true" },
+      [
+        h("path", {
+          d: "M5 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4zm3 2h4a1 1 0 1 0 0-2H8a1 1 0 0 0 0 2zm0 4h4a1 1 0 0 0 0-2H8a1 1 0 0 0 0 2zm0 4h2a1 1 0 0 0 0-2H8a1 1 0 0 0 0 2z"
+        })
+      ]
+    );
+  }
+});
+
+const iconSettings = defineComponent({
+  name: "IconSettings",
+  render() {
+    return h(
+      "svg",
+      { viewBox: "0 0 20 20", fill: "currentColor", "aria-hidden": "true" },
+      [
+        h("path", {
+          d: "M11.983 1.996a1 1 0 0 0-1.966 0l-.111.671a6.987 6.987 0 0 0-1.676.69l-.571-.343a1 1 0 0 0-1.367.366L4.63 4.827a1 1 0 0 0 .365 1.366l.57.343a7.067 7.067 0 0 0 0 1.38l-.57.343a1 1 0 0 0-.366 1.366l.66 1.146a1 1 0 0 0 1.367.366l.57-.343a6.987 6.987 0 0 0 1.677.69l.11.671a1 1 0 0 0 1.966 0l.11-.671a6.987 6.987 0 0 0 1.677-.69l.57.343a1 1 0 0 0 1.367-.366l.66-1.146a1 1 0 0 0-.366-1.366l-.57-.343a7.067 7.067 0 0 0 0-1.38l.57-.343a1 1 0 0 0 .366-1.366l-.66-1.146a1 1 0 0 0-1.367-.366l-.57.343a6.987 6.987 0 0 0-1.677-.69l-.11-.671zM10 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+        })
+      ]
+    );
+  }
+});
+
 const primaryNav = [
   {
     name: '总览',
     to: '/console',
     badge: '实时',
-    icon: {
-      template:
-        '<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2 3.5A1.5 1.5 0 0 1 3.5 2h3A1.5 1.5 0 0 1 8 3.5v3A1.5 1.5 0 0 1 6.5 8h-3A1.5 1.5 0 0 1 2 6.5v-3zM12 3.5A1.5 1.5 0 0 1 13.5 2h3A1.5 1.5 0 0 1 18 3.5v3A1.5 1.5 0 0 1 16.5 8h-3A1.5 1.5 0 0 1 12 6.5v-3zM2 13.5A1.5 1.5 0 0 1 3.5 12h3A1.5 1.5 0 0 1 8 13.5v3A1.5 1.5 0 0 1 6.5 18h-3A1.5 1.5 0 0 1 2 16.5v-3zM12 13.5a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5v-3z"/></svg>'
-    }
+    icon: iconOverview
   },
   {
     name: '审批中心',
     to: '/console#approvals',
     badge: '12',
-    icon: {
-      template:
-        '<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 2a1 1 0 0 1 .894.553l2.382 4.764 5.263.765a1 1 0 0 1 .554 1.705l-3.807 3.71.899 5.243a1 1 0 0 1-1.451 1.054L10 16.347l-4.734 2.487a1 1 0 0 1-1.45-1.054l.898-5.243-3.807-3.71A1 1 0 0 1 1.46 8.082l5.263-.765 2.383-4.764A1 1 0 0 1 10 2z" clip-rule="evenodd"/></svg>'
-    }
+    icon: iconApprovals
   },
   {
     name: '流程编排',
     to: '/console#workflows',
-    icon: {
-      template:
-        '<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M4 4a2 2 0 0 1 2-2h2.5a2 2 0 0 1 0 4H6a2 2 0 0 1-2-2zM4 16a2 2 0 0 1 2-2h8a2 2 0 1 1 0 4H6a2 2 0 0 1-2-2zM12.5 6a2 2 0 1 1 0-4H14a2 2 0 1 1 0 4h-1.5zM4 10a2 2 0 0 1 2-2h8a2 2 0 1 1 0 4H6a2 2 0 0 1-2-2z"/></svg>'
-    }
+    icon: iconWorkflows
   }
 ]
 
@@ -130,26 +215,17 @@ const manageNav = [
   {
     name: '用户管理',
     to: '/console#users',
-    icon: {
-      template:
-        '<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 10a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm-7 8a7 7 0 0 1 14 0z"/></svg>'
-    }
+    icon: iconUsers
   },
   {
     name: '审计日志',
     to: '/console#logs',
-    icon: {
-      template:
-        '<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4zm3 2h4a1 1 0 1 0 0-2H8a1 1 0 0 0 0 2zm0 4h4a1 1 0 0 0 0-2H8a1 1 0 0 0 0 2zm0 4h2a1 1 0 0 0 0-2H8a1 1 0 0 0 0 2z"/></svg>'
-    }
+    icon: iconLogs
   },
   {
     name: '系统设置',
     to: '/console#settings',
-    icon: {
-      template:
-        '<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M11.983 1.996a1 1 0 0 0-1.966 0l-.111.671a6.987 6.987 0 0 0-1.676.69l-.571-.343a1 1 0 0 0-1.367.366L4.63 4.827a1 1 0 0 0 .365 1.366l.57.343a7.067 7.067 0 0 0 0 1.38l-.57.343a1 1 0 0 0-.366 1.366l.66 1.146a1 1 0 0 0 1.367.366l.57-.343a6.987 6.987 0 0 0 1.677.69l.11.671a1 1 0 0 0 1.966 0l.11-.671a6.987 6.987 0 0 0 1.677-.69l.57.343a1 1 0 0 0 1.367-.366l.66-1.146a1 1 0 0 0-.366-1.366l-.57-.343a7.067 7.067 0 0 0 0-1.38l.57-.343a1 1 0 0 0 .366-1.366l-.66-1.146a1 1 0 0 0-1.367-.366l-.57.343a6.987 6.987 0 0 0-1.677-.69l-.11-.671zM10 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>'
-    }
+    icon: iconSettings
   }
 ]
 
