@@ -55,9 +55,9 @@
         <div class="mt-auto rounded-2xl bg-slate-900 px-4 py-5 text-white">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-300">权限</p>
           <p class="mt-2 text-lg font-semibold">超级管理员</p>
-          <div class="mt-4 flex flex-wrap gap-2">
+        <div class="mt-4 flex flex-wrap gap-2">
             <span
-              v-for="permission in permissions"
+              v-for="permission in permissionBadges"
               :key="permission"
               class="rounded-full border border-white/30 px-3 py-1 text-xs font-medium"
             >
@@ -98,6 +98,18 @@
 
 <script setup lang="ts">
 import { defineComponent, h } from "vue";
+
+const { permissions, loaded, load } = usePermissions();
+
+const permissionBadges = computed(() =>
+  permissions.value.map((item) => item.name).filter(Boolean)
+);
+
+onMounted(() => {
+  if (!loaded.value) {
+    load();
+  }
+});
 
 const iconOverview = defineComponent({
   name: "IconOverview",
@@ -228,6 +240,4 @@ const manageNav = [
     icon: iconSettings
   }
 ]
-
-const permissions = ['全量权限', '财务', '基础设施', '人事']
 </script>

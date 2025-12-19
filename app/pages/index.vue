@@ -87,6 +87,7 @@ definePageMeta({ layout: false })
 const router = useRouter()
 const pending = ref(false)
 const errorMessage = ref('')
+const { load: loadPermissions } = usePermissions()
 const form = reactive({
   username: '',
   password: ''
@@ -106,6 +107,7 @@ const handleSubmit = async () => {
     })
     if (process.client && response?.token) {
       localStorage.setItem('token', response.token)
+      await loadPermissions()
     }
     await router.push('/console')
   } catch (error: any) {
