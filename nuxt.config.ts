@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   css: ['~/assets/css/tailwind.css'],
+  runtimeConfig: {
+    databaseUrl: process.env.DATABASE_URL,
+    secret: process.env.SECRET,
+  },
   app: {
     head: {
       link: [

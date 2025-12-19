@@ -28,23 +28,29 @@
           <div class="mb-8">
             <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">登录</p>
             <h2 class="mt-3 text-3xl font-semibold">欢迎回来</h2>
-            <p class="mt-2 text-sm text-slate-500">使用 SSO 或管理员账号继续。</p>
+            <p class="mt-2 text-sm text-slate-500">使用用户名和密码继续。</p>
           </div>
 
-          <form class="space-y-5" @submit.prevent>
+          <form class="space-y-5" @submit.prevent="handleSubmit">
             <label class="block text-sm font-medium text-slate-700">
-              工作邮箱
+              用户名
               <input
-                type="email"
-                placeholder="you@company.com"
+                v-model="form.username"
+                type="text"
+                autocomplete="username"
+                placeholder="请输入用户名"
+                required
                 class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-slate-900 focus:ring-2 focus:ring-slate-200"
               />
             </label>
             <label class="block text-sm font-medium text-slate-700">
               密码
               <input
+                v-model="form.password"
                 type="password"
-                placeholder="••••••••"
+                autocomplete="current-password"
+                placeholder="请输入密码"
+                required
                 class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-slate-900 focus:ring-2 focus:ring-slate-200"
               />
             </label>
@@ -55,13 +61,16 @@
               </label>
               <button type="button" class="font-medium text-slate-700 hover:text-slate-900">重置</button>
             </div>
-            <NuxtLink
-              to="/console"
-              class="flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+            <button
+              type="submit"
+              class="flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-400"
+              :disabled="pending"
             >
-              进入控制台
-            </NuxtLink>
+              {{ pending ? '登录中…' : '进入控制台' }}
+            </button>
           </form>
+
+          <p v-if="errorMessage" class="mt-4 text-sm text-rose-600">{{ errorMessage }}</p>
 
           <div class="mt-6 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-600">
             需要权限？请联系平台负责人申请角色。
@@ -71,3 +80,35 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+definePageMeta({ layout: false })
+
+const router = useRouter()
+const pending = ref(false)
+const errorMessage = ref('')
+const form = reactive({
+  username: '',
+  password: ''
+})
+
+const handleSubmit = async () => {
+  if (pending.value) return
+  errorMessage.value = ''
+  pending.value = true
+  try {
+    await $fetch('/api/login', {
+      method: 'POST',
+      body: {
+        username: form.username,
+        password: form.password
+      }
+    })
+    await router.push('/console')
+  } catch (error: any) {
+    errorMessage.value = error?.statusMessage || '登录失败，请稍后重试'
+  } finally {
+    pending.value = false
+  }
+}
+</script>
