@@ -20,7 +20,7 @@ export default defineEventHandler(async (event) => {
   const data = await db('user')
     .select([
       'id',
-      'email',
+      'username',
       'nickname',
       'avatar',
       'status',

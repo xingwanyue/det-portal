@@ -5,7 +5,7 @@ import db from '../utils/db'
  * Query:
  * - page: number，页码，默认 1
  * - pageSize: number，每页数量，默认 20
- * - keyword: string，模糊搜索（email / nickname）
+ * - keyword: string，模糊搜索（username / nickname）
  * - status: string，状态（1/0/2）
  * - type: string，类型（1/2）
  *
@@ -29,7 +29,7 @@ export default defineEventHandler(async (event) => {
   const baseQuery = db('user')
     .select([
       'id',
-      'email',
+      'username',
       'nickname',
       'avatar',
       'status',
@@ -42,7 +42,7 @@ export default defineEventHandler(async (event) => {
 
   if (keyword) {
     baseQuery.where((builder) => {
-      builder.where('email', 'like', `%${keyword}%`).orWhere('nickname', 'like', `%${keyword}%`)
+      builder.where('username', 'like', `%${keyword}%`).orWhere('nickname', 'like', `%${keyword}%`)
     })
   }
   if (status) baseQuery.andWhere('status', status)
@@ -53,7 +53,7 @@ export default defineEventHandler(async (event) => {
     .modify((builder) => {
       if (keyword) {
         builder.where((inner) => {
-          inner.where('email', 'like', `%${keyword}%`).orWhere('nickname', 'like', `%${keyword}%`)
+          inner.where('username', 'like', `%${keyword}%`).orWhere('nickname', 'like', `%${keyword}%`)
         })
       }
       if (status) builder.andWhere('status', status)

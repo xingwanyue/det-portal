@@ -6,7 +6,7 @@ import { generatePw, generateSalt } from '../../utils'
  * Params:
  * - id: string，用户 ID
  * Body:
- * - email?: string，邮箱
+ * - username?: string，用户名
  * - password?: string，明文密码（如传入会重新生成 salt）
  * - nickname?: string
  * - avatar?: string
@@ -27,8 +27,8 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event)
   const payload: Record<string, unknown> = {}
 
-  if (typeof body.email === 'string' && body.email.trim()) {
-    payload.email = body.email.trim()
+  if (typeof body.username === 'string' && body.username.trim()) {
+    payload.username = body.username.trim()
   }
   if (typeof body.nickname === 'string') payload.nickname = body.nickname.trim()
   if (typeof body.avatar === 'string') payload.avatar = body.avatar.trim()

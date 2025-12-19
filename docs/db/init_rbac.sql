@@ -8,7 +8,7 @@
 
 CREATE TABLE IF NOT EXISTS `user` (
   `id` char(32) NOT NULL COMMENT 'User unique identifier (UUID)',
-  `email` varchar(255) NOT NULL COMMENT 'User email address (login)',
+  `username` varchar(255) NOT NULL COMMENT 'Login username',
   `password` varchar(255) DEFAULT NULL COMMENT 'Encrypted password',
   `salt` varchar(64) DEFAULT NULL COMMENT 'Password salt for encryption',
   `nickname` varchar(100) DEFAULT NULL COMMENT 'User display name',
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `createTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Account creation time',
   `updateTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Last update time',
   PRIMARY KEY (`id`),
-  UNIQUE KEY `uk_email` (`email`),
+  UNIQUE KEY `uk_username` (`username`),
   KEY `idx_status` (`status`),
   KEY `idx_type` (`type`),
   KEY `idx_createTime` (`createTime`)

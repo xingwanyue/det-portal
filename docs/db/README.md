@@ -31,7 +31,7 @@ user ←→ user_role ←→ role ←→ role_permission ←→ permission
 
 **主要字段：**
 - `id`：用户 ID（char(32)，UUID）
-- `email`：登录邮箱（唯一）
+- `username`：登录用户名（唯一）
 - `password`：加密密码
 - `salt`：密码盐值
 - `nickname`：昵称
@@ -44,7 +44,7 @@ user ←→ user_role ←→ role ←→ role_permission ←→ permission
 
 **索引：**
 - 主键：`id`
-- 唯一索引：`email`
+- 唯一索引：`username`
 - 普通索引：`status`、`type`、`createTime`
 
 ### 2. role
@@ -156,7 +156,7 @@ WHERE r.code = 'ROLE_ADMIN' AND p.code = 'user:create';
 INSERT INTO user_role (id, userId, roleId)
 SELECT UUID(), u.id, r.id
 FROM user u, role r
-WHERE u.email = 'admin@example.com' AND r.code = 'ROLE_ADMIN';
+WHERE u.username = 'admin' AND r.code = 'ROLE_ADMIN';
 ```
 
 ### 5. 查询用户权限
@@ -167,7 +167,7 @@ JOIN user_role ur ON u.id = ur.userId
 JOIN role r ON ur.roleId = r.id
 JOIN role_permission rp ON r.id = rp.roleId
 JOIN permission p ON rp.permissionId = p.id
-WHERE u.email = 'admin@example.com'
+WHERE u.username = 'admin'
   AND u.status = '1'
   AND r.status = '1'
   AND p.status = '1';
@@ -184,4 +184,3 @@ WHERE u.email = 'admin@example.com'
 - 关联表的唯一索引避免重复绑定
 - 外键列索引提升联表查询效率
 - `status` 字段用于软禁用，避免硬删除
-

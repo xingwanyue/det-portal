@@ -5,7 +5,7 @@ import { generatePw, generateSalt } from '../utils'
 /**
  * 新建用户
  * Body:
- * - email: string，登录邮箱（必填）
+ * - username: string，登录用户名（必填）
  * - password: string，明文密码（必填）
  * - nickname?: string，昵称
  * - avatar?: string，头像 URL
@@ -20,16 +20,16 @@ import { generatePw, generateSalt } from '../utils'
  */
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
-  const email = typeof body.email === 'string' ? body.email.trim() : ''
+  const username = typeof body.username === 'string' ? body.username.trim() : ''
   const password = typeof body.password === 'string' ? body.password.trim() : ''
 
-  if (!email || !password) {
-    throw createError({ statusCode: 400, statusMessage: '邮箱和密码不能为空' })
+  if (!username || !password) {
+    throw createError({ statusCode: 400, statusMessage: '用户名和密码不能为空' })
   }
 
-  const exists = await db('user').select('id').where({ email }).first()
+  const exists = await db('user').select('id').where({ username }).first()
   if (exists) {
-    throw createError({ statusCode: 409, statusMessage: '邮箱已存在' })
+    throw createError({ statusCode: 409, statusMessage: '用户名已存在' })
   }
 
   const salt = generateSalt()
@@ -38,7 +38,7 @@ export default defineEventHandler(async (event) => {
 
   await db('user').insert({
     id,
-    email,
+    username,
     password: encrypted,
     salt,
     nickname: body.nickname || null,
