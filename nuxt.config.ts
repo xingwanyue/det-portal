@@ -2,10 +2,12 @@
 
 export default defineNuxtConfig({
   sourcemap: false,
-  nitro: {
-    preset: 'cloudflare'
-  },
   devtools: { enabled: true },
+  vite: {
+    build: {
+      sourcemap: false
+    }
+  },
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@element-plus/nuxt', '@nuxtjs/i18n', 'vue3-carousel-nuxt'],
   css: ['@/assets/iconfont/iconfont.css'],
@@ -25,6 +27,7 @@ export default defineNuxtConfig({
     detectBrowserLanguage: false,
   },
   nitro: {
+    preset: 'cloudflare',
     prerender: {
       failOnError: false,
     },
